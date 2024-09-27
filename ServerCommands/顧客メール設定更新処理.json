@@ -1,0 +1,580 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_顧客メールID"
+        },
+        {
+          "Name": "P_送信区分"
+        },
+        {
+          "Name": "P_顧客ID"
+        },
+        {
+          "Name": "P_メールタイプIDs"
+        },
+        {
+          "Name": "P_ユーザーIDs"
+        },
+        {
+          "Name": "P_対象住宅事業者IDs"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+          "ServerCommandName": "登録更新ラベル取得",
+          "ReturnPropertiesTo": [
+            {
+              "ResultPropertyName": "R_ラベル名",
+              "ResultTo": {
+                "SerializeProperty": "最終更新ラベル"
+              }
+            }
+          ],
+          "RefreshAfterFinish": true,
+          "CheckDataValidation": true
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_顧客メールID"
+                  }
+                },
+                "value": "%Null%"
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "メールタイプ",
+                  "TableValue": {
+                    "TableName": "m_mail_type",
+                    "BindingInfos": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "m_mail_type",
+                          "ColumnName": "mail_type_id"
+                        },
+                        "ColumnName": "メールタイプID"
+                      }
+                    ],
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 8,
+                      "ColumnBindingInfo": {
+                        "TableName": "m_mail_type",
+                        "ColumnName": "mail_type_id"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_メールタイプIDs"
+                      }
+                    }
+                  },
+                  "ID": "875cb1d97b814054aae50873112e8d35"
+                },
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "ユーザー",
+                  "TableValue": {
+                    "TableName": "m_user",
+                    "BindingInfos": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "m_user",
+                          "ColumnName": "user_id"
+                        },
+                        "ColumnName": "ユーザーID"
+                      }
+                    ],
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                      "CompareType": 8,
+                      "ColumnBindingInfo": {
+                        "TableName": "m_user",
+                        "ColumnName": "user_id"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ユーザーIDs"
+                      }
+                    }
+                  },
+                  "ID": "b1ac53e6c5eb4e259616c0710b7ea622"
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=P_対象住宅事業者IDs"
+                          }
+                        },
+                        "value": "%Null%",
+                        "compareType": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                          "ParameterName": "住宅事業者",
+                          "TableValue": {
+                            "TableName": "m_customer",
+                            "BindingInfos": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "m_customer",
+                                  "ColumnName": "customer_id"
+                                },
+                                "ColumnName": "顧客ID"
+                              }
+                            ],
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                              "CompareType": 8,
+                              "ColumnBindingInfo": {
+                                "TableName": "m_customer",
+                                "ColumnName": "customer_id"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=P_対象住宅事業者IDs"
+                              }
+                            }
+                          },
+                          "ID": "a56faef6b14b4a798bedea51b465d830"
+                        },
+                        {
+                          "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                          "LoopInfo": {
+                            "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                            "LoopCount": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=メールタイプ"
+                            },
+                            "LoopItemParamName": "Item_メールタイプ"
+                          },
+                          "CommandList": [
+                            {
+                              "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                              "LoopInfo": {
+                                "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                                "LoopCount": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=ユーザー"
+                                },
+                                "LoopItemParamName": "Item_ユーザー"
+                              },
+                              "CommandList": [
+                                {
+                                  "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                                  "LoopInfo": {
+                                    "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                                    "LoopCount": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=住宅事業者"
+                                    },
+                                    "LoopItemParamName": "Item_住宅事業者"
+                                  },
+                                  "CommandList": [
+                                    {
+                                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                      "ParameterName": "登録済み件数",
+                                      "TableValue": {
+                                        "TableName": "m_customer_mail",
+                                        "TableValueType": 3,
+                                        "SqlCondition": {
+                                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                          "Condition1": {
+                                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                            "Condition1": {
+                                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                              "Condition1": {
+                                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                "Condition1": {
+                                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                  "ColumnBindingInfo": {
+                                                    "TableName": "m_customer_mail",
+                                                    "ColumnName": "customer_id"
+                                                  },
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=P_顧客ID"
+                                                  }
+                                                },
+                                                "Condition2": {
+                                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                  "ColumnBindingInfo": {
+                                                    "TableName": "m_customer_mail",
+                                                    "ColumnName": "send_type"
+                                                  },
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=P_送信区分"
+                                                  }
+                                                }
+                                              },
+                                              "Condition2": {
+                                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                "ColumnBindingInfo": {
+                                                  "TableName": "m_customer_mail",
+                                                  "ColumnName": "mail_type_id"
+                                                },
+                                                "Value": {
+                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                  "SerializeProperty": "=Item_メールタイプ.メールタイプID"
+                                                }
+                                              }
+                                            },
+                                            "Condition2": {
+                                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                              "ColumnBindingInfo": {
+                                                "TableName": "m_customer_mail",
+                                                "ColumnName": "user_id"
+                                              },
+                                              "Value": {
+                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                "SerializeProperty": "=Item_ユーザー.ユーザーID"
+                                              }
+                                            }
+                                          },
+                                          "Condition2": {
+                                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                            "ColumnBindingInfo": {
+                                              "TableName": "m_customer_mail",
+                                              "ColumnName": "builder_id"
+                                            },
+                                            "Value": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=Item_住宅事業者.顧客ID"
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "ID": "53c638a86cd4403381c126cbdc32f669"
+                                    },
+                                    {
+                                      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                      "ConditionAndCommandPairList": [
+                                        {
+                                          "Condition": {
+                                            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                            "param": {
+                                              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                                              "ParamObject": {
+                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                "SerializeProperty": "=登録済み件数"
+                                              }
+                                            },
+                                            "value": "0"
+                                          },
+                                          "CommandList": [
+                                            {
+                                              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                              "TableName": "m_customer_mail",
+                                              "UpdateType": "add",
+                                              "ShowConfirm": false,
+                                              "ConfirmText": "本当に追加してもよろしいですか？",
+                                              "UpdateValues": [
+                                                {
+                                                  "ColumnName": "customer_id",
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=P_顧客ID"
+                                                  }
+                                                },
+                                                {
+                                                  "ColumnName": "send_type",
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=P_送信区分"
+                                                  }
+                                                },
+                                                {
+                                                  "ColumnName": "mail_type_id",
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=Item_メールタイプ.メールタイプID"
+                                                  }
+                                                },
+                                                {
+                                                  "ColumnName": "user_id",
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=Item_ユーザー.ユーザーID"
+                                                  }
+                                                },
+                                                {
+                                                  "ColumnName": "builder_id",
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=Item_住宅事業者.顧客ID"
+                                                  }
+                                                },
+                                                {
+                                                  "ColumnName": "last_updated_label",
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=最終更新ラベル"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ],
+                                          "ID": "7f909f00-d7df-4be2-92d6-2ddf58d4c728"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "813e8d9b-b525-4a69-b58d-bc5a0e52f737"
+                    },
+                    {
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                          "LoopInfo": {
+                            "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                            "LoopCount": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=メールタイプ"
+                            },
+                            "LoopItemParamName": "Item_メールタイプ"
+                          },
+                          "CommandList": [
+                            {
+                              "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                              "LoopInfo": {
+                                "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                                "LoopCount": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=ユーザー"
+                                },
+                                "LoopItemParamName": "Item_ユーザー"
+                              },
+                              "CommandList": [
+                                {
+                                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                  "ParameterName": "登録済み件数",
+                                  "TableValue": {
+                                    "TableName": "m_customer_mail",
+                                    "TableValueType": 3,
+                                    "SqlCondition": {
+                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                      "Condition1": {
+                                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                        "Condition1": {
+                                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                          "Condition1": {
+                                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                            "Condition1": {
+                                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                              "ColumnBindingInfo": {
+                                                "TableName": "m_customer_mail",
+                                                "ColumnName": "customer_id"
+                                              },
+                                              "Value": {
+                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                "SerializeProperty": "=P_顧客ID"
+                                              }
+                                            },
+                                            "Condition2": {
+                                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                              "ColumnBindingInfo": {
+                                                "TableName": "m_customer_mail",
+                                                "ColumnName": "send_type"
+                                              },
+                                              "Value": {
+                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                "SerializeProperty": "=P_送信区分"
+                                              }
+                                            }
+                                          },
+                                          "Condition2": {
+                                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                            "ColumnBindingInfo": {
+                                              "TableName": "m_customer_mail",
+                                              "ColumnName": "mail_type_id"
+                                            },
+                                            "Value": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=Item_メールタイプ.メールタイプID"
+                                            }
+                                          }
+                                        },
+                                        "Condition2": {
+                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                          "ColumnBindingInfo": {
+                                            "TableName": "m_customer_mail",
+                                            "ColumnName": "user_id"
+                                          },
+                                          "Value": {
+                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                            "SerializeProperty": "=Item_ユーザー.ユーザーID"
+                                          }
+                                        }
+                                      },
+                                      "Condition2": {
+                                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                        "ColumnBindingInfo": {
+                                          "TableName": "m_customer_mail",
+                                          "ColumnName": "builder_id"
+                                        },
+                                        "Value": "%Null%"
+                                      }
+                                    }
+                                  },
+                                  "ID": "06d52d663bfe4e2ca239aa6751d69f6e"
+                                },
+                                {
+                                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                  "ConditionAndCommandPairList": [
+                                    {
+                                      "Condition": {
+                                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                        "param": {
+                                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                                          "ParamObject": {
+                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                            "SerializeProperty": "=登録済み件数"
+                                          }
+                                        },
+                                        "value": "0"
+                                      },
+                                      "CommandList": [
+                                        {
+                                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                          "TableName": "m_customer_mail",
+                                          "UpdateType": "add",
+                                          "ShowConfirm": false,
+                                          "ConfirmText": "本当に追加してもよろしいですか？",
+                                          "UpdateValues": [
+                                            {
+                                              "ColumnName": "send_type",
+                                              "Value": {
+                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                "SerializeProperty": "=P_送信区分"
+                                              }
+                                            },
+                                            {
+                                              "ColumnName": "customer_id",
+                                              "Value": {
+                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                "SerializeProperty": "=P_顧客ID"
+                                              }
+                                            },
+                                            {
+                                              "ColumnName": "mail_type_id",
+                                              "Value": {
+                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                "SerializeProperty": "=Item_メールタイプ.メールタイプID"
+                                              }
+                                            },
+                                            {
+                                              "ColumnName": "user_id",
+                                              "Value": {
+                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                "SerializeProperty": "=Item_ユーザー.ユーザーID"
+                                              }
+                                            },
+                                            {
+                                              "ColumnName": "last_updated_label",
+                                              "Value": {
+                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                "SerializeProperty": "=最終更新ラベル"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "ID": "cf97fd73-784a-4cbd-a012-9d68f81e35bc"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "50174288-14bf-46a3-8723-f003c072b664"
+                    }
+                  ]
+                }
+              ],
+              "ID": "5c866cc9-3442-44b0-b2e5-907edec25395"
+            },
+            {
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "m_customer_mail",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に更新してもよろしいですか？",
+                  "RowsToUpdate": 1,
+                  "RowsToUpdateCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "m_customer_mail",
+                      "ColumnName": "customer_mail_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_顧客メールID"
+                    }
+                  },
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "send_type",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_送信区分"
+                      }
+                    },
+                    {
+                      "ColumnName": "last_updated_label",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=最終更新ラベル"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "ID": "0e2ad9a1-99f2-4139-b7a8-a2e0d0e41a0c"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Name": "顧客メール設定更新処理"
+}

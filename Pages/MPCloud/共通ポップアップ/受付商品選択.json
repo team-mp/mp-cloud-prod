@@ -1,0 +1,553 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 16,
+    "DefaultSize": 31.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "Count": 48
+  },
+  "Values": {
+    "1,3": "商品名",
+    "1,20": "商品区分",
+    "1,30": "金額",
+    "2,36": "▼受付商品ビュー",
+    "2,42": "▼住宅事業者ID",
+    "4,36": 0,
+    "4,42": "▼グループID",
+    "6,42": "▼申込タイプID",
+    "8,36": "▼商品ID",
+    "8,42": "▼商品注釈",
+    "10,36": "▼商品名",
+    "10,42": "▼単位",
+    "12,42": "▼金額",
+    "13,36": "▼選択カウント",
+    "14,27": "選択する"
+  },
+  "Formulas": {
+    "4,36": "IF(商品ID=AL5,1,0)",
+    "14,36": "COUNTIF(AK5,1)"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "受付商品ビュー",
+        "TemplatePageName": "7f0ad4ed2c9b4bddb46692980c0f869",
+        "Command": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [],
+          "ParamProperties": {
+            "商品ID": "商品ID",
+            "商品名": "商品名"
+          }
+        },
+        "TemplateKey": "スタイル1"
+      }
+    },
+    "3,36": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "v_customer_order_standard",
+        "RowIndex": 3,
+        "ColumnIndex": 36,
+        "ColumnCount": 5,
+        "RowCount": 4,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "受付商品ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "v_customer_order_standard",
+                "ColumnName": "顧客ID"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=受付商品選択!住宅事業者ID"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "v_customer_order_standard",
+                "ColumnName": "グループID"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=受付商品選択!グループID"
+              }
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "v_customer_order_standard",
+              "ColumnName": "申込タイプID"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=受付商品選択!申込タイプID"
+            }
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "v_customer_order_standard",
+                "ColumnName": "商品ID",
+                "RelationBinding": {
+                  "RelatedTable": "m_product",
+                  "RelatedColumn": "product_id",
+                  "DisplayColumn": "product_type_id",
+                  "NextRelationBinding": {
+                    "RelatedTable": "m_product_type",
+                    "RelatedColumn": "product_type_id",
+                    "DisplayColumn": "sort_no"
+                  }
+                }
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "v_customer_order_standard",
+                "ColumnName": "商品ID"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "4,36": {
+      "NameUsedInJavaScript": "選択フラグ"
+    },
+    "4,37": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_standard",
+        "ColumnName": "商品ID"
+      },
+      "NameUsedInJavaScript": "商品ID"
+    },
+    "4,38": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_standard",
+        "ColumnName": "商品名"
+      },
+      "NameUsedInJavaScript": "商品名"
+    },
+    "4,39": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_standard",
+        "ColumnName": "商品ID",
+        "RelationBinding": {
+          "RelatedTable": "m_product",
+          "RelatedColumn": "product_id",
+          "DisplayColumn": "product_type_id",
+          "NextRelationBinding": {
+            "RelatedTable": "m_product_type",
+            "RelatedColumn": "product_type_id",
+            "DisplayColumn": "product_type_name"
+          }
+        }
+      },
+      "NameUsedInJavaScript": "商品区分名"
+    },
+    "4,40": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_standard",
+        "ColumnName": "販売単価"
+      },
+      "NameUsedInJavaScript": "販売単価"
+    },
+    "9,42": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_standard",
+        "ColumnName": "商品注釈"
+      }
+    },
+    "11,42": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_standard",
+        "ColumnName": "商品ID",
+        "RelationBinding": {
+          "RelatedTable": "m_product",
+          "RelatedColumn": "product_id",
+          "DisplayColumn": "quantity_unit"
+        }
+      }
+    },
+    "13,42": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_standard",
+        "ColumnName": "販売単価"
+      }
+    },
+    "14,27": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=受付商品選択!$AK$15=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "BorderBottom": 0
+      },
+      {
+        "Background": 0,
+        "FontSize": 13.333333333333332,
+        "TextIndent": 4,
+        "BorderBottom": 0
+      },
+      {
+        "Background": 0,
+        "FontSize": 12.0,
+        "BorderBottom": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 2,
+        "FontSize": 14.666666666666666,
+        "TextIndent": 4,
+        "BorderBottom": 0
+      },
+      {
+        "Background": 0,
+        "FontSize": 14.666666666666666,
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "Background": 5,
+        "FontFamily": 2,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 5,
+        "FontFamily": 2
+      },
+      {
+        "Background": 6
+      },
+      {
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -5",
+        "Background 1 -15",
+        "Body",
+        "Center",
+        "[AUTO]General",
+        "#FFFFC000",
+        "#FFFFFF00"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,3": 1,
+      "1,4": 0,
+      "1,5": 0,
+      "1,6": 0,
+      "1,7": 0,
+      "1,8": 0,
+      "1,9": 0,
+      "1,10": 0,
+      "1,11": 0,
+      "1,12": 0,
+      "1,13": 0,
+      "1,14": 0,
+      "1,15": 0,
+      "1,16": 0,
+      "1,17": 0,
+      "1,18": 0,
+      "1,19": 2,
+      "1,20": 3,
+      "1,21": 0,
+      "1,22": 0,
+      "1,23": 0,
+      "1,24": 0,
+      "1,25": 0,
+      "1,26": 0,
+      "1,27": 0,
+      "1,28": 0,
+      "1,29": 0,
+      "1,30": 4,
+      "1,31": 0,
+      "2,2": 5,
+      "2,42": 6,
+      "2,43": 7,
+      "2,44": 7,
+      "3,36": 7,
+      "3,37": 7,
+      "3,38": 7,
+      "3,42": 8,
+      "3,43": 9,
+      "3,44": 9,
+      "4,36": 7,
+      "4,37": 7,
+      "4,38": 7,
+      "4,42": 6,
+      "4,43": 7,
+      "4,44": 7,
+      "5,42": 10,
+      "5,43": 7,
+      "5,44": 7,
+      "6,42": 6,
+      "6,43": 7,
+      "6,44": 7,
+      "7,42": 10,
+      "7,43": 7,
+      "7,44": 7,
+      "8,36": 6,
+      "8,37": 7,
+      "8,38": 7,
+      "8,42": 6,
+      "8,43": 7,
+      "8,44": 7,
+      "9,36": 10,
+      "9,42": 10,
+      "10,36": 6,
+      "10,37": 7,
+      "10,38": 7,
+      "10,42": 7,
+      "10,43": 7,
+      "10,44": 7,
+      "11,36": 10,
+      "11,42": 10,
+      "11,43": 7,
+      "11,44": 7,
+      "12,42": 7,
+      "12,43": 7,
+      "12,44": 7,
+      "13,42": 10,
+      "13,43": 7,
+      "13,44": 7,
+      "14,27": 9,
+      "14,36": 11
+    },
+    "RowStyles": {
+      "14": 12
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "2,2,11,30",
+    "14,27,1,5",
+    "14,36,1,3",
+    "9,36,1,3",
+    "11,36,1,3",
+    "5,42,1,3",
+    "7,42,1,3",
+    "3,42,1,3",
+    "11,42,1,3",
+    "13,42,1,3",
+    "9,42,1,3",
+    "5,36,2,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "v_customer_order_standard"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "商品ID",
+      "Formula": "受付商品選択!$AK$10"
+    },
+    {
+      "Name": "商品名",
+      "Formula": "受付商品選択!$AK$12"
+    },
+    {
+      "Name": "単位",
+      "Formula": "受付商品選択!$AQ$12"
+    },
+    {
+      "Name": "金額",
+      "Formula": "受付商品選択!$AQ$14"
+    },
+    {
+      "Name": "住宅事業者ID",
+      "Formula": "受付商品選択!$AQ$4"
+    },
+    {
+      "Name": "グループID",
+      "Formula": "受付商品選択!$AQ$6"
+    },
+    {
+      "Name": "申込タイプID",
+      "Formula": "受付商品選択!$AQ$8"
+    },
+    {
+      "Name": "商品注釈",
+      "Formula": "受付商品選択!$AQ$10"
+    }
+  ]
+}//5MoH3dGDxKFnHIPmkogxJ33BoS1TQBQzwMopbUbD8DJ6z5Cy9fsu89u0GXrNVPKr/OvCCSqYhaeBIPbIEujzETq3H8XPKMoq3B+tx2r23TzDrtpayrhwurtl8ygdIWIr8UB/V51Q0Hh3RVMLj5ub/7FUcVCPJqe4pb8w+NJGdv68JHtMzoqmmPBb9gVh5TZbR118CA32akLCkfeGpl39kloIPnhTo9wFhUxPm/ADWDvMq+NQsXG7MJOfXRMiJ4HuZfA5jqcjRPNCLN4LP4HRjFBw5uziZtiLpMXkauKkUmMnl6fh/MvbjSFll4yIIGqzTET0DQaWItjYxecOPicLd6hrNNPyqraluMAh9g1fkBaglNa3oqishNQAfh/IOWfLyf7VxlRaxm6+XyhkiXB1ryyh3TIPF1f/ZHLvt/bSdx2YV6h7D1/lojKbnPCt8jrze3SteYSpoes41Pmmt0EI21eAb9eZ0sVbvI87Mal7b8CXvIfk3YCQcls0TFG/S0hCez/4/HGnrS+AQZlbcUgB88LG2wvKGX31XBQMRS5E74JFvgzmtiRE0/Pju9wB/eMEMQd2KPuu7Hyb0nB2NV3qCq4aiPooZ4NVF4v1zAng+0edxkHfFbkPcliJN2n0OlErZfQV08MGZJ3YD+XBrzjqPuj3g5RV8StTgktKOWgd6mRlVoMPZkKvUyOaANMngp/FHBB7+y5g6jRJGtIzBGpFkoRy4VMp6+qtYrLGSDYHIr6Ssl+ML6mOsMMNDT6ou6A1njd0uNQOc4tKyQuN78dhZm/KlggB5TjbK+kL9q9QPakRMixeMG4AvaMPT60aIRg0+iIASob+Pq75fU9k3ERuaeAtv4tinvDXuuYQQUvexMN0zdG2JYMO2k9UtafR4/2magC+5nYgqU/2d2B765oYdQ==|920

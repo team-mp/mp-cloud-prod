@@ -1,0 +1,395 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 15,
+    "DefaultSize": 31.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "Count": 40
+  },
+  "Values": {
+    "0,2": "以下より解析結果を選択してください",
+    "5,34": "▼有効フラグ",
+    "6,34": 1,
+    "7,34": "▼解析結果ID",
+    "9,34": "▼解析結果表示",
+    "11,34": "▼解析結果内容",
+    "13,25": "選択する",
+    "13,34": "▼選択カウント"
+  },
+  "Formulas": {
+    "14,34": "COUNTIF(AI3,1)",
+    "2,34": "IF(解析結果ID=AJ3,1,0)"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "解析結果ビュー",
+        "TemplatePageName": "8fccebffded04b9093baec02bd775f8",
+        "Command": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [
+            {
+              "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+              "PageName": "地形条件選択",
+              "PassValues": []
+            }
+          ],
+          "ParamProperties": {
+            "選択フラグ": "選択フラグ",
+            "調査方法ID": "調査方法ID",
+            "調査方法名": "調査方法名"
+          }
+        },
+        "TemplateKey": "スタイル1"
+      }
+    },
+    "1,34": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_analysis_result",
+        "RowIndex": 1,
+        "ColumnIndex": 34,
+        "ColumnCount": 4,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "解析結果ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "m_analysis_result",
+            "ColumnName": "active_flg"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=解析結果選択!AI7"
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_analysis_result",
+                "ColumnName": "sort_no"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "2,34": {
+      "NameUsedInJavaScript": "選択フラグ"
+    },
+    "2,35": {
+      "BindingInfo": {
+        "TableName": "m_analysis_result",
+        "ColumnName": "analysis_result_id"
+      },
+      "NameUsedInJavaScript": "解析結果ID"
+    },
+    "2,36": {
+      "BindingInfo": {
+        "TableName": "m_analysis_result",
+        "ColumnName": "analysis_result_dsiplay"
+      },
+      "NameUsedInJavaScript": "解析結果表示"
+    },
+    "2,37": {
+      "BindingInfo": {
+        "TableName": "m_analysis_result",
+        "ColumnName": "analysis_result_content"
+      },
+      "NameUsedInJavaScript": "解析結果内容"
+    },
+    "13,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=解析結果選択!$AI$15=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 4
+      },
+      {
+        "Background": 5,
+        "FontFamily": 3,
+        "Formatter": 4
+      },
+      {
+        "Background": 6,
+        "FontFamily": 3
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 7,
+        "FontFamily": 3,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 1 50",
+        "Background 1 -15",
+        "Center",
+        "Body",
+        "[AUTO]General",
+        "Accent 6 80",
+        "#FFFFC000",
+        "#FFFFFF00"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 1,
+      "0,20": 1,
+      "0,21": 1,
+      "0,22": 1,
+      "0,23": 1,
+      "0,24": 1,
+      "0,25": 1,
+      "0,26": 1,
+      "0,27": 1,
+      "0,28": 1,
+      "0,29": 1,
+      "1,2": 2,
+      "1,35": 3,
+      "1,36": 3,
+      "2,35": 3,
+      "2,36": 3,
+      "5,34": 4,
+      "5,35": 3,
+      "5,36": 3,
+      "6,34": 5,
+      "6,35": 3,
+      "6,36": 3,
+      "7,34": 4,
+      "7,35": 3,
+      "7,36": 3,
+      "8,34": 6,
+      "9,34": 4,
+      "9,35": 3,
+      "9,36": 3,
+      "10,34": 6,
+      "10,35": 3,
+      "10,36": 3,
+      "11,34": 4,
+      "11,35": 3,
+      "11,36": 3,
+      "12,34": 6,
+      "12,35": 3,
+      "12,36": 3,
+      "13,25": 7,
+      "13,26": 7,
+      "13,27": 7,
+      "13,28": 7,
+      "13,29": 7,
+      "13,34": 3,
+      "13,35": 3,
+      "13,36": 3,
+      "14,34": 8,
+      "14,35": 7,
+      "14,36": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "8,34,1,3",
+    "1,2,11,28",
+    "13,25,1,5",
+    "6,34,1,3",
+    "3,34,1,4",
+    "14,34,1,3",
+    "12,34,1,3",
+    "10,34,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_analysis_result"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "解析結果ID",
+      "Formula": "解析結果選択!$AI$9"
+    },
+    {
+      "Name": "解析結果内容",
+      "Formula": "解析結果選択!$AI$13"
+    },
+    {
+      "Name": "解析結果表示",
+      "Formula": "解析結果選択!$AI$11"
+    }
+  ]
+}//z2KU5tZNaBiiGiylbLV/uVKuQzycK6PQ0Bg0gO+U23CypFKxbYMn7biHox5WLqE+1pJBOJGAopIwlZkp7OqAllIh64nuxUt7RnrEi9Isv0o4+k6HkIOl2/x7NSStvi1nDt7DTnj2xSiieSjG//KZ+Vp7lzsaY85NbQGN3Eng3sxPuPP0C788vJqgPPMqDPSzOOLcE65OoC9BxjYx24rizOHDR2EwDpKhaPQM6nzT7RYuXLS/0EMEk0AHEmcfTEDMa1Du1vAE+J3UkS50FGalyKMJkT2Ad/irFY+JocTcZ7kNsXF/pLHl7KYZfHGKoACbpu3+kjjUvtsGUIOHY8d0wt+uXvoQOj/3E7Zr0h/IiMA2xZ9mQDS4y0UL33/vIg00gZOdvE8lf3gMekoYLZCLyQcyWd28lP7ezJ1JOdrG8Hk+7Q6UNtii979ANXRgZ5dQ7/N+VRIBtp4F68Jns/mOzNeOwXl/2Cv1aJmyMmLOz+ydq17TMlC9DExqYNsLCpGCi/cs0XKE5B5E0+b3Rx5a90HkO51+3FGhtr+Wa5t+DEut8KL6aWQ9yiVrmW63VNN0SJDA9gzHIz3mG7Ay8U+7QPOJfPBqasDGbOC1d8c57iovC2+cIHi9ohXVrKcuNbaqw+WOM84WrHkpBhyEwJTcUEkIZ3uTDKHJ89Pfz0AfRX2BzxQ2ih5G6JMLZGDLh34wdQkNvSgw+9HHA2NP2+yW/KCjOvofLZNTY+rBFloC+X01X/NcFp7F92ALUpGPvEJelJORofjU49R/ES/gKsWS9A0ZAuPsboB51UF6qoNLN65gaUL/CiUOxbKX2X4BEt9fMoctVA61NtruiATxwdWAaSDiPEKbFBWsHlpZgeP0A7c+6UAekjo+89jtzcpgFkpG+0U/Fxrr9O0hBvrVu1It/A==|920

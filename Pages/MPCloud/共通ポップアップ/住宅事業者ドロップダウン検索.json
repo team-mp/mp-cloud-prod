@@ -1,0 +1,421 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      }
+    },
+    "Count": 12,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56
+    ],
+    "Count": 57
+  },
+  "Values": {
+    "0,0": "住宅事業者名",
+    "0,30": "注釈",
+    "0,46": "▼グループID",
+    "0,51": "▼検索グループ",
+    "3,46": "▼顧客名",
+    "6,46": "▼顧客ID",
+    "9,46": "▼選択フラグ"
+  },
+  "Formulas": {
+    "1,51": "IF(A12,\"\",グループID)"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_customer",
+        "ColumnCount": 45,
+        "RowCount": 11,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "m_customer",
+                  "ColumnName": "builder_flg"
+                },
+                "Value": "1"
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "m_customer",
+                  "ColumnName": "active_flg"
+                },
+                "Value": "1"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "m_customer",
+                "ColumnName": "customer_name"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=住宅事業者ドロップダウン検索!顧客名"
+              }
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+            "CompareType": 6,
+            "ColumnBindingInfo": {
+              "TableName": "m_customer",
+              "ColumnName": "customer_id",
+              "RelationBinding": {
+                "RelatedTable": "m_customer_group",
+                "RelatedColumn": "customer_id",
+                "DisplayColumn": "group_id"
+              }
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=住宅事業者ドロップダウン検索!AZ2"
+            }
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_customer",
+                "ColumnName": "customer_name"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "シンプル"
+      }
+    },
+    "1,0": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=住宅事業者ドロップダウン検索!AU11"
+                },
+                "Value": "1"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "m_customer",
+        "ColumnName": "customer_name"
+      }
+    },
+    "1,16": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=住宅事業者ドロップダウン検索!AU11"
+                },
+                "Value": "1"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "m_customer",
+        "ColumnName": "住所"
+      }
+    },
+    "1,30": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "m_customer",
+        "ColumnName": "customer_notice"
+      }
+    },
+    "1,41": {
+      "BindingInfo": {
+        "TableName": "m_customer",
+        "ColumnName": "customer_id"
+      }
+    },
+    "10,46": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=住宅事業者ドロップダウン検索!顧客ID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=住宅事業者ドロップダウン検索!AP2"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=住宅事業者ドロップダウン検索!顧客名"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=住宅事業者ドロップダウン検索!A2"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ]
+      }
+    },
+    "11,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "対象グループ以外も含めて検索する",
+        "Style": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 0,
+        "TextIndent": 4,
+        "Underline": false
+      },
+      {
+        "Background": 1
+      },
+      {
+        "Background": 2
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "Background": 1,
+        "FontFamily": 3
+      },
+      {
+        "Background": 5,
+        "FontFamily": 3,
+        "Formatter": 6
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 7
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF000000",
+        "#FFFFC000",
+        "Background 1 -15",
+        "Body",
+        "[AUTO]General",
+        "Accent 1 60",
+        "@",
+        "Left"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,16": 0,
+      "0,30": 0,
+      "0,41": 0,
+      "1,0": 1,
+      "1,16": 1,
+      "1,30": 1,
+      "1,41": 0,
+      "1,46": 2,
+      "1,51": 3,
+      "3,46": 4,
+      "3,47": 5,
+      "3,48": 5,
+      "4,46": 6,
+      "4,47": 5,
+      "4,48": 5,
+      "5,46": 5,
+      "5,47": 5,
+      "5,48": 5,
+      "6,46": 5,
+      "6,47": 5,
+      "6,48": 5,
+      "7,46": 2,
+      "9,46": 4,
+      "9,47": 5,
+      "9,48": 5,
+      "10,46": 7,
+      "10,47": 5,
+      "10,48": 5,
+      "11,0": 8
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "1,41,1,4",
+    "1,0,1,16",
+    "1,16,1,14",
+    "1,30,1,11",
+    "4,46,1,3",
+    "1,46,1,3",
+    "10,46,1,3",
+    "7,46,1,3",
+    "2,0,9,45",
+    "1,51,1,3",
+    "11,0,1,12",
+    "0,0,1,16",
+    "0,16,1,14",
+    "0,30,1,11",
+    "0,41,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_customer"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "グループID",
+      "Formula": "住宅事業者ドロップダウン検索!$AU$2"
+    },
+    {
+      "Name": "顧客ID",
+      "Formula": "住宅事業者ドロップダウン検索!$AU$8"
+    },
+    {
+      "Name": "顧客名",
+      "Formula": "住宅事業者ドロップダウン検索!$AU$5"
+    }
+  ]
+}//L2Es5vG9PIVqlVmB7BUXVgWl4vlrUY9SNsNkAgx39cLQQt2omF15eYEyVJgQUAWRbvzgB00doFkSZu0RDyNlGg41ISgKu1BKC0vX+etyay9e5Br6y44GjKQARUYihmux5M98Mh7J+kGt1g8suxDoKZzMxTzE+dPl95rkMqnsM9aJBkvWhl5rfsgX/CiXBezB/Lzosf2ATEn/wifWU8GuNuSd/i+rPG+KC0RETPZtTjRSYCLADTM0NLkChfZcEKFLcDywXOMYpdmzcK0YxDq91xHmSab/lSBNzIkUDosBhU5T/Efg14DEiH5Iwp1mguB4wEKNP37KTGvaFQuFAN/K2FWjnodtcvEoW5zKZbTEM8oWvEYHI9k6RydM/l8d2FyhMrLJeEprpVQOztJ7BDFk1STu087DxjevIOQXif9JPgTMu1pFf32od78yZWe63DmkSJiubS8eZ44LzfB0cjIAkUMpfKeVp/yw0pUKrTesiFo2StFJeTYagQo7RK4OoejrFTvcIVCzTEnFN278maAiRF9SU403c6uFX2cY5dNmM0wHZ+ehTYDdwc/cn0Jlzcp0OG1J1WrGhwqy0tJpsKAVao5CJG3ziXOGNfWmFE31lPBvDFrD2iyGsruak2GON7n6tZobymVMN3NtT1uuCq1KqNk0asHBmVMP+uVhdD7C2+rgb/YEqZlaqOgQJjRoJzAlsaXLNt61R9j6jhkszV3O19c4nrh5bZnD3slMRY7KS+Fj4HMfMg/Cfsg/tkgHleQEAeyjoSfLAARR/MnKFcGGgGE7f2pav+ymb8qQzFQ9ANBMqy4iJzch5uFGQEdJd3aIoShjmC+66YwpVthveH9+9p2vh5jqN/bCLoT2DhwNmdQGPRqDL+ZtU/WqEJDI1u2Y61iZOgdDm8agFBbCbqnWGg==|920

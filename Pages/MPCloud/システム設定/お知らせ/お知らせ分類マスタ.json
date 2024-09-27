@@ -1,0 +1,400 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 21,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 360.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "Count": 11
+  },
+  "Values": {
+    "1,3": "▼編集リセットフラグ",
+    "2,3": "0",
+    "4,3": "▼編集確定フラグ",
+    "5,3": "0"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ListViewInfo": {
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_notice_type",
+        "ColumnCount": 2,
+        "RowCount": 20,
+        "IsRowHeaderVisible": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "UseSimpleBar": true,
+        "Name": "お知らせ分類ビュー",
+        "TopCondition": null,
+        "CommitType": 1,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "1,1": {
+      "BindingInfo": {
+        "TableName": "m_notice_type",
+        "ColumnName": "notice_type_name"
+      }
+    },
+    "2,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 6,
+            "ListviewName": "お知らせ分類ビュー",
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              },
+              "RetrunParamNames": {}
+            }
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=お知らせ分類マスタ!編集リセットフラグ"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "1163bbdf-62b1-43af-9906-e63bfc780ec3",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+                  }
+                },
+                "Value": "編集をリセットしました"
+              }
+            ],
+            "ReturnPropertiesTo": []
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    },
+    "5,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "お知らせ分類ビュー"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=お知らせ分類マスタ!編集確定フラグ"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "1163bbdf-62b1-43af-9906-e63bfc780ec3",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+                  }
+                },
+                "Value": "編集内容を確定しました"
+              }
+            ],
+            "ReturnPropertiesTo": []
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0
+      },
+      {
+        "Background": 0,
+        "Foreground": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 5,
+        "TextIndent": 4,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 5
+      },
+      {
+        "Background": 6,
+        "FontFamily": 5,
+        "FontSize": 14.666666666666666,
+        "Formatter": 7,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 5,
+        "Formatter": 9
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -5",
+        "#FF000000",
+        "General",
+        "Center",
+        "Background 1 0",
+        "Body",
+        "Accent 1 80",
+        "@",
+        "Right",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "1,0": 1,
+      "1,1": 2,
+      "1,3": 3,
+      "1,4": 3,
+      "1,5": 3,
+      "2,3": 4,
+      "2,4": 3,
+      "2,5": 3,
+      "3,3": 3,
+      "3,4": 3,
+      "3,5": 3,
+      "4,3": 5,
+      "4,4": 3,
+      "4,5": 3,
+      "5,3": 4,
+      "5,4": 3,
+      "5,5": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 5
+    }
+  },
+  "Spans": [
+    "2,3,1,3",
+    "5,3,1,3",
+    "2,0,18,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_notice_type",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "編集リセットフラグ",
+      "Formula": "お知らせ分類マスタ!$D$3"
+    },
+    {
+      "Name": "編集確定フラグ",
+      "Formula": "お知らせ分類マスタ!$D$6"
+    }
+  ]
+}//IEhdB/r9OqIRgykQhbZxUOASj2i17qF1ZxIZfLimajf8vJi8pw+jsY0dwih+Auw8PGz/Goejr/nxi7FqB2t2LEuBOLdZ5VY41+5zPuqcOFupFgS/4qKWaxsHtAlziPFRILvaXorMFvK6UEE2lOPhRexii7y09qOR+KqEdSDEAf4yOYxW3h03GjWTOq91Aspp8DOeVqGttf60SoUgWb76T+rLWBZJh5fgnEiPGmFpQLvkp5+gPNIGmHZG3eEM5B+SfyxYDBBG0988tMVybxYNv5I/GBByRcnusUkwkCXrWvm8I1Xx+N5iD7l3gGkSYG4ZWBX8Y65naLPVUGx69XDCmGU/J+DCaqS2clMMhh0UXTpeDT2qLT9AczaIR5bKU4kiMFZv6XXs0Ak+oJR8G5jAlOhLb0Il4gyxtA0uPtC4QRATxN5LnVhKOuhIDHxu1mUyh9rzQKA1xIBvz0s0M+Sc1oT202VgiRJPeP2NQr8gPZB6+lUeFo+rja+dJuRKXxTzD/DlznTnhWlYv0L+5+A9jghWR/cnFAmW6S5tt5B3tW1t8ARHE8nBCLMJ3V9vZSoBSGMas6njBz+135lX9yYu0kyrYvEq1o4ZztmIDytBSxIzGAqms7bzVFcCjgiBOeFt9uBupeFkExghpec5APCrFP3xcZOyQph8IepPBjY9p0AmVW71G4FpJ4Z4p49l3ktujELoMBihYv8miW/oopOTkpHE1NTmxC349HHbV4PvGUSCJ64yA7Sj5sfcNeOfXHSjyClpjkfPBEcXHjrOGveQ6FgUGgcNQE+HbQJDy7TrS31TCuZNn1jt8yYUodEsfxfHhRs1baL1FYnNlOpCrVVi/Qcj7wzZbc+sZpuX+h37aQcdJ8uMAKU1llFhl0fMT/iuRBae7QmWBRmVLd/dyReU3Q==|920

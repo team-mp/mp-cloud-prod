@@ -1,0 +1,1293 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_申込ID"
+        },
+        {
+          "Name": "P_外注先ID"
+        },
+        {
+          "Name": "P_商品ID"
+        },
+        {
+          "Name": "R_入力原価"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "申込情報",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 1,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "group_id"
+            },
+            "ColumnName": "申込グループID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "builder_id"
+            },
+            "ColumnName": "住宅事業者ID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_warranty_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_warranty",
+                "RelatedColumn": "warranty_id",
+                "DisplayColumn": "warranty_type_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_warranty_type",
+                  "RelatedColumn": "warranty_type_id",
+                  "DisplayColumn": "warranty_cost_price"
+                }
+              }
+            },
+            "ColumnName": "保証原価"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "t_object_order",
+            "ColumnName": "object_order_id"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=P_申込ID"
+          }
+        }
+      },
+      "ID": "5162aca0c62f4be6baec07c142761095"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "マスタ原価取得フラグ",
+      "ParameterValue": "0",
+      "ID": "3be04f23e817441482a63b15163b9f6d"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "マスタ原価変更フラグ",
+      "ParameterValue": "0",
+      "ID": "65d5dab9b5ba4b94bfbcbfb43773b67d"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "原価変更ユーザーID",
+      "ID": "5530500b5c93468bb14b0d99f44cf590"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "原価変更日時",
+      "ID": "e1ce2c78edd3495daf884ebb8c045684"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "住宅事業者向けカウント",
+      "TableValue": {
+        "TableName": "m_outsourcing_cost",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "m_outsourcing_cost",
+                  "ColumnName": "customer_id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=P_外注先ID"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "m_outsourcing_cost",
+                  "ColumnName": "product_id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=P_商品ID"
+                }
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "m_outsourcing_cost",
+                "ColumnName": "group_id"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=申込情報.申込グループID"
+              }
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_outsourcing_cost",
+              "ColumnName": "builder_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=申込情報.住宅事業者ID"
+            }
+          }
+        }
+      },
+      "ID": "77b06279a14b4121a3ceaeab2b9f3e8e"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "保証計上商品ID",
+      "TableValue": {
+        "TableName": "m_product",
+        "OnlyGetValue": true,
+        "TableValueType": 0,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "m_product",
+              "ColumnName": "product_id"
+            },
+            "ColumnName": "product_id"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "m_product",
+            "ColumnName": "warranty_account_product_flg"
+          },
+          "Value": "1"
+        }
+      },
+      "ID": "631397333a3248d1b4478f1c223a4e49"
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_外注先ID"
+              }
+            },
+            "value": "%Null%"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": "0",
+              "CustomReturns": [
+                {
+                  "ReturnPropertyName": "R_マスタ原価"
+                },
+                {
+                  "ReturnPropertyName": "R_マスタ原価取得フラグ",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスタ原価取得フラグ"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_マスタ原価変更フラグ",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスタ原価変更フラグ"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_原価変更ユーザーID"
+                },
+                {
+                  "ReturnPropertyName": "R_原価変更日時"
+                }
+              ]
+            }
+          ],
+          "Comments": "外注先が無ければここで終了",
+          "ID": "c0b65cd7-d34c-4839-a356-d1472af52869"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_商品ID"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=保証計上商品ID"
+            }
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=申込情報.保証原価"
+                      }
+                    },
+                    "value": "0",
+                    "compareType": 2
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "マスタ原価取得フラグ",
+                      "ParameterValue": "1",
+                      "ID": "c101408d9d774c2786bd0e2d9076a11e"
+                    }
+                  ],
+                  "ID": "48eb8ff1-de2e-4b55-a4fa-96b25bf0c477"
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=R_入力原価"
+                      }
+                    },
+                    "value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=申込情報.保証原価"
+                    },
+                    "compareType": 1
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "マスタ原価変更フラグ",
+                      "ParameterValue": "1",
+                      "ID": "91fb92d65c1143f3bf50498128d3aca5"
+                    },
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "原価変更ユーザーID",
+                      "ParameterValue": "%CurrentUser.user_id%",
+                      "ID": "3c50f837abb641bfbaca74b19347a814"
+                    },
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "原価変更日時",
+                      "ParameterValue": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=NOW()"
+                      },
+                      "ID": "c6f144e0731d44279cde0e17417cd006"
+                    }
+                  ],
+                  "ID": "b80ab654-76e0-41b4-bb39-2fb34b4ab6c6"
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": "0",
+              "CustomReturns": [
+                {
+                  "ReturnPropertyName": "R_マスタ原価",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=申込情報.保証原価"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_マスタ原価取得フラグ",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスタ原価取得フラグ"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_マスタ原価変更フラグ",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスタ原価変更フラグ"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_原価変更ユーザーID",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=原価変更ユーザーID"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_原価変更日時",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=原価変更日時"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "9dd10623-2eb9-413c-ab57-b68eaf8f1a32"
+        }
+      ],
+      "Comments": "保証料原価の場合"
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=住宅事業者向けカウント"
+              }
+            },
+            "value": "0",
+            "compareType": 2
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "住宅事業者向け原価",
+              "TableValue": {
+                "TableName": "m_outsourcing_cost",
+                "OnlyGetValue": true,
+                "TableValueType": 0,
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "m_outsourcing_cost",
+                      "ColumnName": "cost_price"
+                    },
+                    "ColumnName": "cost_price"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "m_outsourcing_cost",
+                          "ColumnName": "customer_id"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=P_外注先ID"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "m_outsourcing_cost",
+                          "ColumnName": "product_id"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=P_商品ID"
+                        }
+                      }
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "m_outsourcing_cost",
+                        "ColumnName": "group_id"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=申込情報.申込グループID"
+                      }
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "m_outsourcing_cost",
+                      "ColumnName": "builder_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=申込情報.住宅事業者ID"
+                    }
+                  }
+                }
+              },
+              "ID": "764bf75d1250451385e830a46cf0de17"
+            },
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=住宅事業者向け原価"
+                      }
+                    },
+                    "value": "0",
+                    "compareType": 2
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "マスタ原価取得フラグ",
+                      "ParameterValue": "1",
+                      "ID": "442e71cd9f3c4617af743befd2921158"
+                    }
+                  ],
+                  "ID": "7f4ad846-0b8e-468b-a1ea-456f8f378b7d"
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=住宅事業者向け原価"
+                      }
+                    },
+                    "value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=R_入力原価"
+                    },
+                    "compareType": 1
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "マスタ原価変更フラグ",
+                      "ParameterValue": "1",
+                      "ID": "9e44fbc7e46f448a9ca374214e68e9af"
+                    },
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "原価変更ユーザーID",
+                      "ParameterValue": "%CurrentUser.user_id%",
+                      "ID": "77365ca790ee49d280563cc733b55166"
+                    },
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "原価変更日時",
+                      "ParameterValue": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=NOW()"
+                      },
+                      "ID": "ba0c7d1dcff44ac0bae3b88dc6063dd2"
+                    }
+                  ],
+                  "ID": "57f4a58a-aee9-45e9-87d7-5c6c6bad3041"
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": "0",
+              "CustomReturns": [
+                {
+                  "ReturnPropertyName": "R_マスタ原価",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=住宅事業者向け原価"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_マスタ原価取得フラグ",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスタ原価取得フラグ"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_マスタ原価変更フラグ",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスタ原価変更フラグ"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_原価変更ユーザーID",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=原価変更ユーザーID"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_原価変更日時",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=原価変更日時"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "66506b65-323f-403f-a54e-24d61d921864"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "グループ向けカウント",
+      "TableValue": {
+        "TableName": "m_outsourcing_cost",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "m_outsourcing_cost",
+                  "ColumnName": "customer_id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=P_外注先ID"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "m_outsourcing_cost",
+                  "ColumnName": "product_id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=P_商品ID"
+                }
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "m_outsourcing_cost",
+                "ColumnName": "group_id"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=申込情報.申込グループID"
+              }
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_outsourcing_cost",
+              "ColumnName": "builder_id"
+            },
+            "Value": "%Null%"
+          }
+        }
+      },
+      "ID": "5acc91703ca843b3beaf21ae95b75963"
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=グループ向けカウント"
+              }
+            },
+            "value": "0",
+            "compareType": 2
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "グループ向け原価",
+              "TableValue": {
+                "TableName": "m_outsourcing_cost",
+                "OnlyGetValue": true,
+                "TableValueType": 0,
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "m_outsourcing_cost",
+                      "ColumnName": "cost_price"
+                    },
+                    "ColumnName": "cost_price"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "m_outsourcing_cost",
+                          "ColumnName": "customer_id"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=P_外注先ID"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "m_outsourcing_cost",
+                          "ColumnName": "product_id"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=P_商品ID"
+                        }
+                      }
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "m_outsourcing_cost",
+                        "ColumnName": "group_id"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=申込情報.申込グループID"
+                      }
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "m_outsourcing_cost",
+                      "ColumnName": "builder_id"
+                    },
+                    "Value": "%Null%"
+                  }
+                }
+              },
+              "ID": "5af8fc11212b40c8bf39541018368543"
+            },
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=グループ向け原価"
+                      }
+                    },
+                    "value": "0",
+                    "compareType": 2
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "マスタ原価取得フラグ",
+                      "ParameterValue": "1",
+                      "ID": "f15dd0b492644b8c8933a54deb537b67"
+                    }
+                  ],
+                  "ID": "562f609b-2a56-45fa-acad-5a65b7c9f00c"
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=グループ向け原価"
+                      }
+                    },
+                    "value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=R_入力原価"
+                    },
+                    "compareType": 1
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "マスタ原価変更フラグ",
+                      "ParameterValue": "1",
+                      "ID": "7068f45b1eb4400a957dde5cdd4d240f"
+                    },
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "原価変更ユーザーID",
+                      "ParameterValue": "%CurrentUser.user_id%",
+                      "ID": "89a82746d75648919bdc7ba7db974df0"
+                    },
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "原価変更日時",
+                      "ParameterValue": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=NOW()"
+                      },
+                      "ID": "77449b8418674499ad30ce3fd4653c50"
+                    }
+                  ],
+                  "ID": "20f9ab23-538c-4e7a-bd69-9a15c3d4fb81"
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": "0",
+              "CustomReturns": [
+                {
+                  "ReturnPropertyName": "R_マスタ原価",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=グループ向け原価"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_マスタ原価取得フラグ",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスタ原価取得フラグ"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_マスタ原価変更フラグ",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスタ原価変更フラグ"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_原価変更ユーザーID",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=原価変更ユーザーID"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_原価変更日時",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=原価変更日時"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "947eaf98-d849-450c-835a-8c11cd9fbed3"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "標準商品カウント",
+      "TableValue": {
+        "TableName": "m_outsourcing_cost",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "m_outsourcing_cost",
+                  "ColumnName": "customer_id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=P_外注先ID"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "m_outsourcing_cost",
+                  "ColumnName": "product_id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=P_商品ID"
+                }
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "m_outsourcing_cost",
+                "ColumnName": "group_id"
+              },
+              "Value": "%Null%"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_outsourcing_cost",
+              "ColumnName": "builder_id"
+            },
+            "Value": "%Null%"
+          }
+        }
+      },
+      "ID": "a530532174c9460cb498e8a36cb8ba62"
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=標準商品カウント"
+              }
+            },
+            "value": "0",
+            "compareType": 2
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "標準原価",
+              "TableValue": {
+                "TableName": "m_outsourcing_cost",
+                "OnlyGetValue": true,
+                "TableValueType": 0,
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "m_outsourcing_cost",
+                      "ColumnName": "cost_price"
+                    },
+                    "ColumnName": "cost_price"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "m_outsourcing_cost",
+                          "ColumnName": "customer_id"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=P_外注先ID"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "m_outsourcing_cost",
+                          "ColumnName": "product_id"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=P_商品ID"
+                        }
+                      }
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "m_outsourcing_cost",
+                        "ColumnName": "group_id"
+                      },
+                      "Value": "%Null%"
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "m_outsourcing_cost",
+                      "ColumnName": "builder_id"
+                    },
+                    "Value": "%Null%"
+                  }
+                }
+              },
+              "ID": "9dcfb7ebcb334a49afa6939eb64389a3"
+            },
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=標準原価"
+                      }
+                    },
+                    "value": "0",
+                    "compareType": 2
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "マスタ原価取得フラグ",
+                      "ParameterValue": "1",
+                      "ID": "9f4f877a5df34e90bdd58cd940586dac"
+                    }
+                  ],
+                  "ID": "fee2a633-6a9a-4af6-be54-3caa94321eef"
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=標準原価"
+                      }
+                    },
+                    "value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=R_入力原価"
+                    },
+                    "compareType": 1
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "マスタ原価変更フラグ",
+                      "ParameterValue": "1",
+                      "ID": "21754bc02f234ca8ab8e7698f5bb39f5"
+                    },
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "原価変更ユーザーID",
+                      "ParameterValue": "%CurrentUser.user_id%",
+                      "ID": "67bc70a3455545fc8d50ad48c150911c"
+                    },
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "原価変更日時",
+                      "ParameterValue": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=NOW()"
+                      },
+                      "ID": "9a103cb925eb4f779031377489a98d08"
+                    }
+                  ],
+                  "ID": "db4b9a42-005d-40bf-98f5-4adfd7df4d5d"
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": "0",
+              "CustomReturns": [
+                {
+                  "ReturnPropertyName": "R_マスタ原価",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=標準原価"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_マスタ原価取得フラグ",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスタ原価取得フラグ"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_マスタ原価変更フラグ",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスタ原価変更フラグ"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_原価変更ユーザーID",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=原価変更ユーザーID"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_原価変更日時",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=原価変更日時"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "25b0be1f-5f95-4db1-aa47-a767b93a9060"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "仕入のみ標準商品カント",
+      "TableValue": {
+        "TableName": "m_product",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_product",
+              "ColumnName": "product_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=P_商品ID"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_product",
+              "ColumnName": "accounting_type"
+            },
+            "Value": "3"
+          }
+        }
+      },
+      "ID": "1552b5ede8324da7bc1de0aa9d7ae5a9"
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=仕入のみ標準商品カント"
+              }
+            },
+            "value": "0",
+            "compareType": 2
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "仕入標準単価",
+              "TableValue": {
+                "TableName": "m_product",
+                "OnlyGetValue": true,
+                "TableValueType": 0,
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "m_product",
+                      "ColumnName": "standard_price"
+                    },
+                    "ColumnName": "standard_price"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "m_product",
+                    "ColumnName": "product_id"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_商品ID"
+                  }
+                }
+              },
+              "ID": "bd6f7ebea07d4290ae210d0d2723f01c"
+            },
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": "0",
+              "CustomReturns": [
+                {
+                  "ReturnPropertyName": "R_マスタ原価",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=仕入標準単価"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_マスタ原価取得フラグ",
+                  "Value": "1"
+                },
+                {
+                  "ReturnPropertyName": "R_マスタ原価変更フラグ",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=マスタ原価変更フラグ"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_原価変更ユーザーID",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=原価変更ユーザーID"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_原価変更日時",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=原価変更日時"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "9940e7cb-1215-4de9-975a-55fb2eaba208"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "ErrorCode": "0",
+      "CustomReturns": [
+        {
+          "ReturnPropertyName": "R_マスタ原価"
+        },
+        {
+          "ReturnPropertyName": "R_マスタ原価取得フラグ",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=マスタ原価取得フラグ"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_マスタ原価変更フラグ",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=マスタ原価変更フラグ"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_原価変更ユーザーID",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=原価変更ユーザーID"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_原価変更日時",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=原価変更日時"
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "R_マスタ原価"
+    },
+    {
+      "Name": "R_マスタ原価取得フラグ"
+    },
+    {
+      "Name": "R_マスタ原価変更フラグ"
+    },
+    {
+      "Name": "R_原価変更ユーザーID"
+    },
+    {
+      "Name": "R_原価変更日時"
+    }
+  ],
+  "Name": "外注原価取得"
+}

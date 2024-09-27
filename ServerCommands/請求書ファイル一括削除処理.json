@@ -1,0 +1,134 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "PrimaryKeys": [
+            "ID"
+          ],
+          "Name": "P_請求番号s"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "請求書番号",
+      "TableValue": {
+        "TableName": "v_billing_no_summary",
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "v_billing_no_summary",
+              "ColumnName": "請求番号"
+            },
+            "ColumnName": "請求番号"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 8,
+          "ColumnBindingInfo": {
+            "TableName": "v_billing_no_summary",
+            "ColumnName": "請求番号"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=P_請求番号s"
+          }
+        }
+      },
+      "ID": "dd63fe43010540f8ae6dfbeca1168851"
+    },
+    {
+      "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+      "LoopInfo": {
+        "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+        "LoopCount": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=請求書番号"
+        },
+        "LoopItemParamName": "Item"
+      },
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "請求書添付情報",
+          "TableValue": {
+            "TableName": "t_invoice_attachment",
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "t_invoice_attachment",
+                  "ColumnName": "invoice_attachment_id"
+                },
+                "ColumnName": "請求書添付ID"
+              }
+            ],
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "t_invoice_attachment",
+                  "ColumnName": "billing_no"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Item.請求番号"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "t_invoice_attachment",
+                  "ColumnName": "active_flg"
+                },
+                "Value": "1"
+              }
+            }
+          },
+          "ID": "b6bc5bd683c247b7825d8d90d0eba575"
+        },
+        {
+          "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+          "LoopInfo": {
+            "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+            "LoopCount": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=請求書添付情報"
+            },
+            "LoopItemParamName": "Item"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+              "ServerCommandName": "請求書ファイル削除処理",
+              "Parameters": [
+                {
+                  "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Item.請求書添付ID"
+                  },
+                  "ParamName": "P_請求書添付ID"
+                }
+              ],
+              "RefreshAfterFinish": true,
+              "CheckDataValidation": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Name": "請求書ファイル一括削除処理"
+}

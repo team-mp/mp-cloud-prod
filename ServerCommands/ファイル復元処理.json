@@ -1,0 +1,443 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_添付IDs"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "添付リスト",
+          "TableValue": {
+            "TableName": "t_object_attachment",
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "t_object_attachment",
+                  "ColumnName": "attachment_id"
+                },
+                "ColumnName": "添付ID"
+              }
+            ],
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 8,
+              "ColumnBindingInfo": {
+                "TableName": "t_object_attachment",
+                "ColumnName": "attachment_id"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_添付IDs"
+              }
+            }
+          },
+          "ID": "31e529a2737842fca0716819072d8c32"
+        },
+        {
+          "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+          "LoopInfo": {
+            "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+            "LoopCount": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=添付リスト"
+            },
+            "LoopItemParamName": "Item"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "DropBoxフォルダパス",
+              "TableValue": {
+                "TableName": "m_environment",
+                "OnlyGetValue": true,
+                "TableValueType": 0,
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "m_environment",
+                      "ColumnName": "dropbox_folder_path"
+                    },
+                    "ColumnName": "dropbox_folder_path"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "m_environment",
+                    "ColumnName": "ID"
+                  },
+                  "Value": "1"
+                }
+              },
+              "ID": "552484ca3cd04411b140d251dc7a1e3a"
+            },
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "保存先サーバーパス名",
+              "ParameterValue": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=DropBoxフォルダパス&\"物件フォルダ\\\""
+              },
+              "ID": "d307079cf59f4cd3916a5752955ea8a5"
+            },
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "添付情報",
+              "TableValue": {
+                "TableName": "t_object_attachment",
+                "TableValueType": 1,
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "t_object_attachment",
+                      "ColumnName": "object_order_id",
+                      "RelationBinding": {
+                        "RelatedTable": "t_object_order",
+                        "RelatedColumn": "object_order_id",
+                        "DisplayColumn": "object_id",
+                        "NextRelationBinding": {
+                          "RelatedTable": "t_object",
+                          "RelatedColumn": "object_id",
+                          "DisplayColumn": "物件番号"
+                        }
+                      }
+                    },
+                    "ColumnName": "物件番号"
+                  },
+                  {
+                    "BindingInfo": {
+                      "TableName": "t_object_attachment",
+                      "ColumnName": "object_order_id",
+                      "RelationBinding": {
+                        "RelatedTable": "t_object_order",
+                        "RelatedColumn": "object_order_id",
+                        "DisplayColumn": "order_date"
+                      }
+                    },
+                    "ColumnName": "申込日"
+                  },
+                  {
+                    "BindingInfo": {
+                      "TableName": "t_object_attachment",
+                      "ColumnName": "file_path_name"
+                    },
+                    "ColumnName": "ファイルパス名"
+                  },
+                  {
+                    "BindingInfo": {
+                      "TableName": "t_object_attachment",
+                      "ColumnName": "save_file_name"
+                    },
+                    "ColumnName": "保存ファイル名"
+                  },
+                  {
+                    "BindingInfo": {
+                      "TableName": "t_object_attachment",
+                      "ColumnName": "object_order_id"
+                    },
+                    "ColumnName": "申込ID"
+                  },
+                  {
+                    "BindingInfo": {
+                      "TableName": "t_object_attachment",
+                      "ColumnName": "object_order_id",
+                      "RelationBinding": {
+                        "RelatedTable": "t_object_order",
+                        "RelatedColumn": "object_order_id",
+                        "DisplayColumn": "object_id"
+                      }
+                    },
+                    "ColumnName": "物件ID"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "t_object_attachment",
+                    "ColumnName": "attachment_id"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Item.添付ID"
+                  }
+                }
+              },
+              "ID": "95110d1e07c949618c8f021b095c4f1f"
+            },
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "年月フォルダ",
+              "ParameterValue": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=TEXT(添付情報.申込日,\"yyyy年mm月\")"
+              },
+              "ID": "df8cdd9664b74c12bad8f4e801bdbb62"
+            },
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "物件フォルダ",
+              "ParameterValue": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=添付情報.物件番号"
+              },
+              "ID": "e54dd3daff264444bc21fd8f6f8f4422"
+            },
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "復元先フォルダ名",
+              "ParameterValue": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=保存先サーバーパス名&年月フォルダ&\"\\\"&物件フォルダ&\"\\\""
+              },
+              "ID": "35a6e5932c7c4778b0b33c3cd0b541b7"
+            },
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "復元ファイルフルパス名",
+              "ParameterValue": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=添付情報.ファイルパス名&添付情報.保存ファイル名"
+              },
+              "ID": "3058b62adf0c40f7a590ac2d2e25c382"
+            },
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "t_object_attachment",
+              "ShowConfirm": false,
+              "ConfirmText": "本当に更新してもよろしいですか？",
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "t_object_attachment",
+                  "ColumnName": "attachment_id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Item.添付ID"
+                }
+              },
+              "UpdateValues": [
+                {
+                  "ColumnName": "file_path_name",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=復元先フォルダ名"
+                  }
+                },
+                {
+                  "ColumnName": "active_flg",
+                  "Value": "1"
+                },
+                {
+                  "ColumnName": "delete_user_id"
+                },
+                {
+                  "ColumnName": "deleted_datetime"
+                }
+              ]
+            },
+            {
+              "$type": "OperateFilesCommand.GetFileInformation, OperateFilesCommand",
+              "FilePath": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=復元ファイルフルパス名"
+              },
+              "FileInfomationType": 5,
+              "ToParameterName": "ファイル有無"
+            },
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=ファイル有無"
+                      }
+                    },
+                    "value": "False"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                      "ErrorCode": "100",
+                      "Message": "対象ファイルが存在しませんでした",
+                      "CustomReturns": []
+                    }
+                  ],
+                  "ID": "046ea499-7f8c-4495-ae70-5e7a69981c08"
+                }
+              ]
+            },
+            {
+              "$type": "OperateFilesCommand.MoveFileCommand, OperateFilesCommand",
+              "FilePath": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=復元ファイルフルパス名"
+              },
+              "TargetFolderPath": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=復元先フォルダ名"
+              }
+            },
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "添付ファイル数",
+              "TableValue": {
+                "TableName": "t_object_attachment",
+                "TableValueType": 3,
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "t_object_attachment",
+                      "ColumnName": "object_order_id",
+                      "RelationBinding": {
+                        "RelatedTable": "t_object_order",
+                        "RelatedColumn": "object_order_id",
+                        "DisplayColumn": "object_id"
+                      }
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=添付情報.物件ID"
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "t_object_attachment",
+                      "ColumnName": "active_flg"
+                    },
+                    "Value": "1"
+                  }
+                }
+              },
+              "ID": "f38d1550471042538f290500a006b70f"
+            },
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "申込事業者添付ファイル数",
+              "TableValue": {
+                "TableName": "t_object_attachment",
+                "TableValueType": 3,
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "t_object_attachment",
+                          "ColumnName": "object_order_id",
+                          "RelationBinding": {
+                            "RelatedTable": "t_object_order",
+                            "RelatedColumn": "object_order_id",
+                            "DisplayColumn": "object_id"
+                          }
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=添付情報.物件ID"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "t_object_attachment",
+                          "ColumnName": "active_flg"
+                        },
+                        "Value": "1"
+                      }
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "t_object_attachment",
+                        "ColumnName": "publish_flg"
+                      },
+                      "Value": "1"
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "CompareType": 2,
+                    "ColumnBindingInfo": {
+                      "TableName": "t_object_attachment",
+                      "ColumnName": "file_attribute_id",
+                      "RelationBinding": {
+                        "RelatedTable": "m_file_attirbute",
+                        "RelatedColumn": "file_attribute_id",
+                        "DisplayColumn": "applicant_company_authority"
+                      }
+                    },
+                    "Value": "0"
+                  }
+                }
+              },
+              "ID": "bfae4c755a454b4ebc85205ad58b59ca"
+            },
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "t_object",
+              "ShowConfirm": false,
+              "ConfirmText": "本当に更新してもよろしいですか？",
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "t_object",
+                  "ColumnName": "object_id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=添付情報.物件ID"
+                }
+              },
+              "UpdateValues": [
+                {
+                  "ColumnName": "attachment_file_count",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=添付ファイル数"
+                  }
+                },
+                {
+                  "ColumnName": "applicant_attachment_file_count",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=申込事業者添付ファイル数"
+                  }
+                }
+              ],
+              "Comments": "添付ファイル数を更新する"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Name": "ファイル復元処理"
+}

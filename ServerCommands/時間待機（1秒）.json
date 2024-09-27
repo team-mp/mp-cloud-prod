@@ -1,0 +1,20 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "SleepCommand.SleepCommand, SleepCommand",
+      "SleepDuration": "0.5"
+    }
+  ],
+  "Name": "時間待機（1秒）"
+}

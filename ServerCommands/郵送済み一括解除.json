@@ -1,0 +1,264 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "OnlySendChangedData": true,
+          "PrimaryKeys": [
+            "申込ID"
+          ],
+          "Name": "P_保証IDs"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "保証情報",
+          "TableValue": {
+            "TableName": "t_object_warranty",
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "t_object_warranty",
+                  "ColumnName": "warranty_id"
+                },
+                "ColumnName": "保証ID"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "t_object_warranty",
+                  "ColumnName": "object_order_id"
+                },
+                "ColumnName": "申込ID"
+              }
+            ],
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 8,
+              "ColumnBindingInfo": {
+                "TableName": "t_object_warranty",
+                "ColumnName": "warranty_id"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_保証IDs"
+              }
+            }
+          },
+          "ID": "a4c430e6280e48c7bc21b0acf1c215f7"
+        },
+        {
+          "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+          "LoopInfo": {
+            "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+            "LoopCount": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=保証情報"
+            },
+            "LoopItemParamName": "Item"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "郵送方法ID",
+              "TableValue": {
+                "TableName": "t_object_warranty",
+                "OnlyGetValue": true,
+                "TableValueType": 0,
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "t_object_warranty",
+                      "ColumnName": "mailing_method_id"
+                    },
+                    "ColumnName": "mailing_method_id"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "t_object_warranty",
+                    "ColumnName": "warranty_id"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Item.保証ID"
+                  }
+                }
+              },
+              "ID": "1f43ea78ca384a29a56512253eb0075d"
+            },
+            {
+              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+              "ConditionAndCommandPairList": [
+                {
+                  "Condition": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=郵送方法ID"
+                      }
+                    },
+                    "value": "3"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "保証ST",
+                      "TableValue": {
+                        "TableName": "m_warranty_status",
+                        "TableValueType": 1,
+                        "BindingInfos": [
+                          {
+                            "BindingInfo": {
+                              "TableName": "m_warranty_status",
+                              "ColumnName": "warranty_status_id"
+                            },
+                            "ColumnName": "保証ステータスID"
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "m_warranty_status",
+                              "ColumnName": "order_status_id"
+                            },
+                            "ColumnName": "申込ステータスID"
+                          }
+                        ],
+                        "SqlCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "m_warranty_status",
+                            "ColumnName": "mailing_request_wait_flg"
+                          },
+                          "Value": "1"
+                        }
+                      },
+                      "ID": "68ebc7936c0c4112a6013621dd194238"
+                    }
+                  ],
+                  "Comments": "郵送依頼待ちの場合",
+                  "ID": "a07a2092-05c7-424e-9059-f00013b9b11c"
+                },
+                {
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                      "ParameterName": "保証ST",
+                      "TableValue": {
+                        "TableName": "m_warranty_status",
+                        "TableValueType": 1,
+                        "BindingInfos": [
+                          {
+                            "BindingInfo": {
+                              "TableName": "m_warranty_status",
+                              "ColumnName": "warranty_status_id"
+                            },
+                            "ColumnName": "保証ステータスID"
+                          },
+                          {
+                            "BindingInfo": {
+                              "TableName": "m_warranty_status",
+                              "ColumnName": "order_status_id"
+                            },
+                            "ColumnName": "申込ステータスID"
+                          }
+                        ],
+                        "SqlCondition": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "m_warranty_status",
+                            "ColumnName": "warranty_mailing_wait_flg"
+                          },
+                          "Value": "1"
+                        }
+                      },
+                      "ID": "f82776ebc7174a299c5f56c409dc7c3a"
+                    }
+                  ],
+                  "ID": "7b9ce899-84ac-44ac-abfa-b5d38cc2adae"
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "t_object_warranty",
+              "ShowConfirm": false,
+              "ConfirmText": "本当に更新してもよろしいですか？",
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "t_object_warranty",
+                  "ColumnName": "warranty_id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Item.保証ID"
+                }
+              },
+              "UpdateValues": [
+                {
+                  "ColumnName": "warranty_status_id",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=保証ST.保証ステータスID"
+                  }
+                },
+                {
+                  "ColumnName": "original_post_date"
+                }
+              ]
+            },
+            {
+              "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+              "TableName": "t_object_order",
+              "ShowConfirm": false,
+              "ConfirmText": "本当に更新してもよろしいですか？",
+              "RowsToUpdate": 1,
+              "RowsToUpdateCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "t_object_order",
+                  "ColumnName": "object_order_id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Item.申込ID"
+                }
+              },
+              "UpdateValues": [
+                {
+                  "ColumnName": "order_status_id",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=保証ST.申込ステータスID"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+          "ErrorCode": "0",
+          "CustomReturns": []
+        }
+      ]
+    }
+  ],
+  "Name": "郵送済み一括解除"
+}

@@ -1,0 +1,844 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      }
+    },
+    "Count": 28,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "47": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "48": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "61": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "70": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70
+    ],
+    "Count": 71
+  },
+  "Values": {
+    "3,31": "転圧区分",
+    "3,35": "転圧会社名",
+    "3,62": "▼住宅事業者ID",
+    "6,62": "▼住宅事業者名",
+    "9,62": "▼元申込ID",
+    "15,62": "▼抽出カウント"
+  },
+  "Formulas": {
+    "26,2": "\"該当データ件数：\"&TEXT(抽出カウント,\"#,##0\")&\"件\"",
+    "1,18": "\"「\"&住宅事業者名&\"」の転圧履歴を表示しています。設計待ちの物件も対象となります。\"",
+    "16,62": "COUNTIF(C5,\"<>\")"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 70"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "物件番号、物件名、住所で検索できます"
+      }
+    },
+    "3,2": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "t_object_compaction",
+        "RowIndex": 3,
+        "ColumnIndex": 2,
+        "ColumnCount": 59,
+        "RowCount": 22,
+        "FrozenIndex": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "リストビュー1",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "t_object_compaction",
+                    "ColumnName": "object_order_id",
+                    "RelationBinding": {
+                      "RelatedTable": "t_object_order",
+                      "RelatedColumn": "object_order_id",
+                      "DisplayColumn": "builder_id"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=過去転圧検索!住宅事業者ID"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "t_object_compaction",
+                    "ColumnName": "object_order_id",
+                    "RelationBinding": {
+                      "RelatedTable": "t_object_order",
+                      "RelatedColumn": "object_order_id",
+                      "DisplayColumn": "active_flg"
+                    }
+                  },
+                  "Value": "1"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "t_object_compaction",
+                  "ColumnName": "compaction_status_id",
+                  "RelationBinding": {
+                    "RelatedTable": "m_compaction_status",
+                    "RelatedColumn": "compaction_status_id",
+                    "DisplayColumn": "cancel_flg"
+                  }
+                },
+                "Value": "0"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "t_object_compaction",
+                "ColumnName": "object_order_id"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=過去転圧検索!元申込ID"
+              }
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 6,
+                "ColumnBindingInfo": {
+                  "TableName": "t_object_compaction",
+                  "ColumnName": "object_order_id",
+                  "RelationBinding": {
+                    "RelatedTable": "t_object_order",
+                    "RelatedColumn": "object_order_id",
+                    "DisplayColumn": "object_id",
+                    "NextRelationBinding": {
+                      "RelatedTable": "t_object",
+                      "RelatedColumn": "object_id",
+                      "DisplayColumn": "物件番号"
+                    }
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=過去転圧検索!C2"
+                },
+                "LeftBracket": 1
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 6,
+                "ColumnBindingInfo": {
+                  "TableName": "t_object_compaction",
+                  "ColumnName": "object_order_id",
+                  "RelationBinding": {
+                    "RelatedTable": "t_object_order",
+                    "RelatedColumn": "object_order_id",
+                    "DisplayColumn": "object_id",
+                    "NextRelationBinding": {
+                      "RelatedTable": "t_object",
+                      "RelatedColumn": "object_id",
+                      "DisplayColumn": "物件名"
+                    }
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=過去転圧検索!C2"
+                }
+              },
+              "RelationType": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "t_object_compaction",
+                "ColumnName": "object_order_id",
+                "RelationBinding": {
+                  "RelatedTable": "t_object_order",
+                  "RelatedColumn": "object_order_id",
+                  "DisplayColumn": "object_id",
+                  "NextRelationBinding": {
+                    "RelatedTable": "t_object",
+                    "RelatedColumn": "object_id",
+                    "DisplayColumn": "物件住所"
+                  }
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=過去転圧検索!C2"
+              },
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "t_object_compaction",
+                "ColumnName": "object_order_id"
+              },
+              "Order": 1
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "t_object_compaction",
+                "ColumnName": "compaction_id"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "カスタムスタイル2"
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 3,
+            "DrawerDirection": 3,
+            "ShowDrawerHeader": true,
+            "PageName": "転圧登録フレーム",
+            "PassValues": [],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "t_object_compaction",
+        "ColumnName": "object_order_id",
+        "RelationBinding": {
+          "RelatedTable": "t_object_order",
+          "RelatedColumn": "object_order_id",
+          "DisplayColumn": "object_id",
+          "NextRelationBinding": {
+            "RelatedTable": "t_object",
+            "RelatedColumn": "object_id",
+            "DisplayColumn": "物件番号"
+          }
+        }
+      }
+    },
+    "4,7": {
+      "BindingInfo": {
+        "TableName": "t_object_compaction",
+        "ColumnName": "object_order_id",
+        "RelationBinding": {
+          "RelatedTable": "t_object_order",
+          "RelatedColumn": "object_order_id",
+          "DisplayColumn": "object_id",
+          "NextRelationBinding": {
+            "RelatedTable": "t_object",
+            "RelatedColumn": "object_id",
+            "DisplayColumn": "物件名"
+          }
+        }
+      }
+    },
+    "4,18": {
+      "BindingInfo": {
+        "TableName": "t_object_compaction",
+        "ColumnName": "object_order_id",
+        "RelationBinding": {
+          "RelatedTable": "t_object_order",
+          "RelatedColumn": "object_order_id",
+          "DisplayColumn": "object_id",
+          "NextRelationBinding": {
+            "RelatedTable": "t_object",
+            "RelatedColumn": "object_id",
+            "DisplayColumn": "物件名"
+          }
+        }
+      }
+    },
+    "4,31": {
+      "BindingInfo": {
+        "TableName": "t_object_compaction",
+        "ColumnName": "転圧区分名"
+      }
+    },
+    "4,35": {
+      "BindingInfo": {
+        "TableName": "t_object_compaction",
+        "ColumnName": "compaction_customer_id",
+        "RelationBinding": {
+          "RelatedTable": "m_customer",
+          "RelatedColumn": "customer_id",
+          "DisplayColumn": "内部顧客名"
+        }
+      }
+    },
+    "4,45": {
+      "BindingInfo": {
+        "TableName": "t_object_compaction",
+        "ColumnName": "compaction_enforce_sttdate"
+      }
+    },
+    "4,50": {
+      "BindingInfo": {
+        "TableName": "t_object_compaction",
+        "ColumnName": "compaction_enforce_enddate"
+      }
+    },
+    "4,55": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "t_object_compaction",
+        "ColumnName": "compaction_status_id",
+        "RelationBinding": {
+          "RelatedTable": "m_compaction_status",
+          "RelatedColumn": "compaction_status_id",
+          "DisplayColumn": "compaction_status_name"
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 3,
+        "HorizontalAlignment": 4,
+        "Underline": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "ShrinkToFit": true
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 4
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontSize": 12.0,
+        "Formatter": 6,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 6,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0
+      },
+      {
+        "Background": 8,
+        "FontFamily": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@",
+        "[AUTO]General",
+        "Background 2 -25",
+        "Center",
+        "Left",
+        "yyyy/MM/dd",
+        "#FFFFC000",
+        "#FFFFFF00",
+        "Background 1 -15"
+      ],
+      "Borders": [
+        {
+          "Color": 9
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 1,
+      "1,23": 1,
+      "1,24": 1,
+      "1,25": 1,
+      "1,26": 1,
+      "1,27": 1,
+      "1,28": 1,
+      "1,29": 1,
+      "1,30": 1,
+      "1,35": 1,
+      "1,36": 1,
+      "1,37": 1,
+      "1,38": 1,
+      "1,39": 1,
+      "1,40": 1,
+      "1,41": 1,
+      "1,42": 1,
+      "1,43": 1,
+      "1,44": 1,
+      "1,45": 1,
+      "1,46": 1,
+      "1,47": 1,
+      "1,48": 1,
+      "1,49": 1,
+      "1,50": 1,
+      "1,51": 1,
+      "2,29": 2,
+      "2,30": 2,
+      "2,31": 2,
+      "2,32": 2,
+      "2,33": 2,
+      "2,34": 2,
+      "3,2": 3,
+      "3,7": 3,
+      "3,18": 4,
+      "3,31": 4,
+      "3,35": 4,
+      "3,45": 4,
+      "3,50": 3,
+      "3,55": 4,
+      "3,62": 5,
+      "3,63": 1,
+      "3,64": 1,
+      "4,2": 6,
+      "4,7": 7,
+      "4,18": 8,
+      "4,31": 9,
+      "4,35": 10,
+      "4,45": 11,
+      "4,50": 12,
+      "4,55": 8,
+      "4,62": 13,
+      "4,63": 1,
+      "4,64": 1,
+      "6,62": 5,
+      "6,63": 1,
+      "6,64": 1,
+      "7,62": 13,
+      "7,63": 1,
+      "7,64": 1,
+      "9,62": 5,
+      "9,63": 1,
+      "9,64": 1,
+      "10,62": 13,
+      "10,63": 1,
+      "10,64": 1,
+      "11,62": 1,
+      "11,63": 1,
+      "11,64": 1,
+      "15,62": 5,
+      "15,63": 1,
+      "15,64": 1,
+      "16,62": 14,
+      "16,63": 1,
+      "16,64": 1,
+      "17,62": 1,
+      "17,63": 1,
+      "17,64": 1,
+      "20,62": 1,
+      "20,63": 1,
+      "20,64": 1,
+      "25,2": 15,
+      "25,3": 15,
+      "25,4": 15,
+      "25,5": 15,
+      "25,6": 15,
+      "25,7": 15,
+      "25,8": 15,
+      "25,9": 15,
+      "25,10": 15,
+      "25,11": 15,
+      "25,12": 15,
+      "25,13": 15,
+      "25,14": 15,
+      "25,15": 15,
+      "25,16": 15,
+      "25,17": 15,
+      "25,18": 15,
+      "25,19": 15,
+      "25,20": 15,
+      "25,21": 15,
+      "25,22": 15,
+      "25,23": 15,
+      "25,24": 15,
+      "25,25": 15,
+      "25,26": 15,
+      "25,27": 15,
+      "25,28": 15,
+      "25,29": 15,
+      "25,30": 15,
+      "25,31": 16,
+      "25,32": 16,
+      "25,33": 16,
+      "25,34": 16,
+      "25,35": 15,
+      "25,36": 15,
+      "25,37": 15,
+      "25,38": 15,
+      "25,39": 15,
+      "25,40": 15,
+      "25,41": 15,
+      "25,42": 15,
+      "25,43": 15,
+      "25,44": 15,
+      "25,45": 15,
+      "25,46": 15,
+      "25,47": 15,
+      "25,48": 15,
+      "25,49": 15,
+      "25,50": 15,
+      "25,51": 15,
+      "25,52": 15,
+      "25,53": 15,
+      "26,2": 4,
+      "26,54": 17,
+      "26,57": 17,
+      "26,58": 17,
+      "26,61": 17,
+      "27,2": 4,
+      "27,3": 4,
+      "27,4": 4,
+      "27,5": 4,
+      "27,6": 4,
+      "27,7": 4,
+      "27,8": 4,
+      "27,9": 4,
+      "27,10": 4,
+      "27,11": 4,
+      "27,12": 4,
+      "27,48": 3,
+      "27,49": 3,
+      "27,50": 3,
+      "27,51": 3,
+      "27,52": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,62,1,3",
+    "7,62,1,3",
+    "16,62,1,3",
+    "1,2,1,15",
+    "1,18,1,34",
+    "26,2,1,11",
+    "5,2,20,59",
+    "4,7,1,11",
+    "4,18,1,13",
+    "4,35,1,10",
+    "4,31,1,4",
+    "4,45,1,5",
+    "4,50,1,5",
+    "4,55,1,6",
+    "4,2,1,5",
+    "10,62,1,3",
+    "3,2,1,5",
+    "3,7,1,11",
+    "3,18,1,13",
+    "3,31,1,4",
+    "3,35,1,10",
+    "3,45,1,5",
+    "3,50,1,5",
+    "3,55,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "t_object_compaction",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "グループフィルタ",
+      "Formula": "過去転圧検索!$AV$2"
+    },
+    {
+      "Name": "元申込ID",
+      "Formula": "過去転圧検索!$BK$11"
+    },
+    {
+      "Name": "住宅事業者ID",
+      "Formula": "過去転圧検索!$BK$5"
+    },
+    {
+      "Name": "住宅事業者名",
+      "Formula": "過去転圧検索!$BK$8"
+    },
+    {
+      "Name": "属性フィルタ",
+      "Formula": "過去転圧検索!$AJ$2"
+    },
+    {
+      "Name": "抽出カウント",
+      "Formula": "過去転圧検索!$BK$17"
+    }
+  ]
+}//0dTxi7y+2zieHancNhfOD8ifKz0AKoqu1Ei0AbsGpiXzmJaBrnO0XAFHe1T8YDLCdLpeGYaUxrTFK/R4YkY2jv1zZbrSDg8sK4zTvFWYZSIgyT1NsAh5sKQ1bt36u1/BFpb+S/0mu+zKM9pnT7XTHKdt2IfNpaA+3yQ14gwg+j3d0jgRrkyPMVfIw5A+rGkdN2/9oYN7GCCvObyS/R23c9HdKzQtWYVdgJoryJw0m2rjix3hurkNfrS3aA+DbqFDIfcbkFOOFcePkWLOWjGlg09zekwCxDCnqPF4/LzeF4NEw0BTYU3QwWHDAhyTarXzV/npXHaG5j0NIdKr5QQ9zVl3rrubqHmEQE2MmjHeogYTHX13wHfWBAdjdirvnzZ1Pc8icUghnhI9mjX2zO+NqQVT4kdhvWZ9W9TZjFfp7iwpJCK+YvnuLV9TDH/BmOfrOvF5El3hRb18N04PhnhWAOgZF4Q17oWR3agkp34ysPbCeLqfvE3hYF/VxiSq7oUL7l8dq6hmjpoO0kJwStrMfxQsaw4b7FCpO32FQWeIo8rBwH/u5UayWxO2Hiq+YfDZ4NvISRoT6WIDnDj0l3rBF8qRaziXcZdUWuXZYJfGpK3hkRU53RxkT9RJLM53w2dlU3SGA8HJ8CRgMjHJnBuk4l3+lz7eYgEmV1SkEPAjwgrDC4sag/dnzJeFpnxbfz/XDhaIo4enqKHxBz6458LJi6AUiF8lUX84n1B3IEPMYgLkH90lkpY3FhwPEzkCP0/tyYy2P90ufQM3MWcM48685DoTlnPvDjoKOyfpgqzSdq1R4h1VqAdCDUgDLD4zmC+B1klDX8qlPxlS3I85ZQh96Lg4A4A6iyWx7LsC6tc8JW9/m7UhIPvIu5wWRyZ7fTuXK+PrDxOF9vsKlGE8nbhUuA==|920

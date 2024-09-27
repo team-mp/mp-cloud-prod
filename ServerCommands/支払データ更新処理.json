@@ -1,0 +1,204 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_仕入ID"
+        },
+        {
+          "Name": "P_仕入日"
+        },
+        {
+          "Name": "P_仕入区分"
+        },
+        {
+          "Name": "P_外注先ID"
+        },
+        {
+          "Name": "P_支払先ID"
+        },
+        {
+          "Name": "P_支払商品ID"
+        },
+        {
+          "Name": "P_支払商品名"
+        },
+        {
+          "Name": "P_支払備考"
+        },
+        {
+          "Name": "P_税抜金額"
+        },
+        {
+          "Name": "P_消費税額"
+        },
+        {
+          "Name": "P_支払金額"
+        },
+        {
+          "Name": "P_消費税率"
+        },
+        {
+          "Name": "P_支払日"
+        },
+        {
+          "Name": "P_支払予定日"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "支払月",
+          "ParameterValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=TEXT(P_支払日,\"yyyymm\")"
+          },
+          "ID": "18820d7f85634e7ebafe69c4bcf395de"
+        },
+        {
+          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+          "TableName": "t_purchase",
+          "ShowConfirm": false,
+          "ConfirmText": "本当に更新してもよろしいですか？",
+          "RowsToUpdate": 1,
+          "RowsToUpdateCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_purchase",
+              "ColumnName": "purchase_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=P_仕入ID"
+            }
+          },
+          "UpdateValues": [
+            {
+              "ColumnName": "purchase_date",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_仕入日"
+              }
+            },
+            {
+              "ColumnName": "purchase_type",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_仕入区分"
+              }
+            },
+            {
+              "ColumnName": "outsourcing_id",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_外注先ID"
+              }
+            },
+            {
+              "ColumnName": "payment_comp_id",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_支払先ID"
+              }
+            },
+            {
+              "ColumnName": "payment_date",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_支払日"
+              }
+            },
+            {
+              "ColumnName": "payment_yyyymm",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=支払月"
+              }
+            },
+            {
+              "ColumnName": "payment_product_id",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_支払商品ID"
+              }
+            },
+            {
+              "ColumnName": "payment_product_name",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_支払商品名"
+              }
+            },
+            {
+              "ColumnName": "payment_remarks",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_支払備考"
+              }
+            },
+            {
+              "ColumnName": "excluding_tax_amount",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_税抜金額"
+              }
+            },
+            {
+              "ColumnName": "tax_amount",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_消費税額"
+              }
+            },
+            {
+              "ColumnName": "payment_amount",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_支払金額"
+              }
+            },
+            {
+              "ColumnName": "tax_rate",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_消費税率"
+              }
+            },
+            {
+              "ColumnName": "payment_scheduled_date",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_支払予定日"
+              }
+            },
+            {
+              "ColumnName": "payment_flg",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=IF(P_支払日<>\"\",1,0)"
+              }
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+          "ErrorCode": "0",
+          "CustomReturns": []
+        }
+      ]
+    }
+  ],
+  "Name": "支払データ更新処理"
+}

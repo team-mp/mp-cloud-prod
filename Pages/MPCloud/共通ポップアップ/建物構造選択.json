@@ -1,0 +1,346 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 15,
+    "DefaultSize": 31.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "Count": 29
+  },
+  "Values": {
+    "0,2": "以下より建物構造を選択してください",
+    "5,23": "▼有効フラグ",
+    "6,23": 1,
+    "7,23": "▼建物構造ID",
+    "9,23": "▼建物構造名",
+    "12,23": "▼選択カウント",
+    "13,14": "選択する"
+  },
+  "Formulas": {
+    "2,23": "IF(建物構造ID=Y3,1,0)",
+    "13,23": "COUNTIF(X3,1)"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "建物構造ビュー",
+        "TemplatePageName": "59d9fdcc84ec4ade8a32cb49d1a0d2d",
+        "Command": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [],
+          "ParamProperties": {
+            "選択フラグ": "選択フラグ",
+            "調査方法ID": "調査方法ID",
+            "調査方法名": "調査方法名"
+          }
+        },
+        "TemplateKey": "スタイル1"
+      }
+    },
+    "1,23": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_object_structure",
+        "RowIndex": 1,
+        "ColumnIndex": 23,
+        "ColumnCount": 3,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "建物構造ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "m_object_structure",
+            "ColumnName": "activer_flg"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=建物構造選択!X7"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "2,23": {
+      "NameUsedInJavaScript": "選択フラグ"
+    },
+    "2,24": {
+      "BindingInfo": {
+        "TableName": "m_object_structure",
+        "ColumnName": "sutructure_id"
+      },
+      "NameUsedInJavaScript": "建物構造ID"
+    },
+    "2,25": {
+      "BindingInfo": {
+        "TableName": "m_object_structure",
+        "ColumnName": "structure_name"
+      },
+      "NameUsedInJavaScript": "建物構造"
+    },
+    "13,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=建物構造選択!$X$14=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Foreground": 1,
+        "Formatter": 2,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Text 1 50",
+        "[AUTO]General",
+        "Background 1 -15",
+        "Center",
+        "Accent 6 80",
+        "#FFFFC000",
+        "#FFFFFF00"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "1,2": 2,
+      "1,24": 3,
+      "1,25": 3,
+      "2,24": 3,
+      "2,25": 3,
+      "5,23": 4,
+      "5,24": 3,
+      "5,25": 3,
+      "6,23": 5,
+      "6,24": 3,
+      "6,25": 3,
+      "7,23": 4,
+      "7,24": 3,
+      "7,25": 3,
+      "8,23": 6,
+      "9,23": 4,
+      "9,24": 3,
+      "9,25": 3,
+      "10,23": 6,
+      "12,23": 3,
+      "12,24": 3,
+      "12,25": 3,
+      "13,14": 7,
+      "13,15": 7,
+      "13,16": 7,
+      "13,17": 7,
+      "13,18": 7,
+      "13,23": 8,
+      "13,24": 7,
+      "13,25": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "8,23,1,3",
+    "1,2,11,17",
+    "13,14,1,5",
+    "13,23,1,3",
+    "10,23,1,3",
+    "3,23,1,3",
+    "6,23,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_object_structure"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "建物構造ID",
+      "Formula": "建物構造選択!$X$9"
+    },
+    {
+      "Name": "建物構造名",
+      "Formula": "建物構造選択!$X$11"
+    }
+  ]
+}//REqEN66kmebrRJ8nmjWGy+cT8PeV8ltlShFt9CJMqDE17AHFjIYtJ5n5uTNx3cmfzjpDuv/BQxbFbcvx8U9lHOQGxC/Lc0sBca366BYDcUcsNuIyZBbBoEcFfr9+U7V3ruZMkHDMXTl6D8ccoQCqL5ZmuWnm6xBYoW34AwwUW4QzPVQhKYRSrFAKdhVNiECZpUqUYPXVFX7SLbE8KcPPbIurMC3YMr3QAdK6sUUVXeqnzvSAOtkg1CTXk1jP9XguYOsq+VkAxMvlOpb/cA2H5TKkc9h6UeJ41uLaIoXRMH1S4czORXu82RX5yk8MN5TXZG3X9r1dzlotYcgyZaHGu7UplTRzCbV1nx+U21HclzNO3j34cOb0vtpzyuNDJ3pgl+z4Ed4ABY6XuQs0R10noz2xIfkl+ntuD/0WQWcaQB9oUFPPFabB2QQjIGOb842HdiieknSn6jpYEPkqd3INa+z/C9x1wLH1HLhw+jC1/uBHwJ8UAvvF8KFAt+cY68eFj2HrFZjmteILOy7h+bwXTsV8ops6DVQeKt/fcWaBBWTpunNr9rQktQlcQXgZu+VXYbhVnzo3x4xTvXgrU9eoFDS0pPP9O4duKmaJb2Wz7pwx8ngdy9oTorl8q33/8sxBKcWrkfppeTIocRxjteGnBGJR5E5IMB0IA5QJwP/6onHkbpCkLbK9CBJGofPCqWSA8BN06S1i9fqVedod02QVM1OUeNBcADlqG8toH6eWg7pIsdcLJgJev2q2K9Jv1jN5UDG882oyci0+5HMfMLe0+ME/FVX9tMP6CCyQcGWnLHKjhg4cMHv0zyJvLpflTVYcbgjOaDonlcbDxFnyZPJrvEJnPobh7ANuK08bg16ajwZGDUSGUtTPsrlGYt17J/DrhYwxSIM+/W30QvGihSGfEg==|920

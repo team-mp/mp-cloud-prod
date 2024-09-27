@@ -1,0 +1,222 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_外注先ID"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_外注先ID"
+              }
+            },
+            "value": "%Null%"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": "0",
+              "CustomReturns": [
+                {
+                  "ReturnPropertyName": "R_支払先ID"
+                },
+                {
+                  "ReturnPropertyName": "R_支払先略称名"
+                },
+                {
+                  "ReturnPropertyName": "R_外注先略称名"
+                }
+              ]
+            }
+          ],
+          "ID": "4fe81b19-3bf4-4caa-8eb8-3bf639771b65"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "顧客情報",
+      "TableValue": {
+        "TableName": "m_customer",
+        "TableValueType": 1,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "m_customer",
+              "ColumnName": "payment_comp_id"
+            },
+            "ColumnName": "支払先ID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "m_customer",
+              "ColumnName": "内部顧客名"
+            },
+            "ColumnName": "支払先略称名"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "m_customer",
+              "ColumnName": "内部顧客名"
+            },
+            "ColumnName": "外注先略称名"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "m_customer",
+            "ColumnName": "customer_id"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=P_外注先ID"
+          }
+        }
+      },
+      "ID": "5b6dc1007b5e45f887b8febe921f923e"
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=顧客情報.支払先ID"
+              }
+            },
+            "value": "%Null%",
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "支払先略称名",
+              "TableValue": {
+                "TableName": "m_customer",
+                "OnlyGetValue": true,
+                "TableValueType": 0,
+                "BindingInfos": [
+                  {
+                    "BindingInfo": {
+                      "TableName": "m_customer",
+                      "ColumnName": "内部顧客名"
+                    },
+                    "ColumnName": "内部顧客名"
+                  }
+                ],
+                "SqlCondition": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "m_customer",
+                    "ColumnName": "customer_id"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=顧客情報.支払先ID"
+                  }
+                }
+              },
+              "ID": "d1cae6fe05294ca490222f6ca1f95425"
+            },
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": "0",
+              "CustomReturns": [
+                {
+                  "ReturnPropertyName": "R_支払先ID",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=顧客情報.支払先ID"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_支払先略称名",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=支払先略称名"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_外注先略称名",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=顧客情報.外注先略称名"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "87715d3e-29ba-4770-b48d-6bd4aaaa2bf0"
+        },
+        {
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": "0",
+              "CustomReturns": [
+                {
+                  "ReturnPropertyName": "R_支払先ID",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_外注先ID"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_支払先略称名",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=顧客情報.支払先略称名"
+                  }
+                },
+                {
+                  "ReturnPropertyName": "R_外注先略称名",
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=顧客情報.外注先略称名"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "4bfdcb7c-0a05-4911-9dd5-6c4832a818af"
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "R_支払先ID"
+    },
+    {
+      "Name": "R_支払先略称名"
+    },
+    {
+      "Name": "R_外注先略称名"
+    }
+  ],
+  "Name": "支払先ID取得"
+}

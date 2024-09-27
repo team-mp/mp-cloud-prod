@@ -1,0 +1,686 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 16,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "Count": 34
+  },
+  "Values": {
+    "1,26": "▼申込ID",
+    "4,2": "キャンセル理由",
+    "4,26": "▼更新開始フラグ",
+    "12,2": "この申込をキャンセルします。よろしいですか？",
+    "14,11": "はい",
+    "14,18": "いいえ"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "BindingInfo": {
+        "TableName": "t_object_order",
+        "ColumnName": "object_id",
+        "RelationBinding": {
+          "RelatedTable": "t_object",
+          "RelatedColumn": "object_id",
+          "DisplayColumn": "物件番号"
+        }
+      }
+    },
+    "2,2": {
+      "BindingInfo": {
+        "TableName": "t_object_order",
+        "ColumnName": "object_id",
+        "RelationBinding": {
+          "RelatedTable": "t_object",
+          "RelatedColumn": "object_id",
+          "DisplayColumn": "物件名"
+        }
+      }
+    },
+    "2,26": {
+      "BindingInfo": {
+        "TableName": "t_object_order",
+        "ColumnName": "object_order_id"
+      }
+    },
+    "6,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "キャンセル理由を入力してください"
+      }
+    },
+    "14,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=申込キャンセル登録!C7"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "キャンセル理由を入力してください"
+                  },
+                  {
+                    "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                    "TargetCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=申込キャンセル登録!C7"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "ee13d4bf-53d9-4f9c-820a-b0058d0722a2"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "申込をキャンセルします。\r\n※ステータスは「申込キャンセル」に変更されます。\r\n処理を実行します、よろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 4
+                },
+                "CommandList": [
+                  {
+                    "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                    "LoadingText": "お待ちください",
+                    "LoadingTextColor": "Background 1 0"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "申込キャンセル登録処理",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=申込キャンセル登録!AA3"
+                        },
+                        "ParamName": "P_申込ID"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=申込キャンセル登録!C7"
+                        },
+                        "ParamName": "P_申込キャンセル理由"
+                      }
+                    ],
+                    "ResultErrorCodeTo": {
+                      "SerializeProperty": "リターンコード"
+                    },
+                    "ResultMessageTo": {
+                      "SerializeProperty": "リターンメッセージ"
+                    },
+                    "CheckDataValidation": false
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=申込キャンセル登録!リターンコード"
+                              }
+                            ]
+                          },
+                          "value": "0"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=申込キャンセル登録!更新開始フラグ"
+                                },
+                                "Value": "1"
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                            "PassValueBack": true,
+                            "ReloadData": true
+                          }
+                        ],
+                        "ID": "0b848a40-0a5c-4788-b4eb-5f4b5f9d1463"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=申込キャンセル登録!リターンメッセージ"
+                            }
+                          },
+                          {
+                            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                          }
+                        ],
+                        "ID": "266a3843-4570-4994-8579-79eb3955f1f4"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "7b2aa85c-55ac-44dd-898b-8a7f6a166d1e"
+              }
+            ]
+          }
+        ],
+        "Text": "はい",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    },
+    "14,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "いいえ",
+        "TemplateKey": "スタイル2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0
+      },
+      {
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "ShrinkToFit": true
+      },
+      {
+        "Background": 4,
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 5,
+        "VerticalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "Background": 7,
+        "FontFamily": 2
+      },
+      {
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Center",
+        "Body",
+        "[AUTO]General",
+        "#FFFFFF00",
+        "@",
+        "Top",
+        "#FFFFC000",
+        "Left"
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,23": 1,
+      "1,24": 1,
+      "1,26": 2,
+      "1,27": 3,
+      "1,28": 3,
+      "2,2": 4,
+      "2,23": 1,
+      "2,24": 1,
+      "2,26": 5,
+      "2,27": 3,
+      "2,28": 3,
+      "3,14": 3,
+      "3,15": 3,
+      "3,16": 3,
+      "3,17": 3,
+      "3,18": 3,
+      "3,19": 3,
+      "3,20": 3,
+      "3,21": 3,
+      "3,22": 3,
+      "3,23": 1,
+      "3,24": 1,
+      "4,2": 2,
+      "4,3": 3,
+      "4,4": 3,
+      "4,5": 3,
+      "4,6": 3,
+      "4,7": 3,
+      "4,8": 3,
+      "4,9": 3,
+      "4,10": 3,
+      "4,11": 3,
+      "4,12": 3,
+      "4,13": 3,
+      "4,14": 3,
+      "4,15": 3,
+      "4,16": 3,
+      "4,17": 3,
+      "4,18": 3,
+      "4,19": 3,
+      "4,20": 3,
+      "4,21": 3,
+      "4,22": 3,
+      "4,23": 1,
+      "4,24": 1,
+      "4,26": 2,
+      "4,27": 3,
+      "4,28": 3,
+      "5,2": 2,
+      "5,3": 3,
+      "5,4": 3,
+      "5,5": 3,
+      "5,6": 3,
+      "5,7": 3,
+      "5,8": 3,
+      "5,9": 3,
+      "5,10": 3,
+      "5,11": 3,
+      "5,12": 3,
+      "5,13": 3,
+      "5,14": 3,
+      "5,15": 3,
+      "5,16": 3,
+      "5,17": 3,
+      "5,18": 3,
+      "5,19": 3,
+      "5,20": 3,
+      "5,21": 3,
+      "5,22": 3,
+      "5,23": 1,
+      "5,24": 1,
+      "6,2": 6,
+      "6,3": 3,
+      "6,4": 3,
+      "6,5": 3,
+      "6,6": 3,
+      "6,7": 3,
+      "6,8": 3,
+      "6,9": 3,
+      "6,10": 3,
+      "6,12": 3,
+      "6,13": 3,
+      "6,14": 3,
+      "6,20": 3,
+      "6,21": 3,
+      "6,22": 3,
+      "6,23": 1,
+      "6,24": 1,
+      "6,26": 7,
+      "6,27": 3,
+      "6,28": 3,
+      "7,2": 3,
+      "7,3": 3,
+      "7,4": 3,
+      "7,5": 3,
+      "7,6": 3,
+      "7,7": 3,
+      "7,8": 3,
+      "7,9": 3,
+      "7,10": 3,
+      "7,12": 3,
+      "7,13": 3,
+      "7,14": 3,
+      "7,20": 3,
+      "7,21": 3,
+      "7,22": 3,
+      "7,23": 1,
+      "7,24": 1,
+      "8,2": 3,
+      "8,3": 3,
+      "8,4": 3,
+      "8,5": 3,
+      "8,6": 3,
+      "8,7": 3,
+      "8,8": 3,
+      "8,9": 3,
+      "8,10": 3,
+      "8,12": 3,
+      "8,13": 3,
+      "8,14": 3,
+      "8,20": 3,
+      "8,21": 3,
+      "8,22": 3,
+      "8,23": 1,
+      "8,24": 1,
+      "9,2": 3,
+      "9,3": 3,
+      "9,4": 3,
+      "9,5": 3,
+      "9,6": 3,
+      "9,7": 3,
+      "9,8": 3,
+      "9,9": 3,
+      "9,10": 3,
+      "9,12": 3,
+      "9,13": 3,
+      "9,14": 3,
+      "9,20": 3,
+      "9,21": 3,
+      "9,22": 3,
+      "9,23": 1,
+      "9,24": 1,
+      "10,2": 3,
+      "10,3": 3,
+      "10,4": 3,
+      "10,5": 3,
+      "10,6": 3,
+      "10,7": 3,
+      "10,8": 3,
+      "10,9": 3,
+      "10,10": 3,
+      "10,12": 3,
+      "10,13": 3,
+      "10,14": 3,
+      "10,20": 3,
+      "10,21": 3,
+      "10,22": 3,
+      "10,23": 1,
+      "10,24": 1,
+      "11,23": 1,
+      "11,24": 1,
+      "12,2": 8,
+      "12,23": 9,
+      "12,24": 9,
+      "13,22": 10,
+      "13,23": 9,
+      "13,24": 9,
+      "14,11": 10,
+      "14,17": 3,
+      "14,18": 10,
+      "14,19": 3,
+      "14,20": 3,
+      "14,21": 3,
+      "14,22": 3,
+      "14,23": 9,
+      "14,24": 9
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "6,2,5,21",
+    "1,2,1,5",
+    "12,2,1,21",
+    "14,18,1,5",
+    "14,11,1,6",
+    "2,2,1,21",
+    "2,26,1,3",
+    "6,26,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "t_object_order"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "更新開始フラグ",
+      "Formula": "申込キャンセル登録!$AA$7"
+    }
+  ]
+}//1OdGflPVZE/2K0gIctE/CIQdEwWxQSAcI/2JXo+GfgF2kTta8OdG+mZgSAn9kqwFlgRUhPO+lG2/3T6Rhz+FIj0ZMI4S2ybPdRRCswqbQsfxh7mHcZrOsEWTvRLzOK3dy3OQsL146GyLPufREEl6ougYLABKMoAAAE2hzbjpIhMwbbCzjdsftuNP0Im8GpVzJSSkJtoehH1PJZQ7b8G9pRyIUbdGq+2pdEtpG7qauSa0HUZE7t3CwgbPhftVE5LYdswE5WRChtjJ3jZhHOdDyjrHKxsjX2V18K2dnyP+NZMj2h7Hmd6zVwm8GD6QkVookerDeNV2nFquA4Ds1CdApWxmZ+ckuyN1e677Lxgr55IR/xG/yeeqtcf6GTXcJ8K3CE9HisFEkwiwKPxclwtIJ3N2qCe7XIQ0ywVUvtqzGb+zCE6SSYHSoWRePh6W5Dk2WTYTSL9XNq2acCJuHtYv43pmkgCS1c8ZGU3KqgyjHU7Hl6Xi0urIL+URiSjyWGbKUqfJwEIwHGMaXTv+3G3W6urGnx7i2v9m19rJgVkcRrer/2qtRAFP+RerBX9CJtEyKWf9Oa2BIDHdIQ5Tq4m9D97azwWBAxmahlHTy/GzFR3VHmWBJPdTfw2vLiLjdrE8cxlfQ6js+QBQUPwJ1BOS0w84GujHQlrUybyTmlRX2KzOvWx1m+w+sHii+J0fyUjOFP1qBB39dZ2Gd/2STmAjTac4p1B7ydxR6yoNmSryhPyPQVDQEitXFrprJ5Fll8C2IQ8/ndle+faG/IrWy+gXN4IysyVreUT6Do2sHyNrgZ0/sRhZnZuHM8sKWkS5uFtcDLII1KxG9ue2olBr5/sy5uOQXk80p/ASZH/QJgOcC3T4gnoFe/b+Js+GGMcaxXPuBOAv/MDCdMm8nDa9V+++QA==|920

@@ -1,0 +1,984 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_調査ID"
+        },
+        {
+          "Name": "P_元_調査申込日"
+        },
+        {
+          "Name": "P_元_調査区分"
+        },
+        {
+          "Name": "P_元_調査希望区分"
+        },
+        {
+          "Name": "P_元_調査希望開始日"
+        },
+        {
+          "Name": "P_元_調査希望終了日"
+        },
+        {
+          "Name": "P_元_調査希望時刻"
+        },
+        {
+          "Name": "P_元_立会者有無フラグ"
+        },
+        {
+          "Name": "P_元_立会者"
+        },
+        {
+          "Name": "P_元_指定調査会社ID"
+        },
+        {
+          "Name": "P_元_調査会社ID"
+        },
+        {
+          "Name": "P_元_調査依頼日"
+        },
+        {
+          "Name": "P_元_調査承諾日"
+        },
+        {
+          "Name": "P_元_調査日程通知日"
+        },
+        {
+          "Name": "P_元_調査方法ID"
+        },
+        {
+          "Name": "P_元_調査予定開始日"
+        },
+        {
+          "Name": "P_元_調査予定終了日"
+        },
+        {
+          "Name": "P_元_調査報告書受領予定日"
+        },
+        {
+          "Name": "P_元_調査実施日"
+        },
+        {
+          "Name": "P_元_調査報告書受領日"
+        },
+        {
+          "Name": "P_元_調査報告書納品日"
+        },
+        {
+          "Name": "P_元_調査ステータスID"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_調査ID"
+              }
+            },
+            "value": "%Null%"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": "0",
+              "CustomReturns": [],
+              "Comments": "調査IDが無ければ終了"
+            }
+          ],
+          "ID": "92fba243-5aa2-4f00-8644-d61550c88dfb"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "最新の調査情報",
+      "TableValue": {
+        "TableName": "t_object_survey",
+        "TableValueType": 1,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_request_date"
+            },
+            "ColumnName": "調査申込日"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_type_id"
+            },
+            "ColumnName": "調査区分ID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_preferred_type"
+            },
+            "ColumnName": "調査希望区分"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_preferred_sttdate"
+            },
+            "ColumnName": "調査希望開始日"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_preferred_enddate"
+            },
+            "ColumnName": "調査希望終了日"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_preferred_time"
+            },
+            "ColumnName": "調査希望時刻"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "withness_being_flg"
+            },
+            "ColumnName": "立会者有無フラグ"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "withness"
+            },
+            "ColumnName": "立会者"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "specify_survey_id"
+            },
+            "ColumnName": "指定調査会社ID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_customer_id"
+            },
+            "ColumnName": "調査会社ID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_arrange_date"
+            },
+            "ColumnName": "調査依頼日"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_accept_date"
+            },
+            "ColumnName": "調査承諾日"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_notification_date"
+            },
+            "ColumnName": "調査日程通知日"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_method_id"
+            },
+            "ColumnName": "調査方法ID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "scheduled_survey_sttdate"
+            },
+            "ColumnName": "調査予定開始日"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "scheduled_survey_enddate"
+            },
+            "ColumnName": "調査予定終了日"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_report_scheduled_date"
+            },
+            "ColumnName": "調査報告書受領予定日"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_enforcement_date"
+            },
+            "ColumnName": "調査実施日"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_report_receipt_date"
+            },
+            "ColumnName": "調査報告書受領日"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "suvey_report_delivery_date"
+            },
+            "ColumnName": "調査報告書納品日"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "survey_status_id"
+            },
+            "ColumnName": "調査ステータスID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_object_survey",
+              "ColumnName": "last_updated_label"
+            },
+            "ColumnName": "最終更新ラベル"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "t_object_survey",
+            "ColumnName": "survey_id"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=P_調査ID"
+          }
+        }
+      },
+      "ID": "392c72e2b8c94bfeb81955dbd7db2a80"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "排他エラーフラグ",
+      "ParameterValue": "0",
+      "ID": "161f61681b3c4b1ca786ccd7e78c4731"
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査申込日"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査申込日"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "31bbb59844ad41ca83c8231dc39db0e7"
+            }
+          ],
+          "ID": "70dddac4-f709-41d1-a930-b5426cde9866"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査区分"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査区分ID"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "f5aa1f38e67a455c8be83f30fc86d3cc"
+            }
+          ],
+          "ID": "694f420d-3519-427f-8ef6-0e6ea983042d"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査希望区分"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査希望区分"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "2488226763bb4839b7f5624bc97b989c"
+            }
+          ],
+          "ID": "d89dbb3f-b0a8-447b-877a-cb6fed68e638"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査希望開始日"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査希望開始日"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "33698a883d0f4e7bbbb5401e1820a67e"
+            }
+          ],
+          "ID": "4923f0fe-db73-4c33-a77a-e787bd2bb721"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査希望終了日"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査希望終了日"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "18811a72deac4b48bf9a1ec1d07c756b"
+            }
+          ],
+          "ID": "e2f2be62-e67b-4a7b-8411-6aa35828f5fa"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査希望時刻"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査希望時刻"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "028cf765f0da4642802d7075d926bcb2"
+            }
+          ],
+          "ID": "7df82ccf-3c48-4cda-8cc1-34d289e81fdf"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_立会者有無フラグ"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.立会者有無フラグ"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "a3758576bbdf475fb950d96e40a8d775"
+            }
+          ],
+          "ID": "6e2c6d30-c0e4-4c3c-b6da-4552b59ebfda"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_立会者"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.立会者"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "91647613a68a4e89a1a6ed9ed2f47655"
+            }
+          ],
+          "ID": "58a19ff6-bdac-44dd-8405-220752285fd5"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_指定調査会社ID"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.指定調査会社ID"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "1019478b0453462fa7b1ed7d2fb78f21"
+            }
+          ],
+          "ID": "a29c7104-8638-4baa-a554-54a177af4084"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査会社ID"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査会社ID"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "3b818b396ae74589b80678d83a2f36e1"
+            }
+          ],
+          "ID": "5aa6959b-f4be-43d4-b67b-dcd4c153b0f9"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査依頼日"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査依頼日"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "d11f0858e16e404cbd93835de30fcf4c"
+            }
+          ],
+          "ID": "6e34f285-674e-41b1-8da1-8c9db38a9402"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査承諾日"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査承諾日"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "e42b5c1eee334ecb9918144bc103f4e2"
+            }
+          ],
+          "ID": "882b470c-670d-4ccf-9d39-0bfc5a81bd89"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査日程通知日"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査日程通知日"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "d423b00e3e6b4ef395be92c0a6e06192"
+            }
+          ],
+          "ID": "b544f930-ba6a-4197-821c-5485c33a40ba"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査方法ID"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査方法ID"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "09f6861a47074f4faf083e00d0b9a392"
+            }
+          ],
+          "ID": "ad17ae88-b98f-4fee-8492-ee2cc2a91937"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査予定開始日"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査予定開始日"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "1b2d71407b8044978a3abb5f014e38a8"
+            }
+          ],
+          "ID": "37bc4aea-5ac0-4772-ac8d-9f08e94d9760"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査予定終了日"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査予定終了日"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "3945525f551043fd8bc2a0b747d27a60"
+            }
+          ],
+          "ID": "03eb6b56-4fa5-4e2f-b3d0-3f7e22e651f2"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査報告書受領予定日"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査報告書受領予定日"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "6c742c24b5d5414daa89b3550dc8bc8a"
+            }
+          ],
+          "ID": "c4b792d8-3c20-476a-bd3c-1819469be30d"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査実施日"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査実施日"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "82d818751d3f4ae5bfe4efb37a2230dc"
+            }
+          ],
+          "ID": "671d948f-e29d-4572-9a68-7f8ab230d4c4"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査報告書受領日"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査報告書受領日"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "75d085f17a7d4ec5a66ff219685333f8"
+            }
+          ],
+          "ID": "6fd317b3-5c02-467b-836c-699ab46f0b31"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査報告書納品日"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査報告書納品日"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "e74b5bcc1ce14ee09d132e13c3dbc76c"
+            }
+          ],
+          "ID": "a9e879c9-29d4-47bc-a656-2a5fda191781"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_元_調査ステータスID"
+              }
+            },
+            "value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=最新の調査情報.調査ステータスID"
+            },
+            "compareType": 1
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+              "ParameterName": "排他エラーフラグ",
+              "ParameterValue": "1",
+              "ID": "f60909d88a104d6191193f21d475f00e"
+            }
+          ],
+          "ID": "41330dbb-189f-43b4-872c-2c4d90a40e4d"
+        }
+      ]
+    },
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+              "ParamObject": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=排他エラーフラグ"
+              }
+            },
+            "value": "1"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": "100",
+              "Message": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=\"他のユーザーによりデータ更新の直前に登録内容が編集されました。\"&CHAR(10)&\"編集結果は、破棄されリフレッシュされます。\"&CHAR(10)&\"最終更新者：\"&最新の調査情報.最終更新ラベル"
+              },
+              "CustomReturns": []
+            }
+          ],
+          "ID": "7570f29a-e8a9-4a2b-b877-34c352889634"
+        },
+        {
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+              "ErrorCode": "0",
+              "CustomReturns": []
+            }
+          ],
+          "ID": "eace7959-cc4b-43a1-9cf3-5167560490c4"
+        }
+      ]
+    }
+  ],
+  "Name": "調査データ排他チェック"
+}

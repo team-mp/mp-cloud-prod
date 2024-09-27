@@ -1,0 +1,622 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 2,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "39": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "45": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "46": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "47": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "48": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "49": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "50": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "58": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "24": {}
+    },
+    "InVisibleIndexes": [
+      24
+    ],
+    "InLogicalVisibleIndexes": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58
+    ],
+    "Count": 59
+  },
+  "Values": {
+    "0,43": "",
+    "0,46": "",
+    "0,51": "▼請求書添付ID"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "TemplateCellSource": "ファイル名"
+    },
+    "0,22": {
+      "TemplateCellSource": "所属会社名"
+    },
+    "0,30": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "公開",
+        "Style": 2,
+        "PrimaryColor": "#FF005B47"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 4,
+            "Value1": "=1",
+            "StyleInfo": {
+              "Foreground": "Background 1 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "公開フラグ"
+    },
+    "0,35": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "不要",
+        "Style": 2,
+        "PrimaryColor": "#FF005B47"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 4,
+            "Value1": "=1",
+            "StyleInfo": {
+              "Foreground": "Background 1 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "添付不要フラグ"
+    },
+    "0,43": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=\"ファイル名：\"&'0665543c59894801a96e0af7d6769ee'!A1&CHAR(10)&\"このファイルを削除します。よろしいですか？\"&CHAR(10)&\"※削除した場合は、削除履歴として保存されます\""
+                  },
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 4
+                },
+                "CommandList": [
+                  {
+                    "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                    "LoadingText": "お待ちください",
+                    "LoadingTextColor": "Background 1 0"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "請求書ファイル削除処理",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='0665543c59894801a96e0af7d6769ee'!AZ2"
+                        },
+                        "ParamName": "P_請求書添付ID"
+                      }
+                    ],
+                    "ResultErrorCodeTo": {
+                      "SerializeProperty": "リターンコード"
+                    },
+                    "ResultMessageTo": {
+                      "SerializeProperty": "リターンメッセージ"
+                    },
+                    "CheckDataValidation": false
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "='0665543c59894801a96e0af7d6769ee'!リターンコード"
+                              }
+                            ]
+                          },
+                          "value": "0"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                            "ReloadData": true
+                          }
+                        ],
+                        "ID": "a179cf4b-8f5c-4ea5-bc7b-cb1f99d9e5a6"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "='0665543c59894801a96e0af7d6769ee'!リターンメッセージ"
+                            }
+                          }
+                        ],
+                        "ID": "b7d15b06-d568-4a29-b86b-aee965700b4e"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "978db91c-0991-4852-bf3b-67a3d20e9e8a"
+              }
+            ]
+          }
+        ],
+        "ToolTip": "ファイルを削除します",
+        "TemplateKey": "リスト用",
+        "ImagePath": "Application/037_delete_2.svg",
+        "BuiltIn": true,
+        "Color": "Background 1 -35",
+        "UseCellForeColor": true
+      }
+    },
+    "0,46": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "請求書ファイルダウンロード処理",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='0665543c59894801a96e0af7d6769ee'!AZ2"
+                },
+                "ParamName": "P_請求書添付ID"
+              }
+            ],
+            "ResultErrorCodeTo": {
+              "SerializeProperty": "リターンコード"
+            },
+            "ResultMessageTo": {
+              "SerializeProperty": "リターンメッセージ"
+            },
+            "CheckDataValidation": false
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='0665543c59894801a96e0af7d6769ee'!リターンコード"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "='0665543c59894801a96e0af7d6769ee'!リターンメッセージ"
+                    }
+                  }
+                ],
+                "ID": "c94a648c-e42e-4765-a8b8-b4374c2870c4"
+              }
+            ]
+          }
+        ],
+        "ToolTip": "ファイルをダウンロードします",
+        "TemplateKey": "リスト用",
+        "ImagePath": "Application/111_download_6.svg",
+        "BuiltIn": true,
+        "Color": "Background 1 -35",
+        "UseCellForeColor": true
+      }
+    },
+    "1,0": {
+      "TemplateCellSource": "ファイル属性名"
+    },
+    "1,9": {
+      "TemplateCellSource": "ファイルサイズ"
+    },
+    "1,15": {
+      "TemplateCellSource": "ファイル作成日時"
+    },
+    "1,22": {
+      "TemplateCellSource": "登録ユーザー名"
+    },
+    "1,51": {
+      "TemplateCellSource": "請求書添付ID"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "TextIndent": 4,
+        "Underline": true,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 5
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "Foreground": 6,
+        "TextIndent": 4,
+        "BorderBottom": null,
+        "ShrinkToFit": true
+      },
+      {
+        "BorderBottom": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 5,
+        "Formatter": 7,
+        "HorizontalAlignment": 8,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 5,
+        "Formatter": 9,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 5,
+        "BorderBottom": null
+      },
+      {
+        "Background": 10
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "#FF005B47",
+        "Left",
+        "Center",
+        "Background 1 -35",
+        "#FF000000",
+        "#,##0KB",
+        "Right",
+        "yyyy/mm/dd hh:mm",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,22": 1,
+      "0,23": 2,
+      "0,24": 2,
+      "0,25": 2,
+      "0,26": 2,
+      "0,28": 2,
+      "0,29": 2,
+      "0,30": 1,
+      "0,31": 2,
+      "0,32": 2,
+      "0,33": 2,
+      "0,34": 1,
+      "0,35": 1,
+      "0,39": 1,
+      "0,42": 1,
+      "0,43": 3,
+      "0,44": 4,
+      "0,46": 3,
+      "0,47": 5,
+      "1,0": 6,
+      "1,1": 7,
+      "1,2": 7,
+      "1,3": 7,
+      "1,4": 7,
+      "1,5": 7,
+      "1,6": 8,
+      "1,7": 7,
+      "1,8": 7,
+      "1,9": 9,
+      "1,10": 10,
+      "1,11": 10,
+      "1,12": 10,
+      "1,13": 10,
+      "1,14": 7,
+      "1,15": 11,
+      "1,16": 7,
+      "1,17": 7,
+      "1,18": 7,
+      "1,19": 7,
+      "1,20": 7,
+      "1,21": 7,
+      "1,22": 12,
+      "1,23": 13,
+      "1,24": 13,
+      "1,25": 13,
+      "1,26": 13,
+      "1,28": 13,
+      "1,29": 13,
+      "1,30": 2,
+      "1,31": 2,
+      "1,32": 2,
+      "1,33": 2,
+      "1,34": 1,
+      "1,39": 1,
+      "1,42": 12,
+      "1,43": 14,
+      "1,44": 14,
+      "1,45": 7,
+      "1,46": 10,
+      "1,47": 10,
+      "1,48": 7,
+      "1,50": 7,
+      "1,51": 15,
+      "1,57": 7,
+      "1,58": 7
+    },
+    "ColStyles": {
+      "0": 16,
+      "1": 16,
+      "2": 16,
+      "3": 16,
+      "4": 16,
+      "5": 16,
+      "6": 16,
+      "7": 16,
+      "8": 16,
+      "9": 16,
+      "10": 16,
+      "11": 16,
+      "12": 16,
+      "13": 16,
+      "14": 16,
+      "15": 16,
+      "16": 16,
+      "17": 16,
+      "18": 16,
+      "19": 17,
+      "20": 17,
+      "21": 17,
+      "22": 18,
+      "23": 18,
+      "24": 18,
+      "25": 18,
+      "26": 18,
+      "27": 18,
+      "28": 18,
+      "29": 18,
+      "30": 18,
+      "31": 18,
+      "32": 18,
+      "33": 18,
+      "34": 18,
+      "35": 18,
+      "36": 18,
+      "37": 18,
+      "38": 18,
+      "39": 18,
+      "42": 18,
+      "45": 16,
+      "46": 19,
+      "47": 19,
+      "48": 16,
+      "49": 16,
+      "50": 16,
+      "51": 16,
+      "52": 16,
+      "53": 16,
+      "56": 16
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,0,1,7",
+    "1,9,1,5",
+    "0,46,2,2",
+    "1,22,1,8",
+    "0,22,1,8",
+    "1,15,1,7",
+    "1,51,1,2",
+    "0,0,1,21",
+    "0,43,2,2",
+    "0,35,2,4",
+    "0,30,2,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "請求書ファイルアップロード"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//7WlpJBTjm324X/C10Y1m/pUT4z12PnucsA4ypxBb5/QqJ5OQNrc3AI0EjCjeye6hnpMITZuNjuhD+FUEJs4tDMm2qggBjypNURwliRg5LHKqKRgyW8Z7zq3cnjfO7KIegdqEVW/DjLLsxznOA08NxnOwKD7diHOWX8pFQXG5H45PSrr7b9CuRPihlWKCInaVGJGrm138FqvO9xclYPPcr0q3ORSyPrOoLvOhdMtLknqBGnsAjDwqgbUWsPhlUlJ2F+8t6SgVW7Ml1itAqVSycDqM3+2t9CaBquXAkMTAxKHoxeonl9Nqz3RfAOMfvk1OpVMtbxXlCFtgrRchTGKjDZRmx7mVxPbD8OGhaudBaVtiGoOdT9DKqDBZELwzJuDnYhtzrN1X9wEXJc78GMgUcWz3VYnDhvnGRqW1+juy1CuwQG9mKluocf3oLuQ3o1Zg++7rIMLOBUUc5tSdDzM6ieXcXCWHGVwNLLevZ6iD3sL2hD1vSP3yQAv2ua92EkMtrf1tkS5qXLlEsVirwqHecHoNqPl9dFIOtT0PD9G6Bz32fDFHl1iflKYL6e1Z6cXTce3RxSD2x4U77rQfsFpoK67yjHajW6fR01opRZPWmZ7UoLlPw4OUioz78Worb0K2aXzHzK/sPmxAGDMH2/LhfIKARLVaRpjeEJzUqIk4E7+jHMLNOm0y0zNThyrwsbzxt8aPqMA6q3PeYF0dAXxkb+epGgjJYzmtb3BssWrAxEC9mhD20SpH2gBQTkFhhREWWWdFzpPm9jQaF3pLwf1Qe6tpAgAeFU6Ii/8tXEWoIB9krNKtHOr8Kwkg4HhXesacig7CI/XpKgj1P9fP3GPvmJ1qecmMyVPaDt2CS6ONs752C6KlD0Ocz6MgK3bWRLgGGq1+gSPGoi6zHTFHqmKPrw==|920

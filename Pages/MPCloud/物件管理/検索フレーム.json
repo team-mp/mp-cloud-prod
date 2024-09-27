@@ -1,0 +1,411 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 36
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "48": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "49": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "Count": 65
+  },
+  "Values": {
+    "1,35": "詳細検索する",
+    "1,42": "ダウンロードする",
+    "1,50": "最新情報に更新する",
+    "3,0": "ブランク",
+    "3,59": "▼区切り位置",
+    "6,59": "▼検索ワード1",
+    "9,59": "▼検索ワード2"
+  },
+  "Formulas": {
+    "7,59": "IF(BH5>0,LEFT(K2,BH5-1),IF(K2<>\"\",K2,\"\"))",
+    "4,59": "IF(IFERROR(FIND(\"　\",K2),0)>0,FIND(\"　\",K2),IF(IFERROR(FIND(\" \",K2),0)>0,FIND(\" \",K2),0))",
+    "10,59": "IF(BH5>0,MID(K2,BH5+1,1000),\"\")"
+  },
+  "AttachInfos": {
+    "1,10": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 70"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "検索ワードを入力してください",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=検索フレーム!最新化フラグ"
+                },
+                "Value": "1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "1,24": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ToolTip": "※指定した文字列を含む場合にヒットします。スペース文字を区切りとして２ワードによる検索も可能です",
+        "TemplateKey": "余白4",
+        "ImagePath": "Mobile/452_help_1.svg",
+        "BuiltIn": true,
+        "Color": "#FF005B47",
+        "UseCellForeColor": true
+      }
+    },
+    "1,35": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "詳細検索する",
+        "TemplateKey": "角緑",
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE(検索フレーム!詳細検索ボタン表示フラグ)<>1"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "1,42": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=検索フレーム!物件リストダウンロード"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "Text": "ダウンロードする",
+        "TemplateKey": "角緑",
+        "Icon": {
+          "Name": "Arrow/344_download_6.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE(検索フレーム!抽出カウント)=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "1,50": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=検索フレーム!最新化フラグ"
+                },
+                "Value": "1"
+              }
+            ]
+          }
+        ],
+        "Text": "最新情報に更新する",
+        "TemplateKey": "角緑",
+        "Icon": {
+          "Name": "Application/057_refresh_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,0": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "ブランク",
+        "OverflowMode": 0
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "Foreground": 1,
+        "ShrinkToFit": true
+      },
+      {
+        "FontSize": 18.666666666666664,
+        "Foreground": 1,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 4
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 5
+      },
+      {
+        "Background": 4,
+        "FontFamily": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Accent 1 0",
+        "Body",
+        "@",
+        "#FFFFFF00",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,9": 1,
+      "1,10": 2,
+      "1,11": 3,
+      "1,12": 3,
+      "1,13": 3,
+      "1,14": 3,
+      "1,15": 3,
+      "1,16": 3,
+      "1,17": 3,
+      "1,18": 3,
+      "1,19": 3,
+      "1,20": 3,
+      "1,21": 3,
+      "1,22": 3,
+      "1,23": 3,
+      "1,24": 3,
+      "1,25": 3,
+      "1,35": 4,
+      "1,42": 4,
+      "1,50": 4,
+      "1,56": 3,
+      "1,57": 4,
+      "1,58": 4,
+      "1,59": 4,
+      "1,60": 4,
+      "1,61": 4,
+      "1,62": 4,
+      "1,63": 4,
+      "4,59": 5,
+      "6,59": 6,
+      "6,60": 3,
+      "6,61": 3,
+      "7,59": 7,
+      "7,60": 3,
+      "7,61": 3,
+      "9,59": 6,
+      "9,60": 3,
+      "9,61": 3,
+      "10,59": 7,
+      "10,60": 3,
+      "10,61": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "3,0,33,57",
+    "4,59,1,3",
+    "7,59,1,3",
+    "10,59,1,3",
+    "1,35,1,6",
+    "1,10,1,13",
+    "1,1,1,8",
+    "1,42,1,7",
+    "1,50,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=検索フレーム!検索リスト"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=TOPページ_本社!検索リスト名"
+            }
+          },
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=検索フレーム!ページタイトル"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=検索フレーム!検索ページタイトル"
+            }
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "検索リスト",
+      "Formula": "検索フレーム!$A$4"
+    },
+    {
+      "Name": "検索ワード1",
+      "Formula": "検索フレーム!$BH$8"
+    },
+    {
+      "Name": "検索ワード2",
+      "Formula": "検索フレーム!$BH$11"
+    },
+    {
+      "Name": "検索ワード",
+      "Formula": "検索フレーム!$K$2"
+    },
+    {
+      "Name": "ページタイトル",
+      "Formula": "検索フレーム!$B$2"
+    }
+  ]
+}//uMK8uUkrRpYmhK3LOUvSlESNuojFVbPj7oxvSrIN7rwcBvdPUDcJqoro5kMrDgctMm9+Tv69JRNEkYfBYvcuJ9AZIf6dLHH6CcBB2BgHsiKwnCIQUAzqURBBooqEjaLly6LS8K6VX1/eVgzPq7jTshvQ9T5oZE3swaiLOZUTbAkdfi76Be5wjof8SOpgECk7hP8V0oOCQ0bLD+zcVyoi0A3R0R9+9YRqoZLmUtUUWbbR+YFGbGs3OT5y/rVEZ4YWPDE/8hJZ73D2cDT7CnSQKmqc0+36RQuuKTcYChYHBoFUjGHrgHe5uetX2DaRr0ZIH0rIS0SgAFmcDYxyEvoh/yG2eNl5MYlLHn9gR6MEsQ11mA0WtEnOa+vFulW+kjF/OcfsYEAwb3gEC2o4dIAErIRPWp60x956O9za279kczVSRdV+NWnRLJCKneiQ5qkRh6nkLMHIo/F+bBAy1JNcrVGbvkk6fyPPlBPTsluDT/SxU2JJr+bYsApdfT5Npc9yrPEsBp80wlCq3+xRIcwcEoXIh0fg3RhfsDWbdmn9m5riqc7tEURFr0PyED/19wIYeDWFvSwjhqi9e7oIlwSA5qQy8UCAM0Tz/WmqHhHwtYR+m5yI5DwxsJmJ/fi88clH5w4lW9z81wsvNnWHtOgdcvd1L7M7eLPI6npHr8A35YbPgOHct0TtWA5kwi+xLapb3BH9M11glnWHD8kqhHid1CePO7KC1yCb5jhpQ+aMne9Fyp4KIFqFmERihnKXcbu3ueLLIohQio7UJyeo4y3mU+2R+slWRMG3SR/y1/7OZajNESa/mV46NtVtEMXtvEd9bJs5yWompLlrgh/sc1DjAE/xINi1DJ/htWF3i9ECTh7Kr8c7tw7PzevD0zfR6HntlkNDHJWmI1nO7PTonGBpYA==|920

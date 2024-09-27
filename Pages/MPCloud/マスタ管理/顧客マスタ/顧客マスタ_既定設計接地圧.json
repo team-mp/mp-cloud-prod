@@ -1,0 +1,539 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0,
+          "Mode": 1
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 18,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      20,
+      21,
+      22,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "Count": 44
+  },
+  "Values": {
+    "3,2": "対象住宅事業者向けの設計接地圧を表示します。\r\n既定値の変更が必要な場合は、設計接地圧を編集後、更新ボタンを押してください",
+    "5,23": "設計接地圧(kN/㎡)",
+    "5,34": "▼顧客ID",
+    "16,26": "更新する"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "BindingInfo": {
+        "TableName": "m_customer",
+        "ColumnName": "内部顧客名"
+      }
+    },
+    "5,2": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "v_customer_gorund_pressure",
+        "RowIndex": 5,
+        "ColumnIndex": 2,
+        "ColumnCount": 29,
+        "RowCount": 10,
+        "AllowEditInListview": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "設計接地圧ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "v_customer_gorund_pressure",
+            "ColumnName": "顧客ID"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=顧客マスタ_既定設計接地圧!AI7"
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "v_customer_gorund_pressure",
+                "ColumnName": "建物構造ID",
+                "RelationBinding": {
+                  "RelatedTable": "m_object_structure",
+                  "RelatedColumn": "sutructure_id",
+                  "DisplayColumn": "sort_no"
+                }
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "v_customer_gorund_pressure",
+                "ColumnName": "基礎形状ID"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "シンプル"
+      }
+    },
+    "6,2": {
+      "BindingInfo": {
+        "TableName": "v_customer_gorund_pressure",
+        "ColumnName": "建物構造ID",
+        "RelationBinding": {
+          "RelatedTable": "m_object_structure",
+          "RelatedColumn": "sutructure_id",
+          "DisplayColumn": "structure_name"
+        }
+      }
+    },
+    "6,11": {
+      "BindingInfo": {
+        "TableName": "v_customer_gorund_pressure",
+        "ColumnName": "基礎形状ID",
+        "RelationBinding": {
+          "RelatedTable": "m_object_foundation",
+          "RelatedColumn": "foundastion_id",
+          "DisplayColumn": "foundation_name"
+        }
+      }
+    },
+    "6,20": {
+      "BindingInfo": {
+        "TableName": "v_customer_gorund_pressure",
+        "ColumnName": "顧客ID"
+      },
+      "NameUsedInJavaScript": "顧客ID"
+    },
+    "6,21": {
+      "BindingInfo": {
+        "TableName": "v_customer_gorund_pressure",
+        "ColumnName": "設計接地圧ID"
+      },
+      "NameUsedInJavaScript": "設計接地圧ID"
+    },
+    "6,22": {
+      "BindingInfo": {
+        "TableName": "v_customer_gorund_pressure",
+        "ColumnName": "設計接地圧ID",
+        "RelationBinding": {
+          "RelatedTable": "m_ground_pressure",
+          "RelatedColumn": "ground_pressure_id",
+          "DisplayColumn": "ground_pressure"
+        }
+      }
+    },
+    "6,23": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 2
+      },
+      "BindingInfo": {
+        "TableName": "v_customer_gorund_pressure",
+        "ColumnName": "設計接地圧"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=顧客マスタ_既定設計接地圧!W7<>顧客マスタ_既定設計接地圧!X7"
+            },
+            "StyleInfo": {
+              "Foreground": "#FF00B050",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "NameUsedInJavaScript": "設計接地圧"
+    },
+    "6,34": {
+      "BindingInfo": {
+        "TableName": "m_customer",
+        "ColumnName": "customer_id"
+      }
+    },
+    "16,26": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "769b53af-30a0-4c8b-93cb-2097cb0976e4",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=顧客マスタ_既定設計接地圧!AA17"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "6c89412f-f509-4fef-b824-e7c2cb0fbece",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+                  }
+                }
+              }
+            ],
+            "ReturnPropertiesTo": []
+          },
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "お待ちください",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "既定設計接地圧更新処理",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandListviewParam, ServerDesignerCommon",
+                "ListviewName": "設計接地圧ビュー",
+                "Columns": [
+                  {
+                    "ArrayItemName": "P_顧客ID",
+                    "Column": "顧客ID"
+                  },
+                  {
+                    "ArrayItemName": "P_設計接地圧ID",
+                    "Column": "設計接地圧ID"
+                  },
+                  {
+                    "ArrayItemName": "P_設計接地圧",
+                    "Column": "設計接地圧"
+                  }
+                ],
+                "ParamName": "P_設計接地圧リスト"
+              }
+            ],
+            "ResultErrorCodeTo": {
+              "SerializeProperty": "リターンコード"
+            },
+            "ResultMessageTo": {
+              "SerializeProperty": "リターンメッセージ"
+            },
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": false
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=顧客マスタ_既定設計接地圧!リターンコード"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "f42a7058-bd50-471e-b8d6-c528d47a73a8"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=顧客マスタ_既定設計接地圧!リターンメッセージ"
+                    }
+                  }
+                ],
+                "ID": "da6d9825-e5d4-45ad-8f97-cf17bbf8604f"
+              }
+            ]
+          }
+        ],
+        "Text": "更新する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0,
+        "ShrinkToFit": true
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "Foreground": 1,
+        "WordWrap": true
+      },
+      {
+        "Foreground": 2
+      },
+      {
+        "FontFamily": 3,
+        "Foreground": 2
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "TextIndent": 4
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "Formatter": 4,
+        "TextIndent": 4,
+        "HorizontalAlignment": 5
+      },
+      {
+        "Background": 6
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Text 1 50",
+        "#FF000000",
+        "Body",
+        "General",
+        "Right",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "2,2": 0,
+      "2,3": 0,
+      "2,4": 0,
+      "2,5": 0,
+      "2,6": 0,
+      "2,7": 0,
+      "2,8": 0,
+      "2,9": 0,
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,22": 0,
+      "2,23": 0,
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "3,2": 1,
+      "5,2": 2,
+      "5,11": 2,
+      "5,20": 3,
+      "5,21": 3,
+      "5,22": 3,
+      "5,23": 2,
+      "5,31": 4,
+      "6,2": 5,
+      "6,11": 5,
+      "6,20": 6,
+      "6,21": 6,
+      "6,22": 6,
+      "6,23": 7,
+      "6,31": 4,
+      "6,34": 8,
+      "7,31": 4,
+      "8,31": 4,
+      "9,31": 4,
+      "10,31": 4,
+      "11,31": 4,
+      "12,31": 4,
+      "13,31": 4,
+      "14,31": 4,
+      "16,26": 9
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "6,2,1,9",
+    "6,11,1,9",
+    "1,2,1,29",
+    "6,34,1,3",
+    "6,23,1,8",
+    "3,2,1,29",
+    "7,2,8,29",
+    "16,26,1,5",
+    "5,2,1,9",
+    "5,11,1,9",
+    "5,23,1,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "既定設計接地圧",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "v_customer_gorund_pressure"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//T5py90v0V8lX/79ads47wJpzS20pxWBqV5061PfB0y8V65VXDp9AgUhl0jiMyEPdW5JGTyjx6iWH2InH6Q0p55iYGbam3gdCIc2l4epq9DL5ouOKAROyhYz5GxbCk+8QBVyW0JeO4n5ByqRBH7x+24VbY1E3GkOKe2DlH5Yf2sBr7+wB0T0stRTg/qbnJ0PutR1aetsVGHOGg9txn1dMDxAUfGzxCtjWxoo1q3n8KfGrCwY2J92r6+7wXkzGyOFMGWfTXn0Ybsv0HVboWsaMJdKciic/n0EKgoKGfZoCld/dSJN0eSrOJfW7HsHKAjJKleacpC8/ZQoP8XkWrpRDejmXJokrFsO3NAn0HSRyviUb+SLTf9eVr1857RRTakwIqcy4XDcKK4Tiu7aq5v+v0RHrHwpe2L7EwiO6fgv8Snkm/ANtXbyDaghC9qicQsq58mTcjdd/aMyiALd2gbbdtFg3UzdKceL6GglUM5lL97Z9vziCjOw+RMRreu9kfJXyHArEUU7YGlWJ75AwsOAsn5XEZE1QKUCOjpxtTYkXj+PutUqclqK3PLxm2cwmudV5TSOZqXCKI+/44vIqJbfc4D4jk8Ah5Qqt+xTKsxafL0mNcFMt7h7zx49NbFx1EGtRNE6q3lkkaPAqRwCuzVnVJvpEJMiT0gnzUaxgChrD9mZTIN8ZgVZRwvshAPJhEIQ044L+SRSv7Y3/rFgS31AKnGDKqP/BmH83F6znkovFKGpFv03iy+Ftf9eGBtqFEK1PbbJIFyW2F9WprA1WXV0m9+0WccWz+vF6yAvOcTpgkYXCzPunx+rKr9awtR0VU7fzUF5kK6nxde+j0/p+SOrWFNrou1OXLIst8UnZj+T3/XvUf3xuThR/7gPX5f/BbhgOijg/tTxxTlQudmXNMEm9Yg==|920

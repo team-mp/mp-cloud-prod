@@ -1,0 +1,477 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 21,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 360.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "Count": 14
+  },
+  "Values": {
+    "1,6": "▼編集リセットフラグ",
+    "2,6": "0",
+    "4,6": "▼編集確定フラグ",
+    "5,6": "0"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ListViewInfo": {
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_object_foundation",
+        "ColumnCount": 5,
+        "RowCount": 20,
+        "IsRowHeaderVisible": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "HideSelectionWhenLostFocus": true,
+        "UseSimpleBar": true,
+        "Name": "基礎形状ビュー",
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_object_foundation",
+                "ColumnName": "sort_no"
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_object_foundation",
+                "ColumnName": "foundastion_id"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "ListViewStyleName": "マスタ用"
+      }
+    },
+    "1,1": {
+      "BindingInfo": {
+        "TableName": "m_object_foundation",
+        "ColumnName": "foundation_name"
+      }
+    },
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_object_foundation",
+        "ColumnName": "private_item_flg"
+      }
+    },
+    "1,3": {
+      "BindingInfo": {
+        "TableName": "m_object_foundation",
+        "ColumnName": "sort_no"
+      }
+    },
+    "1,4": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_object_foundation",
+        "ColumnName": "active_flg"
+      }
+    },
+    "2,6": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 6,
+            "ListviewName": "基礎形状ビュー",
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              },
+              "RetrunParamNames": {}
+            }
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=基礎形状マスタ!編集リセットフラグ"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "1163bbdf-62b1-43af-9906-e63bfc780ec3",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+                  }
+                },
+                "Value": "編集をリセットしました"
+              }
+            ],
+            "ReturnPropertiesTo": []
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    },
+    "5,6": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "基礎形状ビュー"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=基礎形状マスタ!編集確定フラグ"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "1163bbdf-62b1-43af-9906-e63bfc780ec3",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+                  }
+                },
+                "Value": "編集内容を確定しました"
+              }
+            ],
+            "ReturnPropertiesTo": []
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0
+      },
+      {
+        "Background": 0,
+        "Foreground": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 5,
+        "TextIndent": 4,
+        "BorderBottom": 0
+      },
+      {
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0
+      },
+      {
+        "HorizontalAlignment": 6,
+        "BorderBottom": 0
+      },
+      {
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 5
+      },
+      {
+        "Background": 7,
+        "FontFamily": 5,
+        "FontSize": 12.0,
+        "Formatter": 8,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 5,
+        "Formatter": 9
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -5",
+        "#FF000000",
+        "General",
+        "Center",
+        "Background 1 0",
+        "Body",
+        "Right",
+        "Accent 1 80",
+        "@",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "1,0": 1,
+      "1,1": 2,
+      "1,2": 3,
+      "1,3": 4,
+      "1,4": 5,
+      "1,6": 6,
+      "1,7": 6,
+      "1,8": 6,
+      "2,6": 7,
+      "2,7": 6,
+      "2,8": 6,
+      "3,6": 6,
+      "3,7": 6,
+      "3,8": 6,
+      "4,6": 8,
+      "4,7": 6,
+      "4,8": 6,
+      "5,6": 7,
+      "5,7": 6,
+      "5,8": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 5
+    }
+  },
+  "Spans": [
+    "2,6,1,3",
+    "5,6,1,3",
+    "2,0,18,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_object_foundation",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "編集リセットフラグ",
+      "Formula": "基礎形状マスタ!$G$3"
+    },
+    {
+      "Name": "編集確定フラグ",
+      "Formula": "基礎形状マスタ!$G$6"
+    }
+  ]
+}//mLid3IuEyjTc/0yid/XbHCjw6KupBEPkf+VarrtSnzXBUMPz+4BqTmKm2TZ/ppeCOXRspb8hzXqn/ywAJKyE5JbUx3TmdDOATH3ZY14WS4ClPHYFZjit/MX5AB82y4GTlrabtTsbVgLiNH43JRAOwcXfP5RAGhCaCZPsJXBh3KuW7cRHKo0wvP/IDxUs4mw5Z80LT+o2SvGRZ6ZoT9Df6i2GqYGwHvqdhQQlbwmjIzQYqHVxxxHL2A0zZglPpYGC+KB/9CryWIPW2wVzGPSwJCNZdDpbpNC79orZRq9g5m/Ox6KHRbGdwrg1AUANK8WSjUBatLjlZS2O6TkUR7Vd6wAxeYjbnysUnWojZdFpMho5LMb8YUCTsRfsMJyZzOJER/YC1W5IwGQ7Q57WnPkLIZTeYnl2wjs+EL6UiP24IzY4LMXxo4+NfhKiRanrcF+Iz0VdU5Y7t4TWm78t3ROje6RrB84HHSvP7Xm9UyHgBVvo206ukISDi2KUbBYugKFnq0Pk57VwNalOX651KO88LTh8CzbUsNMLkEGnMcAznE/6+b/lKwcIVtw3rD9TKt6S0VjhLtOtPDyAemopxWt5pTJt2Wm0zBD9rBsR1T8n5yN9Uswibq2MjmKOrqgU3hf3p/c8BTnrVLk/EshaUZbrvytIVBl/uNbCeRi/flXi/DAfBUGUWN5ATzGtZ+jpIm1zv017SMqhZuZ1lnKIV+TMVm+ae3JoQsocAti1Wl5JWFdDOHbO52Kx24gck8mbf1RSHEahpLmQ162Ldmk6tj4ua2IQtShzRXD7fLrHbh/3Y/wM0a16MXzDkJb2p8VOaHwrQ+0b/ZKzzmDfSxNPQ9/D1yCfKT0uAQCPbqySLkzUIxTyv4TpbXTNU0SaZF9QeS0qfAZRbnZxa4rQxAOfyZ4psw==|920

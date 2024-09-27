@@ -1,0 +1,178 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_対象年"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+      "LoopInfo": {
+        "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+        "LoopCount": "30",
+        "LoopIndexParamName": "カウンター",
+        "LoopItemParamName": "Item"
+      },
+      "CommandList": [
+        {
+          "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+          "PostData": {
+            "DataItemType": 1,
+            "Data": {
+              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+              "Data": [
+                {
+                  "Name": "year",
+                  "DataItemType": 0,
+                  "Data": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_対象年"
+                  }
+                },
+                {
+                  "Name": "line",
+                  "DataItemType": 0,
+                  "Data": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=カウンター"
+                  }
+                }
+              ]
+            }
+          },
+          "WebUrl": "https://api.excelapi.org/datetime/holiday-list",
+          "Method": "GET",
+          "SuccessCallback": "// レスポンスデータは「result」変数に格納されます。\r\n// 「result」変数を使用して、リクエストが成功したコールバック関数を実装します。\r\n//console.log(result);",
+          "ErrorCallback": "// エラーデータは「error」変数に格納されます。\r\n// 例外処理には「error」変数を使用してください。\r\nconsole.error(error);",
+          "NewParameter": "日付",
+          "Header": [],
+          "Comments": "EXCEL APIを使用（祝日を取得）"
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=日付"
+                  }
+                },
+                "value": "0",
+                "compareType": 2
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "登録済みカウント",
+                  "TableValue": {
+                    "TableName": "m_bank_holiday",
+                    "TableValueType": 3,
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "m_bank_holiday",
+                        "ColumnName": "holiday"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=日付"
+                      }
+                    }
+                  },
+                  "ID": "66f4aad71c5346fea52a8f8297c05ae5"
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=登録済みカウント"
+                          }
+                        },
+                        "value": "0"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+                          "PostData": {
+                            "DataItemType": 1,
+                            "Data": {
+                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                              "Data": [
+                                {
+                                  "Name": "date",
+                                  "DataItemType": 0,
+                                  "Data": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=日付"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          "WebUrl": "https://api.excelapi.org/datetime/holiday",
+                          "Method": "GET",
+                          "SuccessCallback": "// レスポンスデータは「result」変数に格納されます。\r\n// 「result」変数を使用して、リクエストが成功したコールバック関数を実装します。\r\n//console.log(result);",
+                          "ErrorCallback": "// エラーデータは「error」変数に格納されます。\r\n// 例外処理には「error」変数を使用してください。\r\nconsole.error(error);",
+                          "NewParameter": "祝日の名称",
+                          "Header": [],
+                          "Comments": "EXCEL APIを使用（祝日名を取得）"
+                        },
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "m_bank_holiday",
+                          "UpdateType": "add",
+                          "ShowConfirm": false,
+                          "ConfirmText": "本当に追加してもよろしいですか？",
+                          "UpdateValues": [
+                            {
+                              "ColumnName": "holiday",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=日付"
+                              }
+                            },
+                            {
+                              "ColumnName": "notes",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=祝日の名称"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "7a042439-564e-4f69-8a63-ac463e716af9"
+                    }
+                  ]
+                }
+              ],
+              "ID": "72332a1c-f19e-47f7-b084-b202355162d6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Name": "祝日取得（銀行休業日）"
+}

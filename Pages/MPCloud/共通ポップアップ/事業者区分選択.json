@@ -1,0 +1,169 @@
+{
+  "Rows": {
+    "Count": 10
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "Count": 28
+  },
+  "Values": {
+    "2,4": "申込事業者に設定する",
+    "2,19": "▼事業者区分",
+    "5,4": "住宅事業者に設定する"
+  },
+  "AttachInfos": {
+    "2,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=事業者区分選択!T4"
+                },
+                "Value": "1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "申込事業者に設定する",
+        "TemplateKey": "角緑"
+      }
+    },
+    "5,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=事業者区分選択!T4"
+                },
+                "Value": "2"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "住宅事業者に設定する",
+        "TemplateKey": "角緑"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0,
+        "VerticalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "Background": 4,
+        "FontFamily": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Top",
+        "Body",
+        "[AUTO]General",
+        "#FFFFC000"
+      ]
+    },
+    "CellStyles": {
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,19": 1,
+      "2,20": 2,
+      "2,21": 2,
+      "3,14": 0,
+      "3,15": 0,
+      "3,16": 0,
+      "3,19": 3,
+      "3,20": 2,
+      "3,21": 2,
+      "4,14": 0,
+      "4,15": 0,
+      "4,16": 0,
+      "5,4": 2,
+      "5,5": 2,
+      "5,6": 2,
+      "5,7": 2,
+      "5,8": 2,
+      "5,9": 2,
+      "5,10": 2,
+      "5,11": 2,
+      "5,12": 2,
+      "5,13": 2,
+      "5,14": 0,
+      "5,15": 0,
+      "5,16": 0,
+      "6,4": 2,
+      "6,5": 2,
+      "6,6": 2,
+      "6,7": 2,
+      "6,8": 2,
+      "6,9": 2,
+      "6,10": 2,
+      "6,11": 2,
+      "6,12": 2,
+      "6,13": 2,
+      "6,14": 0,
+      "6,15": 0,
+      "6,16": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "3,19,1,3",
+    "2,4,2,10",
+    "5,4,2,10"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//0hAnI/Jn/mEhuMbBUdsw/fs0LRpy8xPalybo3QHL+Q2ujD0i8xy8R3jWtZgDF4evP9T4ttyxGGBR5Y6yCTOl17DIiGuZZkkK7VvoZkslXi+FIaNDm1Gv0eB4iqPtadTCcKS3vYZsb7Dl63+ZlEjWu0ckZ4BSqNHugzNKghT4FD4gSw2Q0bk+oDB8QRm+ZlSFcryTP4MYyS2NhOArDTD/oe0IZCqwO0EbHSsuGd/tK/+zgFNUtic2IoLFWagZWoGg7JsWYD+NENLVBsc7gqdIVhv6fJ92Lj3vF70ADTqviT0Ov9+Rk9S+pm+n0wE/PukaqU3VWLuhQx1F3HaVV9YmiwkPZnIZbyGOZxmXkdGSIxEgywISUFbS9xRt6GbgLR5z65KsrMx7AL60l3h4PaBPXE6Gx1L9aXZHlI5CQZtBonLJyfS+5bbB5jb3hxM47aFhUZMIxi5JxbqniSf5jgSpdT1JrStWrGeAb2tKWpRoe29Wh4GEyjrc5BdZCu7BAWGzlkcZwWgWIXEyClH4mCkY4IGNauhV82CnZ1u9IRrtOpjfDkbOxlywJKRWwDUhnMNNiRXZyP1wKCeBkvev4r04Sd0hkeA1IW7DG76rkOQdslEHppQVS0krbGzD4O+kTHqqCxdc2sofWNbD/34bwOAasC5yjOme8CoDATh2uea03PmqmF52KsLEiDcDbGsl8P+xrcXDy6YKeu8myDb/Bir2g+IaQ+FR0m+8WYkKAZg0PiEAVZdv9jEuPAZwSwn9L/C+hJsJNwqusrCiMS5ThEl67s62We16DMMZ2Tp9+1rCDyi4Mhcm/tNH6WmTYrnnfEiLZBn5vzk4hFaP/Z1cRN8h4llJ0fWWVSyCdD7saypJ1Q2gSHtDZ3s3r31wGokaBYEkKgAXoTS5LSRNfFb1qtEi8Q==|920

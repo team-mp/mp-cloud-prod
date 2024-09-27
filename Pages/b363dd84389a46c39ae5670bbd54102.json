@@ -1,0 +1,306 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "Mode": 1
+        }
+      }
+    },
+    "Count": 4,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "Count": 47
+  },
+  "AttachInfos": {
+    "0,0": {
+      "TemplateCellSource": "署名ID"
+    },
+    "0,1": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "通常スタイル"
+      },
+      "TemplateCellSource": "署名タイプ名"
+    },
+    "0,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "通常スタイル",
+        "WaterMark": "署名を入力してください"
+      },
+      "TemplateCellSource": "署名"
+    },
+    "0,28": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "このデータを削除します。よろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 4
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "m_mail_signature",
+                    "UpdateType": "delete",
+                    "ShowConfirm": false,
+                    "ConfirmText": "本当に削除してもよろしいですか？",
+                    "UpdateValues": []
+                  }
+                ],
+                "ID": "61cf2d51-adc8-48ec-8d5c-033e36abdc34"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "余白2グレー",
+        "ImagePath": "Application/037_delete_2.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=b363dd84389a46c39ae5670bbd54102!$A$1=\"\""
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 2,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 2,
+        "VerticalAlignment": 3,
+        "WordWrap": true
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 4
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Background 1 -15",
+        "@",
+        "Top",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 2,
+      "0,23": 2,
+      "0,25": 2,
+      "0,26": 2,
+      "0,27": 3,
+      "0,28": 4,
+      "1,0": 0,
+      "1,1": 1,
+      "1,23": 2,
+      "1,25": 2,
+      "1,26": 2,
+      "1,27": 3,
+      "2,0": 0,
+      "2,1": 1,
+      "2,23": 2,
+      "2,25": 2,
+      "2,26": 2,
+      "2,27": 3,
+      "3,0": 5,
+      "3,1": 5,
+      "3,23": 2,
+      "3,25": 2,
+      "3,26": 2,
+      "3,27": 3
+    },
+    "ColStyles": {
+      "2": 6,
+      "3": 6,
+      "4": 6,
+      "5": 6,
+      "6": 6,
+      "7": 6,
+      "8": 6,
+      "9": 6,
+      "10": 6,
+      "11": 6,
+      "12": 6,
+      "13": 6,
+      "14": 6,
+      "15": 6,
+      "16": 6,
+      "17": 6,
+      "18": 6,
+      "19": 6,
+      "20": 6,
+      "21": 6,
+      "22": 6,
+      "23": 6,
+      "24": 6,
+      "25": 6,
+      "26": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "0,2,4,25",
+    "0,28,4,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "署名マスタ",
+    "PageResponsiveMode": 2
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//+iKS0o/nLA4hP+H6fqr72U0aN8kJVFPQdhgkLuYgmEo0LIODN/Tgil5pxcGj28qNNl6UjlYbsyXs/NTw9pJz7r1+vOrBm1/eTlFoxWXc/n3nGuAqqeI2zd1IAan2Y+n9YeDG2lTKZ50BoMDHSaEWy9rDXWthyulRS1wR2FpPrzzqSwTAjSXEJvzIn9b2R/XIkkHpvQ6LIzmt7nkWc1cXIajaL+4bmyPxjvJ/D+ATJccP9NPoxJ1h++bFZOvsLk7dBvkHNyJ8Gav1mrpqkjDEH84jPSJzZxtxr5AieStUuVgzmIeweKj7UcF8Ko1RYPsi1W+rVpwu31UzfW9sOZQhQd2ELKc4uMhBMOGb5jvHvnP+rsiZtAEGyCDOFgDij21usDWNRGnnEoOLTIjNBmDKepx0uikoEZuNanM4FGF3GOKnZcN6L6aCSmVDXfDdz1QV2fi5wC2H77KFdQC4tPlyqW6xPjilQ1gnDy76dlG/dimjajzizkQ1X3qrJUzWY5QkJPmDpUCbUkw5gWZBWmDLpI22Kp0u2IYNokJ0KLs92SBGqId+UbYLUIIVOAGaf2p/K/S26bKkbMOFQYeJ7LtRkcuC5j2evuTpG13xJn4blQfoDCYSEgmJMIz1fyfJMkkRXQrVNNyDPOd/qMjNocgC2rFjowVyujh31Rg+5OcbpyaQ3aLgXHpbdV1haxfnZeyqEDjkRF2n5fhEjaX+3rJOmfJAy37Bty53VqeMd7W5LHanSEWhFkIH8aIygfIB0oJJOpdV+6JPatrX3igECXmJvCx1eRzx1h85EucRWnK5PqVg1SnQ90hSy5k63uJnXL3hvFSARbL4uTEdIu8OZWk0+qSpzusNV/6JLe/zO0vBe83q3S7EVCkp57zgDf5v8yMUQlr9oto4X2m7FJW+GGgZTA==|920

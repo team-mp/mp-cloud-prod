@@ -1,0 +1,28 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "グループID"
+        },
+        {
+          "Name": "商品ID"
+        },
+        {
+          "Name": "独自商品名"
+        },
+        {
+          "Name": "特別販売単価"
+        }
+      ]
+    }
+  ],
+  "Name": "グループ商品登録"
+}

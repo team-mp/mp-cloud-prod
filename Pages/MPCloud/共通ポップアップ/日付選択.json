@@ -1,0 +1,284 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 12
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "Count": 28
+  },
+  "Values": {
+    "3,19": "▼更新開始フラグ",
+    "4,5": "日付",
+    "9,4": "はい",
+    "9,10": "いいえ"
+  },
+  "AttachInfos": {
+    "4,7": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "CellDefaultValue": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=TODAY()"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "9,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=日付選択!選択日付"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "日付を選択してください"
+                  },
+                  {
+                    "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                    "TargetCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=日付選択!選択日付"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "eea53b1b-fdcf-46a0-99b6-be3d83452403"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=日付選択!更新開始フラグ"
+                },
+                "Value": "1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "はい",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    },
+    "9,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "いいえ",
+        "TemplateKey": "スタイル2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": 5
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 1 50",
+        "Left",
+        "Body",
+        "[AUTO]General",
+        "Center",
+        "#FFFFC000"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "4,5": 1,
+      "4,6": 2,
+      "4,7": 3,
+      "4,8": 2,
+      "4,9": 2,
+      "4,10": 2,
+      "4,11": 2,
+      "4,12": 2,
+      "4,19": 4,
+      "9,4": 5,
+      "9,5": 2,
+      "9,6": 2,
+      "9,7": 2,
+      "9,8": 2,
+      "9,10": 5,
+      "9,11": 2,
+      "9,12": 2,
+      "9,13": 2,
+      "9,14": 2,
+      "10,12": 6,
+      "10,13": 6,
+      "10,14": 6,
+      "10,15": 6,
+      "10,16": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "4,19,1,3",
+    "9,10,1,5",
+    "9,4,1,5",
+    "2,2,1,15",
+    "4,7,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=日付選択!選択日付"
+                  }
+                ]
+              },
+              "value": "%Null%"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=日付選択!選択日付"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=TODAY()"
+                    }
+                  }
+                ]
+              }
+            ],
+            "ID": "c2ca5cb8-5b75-4ae0-9bf8-dadcbb9d22d3"
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "メッセージ",
+      "Formula": "日付選択!$C$3"
+    },
+    {
+      "Name": "更新開始フラグ",
+      "Formula": "日付選択!$T$5"
+    },
+    {
+      "Name": "選択日付",
+      "Formula": "日付選択!$H$5"
+    }
+  ]
+}//74mbOxpUrbptuZy+MYqjYUfJQTov1LkBCAP92aWYO2n0KigqmRh8po2w4UToYuZ+DfW+YDMSo79+iv4OPVqnNtCXXMFLo9DkBibFSNpL9nlyp7KlWh0ERHJ2dCbbk1J9QVZnqetrqEekDkgNREYzGu07kff8AVQrSCUagUd8YOiFp2sBXlAqupSICQLQwF0Z78bZC4uS3DEFdl3dmXwaHndLmNXr0lOT8ZeGsRWaBOhwKxHZUs7pStgaNeC/Y+WZeP89PNeVXYi6/RY2XnYr4XJGE25XdNtg3eC1ROQUZlImLqeQlsmzpQBKCglDuns5dXRwka0Mtq5EF7I8yfqMgvI3o/LEQc474hQ2xgIFiusZjqEiRw/SsmtqtNIe51xJ/ucOdcvcKvzBax5BEOl4wbpTMNaJGtcmzTBvrnERK5gX7CNNPH1tJsB3Zo8b5NJDRCsqz5+mNYcYMhysOtfrJp3tmSyIKS6/XrBqURHrr68iPyLn8kvezSs8jgC/xzbBUQePoKkaAXrp6iGiu4PYjBdD3hEZW4PG+UjclaxydZ451o0AAeGCmYa/AnGfRiyocYPYC1wtUsGvioyxIjXPK6woIHwmzk17cOPCW+FplOtRulEIvBMxhd5R0QcOj50HVcdorCbtc7y2AHJFc7Lj+JlKT/BOfeuXli+NKgb10okiz2UloGHl7hgmU3hRxJ/VmeJd3+WcRmilTLvAOElE1bIVZLYv9yXqzG+CnCLQERqnEz6DwqJjXotHAaRVqNKNqCSYFJa5mlIkK0QLez/Gyac01ua2Pzhnj1/XhEwugHdQfz0JRbMDYqt+aSt4UxIE77QRBVssEgz+HLfyTEOFvoZYD5R0q2UciHGc3GdDeOWE0Aa9PZ16zE6INE5km2Vkt07uz3P6G7Q3fe9ALmhjAg==|920

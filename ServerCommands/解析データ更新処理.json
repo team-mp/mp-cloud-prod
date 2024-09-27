@@ -1,0 +1,1020 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_申込ID"
+        },
+        {
+          "Name": "P_解析ID"
+        },
+        {
+          "Name": "P_解析依頼日"
+        },
+        {
+          "Name": "P_解析予定日"
+        },
+        {
+          "Name": "P_解析確定日"
+        },
+        {
+          "Name": "P_解析担当者ID"
+        },
+        {
+          "Name": "P_解析結果ID"
+        },
+        {
+          "Name": "P_解析結果内容"
+        },
+        {
+          "Name": "P_許容応力度ID"
+        },
+        {
+          "Name": "P_許容応力度内容"
+        },
+        {
+          "Name": "P_地下変状ID"
+        },
+        {
+          "Name": "P_地下変状内容"
+        },
+        {
+          "Name": "P_その他留意点ID"
+        },
+        {
+          "Name": "P_その他留意点内容"
+        },
+        {
+          "Name": "P_建物構造ID"
+        },
+        {
+          "Name": "P_建物構造"
+        },
+        {
+          "Name": "P_基礎形状ID"
+        },
+        {
+          "Name": "P_基礎形状"
+        },
+        {
+          "Name": "P_設計接地圧"
+        },
+        {
+          "Name": "P_土地履歴ID"
+        },
+        {
+          "Name": "P_土地履歴内容"
+        },
+        {
+          "Name": "P_造成経過ID"
+        },
+        {
+          "Name": "P_造成経過内容"
+        },
+        {
+          "Name": "P_地形条件ID"
+        },
+        {
+          "Name": "P_地形条件内容"
+        },
+        {
+          "Name": "P_考察"
+        },
+        {
+          "Name": "P_調査番号"
+        },
+        {
+          "Name": "P_仮判定フラグ"
+        },
+        {
+          "Name": "P_保証不可フラグ"
+        },
+        {
+          "Name": "P_業務対応者ID"
+        },
+        {
+          "Name": "P_解析ステータスID"
+        },
+        {
+          "Name": "P_元_解析依頼日"
+        },
+        {
+          "Name": "P_元_解析確定日"
+        },
+        {
+          "Name": "P_元_解析担当者ID"
+        },
+        {
+          "Name": "P_元_解析結果ID"
+        },
+        {
+          "Name": "P_元_解析結果内容"
+        },
+        {
+          "Name": "P_元_許容応力度ID"
+        },
+        {
+          "Name": "P_元_許容応力度内容"
+        },
+        {
+          "Name": "P_元_沈下変状ID"
+        },
+        {
+          "Name": "P_元_沈下変状内容"
+        },
+        {
+          "Name": "P_元_その他留意ID"
+        },
+        {
+          "Name": "P_元_その他留意内容"
+        },
+        {
+          "Name": "P_元_建物構造ID"
+        },
+        {
+          "Name": "P_元_基礎形状ID"
+        },
+        {
+          "Name": "P_元_設計接地圧"
+        },
+        {
+          "Name": "P_元_土地履歴ID"
+        },
+        {
+          "Name": "P_元_造成経過ID"
+        },
+        {
+          "Name": "P_元_地形条件ID"
+        },
+        {
+          "Name": "P_元_考察"
+        },
+        {
+          "Name": "P_元_仮判定フラグ"
+        },
+        {
+          "Name": "P_元_保証不可フラグ"
+        },
+        {
+          "Name": "P_元_業務対応者ID"
+        },
+        {
+          "Name": "P_元_解析予定日"
+        },
+        {
+          "Name": "P_元_解析ステータスID"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+          "ServerCommandName": "登録更新ラベル取得",
+          "ResultErrorCodeTo": {
+            "SerializeProperty": "リターンコード"
+          },
+          "ResultMessageTo": {
+            "SerializeProperty": "リターンメッセージ"
+          },
+          "ReturnPropertiesTo": [
+            {
+              "ResultPropertyName": "R_ラベル名",
+              "ResultTo": {
+                "SerializeProperty": "最終更新ラベル"
+              }
+            }
+          ],
+          "RefreshAfterFinish": true,
+          "CheckDataValidation": true
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_解析ID"
+                  }
+                },
+                "value": "%Null%"
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "解析ST",
+                  "TableValue": {
+                    "TableName": "m_analysis_status",
+                    "TableValueType": 1,
+                    "BindingInfos": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "m_analysis_status",
+                          "ColumnName": "order_status_id"
+                        },
+                        "ColumnName": "申込ステータスID"
+                      }
+                    ],
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "m_analysis_status",
+                        "ColumnName": "analysis_status_id"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析ステータスID"
+                      }
+                    }
+                  },
+                  "ID": "aca4855ca000439b8637c5839a85238e"
+                },
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "t_object_analysis",
+                  "UpdateType": "add",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に追加してもよろしいですか？",
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "object_order_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_申込ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_request_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_解析依頼日=\"\",TODAY(),P_解析依頼日)"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_planned_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析予定日"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_complete_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析確定日"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_user_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析担当者ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_result_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析結果ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_result_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析結果内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "allowable_stress_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_許容応力度ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "allowable_stress_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_許容応力度内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "subsidence_deformation_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_地下変状ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "subsidence_deformation_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_地下変状内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_consider_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_その他留意点ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_consider_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_その他留意点内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "structure_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_建物構造ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "structure_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_建物構造"
+                      }
+                    },
+                    {
+                      "ColumnName": "foundastion_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_基礎形状ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "foundation_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_基礎形状"
+                      }
+                    },
+                    {
+                      "ColumnName": "ground_pressure",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_設計接地圧"
+                      }
+                    },
+                    {
+                      "ColumnName": "terrian_condition_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_地形条件ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "terrian_condition_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_地形条件内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "land_history_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_土地履歴ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "land_history_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_土地履歴内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "development_process_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_造成経過ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "development_process_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_造成経過内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "consideration",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_考察"
+                      }
+                    },
+                    {
+                      "ColumnName": "survey_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_調査番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "provisional_judge_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_仮判定フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "warranty_impossible_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_保証不可フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "business_user_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_業務対応者ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_status_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析ステータスID"
+                      }
+                    },
+                    {
+                      "ColumnName": "last_updated_label",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=最終更新ラベル"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_year_month",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_解析確定日<>\"\",TEXT(P_解析確定日,\"yyyymm\"),\"\")"
+                      }
+                    }
+                  ],
+                  "ParamNameToSaveNewRowValue": "New解析情報",
+                  "Comments": ""
+                },
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "t_object_order",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に更新してもよろしいですか？",
+                  "RowsToUpdate": 1,
+                  "RowsToUpdateCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "t_object_order",
+                      "ColumnName": "object_order_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_申込ID"
+                    }
+                  },
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "latest_analysis_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=New解析情報.解析ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "order_status_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=解析ST.申込ステータスID"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "ID": "79be4e04-d93f-4238-a69e-228b284861bb"
+            },
+            {
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                  "ServerCommandName": "解析データ排他チェック",
+                  "Parameters": [
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析ID"
+                      },
+                      "ParamName": "P_解析ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_解析依頼日"
+                      },
+                      "ParamName": "P_元_解析依頼日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_解析確定日"
+                      },
+                      "ParamName": "P_元_解析確定日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_解析担当者ID"
+                      },
+                      "ParamName": "P_元_解析担当者ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_解析結果ID"
+                      },
+                      "ParamName": "P_元_解析結果ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_解析結果内容"
+                      },
+                      "ParamName": "P_元_解析結果内容"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_許容応力度ID"
+                      },
+                      "ParamName": "P_元_許容応力度ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_許容応力度内容"
+                      },
+                      "ParamName": "P_元_許容応力度内容"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_沈下変状ID"
+                      },
+                      "ParamName": "P_元_沈下変状ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_沈下変状内容"
+                      },
+                      "ParamName": "P_元_沈下変状内容"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_その他留意ID"
+                      },
+                      "ParamName": "P_元_その他留意ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_その他留意内容"
+                      },
+                      "ParamName": "P_元_その他留意内容"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_建物構造ID"
+                      },
+                      "ParamName": "P_元_建物構造ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_基礎形状ID"
+                      },
+                      "ParamName": "P_元_基礎形状ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_設計接地圧"
+                      },
+                      "ParamName": "P_元_設計接地圧"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_土地履歴ID"
+                      },
+                      "ParamName": "P_元_土地履歴ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_造成経過ID"
+                      },
+                      "ParamName": "P_元_造成経過ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_地形条件ID"
+                      },
+                      "ParamName": "P_元_地形条件ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_考察"
+                      },
+                      "ParamName": "P_元_考察"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_仮判定フラグ"
+                      },
+                      "ParamName": "P_元_仮判定フラグ"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_保証不可フラグ"
+                      },
+                      "ParamName": "P_元_保証不可フラグ"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_業務対応者ID"
+                      },
+                      "ParamName": "P_元_業務対応者ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_解析予定日"
+                      },
+                      "ParamName": "P_元_解析予定日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_解析ステータスID"
+                      },
+                      "ParamName": "P_元_解析ステータスID"
+                    }
+                  ],
+                  "ResultErrorCodeTo": {
+                    "SerializeProperty": "リターンコード"
+                  },
+                  "ResultMessageTo": {
+                    "SerializeProperty": "リターンメッセージ"
+                  },
+                  "RefreshAfterFinish": true,
+                  "CheckDataValidation": true
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=リターンコード"
+                          }
+                        },
+                        "value": "0",
+                        "compareType": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                          "ErrorCode": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=リターンコード"
+                          },
+                          "Message": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=リターンメッセージ"
+                          },
+                          "CustomReturns": []
+                        }
+                      ],
+                      "ID": "8a89555a-f0f9-4645-ba57-1a75efa84d62"
+                    }
+                  ]
+                },
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "t_object_analysis",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に更新してもよろしいですか？",
+                  "RowsToUpdate": 1,
+                  "RowsToUpdateCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "t_object_analysis",
+                      "ColumnName": "analysis_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_解析ID"
+                    }
+                  },
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "object_order_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_申込ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_request_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析依頼日"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_planned_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析予定日"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_complete_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析確定日"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_user_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析担当者ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_result_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析結果ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_result_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析結果内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "allowable_stress_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_許容応力度ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "allowable_stress_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_許容応力度内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "subsidence_deformation_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_地下変状ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "subsidence_deformation_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_地下変状内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_consider_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_その他留意点ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_consider_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_その他留意点内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "structure_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_建物構造ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "structure_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_建物構造"
+                      }
+                    },
+                    {
+                      "ColumnName": "foundastion_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_基礎形状ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "foundation_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_基礎形状"
+                      }
+                    },
+                    {
+                      "ColumnName": "ground_pressure",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_設計接地圧"
+                      }
+                    },
+                    {
+                      "ColumnName": "terrian_condition_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_地形条件ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "terrian_condition_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_地形条件内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "land_history_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_土地履歴ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "land_history_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_土地履歴内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "development_process_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_造成経過ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "development_process_content",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_造成経過内容"
+                      }
+                    },
+                    {
+                      "ColumnName": "consideration",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_考察"
+                      }
+                    },
+                    {
+                      "ColumnName": "survey_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_調査番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "provisional_judge_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_仮判定フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "warranty_impossible_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_保証不可フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "business_user_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_業務対応者ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_status_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析ステータスID"
+                      }
+                    },
+                    {
+                      "ColumnName": "last_updated_label",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=最終更新ラベル"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_year_month",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_解析確定日<>\"\",TEXT(P_解析確定日,\"yyyymm\"),\"\")"
+                      }
+                    }
+                  ],
+                  "ParamNameToSaveNewRowValue": "New解析情報",
+                  "Comments": ""
+                }
+              ],
+              "ID": "4c3ac06a-cf92-4f56-a219-6fcf2f98ae0f"
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+          "ErrorCode": "0",
+          "CustomReturns": []
+        }
+      ]
+    }
+  ],
+  "Name": "解析データ更新処理"
+}

@@ -1,0 +1,271 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_顧客ID"
+        },
+        {
+          "Name": "P_顧客名"
+        },
+        {
+          "Name": "P_顧客略称"
+        },
+        {
+          "Name": "P_顧客名カナ"
+        },
+        {
+          "Name": "P_郵便番号"
+        },
+        {
+          "Name": "P_都道府県名"
+        },
+        {
+          "Name": "P_市区郡名"
+        },
+        {
+          "Name": "P_町名番地"
+        },
+        {
+          "Name": "P_ビル名"
+        },
+        {
+          "Name": "P_電話番号"
+        },
+        {
+          "Name": "P_FAX番号"
+        },
+        {
+          "Name": "P_既定グループID"
+        },
+        {
+          "Name": "P_有効フラグ"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_顧客ID"
+                  }
+                },
+                "value": "%Null%"
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "m_customer",
+                  "UpdateType": "add",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に追加してもよろしいですか？",
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "customer_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客名"
+                      }
+                    },
+                    {
+                      "ColumnName": "customer_abbr",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客略称"
+                      }
+                    },
+                    {
+                      "ColumnName": "customer_kana",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客名カナ"
+                      }
+                    },
+                    {
+                      "ColumnName": "post_no",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_郵便番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "prefectures",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_都道府県名"
+                      }
+                    },
+                    {
+                      "ColumnName": "city",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_市区郡名"
+                      }
+                    },
+                    {
+                      "ColumnName": "street_bunch",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_町名番地"
+                      }
+                    },
+                    {
+                      "ColumnName": "buillding",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ビル名"
+                      }
+                    },
+                    {
+                      "ColumnName": "phone",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_電話番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "fax",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_FAX番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "group_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_既定グループID"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "ID": "00defb1f-5362-45b5-9341-99e6b024ca1e"
+            },
+            {
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "m_customer",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に更新してもよろしいですか？",
+                  "RowsToUpdate": 1,
+                  "RowsToUpdateCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "m_customer",
+                      "ColumnName": "customer_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_顧客ID"
+                    }
+                  },
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "customer_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客名"
+                      }
+                    },
+                    {
+                      "ColumnName": "customer_abbr",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客略称"
+                      }
+                    },
+                    {
+                      "ColumnName": "customer_kana",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客名カナ"
+                      }
+                    },
+                    {
+                      "ColumnName": "post_no",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_郵便番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "prefectures",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_都道府県名"
+                      }
+                    },
+                    {
+                      "ColumnName": "city",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_市区郡名"
+                      }
+                    },
+                    {
+                      "ColumnName": "street_bunch",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_町名番地"
+                      }
+                    },
+                    {
+                      "ColumnName": "buillding",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ビル名"
+                      }
+                    },
+                    {
+                      "ColumnName": "phone",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_電話番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "fax",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_FAX番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "group_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_既定グループID"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "ID": "0dfc1464-88c2-4f33-a88f-3030994eaa9e"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Name": "顧客データ更新処理（申込事業者用）"
+}

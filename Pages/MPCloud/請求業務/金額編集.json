@@ -1,0 +1,126 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 3,
+    "DefaultSize": 10.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 11
+  },
+  "Values": {
+    "1,8": "OK"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "グレー枠"
+      }
+    },
+    "1,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "OK",
+        "TemplateKey": "角緑"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0,
+        "Formatter": 0
+      },
+      {
+        "FontSize": 12.0,
+        "Formatter": 1
+      },
+      {
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        " ¥#,##0_);[Red] ¥(#,##0)",
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,7": 1,
+      "1,8": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "1,8,1,2",
+    "1,1,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 3
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "金額",
+      "Formula": "金額編集!$B$2"
+    }
+  ]
+}//7o4R6e+4+t7LvyD7RwMozAoM4lqJdQ516KmRMK3V4XpvwfCzsaMK73FAtQcikE1W76PeQhm6wLkMMm9sObcVOLzfZT6JB0+UbCyfHVBkh0h4WSlKFwfpxrnNsmf/JqFNNGyRyvN1ZRWWqqe+fMhdDCQpJSSlPIJyC9A1zbzdQ/9PkD4MGgzc1atChhZDCB6lhBoAMumenRnbIt/zeD1Hs7wBgyS+ugY0po9IV3qF/EK+BWvtw1qHO56W23uzP6JYHbdYp6BCKOrgqoJoDJ53Y8HdQT+pJI19BvE/CDBvJwfiSEcNcdWRfcx1WPICmWJYk/pMQfD8YU2tRBmGGzhO0V2NnDPtlUMiakrBE2Nn8ryTZ2me7Hf5X0qbbwWXdYPqfmpuK1CsbOu57OWw4CRbyzGR9+ZJZxdlFqZBujks76qpIEJOVWoFmYRhPx7hGSKwTUCFzp31YKCO9f/+M5ltZ5YbWzNp/Qqo/oq2aoTa70J6H7lad/YIDLVDyBeg71bThj4s6IfDZD9uqeGaE9mznGGOl/ZJqNzoEk2fnSaiNZ2oK/LGOep7yT/ieRGKAcfYofqS5RfChS6rhrYPBln/1S7jqT8wb4XfORxxQNL9zJug8XdJZL921XaPWC1coICbvmTPxBkeDfCCh8ZUhVHTZYIsMheON4KvZgQE57q46NwNqcahR1nRw98fF5JnycnGByx1PDPfWyslD/4+9RK4igFdeznY8mub/QZhac8ZD9MvLp8WTAFJ7dPFmgw1KGCT4hgp1pt/0dbgdBLSDC40nf1FSHlqPqLi302bUfNAxUMyVE6VeBYeHc3Uxop3alodoaqPltEqNSFJK/lyVSvTcTNOnQf7picX3rF6ASXHNe4Wx8RJ6aPUFjgRjVgBUfVAkPKtNxrK8KlRz2EUSsUIxQ==|920

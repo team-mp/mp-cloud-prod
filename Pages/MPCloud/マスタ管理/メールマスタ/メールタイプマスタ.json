@@ -1,0 +1,579 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 21,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 300.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "Count": 20,
+    "DefaultSize": 100.0
+  },
+  "Values": {
+    "1,12": "▼編集リセットフラグ",
+    "2,12": "0",
+    "4,12": "▼編集確定フラグ",
+    "5,12": "0"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ListViewInfo": {
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_mail_type",
+        "ColumnCount": 11,
+        "RowCount": 20,
+        "IsRowHeaderVisible": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "HideSelectionWhenLostFocus": true,
+        "UseSimpleBar": true,
+        "Name": "メールタイプビュー",
+        "TopCondition": null,
+        "CommitType": 1,
+        "ListViewStyleName": "マスタ用"
+      }
+    },
+    "1,1": {
+      "BindingInfo": {
+        "TableName": "m_mail_type",
+        "ColumnName": "mail_type_name"
+      }
+    },
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_mail_type",
+        "ColumnName": "order_flg"
+      }
+    },
+    "1,3": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_mail_type",
+        "ColumnName": "survey_flg"
+      }
+    },
+    "1,4": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_mail_type",
+        "ColumnName": "surveying_flg"
+      }
+    },
+    "1,5": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_mail_type",
+        "ColumnName": "analysis_flg"
+      }
+    },
+    "1,6": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_mail_type",
+        "ColumnName": "compaction_flg"
+      }
+    },
+    "1,7": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_mail_type",
+        "ColumnName": "construction_flg"
+      }
+    },
+    "1,8": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_mail_type",
+        "ColumnName": "warranty_flg"
+      }
+    },
+    "1,9": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_mail_type",
+        "ColumnName": "billing_flg"
+      }
+    },
+    "1,10": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_mail_type",
+        "ColumnName": "outsourcing_premission_flg"
+      }
+    },
+    "2,12": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 6,
+            "ListviewName": "メールタイプビュー",
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              },
+              "RetrunParamNames": {}
+            }
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メールタイプマスタ!編集リセットフラグ"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "1163bbdf-62b1-43af-9906-e63bfc780ec3",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+                  }
+                },
+                "Value": "編集をリセットしました"
+              }
+            ],
+            "ReturnPropertiesTo": []
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    },
+    "5,12": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "メールタイプビュー"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メールタイプマスタ!編集確定フラグ"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "1163bbdf-62b1-43af-9906-e63bfc780ec3",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+                  }
+                },
+                "Value": "編集内容を確定しました"
+              }
+            ],
+            "ReturnPropertiesTo": []
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0
+      },
+      {
+        "Background": 0,
+        "Foreground": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 14.666666666666666,
+        "TextIndent": 4,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 5
+      },
+      {
+        "Background": 6,
+        "FontFamily": 5,
+        "FontSize": 12.0,
+        "Formatter": 7,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 5,
+        "Formatter": 9
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -5",
+        "#FF000000",
+        "General",
+        "Center",
+        "Background 1 0",
+        "Body",
+        "Accent 1 80",
+        "@",
+        "Right",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "1,0": 1,
+      "1,1": 2,
+      "1,2": 3,
+      "1,3": 3,
+      "1,4": 3,
+      "1,5": 3,
+      "1,6": 3,
+      "1,7": 3,
+      "1,8": 3,
+      "1,9": 3,
+      "1,10": 4,
+      "1,12": 5,
+      "1,13": 5,
+      "1,14": 5,
+      "2,12": 6,
+      "2,13": 5,
+      "2,14": 5,
+      "3,12": 5,
+      "3,13": 5,
+      "3,14": 5,
+      "4,12": 7,
+      "4,13": 5,
+      "4,14": 5,
+      "5,12": 6,
+      "5,13": 5,
+      "5,14": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 5
+    }
+  },
+  "Spans": [
+    "2,12,1,3",
+    "5,12,1,3",
+    "2,0,18,11"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_mail_type",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "編集リセットフラグ",
+      "Formula": "メールタイプマスタ!$M$3"
+    },
+    {
+      "Name": "編集確定フラグ",
+      "Formula": "メールタイプマスタ!$M$6"
+    }
+  ]
+}//VBbjVyteS3GtnyFgOjotRkIUZiDn6If6VOUSLWsNV6rGShJ5X10htxpHyUb8h46ZDntKAGQpdM2Ir/1O/4eM+Nx59bTMO+N5MMyt1Xx1TWycI4F13cT6/HHtHvbpyMG97Ca4OhTsOMHjQCtEfKlKDNabaMqaIXrdZ6JshB3ZgTpAT1/zXT2YpQ5MDNI0MkagKuzAyQrSJC4SxLjz0qcwdex97e9znubxsapG8QtQbUKCobzTMwDI6YgGgZRNXRJpX8b1WdvPJoXdQpLsNeZ5t8ZFT9wxRZ9SxZddfjWzRC7M7iryydGgtujU6TVgvbzJws+MTyEbzueslYPZ0QdTDdg+WNMwxdnondH7YE02bDrN0aZwHWC01fTFxXujYNkq/2Pg80HyhnNq/usRt5lFYPQ1jcs5ymd8CFJvSwSJ5np1+4Mek/1GPczKbS9NWokPV/y7xa1kML75tv/WB8PRsiPUJY0+o5H21Jm0y/PIMe20Kfhq8BhJtFpxhwG2jwcxRg8Q2FAvVGbkgDsXqfdj28q6TpUJnHg0B1pA01ajpQCdgaGq27B65R9BiWT04/vZzOh+X52Fcs/YNh1zLoQZosLSDMdn5oulEc3RAZjaKyExQHpiYonuDQ5KK2e3TdvY3YSPg25r3fBH/SPG+KWn1PVH19LKUVMXoUVuP/7WCpXhKcd4i/vpTEgEhEAO48NM5p1qhqZYNDUsg76FwH9sFX2DS/SaO+CLXHUQb5FsJMskUcPnvM0pbpZru19btiw8enQxCLdqyE5Fq8XFo5S8nATMo7yG/Fu5a5LUb5Y5DQ/wZ/lIuUREd3o+7KbKR2noxuXXcz1nWVqSPqz0uJ7fbd51+0S3pa4Aae1iTeWQxF48TQV/JC5HKZKTkZzMi9h8/+qyy94qObSHwKdK8SGnOA==|920

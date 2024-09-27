@@ -1,0 +1,1940 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_顧客ID"
+        },
+        {
+          "Name": "P_顧客名"
+        },
+        {
+          "Name": "P_顧客略称"
+        },
+        {
+          "Name": "P_非公開顧客名"
+        },
+        {
+          "Name": "P_顧客名カナ"
+        },
+        {
+          "Name": "P_顧客注釈"
+        },
+        {
+          "Name": "P_郵便番号"
+        },
+        {
+          "Name": "P_都道府県名"
+        },
+        {
+          "Name": "P_市区郡名"
+        },
+        {
+          "Name": "P_町名番地"
+        },
+        {
+          "Name": "P_ビル名"
+        },
+        {
+          "Name": "P_電話番号"
+        },
+        {
+          "Name": "P_FAX番号"
+        },
+        {
+          "Name": "P_緯度"
+        },
+        {
+          "Name": "P_経度"
+        },
+        {
+          "Name": "P_ホームページURL"
+        },
+        {
+          "Name": "P_住宅事業者フラグ"
+        },
+        {
+          "Name": "P_調査会社フラグ"
+        },
+        {
+          "Name": "P_転圧会社フラグ"
+        },
+        {
+          "Name": "P_工事会社フラグ"
+        },
+        {
+          "Name": "P_測量会社フラグ"
+        },
+        {
+          "Name": "P_代理店フラグ"
+        },
+        {
+          "Name": "P_取次店フラグ"
+        },
+        {
+          "Name": "P_請求先フラグ"
+        },
+        {
+          "Name": "P_支払先フラグ"
+        },
+        {
+          "Name": "P_郵送先フラグ"
+        },
+        {
+          "Name": "P_本社フラグ"
+        },
+        {
+          "Name": "P_保証会社フラグ"
+        },
+        {
+          "Name": "P_個人フラグ"
+        },
+        {
+          "Name": "P_住あんフラグ"
+        },
+        {
+          "Name": "P_その他取引先フラグ"
+        },
+        {
+          "Name": "P_既定グループID"
+        },
+        {
+          "Name": "P_新規グループID"
+        },
+        {
+          "Name": "P_所属グループIDs"
+        },
+        {
+          "Name": "P_請求先指定フラグ"
+        },
+        {
+          "Name": "P_請求先ID"
+        },
+        {
+          "Name": "P_通知先指定フラグ"
+        },
+        {
+          "Name": "P_通知先ID"
+        },
+        {
+          "Name": "P_郵送先指定フラグ"
+        },
+        {
+          "Name": "P_郵送先ID"
+        },
+        {
+          "Name": "P_調査請求先ID"
+        },
+        {
+          "Name": "P_測量請求先ID"
+        },
+        {
+          "Name": "P_解析請求先ID"
+        },
+        {
+          "Name": "P_転圧請求先ID"
+        },
+        {
+          "Name": "P_工事請求先ID"
+        },
+        {
+          "Name": "P_保証請求先ID"
+        },
+        {
+          "Name": "P_請求書宛名"
+        },
+        {
+          "Name": "P_請求書担当者名"
+        },
+        {
+          "Name": "P_請求書発行単位ID"
+        },
+        {
+          "Name": "P_請求書書式ID"
+        },
+        {
+          "Name": "P_請求書送付方法"
+        },
+        {
+          "Name": "P_請求書必着日"
+        },
+        {
+          "Name": "P_発注書必要フラグ"
+        },
+        {
+          "Name": "P_請求締日"
+        },
+        {
+          "Name": "P_入金月"
+        },
+        {
+          "Name": "P_入金日"
+        },
+        {
+          "Name": "P_入金営業日"
+        },
+        {
+          "Name": "P_支払先指定フラグ"
+        },
+        {
+          "Name": "P_支払先ID"
+        },
+        {
+          "Name": "P_営業担当者ID"
+        },
+        {
+          "Name": "P_有効フラグ"
+        },
+        {
+          "Name": "P_建物構造ID"
+        },
+        {
+          "Name": "P_基礎形状ID"
+        },
+        {
+          "Name": "P_設計接地圧"
+        },
+        {
+          "Name": "P_営業設計工務表示フラグ"
+        },
+        {
+          "Name": "P_通知先ユーザー1"
+        },
+        {
+          "Name": "P_通知先ユーザー2"
+        },
+        {
+          "Name": "P_通知先ユーザー3"
+        },
+        {
+          "Name": "P_通知先ユーザー4"
+        },
+        {
+          "Name": "P_通知先ユーザー5"
+        },
+        {
+          "Name": "P_通知先ユーザー6"
+        },
+        {
+          "Name": "P_初期調査区分"
+        },
+        {
+          "Name": "P_調査報告書納品日数"
+        },
+        {
+          "Name": "P_既存建物旧計算方法フラグ"
+        },
+        {
+          "Name": "P_測量報告書納品日数"
+        },
+        {
+          "Name": "P_工事見積セット添付フラグ"
+        },
+        {
+          "Name": "P_検討書必要フラグ"
+        },
+        {
+          "Name": "P_転圧判定不可フラグ"
+        },
+        {
+          "Name": "P_工事判定自動見積フラグ"
+        },
+        {
+          "Name": "P_転圧見積不要フラグ"
+        },
+        {
+          "Name": "P_転圧他社施工フラグ"
+        },
+        {
+          "Name": "P_転圧再調査フラグ"
+        },
+        {
+          "Name": "P_残土処分フラグ"
+        },
+        {
+          "Name": "P_転圧報告書納品日数"
+        },
+        {
+          "Name": "P_工事見積不要フラグ"
+        },
+        {
+          "Name": "P_工事請負フラグ"
+        },
+        {
+          "Name": "P_工事報告書納品日数"
+        },
+        {
+          "Name": "P_既定保証期間"
+        },
+        {
+          "Name": "P_郵送手数料フラグ"
+        },
+        {
+          "Name": "P_保証書原本郵送フラグ"
+        },
+        {
+          "Name": "P_郵送方法ID"
+        },
+        {
+          "Name": "P_付保証明書必要フラグ"
+        },
+        {
+          "Name": "P_保証追記事項"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+          "ServerCommandName": "登録更新ラベル取得",
+          "ResultErrorCodeTo": {
+            "SerializeProperty": "リターンコード"
+          },
+          "ResultMessageTo": {
+            "SerializeProperty": "リターンメッセージ"
+          },
+          "ReturnPropertiesTo": [
+            {
+              "ResultPropertyName": "R_ラベル名",
+              "ResultTo": {
+                "SerializeProperty": "ラベル名"
+              }
+            }
+          ],
+          "RefreshAfterFinish": true,
+          "CheckDataValidation": true
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_顧客ID"
+                  }
+                },
+                "value": "%Null%"
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "m_customer",
+                  "UpdateType": "add",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に追加してもよろしいですか？",
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "customer_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客名"
+                      }
+                    },
+                    {
+                      "ColumnName": "customer_abbr",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客略称"
+                      }
+                    },
+                    {
+                      "ColumnName": "private_customer_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_非公開顧客名"
+                      }
+                    },
+                    {
+                      "ColumnName": "customer_kana",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客名カナ"
+                      }
+                    },
+                    {
+                      "ColumnName": "customer_notice",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客注釈"
+                      }
+                    },
+                    {
+                      "ColumnName": "post_no",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_郵便番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "prefectures",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_都道府県名"
+                      }
+                    },
+                    {
+                      "ColumnName": "city",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_市区郡名"
+                      }
+                    },
+                    {
+                      "ColumnName": "street_bunch",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_町名番地"
+                      }
+                    },
+                    {
+                      "ColumnName": "buillding",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ビル名"
+                      }
+                    },
+                    {
+                      "ColumnName": "phone",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_電話番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "fax",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_FAX番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "latitude",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_緯度"
+                      }
+                    },
+                    {
+                      "ColumnName": "longitude",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_経度"
+                      }
+                    },
+                    {
+                      "ColumnName": "home_page_url",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ホームページURL"
+                      }
+                    },
+                    {
+                      "ColumnName": "builder_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_住宅事業者フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "survey_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_調査会社フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧会社フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事会社フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "surveying_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_測量会社フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "agency_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_代理店フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "brokerage_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_取次店フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "billing_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_請求先フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "payeer_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_支払先フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "mailing_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_郵送先フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "main_office_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_本社フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "guarantor_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_保証会社フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "individual_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_個人フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "jyuan_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_住あんフラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "etc_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_その他取引先フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "group_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_新規グループID"
+                      }
+                    },
+                    {
+                      "ColumnName": "belong_group_ids",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_新規グループID"
+                      }
+                    },
+                    {
+                      "ColumnName": "billing_specify_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_請求先指定フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "billing_comp_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,P_請求先ID,\"\")"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_notice_specify_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先指定フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_notice_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_mailing_specify_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_郵送先指定フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_mailing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_郵送先指定フラグ=1,P_郵送先ID,\"\")"
+                      }
+                    },
+                    {
+                      "ColumnName": "billing_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_請求書宛名)"
+                      }
+                    },
+                    {
+                      "ColumnName": "billing_manager_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_請求書担当者名)"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_issue_unit_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_請求書発行単位ID)"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_format_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_請求書書式ID)"
+                      }
+                    },
+                    {
+                      "ColumnName": "billing_send_way",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_請求書送付方法)"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_must_arrive_day",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_請求書必着日)"
+                      }
+                    },
+                    {
+                      "ColumnName": "closing_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_請求締日)"
+                      }
+                    },
+                    {
+                      "ColumnName": "purchase_required_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,0,P_発注書必要フラグ)"
+                      }
+                    },
+                    {
+                      "ColumnName": "deposit_month",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_入金月)"
+                      }
+                    },
+                    {
+                      "ColumnName": "deposit_day",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_入金日)"
+                      }
+                    },
+                    {
+                      "ColumnName": "deposit_business_day",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_入金営業日)"
+                      }
+                    },
+                    {
+                      "ColumnName": "payment_specify_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_支払先指定フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "payment_comp_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_支払先指定フラグ=1,P_支払先ID,\"\")"
+                      }
+                    },
+                    {
+                      "ColumnName": "sales_staff_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_営業担当者ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "last_updated_label",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=ラベル名"
+                      }
+                    },
+                    {
+                      "ColumnName": "first_entry_label",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=ラベル名"
+                      }
+                    },
+                    {
+                      "ColumnName": "active_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_有効フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "survey_billing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_調査請求先ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "surveying_billing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_測量請求先ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_billing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析請求先ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_billing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧請求先ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_billing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事請求先ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "warranty_billing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_保証請求先ID"
+                      }
+                    }
+                  ],
+                  "ParamNameToSaveNewRowValue": "New顧客"
+                },
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "m_customer_default",
+                  "UpdateType": "add",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に追加してもよろしいですか？",
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "customer_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=New顧客.顧客ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "structure_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_建物構造ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "foundation_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_基礎形状ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "responsible_add_display_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_営業設計工務表示フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "notice_user1_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ユーザー1"
+                      }
+                    },
+                    {
+                      "ColumnName": "notice_user2_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ユーザー2"
+                      }
+                    },
+                    {
+                      "ColumnName": "notice_user3_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ユーザー3"
+                      }
+                    },
+                    {
+                      "ColumnName": "notice_user4_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ユーザー4"
+                      }
+                    },
+                    {
+                      "ColumnName": "notice_user5_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ユーザー5"
+                      }
+                    },
+                    {
+                      "ColumnName": "notice_user6_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ユーザー6"
+                      }
+                    },
+                    {
+                      "ColumnName": "initial_survey_type",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_初期調査区分"
+                      }
+                    },
+                    {
+                      "ColumnName": "survey_report_delivery_days",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_調査報告書納品日数"
+                      }
+                    },
+                    {
+                      "ColumnName": "existing_object_oldcalculate_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_既存建物旧計算方法フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "surveying_report_delivery_days",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_測量報告書納品日数"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_estimate_set_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事見積セット添付フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "sutudy_paper_request_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_検討書必要フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "auto_construction_estimate_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事判定自動見積フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "no_compaction_judge_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧判定不可フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "no_compaction_estimate_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧見積不要フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "comaction_other_construction_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧他社施工フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_re_survey_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧再調査フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "surplus_soil_disposal_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_残土処分フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_report_delivery_days",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧報告書納品日数"
+                      }
+                    },
+                    {
+                      "ColumnName": "no_construction_estimate_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事見積不要フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_cotract_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事請負フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_report_delivery_days",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事報告書納品日数"
+                      }
+                    },
+                    {
+                      "ColumnName": "warranty_period",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_既定保証期間"
+                      }
+                    },
+                    {
+                      "ColumnName": "insurance_certificate_need_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_付保証明書必要フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "warranty_mailing_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_保証書原本郵送フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "mailing_method_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_郵送方法ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "mailing_commission_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_郵送手数料フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "warranty_additional_notes",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_保証追記事項"
+                      }
+                    }
+                  ],
+                  "ParamNameToSaveNewRowValue": "New顧客既定値"
+                },
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "m_customer_group",
+                  "UpdateType": "add",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に追加してもよろしいですか？",
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "customer_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=New顧客.顧客ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "group_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_新規グループID"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "ID": "843295be-de3b-47f4-b2e9-14e87b17a123"
+            },
+            {
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "現在の顧客マスタ",
+                  "TableValue": {
+                    "TableName": "m_customer",
+                    "TableValueType": 1,
+                    "BindingInfos": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "m_customer",
+                          "ColumnName": "customer_name"
+                        },
+                        "ColumnName": "顧客名"
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "m_customer",
+                          "ColumnName": "billing_name"
+                        },
+                        "ColumnName": "請求書宛名"
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "m_customer",
+                          "ColumnName": "billing_send_way"
+                        },
+                        "ColumnName": "請求書送付方法"
+                      }
+                    ],
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "m_customer",
+                        "ColumnName": "customer_id"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客ID"
+                      }
+                    }
+                  },
+                  "ID": "03381606ad954e389a0d34c78a77403d"
+                },
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "m_customer",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に更新してもよろしいですか？",
+                  "RowsToUpdate": 1,
+                  "RowsToUpdateCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "m_customer",
+                      "ColumnName": "customer_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_顧客ID"
+                    }
+                  },
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "customer_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客名"
+                      }
+                    },
+                    {
+                      "ColumnName": "customer_abbr",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客略称"
+                      }
+                    },
+                    {
+                      "ColumnName": "private_customer_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_非公開顧客名"
+                      }
+                    },
+                    {
+                      "ColumnName": "customer_kana",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客名カナ"
+                      }
+                    },
+                    {
+                      "ColumnName": "customer_notice",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_顧客注釈"
+                      }
+                    },
+                    {
+                      "ColumnName": "post_no",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_郵便番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "prefectures",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_都道府県名"
+                      }
+                    },
+                    {
+                      "ColumnName": "city",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_市区郡名"
+                      }
+                    },
+                    {
+                      "ColumnName": "street_bunch",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_町名番地"
+                      }
+                    },
+                    {
+                      "ColumnName": "buillding",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ビル名"
+                      }
+                    },
+                    {
+                      "ColumnName": "phone",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_電話番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "fax",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_FAX番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "latitude",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_緯度"
+                      }
+                    },
+                    {
+                      "ColumnName": "longitude",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_経度"
+                      }
+                    },
+                    {
+                      "ColumnName": "home_page_url",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ホームページURL"
+                      }
+                    },
+                    {
+                      "ColumnName": "builder_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_住宅事業者フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "survey_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_調査会社フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧会社フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事会社フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "surveying_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_測量会社フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "agency_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_代理店フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "brokerage_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_取次店フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "billing_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_請求先フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "payeer_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_支払先フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "mailing_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_郵送先フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "main_office_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_本社フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "guarantor_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_保証会社フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "individual_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_個人フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "jyuan_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_住あんフラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "etc_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_その他取引先フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "group_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_既定グループID"
+                      }
+                    },
+                    {
+                      "ColumnName": "belong_group_ids",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_所属グループIDs"
+                      }
+                    },
+                    {
+                      "ColumnName": "billing_specify_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_請求先指定フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "billing_comp_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,P_請求先ID,\"\")"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_notice_specify_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先指定フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_notice_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_mailing_specify_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_郵送先指定フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_mailing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_郵送先指定フラグ=1,P_郵送先ID,\"\")"
+                      }
+                    },
+                    {
+                      "ColumnName": "billing_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_請求書宛名)"
+                      }
+                    },
+                    {
+                      "ColumnName": "billing_manager_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_請求書担当者名)"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_issue_unit_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_請求書発行単位ID)"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_format_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_請求書書式ID)"
+                      }
+                    },
+                    {
+                      "ColumnName": "billing_send_way",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_請求書送付方法)"
+                      }
+                    },
+                    {
+                      "ColumnName": "invoice_must_arrive_day",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,\"\",P_請求書必着日)"
+                      }
+                    },
+                    {
+                      "ColumnName": "purchase_required_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_請求先指定フラグ=1,0,P_発注書必要フラグ)"
+                      }
+                    },
+                    {
+                      "ColumnName": "closing_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_請求締日"
+                      }
+                    },
+                    {
+                      "ColumnName": "deposit_month",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_入金月"
+                      }
+                    },
+                    {
+                      "ColumnName": "deposit_day",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_入金日"
+                      }
+                    },
+                    {
+                      "ColumnName": "deposit_business_day",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_入金営業日"
+                      }
+                    },
+                    {
+                      "ColumnName": "payment_specify_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_支払先指定フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "payment_comp_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_支払先指定フラグ=1,P_支払先ID,\"\")"
+                      }
+                    },
+                    {
+                      "ColumnName": "sales_staff_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_営業担当者ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "last_updated_label",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=ラベル名"
+                      }
+                    },
+                    {
+                      "ColumnName": "active_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_有効フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "survey_billing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_調査請求先ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "surveying_billing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_測量請求先ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "analysis_billing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_解析請求先ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_billing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧請求先ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_billing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事請求先ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "warranty_billing_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_保証請求先ID"
+                      }
+                    }
+                  ],
+                  "ParamNameToSaveNewRowValue": "New顧客"
+                },
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "m_customer_default",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に更新してもよろしいですか？",
+                  "RowsToUpdate": 1,
+                  "RowsToUpdateCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "m_customer_default",
+                      "ColumnName": "customer_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_顧客ID"
+                    }
+                  },
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "structure_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_建物構造ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "foundation_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_基礎形状ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "responsible_add_display_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_営業設計工務表示フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "notice_user1_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ユーザー1"
+                      }
+                    },
+                    {
+                      "ColumnName": "notice_user2_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ユーザー2"
+                      }
+                    },
+                    {
+                      "ColumnName": "notice_user3_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ユーザー3"
+                      }
+                    },
+                    {
+                      "ColumnName": "notice_user4_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ユーザー4"
+                      }
+                    },
+                    {
+                      "ColumnName": "notice_user5_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ユーザー5"
+                      }
+                    },
+                    {
+                      "ColumnName": "notice_user6_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_通知先ユーザー6"
+                      }
+                    },
+                    {
+                      "ColumnName": "initial_survey_type",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_初期調査区分"
+                      }
+                    },
+                    {
+                      "ColumnName": "existing_object_oldcalculate_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_既存建物旧計算方法フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_estimate_set_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事見積セット添付フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "sutudy_paper_request_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_検討書必要フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "auto_construction_estimate_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事判定自動見積フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "no_compaction_judge_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧判定不可フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "warranty_period",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_既定保証期間"
+                      }
+                    },
+                    {
+                      "ColumnName": "warranty_mailing_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_保証書原本郵送フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "mailing_commission_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_郵送手数料フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "mailing_method_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_郵送方法ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "no_compaction_estimate_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧見積不要フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "comaction_other_construction_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧他社施工フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_re_survey_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧再調査フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "surplus_soil_disposal_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_残土処分フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "no_construction_estimate_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事見積不要フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_cotract_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事請負フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "insurance_certificate_need_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_付保証明書必要フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "warranty_additional_notes",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_保証追記事項"
+                      }
+                    },
+                    {
+                      "ColumnName": "survey_report_delivery_days",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_調査報告書納品日数"
+                      }
+                    },
+                    {
+                      "ColumnName": "surveying_report_delivery_days",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_測量報告書納品日数"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_report_delivery_days",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧報告書納品日数"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_report_delivery_days",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_工事報告書納品日数"
+                      }
+                    }
+                  ],
+                  "ParamNameToSaveNewRowValue": "New顧客既定値"
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=P_請求先フラグ"
+                          }
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                          "ConditionAndCommandPairList": [
+                            {
+                              "Condition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "Condition1": {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "Condition1": {
+                                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                    "param": {
+                                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                                      "ParamObject": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=P_顧客名"
+                                      }
+                                    },
+                                    "value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=現在の顧客マスタ.顧客名"
+                                    },
+                                    "compareType": 1
+                                  },
+                                  "Condition2": {
+                                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                    "param": {
+                                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                                      "ParamObject": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=P_請求書宛名"
+                                      }
+                                    },
+                                    "value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=現在の顧客マスタ.請求書宛名"
+                                    },
+                                    "compareType": 1
+                                  },
+                                  "RelationType": 1
+                                },
+                                "Condition2": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                                    "ParamObject": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=P_請求書送付方法"
+                                    }
+                                  },
+                                  "value": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=現在の顧客マスタ.請求書送付方法"
+                                  },
+                                  "compareType": 1
+                                },
+                                "RelationType": 1
+                              },
+                              "CommandList": [
+                                {
+                                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                  "ParameterName": "最新請求先名",
+                                  "TableValue": {
+                                    "TableName": "m_customer",
+                                    "OnlyGetValue": true,
+                                    "TableValueType": 0,
+                                    "BindingInfos": [
+                                      {
+                                        "BindingInfo": {
+                                          "TableName": "m_customer",
+                                          "ColumnName": "請求先名"
+                                        },
+                                        "ColumnName": "請求先名"
+                                      }
+                                    ],
+                                    "SqlCondition": {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "m_customer",
+                                        "ColumnName": "customer_id"
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=P_顧客ID"
+                                      }
+                                    }
+                                  },
+                                  "ID": "114a005079214c57883ba74cc595bc08"
+                                },
+                                {
+                                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                  "TableName": "t_sales",
+                                  "ShowConfirm": false,
+                                  "ConfirmText": "本当に更新してもよろしいですか？",
+                                  "RowsToUpdate": 1,
+                                  "RowsToUpdateCondition": {
+                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                    "Condition1": {
+                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                      "Condition1": {
+                                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                        "ColumnBindingInfo": {
+                                          "TableName": "t_sales",
+                                          "ColumnName": "billing_comp_id"
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "=P_顧客ID"
+                                        }
+                                      },
+                                      "Condition2": {
+                                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                        "ColumnBindingInfo": {
+                                          "TableName": "t_sales",
+                                          "ColumnName": "delete_flg"
+                                        },
+                                        "Value": "0"
+                                      }
+                                    },
+                                    "Condition2": {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "t_sales",
+                                        "ColumnName": "pdf_save_flg"
+                                      },
+                                      "Value": "0"
+                                    }
+                                  },
+                                  "UpdateValues": [
+                                    {
+                                      "ColumnName": "請求先名",
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=最新請求先名"
+                                      }
+                                    },
+                                    {
+                                      "ColumnName": "billing_send_way",
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=P_請求書送付方法"
+                                      }
+                                    }
+                                  ]
+                                }
+                              ],
+                              "ID": "9cd00d30-acf9-4330-9a65-04d18381fe3d"
+                            }
+                          ],
+                          "Comments": "顧客名、請求書宛名、請求書送付方法に変更があれば"
+                        }
+                      ],
+                      "ID": "897525b8-05f9-4fb3-92de-063298d0fb45"
+                    }
+                  ]
+                }
+              ],
+              "ID": "6ec29274-b434-4866-8ce2-2403c8f792d9"
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+          "ErrorCode": "0",
+          "CustomReturns": []
+        }
+      ]
+    }
+  ],
+  "Name": "顧客データ更新処理"
+}

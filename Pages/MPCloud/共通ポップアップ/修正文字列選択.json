@@ -1,0 +1,365 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 13
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "Count": 33
+  },
+  "Values": {
+    "3,24": "▼更新開始フラグ",
+    "6,24": "▼修正前文字列",
+    "10,6": "はい",
+    "10,12": "いいえ"
+  },
+  "AttachInfos": {
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "10,6": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=修正文字列選択!編集文字列"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "編集後の文字列を入力してください"
+                  },
+                  {
+                    "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                    "TargetCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=修正文字列選択!編集文字列"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "2da293a4-832f-4ad7-9a7e-da95523582a2"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=修正文字列選択!編集文字列"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=修正文字列選択!修正前文字列"
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "文字列を修正してください"
+                  },
+                  {
+                    "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                    "TargetCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=修正文字列選択!編集文字列"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "46885107-3f2e-4ec6-b5b4-5f89a7e474a2"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=修正文字列選択!更新開始フラグ"
+                },
+                "Value": "1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "はい",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    },
+    "10,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "いいえ",
+        "TemplateKey": "スタイル2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 1
+      },
+      {
+        "Background": 4,
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 5
+      },
+      {
+        "Background": 4
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 1 50",
+        "Left",
+        "Body",
+        "@",
+        "#FFFFC000",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "2,21": 0,
+      "3,24": 1,
+      "3,25": 1,
+      "3,26": 1,
+      "4,2": 2,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 1,
+      "4,7": 1,
+      "4,8": 1,
+      "4,9": 1,
+      "4,10": 1,
+      "4,11": 1,
+      "4,12": 1,
+      "4,13": 1,
+      "4,14": 1,
+      "4,15": 1,
+      "4,16": 1,
+      "4,17": 1,
+      "4,18": 1,
+      "4,19": 1,
+      "4,20": 1,
+      "4,24": 3,
+      "4,25": 1,
+      "4,26": 1,
+      "5,24": 1,
+      "5,25": 1,
+      "5,26": 1,
+      "6,21": 2,
+      "6,24": 4,
+      "6,25": 1,
+      "6,26": 1,
+      "7,24": 5,
+      "10,6": 6,
+      "10,7": 1,
+      "10,8": 1,
+      "10,9": 1,
+      "10,10": 1,
+      "10,12": 6,
+      "11,13": 7,
+      "11,14": 7,
+      "11,15": 7,
+      "11,16": 7,
+      "11,17": 7,
+      "11,18": 7,
+      "11,19": 7,
+      "11,20": 7,
+      "11,21": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "2,2,1,19",
+    "10,6,1,5",
+    "10,12,1,5",
+    "4,24,1,3",
+    "7,24,1,3",
+    "4,2,1,19"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=修正文字列選択!修正前文字列"
+                  }
+                ]
+              },
+              "value": "%Null%",
+              "compareType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=修正文字列選択!編集文字列"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=修正文字列選択!修正前文字列"
+                    }
+                  }
+                ]
+              }
+            ],
+            "ID": "24340018-85c1-4421-9ab8-845941a3999f"
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 1
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "メッセージ",
+      "Formula": "修正文字列選択!$C$3"
+    },
+    {
+      "Name": "更新開始フラグ",
+      "Formula": "修正文字列選択!$Y$5"
+    },
+    {
+      "Name": "編集文字列",
+      "Formula": "修正文字列選択!$C$5"
+    },
+    {
+      "Name": "修正前文字列",
+      "Formula": "修正文字列選択!$Y$8"
+    }
+  ]
+}//yuA4QoT3peQCiK7MDZqggDo/UWzhkF5XdzzWa1wsEDrOZSFhQaDxKESMG/ISfSnoTQNN7w722UVGX16Qf0xfwt2LpfvlRUDHzusb0+k/9PlSg+TvFaPVAPSZ7NAocpwtRJBkITF3ZIb5dXoy/e7JiujT67d+O5p2xNf/m6Sxr22PyB9zONi405hQKW7QUzftZTh2IExytwmh4oZBYWaOB/DdsFRvwJ3Y4CmvUn1I9AhXDokhQzfGSozXIeJsRQH0bxEoajzv5D7JwfwFbJCNAxBXhnMfdG5Z5PfOPHEVB74zYrxyFRsPkvb9uTT/Yc1Tv/GS7/GxxGzcnnVLYVjrw9JjsBH1Z5G61U5eOksSmzuJABVlMdJlaAmjvmsTnilRTFUigRo5vRnQPcbnIl/XkaWShrtSAbdf4MY/TBCwlhVMAHxAxR5AH0PkDZLIG0d2z2VXaBasEeCgLhBfyEf9MFt/fr4ih24QQrOsFlthrnOEtP8+c17WrIOR5+jgZYZxdDp+AsVcz3rPfpuwAk2iJVXyGj28AezjT+PR7f7UcCfy8x9AMpo/GL1mI2U/9fiD6zeUvqgeLjtIDOcNcehNpirg4MVsFMEiLj89MnHZofSDqAlkAxtm8Co4ZMqgPT+00oEqoPBizH/68MEGGKFV8/y/1JmhTsPFwP+vVIIZYBo8Ge6oZucX97tGHLeVAdU8U9qw2CwNJXnn+qxKb+Kuwvj18yGec2qJMYf21xi8iYVauist1TN+BqykWr0ltOlaL/7sLFkP4KJRzVHRCEwvrJK1fNwOVlMAIX0Q3Gwceja10MuyaDKnZDKfQM6mP1XD3jmqCmuJseEES0Rbil2cRv/i6MJUxvhceI9haCRTeaARCl/5Vls1C6JQ76BiqhyeLqSfSiBBr1F0a6iOMQaIqQ==|920

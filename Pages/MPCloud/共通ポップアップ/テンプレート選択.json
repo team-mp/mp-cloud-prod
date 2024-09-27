@@ -1,0 +1,428 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 17,
+    "DefaultSize": 31.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "Count": 49
+  },
+  "Values": {
+    "1,2": "以下より、使用するテンプレートを選択してください",
+    "7,32": "▼メールタイプID",
+    "7,38": "▼汎用フラグ",
+    "8,38": 0,
+    "9,32": "▼テンプレートID",
+    "9,38": "▼選択フラグ",
+    "11,32": "▼テンプレート名",
+    "14,32": "▼選択カウント",
+    "15,23": "選択する"
+  },
+  "Formulas": {
+    "4,32": "IF(テンプレートID=AH5,1,0)",
+    "15,32": "COUNTIF(AG5,1)"
+  },
+  "AttachInfos": {
+    "3,2": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "テンプレートビュー",
+        "TemplatePageName": "aa9b921d593e478d977edc8931b11bc",
+        "Command": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [],
+          "ParamProperties": {
+            "選択フラグ": "選択フラグ",
+            "調査方法ID": "調査方法ID",
+            "調査方法名": "調査方法名"
+          }
+        },
+        "TemplateKey": "スタイル1"
+      }
+    },
+    "3,32": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_mail_template",
+        "RowIndex": 3,
+        "ColumnIndex": 32,
+        "ColumnCount": 3,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "テンプレートビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_mail_template",
+              "ColumnName": "mail_type_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=テンプレート選択!メールタイプID"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_mail_template",
+              "ColumnName": "general_purpose_flg"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=テンプレート選択!AM9"
+            }
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_mail_template",
+                "ColumnName": "template_id"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "4,32": {
+      "NameUsedInJavaScript": "選択フラグ"
+    },
+    "4,33": {
+      "BindingInfo": {
+        "TableName": "m_mail_template",
+        "ColumnName": "template_id"
+      },
+      "NameUsedInJavaScript": "テンプレートID"
+    },
+    "4,34": {
+      "BindingInfo": {
+        "TableName": "m_mail_template",
+        "ColumnName": "template_name"
+      },
+      "NameUsedInJavaScript": "テンプレート名"
+    },
+    "10,38": {
+      "CellComment": {
+        "Comments": "選択されたら1がセットされる"
+      }
+    },
+    "15,23": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=テンプレート選択!選択フラグ"
+                },
+                "Value": "1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=テンプレート選択!$AG$16=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "Background": 4
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 5
+      },
+      {
+        "Background": 4,
+        "FontFamily": 3
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 6,
+        "FontFamily": 3,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 1 50",
+        "Background 1 -15",
+        "Center",
+        "Body",
+        "#FFFFC000",
+        "[AUTO]General",
+        "#FFFFFF00"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 1,
+      "2,7": 1,
+      "2,8": 1,
+      "2,9": 1,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 1,
+      "2,13": 1,
+      "2,14": 1,
+      "2,15": 1,
+      "2,16": 1,
+      "2,17": 1,
+      "2,18": 1,
+      "2,19": 1,
+      "2,20": 1,
+      "2,21": 1,
+      "2,22": 1,
+      "2,23": 1,
+      "2,24": 1,
+      "2,25": 1,
+      "2,26": 1,
+      "2,27": 1,
+      "3,2": 2,
+      "3,33": 3,
+      "3,34": 3,
+      "4,33": 3,
+      "4,34": 3,
+      "8,32": 4,
+      "8,38": 4,
+      "9,32": 5,
+      "9,33": 3,
+      "9,34": 3,
+      "10,32": 6,
+      "10,38": 4,
+      "11,32": 5,
+      "11,33": 3,
+      "11,34": 3,
+      "12,32": 6,
+      "14,32": 3,
+      "14,33": 3,
+      "14,34": 3,
+      "15,23": 7,
+      "15,24": 7,
+      "15,25": 7,
+      "15,26": 7,
+      "15,27": 7,
+      "15,32": 8,
+      "15,33": 7,
+      "15,34": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "10,32,1,3",
+    "3,2,11,26",
+    "15,23,1,5",
+    "15,32,1,3",
+    "12,32,1,3",
+    "8,32,1,3",
+    "8,38,1,3",
+    "5,32,1,3",
+    "10,38,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_mail_template"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "テンプレートID",
+      "Formula": "テンプレート選択!$AG$11"
+    },
+    {
+      "Name": "テンプレート名",
+      "Formula": "テンプレート選択!$AG$13"
+    },
+    {
+      "Name": "メールタイプID",
+      "Formula": "テンプレート選択!$AG$9"
+    },
+    {
+      "Name": "汎用フラグ",
+      "Formula": "テンプレート選択!$AM$9"
+    },
+    {
+      "Name": "選択フラグ",
+      "Formula": "テンプレート選択!$AM$11"
+    }
+  ]
+}//WJSdk149Dr5l0Z5JWsvtx2T02bXV5SgDCULVK2rh0rdN/28Br4Ut+KRBxVKzF5s/EzLFQIVSW5is0FssbsEEVEnkk0m+SxQyViOsyNINAFpNW4NzE82lKF8OUbl/1Rpt7VnzYM6Sg/V3WqgPqwEF05NXMJLR+ZG7vv29rmZ/6ddgvt7CMjRxWqtIgeXMBnOeWfS6+QRdYalaxhRPhH5O0x/0JtT11vAwoRO19hh4+Ip4Fc1wWzJXxToXYnRNuvWqMVrn/sRmBiIol0Osgqp6TahUizbqQ2Pgw3oyOqJkqPIs8dNhX3ZBT7IPBBTIf5HIAUoYuUxdBcVOjHTjzK77v0npsALsTG5yQuXCboL3Hs4b5Uvp7PaYBsskVy96Sc8xZX28N3N/sHyvbkgdRdGWgibC6oolfspW4GtONpUj1VKM+Jh+4Bvql8w6yzfhZHU34gQhbSL/aZw3QMOkezu072ivue2ADfopeNpWVJcu7ekfbdZ30U/TR1SvrRiOHj8aHyHbxVYbghBBK5x//TWowqQl38o1mIo4G0jtrnXA6S2XXcHt1nbdjUBslqIfdPCScXsUSHRX6msSoNVqXROZKLpyTyigXF/bHI22dKhh5wfq0Vtg3NQIiWpYkhc3UsFu9QkMpDuCtNON3e6UsYXZ6JpCZ5pWZB4Sbe9ZEK+0f2IbT5zZXRbyfH+pe90LkBUIVdyLEoKdJHxHeLnqGJl59cEev9vYrdHvoo45mn+lclT0E9gPyJfdEPWJ8vvKi/9+9vVq0OwYHpM4ko8s1AEhSOoCvWrMk0jzacMfNzAfYhzqj9Y+lkB5X4ij8F3wA0n1fmlpQEzBmNC2S7xyzaVPVZErUG0AmhpU9s5tfnMTadT9ZqgzIgeFR8KPS2Mt4rKJbWRCYnBULcQVPtHLa7cYMQ==|920

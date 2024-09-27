@@ -1,0 +1,201 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 4,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "Count": 31
+  },
+  "AttachInfos": {
+    "0,0": {
+      "TemplateCellSource": "物件番号"
+    },
+    "0,5": {
+      "TemplateCellSource": "物件名"
+    },
+    "0,19": {
+      "TemplateCellSource": "請求品名"
+    },
+    "0,27": {
+      "TemplateCellSource": "税抜金額"
+    },
+    "1,5": {
+      "TemplateCellSource": "物件住所"
+    },
+    "1,19": {
+      "TemplateCellSource": "備考1"
+    },
+    "3,5": {
+      "TemplateCellSource": "住宅事業者名"
+    },
+    "3,19": {
+      "TemplateCellSource": "備考2"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 4
+      },
+      {
+        "FontSize": 12.0,
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 4,
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "WordWrap": true,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 4,
+        "FontSize": 12.0,
+        "TextIndent": 4
+      },
+      {
+        "FontFamily": 4
+      },
+      {
+        "FontFamily": 4,
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 4,
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "BorderRight": 0
+      },
+      {
+        "TextIndent": 4
+      },
+      {
+        "FontFamily": 4,
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "BorderLeft": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Background 1 -15",
+        " ¥#,##0_);[Red] ¥(#,##0)",
+        "Right",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,5": 1,
+      "0,18": 2,
+      "0,19": 3,
+      "0,26": 2,
+      "0,27": 4,
+      "1,5": 5,
+      "1,18": 2,
+      "1,19": 6,
+      "1,20": 7,
+      "1,21": 7,
+      "1,22": 7,
+      "1,23": 7,
+      "1,25": 7,
+      "1,26": 8,
+      "2,5": 9,
+      "2,18": 2,
+      "2,19": 6,
+      "2,20": 6,
+      "2,21": 6,
+      "2,22": 6,
+      "2,23": 6,
+      "2,24": 6,
+      "2,25": 6,
+      "2,26": 10,
+      "3,0": 11,
+      "3,5": 12,
+      "3,6": 7,
+      "3,7": 7,
+      "3,8": 7,
+      "3,9": 7,
+      "3,10": 7,
+      "3,11": 7,
+      "3,12": 7,
+      "3,17": 7,
+      "3,18": 8,
+      "3,19": 6,
+      "3,20": 7,
+      "3,21": 7,
+      "3,22": 7,
+      "3,23": 7,
+      "3,25": 7,
+      "3,26": 8
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "0,0,1,5",
+    "3,0,1,5",
+    "0,5,1,14",
+    "0,19,1,8",
+    "3,5,1,14",
+    "1,19,1,8",
+    "3,19,1,8",
+    "0,27,1,4",
+    "1,5,2,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "請求書検索"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//4GvMb3JTSML3HjLETIY/U86/BE/mruxvyQfXiKyg9Nyh7t67n4cOq1w+sj40V8qWI4Y8nRcYjhKG+sXkzUx3miLJVKpWkqhm0GnjHuWHpJfvPizEyNkAOx7+r/7g+MgOq+vVEuVMLd2uf9czsQWDJf2CunMecyz7/1Y8+v/zmdRvrRfd5MwIGHfmFuNVgsQHkEl6kt2m/L0huorGoKls1ZPDhR2wMGP5FBsTIz1CbPzxdLkQ/E4Vh3QoCe/6aObIQf+QChCDhEXuNpZZTDoMos3f02/naez0d9zqxQF5qGhL3QcA9DJIErYzBYqwaVV2tKi/B7U5zy/xy8+WcKCY0NzapktwvmAVU3xf/Dr+4N8pk4QTuWxa9mBmJw5NpTr4Jgxn1cnp1EmpWdHqa3Xr7SSakCz7KXZsyxD8Zby/maqsYwZ0ccnblPNGJQhG2PHpx+iFEb/IL9jHm/9Wb9X/Th+tL4KyQXU912UGl0V7f/qjZ1doqrKdvMWn8P7jr1JmXJlPjTGtmoV9lubdrgujdq374VzoJCXfpzfQwsg40+rFGqxyPm/9yni98ChCyGX/u3BrS+h5kmXACwAyH0OP4H8fzX+6kkiN/Wn1Q8Dzc7MAZ7KdgrquTPKkHasqNdrn72BDPcLVaof3x/1b8tIMdhlSECU0PdmGgQLyTbTzp6xaDl7c+U4KX5WsOL5TI8fDQBd7KaODgB9Don0m+WmhuN26YG9X5IYPOd6grbRAzUMRgN+R0S6fB96c0Zg7AlfW/4xaE3lKbNTV14kWrNdgADplCgm+aoxRUIlmYlA1+36fkJS1IUZDeE0PQvANj4DCw4rKdhWHQKdGoCRl4kNJfvYh0YzNDXDhf5yDFaB1qBIXtUi4H6CjxHUKMFZavZRg6Iirm02IutWsk9xEgGHdSw==|920

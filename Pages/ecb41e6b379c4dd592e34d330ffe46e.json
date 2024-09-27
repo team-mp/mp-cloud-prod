@@ -1,0 +1,199 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 1,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0,
+          "IsHidden": true
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "Count": 33
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "TemplateKey": "余白5",
+        "ImagePath": "Mobile/387_user_2.svg",
+        "BuiltIn": true,
+        "Color": "#FF00B050"
+      }
+    },
+    "0,2": {
+      "TemplateCellSource": "送信先名"
+    },
+    "0,26": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ecb41e6b379c4dd592e34d330ffe46e!ユーザー削除フラグ"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ecb41e6b379c4dd592e34d330ffe46e!AE1"
+                }
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "余白4",
+        "ImagePath": "Application/034_close_delete_2.svg",
+        "BuiltIn": true,
+        "Color": "Background 1 -35"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE(ecb41e6b379c4dd592e34d330ffe46e!編集許可フラグ)=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "0,30": {
+      "TemplateCellSource": "ユーザーID"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "TextIndent": 4
+      },
+      {
+        "FontSize": 14.666666666666666
+      },
+      {
+        "Background": 1,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "Background": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,2": 1,
+      "0,26": 0,
+      "0,27": 0
+    },
+    "ColStyles": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 2,
+      "10": 2,
+      "11": 2,
+      "12": 2,
+      "13": 2,
+      "14": 2,
+      "15": 2,
+      "16": 2,
+      "17": 2,
+      "18": 2,
+      "19": 2,
+      "20": 2,
+      "21": 2,
+      "22": 2,
+      "23": 2,
+      "24": 2,
+      "25": 2,
+      "26": 2,
+      "27": 2,
+      "28": 2,
+      "29": 2,
+      "30": 3,
+      "31": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,0,1,2",
+    "0,2,1,24",
+    "0,26,1,2",
+    "0,30,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "連絡事項_登録編集"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//ydZE4Lktr64rgmM0nNcMJFt88m42C9URFgJXrRRc2OYx/YhcOkwHG89skU48ucPjojRcs1/nVBKy9MXAlAcg3jflm+1yGM/Gv+94D4bEv01xIsL0riSZtHRYqCG8p/36Wm9g/KX3a05ENsARB4NRLJ7Tzcannz5lP7t7Qk9uEuY8C09BubyBwSLIDF8HwV16vjhLHxDZKf7h6cqLHU5TuR4iY3fc8FDuYUZTuN1AmZJSqazqm5fABwWHrzVQ6gqBUjvZAcny0ykHUToMoCi82hRYFGVoQrTUFFCHcVKn6IwGot8f8av3OMoWGlW2We5Uk4LzvkWsDRY6Ka27uE4mS++/qmtxQZJOxE/u4RCWrVYqg9cXNAZ46XqZ/9VE2NMfV0g5ZkQQgf+f+pMfCS59Jw4A+QRh/JmAjvEwSOPVU+/UdF7/u9l7b/SlpF8ImaxhcLe0rRJTxrDzXeDunziP8Op4/ez7YADXJR2XD/jxFMAlXg6B7uYjTdN5ZY301hKSTFZIzimhbVjBLG3rwGcynGnOA3dAItSjVy6MypUSkTRUGvzT1iYecOzQBZQFVjpOct4pub6T8GTUddsKoDPlDAMpttCnz8Iv1z2CXDuvU0rsSBDqBbB+LVWrwVwUuAueUUMa1+oWIE02NceLHmtVeZlVzwXfHscOUvSFEB254AukYXwztkMhquY/8uKdoMQV2r3M1FyETe11wgMOkyPGl5ER6Ulc/T7pkUdVCy+ro7TE6R0UoS+m/UrIJbuFy5PrS+mdVLdOSTjIGJRtkqnREcPG2l0IW/zQDcqLpEnPCJ0mtWSoRYlzhR4DlwKghOAO8177Aq8UoVITTZs8CEdj6PXBrEDw+ZhhN1ukk8jCoYmie3sVfYye7JynPKGlu1hd6kwRHatQ5A0qEWOgX5v5pw==|920

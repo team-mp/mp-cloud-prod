@@ -1,0 +1,449 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 27,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      56,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "Count": 65
+  },
+  "Values": {
+    "1,17": "※直接編集が可能です。編集後は確定ボタンを押してください",
+    "1,48": "変更内容を確定する",
+    "3,60": "▼所属会社ID"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "BindingInfo": {
+        "TableName": "m_customer",
+        "ColumnName": "内部顧客名"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "1,48": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "顧客担当者ビュー"
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "1163bbdf-62b1-43af-9906-e63bfc780ec3",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+                  }
+                },
+                "Value": "編集内容を確定しました"
+              }
+            ],
+            "ReturnPropertiesTo": []
+          }
+        ],
+        "Text": "変更内容を確定する",
+        "TemplateKey": "角緑",
+        "Icon": {
+          "Name": "Navigation/193_download_8.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,2": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_user",
+        "RowIndex": 3,
+        "ColumnIndex": 2,
+        "ColumnCount": 55,
+        "RowCount": 23,
+        "FrozenIndex": 1,
+        "AllowEditInListview": true,
+        "UseSimpleBar": true,
+        "Name": "顧客担当者ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "m_user",
+            "ColumnName": "customer_id"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=顧客担当者リスト!BI5"
+          }
+        },
+        "TopCondition": null,
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "4,2": {
+      "BindingInfo": {
+        "TableName": "m_user",
+        "ColumnName": "user_name"
+      }
+    },
+    "4,9": {
+      "BindingInfo": {
+        "TableName": "m_user",
+        "ColumnName": "mail_address"
+      }
+    },
+    "4,23": {
+      "BindingInfo": {
+        "TableName": "m_user",
+        "ColumnName": "department_name"
+      }
+    },
+    "4,31": {
+      "BindingInfo": {
+        "TableName": "m_user",
+        "ColumnName": "position_name"
+      }
+    },
+    "4,39": {
+      "BindingInfo": {
+        "TableName": "m_user",
+        "ColumnName": "mobile_phone"
+      }
+    },
+    "4,45": {
+      "BindingInfo": {
+        "TableName": "m_user",
+        "ColumnName": "company_phone"
+      }
+    },
+    "4,51": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "Items": [
+          {
+            "Value": "1",
+            "DisplayValue": "在籍"
+          },
+          {
+            "Value": "2",
+            "DisplayValue": "異動"
+          },
+          {
+            "Value": "9",
+            "DisplayValue": "退職"
+          }
+        ]
+      },
+      "BindingInfo": {
+        "TableName": "m_user",
+        "ColumnName": "enroll_type"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 4
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 5
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 7,
+        "BorderBottom": 0
+      },
+      {
+        "Background": 8
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "000000",
+        "Left",
+        "Text 1 50",
+        "[AUTO]General",
+        "Background 1 0",
+        "Center",
+        "#FFFFC000"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,17": 1,
+      "1,18": 2,
+      "1,30": 2,
+      "1,31": 2,
+      "1,32": 2,
+      "1,33": 2,
+      "1,34": 2,
+      "1,35": 2,
+      "1,36": 2,
+      "1,48": 3,
+      "1,49": 2,
+      "1,50": 2,
+      "1,51": 2,
+      "1,52": 2,
+      "1,53": 2,
+      "1,54": 2,
+      "1,55": 2,
+      "1,56": 3,
+      "1,57": 3,
+      "1,58": 3,
+      "1,59": 3,
+      "1,60": 3,
+      "1,61": 3,
+      "1,62": 3,
+      "1,63": 3,
+      "3,2": 4,
+      "3,9": 4,
+      "3,23": 4,
+      "3,31": 4,
+      "3,39": 4,
+      "3,45": 4,
+      "3,51": 4,
+      "4,2": 5,
+      "4,3": 6,
+      "4,4": 6,
+      "4,5": 6,
+      "4,6": 6,
+      "4,7": 6,
+      "4,8": 6,
+      "4,9": 7,
+      "4,10": 6,
+      "4,11": 6,
+      "4,12": 6,
+      "4,13": 6,
+      "4,14": 6,
+      "4,15": 6,
+      "4,16": 6,
+      "4,17": 6,
+      "4,18": 6,
+      "4,19": 6,
+      "4,20": 6,
+      "4,21": 6,
+      "4,22": 6,
+      "4,23": 7,
+      "4,24": 6,
+      "4,25": 6,
+      "4,26": 6,
+      "4,27": 6,
+      "4,28": 6,
+      "4,29": 6,
+      "4,30": 6,
+      "4,31": 7,
+      "4,32": 6,
+      "4,33": 6,
+      "4,34": 6,
+      "4,35": 6,
+      "4,36": 6,
+      "4,37": 6,
+      "4,38": 6,
+      "4,39": 8,
+      "4,40": 6,
+      "4,41": 6,
+      "4,42": 6,
+      "4,43": 6,
+      "4,44": 6,
+      "4,45": 8,
+      "4,46": 6,
+      "4,47": 6,
+      "4,48": 6,
+      "4,49": 6,
+      "4,50": 6,
+      "4,51": 8,
+      "4,52": 6,
+      "4,53": 6,
+      "4,54": 6,
+      "4,55": 6,
+      "4,60": 9
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,2,1,7",
+    "4,9,1,14",
+    "4,23,1,8",
+    "4,31,1,8",
+    "4,39,1,6",
+    "4,51,1,5",
+    "4,45,1,6",
+    "1,2,1,15",
+    "4,60,1,3",
+    "1,48,1,8",
+    "5,2,21,55",
+    "3,2,1,7",
+    "3,9,1,14",
+    "3,23,1,8",
+    "3,31,1,8",
+    "3,39,1,6",
+    "3,45,1,6",
+    "3,51,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_user",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//drZ2Dc80gPJC3zC+TiJe9QXW/NYrPrtglXTCew5LwekBouZKKHGFd0Sy1AIumRKi4Y+lAUpBsU6lgX0VzJ5dDVC0sb3ds9NaJ8didRY41vsRkcyEtQj04O+SlQTNcOavZz1Cchw5UWLav2HF4bUzGB/aDOOJXepIpXh23emrVV+M+tBXmZ4TQHqpnJmeHPZvcz++RLIae+SUgw+aEovDQ5PXCvmHdcBmNyu4lFCuTF8jegDxVaGbaJBmFt7YjVszNaNE58hk5xGhR66n8DnUnfKBxVKEoMlGjEk0Tgcm8w2hHWZvspJBC42hvK2zRgf1cZ8Noz8wBVSkkQ9dhmVhSIEJ/MyzZVlAiZhRkBO0btA/Q7QYVOipy99+3+NEyBFXZ2JzJRnIHJ65MKiQqx7l5L+27SDivpfkI2HIej9f0SQk/eve32AUKYKsn+JsXZ21juPijbnpO4TFLAP/VuAevvaohHErhouy6j0ifw64V2qpnF59151SIljMAwIvVL1/5JrCWK9ezQqsISlzNpfAcZ+ux0CiHbw4n9SUWDdHAWtCNpPFvhnZH9N/W5Y4mFlS25QdEDm5bqaaOksNgYAh19o7Nw2u6IpfvSpFNx0k0FPVIPERmm1tVZs1Cwwo7I1nRS8nwHWjSnLd6k4hp9Eue3YtktrSiuAsVYpOwcII81bLQc4ZT3n9T1A/qDa0lPbKq9V/p5wfA9kgKKVbdvW2M0QZpNKz1Tu1XhZCKeH1e1NKgB5tiV3N2Jj/84b6vXquOTxSSzXYtmBzXzggbONG8xcoi0mSC4gz4hmXY7+xBytQ+ocqcXayasblqWVxKJUNY9Vvbfs6vo01bEaSRX8wGO3sA3qZ7vNrGnJgJRaSigSAmZw3YJoeb4dTXSYy0CgWzur4Kq5W32TqN2bu9eBc5Q==|920

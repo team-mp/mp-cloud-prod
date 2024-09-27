@@ -1,0 +1,65 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_住所"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+      "PostData": {
+        "DataItemType": 1,
+        "Data": {
+          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+          "Data": [
+            {
+              "Name": "address",
+              "DataItemType": 0,
+              "Data": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_住所"
+              }
+            }
+          ]
+        }
+      },
+      "WebUrl": "https://api.excelapi.org/post/zipcode",
+      "Method": "GET",
+      "SuccessCallback": "// レスポンスデータは「result」変数に格納されます。\r\n// 「result」変数を使用して、リクエストが成功したコールバック関数を実装します。\r\n//console.log(result);",
+      "ErrorCallback": "// エラーデータは「error」変数に格納されます。\r\n// 例外処理には「error」変数を使用してください。\r\nconsole.error(error);",
+      "NewParameter": "郵便番号",
+      "Header": [],
+      "Comments": "EXCEL APIを使用"
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "ErrorCode": "0",
+      "CustomReturns": [
+        {
+          "ReturnPropertyName": "R_郵便番号",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=郵便番号"
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "R_郵便番号"
+    }
+  ],
+  "Name": "住所から郵便番号を取得"
+}

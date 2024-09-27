@@ -1,0 +1,2994 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 6,
+    "DefaultSize": 5.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "45": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "48": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "49": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "50": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "51": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "52": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "53": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "54": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "55": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "56": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "62": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "63": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "64": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "65": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "120": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144
+    ],
+    "Count": 145
+  },
+  "Values": {
+    "1,0": "■",
+    "1,67": "▼物件商品ID",
+    "1,72": "▼申込ID",
+    "1,77": "▼商品ID",
+    "1,82": "▼計上区分",
+    "1,87": "▼計上確定済みフラグ",
+    "1,93": "▼請求先ID",
+    "1,98": "▼外注先ID",
+    "1,103": "▼外注先変更フラグ",
+    "1,110": "▼支払先ID",
+    "1,115": "▼単価変更ユーザーラベル",
+    "1,123": "▼原価変更ユーザーラベル",
+    "1,131": "▼売上計上確定フラグ",
+    "1,138": "▼仕入計上確定フラグ",
+    "4,103": "0"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,1": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,6": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,17": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,32": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,38": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,44": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,45": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,52": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,53": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ToolTip": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!DL5"
+        },
+        "TemplateKey": "リスト用",
+        "ImagePath": "Navigation/238_user_8.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=AND('30683608ed084435bb06293a67f2b10'!$CJ$5=1,'30683608ed084435bb06293a67f2b10'!$CE$5<>3,'30683608ed084435bb06293a67f2b10'!$DL$5<>\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Foreground": "Background 1 -35",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=AND('30683608ed084435bb06293a67f2b10'!$CJ$5=1,OR('30683608ed084435bb06293a67f2b10'!$CE$5=3,'30683608ed084435bb06293a67f2b10'!$DL$5=\"\"))"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Foreground": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('30683608ed084435bb06293a67f2b10'!$CE$5=3,'30683608ed084435bb06293a67f2b10'!$DL$5=\"\")"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "0,55": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,56": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,62": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "1,0": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Foreground": "Text 2 40",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "1,1": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "登録日"
+    },
+    "1,6": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Foreground": "#FF000000",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "商品名"
+    },
+    "1,17": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "請求先名"
+    },
+    "1,30": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "お待ちください",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "DrawerDirection": 3,
+            "ShowDrawerHeader": true,
+            "PageName": "顧客検索",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!CP5"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!顧客ID"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!R2"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!顧客略称名"
+                }
+              },
+              {
+                "Source": "6",
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!属性フィルタ"
+                }
+              },
+              {
+                "Source": "1",
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!属性固定フラグ"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "TemplateKey": "余白2グレー",
+        "ImagePath": "Application/023_edit_3.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Foreground": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$EB$5=1"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "1,32": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "請求明細"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$EB$5=1"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      },
+      "TemplateCellSource": "売上金額"
+    },
+    "1,38": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "粗利益"
+    },
+    "1,45": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=AND('30683608ed084435bb06293a67f2b10'!$CJ$5=1,'30683608ed084435bb06293a67f2b10'!$CE$5=3)"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Foreground": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 3,
+            "Value1": "=\"編集済み\"",
+            "StyleInfo": {
+              "Background": "Accent 4 40",
+              "Foreground": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 3,
+            "Value1": "=\"設定通り\"",
+            "StyleInfo": {
+              "Background": "Background 2 -10",
+              "Foreground": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 3,
+            "Value1": "=\"設定無し\"",
+            "StyleInfo": {
+              "Background": "Background 1 -25",
+              "Foreground": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "マスタ単価ラベル"
+    },
+    "1,56": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "売上計上ステータス名"
+    },
+    "1,62": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "1,63": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 3,
+            "DrawerDirection": 3,
+            "ShowDrawerHeader": true,
+            "PageName": "商品登録編集",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!調査フラグ"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=商品登録編集!調査フラグ"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!測量フラグ"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=商品登録編集!測量フラグ"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!解析フラグ"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=商品登録編集!解析フラグ"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!転圧フラグ"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=商品登録編集!転圧フラグ"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!工事フラグ"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=商品登録編集!工事フラグ"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!保証フラグ"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=商品登録編集!保証フラグ"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "ToolTip": "詳細画面を表示します",
+        "TemplateKey": "ヒント",
+        "ImagePath": "Application/021_edit_2.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "1,65": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "2,0": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "2,1": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "2,6": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "2,17": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "2,32": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "2,38": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "2,45": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "2,56": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "3,1": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "3,6": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "3,17": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "3,32": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "3,38": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "3,44": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "3,45": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "3,52": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "3,53": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ToolTip": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!DT5"
+        },
+        "TemplateKey": "リスト用",
+        "ImagePath": "Navigation/238_user_8.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=AND('30683608ed084435bb06293a67f2b10'!$CJ$5=1,'30683608ed084435bb06293a67f2b10'!$CE$5<>2,'30683608ed084435bb06293a67f2b10'!$DT$5<>\"\")"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Foreground": "Background 1 -35",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=AND('30683608ed084435bb06293a67f2b10'!$CJ$5=1,OR('30683608ed084435bb06293a67f2b10'!$CE$5=2,'30683608ed084435bb06293a67f2b10'!$DT$5=\"\"))"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Foreground": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('30683608ed084435bb06293a67f2b10'!$CE$5=2,'30683608ed084435bb06293a67f2b10'!$DT$5=\"\")"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "3,55": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "3,56": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,1": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "計上区分名"
+    },
+    "4,6": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "請求明細"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      },
+      "TemplateCellSource": "備考"
+    },
+    "4,17": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "外注先名"
+    },
+    "4,30": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "お待ちください",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "DrawerDirection": 3,
+            "ShowDrawerHeader": true,
+            "PageName": "顧客検索",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!CU5"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!顧客ID"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!R5"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!顧客略称名"
+                }
+              },
+              {
+                "Source": "7",
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!属性フィルタ"
+                }
+              },
+              {
+                "Source": "1",
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!属性固定フラグ"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!CZ5"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!更新フラグ"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "TemplateKey": "余白2グレー",
+        "ImagePath": "Application/023_edit_3.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=AND(VALUE('30683608ed084435bb06293a67f2b10'!$CE$5)<=2,VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1)"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Foreground": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false,
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CE$5=2"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$EI$5=1"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "4,32": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "請求明細"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CE$5=2"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$EI$5=1"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      },
+      "TemplateCellSource": "仕入金額"
+    },
+    "4,38": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "粗利率"
+    },
+    "4,45": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=AND('30683608ed084435bb06293a67f2b10'!$CJ$5=1,'30683608ed084435bb06293a67f2b10'!$CE$5=2)"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Foreground": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 3,
+            "Value1": "=\"設定通り\"",
+            "StyleInfo": {
+              "Background": "Background 2 -10",
+              "Foreground": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 3,
+            "Value1": "=\"編集済み\"",
+            "StyleInfo": {
+              "Background": "Accent 4 40",
+              "Foreground": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 3,
+            "Value1": "=\"設定無し\"",
+            "StyleInfo": {
+              "Background": "Background 1 -25",
+              "Foreground": "Background 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "マスタ原価ラベル"
+    },
+    "4,56": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "仕入計上ステータス名"
+    },
+    "4,67": {
+      "TemplateCellSource": "物件商品ID"
+    },
+    "4,72": {
+      "TemplateCellSource": "申込ID"
+    },
+    "4,77": {
+      "TemplateCellSource": "商品ID"
+    },
+    "4,82": {
+      "TemplateCellSource": "計上区分"
+    },
+    "4,87": {
+      "TemplateCellSource": "計上確定済みフラグ"
+    },
+    "4,93": {
+      "TemplateCellSource": "請求先ID"
+    },
+    "4,98": {
+      "TemplateCellSource": "外注先ID"
+    },
+    "4,103": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "支払先ID取得",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!CU5"
+                },
+                "ParamName": "P_外注先ID"
+              }
+            ],
+            "ReturnPropertiesTo": [
+              {
+                "ResultPropertyName": "R_支払先ID",
+                "ResultTo": {
+                  "SerializeProperty": "取得支払先ID"
+                }
+              },
+              {
+                "ResultPropertyName": "R_支払先略称名",
+                "ResultTo": {
+                  "SerializeProperty": "取得支払先略称名"
+                }
+              },
+              {
+                "ResultPropertyName": "R_外注先略称名"
+              }
+            ],
+            "CheckDataValidation": false
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!AG5"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "外注原価取得",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!BU5"
+                        },
+                        "ParamName": "P_申込ID"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!CU5"
+                        },
+                        "ParamName": "P_外注先ID"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!BZ5"
+                        },
+                        "ParamName": "P_商品ID"
+                      },
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "ParamName": "R_入力原価"
+                      }
+                    ],
+                    "ReturnPropertiesTo": [
+                      {
+                        "ResultPropertyName": "R_マスタ原価",
+                        "ResultTo": {
+                          "SerializeProperty": "マスタ原価"
+                        }
+                      },
+                      {
+                        "ResultPropertyName": "R_マスタ原価取得フラグ"
+                      },
+                      {
+                        "ResultPropertyName": "R_マスタ原価変更フラグ"
+                      },
+                      {
+                        "ResultPropertyName": "R_原価変更ユーザーID"
+                      },
+                      {
+                        "ResultPropertyName": "R_原価変更日時"
+                      }
+                    ],
+                    "CheckDataValidation": false
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!マスタ原価"
+                              }
+                            ]
+                          },
+                          "value": "0",
+                          "compareType": 2
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                            "ConditionAndCommandPairList": [
+                              {
+                                "ConfirmDialogSettings": {
+                                  "Title": "確認",
+                                  "FormulaText": "外注先選択により最新の外注原価が取得されました。\r\n仕入金額を変更します。よろしいですか？",
+                                  "YesButtonText": "はい",
+                                  "NoButtonText": "いいえ",
+                                  "ConfirmIcon": 1
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                    "PropertyItemsList": [
+                                      {
+                                        "TargetCells": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!AG5"
+                                        },
+                                        "Value": {
+                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                          "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!マスタ原価"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "ID": "338dedea-d91a-42ff-9f8d-ff36a4bcc99a"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "6ef1c2d5-aa55-410b-b6c7-078ed9606900"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "214d6970-99f8-49e0-821e-eb09d93a18b2"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!DG5"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!取得支払先ID"
+                }
+              }
+            ]
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    },
+    "4,110": {
+      "TemplateCellSource": "支払先ID"
+    },
+    "4,115": {
+      "TemplateCellSource": "単価変更ユーザーラベル"
+    },
+    "4,123": {
+      "TemplateCellSource": "原価変更ユーザーラベル"
+    },
+    "4,131": {
+      "TemplateCellSource": "売上計上確定フラグ"
+    },
+    "4,138": {
+      "TemplateCellSource": "仕入計上確定フラグ"
+    },
+    "5,1": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,6": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,17": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,32": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,38": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,45": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,56": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='30683608ed084435bb06293a67f2b10'!$CJ$5=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,62": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('30683608ed084435bb06293a67f2b10'!CJ5)=1"
+            },
+            "StyleInfo": {
+              "Background": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.67
+      },
+      {
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664,
+        "Foreground": 2,
+        "HorizontalAlignment": 3,
+        "BorderLeft": null
+      },
+      {
+        "Formatter": 4,
+        "HorizontalAlignment": 3,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "Foreground": 5,
+        "TextIndent": 4,
+        "Underline": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332,
+        "BorderBottom": null,
+        "BorderTop": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "TextIndent": 4,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "Formatter": 6,
+        "HorizontalAlignment": 7,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "Formatter": 6,
+        "HorizontalAlignment": 7,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 8,
+        "Formatter": 6,
+        "HorizontalAlignment": 3
+      },
+      {
+        "HorizontalAlignment": 3
+      },
+      {
+        "Background": null,
+        "FontFamily": 1
+      },
+      {
+        "Background": null,
+        "FontFamily": 1,
+        "FontSize": -1.0
+      },
+      {
+        "Background": null,
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "Background": null,
+        "FontFamily": 1,
+        "Formatter": 9
+      },
+      {
+        "Background": null,
+        "FontFamily": 1,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "Formatter": 4,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "Formatter": 4,
+        "HorizontalAlignment": 3,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "Formatter": 10,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "Formatter": 11,
+        "TextIndent": 4,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.666666666666666,
+        "Formatter": 12,
+        "HorizontalAlignment": 7,
+        "BorderBottom": null,
+        "BorderTop": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Background": 13,
+        "FontFamily": 1,
+        "FontSize": -1.0
+      },
+      {
+        "Background": 13,
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "Background": 13,
+        "FontFamily": 1
+      },
+      {
+        "Background": 14,
+        "FontFamily": 1,
+        "Formatter": 11,
+        "HorizontalAlignment": 7
+      },
+      {
+        "BorderBottom": null,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -15",
+        "Body",
+        "Accent 5 40",
+        "Center",
+        "yyyy/MM/dd",
+        "#FF000000",
+        " ¥#,##0_);[Red] ¥(#,##0)",
+        "Right",
+        "Background 1 0",
+        "[AUTO]General",
+        "General",
+        "@",
+        "(0.0%)",
+        "#FFFFFF00",
+        "Accent 1 60"
+      ],
+      "Borders": [
+        {
+          "Color": 0
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,5": 1,
+      "0,16": 1,
+      "0,32": 2,
+      "0,33": 3,
+      "0,34": 3,
+      "0,35": 3,
+      "0,36": 3,
+      "0,37": 4,
+      "0,43": 1,
+      "0,53": 5,
+      "0,55": 1,
+      "0,56": 3,
+      "0,57": 3,
+      "0,58": 3,
+      "0,59": 3,
+      "0,60": 3,
+      "0,61": 4,
+      "0,65": 6,
+      "1,0": 7,
+      "1,1": 8,
+      "1,5": 1,
+      "1,6": 9,
+      "1,7": 10,
+      "1,8": 10,
+      "1,9": 10,
+      "1,10": 10,
+      "1,11": 10,
+      "1,12": 10,
+      "1,13": 11,
+      "1,14": 10,
+      "1,15": 10,
+      "1,16": 12,
+      "1,17": 13,
+      "1,30": 14,
+      "1,31": 5,
+      "1,32": 15,
+      "1,37": 1,
+      "1,38": 16,
+      "1,40": 17,
+      "1,41": 17,
+      "1,42": 17,
+      "1,43": 18,
+      "1,45": 19,
+      "1,55": 1,
+      "1,56": 20,
+      "1,61": 1,
+      "1,63": 21,
+      "1,65": 6,
+      "1,67": 22,
+      "1,68": 22,
+      "1,69": 22,
+      "1,70": 23,
+      "1,71": 23,
+      "1,77": 24,
+      "1,78": 21,
+      "1,79": 21,
+      "1,82": 23,
+      "1,83": 23,
+      "1,84": 23,
+      "1,85": 23,
+      "1,86": 23,
+      "1,87": 23,
+      "1,88": 23,
+      "1,89": 23,
+      "1,90": 21,
+      "1,91": 21,
+      "1,92": 21,
+      "1,93": 21,
+      "1,94": 21,
+      "1,95": 21,
+      "1,96": 21,
+      "1,97": 25,
+      "1,98": 21,
+      "1,99": 21,
+      "1,100": 21,
+      "1,101": 21,
+      "1,102": 21,
+      "1,103": 21,
+      "1,104": 21,
+      "1,105": 21,
+      "1,106": 21,
+      "1,107": 21,
+      "1,108": 21,
+      "1,109": 21,
+      "1,110": 21,
+      "1,111": 21,
+      "1,112": 21,
+      "1,113": 21,
+      "1,114": 21,
+      "1,115": 21,
+      "1,116": 21,
+      "1,117": 21,
+      "1,118": 21,
+      "1,119": 21,
+      "1,120": 21,
+      "1,121": 21,
+      "1,122": 21,
+      "1,123": 24,
+      "1,124": 21,
+      "1,125": 21,
+      "1,126": 21,
+      "1,127": 21,
+      "1,128": 21,
+      "1,129": 21,
+      "1,130": 25,
+      "1,131": 21,
+      "1,132": 21,
+      "1,133": 21,
+      "1,134": 21,
+      "1,135": 21,
+      "1,136": 21,
+      "1,137": 21,
+      "1,138": 24,
+      "1,139": 21,
+      "1,140": 21,
+      "2,1": 26,
+      "2,2": 27,
+      "2,3": 27,
+      "2,4": 27,
+      "2,5": 28,
+      "2,6": 27,
+      "2,7": 27,
+      "2,8": 27,
+      "2,9": 27,
+      "2,10": 27,
+      "2,11": 27,
+      "2,12": 27,
+      "2,13": 27,
+      "2,14": 27,
+      "2,15": 27,
+      "2,16": 28,
+      "2,17": 27,
+      "2,18": 27,
+      "2,19": 27,
+      "2,20": 27,
+      "2,21": 27,
+      "2,22": 27,
+      "2,23": 27,
+      "2,24": 27,
+      "2,25": 27,
+      "2,26": 27,
+      "2,27": 27,
+      "2,28": 27,
+      "2,29": 27,
+      "2,30": 27,
+      "2,31": 27,
+      "2,32": 29,
+      "2,33": 30,
+      "2,34": 30,
+      "2,35": 30,
+      "2,36": 30,
+      "2,37": 31,
+      "2,38": 27,
+      "2,39": 27,
+      "2,40": 27,
+      "2,41": 27,
+      "2,42": 27,
+      "2,43": 28,
+      "2,44": 27,
+      "2,45": 27,
+      "2,46": 27,
+      "2,47": 27,
+      "2,48": 27,
+      "2,49": 27,
+      "2,50": 27,
+      "2,51": 27,
+      "2,52": 27,
+      "2,53": 27,
+      "2,54": 27,
+      "2,55": 28,
+      "2,56": 30,
+      "2,57": 30,
+      "2,58": 30,
+      "2,59": 30,
+      "2,60": 30,
+      "2,61": 31,
+      "2,65": 6,
+      "2,66": 14,
+      "2,77": 21,
+      "2,78": 21,
+      "2,79": 21,
+      "2,82": 21,
+      "2,83": 21,
+      "2,84": 21,
+      "2,85": 21,
+      "2,86": 21,
+      "2,87": 21,
+      "2,88": 21,
+      "2,89": 21,
+      "2,90": 21,
+      "2,91": 21,
+      "2,92": 21,
+      "2,93": 21,
+      "2,94": 21,
+      "2,95": 21,
+      "2,96": 21,
+      "2,97": 21,
+      "2,98": 21,
+      "2,99": 21,
+      "2,100": 21,
+      "2,101": 21,
+      "2,102": 21,
+      "2,103": 21,
+      "2,104": 21,
+      "2,105": 21,
+      "2,106": 21,
+      "2,107": 21,
+      "2,108": 21,
+      "2,109": 21,
+      "2,110": 21,
+      "2,111": 21,
+      "2,112": 21,
+      "2,113": 21,
+      "2,114": 21,
+      "2,115": 21,
+      "2,116": 21,
+      "2,117": 21,
+      "2,118": 21,
+      "2,119": 21,
+      "2,120": 21,
+      "2,121": 21,
+      "2,122": 21,
+      "2,123": 21,
+      "2,124": 21,
+      "2,125": 21,
+      "2,126": 21,
+      "2,127": 21,
+      "2,128": 21,
+      "2,129": 21,
+      "2,130": 21,
+      "2,131": 21,
+      "2,132": 21,
+      "2,133": 21,
+      "2,134": 21,
+      "2,135": 21,
+      "2,136": 21,
+      "2,137": 21,
+      "2,138": 21,
+      "2,139": 21,
+      "2,140": 21,
+      "3,1": 32,
+      "3,5": 1,
+      "3,16": 1,
+      "3,32": 2,
+      "3,33": 3,
+      "3,34": 3,
+      "3,35": 3,
+      "3,36": 3,
+      "3,37": 4,
+      "3,43": 1,
+      "3,53": 5,
+      "3,55": 1,
+      "3,56": 3,
+      "3,57": 3,
+      "3,58": 3,
+      "3,59": 3,
+      "3,60": 3,
+      "3,61": 4,
+      "3,65": 6,
+      "3,66": 14,
+      "3,77": 21,
+      "3,78": 21,
+      "3,79": 21,
+      "3,82": 21,
+      "3,83": 21,
+      "3,84": 21,
+      "3,85": 21,
+      "3,86": 21,
+      "3,87": 21,
+      "3,88": 21,
+      "3,89": 21,
+      "3,90": 21,
+      "3,91": 21,
+      "3,92": 21,
+      "3,93": 21,
+      "3,94": 21,
+      "3,95": 21,
+      "3,96": 21,
+      "3,97": 21,
+      "3,98": 21,
+      "3,99": 21,
+      "3,100": 21,
+      "3,101": 21,
+      "3,102": 21,
+      "3,103": 21,
+      "3,104": 21,
+      "3,105": 21,
+      "3,106": 21,
+      "3,107": 21,
+      "3,108": 21,
+      "3,109": 21,
+      "3,110": 21,
+      "3,111": 21,
+      "3,112": 21,
+      "3,113": 21,
+      "3,114": 21,
+      "3,115": 21,
+      "3,116": 21,
+      "3,117": 21,
+      "3,118": 21,
+      "3,119": 21,
+      "3,120": 21,
+      "3,121": 21,
+      "3,122": 21,
+      "3,123": 21,
+      "3,124": 21,
+      "3,125": 21,
+      "3,126": 21,
+      "3,127": 21,
+      "3,128": 21,
+      "3,129": 21,
+      "3,130": 21,
+      "3,131": 21,
+      "3,132": 21,
+      "3,133": 21,
+      "3,134": 21,
+      "3,135": 21,
+      "3,136": 21,
+      "3,137": 21,
+      "3,138": 21,
+      "3,139": 21,
+      "3,140": 21,
+      "4,1": 33,
+      "4,2": 10,
+      "4,3": 10,
+      "4,4": 10,
+      "4,5": 12,
+      "4,6": 34,
+      "4,7": 10,
+      "4,8": 10,
+      "4,9": 10,
+      "4,10": 10,
+      "4,11": 10,
+      "4,12": 10,
+      "4,13": 11,
+      "4,14": 10,
+      "4,15": 10,
+      "4,16": 12,
+      "4,17": 13,
+      "4,30": 14,
+      "4,31": 5,
+      "4,32": 15,
+      "4,37": 1,
+      "4,38": 35,
+      "4,40": 11,
+      "4,41": 11,
+      "4,42": 11,
+      "4,43": 36,
+      "4,45": 19,
+      "4,46": 5,
+      "4,47": 5,
+      "4,48": 5,
+      "4,49": 5,
+      "4,50": 5,
+      "4,51": 5,
+      "4,55": 1,
+      "4,56": 37,
+      "4,57": 3,
+      "4,58": 3,
+      "4,59": 3,
+      "4,60": 3,
+      "4,61": 4,
+      "4,65": 6,
+      "4,66": 14,
+      "4,67": 38,
+      "4,68": 22,
+      "4,69": 22,
+      "4,70": 23,
+      "4,71": 23,
+      "4,72": 38,
+      "4,73": 22,
+      "4,74": 22,
+      "4,77": 38,
+      "4,78": 22,
+      "4,79": 22,
+      "4,82": 39,
+      "4,83": 21,
+      "4,84": 21,
+      "4,85": 23,
+      "4,86": 23,
+      "4,87": 39,
+      "4,88": 23,
+      "4,89": 23,
+      "4,90": 21,
+      "4,91": 21,
+      "4,92": 21,
+      "4,93": 40,
+      "4,94": 21,
+      "4,95": 21,
+      "4,96": 21,
+      "4,97": 21,
+      "4,98": 40,
+      "4,99": 21,
+      "4,100": 21,
+      "4,101": 21,
+      "4,102": 21,
+      "4,103": 41,
+      "4,104": 21,
+      "4,105": 21,
+      "4,106": 21,
+      "4,107": 21,
+      "4,108": 21,
+      "4,109": 21,
+      "4,110": 40,
+      "4,111": 21,
+      "4,112": 21,
+      "4,113": 21,
+      "4,114": 21,
+      "4,115": 40,
+      "4,116": 21,
+      "4,117": 21,
+      "4,118": 21,
+      "4,119": 21,
+      "4,120": 21,
+      "4,121": 21,
+      "4,122": 21,
+      "4,123": 40,
+      "4,124": 21,
+      "4,125": 21,
+      "4,126": 21,
+      "4,127": 21,
+      "4,128": 21,
+      "4,129": 21,
+      "4,130": 21,
+      "4,131": 40,
+      "4,132": 21,
+      "4,133": 21,
+      "4,134": 21,
+      "4,135": 21,
+      "4,136": 21,
+      "4,137": 21,
+      "4,138": 40,
+      "4,139": 21,
+      "4,140": 21,
+      "5,1": 42,
+      "5,2": 43,
+      "5,3": 43,
+      "5,4": 43,
+      "5,5": 44,
+      "5,6": 43,
+      "5,7": 43,
+      "5,8": 43,
+      "5,9": 43,
+      "5,10": 43,
+      "5,11": 43,
+      "5,12": 43,
+      "5,13": 43,
+      "5,14": 43,
+      "5,15": 43,
+      "5,16": 44,
+      "5,17": 43,
+      "5,18": 43,
+      "5,19": 43,
+      "5,20": 43,
+      "5,21": 43,
+      "5,22": 43,
+      "5,23": 43,
+      "5,24": 43,
+      "5,25": 43,
+      "5,26": 43,
+      "5,27": 43,
+      "5,28": 43,
+      "5,29": 43,
+      "5,30": 43,
+      "5,31": 43,
+      "5,32": 17,
+      "5,33": 17,
+      "5,34": 17,
+      "5,35": 17,
+      "5,36": 17,
+      "5,37": 18,
+      "5,38": 43,
+      "5,39": 43,
+      "5,40": 43,
+      "5,41": 43,
+      "5,42": 43,
+      "5,43": 44,
+      "5,44": 43,
+      "5,45": 43,
+      "5,46": 43,
+      "5,47": 43,
+      "5,48": 43,
+      "5,49": 43,
+      "5,50": 43,
+      "5,51": 43,
+      "5,52": 43,
+      "5,53": 43,
+      "5,54": 43,
+      "5,55": 44,
+      "5,56": 3,
+      "5,57": 3,
+      "5,58": 3,
+      "5,59": 3,
+      "5,60": 3,
+      "5,61": 4,
+      "5,62": 43,
+      "5,63": 43,
+      "5,64": 43,
+      "5,65": 45,
+      "5,66": 14
+    },
+    "ColStyles": {
+      "62": 46,
+      "63": 46,
+      "64": 46,
+      "65": 46,
+      "66": 46,
+      "67": 46,
+      "68": 46,
+      "69": 46,
+      "70": 46,
+      "71": 46,
+      "72": 46,
+      "73": 46,
+      "74": 46,
+      "75": 46,
+      "76": 46,
+      "77": 46,
+      "78": 46,
+      "79": 46,
+      "80": 46,
+      "81": 46,
+      "82": 46,
+      "83": 46,
+      "84": 46,
+      "85": 46,
+      "86": 46,
+      "87": 46,
+      "88": 46,
+      "89": 46,
+      "90": 46,
+      "91": 46,
+      "92": 46,
+      "93": 46,
+      "94": 46,
+      "95": 46,
+      "96": 46,
+      "97": 46,
+      "98": 46,
+      "99": 46,
+      "100": 46,
+      "101": 46,
+      "102": 46,
+      "103": 46,
+      "104": 46,
+      "105": 46,
+      "106": 46,
+      "107": 46,
+      "108": 46,
+      "109": 46,
+      "110": 46,
+      "111": 46,
+      "112": 46,
+      "113": 46,
+      "114": 46,
+      "115": 46,
+      "116": 46,
+      "117": 46,
+      "118": 46,
+      "119": 46,
+      "120": 46,
+      "121": 46,
+      "122": 46,
+      "123": 46,
+      "124": 46,
+      "125": 46,
+      "126": 46,
+      "127": 46,
+      "128": 46,
+      "129": 46,
+      "130": 46,
+      "131": 46,
+      "132": 46,
+      "133": 46,
+      "134": 46,
+      "135": 46,
+      "136": 46,
+      "137": 46,
+      "138": 46,
+      "139": 46,
+      "140": 46,
+      "141": 46,
+      "142": 46,
+      "143": 46,
+      "144": 46
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,6,1,11",
+    "1,38,1,6",
+    "4,1,1,5",
+    "4,6,1,11",
+    "4,38,1,6",
+    "4,67,1,3",
+    "1,1,1,5",
+    "1,63,4,2",
+    "1,30,1,2",
+    "4,30,1,2",
+    "1,17,1,13",
+    "4,17,1,13",
+    "0,1,1,5",
+    "0,6,1,11",
+    "0,17,1,15",
+    "0,38,1,6",
+    "2,1,1,5",
+    "2,6,1,11",
+    "2,17,1,15",
+    "2,38,1,6",
+    "3,1,1,5",
+    "3,6,1,11",
+    "3,17,1,15",
+    "3,38,1,6",
+    "5,1,1,5",
+    "5,6,1,11",
+    "5,17,1,15",
+    "5,38,1,6",
+    "1,65,4,1",
+    "1,45,1,7",
+    "4,45,1,7",
+    "3,53,3,2",
+    "0,53,3,2",
+    "0,44,3,1",
+    "3,44,3,1",
+    "0,45,1,7",
+    "2,45,1,7",
+    "0,52,3,1",
+    "3,52,3,1",
+    "3,45,1,7",
+    "5,45,1,7",
+    "1,32,1,6",
+    "4,32,1,6",
+    "0,55,3,1",
+    "0,62,1,4",
+    "1,62,4,1",
+    "3,55,3,1",
+    "5,62,1,4",
+    "1,56,1,6",
+    "0,56,1,6",
+    "3,56,1,6",
+    "5,56,1,6",
+    "2,56,1,6",
+    "0,32,1,6",
+    "2,32,1,6",
+    "5,32,1,6",
+    "3,32,1,6",
+    "2,0,4,1",
+    "4,56,1,6",
+    "4,72,1,3",
+    "4,87,1,3",
+    "4,93,1,3",
+    "4,98,1,3",
+    "4,82,1,3",
+    "4,115,1,3",
+    "4,123,1,3",
+    "4,110,1,3",
+    "4,103,1,3",
+    "4,131,1,3",
+    "4,138,1,3",
+    "4,77,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "商品登録リスト編集"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//ZF1wctH3iYh8rL5nRzpgYbaZlI3vsymbrJtgSEL0zOjcRw7qXI45WbSLLH2FuBUklAFQtEQbJzwBJ1nEQJfPQWZhQz90JTfrx1aJnDN5ZRw5TrWmKU+wf491MyFkUwQMxuLbhGiOtvex4RWGXlxfJEX5NOpC2HceX8GfWHY9GOHMBDAbxEDYyYeFoKzsJdFd7YtkHjmm1HNQaHXCBE1qY3kg1O2y4dLHo2LfDQMQub32HezraFAtZVhaTYnQMs+hy1rYauS09kJ1L8yL2+vA90gfcirrZ9JXvjBzIVXTB7OBKdE8eSS/E60X8SBNXKKSkfETeVobJQ3WzIPHSTQLwVfQt7uIfhOR9kWiokw7eRK3pB14M+8/VV+sJmeQTlCEjRYr6sWtb8DZOfxHY6DJwqMhhJdc27D63RJ69LuDreQzJLy8Mj8DEwq130FJrSYBEraFdObl+x11vSYnYbCjd8lPg0Q9p1oSGaab5gCrPNmGA9E5mMw8jtT1Kv9WFws8G0FhLyMstiisJLhBjtQQgRvydVknfWIq7ko4AzRgM8jHc0/vkF5e0Zuj4ju7An/HhL7g/Hw4UWb0XdwU5aMAFWvI2uS0+WBgVNJY0jhy2vydQ/aIHaor1W2NwAfM3u2x9g3z2NuaNqakTHK6zr3OlPFJBM42WRn7vRiV1w6Pilb6opbRBKHWMxvy2leU4S5lzrhcPxEOi5FtmK3QDkR3/YPH1FTxGlxxUriPdGtzK5PV3N17RdQ84FBSzi4LG0QyNpREYxsYqum8CGCKHCgsy4ff4TEXZWt/LjS41yu3loAL2MRY+ucs8gvgOtce1eYeh3+6M98eXBJuJvVKsU0tG0VtVead89GdxRuqRp3Lg29eFXogYVkVw5MHZZRDKIg3Y86Qn1qrglhfjgRhnXsPgg==|920

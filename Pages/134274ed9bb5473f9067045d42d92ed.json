@@ -1,0 +1,554 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 3,
+    "DefaultSize": 5.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      52,
+      53,
+      54,
+      55
+    ],
+    "Count": 56
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1,
+        "PrimaryColor": "#FF005B47",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "='134274ed9bb5473f9067045d42d92ed'!A1"
+                        }
+                      ]
+                    },
+                    "value": "0"
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "='134274ed9bb5473f9067045d42d92ed'!BA2"
+                        }
+                      ]
+                    },
+                    "value": "1"
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='134274ed9bb5473f9067045d42d92ed'!AM2"
+                        },
+                        "Value": "%Null%"
+                      }
+                    ],
+                    "Comments": "数量クリア"
+                  }
+                ],
+                "ID": "6ee8bc67-8c8b-49fb-9dbc-1813bbb9ba11"
+              }
+            ]
+          }
+        ]
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='134274ed9bb5473f9067045d42d92ed'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "選択フラグ"
+    },
+    "0,1": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='134274ed9bb5473f9067045d42d92ed'!$A$1=1"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "商品名"
+    },
+    "0,17": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='134274ed9bb5473f9067045d42d92ed'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "商品注釈"
+    },
+    "0,37": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='134274ed9bb5473f9067045d42d92ed'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,43": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='134274ed9bb5473f9067045d42d92ed'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "単位"
+    },
+    "0,46": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='134274ed9bb5473f9067045d42d92ed'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "金額"
+    },
+    "1,37": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='134274ed9bb5473f9067045d42d92ed'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "1,38": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 2,
+        "TemplateKey": "無効時下線無"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=AND('134274ed9bb5473f9067045d42d92ed'!A1=1,'134274ed9bb5473f9067045d42d92ed'!BA2=1)"
+            },
+            "StyleInfo": {
+              "Background": "Accent 5 80",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='134274ed9bb5473f9067045d42d92ed'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR('134274ed9bb5473f9067045d42d92ed'!$A$1=0,'134274ed9bb5473f9067045d42d92ed'!$BA$2=0)"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      },
+      "TemplateCellSource": "数量"
+    },
+    "1,42": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='134274ed9bb5473f9067045d42d92ed'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "1,52": {
+      "CellComment": {
+        "Comments": "数量必要フラグ"
+      },
+      "TemplateCellSource": "数量必要フラグ"
+    },
+    "2,37": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='134274ed9bb5473f9067045d42d92ed'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "TextIndent": 4,
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "TextIndent": 4,
+        "BorderTop": 0,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 0,
+        "TextIndent": 4,
+        "HorizontalAlignment": 2,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
+        "BorderTop": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 0,
+        "TextIndent": 4,
+        "BorderBottom": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderLeft": null,
+        "BorderRight": 0
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderRight": 0
+      },
+      {
+        "Foreground": 6,
+        "Underline": false
+      },
+      {
+        "HorizontalAlignment": 2
+      },
+      {
+        "HorizontalAlignment": 4
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Background 1 -15",
+        "Center",
+        " ¥#,##0_);[Red] ¥(#,##0)",
+        "Right",
+        "#FFFFFF00",
+        "#FF000000"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 2,
+      "0,3": 2,
+      "0,4": 2,
+      "0,5": 2,
+      "0,6": 2,
+      "0,7": 2,
+      "0,8": 2,
+      "0,9": 2,
+      "0,10": 2,
+      "0,11": 2,
+      "0,12": 2,
+      "0,13": 2,
+      "0,14": 2,
+      "0,15": 2,
+      "0,16": 3,
+      "0,17": 4,
+      "0,18": 2,
+      "0,19": 2,
+      "0,20": 2,
+      "0,21": 2,
+      "0,22": 2,
+      "0,23": 2,
+      "0,24": 2,
+      "0,25": 2,
+      "0,26": 2,
+      "0,27": 2,
+      "0,28": 2,
+      "0,29": 2,
+      "0,30": 2,
+      "0,31": 2,
+      "0,32": 2,
+      "0,33": 2,
+      "0,34": 2,
+      "0,35": 2,
+      "0,36": 3,
+      "0,37": 2,
+      "0,38": 2,
+      "0,39": 2,
+      "0,40": 2,
+      "0,41": 2,
+      "0,42": 3,
+      "0,43": 5,
+      "0,44": 2,
+      "0,45": 3,
+      "0,46": 6,
+      "0,47": 2,
+      "0,48": 2,
+      "0,49": 2,
+      "0,50": 2,
+      "0,51": 2,
+      "1,16": 7,
+      "1,36": 7,
+      "1,37": 8,
+      "1,38": 9,
+      "1,39": 8,
+      "1,40": 8,
+      "1,41": 8,
+      "1,42": 10,
+      "1,45": 7,
+      "1,52": 11,
+      "1,53": 8,
+      "1,54": 8,
+      "1,55": 8,
+      "2,16": 7,
+      "2,36": 7,
+      "2,37": 12,
+      "2,38": 12,
+      "2,39": 12,
+      "2,40": 12,
+      "2,41": 12,
+      "2,42": 13,
+      "2,45": 7
+    },
+    "ColStyles": {
+      "1": 14,
+      "2": 14,
+      "3": 14,
+      "4": 14,
+      "5": 14,
+      "6": 14,
+      "7": 14,
+      "8": 14,
+      "9": 14,
+      "10": 14,
+      "11": 14,
+      "12": 14,
+      "13": 14,
+      "14": 14,
+      "15": 14,
+      "16": 14,
+      "43": 15,
+      "44": 15,
+      "45": 15,
+      "46": 16,
+      "47": 16,
+      "48": 16,
+      "49": 16,
+      "50": 16,
+      "51": 16
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,38,1,4",
+    "0,37,1,6",
+    "0,0,3,1",
+    "0,1,3,16",
+    "0,17,3,20",
+    "0,43,3,3",
+    "0,46,3,6",
+    "2,37,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "新規申込"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//Pxl0OoLn9R8+cX99mUsOcYZyESUcrbpkF8KdkT/ZLaRrEPP1PL1/8E4jzdH0ctEoBVXBuNnW6kle9TXgs8wao7Ksr60/AXSagnCViX0CByxbodRNKr6UgHcBAVi1QGiI9qY8tt2YUjdbzZh+ub6/RBozQX13riHtM2QNRUehPXi2YNMPzaixS40VWCU0m2Y8Bj7ouoNDihOJ09Dok7TPgbHhfPDfO7DxD/uxJcBFZ8BJIyMhSjxrR0GCd9CBqEDDU8XrCZKd17sksNtFLDmIo2RDCp6l4lVMcLFJPnk5Lw4PVsn3/7wOZvcUG5+I3gvyUJsqqLRCuXOqUijAkb7fbiUF8D9xBsR9Jx8xXOJXvWY5TUwi2akxt7axsylPV8yvdzz0bCqgUSTN4WAz/EEHDaMiwsr470dbfCCUcig7dPVUT6/GMDkYhKfAOqTwd869pEqZAYkvCTK7lA3gUhTXZk5KpJfhMbuBDWPfEmgkHqdlVWeCl8BjgcsaM5Wk4whH7I5HRMj96tf5i2w9WdOH0/Yji/2xXflVCfeMkwRoIoZ7YMJSAnv4jEb7hZ+Sc3Q/Nek500sHux+GTx3sLqepPV4+ktl/AyhjL3gcjEEb1w0jNrm3LUbZscqH3chG8eUOKZrZah8RIjU6d7e/FvD6tJCGYSBT0MZNFgqYZvR6XiWSfU2qSlFrxwTIbWuJtw3c5MOx5B1BSq67aY6vfbeuQ/KNYPMzkE7CvBd2BXO6xzAfkg2OmWrA8mSQtuuZP0mV+5pUBnVZvM29J2W2oH19ba2+KczAeAwGHU3Z9SVNo7jWIZrsVsT5T/yjft6FzSaGML6v20VANLGBVnl06+O0sXnpG6J2YWzRXsdsOdoImE+8JjzyAb3sPDKZI40vSINkbK+Pkw5Qg3Buhp/MXz3bHQ==|920

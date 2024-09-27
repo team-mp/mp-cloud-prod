@@ -1,0 +1,163 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 15
+  },
+  "Cols": {
+    "Count": 10,
+    "DefaultSize": 60.0
+  },
+  "Values": {
+    "6,1": "該当データが存在しません",
+    "7,1": "※指定されたURLでは、対象データを表示できませんでした。",
+    "8,3": "トップページへ遷移する"
+  },
+  "AttachInfos": {
+    "8,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "お待ちください",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "メインフォーム",
+            "PassValues": []
+          }
+        ],
+        "Text": "トップページへ遷移する",
+        "ClickMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2,
+        "WordWrap": true
+      },
+      {
+        "Foreground": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 3,
+        "Foreground": 4,
+        "HorizontalAlignment": 2,
+        "Underline": true
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "Foreground": 5,
+        "HorizontalAlignment": 2,
+        "Underline": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Text 1 50",
+        "Center",
+        "Body",
+        "Accent 1 0",
+        "Blue"
+      ]
+    },
+    "CellStyles": {
+      "6,1": 0,
+      "7,1": 1,
+      "8,3": 2,
+      "8,4": 3,
+      "8,5": 3,
+      "8,6": 3,
+      "11,3": 4,
+      "11,4": 4,
+      "11,5": 4,
+      "11,6": 4,
+      "12,3": 4,
+      "12,4": 4,
+      "12,5": 4,
+      "12,6": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "6,1,1,8",
+    "7,1,1,8",
+    "8,3,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//YQ9nMgU2jhcrmbvMbAeVnDJoxe2LZv5PbKS2zLn+JYvrJlJwsP2nPiLovG5s3wP6GHyMjnH5kMW0HhHgxUx20N5gYDCIVm//QZz1S/zkELcyNAQtKlsYNFPCWuxqjlwHnSkesT5Q+5ugjdoKELXZ8JH5Ibb0QeW2E+dTjkKB4q/XRqxVMWCYkGIyqyk2tRCjoK8/0/rsX7GkvflxjbnZGSRRPcF581OYehT3QR0lx//KKt/6v9st9U4/s1zV8R95wH8mGAr+3NHOLF8zt9gIUyUHqt4fjYFgIh5WB4XN8oQHySS3kwHG5q1Vs2TaQ3exIanzL0ynaY3NI86qVaTl2cd4unf20Jtjr4GYEP4qZamH4B7f28UGVgLy1HkJdva5sO2T4qLLGEf0gk6BvzEzzDljlF+ia2FLoF31MbcTK0DMujBCVfcRmddzibV6rm3nImI2vwf3VrP1qmmZ63Ru7o5D2/vgpQnWTruPmpR1LfXtIlHEDuTc1L3w0mDp366jd/OALMmzJ99sybXqdgS04ZzIiUoDcH9bErN3nBz55alQ8hLQlBKEQu0JawJbQ4OekqF1oxPhLGtPFI4Y4WJkSI/OO+mGIuH2khrZpnu876ZR0hi05gmeY1hxkNmsKw+iYXvDOy41cTGl8S86+CqYxS/673xfqPFrSujzwZYMCCzVLluGqvgFCTJUMi0tIcU8PvolBHQULUPoIGfsaOXr7ItbssoHtYCUzJ5zKg/fcPj59ubSgGaf7XwTIjOUu22X2BISzzw3IgF/j61P689QzIscnGhX/+0GtZv3wZWJbvZt76xsSoMiOOfFjVycVp97+Rqf1hcbxjYoGtJyaKJUvrroZn3md18UGqxgvfqeHE4fBafXHEAImmH1l2Hv0hmO6OsZNHaxGxNLF7XGVRAkTQ==|920

@@ -1,0 +1,250 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 1,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "Count": 21
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='3669bfcabb054491a69b12274cee2b0'!A1"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='3669bfcabb054491a69b12274cee2b0'!請求書発行単位ID"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='3669bfcabb054491a69b12274cee2b0'!S1"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='3669bfcabb054491a69b12274cee2b0'!請求書発行単位"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='3669bfcabb054491a69b12274cee2b0'!B1"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "6ba23b47-05b8-4d44-9f4d-bbc9b50d21f7"
+              }
+            ]
+          }
+        ]
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='3669bfcabb054491a69b12274cee2b0'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "選択フラグ"
+    },
+    "0,1": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='3669bfcabb054491a69b12274cee2b0'!A1"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='3669bfcabb054491a69b12274cee2b0'!A1"
+                        },
+                        "Value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "92db078c-e58e-42b2-a4c8-dc9c85fae890"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='3669bfcabb054491a69b12274cee2b0'!A1"
+                        },
+                        "Value": "1"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "47eeda61-579d-4f4e-b4f2-2d70b1d8900d"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='3669bfcabb054491a69b12274cee2b0'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "請求書発行単位"
+    },
+    "0,18": {
+      "TemplateCellSource": "請求書発行単位ID"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null,
+        "BorderTop": null
+      },
+      {
+        "Foreground": 0,
+        "Underline": false
+      },
+      {
+        "Background": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF000000",
+        "#FFFFFF00",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 0,
+      "0,17": 0
+    },
+    "ColStyles": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "18": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "0,1,1,16"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "請求書発行単位選択"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//tQ83UKZcTjoq4Ob2x4eLY9a+ClzMGijTT5VPrIVXnPRVKJEBoX1cx3iEJrBDjc4tHHr2ZVJaVsOtfMLO4bB2O+KCRYKLAzDg/h0rLEIn5naFcEIjhCLHEzn5EB7ZihkI7O5F6ATnYtSyYvT3h+fKbWtx+TZvVS+ti7Uo8cyfRmoIP8kTLPhH0up/nAdbSq+EZvRiHWSBVecBZTUcHPgDEFzjpMhp7/zNCkV4g05GwiLNo0eS1ypnJ4569E3Drsfj7La/vjPz4xJG7pCuE8/K+a1lG4uCpR/gSBtCZibNb/7g089IQzqhSG5eRXkfkvRgTttX2Rd9DbAIh40Mw9k3ctUcPNO6kIf2PBLV95T3BemYHwfQIQbS9uHeCgm0zC75Oc/f01o9o5nVjkqAAFBJ/DyzT7h8K90sOTRFnzGr5389pnZTUHrfT1yAsgQoiZYyzxCBMxJ0vWWIA5nqsQ/Sl6ZgACNo55rcMenOJdmEiB3REFHCtzjn9hPUtONV83bEcgVzEkw1xAA4iJ7b2xUz1tRbiysKKSqlkJC3Oz4g+Z3ym5pXOJyPO6EctuP4cb6KTsXYmutRpo0pODrS+3WGCOmeMwTRH9QY1/WpHu5Ox84MD69TNwNFgv7xVZbhvwUZKXx6l+xS52oWAjY1clxJjAgN+/aFXRmHsPJ2ZgG1ZFx6Gno8dhv5jPjrodJhXGExKX2slYvM+Zz170tgGrfHRyvD20vXI6/adZnKAccjek3I6zyDe4uXO8HfBXf6FzCpHjBVLx2oYJ78v3/wb68gM6j5YSpK1lmbR9ipbTX/DsTJ/gGI3fDhyv84g5GyQ6tfrofI+ZPxQ/97s1DzKaWJz0ggzBzX+Mro8N7YQDt2XGrJPaf2ZptIYmksU3kRwC8iqDcQGYjdiO1pmXT5HLLAJw==|920

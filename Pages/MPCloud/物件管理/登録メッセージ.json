@@ -1,0 +1,509 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0,
+          "IsHidden": true
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "Count": 13
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
+    ],
+    "Count": 54
+  },
+  "Values": {
+    "1,46": "▼登録後処理区分",
+    "4,46": "▼申込タイプ追加フラグ",
+    "7,46": "▼詳細画面連携フラグ",
+    "8,9": "内容を保持し再登録する",
+    "8,20": "新規物件を登録する",
+    "8,31": "物件検索画面へ進む",
+    "10,22": "閉じる",
+    "10,46": "▼画面終了フラグ"
+  },
+  "AttachInfos": {
+    "8,9": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=登録メッセージ!登録後処理区分"
+                },
+                "Value": "3"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "内容を保持し再登録する",
+        "TemplateKey": "スタイル2"
+      }
+    },
+    "8,20": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=登録メッセージ!登録後処理区分"
+                },
+                "Value": "2"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "新規物件を登録する",
+        "TemplateKey": "スタイル2"
+      }
+    },
+    "8,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=登録メッセージ!登録後処理区分"
+                },
+                "Value": "1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "物件検索画面へ進む",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    },
+    "10,22": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=登録メッセージ!画面終了フラグ"
+                },
+                "Value": "1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "閉じる",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "HorizontalAlignment": 0,
+        "WordWrap": true
+      },
+      {
+        "Background": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "Background": 1,
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "#FFFFC000",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,8": 0,
+      "2,46": 1,
+      "5,46": 1,
+      "8,9": 2,
+      "8,10": 3,
+      "8,11": 3,
+      "8,12": 3,
+      "8,14": 3,
+      "8,15": 3,
+      "8,16": 3,
+      "8,17": 3,
+      "8,18": 3,
+      "8,20": 2,
+      "8,21": 3,
+      "8,22": 3,
+      "8,23": 3,
+      "8,25": 3,
+      "8,26": 3,
+      "8,27": 3,
+      "8,28": 3,
+      "8,29": 3,
+      "8,31": 2,
+      "8,46": 4,
+      "8,47": 3,
+      "8,48": 3,
+      "9,9": 2,
+      "9,10": 2,
+      "9,11": 2,
+      "9,12": 2,
+      "9,13": 2,
+      "9,14": 2,
+      "9,15": 2,
+      "9,16": 2,
+      "9,17": 2,
+      "9,18": 2,
+      "9,20": 2,
+      "9,21": 2,
+      "9,22": 2,
+      "9,23": 2,
+      "9,24": 2,
+      "9,25": 2,
+      "9,26": 2,
+      "9,27": 2,
+      "9,28": 2,
+      "9,29": 2,
+      "9,31": 2,
+      "9,32": 2,
+      "9,33": 2,
+      "9,34": 2,
+      "9,35": 2,
+      "9,36": 2,
+      "9,37": 2,
+      "9,38": 2,
+      "9,39": 2,
+      "9,40": 2,
+      "10,9": 2,
+      "10,10": 2,
+      "10,11": 2,
+      "10,12": 2,
+      "10,13": 2,
+      "10,14": 2,
+      "10,15": 2,
+      "10,16": 2,
+      "10,17": 2,
+      "10,18": 2,
+      "10,20": 2,
+      "10,21": 2,
+      "10,22": 2,
+      "10,28": 2,
+      "10,29": 2,
+      "10,31": 2,
+      "10,32": 2,
+      "10,33": 2,
+      "10,34": 2,
+      "10,35": 2,
+      "10,36": 2,
+      "10,37": 2,
+      "10,38": 2,
+      "10,39": 2,
+      "10,40": 2,
+      "10,46": 3,
+      "10,47": 3,
+      "10,48": 3,
+      "11,22": 5,
+      "11,23": 5,
+      "11,24": 5,
+      "11,25": 5,
+      "11,26": 5,
+      "11,27": 5,
+      "11,46": 4,
+      "11,47": 3,
+      "11,48": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "2,46,1,3",
+    "8,9,1,10",
+    "8,20,1,10",
+    "8,31,1,10",
+    "1,8,6,34",
+    "10,22,1,6",
+    "5,46,1,3",
+    "11,46,1,3",
+    "8,46,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                  "cellLocations": [
+                    {
+                      "SerializeProperty": "=登録メッセージ!申込タイプ追加フラグ"
+                    }
+                  ]
+                },
+                "value": "1"
+              },
+              "Condition2": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                  "cellLocations": [
+                    {
+                      "SerializeProperty": "=登録メッセージ!詳細画面連携フラグ"
+                    }
+                  ]
+                },
+                "value": "1"
+              }
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=登録メッセージ!11:12"
+                    },
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "f56d34d4-cef5-48f9-8362-35c2bd878bc5"
+          },
+          {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=登録メッセージ!9:10"
+                    },
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "8ca5a541-3106-4188-b165-2b97496e0475"
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "画面メッセージ",
+      "Formula": "登録メッセージ!$I$2"
+    },
+    {
+      "Name": "画面終了フラグ",
+      "Formula": "登録メッセージ!$AU$12"
+    },
+    {
+      "Name": "詳細画面連携フラグ",
+      "Formula": "登録メッセージ!$AU$9"
+    },
+    {
+      "Name": "申込タイプ追加フラグ",
+      "Formula": "登録メッセージ!$AU$6"
+    },
+    {
+      "Name": "登録後処理区分",
+      "Formula": "登録メッセージ!$AU$3"
+    }
+  ]
+}//jJC+oQWSquJu1m541EJoJ3uWX86RatxGWbmWyvdLbjcumO+I0JMdNs2dOOfO+93WxzJ7eUM7E76RqIRDwwOoA+9qQPq3jZCM4NVKqB/YdQrKvxqtHePzzxfBMI8zdJfDdO/xEDMIpaNHEWYUg9uC6SaLo7jeAFs/cNU5zIh/9rlc9eheVBRxJwTY9AX7JdsEQD080pJrWtneRutZs9UazwLCSFKJoKiijBUOPUtKnwk32h1iaFKtW9Xq8BgVUJ3++gHuzRHAg9hVBGOw+L0qvQnsH0CitJel3K0v58WwWA8YvNsgUMdK0xfp+zCkdod0LKdn289/s3tBCCGud7MRbbiIjbu0ewl6mMW18fDIMODVqzVdAxph1tAO9QabPWMn1a50As402HBV6AvlrHSpXM/A1cVCDicBX+PC4ImMrGQ9qhFgTxQBNAi1Gqghbd5Dr47UjQPTlt+DY4B2Of5+8kQSKXM56i/mDzD7cAh3M7t95k/ek7zUDYzDlnDwajnqRApv4YwwDn5VQJUYlvF21mYHlpSpsXbpKhsKCfdPhe9pH8APXaQ2XSXrlVBnazGa92akDcLDT/6wpdS4V5uBW+P7dOzcUh5StEmEsjbU++duHYsu4lkch1ibeg3qfMAIYDZavEf4+eD/R6gRBUt9nj+rxSLR1ddED7UC8a019135371boRw1YlC3L0F5Y9PvAiqmps0/xrD5aPLpG0rn8m7a6+2JVCebm6Pq3g3bJSf+rTKAZzbkurtt4OtoH080KoJSRJ8TzxyttKTPtI/ZeRNf/o9IdHCOXMVSMXsLzzRe+4++QPjllnILvx8fTYZaVykkS6eKIoE+HmEwg0KA6LsZVhgw0C55Y8+rk81s3ZI0dbAXPfbNMBbsKI4g06IN5LxXyW33e39zxOf06EIEag==|920

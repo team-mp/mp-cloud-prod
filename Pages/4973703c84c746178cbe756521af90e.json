@@ -1,0 +1,148 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 1,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "Count": 40
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "TemplateKey": "余白4",
+        "ImagePath": "Mobile/387_user_2.svg",
+        "BuiltIn": true,
+        "Color": "#FF00B050"
+      }
+    },
+    "0,2": {
+      "TemplateCellSource": "送信先名"
+    },
+    "0,30": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='4973703c84c746178cbe756521af90e'!TOユーザー削除フラグ"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='4973703c84c746178cbe756521af90e'!AH1"
+                }
+              }
+            ]
+          }
+        ],
+        "ToolTip": "選択ユーザーを削除します",
+        "TemplateKey": "余白4",
+        "ImagePath": "Application/034_close_delete_2.svg",
+        "BuiltIn": true,
+        "Color": "Background 1 -35"
+      }
+    },
+    "0,33": {
+      "TemplateCellSource": "ユーザーID"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "Background": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0
+    },
+    "ColStyles": {
+      "33": 1,
+      "34": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,0,1,2",
+    "0,2,1,28",
+    "0,30,1,2",
+    "0,33,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "メール送信画面_詳細"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//towqRg1v0/V9qJqSQUt2lpFLsATdnQgmfvVHyCC7CVi/N1Ym9MNkYDdQBtBKSqyUTHfkvcO9K2HygCcHA0IN8PEhcfQ5lJIUvs9dY7GmsaVkE8pnD11zeajCcDdjjalKo/E9rYKwJRdl8CjON4jkm6PgI6qbLUtR33/rv12OMqDYYp8thLLoG0sfcm+KkIGeuWIO85GmylY2YhuXjRMTvE37IpcPPxLEg4OJPs1T53lYNsKpcU+J8+Lio4quATlEll7Ty09jzZ9m3txJrZGQmFVDmOTRLFgIhGHQW6VRqsjx6J1b2hwbmMjpSyCR7hXc6dujMOBWktoSEeVrGMLdoZJaaV7iYI1KX0SqWO0zfRfwQvs+S85e5XXrELXtNULuk4Zn7DkURQYplkEKmr/wlJ6/0Z27xRdP4t92joimffk1GvxfqxlaToG4ZRCU2KjaiKcOV2aA4+Q6NkaXxfydka8ngeqYB06ETQbRdMumDzvx61U2CE781FAIDqb7B2sZ59SUTUre1M55CQ2mtXg+chGTRsxCPEEy0GJ9TlU9cf0x8Ht3kFKqZyYYSnBqgOMt3Lb65HaJr8x1CIGbdUAQH6YdNb7Kn+6Bj3raem6IDQFQhSb/cEZhRzeYIt2ZCvyy9dGNASuDBKnttIr43dRWZM4/lOExJDYShk38xLuzu9+fRbHgqxhlHoBBEANMF9xjj/B9zd65zsF/sYBVEWm3xAZSUmWs1C/MeXb9GBE+UW+ItDaPhyLOLrYKT01uzuBTMB5pLLvYG1WDoJ3hMM4gDOfVS7DvLl2bbGIQtyXPpM0LUHdGzJorRQYdbGHYE19DPMYhMp/4oFdhU1vdNl2boomcQEMoHvyBbCpjzSWHMTau/ZNaLTL1LHQX6/R0c86QCWKPBT+EYmQqQqmV4tBAVQ==|920

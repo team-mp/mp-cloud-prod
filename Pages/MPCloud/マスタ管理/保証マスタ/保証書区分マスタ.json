@@ -1,0 +1,606 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      }
+    },
+    "Count": 21,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 320.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 160.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "Count": 16
+  },
+  "Values": {
+    "1,7": "▼編集リセットフラグ",
+    "2,7": "0",
+    "4,7": "▼編集確定フラグ",
+    "5,7": "0",
+    "7,7": "▼抽出カウント"
+  },
+  "Formulas": {
+    "20,0": "\"表示データ件数：\"&TEXT(抽出カウント,\"#,##0\")&\"件\"",
+    "8,7": "COUNTIF($B$2,\"<>\")"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ListViewInfo": {
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_warranty_type",
+        "ColumnCount": 6,
+        "RowCount": 20,
+        "IsRowHeaderVisible": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "HideSelectionWhenLostFocus": true,
+        "UseSimpleBar": true,
+        "Name": "保証書区分ビュー",
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_warranty_type",
+                "ColumnName": "sort_no"
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_warranty_type",
+                "ColumnName": "warranty_type_id"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "ListViewStyleName": "マスタ用"
+      }
+    },
+    "1,1": {
+      "BindingInfo": {
+        "TableName": "m_warranty_type",
+        "ColumnName": "warranty_type_name"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=保証書区分マスタ!F2=0"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "DropdownButtonModeInListview": 2,
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "m_warranty_version",
+        "ValueColumnBindingInfo": {
+          "TableName": "m_warranty_version",
+          "ColumnName": "warranty_version_id"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "m_warranty_version",
+          "ColumnName": "warranty_version_name"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "m_warranty_type",
+        "ColumnName": "default_warranty_version_id"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=保証書区分マスタ!F2=0"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "1,3": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon"
+      },
+      "BindingInfo": {
+        "TableName": "m_warranty_type",
+        "ColumnName": "warranty_cost_price"
+      }
+    },
+    "1,4": {
+      "BindingInfo": {
+        "TableName": "m_warranty_type",
+        "ColumnName": "sort_no"
+      }
+    },
+    "1,5": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_warranty_type",
+        "ColumnName": "active_flg"
+      }
+    },
+    "2,7": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 6,
+            "ListviewName": "保証書区分ビュー",
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              },
+              "RetrunParamNames": {}
+            }
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=保証書区分マスタ!編集リセットフラグ"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "1163bbdf-62b1-43af-9906-e63bfc780ec3",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+                  }
+                },
+                "Value": "編集をリセットしました"
+              }
+            ],
+            "ReturnPropertiesTo": []
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    },
+    "5,7": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "保証書区分ビュー"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=保証書区分マスタ!編集確定フラグ"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "1163bbdf-62b1-43af-9906-e63bfc780ec3",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+                  }
+                },
+                "Value": "編集内容を確定しました"
+              }
+            ],
+            "ReturnPropertiesTo": []
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0
+      },
+      {
+        "Background": 0,
+        "Foreground": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 5,
+        "TextIndent": 4,
+        "BorderBottom": 0
+      },
+      {
+        "TextIndent": 4,
+        "HorizontalAlignment": 6,
+        "BorderBottom": 0
+      },
+      {
+        "Formatter": 7,
+        "TextIndent": 4,
+        "HorizontalAlignment": 8,
+        "BorderBottom": 0
+      },
+      {
+        "HorizontalAlignment": 8,
+        "BorderBottom": 0
+      },
+      {
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 5
+      },
+      {
+        "Background": 9,
+        "FontFamily": 5,
+        "FontSize": 12.0,
+        "Formatter": 10,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontFamily": 5,
+        "Formatter": 11
+      },
+      {
+        "Background": 12,
+        "FontFamily": 5
+      },
+      {
+        "FontFamily": 5,
+        "FontSize": 12.0,
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 5,
+        "BorderTop": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -5",
+        "#FF000000",
+        "General",
+        "Center",
+        "Background 1 0",
+        "Body",
+        "Left",
+        " ¥#,##0_);[Red] ¥(#,##0)",
+        "Right",
+        "Accent 1 80",
+        "@",
+        "[AUTO]General",
+        "#FFFFFF00",
+        "Background 1 -15"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        },
+        {
+          "Color": 13
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "1,0": 1,
+      "1,1": 2,
+      "1,2": 3,
+      "1,3": 4,
+      "1,4": 5,
+      "1,5": 6,
+      "1,7": 7,
+      "1,8": 7,
+      "1,9": 7,
+      "2,7": 8,
+      "2,8": 7,
+      "2,9": 7,
+      "3,7": 7,
+      "3,8": 7,
+      "3,9": 7,
+      "4,7": 9,
+      "4,8": 7,
+      "4,9": 7,
+      "5,7": 8,
+      "5,8": 7,
+      "5,9": 7,
+      "7,7": 9,
+      "7,8": 7,
+      "7,9": 7,
+      "8,7": 10,
+      "8,8": 7,
+      "8,9": 7,
+      "20,0": 11,
+      "20,1": 12,
+      "20,2": 12,
+      "20,3": 11,
+      "20,4": 12,
+      "20,5": 12,
+      "20,6": 12,
+      "20,7": 12,
+      "20,8": 12,
+      "20,9": 12,
+      "20,10": 12,
+      "20,11": 12,
+      "20,12": 12,
+      "20,13": 12
+    },
+    "SheetStyle": {
+      "FontFamily": 5
+    }
+  },
+  "Spans": [
+    "2,7,1,3",
+    "5,7,1,3",
+    "2,0,18,6",
+    "20,0,1,3",
+    "8,7,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_warranty_type",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "編集リセットフラグ",
+      "Formula": "保証書区分マスタ!$H$3"
+    },
+    {
+      "Name": "編集確定フラグ",
+      "Formula": "保証書区分マスタ!$H$6"
+    },
+    {
+      "Name": "抽出カウント",
+      "Formula": "保証書区分マスタ!$H$9"
+    }
+  ]
+}//CKppH/2FPUDbfMg85EZiU0TQwYDb48ynNm5xYR7PX1YAHTud3hpNFKr/ipYuxQPxJq0zbQ6dcp8Xw4ZxT5nLkynxxQaqFN4mk3Ks1KFH/+UIvA/5V2OgvPzwzuxABworNwxsO1HJBa2YgZAcxge0Lyj4znKxxmpptKLEgFed85Whrphuc6ORkNeNzRUPBMgQeGRSzgqXnPrZm/9bWqgwPz4MD17wZslGfSE5R4DtpfiPX68tD6SruO5hc7QGC3efvnpqLN7yYEVmBmvA7ZhEius/rc1b030op//gqpdNMzNQyElt6KlN65Fr7gGoRmAPsk/HuO0eSxa28F3rr+FeVB7sU5UWWfbq093NBYQMe0RYgVEHwW+QTF+4c0hvBQqVkZNO9G8iAbJ20OHB8DXg8TU0vIcRVRYJWs3NquyfLHVJwFm8rcuHLManK+uNiArfPCwAl0vJFwIeUKRLjeVgh5g1c5X1uhvjG1cUH0YVEienu+I6/rijYdc/16+pRedx3Ix0KCJFIU1MVUn2YxpSnjssnHCOOIOWl2Lixz8HstHlQ9KQVBP8nRJlVmsFAQGdeMgeR9jrIMRQhmRtAeN6Z3mEtPBf+EiaDeXcpGFkAKOShhkrOgNlPRujeGqJZqvQALmZdMwu7sCXObYYnkkFeOAgBoq946TUe5e3x04RQGcTYqUV7TAmVLMcRyDmHaE50wBcwHTnv3WvzjxZwwPMt5uuDfbTDeFIhtZwsd2zXsjTKlQa/9VPKyDQqhPNvbL096il2rA2PA+3ND3z5V5bHwHDGlH94xonznPU0hc7XUhTFIYhZKsQiCi0zocRucckbfw/7ZjN+EtGjMqWWiH8+BjLm+pJlicRepL2BniZIi9kaU7FDBiXXOVWqP6ZiWKT/dwANJLDVc0MFVl3lAiMaw==|920

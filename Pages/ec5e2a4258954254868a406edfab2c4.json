@@ -1,0 +1,186 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      1
+    ],
+    "Count": 2,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ],
+    "Count": 38
+  },
+  "Values": {
+    "0,29": "▼住宅事業者ID"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "TemplateKey": "余白2",
+        "ImagePath": "Mobile/381_home_3.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      }
+    },
+    "0,1": {
+      "TemplateCellSource": "住宅事業者名"
+    },
+    "0,26": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ec5e2a4258954254868a406edfab2c4!顧客ID削除"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ec5e2a4258954254868a406edfab2c4!AD2"
+                }
+              }
+            ],
+            "Comments": "顧客ID削除コマンドを実行"
+          }
+        ],
+        "TemplateKey": "余白2グレー",
+        "ImagePath": "Application/034_close_delete_2.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ec5e2a4258954254868a406edfab2c4!顧客メールID<>\"\""
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "1,29": {
+      "TemplateCellSource": "住宅事業者ID"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": 0
+      },
+      {
+        "TextIndent": 4,
+        "BorderBottom": 0
+      },
+      {
+        "Background": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Background 1 -25",
+        "#FFFFFF00",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Style": 4,
+          "Color": 0
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 0,
+      "0,17": 0,
+      "0,18": 0,
+      "0,19": 0,
+      "0,20": 0,
+      "0,21": 0,
+      "0,22": 0,
+      "0,23": 0,
+      "0,24": 0,
+      "0,25": 0,
+      "0,26": 0,
+      "0,27": 0,
+      "1,29": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "0,1,1,25",
+    "1,29,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "メール通知設定登録編集"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//9zraIajXBuTjkm/TLyAPusvATnCe0fow7VmyQF39gBrva5Fcfquwwp2fI3VM5rUQRdcYzuFvjb7sO5JGrGYHshuZImOoNKnbh32cwirRYl0zAsjhO42yB/YhSRjAC5OYYpQmo0LN1bXjANCuHvB06Gl6yvHXsy59ZO1ygppJhSm5Vm0xXgvTAz7dEgIyc2kMKgIZ2Lq+tv3mVFNkhdC9VsRcr6GfHkzOyTgGJd4IsW4pAzM/Aqevfc3NCa8kaLK756OuspACkmHBQ3P9oqzX5HUtPeVjD+vn3NxOd2nl2FTpZyKuTpADuftlrxTterVz1Yu4s/4ns1l7/4NWJq10Dy4yr8XWtGa8PCPXy/bPT7/XpHpQ6z7XXTUfHYdp3a4p376aDcSGxlMpiR8YjTbmDq+pfKvCWh5YRWIRvmoaRnLRWddgK77IX90ZGcx8MlqoMCt22J/LsjHCb7UTNqIC+xUAAHsypti/J1TteH+TfdNSe13mU1uH0Rz9ju6LlII3tavyzGftoio/pJad11OtLIxtjaL7l9yp29mc2UndTh7p2hau5+zV1D9aDW9FBHiuBPzRfCDWxwsP+0rtVOVbOvkUwO+shAf4B3sYcccw3EBOx5EjX0VeuLSfaXNZtMZ7ZqxQ9he/tlR2QLyTmCpqro/cwV18divnCmOIn9eHXgftRM0RZKM5bemo711yTjvnY/hxIP/cdCiZj0h7sJ210+ur+yZ0OCqrpFZIGHXYnjxNTxaX8L9K0g5eNODWz7WZgpAREXxn0uM5HWaSjZnBXrD/Nwig3Sp40I/d5Ud7FL/v6hgnYzzDJ/nZb2ADRWtcZPx7OXsGZMREKmDNgzsFRUdPRau9S+M4k+neQJ4F6JLvGs0mZDeixntnSw1JoUIYAAf4UtPngBMQm33+NzIhww==|920

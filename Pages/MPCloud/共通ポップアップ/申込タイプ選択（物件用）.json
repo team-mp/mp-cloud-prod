@@ -1,0 +1,411 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 15,
+    "DefaultSize": 31.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "Count": 40
+  },
+  "Values": {
+    "0,2": "以下より申込タイプを選択してください",
+    "5,23": "▼有効フラグ",
+    "5,30": "▼グループID",
+    "6,23": 1,
+    "6,30": 0,
+    "7,23": "▼申込タイプID",
+    "7,30": "▼住宅事業者ID",
+    "8,30": 0,
+    "9,23": "▼申込タイプ名",
+    "12,23": "▼選択カウント",
+    "13,14": "選択する"
+  },
+  "Formulas": {
+    "2,23": "IF(申込タイプID=Y3,1,0)",
+    "13,23": "COUNTIF(X3,1)"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "顧客申込タイプビュー",
+        "TemplatePageName": "368690aaf37d4318b0f4ce90470b850",
+        "Command": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [],
+          "ParamProperties": {
+            "選択フラグ": "選択フラグ",
+            "調査方法ID": "調査方法ID",
+            "調査方法名": "調査方法名"
+          }
+        },
+        "TemplateKey": "スタイル1"
+      }
+    },
+    "1,23": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "v_customer_order_type",
+        "RowIndex": 1,
+        "ColumnIndex": 23,
+        "ColumnCount": 3,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "顧客申込タイプビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "v_customer_order_type",
+                "ColumnName": "顧客ID"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=申込タイプ選択（物件用）!住宅事業者ID"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "v_customer_order_type",
+                "ColumnName": "グループID"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=申込タイプ選択（物件用）!グループID"
+              }
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "v_customer_order_type",
+              "ColumnName": "有効フラグ"
+            },
+            "Value": "1"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "2,23": {
+      "NameUsedInJavaScript": "選択フラグ"
+    },
+    "2,24": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "申込タイプID"
+      },
+      "NameUsedInJavaScript": "申込タイプID"
+    },
+    "2,25": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "申込タイプID",
+        "RelationBinding": {
+          "RelatedTable": "m_order_type",
+          "RelatedColumn": "order_type_id",
+          "DisplayColumn": "ordertype_name"
+        }
+      },
+      "NameUsedInJavaScript": "申込タイプ名"
+    },
+    "13,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=申込タイプ選択（物件用）!$X$14=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Foreground": 1,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4
+      },
+      {
+        "Background": 5
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0,
+        "Formatter": 4
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Text 1 50",
+        "Background 1 -15",
+        "Center",
+        "[AUTO]General",
+        "Accent 6 80",
+        "#FFFFC000",
+        "#FFFFFF00"
+      ],
+      "Borders": [
+        {
+          "Color": 2
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "1,2": 2,
+      "1,24": 3,
+      "1,25": 3,
+      "2,24": 3,
+      "2,25": 3,
+      "5,30": 4,
+      "5,31": 3,
+      "5,32": 3,
+      "6,23": 5,
+      "6,30": 6,
+      "6,31": 3,
+      "6,32": 3,
+      "7,23": 4,
+      "7,24": 3,
+      "7,25": 3,
+      "7,30": 4,
+      "7,31": 3,
+      "7,32": 3,
+      "8,23": 7,
+      "8,30": 6,
+      "8,31": 3,
+      "8,32": 3,
+      "9,23": 4,
+      "9,24": 3,
+      "9,25": 3,
+      "10,23": 7,
+      "12,23": 3,
+      "12,24": 3,
+      "12,25": 3,
+      "13,14": 8,
+      "13,15": 8,
+      "13,16": 8,
+      "13,17": 8,
+      "13,18": 8,
+      "13,23": 9,
+      "13,24": 8,
+      "13,25": 8
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "8,23,1,3",
+    "1,2,11,17",
+    "13,14,1,5",
+    "13,23,1,3",
+    "10,23,1,3",
+    "6,23,1,3",
+    "8,30,1,3",
+    "6,30,1,3",
+    "3,23,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "申込タイプ選択",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "v_customer_order_type"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "申込タイプID",
+      "Formula": "申込タイプ選択（物件用）!$X$9"
+    },
+    {
+      "Name": "申込タイプ名",
+      "Formula": "申込タイプ選択（物件用）!$X$11"
+    },
+    {
+      "Name": "グループID",
+      "Formula": "申込タイプ選択（物件用）!$AE$7"
+    },
+    {
+      "Name": "住宅事業者ID",
+      "Formula": "申込タイプ選択（物件用）!$AE$9"
+    }
+  ]
+}//j/DiMl225YQlmqKNtQxu48m2AxIMIIbTektzYhYbqF/nF7TZh3au5rQF15KV2/jXuqvcNDgebw6sYjBaFuItSrDYXwA9JHlUg7uOHw+CEEP29BqXQqh02RBBOsuPTzyZmLx0Qgl1uGamneHIGTTfhjs4cI4Miq8qAssyzcyRQYnXRS6qarQzA7F7J554ugespzCTKbGybFaatRTvKjkBIyhnQrfx9gUi8X1Q6CZBkk1WzmRsISQhj935InZqoA+7BgrMU2kVxGPes5LI5hr8kV9x9uoiHz6y0P2r7e+2DHyQo6Rapz3bzggU89m7jg/q9r8hVBcMiqXXEyLe7WvyKZXv9TNUqSU+f8GTx54LBXjX3DIjEMuMpeyQq8daUPJDP4swPE5h+f+okaMxHCXb1a8dOgxpRxe4mC8HvfepD4wFImtN/r6wtVfgQ0f31FX1HPEl5EKnyiW/NEsO1/NVhHCHlN7eHOF8oHWmcm5t051O/oZIi2qcZWCUwv5VVPaDaxvTDvgGWGJRwHaXTGZdFeTKXOqocxixAsXUVdzY0UIlXxH0zpro0p2YV+ZygtAC2FWUCn/DoFlASOtXVhFQrRNzNjKSjNNKWMB2lcjqGf95JUECerHpQDD+XJ2MFPdYxWKcnD56ZrS7ht92E6aAYPWQ6snBfWsJQN6H8iH4yKqmlT4OMWVSQDgxMkWFukx0t/l9WZo8HDbklM39WGAUGcVrSlsLIqroKoZgeikYvVY+F29SBN+KjEWvMzb4741aU5smGIKHzImpR9SHpKQMlL9V65fG7ruwOiETF8jnJq1z3sH0j6PXpyXW9Z+powXRIEDlXai5eh3tqE+nUgO+3jNWLlwBSEa+EvpJroxysTaJr+5CtErFoPcyUmduCeFhZqLZrfN7eaqnqP/+d2oDnw==|920

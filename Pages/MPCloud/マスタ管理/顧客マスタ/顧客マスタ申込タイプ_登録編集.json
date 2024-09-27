@@ -1,0 +1,1520 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 33,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "Count": 51
+  },
+  "Values": {
+    "0,41": "▼顧客ID",
+    "1,3": "対象顧客名",
+    "3,3": "対象グループ名",
+    "3,41": "▼グループID",
+    "5,3": "対象申込タイプ名",
+    "6,41": "▼申込タイプID",
+    "7,3": "初期セットフラグ",
+    "7,11": 0,
+    "9,3": "非公開フラグ",
+    "9,11": 0,
+    "11,3": "有効フラグ",
+    "11,11": 0,
+    "11,41": "▼初期セットフラグ",
+    "13,3": "特記事項",
+    "13,11": "申込時の特記事項を変更する場合は、以下に入力してください",
+    "14,41": "▼有効フラグ",
+    "17,41": "▼特記事項",
+    "20,41": "▼m_group_order_type",
+    "22,3": "（参考）",
+    "31,34": "更新する"
+  },
+  "Formulas": {
+    "22,7": "\"「\"&L4&\"」に設定された標準の特記事項は以下の通りです\""
+  },
+  "AttachInfos": {
+    "1,11": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "顧客ID",
+        "RelationBinding": {
+          "RelatedTable": "m_customer",
+          "RelatedColumn": "customer_id",
+          "DisplayColumn": "内部顧客名"
+        }
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "1,41": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "顧客ID"
+      }
+    },
+    "3,11": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "グループID",
+        "RelationBinding": {
+          "RelatedTable": "m_group",
+          "RelatedColumn": "group_id",
+          "DisplayColumn": "group_name"
+        }
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "4,41": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "グループID"
+      }
+    },
+    "5,11": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "申込タイプID",
+        "RelationBinding": {
+          "RelatedTable": "m_order_type",
+          "RelatedColumn": "order_type_id",
+          "DisplayColumn": "ordertype_name"
+        }
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "7,11": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "NoneItemText": "＜なし＞",
+        "Style": 1,
+        "PrimaryColor": "#FF005B47",
+        "CellDefaultValue": 0,
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "しない"
+          },
+          {
+            "Value": "1",
+            "DisplayValue": "する"
+          }
+        ]
+      },
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "初期セットフラグ"
+      }
+    },
+    "7,41": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "申込タイプID"
+      }
+    },
+    "9,11": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "NoneItemText": "＜なし＞",
+        "Style": 1,
+        "PrimaryColor": "#FF005B47",
+        "CellDefaultValue": 0,
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "公開する"
+          },
+          {
+            "Value": "1",
+            "DisplayValue": "非公開にする"
+          }
+        ]
+      },
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "非公開フラグ"
+      }
+    },
+    "9,21": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ToolTip": "非公開にした場合、顧客からの新規申込時の申込タイプ選択から除外されます",
+        "TemplateKey": "余白2",
+        "ImagePath": "Mobile/452_help_1.svg",
+        "BuiltIn": true,
+        "Color": "#FF005B47",
+        "UseCellForeColor": true
+      }
+    },
+    "11,11": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "NoneItemText": "＜なし＞",
+        "Style": 1,
+        "PrimaryColor": "#FF005B47",
+        "CellDefaultValue": 0,
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "無効"
+          },
+          {
+            "Value": "1",
+            "DisplayValue": "有効"
+          }
+        ]
+      },
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "有効フラグ"
+      }
+    },
+    "11,18": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ToolTip": "無効にした場合、新規物件登録時の申込タイプ選択から除外されます",
+        "TemplateKey": "余白2",
+        "ImagePath": "Mobile/452_help_1.svg",
+        "BuiltIn": true,
+        "Color": "#FF005B47",
+        "UseCellForeColor": true
+      }
+    },
+    "12,41": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "初期セットフラグ"
+      }
+    },
+    "15,3": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "DataValidationInfo": {}
+    },
+    "15,41": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "有効フラグ"
+      }
+    },
+    "18,41": {
+      "BindingInfo": {
+        "TableName": "v_customer_order_type",
+        "ColumnName": "特記事項"
+      }
+    },
+    "21,41": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_group_order_type",
+        "RowIndex": 21,
+        "ColumnIndex": 41,
+        "ColumnCount": 3,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "グループ申込タイプビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_group_order_type",
+              "ColumnName": "group_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP5"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 1,
+            "ColumnBindingInfo": {
+              "TableName": "m_group_order_type",
+              "ColumnName": "order_type_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP8"
+            }
+          }
+        },
+        "TopCondition": null,
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "22,41": {
+      "BindingInfo": {
+        "TableName": "m_group_order_type",
+        "ColumnName": "order_type_id"
+      }
+    },
+    "25,3": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "通常スタイル",
+        "ReadOnly": true
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "31,34": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!L8"
+                        }
+                      ]
+                    },
+                    "value": "0"
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP13"
+                        }
+                      ]
+                    },
+                    "value": "1"
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "最初に初期セットしたものを「しない」に変更することはできません\r\n初期セットする申込タイプに対して変更をお願いします"
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "e289af88-395f-491e-818d-62527244c8ad"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!L8"
+                          }
+                        ]
+                      },
+                      "value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP13"
+                      }
+                    },
+                    "Condition2": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!L12"
+                          }
+                        ]
+                      },
+                      "value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP16"
+                      }
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!D16"
+                        }
+                      ]
+                    },
+                    "value": "%Null%"
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "変更されていないため更新できません"
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "4406504c-2cb1-4b4c-90d3-bc25a999bf0a"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "769b53af-30a0-4c8b-93cb-2097cb0976e4",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AI32"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "6c89412f-f509-4fef-b824-e7c2cb0fbece",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+                  }
+                }
+              }
+            ],
+            "ReturnPropertiesTo": []
+          },
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "お待ちください",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "登録済み件数",
+            "TableValue": {
+              "TableName": "m_customer_order_type",
+              "TableValueType": 3,
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "m_customer_order_type",
+                      "ColumnName": "customer_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP2"
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "m_customer_order_type",
+                      "ColumnName": "group_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP5"
+                    }
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "m_customer_order_type",
+                    "ColumnName": "order_type_id"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP8"
+                  }
+                }
+              }
+            },
+            "ID": "d4b8d1e422bd47cc80af4bdca1b431ac"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "特記事項",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=IF(顧客マスタ申込タイプ_登録編集!D16<>顧客マスタ申込タイプ_登録編集!D26,顧客マスタ申込タイプ_登録編集!D16,\"\")"
+            },
+            "ID": "80ca06896da6439896390995c5397f15"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!登録済み件数"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "m_customer_order_type",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "CheckDataValidation": false,
+                    "ReloadAfterSucceed": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "customer_id",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP2"
+                        }
+                      },
+                      {
+                        "ColumnName": "group_id",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP5"
+                        }
+                      },
+                      {
+                        "ColumnName": "order_type_id",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP8"
+                        }
+                      },
+                      {
+                        "ColumnName": "default_set_flg",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!L8"
+                        }
+                      },
+                      {
+                        "ColumnName": "private_flg",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!L10"
+                        }
+                      },
+                      {
+                        "ColumnName": "active_flg",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!L12"
+                        }
+                      },
+                      {
+                        "ColumnName": "special_note",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!特記事項"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "b0b97c8b-597e-4067-a199-a02e4fd5cda7"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "m_customer_order_type",
+                    "ShowConfirm": false,
+                    "CheckDataValidation": false,
+                    "ReloadAfterSucceed": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "m_customer_order_type",
+                            "ColumnName": "customer_id"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP2"
+                          }
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "m_customer_order_type",
+                            "ColumnName": "group_id"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP5"
+                          }
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "m_customer_order_type",
+                          "ColumnName": "order_type_id"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP8"
+                        }
+                      }
+                    },
+                    "UpdateValues": [
+                      {
+                        "ColumnName": "default_set_flg",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!L8"
+                        }
+                      },
+                      {
+                        "ColumnName": "special_note",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!特記事項"
+                        }
+                      },
+                      {
+                        "ColumnName": "active_flg",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!L12"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "2d595a69-8d96-4b51-8035-8344ce15d6ef"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!L8"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                    "LoopInfo": {
+                      "$type": "Forguncy.Model.ListviewKindLoopInfo, ServerDesignerCommon",
+                      "ListviewName": "グループ申込タイプビュー"
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "登録済み件数",
+                        "TableValue": {
+                          "TableName": "m_customer_order_type",
+                          "TableValueType": 3,
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                            "Condition1": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "Condition1": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "m_customer_order_type",
+                                  "ColumnName": "customer_id"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP2"
+                                }
+                              },
+                              "Condition2": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "m_customer_order_type",
+                                  "ColumnName": "group_id"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP5"
+                                }
+                              }
+                            },
+                            "Condition2": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "m_customer_order_type",
+                                "ColumnName": "order_type_id"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP23"
+                              }
+                            }
+                          }
+                        },
+                        "ID": "789bd67a01f748769678ec1948d7e1b6"
+                      },
+                      {
+                        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                        "ConditionAndCommandPairList": [
+                          {
+                            "Condition": {
+                              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                              "param": {
+                                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                "cellLocations": [
+                                  {
+                                    "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!登録済み件数"
+                                  }
+                                ]
+                              },
+                              "value": "0"
+                            },
+                            "CommandList": [
+                              {
+                                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                "TableName": "m_customer_order_type",
+                                "UpdateType": "add",
+                                "ShowConfirm": false,
+                                "CheckDataValidation": false,
+                                "ReloadAfterSucceed": false,
+                                "ConfirmText": "本当に追加してもよろしいですか？",
+                                "UpdateValues": [
+                                  {
+                                    "ColumnName": "customer_id",
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP2"
+                                    }
+                                  },
+                                  {
+                                    "ColumnName": "group_id",
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP5"
+                                    }
+                                  },
+                                  {
+                                    "ColumnName": "order_type_id",
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP23"
+                                    }
+                                  },
+                                  {
+                                    "ColumnName": "default_set_flg",
+                                    "Value": "0"
+                                  },
+                                  {
+                                    "ColumnName": "special_note",
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!特記事項"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "ID": "60dfb98c-c66f-4d5d-83e2-b5eb6777f3ae"
+                          },
+                          {
+                            "CommandList": [
+                              {
+                                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                                "TableName": "m_customer_order_type",
+                                "ShowConfirm": false,
+                                "CheckDataValidation": false,
+                                "ReloadAfterSucceed": false,
+                                "ConfirmText": "本当に更新してもよろしいですか？",
+                                "RowsToUpdate": 1,
+                                "RowsToUpdateCondition": {
+                                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                  "Condition1": {
+                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                    "Condition1": {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "m_customer_order_type",
+                                        "ColumnName": "customer_id"
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP2"
+                                      }
+                                    },
+                                    "Condition2": {
+                                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                      "ColumnBindingInfo": {
+                                        "TableName": "m_customer_order_type",
+                                        "ColumnName": "group_id"
+                                      },
+                                      "Value": {
+                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                        "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP5"
+                                      }
+                                    }
+                                  },
+                                  "Condition2": {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "ColumnBindingInfo": {
+                                      "TableName": "m_customer_order_type",
+                                      "ColumnName": "order_type_id"
+                                    },
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP23"
+                                    }
+                                  }
+                                },
+                                "UpdateValues": [
+                                  {
+                                    "ColumnName": "default_set_flg",
+                                    "Value": "0"
+                                  },
+                                  {
+                                    "ColumnName": "special_note",
+                                    "Value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!特記事項"
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "ID": "9c93863a-f473-45c7-9d7e-b8cc7e4e8dc2"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "Comments": "初期セットの場合",
+                "ID": "637231c1-9ee2-4330-a994-72ce48bbbfb0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "更新する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontWeight": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Background": 4
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 5
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6
+      },
+      {
+        "Background": 4,
+        "FontFamily": 0
+      },
+      {
+        "Foreground": 7
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 8,
+        "VerticalAlignment": 9,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 7
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 5,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "00",
+        "Left",
+        "#FFFFFF00",
+        "[AUTO]General",
+        "0日締",
+        "Text 1 50",
+        "@",
+        "Top",
+        "Background 1 -15"
+      ],
+      "Borders": [
+        {
+          "Color": 10
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,11": 0,
+      "1,41": 1,
+      "3,11": 0,
+      "4,41": 1,
+      "5,3": 2,
+      "5,11": 0,
+      "6,41": 2,
+      "6,42": 3,
+      "6,43": 3,
+      "7,11": 4,
+      "7,41": 5,
+      "9,11": 4,
+      "9,21": 3,
+      "11,11": 4,
+      "11,18": 3,
+      "12,41": 1,
+      "13,3": 2,
+      "13,11": 6,
+      "14,4": 3,
+      "14,5": 3,
+      "14,6": 3,
+      "14,7": 3,
+      "14,8": 3,
+      "14,9": 3,
+      "14,10": 3,
+      "14,11": 3,
+      "14,12": 3,
+      "14,13": 3,
+      "14,14": 3,
+      "14,15": 3,
+      "14,16": 3,
+      "14,17": 3,
+      "14,18": 3,
+      "14,19": 3,
+      "14,20": 3,
+      "14,21": 3,
+      "14,22": 3,
+      "14,23": 3,
+      "14,24": 3,
+      "14,25": 3,
+      "14,26": 3,
+      "14,27": 3,
+      "14,28": 3,
+      "14,29": 3,
+      "14,30": 3,
+      "14,41": 2,
+      "14,42": 3,
+      "14,43": 3,
+      "15,3": 7,
+      "15,41": 5,
+      "17,41": 2,
+      "17,42": 3,
+      "17,43": 3,
+      "18,41": 5,
+      "19,42": 3,
+      "19,43": 3,
+      "20,41": 2,
+      "21,3": 3,
+      "21,4": 3,
+      "21,5": 3,
+      "21,6": 3,
+      "21,7": 3,
+      "21,8": 3,
+      "21,9": 3,
+      "21,10": 3,
+      "21,11": 3,
+      "21,12": 3,
+      "21,13": 3,
+      "21,14": 3,
+      "21,15": 3,
+      "21,16": 3,
+      "21,17": 3,
+      "21,18": 3,
+      "21,19": 3,
+      "21,20": 3,
+      "21,21": 3,
+      "21,22": 3,
+      "21,23": 3,
+      "21,24": 3,
+      "21,25": 3,
+      "21,26": 3,
+      "21,27": 3,
+      "21,28": 3,
+      "21,29": 3,
+      "21,30": 3,
+      "21,41": 3,
+      "21,42": 3,
+      "21,43": 3,
+      "22,3": 2,
+      "22,7": 8,
+      "22,41": 3,
+      "22,42": 3,
+      "22,43": 3,
+      "23,3": 9,
+      "23,4": 10,
+      "23,5": 10,
+      "23,6": 10,
+      "23,7": 10,
+      "23,8": 10,
+      "23,9": 10,
+      "23,10": 10,
+      "23,11": 9,
+      "23,12": 10,
+      "23,13": 10,
+      "23,14": 10,
+      "23,15": 10,
+      "23,16": 10,
+      "23,17": 10,
+      "23,18": 10,
+      "23,19": 10,
+      "23,20": 10,
+      "23,21": 10,
+      "23,22": 10,
+      "23,23": 10,
+      "23,24": 10,
+      "23,25": 10,
+      "23,26": 10,
+      "23,27": 10,
+      "23,28": 10,
+      "23,29": 10,
+      "23,30": 10,
+      "23,31": 10,
+      "23,32": 10,
+      "23,33": 10,
+      "23,34": 10,
+      "23,35": 10,
+      "23,36": 10,
+      "23,37": 10,
+      "23,38": 10,
+      "23,41": 3,
+      "23,42": 3,
+      "23,43": 3,
+      "24,2": 11,
+      "24,39": 12,
+      "25,2": 11,
+      "25,3": 7,
+      "25,39": 12,
+      "26,2": 11,
+      "26,39": 12,
+      "27,2": 11,
+      "27,39": 12,
+      "28,2": 11,
+      "28,39": 12,
+      "29,2": 11,
+      "29,39": 12,
+      "30,3": 13,
+      "30,4": 14,
+      "30,5": 14,
+      "30,6": 14,
+      "30,7": 14,
+      "30,8": 14,
+      "30,9": 14,
+      "30,10": 14,
+      "30,11": 14,
+      "30,12": 14,
+      "30,13": 14,
+      "30,14": 14,
+      "30,15": 14,
+      "30,16": 14,
+      "30,17": 14,
+      "30,18": 14,
+      "30,19": 14,
+      "30,20": 14,
+      "30,21": 14,
+      "30,22": 14,
+      "30,23": 14,
+      "30,24": 14,
+      "30,25": 14,
+      "30,26": 14,
+      "30,27": 14,
+      "30,28": 14,
+      "30,29": 14,
+      "30,30": 14,
+      "30,31": 14,
+      "30,32": 14,
+      "30,33": 14,
+      "30,34": 14,
+      "30,35": 14,
+      "30,36": 14,
+      "30,37": 14,
+      "30,38": 14,
+      "31,34": 15,
+      "31,35": 3,
+      "31,36": 3,
+      "31,37": 3,
+      "31,38": 3,
+      "31,40": 3,
+      "31,41": 3,
+      "31,42": 3,
+      "31,43": 3,
+      "31,44": 3,
+      "31,45": 3,
+      "31,46": 3,
+      "31,47": 3,
+      "31,48": 3,
+      "31,49": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "22,41,1,3",
+    "15,3,6,36",
+    "31,34,1,5",
+    "23,41,1,3",
+    "3,11,1,28",
+    "5,11,1,28",
+    "7,11,1,6",
+    "9,11,1,10",
+    "11,11,1,6",
+    "4,41,1,3",
+    "7,41,1,3",
+    "12,41,1,3",
+    "15,41,1,3",
+    "18,41,1,3",
+    "1,41,1,3",
+    "25,3,4,36",
+    "1,11,1,28",
+    "22,7,1,32",
+    "21,41,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "申込タイプ登録編集",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "グループ特記事項",
+        "TableValue": {
+          "TableName": "m_group_order_type",
+          "OnlyGetValue": true,
+          "TableValueType": 0,
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "m_group_order_type",
+                "ColumnName": "special_note"
+              },
+              "ColumnName": "special_note"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "m_group_order_type",
+                "ColumnName": "group_id"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP5"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "m_group_order_type",
+                "ColumnName": "order_type_id"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP8"
+              }
+            }
+          }
+        },
+        "ID": "7d4296750b0541d2ab851d0005f2ace7"
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!グループ特記事項"
+                  }
+                ]
+              },
+              "value": "%Null%"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "申込タイプ特記事項",
+                "TableValue": {
+                  "TableName": "m_order_type",
+                  "OnlyGetValue": true,
+                  "TableValueType": 0,
+                  "BindingInfos": [
+                    {
+                      "BindingInfo": {
+                        "TableName": "m_order_type",
+                        "ColumnName": "special_note"
+                      },
+                      "ColumnName": "special_note"
+                    }
+                  ],
+                  "SqlCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "m_order_type",
+                      "ColumnName": "order_type_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP8"
+                    }
+                  }
+                },
+                "ID": "a83e32e6810a472abd1721ecb2229f82"
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!D26"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!申込タイプ特記事項"
+                    }
+                  }
+                ]
+              }
+            ],
+            "ID": "25011dac-131f-4fc1-8052-4ca3b7d0f72d"
+          },
+          {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!D26"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!グループ特記事項"
+                    }
+                  }
+                ]
+              }
+            ],
+            "ID": "07b00a07-9f5a-4c5f-b112-4c4922009424"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!D26"
+                  }
+                ]
+              },
+              "value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP19"
+              },
+              "compareType": 1
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!D16"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=顧客マスタ申込タイプ_登録編集!AP19"
+                    }
+                  }
+                ]
+              }
+            ],
+            "ID": "9398a22b-8da3-41c3-946c-46e5ebc3299a"
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "v_customer_order_type",
+    "PageResponsiveMode": 2
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//eZkKVgHzBF2LNPf4ve93pOPik1G5LZbJw8pyXQcWNJ9ueUuDxT5BBob48y2GQvinAA4aF8jVMXF2lbTuqvwewYM5p8C1FM21ZedVGa1VAyk0d3OXqkX899OFh75zXmow2jni5Q3gINdJm6Zf5DBNa3Bo/TvONAbfyGx69PDCry5CQmXMJsSMZTQaLKpQPNJKmYoMO4qeEaLShysX8GrXylcR4ElhxKsVH98JmfXgG2EZg2PddFG3IAeTNT9rydEMeg5EUgrZYoA/PfkZPIVhIOkSbm7aPQ54ZAqoLLPBkfDxR5ypVO/VYKRuHCXX3xZsAC6v5lnKxlyX0EMaEsXXnKyOV5UF7SUe/yCyRzK/pEL8+FsFYnLi7JvJfdAotRi8FwiA8Nhym4jqqD70UBTMEv94UwQ/UxAahhhqCuCRc1XS30r8fJw2BugvPnO4nmE4I4S/Hfa7/AoWFY0GenjAdgr5j8TplmP5JnanYskZMxpk06o5kkpxuXIme4Sw+He/a+rtiVk3bpv1YoBMT/WDKBF1A3RrMbw+6CKkp+QuxdV6GK/CUPu0e2sQlyEZeX/SD1iZP490etkG4arVPzhJ7wfm3aEYwf2CjQHmzZFIYFYhh0e8Zn3dWWT1Drp+N6LC+iZRxaznunEfqB/RGn7tuLzOt2Ob9tYtWkkh9GW/m9Cw+JUS7AVlcgXvjI8llA7nwNuJQE4aNW9k48UuWOwoJ0Af1Q6sS1bMnY0o2HQdYw5NOb+FVWdKWQp5mlKrhZDVZZpkfQJ/Rqw/1RFi35gJHMnEtIWJQJ51bojYV+v20z9nQOburuHjlTexBr/TeLQ1NSzVwEM7kcvXdsO+SqSxk8EiS1MA0Cr27go5Tk8wAokQby48uJKmd8LAjb+dmLDgWbrqK7UPZ89R2bysu33Dvg==|920

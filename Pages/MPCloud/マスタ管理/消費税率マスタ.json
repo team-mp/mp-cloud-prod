@@ -1,0 +1,426 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 21,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 200.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 400.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "Count": 12
+  },
+  "Values": {
+    "1,4": "▼編集リセットフラグ",
+    "2,4": "0",
+    "4,4": "▼編集確定フラグ",
+    "5,4": "0"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ListViewInfo": {
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "Visible": true,
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_tax_rate",
+        "ColumnCount": 3,
+        "RowCount": 20,
+        "IsRowHeaderVisible": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "DisableAutoSelectRow": true,
+        "UseSimpleBar": true,
+        "Name": "消費税率リストビュー",
+        "TopCondition": null,
+        "CommitType": 1,
+        "ListViewStyleName": "マスタ用"
+      }
+    },
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon"
+      },
+      "BindingInfo": {
+        "TableName": "m_tax_rate",
+        "ColumnName": "revision_date"
+      }
+    },
+    "1,2": {
+      "BindingInfo": {
+        "TableName": "m_tax_rate",
+        "ColumnName": "tax_rate"
+      }
+    },
+    "2,4": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 6,
+            "ListviewName": "消費税率リストビュー",
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              },
+              "RetrunParamNames": {}
+            }
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=消費税率マスタ!編集リセットフラグ"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "1163bbdf-62b1-43af-9906-e63bfc780ec3",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+                  }
+                },
+                "Value": "編集をリセットしました"
+              }
+            ],
+            "ReturnPropertiesTo": []
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    },
+    "5,4": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "消費税率リストビュー"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=消費税率マスタ!編集確定フラグ"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "1163bbdf-62b1-43af-9906-e63bfc780ec3",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+                  }
+                },
+                "Value": "編集内容を確定しました"
+              }
+            ],
+            "ReturnPropertiesTo": []
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 1,
+        "Foreground": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "TextIndent": 4,
+        "HorizontalAlignment": 6,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 7,
+        "TextIndent": 4
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Background": 8,
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 9,
+        "HorizontalAlignment": 10
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 11
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Background 1 -5",
+        "#FF000000",
+        "General",
+        "Center",
+        "Background 1 0",
+        "Left",
+        "0.0%",
+        "Accent 1 80",
+        "@",
+        "Right",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Color": 5
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,2": 1,
+      "1,0": 2,
+      "1,1": 3,
+      "1,2": 4,
+      "1,4": 5,
+      "1,5": 5,
+      "1,6": 5,
+      "2,4": 6,
+      "2,5": 5,
+      "2,6": 5,
+      "3,4": 5,
+      "3,5": 5,
+      "3,6": 5,
+      "4,4": 7,
+      "4,5": 5,
+      "4,6": 5,
+      "5,4": 6,
+      "5,5": 5,
+      "5,6": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,4,1,3",
+    "5,4,1,3",
+    "2,0,18,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_tax_rate",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "編集リセットフラグ",
+      "Formula": "消費税率マスタ!$E$3"
+    },
+    {
+      "Name": "編集確定フラグ",
+      "Formula": "消費税率マスタ!$E$6"
+    }
+  ]
+}//h4ddmww43NVBWDcC0r4b2HwnrJUxfBczeeXfjlyEUUfliIVbqdbR1dsZBXIPeH0il/9JcWeE3Xfqc1GaJXFknNik+BUExxkZcYCnLvBwja8viZjcEMba/YbC17ZFCc8uUHf/YA6u01qxVgQpZKXMNYgK7GoMcpL/hHH1tGBsaZv8FQWHY92DrCqSiCGibauCyV67fGKVWRYjxNiuAvym2R61yvZElG/LqUQO7uQY8taeolcRgNaOlQ4ends+LyVoT75WlCQd18FczRGYkE+KU136ahKuYOfJ+bZ4vzoAnkZr0fz9OSQSK9fKtwWkcKUb7aNEMhpZYZhWD8HffnKNElMW+fS4utha/teRCHBueZreAH+nO65g/7YAndqe6Khsv7kUpHs1w/B71uXpv7U6Ab9FlUg7zU09KM5p1J9JliywybpDKv7CFTr43OmLkP03ELbiYKBOIoEUqfwEtao59hu1P3xX9ujHFZbGPlnaf4G8L99sfqBjgsYFdmi/hkyAYfl1dYjV8Z6l9yogQfRZh7sNQbBwdK6V/dRdl3UJqPvKl6myAYXnth6FgPCIU3+Jb6KdqP+bTLsMBPW658tp5bdNbevOdcd4ijRifntY7OIBzuwuU2hQEtKZ0qI9+CG2QEmSyKrkVsmwINdaAY6Dw9Eak2O6BZ4fyjA+1dKAnrnd2lUgBAkC2k/HJ9Q3rj94jysO4NCjQZeG6hSlYxGazIu+JBZyQ8hTjL/6iZLjjb1mGxHDcQhdhDKbPo4QoDrees1LgyTpLXc/0cMBnV8AlOUdviWbRYjri/M4flJXF4OfGNxXStEOxa1PqkJtHrpAog5RR2S0iKwc7+kDY2CIw9r9//Jvdd0X5FSahfY87vj0sgxbLVl4VyclVQR7IRlTwXB5s/8EAT3taN/pWynTxw==|920

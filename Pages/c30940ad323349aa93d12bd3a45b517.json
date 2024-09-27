@@ -1,0 +1,183 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 1,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    "Count": 34
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "TemplateKey": "余白5",
+        "ImagePath": "Mobile/387_user_2.svg",
+        "BuiltIn": true,
+        "Color": "#FF00B050"
+      }
+    },
+    "0,2": {
+      "TemplateCellSource": "送信先名"
+    },
+    "0,26": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=c30940ad323349aa93d12bd3a45b517!ユーザー削除フラグ"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=c30940ad323349aa93d12bd3a45b517!AE1"
+                }
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "余白4",
+        "ImagePath": "Application/034_close_delete_2.svg",
+        "BuiltIn": true,
+        "Color": "Background 1 -35"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE(c30940ad323349aa93d12bd3a45b517!編集許可フラグ)=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "0,30": {
+      "TemplateCellSource": "ユーザーID"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "TextIndent": 4
+      },
+      {
+        "FontSize": 14.666666666666666
+      },
+      {
+        "Background": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,2": 1,
+      "0,26": 0,
+      "0,27": 0
+    },
+    "ColStyles": {
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 2,
+      "10": 2,
+      "11": 2,
+      "12": 2,
+      "13": 2,
+      "14": 2,
+      "15": 2,
+      "16": 2,
+      "17": 2,
+      "18": 2,
+      "19": 2,
+      "20": 2,
+      "21": 2,
+      "22": 2,
+      "23": 2,
+      "24": 2,
+      "25": 2,
+      "26": 2,
+      "27": 2,
+      "28": 2,
+      "30": 3,
+      "31": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,0,1,2",
+    "0,2,1,24",
+    "0,26,1,2",
+    "0,30,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "フォロー登録編集"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//zuLJGxIoMgLQfBXm8dMA0EKfpJdfiD2Wox74Q0aIo/s4XQ1G0Yx7HQoNhtUMJOTPfwPquc3OFr/YXrciS5CQtuN5mxdW6cbEckdLnEIasjruie/HRS9WmsE2jExD/6mWH9Bw/9LgBteedvXzUSJw26eCUJGAYenkWv7nhlH/BUiXyRGssqWHm/u5afZ38eZf9E0H5j6zpdBeNQiUkdoQa56vik2jjjdbgRVwC4IDghgKa59X1CX6vufNE0WtVXoMy6hlJJpaXlSejIa3rrdRknJwgSQKhb5cgvcLxgN7pIjIjm4zUWOYCqoRRY2IkPONfcvw+zj+dvP5nejBW2T+yFZPf4qorHxJbBnHIPoczM5W5CSf6DcPhdVvKUb2X/t6yGwi0fgztefHOBjWGB7jl4d5Vdcty1aX6klXtKEwx5HFbtJM9HcaE6EYhFn4j9O6tf8xEmNwUTS5wP4H04JnWgvJfLriPIOACRPG2Ba9pVDY56NOeO3VzUgBdPyp0VivQIxukaalA7O8n8HRqYNogrk6RVG+wwgd5R1o5xcH93FjbvIDa4TdVFYVW+7K/ymhLto4yWp91Vd9/pM9hDktU7NTabTCPFP8qKV7DOx9bqG4Ys36bv4KZjHRUVgfDeFEZHDbPjgemWqTwv9gN9UNRBipxRqyTbKI/KbqND/OP6+g5okynMsfqs8BVPx2L0dCTOK/hovLLWdD9rRFJhrunIOQEH84aONHJeiB482/xueCd+4EytXLJDpPF+CzPu7iKTjlYUmVA2DNfceL5r6tPtbGR1tBkwhhj2iLbIEmUh9a4iBwf483xbLdLOYGyiHPGQOPboYSiL9oe5Jksw2PQW14sIi70O3H3Xo0fVnLpFXDziKXSmYHK0+UeVsHBdk9qHotzWcdLt0N53sHD0s6SA==|920

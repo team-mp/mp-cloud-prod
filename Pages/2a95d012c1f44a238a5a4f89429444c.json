@@ -1,0 +1,396 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 1,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "39": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0,
+          "IsHidden": true
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "45": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "46": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "61": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+    ],
+    "Count": 62
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('2a95d012c1f44a238a5a4f89429444c'!AP1)=1"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "送信日時"
+    },
+    "0,7": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('2a95d012c1f44a238a5a4f89429444c'!AP1)=1"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "件名"
+    },
+    "0,24": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('2a95d012c1f44a238a5a4f89429444c'!AP1)=1"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "所属会社名"
+    },
+    "0,34": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE('2a95d012c1f44a238a5a4f89429444c'!AP1)=1"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "送信者名"
+    },
+    "0,41": {
+      "CellComment": {
+        "Comments": "送信エラーフラグ"
+      },
+      "TemplateCellSource": "送信エラーフラグ"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0,
+        "BorderBottom": null,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "TextIndent": 4,
+        "BorderBottom": null,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "TextIndent": 4,
+        "BorderBottom": null,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderRight": 0
+      },
+      {
+        "TextIndent": 4,
+        "BorderBottom": null
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "Background": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "yyyy/mm/dd hh:mm",
+        "Background 1 -15",
+        "Center",
+        "#FFFFFF00",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 1,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 2,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 1,
+      "0,20": 1,
+      "0,21": 1,
+      "0,22": 1,
+      "0,23": 1,
+      "0,24": 3,
+      "0,25": 4,
+      "0,26": 4,
+      "0,27": 4,
+      "0,28": 4,
+      "0,29": 4,
+      "0,30": 4,
+      "0,31": 4,
+      "0,32": 4,
+      "0,33": 5,
+      "0,34": 6,
+      "0,35": 4,
+      "0,36": 4,
+      "0,37": 4,
+      "0,38": 4,
+      "0,39": 4,
+      "0,40": 7,
+      "0,41": 7,
+      "0,42": 7,
+      "0,43": 7,
+      "0,44": 7,
+      "0,45": 7,
+      "0,46": 7
+    },
+    "ColStyles": {
+      "0": 8,
+      "1": 9,
+      "2": 9,
+      "3": 9,
+      "4": 9,
+      "5": 9,
+      "6": 9,
+      "7": 9,
+      "8": 9,
+      "9": 9,
+      "10": 9,
+      "11": 9,
+      "12": 9,
+      "13": 9,
+      "14": 9,
+      "15": 9,
+      "16": 9,
+      "17": 9,
+      "18": 9,
+      "19": 9,
+      "20": 9,
+      "21": 9,
+      "22": 9,
+      "23": 9,
+      "24": 9,
+      "25": 9,
+      "26": 9,
+      "27": 9,
+      "28": 9,
+      "29": 9,
+      "30": 9,
+      "31": 9,
+      "32": 9,
+      "33": 9,
+      "34": 9,
+      "35": 9,
+      "36": 9,
+      "37": 9,
+      "38": 9,
+      "39": 9,
+      "41": 10
+    },
+    "SheetStyle": {
+      "FontFamily": 4
+    }
+  },
+  "Spans": [
+    "0,0,1,7",
+    "0,7,1,17",
+    "0,24,1,10",
+    "0,34,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "物件詳細_メール"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//QFfZTC8I2AwpXW8/YkOHQG34p8qXbi7TO7f6YChDzXwlooi5DFSHT6EKIUgI6lmvg2qsDiQBtdTz4zkvCW05s3ko0xl4DSGeLLgaEC5Dba75bqxP/YsPeUtNmgzGWfHHF+BVX3xJGyws6jGrUL6ARVqQOuelDDGd/pXfAc9NDQLebt2ul8cA9Jgmi28m7Yg+wJQkHXSX4228vGAJrff6WMiiY/me3c1siMlWJZRODDCD5RMA4lLCrSg2+GA8buXa3hu1Jp41kdh33SK/cxg7wovC5iM/y3T4UO8mZgbESRPZlqy14FcweJ/twnTDebgyzLKb66Gj8IC8293ZL7pyBw+7GB7g9iXJKgNRnWAauQHWZRTXSRnCZgWxN6kONgpt97HFmLvXrl61YtpFUC7TNhu5Hplxkr2gqETPepePaKXvAlkBfYKeQW94JjV+1PaqrLlykRHPsZfs5Z6tKSqBw4+/GNSzFNXXuZecV8B0tqiAz5CqjE6n1WQF3I06XFfvMJAZxa8OsaeXcN5UTPEDWfvr0dUAgeouQeiM7MLbqkqd5ySQiJKav71gjrdm+ATGVU1ezJVcCzQTvuwbIu+8HpLaYjhp8Pug9SZAQy/ECJtqf6+aMixsuYTy/KDGLC78kmz7RWwmRs4wWfBx89pWMpYsPBcdljNRVc3pXTXDgI1lNSF+wXMgZVhpnq2v4+lXSdLnWF9302u02b54Wlwtfwf3qdjF/T7R7wu9bJVGPgNe3OV/ZuniiwARRhq9svGwQ8DmHPHR0KEjvHUDmj7HwffIdDWn0X5u/T7aPLFx9J1m8GDwmUZoeV7BwGp4oDBBhMg23K/XAXg2nHG2skMntXnc1o/Hyrb9AWcd/TFGrHNLo4AmKjYgGZA6c/LwjQww4DHe59C7O4aRA/+ZYql5nw==|920

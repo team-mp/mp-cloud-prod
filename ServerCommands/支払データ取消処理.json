@@ -1,0 +1,242 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_仕入ID"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "元仕入",
+          "TableValue": {
+            "TableName": "t_purchase",
+            "TableValueType": 1,
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "t_purchase",
+                  "ColumnName": "object_order_id"
+                },
+                "ColumnName": "申込ID"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "t_purchase",
+                  "ColumnName": "object_product_id"
+                },
+                "ColumnName": "物件商品ID"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "t_purchase",
+                  "ColumnName": "outsourcing_id"
+                },
+                "ColumnName": "外注先ID"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "t_purchase",
+                  "ColumnName": "payment_comp_id"
+                },
+                "ColumnName": "支払先ID"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "t_purchase",
+                  "ColumnName": "payment_product_id"
+                },
+                "ColumnName": "支払商品ID"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "t_purchase",
+                  "ColumnName": "payment_product_name"
+                },
+                "ColumnName": "支払商品名"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "t_purchase",
+                  "ColumnName": "payment_remarks"
+                },
+                "ColumnName": "支払備考"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "t_purchase",
+                  "ColumnName": "excluding_tax_amount"
+                },
+                "ColumnName": "税抜金額"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "t_purchase",
+                  "ColumnName": "tax_amount"
+                },
+                "ColumnName": "消費税額"
+              },
+              {
+                "BindingInfo": {
+                  "TableName": "t_purchase",
+                  "ColumnName": "tax_rate"
+                },
+                "ColumnName": "消費税率"
+              }
+            ],
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "t_purchase",
+                "ColumnName": "purchase_id"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_仕入ID"
+              }
+            }
+          },
+          "ID": "99e6b3ae39444b65b5b71243b67f0c08"
+        },
+        {
+          "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+          "ServerCommandName": "支払データ作成処理",
+          "Parameters": [
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=元仕入.申込ID"
+              },
+              "ParamName": "P_申込ID"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "ParamName": "P_物件商品ID"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=TODAY()"
+              },
+              "ParamName": "P_仕入日"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": "2",
+              "ParamName": "P_仕入区分"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=元仕入.外注先ID"
+              },
+              "ParamName": "P_外注先ID"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=元仕入.支払先ID"
+              },
+              "ParamName": "P_支払先ID"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=元仕入.支払商品ID"
+              },
+              "ParamName": "P_支払商品ID"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=元仕入.支払商品名"
+              },
+              "ParamName": "P_支払商品名"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=元仕入.支払備考"
+              },
+              "ParamName": "P_支払備考"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=元仕入.税抜金額"
+              },
+              "ParamName": "P_税抜金額"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=元仕入.消費税額"
+              },
+              "ParamName": "P_消費税額"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=元仕入.消費税率"
+              },
+              "ParamName": "P_消費税率"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "ParamName": "P_支払日"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "ParamName": "P_支払予定日"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_仕入ID"
+              },
+              "ParamName": "P_取消仕入ID"
+            }
+          ],
+          "ResultErrorCodeTo": {
+            "SerializeProperty": "リターンコード"
+          },
+          "ResultMessageTo": {
+            "SerializeProperty": "リターンメッセージ"
+          },
+          "RefreshAfterFinish": true,
+          "CheckDataValidation": true
+        },
+        {
+          "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+          "ErrorCode": "0",
+          "CustomReturns": []
+        }
+      ]
+    }
+  ],
+  "Name": "支払データ取消処理"
+}

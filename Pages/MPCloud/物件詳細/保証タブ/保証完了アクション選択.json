@@ -1,0 +1,217 @@
+{
+  "Rows": {
+    "Count": 2,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "Count": 19
+  },
+  "Values": {
+    "0,0": "メール送信画面を表示する",
+    "0,12": 1,
+    "0,14": "▼選択アクション",
+    "1,0": "保証完了のみ",
+    "1,12": 2
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=保証完了アクション選択!選択アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=保証完了アクション選択!M1"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "メール送信画面を表示する",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/144_check_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "1,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=保証完了アクション選択!選択アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=保証完了アクション選択!M2"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "保証完了のみ",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/144_check_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "1,14": {
+      "CellComment": {
+        "Comments": "１：即時\r\n２：メール画面"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": null,
+        "TextIndent": 16,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 2
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0,
+        "Foreground": 2
+      },
+      {
+        "Foreground": null
+      },
+      {
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Left",
+        "#FF000000",
+        "#FFFFC000"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 1,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "1,0": 0,
+      "1,1": 2,
+      "1,2": 2,
+      "1,3": 2,
+      "1,4": 2,
+      "1,5": 2,
+      "1,6": 2,
+      "1,7": 2,
+      "1,8": 2,
+      "1,9": 2,
+      "1,10": 2,
+      "1,11": 1,
+      "1,12": 1,
+      "1,14": 3,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 4
+    },
+    "ColStyles": {
+      "0": 5,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5,
+      "5": 5,
+      "6": 5,
+      "7": 5,
+      "8": 5,
+      "9": 5,
+      "10": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "Foreground": 2
+    }
+  },
+  "Spans": [
+    "0,0,1,12",
+    "1,14,1,3",
+    "1,0,1,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "選択アクション",
+      "Formula": "保証完了アクション選択!$O$2"
+    }
+  ]
+}//BIvTT7qgfhFkMu9YWLWwXpwwk3MfEXddJr4Fk7eZ7h4aHNQo4mhW71p3bRuTXi93yMrLQO5uGJb4PppHzhtXh1Pb7ICfFM8RCDB7ulefl78KJG2qXvs1oFrd4Py5HT0/KOjY2QgM89ij8muROuDpp85C2xhqv6D0dutvDb+Wf5LvLdXglY6L4h1nBaOw900tkvH1BBdo3VAdIFYkwO1grSgwlEI1IdlA9qO7Rk/Q4yGww/1hAdjJ9K5JIh2ImtvBSXFiZR0zaLziyYxYH6uBn2D7RnsPa52YhGngIZx3Vp4EaMcFqi7prxumSqSvxR/ATC3G3Hc71QyXgzsdmIf56ThMxiJCkg9jx2tF7semXFmAZj/SKmzrHQHyRY7pzH5ae7KBCks0mQS2wV3Dyapjz0LmjaD1OfwG5ZhFYQSPGtD453ImCp1efh5hr9NiHOApk56CZzS07P9vtVuWNZwP1NWYqMvO/7jr8roEr/6rJx6vNj6wFgzNdxmBoMRWi/JMKTYh8en8IH+ZuCh4drnX2gezU+3AW0eq6pny9vjqiM7ly6mmb8Xnz5NVaLhwb3DbSOMaV5b9hWtvhsLCJUm/rXyxAiC9lcMaM59kfhWmAWZtdW2yStgee0gUXIacIWJlt1dLEbTcVqdnLdRNS+UliuujnIMKx9Uwfpt9yCICj0TE5xghZEyQq1AceSdiNacObzp7l9Fv2+fpFAe8BBUud9dhruWY+3047TLxnhWSC5dMsoIc7ov+B0eSa01JIWr7sl2ujQlKt1jTPwTIIRgqcdplm6igny09JDuRKmMC/DA0BTEDdChujaaAhcIwTKNsUAcuhbT6oQ5/s5F2w+XMnDm8Tee6UxTBfLZVi8nwYYQ4qtV2wq/dFR3K8s3b7i3g+oGfFjnF84G5shfXfLe89g==|920

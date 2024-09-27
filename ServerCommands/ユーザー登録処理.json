@@ -1,0 +1,767 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_ユーザーID"
+        },
+        {
+          "Name": "P_アドレス区分"
+        },
+        {
+          "Name": "P_氏名"
+        },
+        {
+          "Name": "P_所属会社ID"
+        },
+        {
+          "Name": "P_メールアドレス"
+        },
+        {
+          "Name": "P_携帯番号"
+        },
+        {
+          "Name": "P_会社電話番号"
+        },
+        {
+          "Name": "P_部署名"
+        },
+        {
+          "Name": "P_役職名"
+        },
+        {
+          "Name": "P_所属グループ"
+        },
+        {
+          "Name": "P_ユーザー権限"
+        },
+        {
+          "Name": "P_在籍区分"
+        },
+        {
+          "Name": "P_システム利用者フラグ"
+        },
+        {
+          "Name": "P_ログインID"
+        },
+        {
+          "Name": "P_有効フラグ"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+          "ServerCommandName": "登録更新ラベル取得",
+          "ResultErrorCodeTo": {
+            "SerializeProperty": "リターンコード"
+          },
+          "ResultMessageTo": {
+            "SerializeProperty": "リターンメッセージ"
+          },
+          "ReturnPropertiesTo": [
+            {
+              "ResultPropertyName": "R_ラベル名",
+              "ResultTo": {
+                "SerializeProperty": "ラベル名"
+              }
+            }
+          ],
+          "RefreshAfterFinish": true,
+          "CheckDataValidation": true
+        },
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "アカウント登録件数",
+          "ParameterValue": "0",
+          "ID": "f406f2e183604594ad787ecbdcac7e4e"
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_ユーザーID"
+                  }
+                },
+                "value": "%Null%"
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "m_user",
+                  "UpdateType": "add",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に追加してもよろしいですか？",
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "address_type",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_アドレス区分"
+                      }
+                    },
+                    {
+                      "ColumnName": "customer_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_所属会社ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "user_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_氏名"
+                      }
+                    },
+                    {
+                      "ColumnName": "mail_address",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_メールアドレス"
+                      }
+                    },
+                    {
+                      "ColumnName": "mobile_phone",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_携帯番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "company_phone",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_会社電話番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "department_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_部署名"
+                      }
+                    },
+                    {
+                      "ColumnName": "position_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_役職名"
+                      }
+                    },
+                    {
+                      "ColumnName": "enroll_type",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_在籍区分"
+                      }
+                    },
+                    {
+                      "ColumnName": "user_group_ids",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_所属グループ"
+                      }
+                    },
+                    {
+                      "ColumnName": "user_authority_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ユーザー権限"
+                      }
+                    },
+                    {
+                      "ColumnName": "system_user_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_システム利用者フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "login_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ログインID"
+                      }
+                    },
+                    {
+                      "ColumnName": "last_updated_label",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=ラベル名"
+                      }
+                    },
+                    {
+                      "ColumnName": "first_entry_label",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=ラベル名"
+                      }
+                    },
+                    {
+                      "ColumnName": "active_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_有効フラグ"
+                      }
+                    }
+                  ],
+                  "ParamNameToSaveNewRowValue": "Newユーザー"
+                },
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "ユーザーID",
+                  "ParameterValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Newユーザー.ユーザーID"
+                  },
+                  "ID": "d4badec1145d40e3b26d3763ad421bc8"
+                }
+              ],
+              "Comments": "新規登録",
+              "ID": "5dc9c211-b541-4db0-af05-13bdcdcbdfc9"
+            },
+            {
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "元のログインID",
+                  "TableValue": {
+                    "TableName": "m_user",
+                    "OnlyGetValue": true,
+                    "TableValueType": 0,
+                    "BindingInfos": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "m_user",
+                          "ColumnName": "login_id"
+                        },
+                        "ColumnName": "login_id"
+                      }
+                    ],
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "m_user",
+                        "ColumnName": "user_id"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ユーザーID"
+                      }
+                    }
+                  },
+                  "ID": "613e797799314fd0be63ce6a6bfefd3e",
+                  "Comments": "元のログインIDを保持"
+                },
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "m_user",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に更新してもよろしいですか？",
+                  "RowsToUpdate": 1,
+                  "RowsToUpdateCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "m_user",
+                      "ColumnName": "user_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_ユーザーID"
+                    }
+                  },
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "address_type",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_アドレス区分"
+                      }
+                    },
+                    {
+                      "ColumnName": "customer_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_所属会社ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "user_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_氏名"
+                      }
+                    },
+                    {
+                      "ColumnName": "mail_address",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_メールアドレス"
+                      }
+                    },
+                    {
+                      "ColumnName": "mobile_phone",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_携帯番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "company_phone",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_会社電話番号"
+                      }
+                    },
+                    {
+                      "ColumnName": "department_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_部署名"
+                      }
+                    },
+                    {
+                      "ColumnName": "position_name",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_役職名"
+                      }
+                    },
+                    {
+                      "ColumnName": "enroll_type",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_在籍区分"
+                      }
+                    },
+                    {
+                      "ColumnName": "user_group_ids",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_所属グループ"
+                      }
+                    },
+                    {
+                      "ColumnName": "user_authority_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ユーザー権限"
+                      }
+                    },
+                    {
+                      "ColumnName": "system_user_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_システム利用者フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "login_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ログインID"
+                      }
+                    },
+                    {
+                      "ColumnName": "last_updated_label",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=ラベル名"
+                      }
+                    },
+                    {
+                      "ColumnName": "active_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_有効フラグ"
+                      }
+                    }
+                  ],
+                  "ParamNameToSaveNewRowValue": "Newユーザー"
+                },
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "ユーザーID",
+                  "ParameterValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_ユーザーID"
+                  },
+                  "ID": "799cb80452a1456a870649b6439919ba"
+                }
+              ],
+              "ID": "30268fd9-951d-4e81-8bac-4f5ea8c8cd7a"
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_ログインID"
+                  }
+                },
+                "value": "%Null%",
+                "compareType": 1
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "アカウント登録件数",
+                  "TableValue": {
+                    "TableName": "userprofile",
+                    "TableValueType": 3,
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "userprofile",
+                        "ColumnName": "UserName"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ログインID"
+                      }
+                    }
+                  },
+                  "ID": "ac2ea76022094d10a78bd19a8cb1ff35"
+                }
+              ],
+              "ID": "80a98fe6-baa4-4ab3-ba5b-a745ffb0fb49"
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                    "ParamObject": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_システム利用者フラグ"
+                    }
+                  },
+                  "value": "1"
+                },
+                "Condition2": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                    "ParamObject": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_有効フラグ"
+                    }
+                  },
+                  "value": "1"
+                }
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                            "ParamObject": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=元のログインID"
+                            }
+                          },
+                          "value": "%Null%",
+                          "compareType": 1
+                        },
+                        "Condition2": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                            "ParamObject": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=P_ログインID"
+                            }
+                          },
+                          "value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=元のログインID"
+                          },
+                          "compareType": 1
+                        }
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "UserManagementCommands.Commands.DeleteUserCommand, UserManagementCommands",
+                          "UserName": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=元のログインID"
+                          }
+                        }
+                      ],
+                      "ID": "d4d47de1-5a5e-46d1-b179-0b6c5fbf4b77"
+                    }
+                  ],
+                  "Comments": "元のログインIDと異なっている場合、元のログインIDを削除する"
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=アカウント登録件数"
+                          }
+                        },
+                        "value": "0"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "UserManagementCommands.Commands.AddUserCommand, UserManagementCommands",
+                          "UserName": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=P_ログインID"
+                          },
+                          "FullName": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=P_氏名"
+                          },
+                          "Password": "123456",
+                          "Email": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=P_メールアドレス"
+                          },
+                          "ExtendedProperties": [
+                            {
+                              "Name": "user_id",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=ユーザーID"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "eb789ed6-0520-42a3-acd6-25a0b849114d"
+                    },
+                    {
+                      "CommandList": [
+                        {
+                          "$type": "UserManagementCommands.Commands.UpdateUserCommand, UserManagementCommands",
+                          "UserName": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=P_ログインID"
+                          },
+                          "FullName": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=P_氏名"
+                          },
+                          "Email": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=P_メールアドレス"
+                          },
+                          "ExtendedProperties": []
+                        }
+                      ],
+                      "ID": "5c3d0229-a442-4193-810b-15933a5acf7e"
+                    }
+                  ]
+                },
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "ユーザー権限",
+                  "TableValue": {
+                    "TableName": "m_user_authority",
+                    "OnlyGetValue": true,
+                    "TableValueType": 0,
+                    "BindingInfos": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "m_user_authority",
+                          "ColumnName": "user_authority_name"
+                        },
+                        "ColumnName": "user_authority_name"
+                      }
+                    ],
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "m_user_authority",
+                        "ColumnName": "user_authority_id"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ユーザー権限"
+                      }
+                    }
+                  },
+                  "ID": "b262ffe853c144d9a9c1673ff2d9d351"
+                },
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "ユーザー権限登録リスト",
+                  "TableValue": {
+                    "TableName": "webpages_usersinroles",
+                    "BindingInfos": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "webpages_usersinroles",
+                          "ColumnName": "RoleId",
+                          "RelationBinding": {
+                            "RelatedTable": "webpages_roles",
+                            "RelatedColumn": "RoleId",
+                            "DisplayColumn": "RoleName"
+                          }
+                        },
+                        "ColumnName": "ロール名"
+                      }
+                    ],
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "webpages_usersinroles",
+                        "ColumnName": "UserId",
+                        "RelationBinding": {
+                          "RelatedTable": "userprofile",
+                          "RelatedColumn": "UserId",
+                          "DisplayColumn": "UserName"
+                        }
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ログインID"
+                      }
+                    }
+                  },
+                  "ID": "c802bd76d86640279f0a4de346e56e3e"
+                },
+                {
+                  "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                  "LoopInfo": {
+                    "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                    "LoopCount": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=ユーザー権限登録リスト"
+                    },
+                    "LoopItemParamName": "Item"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "UserManagementCommands.Commands.RemoveUserFromRoleCommand, UserManagementCommands",
+                      "UserName": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_ログインID"
+                      },
+                      "RoleName": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.ロール名"
+                      }
+                    }
+                  ],
+                  "Comments": "設定済みロールを削除"
+                },
+                {
+                  "$type": "UserManagementCommands.Commands.AddUserToRoleCommand, UserManagementCommands",
+                  "UserName": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_ログインID"
+                  },
+                  "RoleName": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=ユーザー権限"
+                  }
+                }
+              ],
+              "ID": "fb67b37a-6de5-4c1b-b4bd-e83aa385d71c"
+            },
+            {
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=アカウント登録件数"
+                          }
+                        },
+                        "value": "0",
+                        "compareType": 2
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "UserManagementCommands.Commands.DeleteUserCommand, UserManagementCommands",
+                          "UserName": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=P_ログインID"
+                          }
+                        }
+                      ],
+                      "ID": "de2877bd-923e-4bb0-8fc1-c7086e24e1b6"
+                    }
+                  ]
+                }
+              ],
+              "ID": "f3365f34-49d5-46b9-8892-1ade6c5419a8"
+            }
+          ],
+          "Comments": "新規の場合"
+        },
+        {
+          "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+          "ErrorCode": "0",
+          "CustomReturns": [
+            {
+              "ReturnPropertyName": "R_ユーザーID",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=IF(P_ユーザーID<>\"\",P_ユーザーID,Newユーザー.ユーザーID)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "R_ユーザーID"
+    }
+  ],
+  "Name": "ユーザー登録処理"
+}

@@ -1,0 +1,1206 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      }
+    },
+    "Count": 35
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "68": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      },
+      "69": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      },
+      "70": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      },
+      "71": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      },
+      "72": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      },
+      "73": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      },
+      "74": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      },
+      "75": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77
+    ],
+    "Count": 78
+  },
+  "Values": {
+    "1,3": "MP-Cloud",
+    "1,48": "ログイン会社切り替え",
+    "4,0": "ブランク",
+    "4,68": "▼参照顧客ID",
+    "4,70": "▼ユーザー権限",
+    "4,72": "▼参照顧客グループIDs",
+    "7,68": "▼ログイン者本社フラグ",
+    "7,70": "▼参照顧客代理店フラグ",
+    "7,72": "▼参照管理顧客IDs",
+    "10,68": "▼ログイン者ユーザーグループID",
+    "10,70": "▼参照顧客取次店フラグ",
+    "13,68": "▼ロケーションURL",
+    "13,70": "▼参照顧客本社フラグ",
+    "16,68": "▼ログインユーザーID",
+    "16,70": "▼参照顧客既定グループID",
+    "17,68": "%CurrentUser.user_id%",
+    "20,68": "▼参照ユーザーマスタ",
+    "21,68": "所属会社ID",
+    "21,69": "ユーザー権限",
+    "21,70": "ユーザーグループ",
+    "22,68": "{=ODATA(\"m_user?$select=customer_id,user_authority_id,user_group_ids&$filter=user_id eq \"&IF(ISBLANK(BK15),\"null\",BK15))}",
+    "24,68": "▼顧客マスタ参照",
+    "25,68": "顧客名",
+    "25,69": "顧客略称名",
+    "25,70": "代理店フラグ",
+    "25,71": "取次店フラグ",
+    "25,72": "本社フラグ",
+    "25,73": "既定グループID",
+    "25,74": "所属グループIDs",
+    "25,75": "管理顧客IDs",
+    "29,68": "TOPページ表示切替ボタン",
+    "32,68": "TOPコンテンツ表示切替ボタン"
+  },
+  "Formulas": {
+    "1,11": "BQ27",
+    "5,70": "BR23",
+    "8,70": "BS27",
+    "11,70": "BT27",
+    "14,70": "BU27",
+    "17,70": "BV27",
+    "5,72": "BW27",
+    "8,72": "BX27"
+  },
+  "ArrayFormulas": {
+    "22,68,1,3": "ODATA(\"m_user?$select=customer_id,user_authority_id,user_group_ids&$filter=user_id eq \"&IF(ISBLANK(BQ18),\"null\",BQ18))",
+    "26,68,1,8": "ODATA(\"m_customer?$select=customer_name,customer_abbr,agency_flg,brokerage_flg,main_office_flg,group_id,belong_group_ids,management_customer_ids&$filter=customer_id eq \"&IF(ISBLANK(BQ6),\"null\",BQ6))"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メインフォーム!TOPコンテンツ表示切替ボタン"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "ImagePath": "TEST2.png"
+      }
+    },
+    "1,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メインフォーム!TOPコンテンツ表示切替ボタン"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "Text": "MP-Cloud",
+        "ClickMode": 1
+      }
+    },
+    "1,48": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "顧客検索",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メインフォーム!参照顧客ID"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!顧客ID"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メインフォーム!BR27"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!顧客略称名"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "ログイン会社切り替え",
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メインフォーム!ログイン者本社フラグ<>1"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "1,58": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "2,0": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "フレーム",
+        "ReadOnly": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ISBLANK(メインフォーム!A3)"
+            },
+            "CellValueRuleType": 3,
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "4,0": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "ブランク",
+        "OverflowMode": 1
+      }
+    },
+    "5,68": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メインフォーム!BQ31"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ]
+      }
+    },
+    "8,68": {
+      "CellComment": {
+        "Comments": "ページロード時にセット"
+      }
+    },
+    "11,68": {
+      "CellComment": {
+        "Comments": "ページロード時にセット"
+      }
+    },
+    "22,69": {
+      "CellComment": {
+        "Comments": "ユーザー権限"
+      }
+    },
+    "30,68": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "お待ちください",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=メインフォーム!参照顧客本社フラグ"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "TOPページ名",
+                    "ParameterValue": "TOPページ_本社",
+                    "ID": "fdda810275b94cbd827d5a8b91fa1804"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "コンテンツ名",
+                    "ParameterValue": "TOPコンテンツ_本社",
+                    "ID": "822186b87824461487842ae9973c7ea8"
+                  }
+                ],
+                "Comments": "本社の場合",
+                "ID": "e097f9b9-b127-495d-963e-fcb419633997"
+              },
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=メインフォーム!参照顧客代理店フラグ"
+                        }
+                      ]
+                    },
+                    "value": "1"
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=メインフォーム!参照顧客取次店フラグ"
+                        }
+                      ]
+                    },
+                    "value": "1"
+                  },
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "TOPページ名",
+                    "ParameterValue": "TOPページ_代理店",
+                    "ID": "5a5aa4d50ca3417fa98d95456cf76b37"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "コンテンツ名",
+                    "ParameterValue": "TOPコンテンツ_代理店",
+                    "ID": "8a3a301cccfa4c4e8e7156897870714f"
+                  }
+                ],
+                "ID": "33fb245f-2f4d-45c5-8acc-a6fbfd48d7ab"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "TOPページ名",
+                    "ParameterValue": "TOPページ_住宅事業者",
+                    "ID": "40f15d0e3062470daece4c7d4ab3a8e3"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "コンテンツ名",
+                    "ParameterValue": "TOPコンテンツ_住宅事業者",
+                    "ID": "5d3dcd213b5d4493b1027ee5a6f41921"
+                  }
+                ],
+                "ID": "0258a652-3b27-417d-878c-6e4b88fee660"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=メインフォーム!A5"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=メインフォーム!TOPページ名"
+                  },
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=メインフォーム!A5"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=メインフォーム!TOPページ名"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "c43ac39f-64c0-437f-b577-eb48e7e4b0b9"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=メインフォーム!コンテンツ"
+                              }
+                            ]
+                          },
+                          "value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=メインフォーム!コンテンツ名"
+                          },
+                          "compareType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=メインフォーム!コンテンツ"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=メインフォーム!コンテンツ名"
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "78ae6c71-d161-4494-ba3d-c3e50f027aa4"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                          }
+                        ],
+                        "ID": "60db51ab-8735-44ae-9f4d-bbf84279affd"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "220ea40c-349e-4b09-9b9f-1812f0086777"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "33,68": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "お待ちください",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=メインフォーム!参照顧客本社フラグ"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "ページ名",
+                    "ParameterValue": "TOPコンテンツ_本社",
+                    "ID": "f1a85d82c897423cb696b28054a61cf5",
+                    "Comments": "本社の場合"
+                  }
+                ],
+                "ID": "2e3ae0da-446f-46f1-9ce7-12aad10656f6"
+              },
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=メインフォーム!参照顧客代理店フラグ"
+                        }
+                      ]
+                    },
+                    "value": "1"
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=メインフォーム!参照顧客取次店フラグ"
+                        }
+                      ]
+                    },
+                    "value": "1"
+                  },
+                  "RelationType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "ページ名",
+                    "ParameterValue": "TOPコンテンツ_代理店",
+                    "ID": "c21e0af2382f494eb3fb507da2be0fd7",
+                    "Comments": "代理店・取次店の場合"
+                  }
+                ],
+                "ID": "9cfb97b0-f876-4f2b-9c35-e389897c7ec2"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "ページ名",
+                    "ParameterValue": "TOPコンテンツ_住宅事業者",
+                    "ID": "9461cfefc4554f39ae3cce0750814fc0",
+                    "Comments": "住宅事業者の場合"
+                  }
+                ],
+                "ID": "cb2a120c-c3b8-45f1-9591-073d13600a3a"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=メインフォーム!コンテンツ"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=メインフォーム!ページ名"
+                  },
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=メインフォーム!コンテンツ"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=メインフォーム!ページ名"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "7218488f-a7c8-490b-9f08-d86c4095a2c4"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                  }
+                ],
+                "ID": "58db2b3b-2516-4055-a1b2-d37fca4fcd8d"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 26.666666666666664,
+        "Foreground": 2,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 0
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "Foreground": 3,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 0,
+        "FontFamily": 4,
+        "FontSize": 26.666666666666664,
+        "Foreground": 3,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664,
+        "Foreground": 3,
+        "TextIndent": 6,
+        "HorizontalAlignment": 5,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "Foreground": 3,
+        "HorizontalAlignment": 6,
+        "Underline": true,
+        "Strikethrough": false
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "Foreground": 2,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "Foreground": 3,
+        "HorizontalAlignment": 7,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 1,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 7,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 26.666666666666664,
+        "Formatter": 8,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 9
+      },
+      {
+        "Background": 10,
+        "Formatter": 8
+      },
+      {
+        "Background": 11
+      },
+      {
+        "Background": 11,
+        "FontFamily": 1
+      },
+      {
+        "Background": 12,
+        "FontFamily": 1
+      },
+      {
+        "Background": 13,
+        "FontFamily": 1
+      },
+      {
+        "Background": 12,
+        "FontFamily": 1,
+        "Formatter": 9
+      },
+      {
+        "Background": 12
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF005B47",
+        "Body",
+        "Background 1 0",
+        "Accent 1 80",
+        "Microsoft YaHei",
+        "Left",
+        "Center",
+        "Right",
+        "@",
+        "[AUTO]General",
+        "Accent 1 60",
+        "#FFFFFF00",
+        "Text 2 60",
+        "Accent 3 80"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "0,2": 1,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 2,
+      "0,10": 2,
+      "0,11": 2,
+      "0,12": 2,
+      "0,13": 2,
+      "0,14": 2,
+      "0,15": 2,
+      "0,16": 2,
+      "0,17": 2,
+      "0,18": 2,
+      "0,19": 2,
+      "0,20": 2,
+      "0,21": 2,
+      "0,22": 2,
+      "0,23": 2,
+      "0,24": 2,
+      "0,25": 2,
+      "0,26": 2,
+      "0,27": 2,
+      "0,28": 2,
+      "0,29": 2,
+      "0,30": 2,
+      "0,31": 2,
+      "0,32": 2,
+      "0,33": 2,
+      "0,34": 2,
+      "0,35": 2,
+      "0,36": 2,
+      "0,37": 2,
+      "0,38": 2,
+      "0,39": 2,
+      "0,40": 2,
+      "0,41": 2,
+      "0,42": 2,
+      "0,43": 2,
+      "0,44": 2,
+      "0,45": 2,
+      "0,46": 2,
+      "0,47": 2,
+      "0,48": 2,
+      "0,49": 2,
+      "0,50": 2,
+      "0,51": 2,
+      "0,52": 2,
+      "0,53": 2,
+      "0,54": 2,
+      "0,55": 2,
+      "0,56": 2,
+      "0,57": 2,
+      "0,58": 2,
+      "0,59": 2,
+      "0,60": 2,
+      "0,61": 2,
+      "0,62": 2,
+      "0,63": 2,
+      "0,64": 2,
+      "0,65": 2,
+      "0,66": 2,
+      "1,0": 3,
+      "1,1": 3,
+      "1,3": 4,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 2,
+      "1,10": 2,
+      "1,11": 5,
+      "1,12": 6,
+      "1,13": 6,
+      "1,14": 6,
+      "1,15": 6,
+      "1,16": 6,
+      "1,17": 6,
+      "1,18": 6,
+      "1,19": 6,
+      "1,20": 6,
+      "1,21": 6,
+      "1,22": 6,
+      "1,23": 6,
+      "1,24": 6,
+      "1,25": 6,
+      "1,26": 6,
+      "1,27": 6,
+      "1,28": 6,
+      "1,29": 6,
+      "1,30": 6,
+      "1,31": 6,
+      "1,32": 6,
+      "1,33": 6,
+      "1,34": 6,
+      "1,35": 6,
+      "1,36": 2,
+      "1,37": 2,
+      "1,38": 2,
+      "1,39": 2,
+      "1,40": 2,
+      "1,41": 2,
+      "1,42": 2,
+      "1,43": 2,
+      "1,44": 2,
+      "1,45": 2,
+      "1,46": 2,
+      "1,47": 2,
+      "1,48": 7,
+      "1,57": 8,
+      "1,58": 9,
+      "1,59": 10,
+      "1,60": 10,
+      "1,61": 10,
+      "1,62": 10,
+      "1,63": 10,
+      "1,64": 10,
+      "1,65": 10,
+      "1,66": 11,
+      "2,0": 12,
+      "3,0": 12,
+      "3,1": 12,
+      "3,2": 12,
+      "3,3": 12,
+      "3,4": 12,
+      "3,5": 12,
+      "3,6": 12,
+      "3,7": 12,
+      "3,8": 12,
+      "3,9": 12,
+      "3,10": 12,
+      "3,11": 12,
+      "3,12": 12,
+      "3,13": 12,
+      "3,14": 12,
+      "3,15": 12,
+      "3,16": 12,
+      "3,17": 12,
+      "3,18": 12,
+      "3,19": 12,
+      "3,20": 12,
+      "3,21": 12,
+      "3,22": 12,
+      "3,23": 12,
+      "3,24": 12,
+      "3,25": 12,
+      "3,26": 12,
+      "3,27": 12,
+      "3,28": 12,
+      "3,29": 12,
+      "3,30": 12,
+      "3,31": 12,
+      "3,32": 12,
+      "3,33": 12,
+      "3,34": 12,
+      "3,35": 12,
+      "3,36": 12,
+      "3,37": 12,
+      "3,38": 12,
+      "3,39": 12,
+      "3,40": 12,
+      "3,41": 12,
+      "3,42": 12,
+      "3,43": 12,
+      "3,44": 12,
+      "3,45": 12,
+      "3,46": 12,
+      "3,47": 12,
+      "3,48": 12,
+      "3,49": 12,
+      "3,50": 12,
+      "3,51": 12,
+      "3,52": 12,
+      "3,53": 12,
+      "3,54": 12,
+      "3,55": 12,
+      "3,56": 12,
+      "3,57": 12,
+      "3,58": 12,
+      "3,59": 12,
+      "3,60": 12,
+      "3,61": 12,
+      "3,62": 12,
+      "3,63": 12,
+      "3,64": 12,
+      "3,65": 12,
+      "3,66": 12,
+      "4,72": 13,
+      "5,68": 14,
+      "5,70": 15,
+      "5,72": 16,
+      "8,68": 15,
+      "8,70": 15,
+      "8,72": 15,
+      "10,68": 13,
+      "10,70": 13,
+      "11,68": 16,
+      "11,70": 16,
+      "13,68": 6,
+      "13,70": 13,
+      "14,68": 16,
+      "14,70": 16,
+      "16,68": 6,
+      "16,70": 13,
+      "17,68": 16,
+      "17,70": 16,
+      "20,68": 6,
+      "20,69": 6,
+      "20,70": 6,
+      "21,68": 17,
+      "21,69": 17,
+      "21,70": 17,
+      "22,68": 18,
+      "22,69": 18,
+      "22,70": 18,
+      "24,68": 6,
+      "24,69": 6,
+      "24,70": 6,
+      "25,68": 17,
+      "25,69": 17,
+      "25,70": 19,
+      "25,71": 19,
+      "25,72": 19,
+      "25,73": 19,
+      "25,74": 20,
+      "25,75": 20,
+      "26,68": 18,
+      "26,69": 18,
+      "26,70": 16,
+      "26,71": 15,
+      "26,72": 15,
+      "26,73": 15,
+      "26,74": 15,
+      "26,75": 15,
+      "29,68": 13,
+      "30,68": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,58,1,8",
+    "4,0,31,67",
+    "2,0,1,67",
+    "1,1,1,2",
+    "1,48,1,9",
+    "1,11,1,25"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+        "JavaScript": "// 現在のページを取得する。\r\nvar page = Forguncy.Page;\r\n\r\n//ロケーションURLを取得する\r\nvar loc = location.href;\r\n\r\n//値をセットする\r\npage.getCell(\"ロケーションURL\").setValue(loc);",
+        "ID": "c8e0bdb1da1c4f9da34f0531f7965c12"
+      },
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "本社ユーザーフラグ",
+        "TableValue": {
+          "TableName": "m_user",
+          "OnlyGetValue": true,
+          "TableValueType": 0,
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "m_user",
+                "ColumnName": "customer_id",
+                "RelationBinding": {
+                  "RelatedTable": "m_customer",
+                  "RelatedColumn": "customer_id",
+                  "DisplayColumn": "main_office_flg"
+                }
+              },
+              "ColumnName": "main_office_flg"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_user",
+              "ColumnName": "user_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メインフォーム!BQ18"
+            }
+          }
+        },
+        "ID": "47ec3d33be344118ae1c6d7e47b7d778"
+      },
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メインフォーム!参照顧客ID"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メインフォーム!BQ23"
+            }
+          },
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メインフォーム!ユーザーグループID"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メインフォーム!BS23"
+            }
+          },
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メインフォーム!ログイン者本社フラグ"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メインフォーム!本社ユーザーフラグ"
+            }
+          }
+        ],
+        "Comments": "本社フラグセット"
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_group",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "TOPコンテンツ表示切替ボタン",
+      "Formula": "メインフォーム!$BQ$34"
+    },
+    {
+      "Name": "ユーザーグループID",
+      "Formula": "メインフォーム!$BQ$12"
+    },
+    {
+      "Name": "ユーザー権限",
+      "Formula": "メインフォーム!$BS$6"
+    },
+    {
+      "Name": "ログイン者本社フラグ",
+      "Formula": "メインフォーム!$BQ$9"
+    },
+    {
+      "Name": "ロケーションURL",
+      "Formula": "メインフォーム!$BQ$15"
+    },
+    {
+      "Name": "参照管理顧客IDs",
+      "Formula": "メインフォーム!$BU$9"
+    },
+    {
+      "Name": "参照顧客ID",
+      "Formula": "メインフォーム!$BQ$6"
+    },
+    {
+      "Name": "参照顧客グループIDs",
+      "Formula": "メインフォーム!$BU$6"
+    },
+    {
+      "Name": "参照顧客既定グループID",
+      "Formula": "メインフォーム!$BS$18"
+    },
+    {
+      "Name": "参照顧客取次店フラグ",
+      "Formula": "メインフォーム!$BS$12"
+    },
+    {
+      "Name": "参照顧客代理店フラグ",
+      "Formula": "メインフォーム!$BS$9"
+    },
+    {
+      "Name": "参照顧客本社フラグ",
+      "Formula": "メインフォーム!$BS$15"
+    }
+  ]
+}//HtTt+dKT7NQe1hXv/PpKRYa/wavSnPmb5Fv3HxlUFziGx8/9J2T/7stoLPIDVicDg7a3/8Py+iLelgLkGz1x/Et6qAeqLRTyay0D6PkbzTnqxyDQKKPKd9RQ7E84fTBFPOZYlGF2oWndDscG2VeC8/ej7AKFogsKE53Kiqx6TWnnxa4lwEJvJzQYwNIX3RPrfS+qLLKBMoIGcsfmRLmeoluEqAy9lqIbtqS1uySngjXwa5PSdXHhbpSZQ/dvWi08ZJyhlMcyvhRxJ0sBqWFoRCZbxiTCTxLU38ESd2bWNtZ8tWpUA2aon/b8wl6CGyH0sMtITLgRxVqK1M29O77aSJIlt5DdXI0yel0SRtVLWsxYXzW/QbFhK3eLkk/LvCXjQZWDs1NaF+/LluH1i+3wocC3fSmdXfcELDYMhHp2hU20kTMWHJWoW8cdQAKjVuZ3Fq/SQXmGsX8JHeJARQf2k168DgiTMHDCbtv87pA8/LhDHJ6NOILUd9n70aewz6otZ7qFVfWmTqLb9jsDs1dwHLQrESpRr044ULnWotlmdIoSbUDdbK2bBrrWfC0ogdr6ZL+C4hYwmw4G+isKNvvR2ZYkfsyPpIg2PwII0WtfS70mv5RgLvcT3+gEHDnmrrzthJXKsz37f6UE29fMgYP9J5iDozQ7zlqsmIPX2fWJMwHfXESR+mshCC3p2/Zozt5XUlbjPQgeDYiAnS5rk5kZ1yqCAPpNksn1tU2pVcF1vtiSam6UDEDocprd6p96rVRNXqI/P0QfpmlQqSaMwL6BRc+NRkrkl0oMeYBVt9Y+se5Bc6Z2GPFqKBN70fK34fO08TI7rhFdqdGKWh2WWnyB7rT3/kran4KxdH7ckMbuMJ4WUcft8GAFbOUz/4oO+KPJ5Padr2vS2HCm/gpSQasSZw==|920

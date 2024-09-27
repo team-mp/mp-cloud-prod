@@ -1,0 +1,972 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 14,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "Count": 43
+  },
+  "Values": {
+    "0,30": "▼添付ID",
+    "1,2": "ファイル名または、ファイル属性の変更が可能です。",
+    "2,2": "編集した場合は更新ボタンを押してください。",
+    "3,30": "▼表示ファイル名",
+    "3,37": "▼変更前拡張子",
+    "4,2": "ファイル名",
+    "6,2": "ファイル属性",
+    "6,30": "▼ファイル属性ID",
+    "6,37": "▼変更後拡張子",
+    "9,30": "▼申込事業者選択可能フラグ",
+    "11,22": "更新する"
+  },
+  "Formulas": {
+    "7,37": "CLEAN(RIGHT(SUBSTITUTE(H5,\".\",REPT(CHAR(9),100)),100))",
+    "4,37": "CLEAN(RIGHT(SUBSTITUTE(AE5,\".\",REPT(CHAR(9),100)),100))"
+  },
+  "AttachInfos": {
+    "1,30": {
+      "BindingInfo": {
+        "TableName": "t_object_attachment",
+        "ColumnName": "attachment_id"
+      }
+    },
+    "4,7": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      },
+      "BindingInfo": {
+        "TableName": "t_object_attachment",
+        "ColumnName": "display_file_name"
+      }
+    },
+    "4,30": {
+      "BindingInfo": {
+        "TableName": "t_object_attachment",
+        "ColumnName": "display_file_name"
+      }
+    },
+    "6,7": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "m_file_attirbute",
+        "ValueColumnBindingInfo": {
+          "TableName": "m_file_attirbute",
+          "ColumnName": "file_attribute_id"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "m_file_attirbute",
+          "ColumnName": "file_attibute_name"
+        },
+        "ItemsQuery": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_file_attirbute",
+              "ColumnName": "applicant_company_authority"
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_file_attirbute",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_file_attirbute",
+                "ColumnName": "file_class_id"
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_file_attirbute",
+                "ColumnName": "sort_no"
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_file_attirbute",
+                "ColumnName": "file_attribute_id"
+              },
+              "Order": 0
+            }
+          ]
+        }
+      },
+      "BindingInfo": {
+        "TableName": "t_object_attachment",
+        "ColumnName": "file_attribute_id"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=添付ファイル編集_申込事業者!$AE$11=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "7,30": {
+      "BindingInfo": {
+        "TableName": "t_object_attachment",
+        "ColumnName": "file_attribute_id"
+      }
+    },
+    "10,30": {
+      "BindingInfo": {
+        "TableName": "t_object_attachment",
+        "ColumnName": "file_attribute_id",
+        "RelationBinding": {
+          "RelatedTable": "m_file_attirbute",
+          "RelatedColumn": "file_attribute_id",
+          "DisplayColumn": "applicant_company_authority"
+        }
+      }
+    },
+    "11,22": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=添付ファイル編集_申込事業者!H5"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "ファイル名を入力してください"
+                  },
+                  {
+                    "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                    "TargetCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=添付ファイル編集_申込事業者!H5"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "df06d4ac-aef3-4b5b-8337-cdf942e50bd4"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=添付ファイル編集_申込事業者!H7"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "ファイル属性を選択してください"
+                  },
+                  {
+                    "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                    "TargetCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=添付ファイル編集_申込事業者!H7"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "14e1923f-ec3a-4ac9-b34a-26dd2e2ab301"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=添付ファイル編集_申込事業者!AL5"
+                      }
+                    ]
+                  },
+                  "value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=添付ファイル編集_申込事業者!AL8"
+                  },
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "拡張子を変更することはできません"
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "1ba5a5f1-de17-46ab-9660-84f253a90639"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "769b53af-30a0-4c8b-93cb-2097cb0976e4",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=添付ファイル編集_申込事業者!W12"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "6c89412f-f509-4fef-b824-e7c2cb0fbece",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+                  }
+                }
+              }
+            ],
+            "ReturnPropertiesTo": []
+          },
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "ファイル編集処理",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=添付ファイル編集_申込事業者!AE2"
+                },
+                "ParamName": "P_添付ID"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=添付ファイル編集_申込事業者!H5"
+                },
+                "ParamName": "P_変更後表示フィル名"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=添付ファイル編集_申込事業者!H7"
+                },
+                "ParamName": "P_変更後ファイル属性ID"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=添付ファイル編集_申込事業者!AE13"
+                },
+                "ParamName": "P_変更後添付不要フラグ"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=添付ファイル編集_申込事業者!AL13"
+                },
+                "ParamName": "P_変更後公開フラグ"
+              }
+            ],
+            "ResultErrorCodeTo": {
+              "SerializeProperty": "リターンコード"
+            },
+            "ResultMessageTo": {
+              "SerializeProperty": "リターンメッセージ"
+            },
+            "CheckDataValidation": false
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=添付ファイル編集_申込事業者!リターンコード"
+                      }
+                    ]
+                  },
+                  "value": "0",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=添付ファイル編集_申込事業者!リターンメッセージ"
+                    }
+                  }
+                ],
+                "ID": "75a13b6f-de99-489e-a2e8-4aa0cd7e091c"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "ReloadData": true
+                  }
+                ],
+                "ID": "bdb26d15-a771-4240-9bdf-2570faf4c50d"
+              }
+            ]
+          }
+        ],
+        "Text": "更新する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    },
+    "12,30": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "添付不要",
+        "Style": 2,
+        "PrimaryColor": "#FF005B47"
+      },
+      "BindingInfo": {
+        "TableName": "t_object_attachment",
+        "ColumnName": "no_attachment_required_flg"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 4,
+            "Value1": "=1",
+            "StyleInfo": {
+              "Foreground": "Background 1 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "12,37": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "公開する",
+        "Style": 2,
+        "PrimaryColor": "#FF005B47"
+      },
+      "BindingInfo": {
+        "TableName": "t_object_attachment",
+        "ColumnName": "publish_flg"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 4,
+            "Value1": "=1",
+            "StyleInfo": {
+              "Foreground": "Background 1 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "ShrinkToFit": false
+      },
+      {
+        "FontFamily": 0,
+        "ShrinkToFit": true
+      },
+      {
+        "Foreground": 2
+      },
+      {
+        "ShrinkToFit": true
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0
+      },
+      {
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Formatter": 4,
+        "VerticalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "Formatter": 4,
+        "VerticalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4
+      },
+      {
+        "Background": 3,
+        "Formatter": 4,
+        "VerticalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0,
+        "Formatter": 4,
+        "VerticalAlignment": 5
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 7
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "VerticalAlignment": 5,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "General",
+        "Text 1 50",
+        "#FFFFFF00",
+        "@",
+        "Top",
+        "[AUTO]General",
+        "#FF000000"
+      ]
+    },
+    "CellStyles": {
+      "0,30": 0,
+      "0,31": 1,
+      "0,32": 1,
+      "1,2": 2,
+      "1,28": 3,
+      "1,29": 3,
+      "1,30": 4,
+      "1,33": 3,
+      "1,34": 3,
+      "1,35": 3,
+      "1,36": 3,
+      "1,37": 3,
+      "1,38": 3,
+      "1,39": 3,
+      "1,40": 3,
+      "1,41": 3,
+      "2,2": 2,
+      "2,27": 5,
+      "2,30": 6,
+      "2,31": 6,
+      "2,32": 6,
+      "3,28": 7,
+      "3,29": 7,
+      "3,33": 7,
+      "3,34": 7,
+      "3,35": 7,
+      "3,36": 7,
+      "3,37": 8,
+      "3,38": 7,
+      "3,39": 7,
+      "3,40": 7,
+      "3,41": 7,
+      "4,2": 6,
+      "4,3": 6,
+      "4,4": 6,
+      "4,5": 6,
+      "4,6": 6,
+      "4,7": 9,
+      "4,8": 6,
+      "4,9": 6,
+      "4,10": 6,
+      "4,11": 6,
+      "4,12": 6,
+      "4,13": 6,
+      "4,14": 6,
+      "4,15": 6,
+      "4,16": 6,
+      "4,17": 6,
+      "4,18": 6,
+      "4,19": 6,
+      "4,20": 6,
+      "4,21": 6,
+      "4,22": 6,
+      "4,23": 6,
+      "4,24": 6,
+      "4,25": 6,
+      "4,26": 6,
+      "4,28": 7,
+      "4,29": 7,
+      "4,30": 4,
+      "4,33": 7,
+      "4,34": 7,
+      "4,35": 7,
+      "4,36": 7,
+      "4,37": 10,
+      "4,40": 7,
+      "4,41": 7,
+      "5,2": 6,
+      "5,3": 6,
+      "5,4": 6,
+      "5,5": 6,
+      "5,6": 6,
+      "5,7": 6,
+      "5,8": 6,
+      "5,9": 6,
+      "5,10": 6,
+      "5,11": 6,
+      "5,12": 6,
+      "5,13": 6,
+      "5,14": 6,
+      "5,15": 6,
+      "5,16": 6,
+      "5,17": 6,
+      "5,18": 6,
+      "5,19": 6,
+      "5,20": 6,
+      "5,21": 6,
+      "5,22": 6,
+      "5,23": 6,
+      "5,24": 6,
+      "5,25": 6,
+      "5,26": 6,
+      "5,28": 7,
+      "5,29": 7,
+      "5,33": 7,
+      "5,34": 7,
+      "5,35": 7,
+      "5,36": 7,
+      "5,37": 7,
+      "5,38": 7,
+      "5,39": 7,
+      "5,40": 7,
+      "5,41": 7,
+      "6,2": 6,
+      "6,3": 6,
+      "6,4": 6,
+      "6,5": 6,
+      "6,6": 6,
+      "6,7": 6,
+      "6,8": 6,
+      "6,9": 6,
+      "6,10": 6,
+      "6,11": 6,
+      "6,12": 6,
+      "6,13": 6,
+      "6,14": 6,
+      "6,15": 6,
+      "6,16": 6,
+      "6,17": 6,
+      "6,18": 6,
+      "6,19": 6,
+      "6,20": 6,
+      "6,21": 6,
+      "6,22": 6,
+      "6,23": 6,
+      "6,24": 6,
+      "6,25": 6,
+      "6,26": 6,
+      "6,28": 7,
+      "6,29": 7,
+      "6,30": 11,
+      "6,31": 6,
+      "6,32": 6,
+      "6,33": 7,
+      "6,34": 7,
+      "6,35": 7,
+      "6,36": 7,
+      "6,37": 8,
+      "6,38": 7,
+      "6,39": 7,
+      "6,40": 7,
+      "6,41": 7,
+      "7,28": 7,
+      "7,29": 7,
+      "7,30": 4,
+      "7,33": 7,
+      "7,34": 7,
+      "7,35": 7,
+      "7,36": 7,
+      "7,37": 12,
+      "7,38": 6,
+      "7,39": 6,
+      "7,40": 7,
+      "7,41": 7,
+      "8,28": 7,
+      "8,29": 7,
+      "8,40": 7,
+      "8,41": 7,
+      "9,28": 7,
+      "9,29": 7,
+      "10,28": 7,
+      "10,29": 7,
+      "10,30": 4,
+      "10,33": 7,
+      "10,34": 7,
+      "10,35": 7,
+      "10,36": 7,
+      "10,37": 7,
+      "10,38": 7,
+      "10,39": 7,
+      "10,40": 7,
+      "10,41": 7,
+      "11,1": 13,
+      "11,2": 13,
+      "11,3": 13,
+      "11,4": 13,
+      "11,5": 13,
+      "11,6": 13,
+      "11,7": 13,
+      "11,8": 13,
+      "11,9": 13,
+      "11,10": 13,
+      "11,11": 13,
+      "11,12": 13,
+      "11,13": 13,
+      "11,14": 13,
+      "11,22": 14,
+      "11,27": 14,
+      "12,1": 13,
+      "12,2": 13,
+      "12,3": 13,
+      "12,4": 13,
+      "12,5": 13,
+      "12,6": 13,
+      "12,7": 13,
+      "12,8": 13,
+      "12,9": 13,
+      "12,10": 13,
+      "12,11": 13,
+      "12,12": 13,
+      "12,13": 13,
+      "12,14": 13,
+      "12,23": 14,
+      "12,24": 14,
+      "12,25": 14,
+      "12,26": 14,
+      "12,27": 14,
+      "12,30": 15,
+      "12,31": 6,
+      "12,32": 6,
+      "12,33": 6,
+      "12,34": 6,
+      "12,35": 6,
+      "12,36": 16,
+      "12,37": 15,
+      "12,38": 6,
+      "12,39": 6,
+      "12,40": 6,
+      "12,41": 6,
+      "12,42": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,30,1,3",
+    "4,30,1,3",
+    "7,30,1,3",
+    "4,37,1,3",
+    "7,37,1,3",
+    "11,22,1,5",
+    "4,7,1,20",
+    "6,7,1,10",
+    "12,30,1,6",
+    "12,37,1,6",
+    "10,30,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "添付ファイル編集",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "t_object_attachment"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "対象ファイル名",
+      "Formula": "添付ファイル編集_申込事業者!$B$2"
+    }
+  ]
+}//qp+7eihCf0GfkHQNytNnE4uFfiGUd8Z6H9UCWXTb4FBjRP8On+usjuCm52+i5Epf6eirUXjwxnLqMKEEwk1SL2wOj7habcJpjhf/zqu7NKtvd8lI/CTIFKZkXAgoMRbcoLXJfD2Oluv5QGLnzxub38KeUzFMJX51yVlhKnt8CQHZZhP+hmXkfuBin0xKhkSMoKqH7DY3y+K9Az4+LQXmzMmkw3Ki4A2DzJciVCw0eIKs8mjQqib7xweL5fSxDiwofIpqzlFn/PryCm52v0NHmKZv8ANmLOuqH23jw8VsRdI+WERZ0HyLJjZO3z6OMgNZ+LYbP4n2Q0cqBcFLc0wRQu5okRzq9SswOup78e7sFHo3zxsv60SaCfwFSImUDuMAu1DaZRklYtwUtBcK4i6OJ42here8wREoCz4L4bNxIbd84hlOINUaaxrvgjglcp2u3nK32nAIwo+3Cwr6IkA78YkplGd6/MlCo9AHgqiYw/sBrRPEcOcvvjh9jB3OgtQna8SZts25hoysUZdLStTRLZ2FVEHCdmlu6k4PnrdJmgs7G63LMIz0GcEk7VhaWVzxn7wQKLLEe3sZnMRpxnm23a7158SYVNZou/yCc0vc426rpcw0npgvIjjUn3t+VXxcFFU50YeCPaYwbNrTvXe2N0QM3O4GDcsqFdVawdxbqmawabHYcOy3yQzxMQrums+hYMZcBWnyYH2DHC+IdWiEAwD/Nj8ckoyyPRWT6VhXLKhWOer6KECde4kRszcKKHXHJiEjdwmRe/118X2UqyxS1dIATL+9HY/MD04whkXzvKI/QYoOd+I+R7CuzAVAY0CiVKbGEmiqnnbTiNUBJibrWfaVxK/6VSn6ktkT7lpkHGwvoKPlukLu/OOpvPjTxIjglFLbcrDoi1kSWvxZPE65bw==|920

@@ -1,0 +1,217 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 15
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "Count": 33
+  },
+  "Values": {
+    "4,24": "▼更新フラグ",
+    "13,17": "OK"
+  },
+  "AttachInfos": {
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "コメントを入力してください"
+      }
+    },
+    "13,17": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=コメント登録編集!更新フラグ"
+                },
+                "Value": "1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "OK",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0
+      },
+      {
+        "Foreground": 1,
+        "WordWrap": true
+      },
+      {
+        "Formatter": 2,
+        "VerticalAlignment": 3,
+        "WordWrap": true
+      },
+      {
+        "Foreground": 1,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": 5
+      },
+      {
+        "FontFamily": 6,
+        "Formatter": 2,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 6,
+        "FontSize": 12.0,
+        "Formatter": 7
+      },
+      {
+        "FontFamily": 6,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF000000",
+        "Text 1 50",
+        "@",
+        "Top",
+        "Left",
+        "#FFFFC000",
+        "Body",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "2,2": 1,
+      "4,2": 2,
+      "5,21": 3,
+      "5,24": 4,
+      "9,21": 5,
+      "13,17": 6,
+      "14,13": 7,
+      "14,14": 7,
+      "14,15": 7,
+      "14,16": 7,
+      "14,17": 7,
+      "14,18": 7,
+      "14,19": 7,
+      "14,20": 7,
+      "14,21": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 6
+    }
+  },
+  "Spans": [
+    "4,2,8,19",
+    "13,17,1,4",
+    "5,24,1,3",
+    "1,2,1,19",
+    "2,2,1,19"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 2
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "更新フラグ",
+      "Formula": "コメント登録編集!$Y$6"
+    },
+    {
+      "Name": "タイトル",
+      "Formula": "コメント登録編集!$C$2"
+    },
+    {
+      "Name": "コメント",
+      "Formula": "コメント登録編集!$C$5"
+    },
+    {
+      "Name": "メッセージ",
+      "Formula": "コメント登録編集!$C$3"
+    }
+  ]
+}//PWJfxA8O6Rmhv17VxkyKyWv6ougspkKRnF7/sqvHYQ51mMRdoW15Lvsxt3WlpFWGmQ6Zf9EQLCZkb40uaik9fCdazcK3rXCPsa6ZZQmJkZZDEnybCeirgtoeWuYNNZH01XKa7wr3TR6+jiAjOec0uNmXWeDi9qvLlKE45cmSnGKh/PodCh9BktBr0KiFdkZdtz7xZ5X+Ac/yVAr2IEOZKpSxsHGkLFezi3nnsHQGLEj0j9F9ALKT9YQ1xJNO1Vvu8zjjvPwi3lHaDanM5UMhVWDJeOkScpJ4b0EttzZBx/UZE2oBBP6MP1L0xlo9dxrpY+86J/63TLtEWMjafv0CnFDFSY6G6mGDUex4oAWNADdmCrbbayfNaj1vQw5wv650udXVG85KelFVrmoRJEuvPd+rN1bGvGPpsbHsh004kSxGbqh3wM4PwCbl7x7tOh1ByQHTSnWADmsD2199gSVst2esGwu4lwO3dZZciRx7TprnTCMnNErkLCEQW02K5Jv/6LUjvHhpuVpV3oj6dRXzyQquqDBd028bKJa7KUxtI8D+IZTB6o6ijzzA6/82HhxuCMiJEmCU65PYj1QTKtGPGO96Wt6/D5/l7Gig7C7k0yl37bd/cg3PMU8VHPc5sYstx751wO2MoW2U6enWaWnluO1ggR/lGvSa1aRpcuwa9DpcuGQYI8Vw2hh8lzKSHn8K2DaS8CWksH/OXaEkHUGnnR5uLKxS4NPPnsfae2Xsa8hl6Uw3QlZCP4/EZPFLjyzZd6EmUxZbHF6eqtnqlBhZElR+m5CLNTirBLnpWE7N2jsijJp9Ydr7HMgeXIDFQ28yCKZhcS9LD97dr/iGZrvRRDC+rjTJPNLlGn2EV6NhCD+6Q7cN2mfIHgxZOgY6j1fkA3xG4qduP2YwxfEs/79adg==|920

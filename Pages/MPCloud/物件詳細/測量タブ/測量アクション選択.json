@@ -1,0 +1,804 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "Count": 7,
+    "DefaultSize": 28.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "Count": 27
+  },
+  "Values": {
+    "0,0": "測量手配保留に変更する",
+    "0,12": 1,
+    "0,13": "▼選択アクション",
+    "0,19": "▼選択可能アクション",
+    "1,0": "測量承諾待ちに変更する",
+    "1,12": 3,
+    "2,0": "測量結果待ちに変更する",
+    "2,12": 4,
+    "3,0": "測量完了に変更する",
+    "3,12": 6,
+    "4,0": "測量完了を解除する",
+    "4,12": 7,
+    "5,0": "出戻り終了に更新する",
+    "5,12": 8,
+    "6,0": "測量キャンセルに更新する",
+    "6,12": 9
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!選択アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!M1"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "測量手配保留に変更する",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/144_check_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "1,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!選択アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!M2"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "測量承諾待ちに変更する",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/144_check_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "2,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!選択アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!M3"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "測量結果待ちに変更する",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/144_check_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!選択アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!M4"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "測量完了に変更する",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/080_lock_3.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "4,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!選択アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!M5"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "測量完了を解除する",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/081_unlock_3.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "5,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!選択アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!M6"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "出戻り終了に更新する",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/036_delete_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "6,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!選択アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量アクション選択!M7"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "測量キャンセルに更新する",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/036_delete_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0,
+        "Foreground": null,
+        "TextIndent": 16,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 2
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 2,
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": null,
+        "TextIndent": 16,
+        "HorizontalAlignment": 0
+      },
+      {
+        "Background": 4,
+        "FontFamily": 1,
+        "Foreground": 2
+      },
+      {
+        "Foreground": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Left",
+        "Body",
+        "#FF000000",
+        "[AUTO]General",
+        "#FFFFC000"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 2,
+      "0,20": 1,
+      "0,21": 1,
+      "1,0": 3,
+      "1,1": 1,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,13": 4,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 4,
+      "1,20": 1,
+      "1,21": 1,
+      "2,0": 3,
+      "2,1": 1,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 1,
+      "2,7": 1,
+      "2,8": 1,
+      "2,9": 1,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 2,
+      "2,13": 5,
+      "2,14": 5,
+      "2,15": 5,
+      "2,16": 5,
+      "2,17": 5,
+      "2,18": 5,
+      "2,19": 5,
+      "2,20": 5,
+      "2,21": 5,
+      "3,0": 3,
+      "3,1": 1,
+      "3,2": 1,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 1,
+      "3,7": 1,
+      "3,8": 1,
+      "3,9": 1,
+      "3,10": 1,
+      "3,11": 1,
+      "3,12": 2,
+      "3,13": 5,
+      "3,14": 5,
+      "3,15": 5,
+      "3,16": 5,
+      "3,17": 5,
+      "3,18": 5,
+      "3,19": 5,
+      "3,20": 5,
+      "3,21": 5,
+      "4,0": 3,
+      "4,1": 1,
+      "4,2": 1,
+      "4,3": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 1,
+      "4,7": 1,
+      "4,8": 1,
+      "4,9": 1,
+      "4,10": 1,
+      "4,11": 1,
+      "4,12": 2,
+      "4,13": 5,
+      "4,14": 5,
+      "4,15": 5,
+      "4,16": 5,
+      "4,17": 5,
+      "4,18": 5,
+      "4,19": 5,
+      "4,20": 5,
+      "4,21": 5,
+      "5,0": 3,
+      "5,1": 1,
+      "5,2": 1,
+      "5,3": 1,
+      "5,4": 1,
+      "5,5": 1,
+      "5,6": 1,
+      "5,7": 1,
+      "5,8": 1,
+      "5,9": 1,
+      "5,10": 1,
+      "5,11": 1,
+      "5,12": 2,
+      "5,13": 5,
+      "5,14": 5,
+      "5,15": 5,
+      "5,16": 5,
+      "5,17": 5,
+      "5,18": 5,
+      "5,19": 5,
+      "5,20": 5,
+      "5,21": 5,
+      "6,0": 3,
+      "6,1": 1,
+      "6,2": 1,
+      "6,3": 1,
+      "6,4": 1,
+      "6,5": 1,
+      "6,6": 1,
+      "6,7": 1,
+      "6,8": 1,
+      "6,9": 1,
+      "6,10": 1,
+      "6,11": 1,
+      "6,12": 2,
+      "6,13": 5,
+      "6,14": 5,
+      "6,15": 5,
+      "6,16": 5,
+      "6,17": 5,
+      "6,18": 5,
+      "6,19": 5,
+      "6,20": 5,
+      "6,21": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "Foreground": 2
+    }
+  },
+  "Spans": [
+    "0,0,1,12",
+    "1,0,1,12",
+    "2,0,1,12",
+    "4,0,1,12",
+    "3,0,1,12",
+    "5,0,1,12",
+    "6,0,1,12",
+    "1,13,1,3",
+    "1,19,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=測量アクション選択!M1"
+                  }
+                ]
+              },
+              "value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=測量アクション選択!T2"
+              },
+              "compareType": 12
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=測量アクション選択!1:1"
+                    },
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "d70e3445-5268-44bd-a78c-6cedb966b266"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=測量アクション選択!M2"
+                  }
+                ]
+              },
+              "value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=測量アクション選択!T2"
+              },
+              "compareType": 12
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=測量アクション選択!2:2"
+                    },
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "ee91f1e1-ea4c-4c24-87af-1176fd2593e4"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=測量アクション選択!M3"
+                  }
+                ]
+              },
+              "value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=測量アクション選択!T2"
+              },
+              "compareType": 12
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=測量アクション選択!3:3"
+                    },
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "a50bb74e-31a7-4bc3-9bce-53c60f58025c"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=測量アクション選択!M4"
+                  }
+                ]
+              },
+              "value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=測量アクション選択!T2"
+              },
+              "compareType": 12
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=測量アクション選択!4:4"
+                    },
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "31e9c769-5821-4972-9d98-5661034d9224"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=測量アクション選択!M5"
+                  }
+                ]
+              },
+              "value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=測量アクション選択!T2"
+              },
+              "compareType": 12
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=測量アクション選択!5:5"
+                    },
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "ae631a28-7a50-4dc1-9ab8-0562c0158aa1"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=測量アクション選択!M6"
+                  }
+                ]
+              },
+              "value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=測量アクション選択!T2"
+              },
+              "compareType": 12
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=測量アクション選択!6:6"
+                    },
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "c6396fc0-e4ba-4748-8cb0-4e704cf819b4"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=測量アクション選択!M7"
+                  }
+                ]
+              },
+              "value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=測量アクション選択!T2"
+              },
+              "compareType": 12
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=測量アクション選択!7:7"
+                    },
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "a08f811c-fc67-4a90-87d5-cc3b273f394c"
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 2
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "選択アクション",
+      "Formula": "測量アクション選択!$N$2"
+    }
+  ]
+}//9FqTbjoogTaiNf9ofvVtglX5ScmVlo/EYMS6ffPfG4wxQDoZHCyyW9fPb3pejLat9GO8xb+4tei5iHOV7tdPQUsEj95WwCp9DbzeTL/lGtX/4of33me6w291GFPNt5ZEHp1vGHIJ92bnHF5oCpfJiCVvBERZkbvMVKW/wfQjvM4HiOp09Uy+eGXfI8qK8/miH/iVa4vdpruWEeELblO42/binq5h+TxnFafN7pJpaK3EfKuKDY2lo4WsGVQDYdrSdVfBnc3V76W0LK3MuXADZUxQ18r9KdpJa6JhlNjo8nSGlNhwHH3U+UUHk1OTaRplxO70r3ScrQ4/F3XJEl5ZSJKYsQVYVWWjzQrLmDOajB5ZwV77jPnewWQzAcXMulLO2g/jekW4PjVr0AH3OlLBD6bCLPzLH26z6uV5y5P2Xkx2PYrMnzprcSg40gJTU3faQ7ZUTfzU/fX3fuYATVuqcdHzYb4hOlhrIaw3b8R+ObCDwI0e8Ehk/vj62o25IUyUXQKoQZn/xj1lHQQwCBNTCG70PMQtWyO0tY8Eu2rfPe0t7VeZUmET2s8CrRL7gRzB6Jl6BC6zTtLafyCNefxNQuMIqGjbxPao4Sp8wvgeosItX5QhUihbQWXxLMZhQCX+P/PFip5onEuNNrkbe/2qhgfE5BuBXflG0yvbVwsA5lZczMii3DHb1AcWVvdrY8aPgxjOF4W3J06CHLUiheOuo3hnUQ5sBdsKVcTjlC2RL84f1JleoWrn2Y5JY2g3RGGyo0Lenol/svfPFtpgT8Lb7AaLg3hDXZEBIV74VYzKGPqXSabKaTJ/FUysLG7klDWgDkU/0bfbhdNU1xuNereHk7PXmG2ZDqFHFKY07Ko3VA/NTiazjKDY/jADHIo07XICvt6fpiVsNApeV1d7yu4cAA==|920

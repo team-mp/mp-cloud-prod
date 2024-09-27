@@ -1,0 +1,689 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.InvokeTrigger, ServerDesignerCommon",
+      "Parameters": [
+        {
+          "Name": "P_送信元区分"
+        },
+        {
+          "Name": "P_宛先区分"
+        },
+        {
+          "Name": "P_差出人アドレス"
+        },
+        {
+          "Name": "P_ユーザーグループID"
+        },
+        {
+          "Name": "P_宛先"
+        },
+        {
+          "Name": "P_CC"
+        },
+        {
+          "Name": "P_件名"
+        },
+        {
+          "Name": "P_本文"
+        },
+        {
+          "Name": "P_添付ファイル"
+        },
+        {
+          "Name": "P_申込ID"
+        },
+        {
+          "Name": "P_送信ユーザーID"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "差出人メールアドレス",
+          "TableValue": {
+            "TableName": "m_environment",
+            "OnlyGetValue": true,
+            "TableValueType": 0,
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "m_environment",
+                  "ColumnName": "mailsender_address"
+                },
+                "ColumnName": "mailsender_address"
+              }
+            ],
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "m_environment",
+                "ColumnName": "ID"
+              },
+              "Value": "1"
+            }
+          },
+          "ID": "fa6a609b6e1145c8955e2d31a8a825bc"
+        },
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "グループメールアドレスリスト",
+          "ID": "01b6ad4c2a9743ba8e207a52f019793e"
+        },
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "宛先",
+          "ID": "ecfe9749cd444a02864bdf7cc3148062"
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_ユーザーグループID"
+                  }
+                },
+                "value": "%Null%",
+                "compareType": 1
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "ユーザー",
+                  "TableValue": {
+                    "TableName": "m_user",
+                    "BindingInfos": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "m_user",
+                          "ColumnName": "mail_address"
+                        },
+                        "ColumnName": "メールアドレス"
+                      }
+                    ],
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 1,
+                          "ColumnBindingInfo": {
+                            "TableName": "m_user",
+                            "ColumnName": "user_group_ids"
+                          },
+                          "Value": "%Null%"
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                          "CompareType": 6,
+                          "ColumnBindingInfo": {
+                            "TableName": "m_user",
+                            "ColumnName": "user_group_ids"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=P_ユーザーグループID"
+                          }
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "m_user",
+                          "ColumnName": "active_flg"
+                        },
+                        "Value": "1"
+                      }
+                    }
+                  },
+                  "ID": "37119cefa4884195be719adec7c296fc"
+                },
+                {
+                  "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                  "LoopInfo": {
+                    "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                    "LoopCount": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=ユーザー"
+                    },
+                    "LoopItemParamName": "Item"
+                  },
+                  "CommandList": [
+                    {
+                      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                      "ConditionAndCommandPairList": [
+                        {
+                          "Condition": {
+                            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                            "param": {
+                              "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                              "ParamObject": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=グループメールアドレスリスト"
+                              }
+                            },
+                            "value": "%Null%"
+                          },
+                          "CommandList": [
+                            {
+                              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                              "ParameterName": "グループメールアドレスリスト",
+                              "ParameterValue": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Item.メールアドレス"
+                              },
+                              "ID": "d7e3ac20018c4ea4afb7bf5abd05b2b7"
+                            }
+                          ],
+                          "ID": "3245ba13-1cf9-4c99-b112-c779a8759830"
+                        },
+                        {
+                          "CommandList": [
+                            {
+                              "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                              "ParameterName": "グループメールアドレスリスト",
+                              "ParameterValue": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=グループメールアドレスリスト&\",\"&Item.メールアドレス"
+                              },
+                              "ID": "be80cb865f2d4fa0ad71d6168f245480"
+                            }
+                          ],
+                          "ID": "67fecad6-0e4e-47c1-849a-b1c1ef161d4b"
+                        }
+                      ]
+                    }
+                  ],
+                  "Comments": "ユーザーグループIDよりメールアレスリストを生成"
+                }
+              ],
+              "ID": "bbef02b8-d28e-4f8d-89d1-418404a59511"
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_宛先"
+                  }
+                },
+                "value": "%Null%"
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "宛先",
+                  "ParameterValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=グループメールアドレスリスト"
+                  },
+                  "ID": "21af6490a78043cbae94ff9b76777831"
+                }
+              ],
+              "ID": "80360e58-6296-4dad-b1ba-b062beebc73b"
+            },
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=グループメールアドレスリスト"
+                  }
+                },
+                "value": "%Null%",
+                "compareType": 1
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "宛先",
+                  "ParameterValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_宛先&\",\"&グループメールアドレスリスト"
+                  },
+                  "ID": "fd597cc294ef46f0b2765139a5928dbd"
+                }
+              ],
+              "ID": "adc2050b-cb77-46a9-8f90-11f02feccb8e"
+            },
+            {
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "宛先",
+                  "ParameterValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_宛先"
+                  },
+                  "ID": "b5eba0e8cadb44be9eec374c4eed3f34"
+                }
+              ],
+              "ID": "15a0ee65-7f9d-4c37-acc2-1d49d42a62c6"
+            }
+          ],
+          "Comments": "宛先設定"
+        },
+        {
+          "$type": "Forguncy.Model.CatchExceptionCommand, ServerDesignerCommon",
+          "TryCommandPart": {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "添付ファイル文字列",
+                "ID": "68aef9ed56e64098a498b60e218aeeca"
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "添付ファイル数",
+                "ParameterValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=LEN(P_添付ファイル)-LEN(SUBSTITUTE(P_添付ファイル,\"|\",\"\"))"
+                },
+                "ID": "a7ae1aca7aae448e84ab74d54c2b5895"
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "ファイル名開始位置",
+                "ParameterValue": "1",
+                "ID": "0f4cbc1a25304e8b8e469f590067c88e"
+              },
+              {
+                "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                "LoopInfo": {
+                  "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                  "LoopCount": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=添付ファイル数"
+                  },
+                  "LoopIndexParamName": "カウンター",
+                  "LoopItemParamName": "Item"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "文字数",
+                    "ParameterValue": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=IFERROR(FIND(\"|\",P_添付ファイル,ファイル名開始位置),1000)"
+                    },
+                    "ID": "fe6f04e753d7458890f1867ff9e4450a"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "取得ファイル名",
+                    "ParameterValue": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=MID(P_添付ファイル,ファイル名開始位置,文字数-ファイル名開始位置)"
+                    },
+                    "ID": "80ab278a6e12446e8eec55d86eb73bb3"
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "表示ファイル名",
+                    "ParameterValue": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=MID(取得ファイル名,38,100)"
+                    },
+                    "ID": "8299877191e7477a8c4e6884de471761"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                            "ParamObject": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=カウンター"
+                            }
+                          },
+                          "value": "1"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "添付ファイル文字列",
+                            "ParameterValue": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=\"・\"&表示ファイル名"
+                            },
+                            "ID": "dcd9a16a7b7c4113a45e3781182f556f"
+                          }
+                        ],
+                        "ID": "08e1f2da-17f2-4c09-8eb8-495bc7817500"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "添付ファイル文字列",
+                            "ParameterValue": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=添付ファイル文字列&CHAR(10)&\"・\"&表示ファイル名"
+                            },
+                            "ID": "da9166fcfc4c4931a4129a96d9bbbfb8"
+                          }
+                        ],
+                        "ID": "4e6bfd5f-7eee-4039-9896-8b35fbde7199"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "ファイル名開始位置",
+                    "ParameterValue": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=文字数+1"
+                    },
+                    "ID": "d26d188cad7a4375a867ca439c802b84"
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                "TableName": "t_mail_history",
+                "UpdateType": "add",
+                "ShowConfirm": false,
+                "ConfirmText": "本当に追加してもよろしいですか？",
+                "UpdateValues": [
+                  {
+                    "ColumnName": "object_order_id",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_申込ID"
+                    }
+                  },
+                  {
+                    "ColumnName": "sender_type",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_送信元区分"
+                    }
+                  },
+                  {
+                    "ColumnName": "post_type",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_宛先区分"
+                    }
+                  },
+                  {
+                    "ColumnName": "sender_address",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_差出人アドレス"
+                    }
+                  },
+                  {
+                    "ColumnName": "to_address",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=宛先"
+                    }
+                  },
+                  {
+                    "ColumnName": "cc_address",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_CC"
+                    }
+                  },
+                  {
+                    "ColumnName": "subject",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_件名"
+                    }
+                  },
+                  {
+                    "ColumnName": "body",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_本文"
+                    }
+                  },
+                  {
+                    "ColumnName": "attachment_files",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=添付ファイル文字列"
+                    }
+                  },
+                  {
+                    "ColumnName": "send_user_id",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_送信ユーザーID"
+                    }
+                  },
+                  {
+                    "ColumnName": "send_date",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=NOW()"
+                    }
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                "From": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=差出人メールアドレス"
+                },
+                "Subject": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=P_件名"
+                },
+                "Content": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=P_本文"
+                },
+                "EnhancedRecipient": {
+                  "CommonValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=宛先"
+                  }
+                },
+                "EnhancedCC": {
+                  "CommonValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_CC"
+                  }
+                },
+                "Attachments": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=P_添付ファイル"
+                },
+                "ID": "19839b754c1e42c89b15647bfc6f99cb"
+              }
+            ]
+          },
+          "CatchCommandPart": {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "送信者メールドレス",
+                "TableValue": {
+                  "TableName": "m_user",
+                  "OnlyGetValue": true,
+                  "TableValueType": 0,
+                  "BindingInfos": [
+                    {
+                      "BindingInfo": {
+                        "TableName": "m_user",
+                        "ColumnName": "mail_address"
+                      },
+                      "ColumnName": "mail_address"
+                    }
+                  ],
+                  "SqlCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "m_user",
+                      "ColumnName": "user_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_送信ユーザーID"
+                    }
+                  }
+                },
+                "ID": "04bfc2fbc0e34446a870acf8d025ebeb"
+              },
+              {
+                "$type": "Forguncy.Model.SendMailCommand, ServerDesignerCommon",
+                "From": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=差出人メールアドレス"
+                },
+                "Subject": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"【送信エラー】\"&P_件名"
+                },
+                "Content": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"以下の内容はエラーのため送信できませんでした\"&CHAR(10)&\"メールアドレスに間違いないか、またメールサイズに問題無いかご確認ください\"&CHAR(10)&CHAR(10)&P_本文"
+                },
+                "EnhancedRecipient": {
+                  "CommonValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=送信者メールドレス"
+                  }
+                },
+                "Attachments": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=P_添付ファイル"
+                },
+                "ID": "662bbce7216249e8b64cb1666f0e96d0"
+              },
+              {
+                "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                "TableName": "t_mail_history",
+                "UpdateType": "add",
+                "ShowConfirm": false,
+                "ConfirmText": "本当に追加してもよろしいですか？",
+                "UpdateValues": [
+                  {
+                    "ColumnName": "object_order_id",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_申込ID"
+                    }
+                  },
+                  {
+                    "ColumnName": "sender_type",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_送信元区分"
+                    }
+                  },
+                  {
+                    "ColumnName": "post_type",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_宛先区分"
+                    }
+                  },
+                  {
+                    "ColumnName": "sender_address",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_差出人アドレス"
+                    }
+                  },
+                  {
+                    "ColumnName": "to_address",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_宛先"
+                    }
+                  },
+                  {
+                    "ColumnName": "cc_address",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_CC"
+                    }
+                  },
+                  {
+                    "ColumnName": "subject",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_件名"
+                    }
+                  },
+                  {
+                    "ColumnName": "body",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_本文"
+                    }
+                  },
+                  {
+                    "ColumnName": "attachment_files",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=添付ファイル文字列"
+                    }
+                  },
+                  {
+                    "ColumnName": "send_user_id",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_送信ユーザーID"
+                    }
+                  },
+                  {
+                    "ColumnName": "send_date",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=NOW()"
+                    }
+                  },
+                  {
+                    "ColumnName": "send_error_flg",
+                    "Value": "1"
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                "ErrorCode": "100",
+                "Message": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=\"メール送信に失敗しました\"&CHAR(10)&ExceptionMessage"
+                },
+                "CustomReturns": []
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "Name": "メール送信処理（スケジュールタスク）"
+}

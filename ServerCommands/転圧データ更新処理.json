@@ -1,0 +1,1988 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_申込ID"
+        },
+        {
+          "Name": "P_転圧ID"
+        },
+        {
+          "Name": "P_転圧登録日"
+        },
+        {
+          "Name": "P_転圧会社ID"
+        },
+        {
+          "Name": "P_転圧区分"
+        },
+        {
+          "Name": "P_設計作成日"
+        },
+        {
+          "Name": "P_見積依頼日"
+        },
+        {
+          "Name": "P_見積送付日"
+        },
+        {
+          "Name": "P_転圧受注日"
+        },
+        {
+          "Name": "P_転圧依頼日"
+        },
+        {
+          "Name": "P_転圧日程通知日"
+        },
+        {
+          "Name": "P_転圧希望開始日"
+        },
+        {
+          "Name": "P_転圧希望終了日"
+        },
+        {
+          "Name": "P_転圧予定開始日"
+        },
+        {
+          "Name": "P_転圧予定終了日"
+        },
+        {
+          "Name": "P_転圧報告書受領予定日"
+        },
+        {
+          "Name": "P_転圧実施開始日"
+        },
+        {
+          "Name": "P_転圧実施終了日"
+        },
+        {
+          "Name": "P_施工審査結果"
+        },
+        {
+          "Name": "P_施工審査コメント"
+        },
+        {
+          "Name": "P_転圧報告書受領日"
+        },
+        {
+          "Name": "P_転圧報告書納品日"
+        },
+        {
+          "Name": "P_再調査フラグ"
+        },
+        {
+          "Name": "P_転圧ステータスID"
+        },
+        {
+          "Name": "P_元_転圧登録日"
+        },
+        {
+          "Name": "P_元_転圧会社ID"
+        },
+        {
+          "Name": "P_元_転圧区分"
+        },
+        {
+          "Name": "P_元_設計作成日"
+        },
+        {
+          "Name": "P_元_見積依頼日"
+        },
+        {
+          "Name": "P_元_見積送付日"
+        },
+        {
+          "Name": "P_元_転圧受注日"
+        },
+        {
+          "Name": "P_元_転圧依頼日"
+        },
+        {
+          "Name": "P_元_転圧日程通知日"
+        },
+        {
+          "Name": "P_元_転圧希望開始日"
+        },
+        {
+          "Name": "P_元_転圧希望終了日"
+        },
+        {
+          "Name": "P_元_転圧予定開始日"
+        },
+        {
+          "Name": "P_元_転圧予定終了日"
+        },
+        {
+          "Name": "P_元_転圧報告書受領予定日"
+        },
+        {
+          "Name": "P_元_転圧実施開始日"
+        },
+        {
+          "Name": "P_元_転圧実施終了日"
+        },
+        {
+          "Name": "P_元_施工審査結果"
+        },
+        {
+          "Name": "P_元_施工審査コメント"
+        },
+        {
+          "Name": "P_元_施工承認フラグ"
+        },
+        {
+          "Name": "P_元_転圧報告書受領日"
+        },
+        {
+          "Name": "P_元_転圧報告書納品日"
+        },
+        {
+          "Name": "P_元_再調査フラグ"
+        },
+        {
+          "Name": "P_元_転圧ステータスID"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ServerTransactionCommand, ServerDesignerCommon",
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "転圧ID",
+          "ID": "238d0899ef9c4eadbe71c4d1bb2ba510"
+        },
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "支払先ID",
+          "ID": "72581e646b704cdfb7eecec5ebcb73b0"
+        },
+        {
+          "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+          "ServerCommandName": "登録更新ラベル取得",
+          "ResultErrorCodeTo": {
+            "SerializeProperty": "リターンコード"
+          },
+          "ResultMessageTo": {
+            "SerializeProperty": "リターンメッセージ"
+          },
+          "ReturnPropertiesTo": [
+            {
+              "ResultPropertyName": "R_ラベル名",
+              "ResultTo": {
+                "SerializeProperty": "最終更新ラベル"
+              }
+            }
+          ],
+          "RefreshAfterFinish": true,
+          "CheckDataValidation": true
+        },
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "転圧報告書受領予定日",
+          "ParameterValue": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=P_転圧報告書受領予定日"
+          },
+          "ID": "f8b635385b884d6dbf34b133012d88de"
+        },
+        {
+          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+          "ParameterName": "転圧計上商品ID",
+          "TableValue": {
+            "TableName": "m_product",
+            "OnlyGetValue": true,
+            "TableValueType": 0,
+            "BindingInfos": [
+              {
+                "BindingInfo": {
+                  "TableName": "m_product",
+                  "ColumnName": "product_id"
+                },
+                "ColumnName": "product_id"
+              }
+            ],
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "m_product",
+                "ColumnName": "compaction_account_product_flg"
+              },
+              "Value": "1"
+            }
+          },
+          "ID": "fe4249f2e7f143bca44177845e300246"
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                        "ParamObject": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=P_転圧予定終了日"
+                        }
+                      },
+                      "value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧予定終了日"
+                      },
+                      "compareType": 1
+                    },
+                    "Condition2": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                        "ParamObject": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=P_転圧会社ID"
+                        }
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧予定終了日"
+                      }
+                    },
+                    "value": "%Null%",
+                    "compareType": 1
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                        "ParamObject": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=P_転圧報告書受領予定日"
+                        }
+                      },
+                      "value": "%Null%",
+                      "LeftBracket": 1
+                    },
+                    "Condition2": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                        "ParamObject": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=P_転圧会社ID"
+                        }
+                      },
+                      "value": "%Null%",
+                      "compareType": 1
+                    }
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                      "ParamObject": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧予定終了日"
+                      }
+                    },
+                    "value": "%Null%",
+                    "compareType": 1,
+                    "RightBracket": 1
+                  }
+                },
+                "RelationType": 1
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                  "ServerCommandName": "報告書受領予定日取得",
+                  "Parameters": [
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧会社ID"
+                      },
+                      "ParamName": "P_顧客ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧予定終了日"
+                      },
+                      "ParamName": "P_予定終了日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "P_調査報告フラグ"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "P_測量報告フラグ"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": "1",
+                      "ParamName": "P_転圧報告フラグ"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "ParamName": "P_工事報告フラグ"
+                    }
+                  ],
+                  "ReturnPropertiesTo": [
+                    {
+                      "ResultPropertyName": "R_受領予定日",
+                      "ResultTo": {
+                        "SerializeProperty": "受領予定日"
+                      }
+                    }
+                  ],
+                  "RefreshAfterFinish": true,
+                  "CheckDataValidation": true
+                },
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "転圧報告書受領予定日",
+                  "ParameterValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=受領予定日"
+                  },
+                  "ID": "6f2efb8ee5e14323a7b57be182851d4a"
+                }
+              ],
+              "ID": "cd8a1099-183c-44cd-a1d8-bf3613020ef3"
+            },
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_転圧予定終了日"
+                  }
+                },
+                "value": "%Null%"
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "転圧報告書受領予定日",
+                  "ID": "73f14ee5bea741d693f3287a65c259f1"
+                }
+              ],
+              "ID": "1c31e3b9-76f2-45a1-a6f4-38f48b07cf38"
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_転圧会社ID"
+                  }
+                },
+                "value": "%Null%",
+                "compareType": 1
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                  "ServerCommandName": "支払先ID取得",
+                  "Parameters": [
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧会社ID"
+                      },
+                      "ParamName": "P_外注先ID"
+                    }
+                  ],
+                  "ReturnPropertiesTo": [
+                    {
+                      "ResultPropertyName": "R_支払先ID",
+                      "ResultTo": {
+                        "SerializeProperty": "支払先ID"
+                      }
+                    },
+                    {
+                      "ResultPropertyName": "R_支払先略称名"
+                    },
+                    {
+                      "ResultPropertyName": "R_外注先略称名"
+                    }
+                  ],
+                  "RefreshAfterFinish": true,
+                  "CheckDataValidation": true
+                }
+              ],
+              "ID": "9abf5c4e-f9ee-444b-a2a0-a202e93e8519"
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_転圧ID"
+                  }
+                },
+                "value": "%Null%"
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "転圧ST",
+                  "TableValue": {
+                    "TableName": "m_compaction_status",
+                    "TableValueType": 1,
+                    "BindingInfos": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "m_compaction_status",
+                          "ColumnName": "order_status_id"
+                        },
+                        "ColumnName": "申込ステータスID"
+                      }
+                    ],
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "m_compaction_status",
+                        "ColumnName": "compaction_status_id"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧ステータスID"
+                      }
+                    }
+                  },
+                  "ID": "bd09050adb3944d4ae4d9d5868ffe607"
+                },
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "t_object_compaction",
+                  "UpdateType": "add",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に追加してもよろしいですか？",
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "object_order_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_申込ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_register_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=TODAY()"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_customer_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧会社ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_type",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧区分"
+                      }
+                    },
+                    {
+                      "ColumnName": "design_create_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_設計作成日"
+                      }
+                    },
+                    {
+                      "ColumnName": "estimate_request_daste",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_見積依頼日"
+                      }
+                    },
+                    {
+                      "ColumnName": "estimate_sending_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_見積送付日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_order_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧受注日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_request_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧依頼日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_notification_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧日程通知日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_preferred_sttdate",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧希望開始日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_preferred_enddate",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧希望終了日"
+                      }
+                    },
+                    {
+                      "ColumnName": "scheduled_compaction_sttdate",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧予定開始日"
+                      }
+                    },
+                    {
+                      "ColumnName": "scheduled_compaction_enddate",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧予定終了日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_report_scheduled_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=転圧報告書受領予定日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_enforce_sttdate",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧実施開始日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_enforce_enddate",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧実施終了日"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_check_result",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_施工審査結果"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_check_comment",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_施工審査コメント"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_report_receipt_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧報告書受領日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_report_delivery_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧報告書納品日"
+                      }
+                    },
+                    {
+                      "ColumnName": "survey_again_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_再調査フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_status_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧ステータスID"
+                      }
+                    },
+                    {
+                      "ColumnName": "last_updated_label",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=最終更新ラベル"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_enforce_year_month",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_転圧実施終了日<>\"\",TEXT(P_転圧実施終了日,\"yyyymm\"),\"\")"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_delivery_year_month",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_転圧報告書納品日<>\"\",TEXT(P_転圧報告書納品日,\"yyyymm\"),\"\")"
+                      }
+                    }
+                  ],
+                  "ParamNameToSaveNewRowValue": "New転圧情報"
+                },
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "t_object_order",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に更新してもよろしいですか？",
+                  "RowsToUpdate": 1,
+                  "RowsToUpdateCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "t_object_order",
+                      "ColumnName": "object_order_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_申込ID"
+                    }
+                  },
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "latest_compaction_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=New転圧情報.転圧ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "order_status_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=転圧ST.申込ステータスID"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "転圧ID",
+                  "ParameterValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=New転圧情報.転圧ID"
+                  },
+                  "ID": "228c8724119243308826ee0026903b0b"
+                }
+              ],
+              "Comments": "新規登録",
+              "ID": "4e87b270-dba7-4e28-a82a-3bf4dcde3419"
+            },
+            {
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                  "ServerCommandName": "転圧データ排他チェック",
+                  "Parameters": [
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧ID"
+                      },
+                      "ParamName": "P_転圧ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧登録日"
+                      },
+                      "ParamName": "P_元_転圧登録日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧会社ID"
+                      },
+                      "ParamName": "P_元_転圧会社ID"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧区分"
+                      },
+                      "ParamName": "P_元_転圧区分"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_設計作成日"
+                      },
+                      "ParamName": "P_元_設計作成日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_見積依頼日"
+                      },
+                      "ParamName": "P_元_見積依頼日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_見積送付日"
+                      },
+                      "ParamName": "P_元_見積送付日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧受注日"
+                      },
+                      "ParamName": "P_元_転圧受注日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧依頼日"
+                      },
+                      "ParamName": "P_元_転圧依頼日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧日程通知日"
+                      },
+                      "ParamName": "P_元_転圧日程通知日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧希望開始日"
+                      },
+                      "ParamName": "P_元_転圧希望開始日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧希望終了日"
+                      },
+                      "ParamName": "P_元_転圧希望終了日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧予定開始日"
+                      },
+                      "ParamName": "P_元_転圧予定開始日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧予定終了日"
+                      },
+                      "ParamName": "P_元_転圧予定終了日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧報告書受領予定日"
+                      },
+                      "ParamName": "P_元_転圧報告書受領予定日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧実施開始日"
+                      },
+                      "ParamName": "P_元_転圧実施開始日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧実施終了日"
+                      },
+                      "ParamName": "P_元_転圧実施終了日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_施工審査結果"
+                      },
+                      "ParamName": "P_元_施工審査結果"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_施工審査コメント"
+                      },
+                      "ParamName": "P_元_施工審査コメント"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_施工承認フラグ"
+                      },
+                      "ParamName": "P_元_施工承認フラグ"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧報告書受領日"
+                      },
+                      "ParamName": "P_元_転圧報告書受領日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧報告書納品日"
+                      },
+                      "ParamName": "P_元_転圧報告書納品日"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_再調査フラグ"
+                      },
+                      "ParamName": "P_元_再調査フラグ"
+                    },
+                    {
+                      "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_元_転圧ステータスID"
+                      },
+                      "ParamName": "P_元_転圧ステータスID"
+                    }
+                  ],
+                  "ResultErrorCodeTo": {
+                    "SerializeProperty": "リターンコード"
+                  },
+                  "ResultMessageTo": {
+                    "SerializeProperty": "リターンメッセージ"
+                  },
+                  "RefreshAfterFinish": true,
+                  "CheckDataValidation": true
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=リターンコード"
+                          }
+                        },
+                        "value": "0",
+                        "compareType": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+                          "ErrorCode": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=リターンコード"
+                          },
+                          "Message": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=リターンメッセージ"
+                          },
+                          "CustomReturns": []
+                        }
+                      ],
+                      "ID": "9329d466-af29-4821-82ac-3ff94e6c397c"
+                    }
+                  ]
+                },
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "元の転圧情報",
+                  "TableValue": {
+                    "TableName": "t_object_compaction",
+                    "TableValueType": 1,
+                    "BindingInfos": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "t_object_compaction",
+                          "ColumnName": "compaction_customer_id"
+                        },
+                        "ColumnName": "転圧会社ID"
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "t_object_compaction",
+                          "ColumnName": "object_order_id",
+                          "RelationBinding": {
+                            "RelatedTable": "t_object_order",
+                            "RelatedColumn": "object_order_id",
+                            "DisplayColumn": "group_id"
+                          }
+                        },
+                        "ColumnName": "申込グループID"
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "t_object_compaction",
+                          "ColumnName": "object_order_id",
+                          "RelationBinding": {
+                            "RelatedTable": "t_object_order",
+                            "RelatedColumn": "object_order_id",
+                            "DisplayColumn": "builder_id"
+                          }
+                        },
+                        "ColumnName": "住宅事業者ID"
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "t_object_compaction",
+                          "ColumnName": "compaction_enforce_enddate"
+                        },
+                        "ColumnName": "転圧実施終了日"
+                      }
+                    ],
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "t_object_compaction",
+                        "ColumnName": "compaction_id"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧ID"
+                      }
+                    }
+                  },
+                  "ID": "d3ca6f11161041deb400e0291b9d4794",
+                  "Comments": "変更前の情報を保持"
+                },
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "t_object_compaction",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に更新してもよろしいですか？",
+                  "RowsToUpdate": 1,
+                  "RowsToUpdateCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "t_object_compaction",
+                      "ColumnName": "compaction_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=P_転圧ID"
+                    }
+                  },
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "compaction_register_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧登録日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_customer_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧会社ID"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_type",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧区分"
+                      }
+                    },
+                    {
+                      "ColumnName": "design_create_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_設計作成日"
+                      }
+                    },
+                    {
+                      "ColumnName": "estimate_request_daste",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_見積依頼日"
+                      }
+                    },
+                    {
+                      "ColumnName": "estimate_sending_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_見積送付日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_order_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧受注日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_request_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧依頼日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_notification_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧日程通知日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_preferred_sttdate",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧希望開始日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_preferred_enddate",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧希望終了日"
+                      }
+                    },
+                    {
+                      "ColumnName": "scheduled_compaction_sttdate",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧予定開始日"
+                      }
+                    },
+                    {
+                      "ColumnName": "scheduled_compaction_enddate",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧予定終了日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_report_scheduled_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=転圧報告書受領予定日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_enforce_sttdate",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧実施開始日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_enforce_enddate",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧実施終了日"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_check_result",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_施工審査結果"
+                      }
+                    },
+                    {
+                      "ColumnName": "construction_check_comment",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_施工審査コメント"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_report_receipt_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧報告書受領日"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_report_delivery_date",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧報告書納品日"
+                      }
+                    },
+                    {
+                      "ColumnName": "survey_again_flg",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_再調査フラグ"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_status_id",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=P_転圧ステータスID"
+                      }
+                    },
+                    {
+                      "ColumnName": "last_updated_label",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=最終更新ラベル"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_enforce_year_month",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_転圧実施終了日<>\"\",TEXT(P_転圧実施終了日,\"yyyymm\"),\"\")"
+                      }
+                    },
+                    {
+                      "ColumnName": "compaction_delivery_year_month",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=IF(P_転圧報告書納品日<>\"\",TEXT(P_転圧報告書納品日,\"yyyymm\"),\"\")"
+                      }
+                    }
+                  ],
+                  "ParamNameToSaveNewRowValue": "New転圧情報"
+                },
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "転圧ID",
+                  "ParameterValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_転圧ID"
+                  },
+                  "ID": "e15556e738d7463591eb59f4352f8477"
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                            "ParamObject": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=P_転圧実施終了日"
+                            }
+                          },
+                          "value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=元の転圧情報.転圧実施終了日"
+                          },
+                          "compareType": 1
+                        },
+                        "Condition2": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                            "ParamObject": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=P_転圧実施終了日"
+                            }
+                          },
+                          "value": "%Null%",
+                          "compareType": 1
+                        }
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                          "ParameterName": "転圧備考",
+                          "ParameterValue": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=\"転圧完了日：\"&TEXT(P_転圧実施終了日,\"yyyy/mm/dd\")"
+                          },
+                          "ID": "7e4057c189b0473f9032ef62bde0eb95"
+                        },
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "t_object_product",
+                          "ShowConfirm": false,
+                          "ConfirmText": "本当に更新してもよろしいですか？",
+                          "RowsToUpdate": 1,
+                          "RowsToUpdateCondition": {
+                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                            "Condition1": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "Condition1": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "t_object_product",
+                                  "ColumnName": "product_id"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=転圧計上商品ID"
+                                }
+                              },
+                              "Condition2": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "t_object_product",
+                                  "ColumnName": "compaction_id"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=P_転圧ID"
+                                }
+                              }
+                            },
+                            "Condition2": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "Condition1": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "t_object_product",
+                                  "ColumnName": "sales_id"
+                                },
+                                "Value": "%Null%",
+                                "LeftBracket": 1
+                              },
+                              "Condition2": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "t_object_product",
+                                  "ColumnName": "sales_id",
+                                  "RelationBinding": {
+                                    "RelatedTable": "t_sales",
+                                    "RelatedColumn": "sales_id",
+                                    "DisplayColumn": "pdf_save_flg"
+                                  }
+                                },
+                                "Value": "0",
+                                "RightBracket": 1
+                              },
+                              "RelationType": 1
+                            }
+                          },
+                          "UpdateValues": [
+                            {
+                              "ColumnName": "remarks",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=転圧備考"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "t_sales",
+                          "ShowConfirm": false,
+                          "ConfirmText": "本当に更新してもよろしいですか？",
+                          "RowsToUpdate": 1,
+                          "RowsToUpdateCondition": {
+                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                            "Condition1": {
+                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                              "Condition1": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "t_sales",
+                                  "ColumnName": "object_product_id",
+                                  "RelationBinding": {
+                                    "RelatedTable": "t_object_product",
+                                    "RelatedColumn": "object_product_id",
+                                    "DisplayColumn": "compaction_id"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=P_転圧ID"
+                                }
+                              },
+                              "Condition2": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "t_sales",
+                                  "ColumnName": "billing_product_id"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=転圧計上商品ID"
+                                }
+                              }
+                            },
+                            "Condition2": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "t_sales",
+                                "ColumnName": "pdf_save_flg"
+                              },
+                              "Value": "0"
+                            }
+                          },
+                          "UpdateValues": [
+                            {
+                              "ColumnName": "billing_remarks",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=転圧備考"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "7632ef4f-fff7-4a97-a8fc-c0b496565eda"
+                    }
+                  ]
+                }
+              ],
+              "ID": "f5044290-af8c-4090-beaa-7ef2160af46d"
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=P_転圧区分"
+                  }
+                },
+                "value": "1"
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "転圧商品件数",
+                  "TableValue": {
+                    "TableName": "t_object_product",
+                    "TableValueType": 3,
+                    "SqlCondition": {
+                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                      "Condition1": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "t_object_product",
+                          "ColumnName": "compaction_id"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=P_転圧ID"
+                        }
+                      },
+                      "Condition2": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "t_object_product",
+                          "ColumnName": "product_id",
+                          "RelationBinding": {
+                            "RelatedTable": "m_product",
+                            "RelatedColumn": "product_id",
+                            "DisplayColumn": "compaction_account_product_flg"
+                          }
+                        },
+                        "Value": "1"
+                      }
+                    }
+                  },
+                  "ID": "f5467e7bf1f04b62b47db1f2c812a487"
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                          "ParamObject": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=転圧商品件数"
+                          }
+                        },
+                        "value": "0"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                          "ParameterName": "転圧商品",
+                          "TableValue": {
+                            "TableName": "m_product",
+                            "TableValueType": 1,
+                            "BindingInfos": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "m_product",
+                                  "ColumnName": "product_id"
+                                },
+                                "ColumnName": "商品ID"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "m_product",
+                                  "ColumnName": "accounting_type"
+                                },
+                                "ColumnName": "計上区分"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "m_product",
+                                  "ColumnName": "billing_product_name"
+                                },
+                                "ColumnName": "請求品名"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "m_product",
+                                  "ColumnName": "standard_price"
+                                },
+                                "ColumnName": "標準単価"
+                              }
+                            ],
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "m_product",
+                                "ColumnName": "compaction_account_product_flg"
+                              },
+                              "Value": "1"
+                            }
+                          },
+                          "ID": "053c54d48f4c45bb8a0bf4e8cea71c6a"
+                        },
+                        {
+                          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                          "ParameterName": "物件申込",
+                          "TableValue": {
+                            "TableName": "t_object_order",
+                            "TableValueType": 1,
+                            "BindingInfos": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "t_object_order",
+                                  "ColumnName": "group_id"
+                                },
+                                "ColumnName": "申込グループID"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "t_object_order",
+                                  "ColumnName": "order_type_id"
+                                },
+                                "ColumnName": "申込タイプID"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "t_object_order",
+                                  "ColumnName": "builder_id"
+                                },
+                                "ColumnName": "住宅事業者ID"
+                              }
+                            ],
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "t_object_order",
+                                "ColumnName": "object_order_id"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=P_申込ID"
+                              }
+                            }
+                          },
+                          "ID": "017d2315df794e31bb981d0ad07ec7b1"
+                        },
+                        {
+                          "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                          "ServerCommandName": "販売単価取得",
+                          "Parameters": [
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=P_申込ID"
+                              },
+                              "ParamName": "P_申込ID"
+                            },
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=転圧商品.商品ID"
+                              },
+                              "ParamName": "P_商品ID"
+                            },
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "ParamName": "P_入力単価"
+                            }
+                          ],
+                          "ReturnPropertiesTo": [
+                            {
+                              "ResultPropertyName": "R_販売単価",
+                              "ResultTo": {
+                                "SerializeProperty": "販売単価"
+                              }
+                            },
+                            {
+                              "ResultPropertyName": "R_請求品名",
+                              "ResultTo": {
+                                "SerializeProperty": "請求品名"
+                              }
+                            },
+                            {
+                              "ResultPropertyName": "R_マスタ単価取得フラグ",
+                              "ResultTo": {
+                                "SerializeProperty": "マスタ単価取得フラグ"
+                              }
+                            },
+                            {
+                              "ResultPropertyName": "R_マスタ単価変更フラグ"
+                            },
+                            {
+                              "ResultPropertyName": "R_単価変更ユーザーID"
+                            },
+                            {
+                              "ResultPropertyName": "R_単価変更日時"
+                            }
+                          ],
+                          "RefreshAfterFinish": true,
+                          "CheckDataValidation": true
+                        },
+                        {
+                          "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                          "ServerCommandName": "請求先ID取得",
+                          "Parameters": [
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=物件申込.申込グループID"
+                              },
+                              "ParamName": "P_グループID"
+                            },
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=物件申込.住宅事業者ID"
+                              },
+                              "ParamName": "P_住宅事業者ID"
+                            },
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": "0",
+                              "ParamName": "P_調査商品フラグ"
+                            },
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": "0",
+                              "ParamName": "P_測量商品フラグ"
+                            },
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": "0",
+                              "ParamName": "P_解析商品フラグ"
+                            },
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": "1",
+                              "ParamName": "P_転圧商品フラグ"
+                            },
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": "0",
+                              "ParamName": "P_工事商品フラグ"
+                            },
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": "0",
+                              "ParamName": "P_保証商品フラグ"
+                            }
+                          ],
+                          "ReturnPropertiesTo": [
+                            {
+                              "ResultPropertyName": "R_請求先ID",
+                              "ResultTo": {
+                                "SerializeProperty": "請求先ID"
+                              }
+                            },
+                            {
+                              "ResultPropertyName": "R_請求先略称名"
+                            },
+                            {
+                              "ResultPropertyName": "R_発注書必要フラグ",
+                              "ResultTo": {
+                                "SerializeProperty": "発注書必要フラグ"
+                              }
+                            }
+                          ],
+                          "RefreshAfterFinish": true,
+                          "CheckDataValidation": true
+                        },
+                        {
+                          "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                          "ServerCommandName": "外注原価取得",
+                          "Parameters": [
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=P_申込ID"
+                              },
+                              "ParamName": "P_申込ID"
+                            },
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=P_転圧会社ID"
+                              },
+                              "ParamName": "P_外注先ID"
+                            },
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=転圧商品.商品ID"
+                              },
+                              "ParamName": "P_商品ID"
+                            },
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "ParamName": "R_入力原価"
+                            }
+                          ],
+                          "ReturnPropertiesTo": [
+                            {
+                              "ResultPropertyName": "R_マスタ原価",
+                              "ResultTo": {
+                                "SerializeProperty": "マスタ原価"
+                              }
+                            },
+                            {
+                              "ResultPropertyName": "R_マスタ原価取得フラグ",
+                              "ResultTo": {
+                                "SerializeProperty": "マスタ原価取得フラグ"
+                              }
+                            },
+                            {
+                              "ResultPropertyName": "R_マスタ原価変更フラグ"
+                            },
+                            {
+                              "ResultPropertyName": "R_原価変更ユーザーID"
+                            },
+                            {
+                              "ResultPropertyName": "R_原価変更日時"
+                            }
+                          ],
+                          "RefreshAfterFinish": true,
+                          "CheckDataValidation": true
+                        },
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "t_object_product",
+                          "UpdateType": "add",
+                          "ShowConfirm": false,
+                          "ConfirmText": "本当に追加してもよろしいですか？",
+                          "UpdateValues": [
+                            {
+                              "ColumnName": "object_order_id",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=P_申込ID"
+                              }
+                            },
+                            {
+                              "ColumnName": "register_date",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=TODAY()"
+                              }
+                            },
+                            {
+                              "ColumnName": "accounting_type",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=転圧商品.計上区分"
+                              }
+                            },
+                            {
+                              "ColumnName": "product_id",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=転圧商品.商品ID"
+                              }
+                            },
+                            {
+                              "ColumnName": "product_name",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=請求品名"
+                              }
+                            },
+                            {
+                              "ColumnName": "billing_comp_id",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=請求先ID"
+                              }
+                            },
+                            {
+                              "ColumnName": "sales_amount",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=販売単価"
+                              }
+                            },
+                            {
+                              "ColumnName": "outsourcing_id",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=P_転圧会社ID"
+                              }
+                            },
+                            {
+                              "ColumnName": "payment_comp_id",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=支払先ID"
+                              }
+                            },
+                            {
+                              "ColumnName": "purchase_amount",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=マスタ原価"
+                              }
+                            },
+                            {
+                              "ColumnName": "purchase_required_flg",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=発注書必要フラグ"
+                              }
+                            },
+                            {
+                              "ColumnName": "compaction_id",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=転圧ID"
+                              }
+                            },
+                            {
+                              "ColumnName": "get_master_price_flg",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=マスタ単価取得フラグ"
+                              }
+                            },
+                            {
+                              "ColumnName": "get_master_cost_flg",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=マスタ原価取得フラグ"
+                              }
+                            }
+                          ],
+                          "ParamNameToSaveNewRowValue": "New転圧商品"
+                        },
+                        {
+                          "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                          "ServerCommandName": "計上確定可能フラグ取得処理",
+                          "Parameters": [
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=New転圧商品.物件商品ID"
+                              },
+                              "ParamName": "P_物件商品ID"
+                            }
+                          ],
+                          "ReturnPropertiesTo": [
+                            {
+                              "ResultPropertyName": "R_売上計上確定可能フラグ",
+                              "ResultTo": {
+                                "SerializeProperty": "売上計上確定可能フラグ"
+                              }
+                            },
+                            {
+                              "ResultPropertyName": "R_仕入計上確定可能フラグ",
+                              "ResultTo": {
+                                "SerializeProperty": "仕入計上確定可能フラグ"
+                              }
+                            },
+                            {
+                              "ResultPropertyName": "R_売上計上ステータスID",
+                              "ResultTo": {
+                                "SerializeProperty": "売上計上ステータスID"
+                              }
+                            },
+                            {
+                              "ResultPropertyName": "R_仕入計上ステータスID",
+                              "ResultTo": {
+                                "SerializeProperty": "仕入計上ステータスID"
+                              }
+                            },
+                            {
+                              "ResultPropertyName": "R_計上確定可能フラグ",
+                              "ResultTo": {
+                                "SerializeProperty": "計上確定可能フラグ"
+                              }
+                            }
+                          ],
+                          "RefreshAfterFinish": true,
+                          "CheckDataValidation": true
+                        },
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "t_object_product",
+                          "ShowConfirm": false,
+                          "ConfirmText": "本当に更新してもよろしいですか？",
+                          "RowsToUpdate": 1,
+                          "RowsToUpdateCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "t_object_product",
+                              "ColumnName": "object_product_id"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=New転圧商品.物件商品ID"
+                            }
+                          },
+                          "UpdateValues": [
+                            {
+                              "ColumnName": "sales_account_status_id",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=売上計上ステータスID"
+                              }
+                            },
+                            {
+                              "ColumnName": "purchase_account_status_id",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=仕入計上ステータスID"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "5715b9e1-5015-47b3-860a-bac0c9cba529"
+                    }
+                  ]
+                }
+              ],
+              "Comments": "自社施工の場合",
+              "ID": "a482a715-5370-42d0-a651-73debc35c708"
+            }
+          ]
+        },
+        {
+          "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+          "ErrorCode": "0",
+          "CustomReturns": []
+        }
+      ]
+    }
+  ],
+  "Name": "転圧データ更新処理"
+}

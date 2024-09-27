@@ -1,0 +1,1108 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 29,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "45": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "54": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "66": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "67": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "74": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "Count": 75
+  },
+  "Values": {
+    "1,69": "▼物件ID",
+    "3,2": "選択",
+    "3,9": "住宅事業者名",
+    "3,60": "申込ID",
+    "3,63": "選択フラグ",
+    "4,69": "▼申込ID",
+    "7,69": "▼顧客名",
+    "10,69": "▼現在の物件ID",
+    "13,69": "▼クエリ条件",
+    "14,69": 0,
+    "27,3": "選択値をクリアして戻る",
+    "27,52": "選択する"
+  },
+  "Formulas": {
+    "8,69": "IF(物件ID>0,ODATA(\"t_object?$select=物件名&$filter=object_id eq \"&IF(ISBLANK(物件ID),\"null\",物件ID)),\"\")",
+    "25,3": "\"現在、「\"&BR9&\"｣が選択されています\"",
+    "4,63": "IF(BF5=$BR$12,1,0)"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 70"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "検索ワードを入力してください"
+      }
+    },
+    "1,20": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ToolTip": "住宅事業者名、物件名、物件住所から検索が可能です",
+        "TemplateKey": "余白2",
+        "ImagePath": "Mobile/452_help_1.svg",
+        "BuiltIn": true,
+        "Color": "#FF005B47",
+        "UseCellForeColor": true
+      }
+    },
+    "3,2": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "t_object",
+        "RowIndex": 3,
+        "ColumnIndex": 2,
+        "ColumnCount": 65,
+        "RowCount": 22,
+        "SelectionMode": 1,
+        "IsSingleSelection": true,
+        "DisableAutoSelectRow": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "物件リストビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 2,
+            "ColumnBindingInfo": {
+              "TableName": "t_object",
+              "ColumnName": "object_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=物件検索!BR15"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 6,
+                "ColumnBindingInfo": {
+                  "TableName": "t_object",
+                  "ColumnName": "object_name"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!C2"
+                },
+                "LeftBracket": 1
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 6,
+                "ColumnBindingInfo": {
+                  "TableName": "t_object",
+                  "ColumnName": "物件住所"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!C2"
+                }
+              },
+              "RelationType": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "t_object",
+                "ColumnName": "object_id",
+                "RelationBinding": {
+                  "RelatedTable": "t_object_order",
+                  "RelatedColumn": "object_id",
+                  "DisplayColumn": "builder_id",
+                  "NextRelationBinding": {
+                    "RelatedTable": "m_customer",
+                    "RelatedColumn": "customer_id",
+                    "DisplayColumn": "customer_name"
+                  }
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=物件検索!C2"
+              },
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "t_object",
+                "ColumnName": "object_id"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!$BR$12"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!$BF5"
+                }
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Small",
+        "ImagePath": "Application/144_check_1.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=物件検索!BL5=1"
+            },
+            "StyleInfo": {
+              "BorderTop": "Accent 1 40|1",
+              "BorderBottom": "Accent 1 40|1",
+              "Background": "#FFE5FFF0",
+              "Foreground": "Accent 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,4": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!$BR$12"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!$BF5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "t_object",
+        "ColumnName": "物件番号"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=物件検索!BL5=1"
+            },
+            "StyleInfo": {
+              "BorderTop": "Accent 1 40|1",
+              "BorderBottom": "Accent 1 40|1",
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,9": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!$BR$12"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!$BF5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "t_object",
+        "ColumnName": "latest_order_id",
+        "RelationBinding": {
+          "RelatedTable": "t_object_order",
+          "RelatedColumn": "object_order_id",
+          "DisplayColumn": "builder_id",
+          "NextRelationBinding": {
+            "RelatedTable": "m_customer",
+            "RelatedColumn": "customer_id",
+            "DisplayColumn": "内部顧客名"
+          }
+        }
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=物件検索!BL5=1"
+            },
+            "StyleInfo": {
+              "BorderTop": "Accent 1 40|1",
+              "BorderBottom": "Accent 1 40|1",
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,20": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!$BR$12"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!$BF5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "t_object",
+        "ColumnName": "物件名"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=物件検索!BL5=1"
+            },
+            "StyleInfo": {
+              "BorderTop": "Accent 1 40|1",
+              "BorderBottom": "Accent 1 40|1",
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,37": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!$BR$12"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!$BF5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "t_object",
+        "ColumnName": "物件住所"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=物件検索!BL5=1"
+            },
+            "StyleInfo": {
+              "BorderTop": "Accent 1 40|1",
+              "BorderBottom": "Accent 1 40|1",
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,57": {
+      "BindingInfo": {
+        "TableName": "t_object",
+        "ColumnName": "object_id"
+      }
+    },
+    "4,60": {
+      "BindingInfo": {
+        "TableName": "t_object",
+        "ColumnName": "latest_order_id"
+      }
+    },
+    "4,63": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      }
+    },
+    "25,3": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ISBLANK(物件検索!$BR$3)"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "25,48": {
+      "CellType": {
+        "$type": "Forguncy.PageNavigateCellType, ServerDesignerCommon",
+        "PageingListviewName": "物件リストビュー",
+        "PageLimitRowCount": 100,
+        "FirstImage": {
+          "Name": "Arrow/347_move_first.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1"
+        },
+        "PreviousImage": {
+          "Name": "Arrow/349_left_arrow.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1"
+        },
+        "NextImage": {
+          "Name": "Arrow/350_right_arrow.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1"
+        },
+        "LastImage": {
+          "Name": "Arrow/348_move_last.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1"
+        },
+        "ImageSize": 14
+      }
+    },
+    "27,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!物件ID"
+                },
+                "Value": "%Null%"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択値をクリアして戻る",
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ISBLANK(物件検索!物件ID)"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "27,52": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!物件ID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!BF5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!申込ID"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件検索!BI5"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=物件検索!$BR$12=\"\""
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Background": 2,
+        "FontFamily": 1
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "Foreground": 3
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 4,
+        "HorizontalAlignment": 5,
+        "Underline": false
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 4,
+        "TextIndent": 4,
+        "Underline": false,
+        "ShrinkToFit": false
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 5
+      },
+      {
+        "Background": 7,
+        "FontFamily": 1
+      },
+      {
+        "Background": 7
+      },
+      {
+        "Background": 8
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 9,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 10,
+        "BorderTop": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": null
+      },
+      {
+        "BorderTop": null
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 11,
+        "HorizontalAlignment": 10,
+        "Underline": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 10
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 11,
+        "HorizontalAlignment": 9,
+        "Underline": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body",
+        "#FFFFC000",
+        "Background 1 -25",
+        "#FF000000",
+        "Center",
+        "Background 1 0",
+        "#FFFFFF00",
+        "Background 1 -15",
+        "Left",
+        "Right",
+        "#FF005B47"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,20": 1,
+      "1,21": 1,
+      "1,41": 1,
+      "1,69": 1,
+      "1,70": 1,
+      "1,71": 1,
+      "2,2": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 0,
+      "2,69": 2,
+      "2,70": 1,
+      "2,71": 1,
+      "3,2": 3,
+      "3,4": 4,
+      "3,9": 4,
+      "3,20": 4,
+      "3,37": 4,
+      "3,57": 4,
+      "3,58": 1,
+      "3,59": 1,
+      "3,60": 3,
+      "3,63": 3,
+      "3,69": 1,
+      "3,70": 1,
+      "3,71": 1,
+      "4,2": 5,
+      "4,4": 6,
+      "4,9": 7,
+      "4,20": 7,
+      "4,37": 7,
+      "4,56": 8,
+      "4,57": 4,
+      "4,58": 1,
+      "4,59": 9,
+      "4,60": 3,
+      "4,62": 8,
+      "4,63": 10,
+      "4,65": 8,
+      "4,69": 1,
+      "4,70": 1,
+      "4,71": 1,
+      "5,69": 2,
+      "5,70": 1,
+      "5,71": 1,
+      "6,69": 1,
+      "6,70": 1,
+      "6,71": 1,
+      "7,69": 1,
+      "7,70": 1,
+      "7,71": 1,
+      "8,69": 11,
+      "8,70": 1,
+      "8,71": 1,
+      "11,69": 12,
+      "14,69": 13,
+      "25,3": 14,
+      "25,4": 1,
+      "25,5": 1,
+      "25,6": 1,
+      "25,7": 1,
+      "25,8": 1,
+      "25,9": 1,
+      "25,10": 1,
+      "25,11": 1,
+      "25,12": 1,
+      "25,13": 1,
+      "25,14": 1,
+      "25,15": 1,
+      "25,16": 1,
+      "25,17": 1,
+      "25,18": 1,
+      "25,19": 1,
+      "25,20": 1,
+      "25,21": 1,
+      "25,22": 1,
+      "25,23": 1,
+      "25,24": 1,
+      "25,25": 1,
+      "25,48": 15,
+      "25,49": 16,
+      "25,50": 16,
+      "25,51": 16,
+      "25,52": 16,
+      "25,53": 16,
+      "25,54": 16,
+      "25,55": 16,
+      "25,56": 16,
+      "25,57": 17,
+      "25,58": 17,
+      "26,3": 14,
+      "26,4": 14,
+      "26,5": 14,
+      "26,6": 14,
+      "26,7": 14,
+      "26,8": 14,
+      "26,9": 14,
+      "26,10": 14,
+      "26,11": 14,
+      "26,12": 14,
+      "26,13": 14,
+      "26,14": 14,
+      "26,15": 14,
+      "26,16": 14,
+      "26,17": 14,
+      "26,18": 14,
+      "26,19": 14,
+      "26,20": 14,
+      "26,21": 14,
+      "26,22": 14,
+      "26,23": 14,
+      "26,24": 14,
+      "26,25": 14,
+      "26,26": 18,
+      "26,27": 18,
+      "26,28": 18,
+      "26,29": 18,
+      "26,30": 18,
+      "26,31": 18,
+      "26,32": 18,
+      "26,33": 18,
+      "26,48": 19,
+      "26,49": 19,
+      "26,50": 19,
+      "26,51": 19,
+      "26,52": 19,
+      "26,53": 19,
+      "26,54": 19,
+      "26,55": 19,
+      "26,56": 19,
+      "27,3": 20,
+      "27,4": 1,
+      "27,5": 1,
+      "27,6": 1,
+      "27,7": 1,
+      "27,8": 1,
+      "27,9": 1,
+      "27,10": 1,
+      "27,11": 14,
+      "27,12": 14,
+      "27,13": 14,
+      "27,14": 14,
+      "27,15": 14,
+      "27,16": 14,
+      "27,17": 14,
+      "27,18": 14,
+      "27,19": 14,
+      "27,20": 14,
+      "27,21": 14,
+      "27,22": 14,
+      "27,23": 14,
+      "27,24": 14,
+      "27,25": 14,
+      "27,26": 18,
+      "27,27": 18,
+      "27,28": 18,
+      "27,29": 18,
+      "27,30": 18,
+      "27,31": 18,
+      "27,32": 18,
+      "27,33": 18,
+      "27,48": 19,
+      "27,49": 19,
+      "27,50": 19,
+      "27,51": 19,
+      "27,52": 21
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,2,1,16",
+    "25,3,1,23",
+    "4,57,1,3",
+    "4,2,1,2",
+    "2,69,1,3",
+    "8,69,1,3",
+    "5,69,1,3",
+    "11,69,1,3",
+    "4,63,1,3",
+    "25,48,1,9",
+    "14,69,1,3",
+    "4,4,1,5",
+    "4,20,1,17",
+    "5,2,20,65",
+    "27,52,1,5",
+    "4,37,1,20",
+    "27,3,1,8",
+    "4,60,1,3",
+    "4,9,1,11",
+    "3,2,1,2",
+    "3,4,1,5",
+    "3,9,1,11",
+    "3,20,1,17",
+    "3,37,1,20",
+    "3,57,1,3",
+    "3,60,1,3",
+    "3,63,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "t_object"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "グループフィルタ",
+      "Formula": "物件検索!$AU$2"
+    },
+    {
+      "Name": "属性フィルタ",
+      "Formula": "物件検索!$AI$2"
+    },
+    {
+      "Name": "物件ID",
+      "Formula": "物件検索!$BR$3"
+    },
+    {
+      "Name": "申込ID",
+      "Formula": "物件検索!$BR$6"
+    }
+  ]
+}//xax9NuexMPnUT7RSrLDxTCQ6A8NY0zTZvj5RUKGo+ntSMMPKyc+8tX0R3dnEbUe+qgI2mg06xPA1bFpJprUDv7Zlj0oS7AkN3e2ke4KcM3T8GI4bKxS66U8ZLKzVlIYUpSrGUBxJFlkIQ2NCAY/aHeQJKi+hZRB7devY+nrs0oEhCCGHHlONY+eFchSavYfVk/1F78vSL5FTq7zSCw741IANMlihM+s7UqminWidQfNVyY/RYNRNa5GaN/6WDUg4R6Zsk7XnErxyHbVBQMYE8X/kUdAymf2YL39qJiSlFiSndzBHN2oSZDu57uCipalWvzslmP8vIIs16bjPGlVpdsHo19mjB8VGPD/bFoiEKOXBFPxYBp7ZaPGyGXc9+iT3odEbuDB+FCjWP/+q2oDCEp0YNTIMXlcSl5T4PQInIYFCYOs8YIGIdrcDnlUcQBmbH6OnqXfHyPsReHzAu3MQbQi10OuCtCnjk9wmVghaK8oCh+/5KkUNy7fJrloj/r1UDAs2yG4KwFp5WymcQBhLKSbsq8HHa8BgsWGg1W968CNazzgyrf6xHrvAI75RmEPTFoQO1oQGnjpOz27gyHL4Gs63t+Y/4cUvZd4c41WbMu+potBU1H7+dcot9qXT6onJmCTVPEVYW8/C5Dkmzm/1pr/2NEDyfrG37GYM8s//I4Yh7Vo8vQfqkoTIC4nVmnM0b9YgxU1DH9WfGbignFUR0u8rTNbQxeFBr7o9UmRpxgd4kBj8kwOlSDGOQk68w5PPCXCVa+5sgBCcAXJXzQQBpeiK7wgqH1gApkxbG1sVAPRUKNzJ952M/Uqgf2qilqSrO8y57e+Mm9CrasplI663pZXk1o7ib0oNGo9Ct4Gfiqb3kxOTPZFZ2DMJXG/qHpVRAmrMjfOJRXvAiHNAu6181w==|920

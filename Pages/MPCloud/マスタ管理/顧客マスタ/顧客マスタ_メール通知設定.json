@@ -1,0 +1,772 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 26,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "47": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "48": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81
+    ],
+    "Count": 82
+  },
+  "Values": {
+    "3,2": "以下は、上記、対象顧客に対するメール通知設定リストとなります。編集した場合は、更新ボタンを押してください。",
+    "3,74": "▼顧客ID",
+    "5,2": "送信区分",
+    "5,10": "アカウント名",
+    "5,38": "対象住宅事業者",
+    "5,52": "解除",
+    "5,58": "所属会社名",
+    "7,74": "▼管理顧客IDs",
+    "10,74": "▼追加変更顧客IDs",
+    "13,74": "▼現在の顧客メールIDs",
+    "16,74": "▼追加変更フラグ",
+    "17,74": "0",
+    "24,42": "追加設定する",
+    "24,49": "更新する"
+  },
+  "Formulas": {
+    "14,74": "TEXTJOIN(\",\",TRUE,BC7)",
+    "6,10": "BG7&\" \"&BK7&\"（\"&BO7&\"）\""
+  },
+  "AttachInfos": {
+    "1,2": {
+      "BindingInfo": {
+        "TableName": "m_customer",
+        "ColumnName": "内部顧客名"
+      }
+    },
+    "5,2": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_customer_mail",
+        "RowIndex": 5,
+        "ColumnIndex": 2,
+        "ColumnCount": 69,
+        "RowCount": 18,
+        "AllowEditInListview": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "顧客メールビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_customer_mail",
+              "ColumnName": "customer_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=顧客マスタ_メール通知設定!BW6"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_customer_mail",
+              "ColumnName": "user_id",
+              "RelationBinding": {
+                "RelatedTable": "m_user",
+                "RelatedColumn": "user_id",
+                "DisplayColumn": "active_flg"
+              }
+            },
+            "Value": "1"
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_customer_mail",
+                "ColumnName": "mail_type_id"
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_customer_mail",
+                "ColumnName": "send_type"
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_customer_mail",
+                "ColumnName": "user_id"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "5,74": {
+      "BindingInfo": {
+        "TableName": "m_customer",
+        "ColumnName": "customer_id"
+      }
+    },
+    "6,2": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "Items": [
+          {
+            "Value": "1",
+            "DisplayValue": "TO"
+          },
+          {
+            "Value": "2",
+            "DisplayValue": "CC"
+          }
+        ]
+      },
+      "BindingInfo": {
+        "TableName": "m_customer_mail",
+        "ColumnName": "send_type"
+      },
+      "NameUsedInJavaScript": "送信区分"
+    },
+    "6,5": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "m_mail_type",
+        "ValueColumnBindingInfo": {
+          "TableName": "m_mail_type",
+          "ColumnName": "mail_type_id"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "m_mail_type",
+          "ColumnName": "mail_type_name"
+        }
+      },
+      "BindingInfo": {
+        "TableName": "m_customer_mail",
+        "ColumnName": "mail_type_id"
+      },
+      "NameUsedInJavaScript": "メールタイプID"
+    },
+    "6,38": {
+      "BindingInfo": {
+        "TableName": "m_customer_mail",
+        "ColumnName": "builder_id",
+        "RelationBinding": {
+          "RelatedTable": "m_customer",
+          "RelatedColumn": "customer_id",
+          "DisplayColumn": "内部顧客名"
+        }
+      }
+    },
+    "6,52": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 2,
+            "ListviewName": "顧客メールビュー"
+          }
+        ],
+        "TemplateKey": "_RS_Middle",
+        "ImagePath": "Application/036_delete_1.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      }
+    },
+    "6,54": {
+      "BindingInfo": {
+        "TableName": "m_customer_mail",
+        "ColumnName": "customer_mail_id"
+      },
+      "NameUsedInJavaScript": "顧客メールID"
+    },
+    "6,58": {
+      "BindingInfo": {
+        "TableName": "m_customer_mail",
+        "ColumnName": "user_id",
+        "RelationBinding": {
+          "RelatedTable": "m_user",
+          "RelatedColumn": "user_id",
+          "DisplayColumn": "customer_id",
+          "NextRelationBinding": {
+            "RelatedTable": "m_customer",
+            "RelatedColumn": "customer_id",
+            "DisplayColumn": "内部顧客名"
+          }
+        }
+      }
+    },
+    "6,62": {
+      "BindingInfo": {
+        "TableName": "m_customer_mail",
+        "ColumnName": "user_id",
+        "RelationBinding": {
+          "RelatedTable": "m_user",
+          "RelatedColumn": "user_id",
+          "DisplayColumn": "user_name"
+        }
+      }
+    },
+    "6,66": {
+      "BindingInfo": {
+        "TableName": "m_customer_mail",
+        "ColumnName": "user_id",
+        "RelationBinding": {
+          "RelatedTable": "m_user",
+          "RelatedColumn": "user_id",
+          "DisplayColumn": "mail_address"
+        }
+      }
+    },
+    "17,74": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=顧客マスタ_メール通知設定!BW9"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=TEXTJOIN(\",\",TRUE,顧客マスタ_メール通知設定!BW15,顧客マスタ_メール通知設定!BW12)"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=顧客マスタ_メール通知設定!BW18"
+                },
+                "Value": "0"
+              }
+            ],
+            "Comments": "フラグリセット"
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    },
+    "24,42": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 3,
+            "DrawerDirection": 3,
+            "ShowDrawerHeader": true,
+            "PageName": "メール通知設定登録編集",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=顧客マスタ_メール通知設定!BW6"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=メール通知設定登録編集!L2"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "追加設定する",
+        "TemplateKey": "スタイル2"
+      }
+    },
+    "24,49": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "769b53af-30a0-4c8b-93cb-2097cb0976e4",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=顧客マスタ_メール通知設定!AX25"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "6c89412f-f509-4fef-b824-e7c2cb0fbece",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+                  }
+                }
+              }
+            ],
+            "ReturnPropertiesTo": []
+          },
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "お待ちください",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "顧客メール設定一括更新処理",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=顧客マスタ_メール通知設定!BW6"
+                },
+                "ParamName": "P_顧客ID"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=顧客マスタ_メール通知設定!BW15"
+                },
+                "ParamName": "P_顧客メールIDs"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandListviewParam, ServerDesignerCommon",
+                "ListviewName": "顧客メールビュー",
+                "Columns": [
+                  {
+                    "ArrayItemName": "P_顧客メールID",
+                    "Column": "顧客メールID"
+                  },
+                  {
+                    "ArrayItemName": "P_送信区分",
+                    "Column": "送信区分"
+                  },
+                  {
+                    "ArrayItemName": "P_メールタイプID",
+                    "Column": "メールタイプID"
+                  }
+                ],
+                "ParamName": "P_メール通知設定リスト"
+              }
+            ],
+            "ResultErrorCodeTo": {
+              "SerializeProperty": "リターンコード"
+            },
+            "ResultMessageTo": {
+              "SerializeProperty": "リターンメッセージ"
+            },
+            "CheckDataValidation": false
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=顧客マスタ_メール通知設定!リターンコード"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "ReloadData": true
+                  }
+                ],
+                "ID": "766286ba-696f-42d3-b0c7-7e8b4bbdd244"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=顧客マスタ_メール通知設定!リターンメッセージ"
+                    }
+                  }
+                ],
+                "ID": "aca6cbd7-b864-4a3a-8dd6-e8fd82a345bc"
+              }
+            ]
+          }
+        ],
+        "Text": "更新する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0,
+        "Foreground": 1
+      },
+      {
+        "Foreground": 2
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0,
+        "Formatter": 5
+      },
+      {
+        "Background": 6,
+        "FontFamily": 3
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 4
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0,
+        "TextIndent": 4
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 5
+      },
+      {
+        "Background": 6,
+        "FontFamily": 3,
+        "Formatter": 5
+      },
+      {
+        "Background": 6
+      },
+      {
+        "Background": 8,
+        "Formatter": 9,
+        "HorizontalAlignment": 10
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#FF000000",
+        "Text 1 50",
+        "Body",
+        "Background 1 -15",
+        "[AUTO]General",
+        "#FFFFFF00",
+        "Center",
+        "Accent 1 60",
+        "@",
+        "Right"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "3,2": 1,
+      "3,74": 2,
+      "3,75": 2,
+      "3,76": 2,
+      "4,2": 1,
+      "4,74": 2,
+      "4,75": 2,
+      "4,76": 2,
+      "5,2": 3,
+      "5,5": 3,
+      "5,10": 4,
+      "5,38": 4,
+      "5,52": 3,
+      "5,53": 5,
+      "5,54": 3,
+      "5,55": 2,
+      "5,56": 2,
+      "5,57": 2,
+      "5,58": 6,
+      "5,62": 3,
+      "5,66": 3,
+      "5,74": 7,
+      "5,75": 2,
+      "5,76": 2,
+      "6,2": 8,
+      "6,5": 8,
+      "6,10": 9,
+      "6,38": 9,
+      "6,39": 4,
+      "6,40": 4,
+      "6,52": 3,
+      "6,53": 5,
+      "6,54": 3,
+      "6,55": 2,
+      "6,56": 2,
+      "6,57": 2,
+      "6,58": 10,
+      "6,62": 10,
+      "6,66": 10,
+      "7,74": 11,
+      "7,75": 2,
+      "7,76": 2,
+      "8,74": 7,
+      "11,74": 12,
+      "14,74": 13,
+      "17,74": 14,
+      "24,42": 3,
+      "24,49": 3,
+      "24,50": 2,
+      "24,51": 2,
+      "24,52": 2,
+      "24,53": 2,
+      "24,57": 3,
+      "24,58": 3,
+      "24,59": 3,
+      "24,60": 3,
+      "24,61": 3,
+      "24,62": 3,
+      "24,63": 3,
+      "24,64": 3,
+      "24,65": 3,
+      "24,66": 3,
+      "24,67": 3,
+      "24,68": 3,
+      "24,69": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "5,74,1,3",
+    "11,74,1,3",
+    "14,74,1,3",
+    "17,74,1,3",
+    "6,54,1,4",
+    "24,49,1,5",
+    "6,52,1,2",
+    "1,2,1,52",
+    "8,74,1,3",
+    "6,58,1,4",
+    "6,62,1,4",
+    "6,66,1,4",
+    "6,10,1,28",
+    "6,38,1,14",
+    "24,42,1,6",
+    "7,2,16,69",
+    "6,5,1,5",
+    "6,2,1,3",
+    "5,2,1,3",
+    "5,5,1,5",
+    "5,10,1,28",
+    "5,38,1,14",
+    "5,52,1,2",
+    "5,54,1,4",
+    "5,58,1,4",
+    "5,62,1,4",
+    "5,66,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "メール通知設定",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_customer_mail",
+    "PageResponsiveMode": 3
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//snaaQ1qyM9hUAcg7ADwtLbuoi9qlR0SQU1i3oyx2Kf5weYXKFEMfL6Agt0QBJohtMcqjFRThKQaiUQfKgIr9hSYw+qXpl/0QK+gRJzRnFy3PZfKNjW3bNhSE03oIqwTRgEFNs+rmeBrDoQJo35CDJ+9hVrOpyJFU4HYgSq3I5VxoRdKDkhjfVZTYhIydOyOgkUJ9KCizVJDIfoS9yCWxoztv06x21LCbgPpIb5fbD3lxcA8pfuTsyxBwBSkbqHlDXrZ3rtmKPRpw3zaa3rRO319BzLCM7t6bBayKlMaEAmxCAfUibibm6/eSQ+KLqzFTUc9T37kT3s2LMJ/XLM3gZKXgQnt9mpZHl2QNzN5bmBSv5bSTJh9ZOnXQX5pZ0fmpxdmPWbLzyyDwEgKy0zUkttTv2rsdFnzqVCFKcUb0+S1m8qjU8sBJC2jNY2ABodVaUD92VQ1rqpahqrcRr9FkOQOZRb4UI3Cb3QFLQfkW58RzbLcPDJMHzp7aeZWyAIJWnjjUbtFug1zLP9dYM803hCSaJFxheHA4OniUGCQM4ZmIT7GSCbYp3XgS3ttOwxxAiIJmU5KTtfmkWkTkA/YgEH+QEyVIq40ZeIZRWLlZDIRawNCsKAatE3MbDrXmcpz9asqzV3BojYVIrLyTwz65BRWltvT85ATLIbCmfGapzr6Z+ZeV1NF8e/GHU/qBLewiHk3rQwcYxUEVpJ5siirdweGK0Z9CSYJrEju9kUmr0AkuHCeFbnIr4/UUOg4NWqGSX2q1/zdkyCaoMyyMJhIviPnn4C5EMCpJ3xgCHNa70U71lORiK54Kz7RCSWKXxHEREyHunIp7/yRA7hR51Q5Qy+FpxMJipdsFZgNTMA9tjxkytEeMtsOrFbuo4zyEGLxLBYdhdovjD2bkcGpoYNDl1Q==|920

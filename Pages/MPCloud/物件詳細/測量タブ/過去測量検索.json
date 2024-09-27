@@ -1,0 +1,892 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      }
+    },
+    "Count": 28,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "47": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "48": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "70": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "79": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79
+    ],
+    "Count": 80
+  },
+  "Values": {
+    "3,31": "敷測",
+    "3,33": "役調",
+    "3,35": "敷地測量会社",
+    "3,45": "役所調査会社",
+    "3,71": "▼住宅事業者ID",
+    "6,71": "▼住宅事業者名",
+    "9,71": "▼元申込ID",
+    "15,71": "▼抽出カウント"
+  },
+  "Formulas": {
+    "26,2": "\"該当データ件数：\"&TEXT(抽出カウント,\"#,##0\")&\"件\"",
+    "1,18": "\"「\"&住宅事業者名&\"」の測量履歴を表示しています。調査手配中の物件も対象となります。\"",
+    "16,71": "COUNTIF(C5,\"<>\")"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 70"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "物件番号、物件名、住所で検索できます"
+      }
+    },
+    "3,2": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "t_object_surveying",
+        "RowIndex": 3,
+        "ColumnIndex": 2,
+        "ColumnCount": 68,
+        "RowCount": 22,
+        "FrozenIndex": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "測量履歴ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                "Condition1": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "t_object_surveying",
+                    "ColumnName": "object_order_id",
+                    "RelationBinding": {
+                      "RelatedTable": "t_object_order",
+                      "RelatedColumn": "object_order_id",
+                      "DisplayColumn": "builder_id"
+                    }
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=過去測量検索!住宅事業者ID"
+                  }
+                },
+                "Condition2": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "t_object_surveying",
+                    "ColumnName": "object_order_id",
+                    "RelationBinding": {
+                      "RelatedTable": "t_object_order",
+                      "RelatedColumn": "object_order_id",
+                      "DisplayColumn": "active_flg"
+                    }
+                  },
+                  "Value": "1"
+                }
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "ColumnBindingInfo": {
+                  "TableName": "t_object_surveying",
+                  "ColumnName": "surveying_status_id",
+                  "RelationBinding": {
+                    "RelatedTable": "m_surveying_status",
+                    "RelatedColumn": "surveying_status_id",
+                    "DisplayColumn": "cancel_flg"
+                  }
+                },
+                "Value": "0"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 1,
+              "ColumnBindingInfo": {
+                "TableName": "t_object_surveying",
+                "ColumnName": "object_order_id"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=過去測量検索!元申込ID"
+              }
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 6,
+                "ColumnBindingInfo": {
+                  "TableName": "t_object_surveying",
+                  "ColumnName": "object_order_id",
+                  "RelationBinding": {
+                    "RelatedTable": "t_object_order",
+                    "RelatedColumn": "object_order_id",
+                    "DisplayColumn": "object_id",
+                    "NextRelationBinding": {
+                      "RelatedTable": "t_object",
+                      "RelatedColumn": "object_id",
+                      "DisplayColumn": "物件番号"
+                    }
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=過去測量検索!C2"
+                },
+                "LeftBracket": 1
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                "CompareType": 6,
+                "ColumnBindingInfo": {
+                  "TableName": "t_object_surveying",
+                  "ColumnName": "object_order_id",
+                  "RelationBinding": {
+                    "RelatedTable": "t_object_order",
+                    "RelatedColumn": "object_order_id",
+                    "DisplayColumn": "object_id",
+                    "NextRelationBinding": {
+                      "RelatedTable": "t_object",
+                      "RelatedColumn": "object_id",
+                      "DisplayColumn": "物件名"
+                    }
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=過去測量検索!C2"
+                }
+              },
+              "RelationType": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "t_object_surveying",
+                "ColumnName": "object_order_id",
+                "RelationBinding": {
+                  "RelatedTable": "t_object_order",
+                  "RelatedColumn": "object_order_id",
+                  "DisplayColumn": "object_id",
+                  "NextRelationBinding": {
+                    "RelatedTable": "t_object",
+                    "RelatedColumn": "object_id",
+                    "DisplayColumn": "物件住所"
+                  }
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=過去測量検索!C2"
+              },
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "t_object_surveying",
+                "ColumnName": "object_order_id"
+              },
+              "Order": 1
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "t_object_surveying",
+                "ColumnName": "surveying_id"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "カスタムスタイル2"
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 3,
+            "DrawerDirection": 3,
+            "ShowDrawerHeader": true,
+            "PageName": "測量登録フレーム",
+            "PassValues": [],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "ClickMode": 1
+      },
+      "BindingInfo": {
+        "TableName": "t_object_surveying",
+        "ColumnName": "object_order_id",
+        "RelationBinding": {
+          "RelatedTable": "t_object_order",
+          "RelatedColumn": "object_order_id",
+          "DisplayColumn": "object_id",
+          "NextRelationBinding": {
+            "RelatedTable": "t_object",
+            "RelatedColumn": "object_id",
+            "DisplayColumn": "物件番号"
+          }
+        }
+      }
+    },
+    "4,7": {
+      "BindingInfo": {
+        "TableName": "t_object_surveying",
+        "ColumnName": "object_order_id",
+        "RelationBinding": {
+          "RelatedTable": "t_object_order",
+          "RelatedColumn": "object_order_id",
+          "DisplayColumn": "object_id",
+          "NextRelationBinding": {
+            "RelatedTable": "t_object",
+            "RelatedColumn": "object_id",
+            "DisplayColumn": "物件名"
+          }
+        }
+      }
+    },
+    "4,18": {
+      "BindingInfo": {
+        "TableName": "t_object_surveying",
+        "ColumnName": "object_order_id",
+        "RelationBinding": {
+          "RelatedTable": "t_object_order",
+          "RelatedColumn": "object_order_id",
+          "DisplayColumn": "object_id",
+          "NextRelationBinding": {
+            "RelatedTable": "t_object",
+            "RelatedColumn": "object_id",
+            "DisplayColumn": "物件住所"
+          }
+        }
+      }
+    },
+    "4,31": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "t_object_surveying",
+        "ColumnName": "site_survey_flg"
+      }
+    },
+    "4,33": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "t_object_surveying",
+        "ColumnName": "gove_survey_flg"
+      }
+    },
+    "4,35": {
+      "BindingInfo": {
+        "TableName": "t_object_surveying",
+        "ColumnName": "site_survey_customer_id",
+        "RelationBinding": {
+          "RelatedTable": "m_customer",
+          "RelatedColumn": "customer_id",
+          "DisplayColumn": "内部顧客名"
+        }
+      }
+    },
+    "4,45": {
+      "BindingInfo": {
+        "TableName": "t_object_surveying",
+        "ColumnName": "gove_survey_customer_id",
+        "RelationBinding": {
+          "RelatedTable": "m_customer",
+          "RelatedColumn": "customer_id",
+          "DisplayColumn": "内部顧客名"
+        }
+      }
+    },
+    "4,54": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "t_object_surveying",
+        "ColumnName": "site_survey_enforcement_date"
+      }
+    },
+    "4,59": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "t_object_surveying",
+        "ColumnName": "gove_survey_enforcement_date"
+      }
+    },
+    "4,64": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "t_object_surveying",
+        "ColumnName": "surveying_status_id",
+        "RelationBinding": {
+          "RelatedTable": "m_surveying_status",
+          "RelatedColumn": "surveying_status_id",
+          "DisplayColumn": "surveying_status_name"
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 3,
+        "HorizontalAlignment": 4,
+        "Underline": false
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "ShrinkToFit": true
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 4
+      },
+      {
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontSize": 12.0,
+        "Formatter": 6,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 6,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0
+      },
+      {
+        "Background": 8,
+        "FontFamily": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@",
+        "[AUTO]General",
+        "Background 2 -25",
+        "Center",
+        "Left",
+        "yyyy/MM/dd",
+        "#FFFFC000",
+        "#FFFFFF00",
+        "Background 1 -15"
+      ],
+      "Borders": [
+        {
+          "Color": 9
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 1,
+      "1,23": 1,
+      "1,24": 1,
+      "1,25": 1,
+      "1,26": 1,
+      "1,27": 1,
+      "1,28": 1,
+      "1,29": 1,
+      "1,30": 1,
+      "1,35": 1,
+      "1,36": 1,
+      "1,37": 1,
+      "1,38": 1,
+      "1,39": 1,
+      "1,40": 1,
+      "1,41": 1,
+      "1,42": 1,
+      "1,43": 1,
+      "1,44": 1,
+      "1,45": 1,
+      "1,46": 1,
+      "1,47": 1,
+      "1,48": 1,
+      "1,49": 1,
+      "1,50": 1,
+      "1,51": 1,
+      "2,29": 2,
+      "2,30": 2,
+      "2,31": 2,
+      "2,32": 2,
+      "2,33": 2,
+      "2,34": 2,
+      "3,2": 3,
+      "3,7": 3,
+      "3,18": 4,
+      "3,31": 4,
+      "3,33": 4,
+      "3,35": 4,
+      "3,45": 4,
+      "3,54": 4,
+      "3,59": 3,
+      "3,64": 3,
+      "3,71": 5,
+      "3,72": 1,
+      "3,73": 1,
+      "4,2": 6,
+      "4,7": 7,
+      "4,18": 8,
+      "4,31": 9,
+      "4,33": 9,
+      "4,35": 10,
+      "4,45": 4,
+      "4,54": 11,
+      "4,59": 12,
+      "4,64": 8,
+      "4,71": 13,
+      "4,72": 1,
+      "4,73": 1,
+      "6,71": 5,
+      "6,72": 1,
+      "6,73": 1,
+      "7,71": 13,
+      "7,72": 1,
+      "7,73": 1,
+      "9,71": 5,
+      "9,72": 1,
+      "9,73": 1,
+      "10,71": 13,
+      "10,72": 1,
+      "10,73": 1,
+      "11,71": 1,
+      "11,72": 1,
+      "11,73": 1,
+      "15,71": 5,
+      "15,72": 1,
+      "15,73": 1,
+      "16,71": 14,
+      "16,72": 1,
+      "16,73": 1,
+      "17,71": 1,
+      "17,72": 1,
+      "17,73": 1,
+      "20,71": 1,
+      "20,72": 1,
+      "20,73": 1,
+      "25,2": 15,
+      "25,3": 15,
+      "25,4": 15,
+      "25,5": 15,
+      "25,6": 15,
+      "25,7": 15,
+      "25,8": 15,
+      "25,9": 15,
+      "25,10": 15,
+      "25,11": 15,
+      "25,12": 15,
+      "25,13": 15,
+      "25,14": 15,
+      "25,15": 15,
+      "25,16": 15,
+      "25,17": 15,
+      "25,18": 15,
+      "25,19": 15,
+      "25,20": 15,
+      "25,21": 15,
+      "25,22": 15,
+      "25,23": 15,
+      "25,24": 15,
+      "25,25": 15,
+      "25,26": 15,
+      "25,27": 15,
+      "25,28": 15,
+      "25,29": 15,
+      "25,30": 15,
+      "25,31": 16,
+      "25,32": 16,
+      "25,33": 16,
+      "25,34": 16,
+      "25,35": 15,
+      "25,36": 15,
+      "25,37": 15,
+      "25,38": 15,
+      "25,39": 15,
+      "25,40": 15,
+      "25,41": 15,
+      "25,42": 15,
+      "25,43": 15,
+      "25,44": 15,
+      "25,45": 15,
+      "25,46": 15,
+      "25,47": 15,
+      "25,48": 15,
+      "25,49": 15,
+      "25,50": 15,
+      "25,51": 15,
+      "25,52": 15,
+      "25,53": 15,
+      "26,2": 4,
+      "26,54": 17,
+      "26,57": 17,
+      "26,58": 17,
+      "26,63": 17,
+      "26,69": 17,
+      "26,70": 17,
+      "27,2": 4,
+      "27,3": 4,
+      "27,4": 4,
+      "27,5": 4,
+      "27,6": 4,
+      "27,7": 4,
+      "27,8": 4,
+      "27,9": 4,
+      "27,10": 4,
+      "27,11": 4,
+      "27,12": 4,
+      "27,48": 3,
+      "27,49": 3,
+      "27,50": 3,
+      "27,51": 3,
+      "27,52": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,71,1,3",
+    "7,71,1,3",
+    "16,71,1,3",
+    "1,2,1,15",
+    "1,18,1,34",
+    "26,2,1,11",
+    "5,2,20,68",
+    "4,7,1,11",
+    "4,18,1,13",
+    "4,35,1,10",
+    "4,31,1,2",
+    "4,33,1,2",
+    "4,45,1,9",
+    "4,54,1,5",
+    "4,59,1,5",
+    "4,64,1,6",
+    "4,2,1,5",
+    "10,71,1,3",
+    "3,2,1,5",
+    "3,7,1,11",
+    "3,18,1,13",
+    "3,31,1,2",
+    "3,33,1,2",
+    "3,35,1,10",
+    "3,45,1,9",
+    "3,54,1,5",
+    "3,59,1,5",
+    "3,64,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "t_object_surveying",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "グループフィルタ",
+      "Formula": "過去測量検索!$AV$2"
+    },
+    {
+      "Name": "元申込ID",
+      "Formula": "過去測量検索!$BT$11"
+    },
+    {
+      "Name": "住宅事業者ID",
+      "Formula": "過去測量検索!$BT$5"
+    },
+    {
+      "Name": "住宅事業者名",
+      "Formula": "過去測量検索!$BT$8"
+    },
+    {
+      "Name": "属性フィルタ",
+      "Formula": "過去測量検索!$AJ$2"
+    },
+    {
+      "Name": "抽出カウント",
+      "Formula": "過去測量検索!$BT$17"
+    }
+  ]
+}//cvUnSoggW1SxXUnBE1O0wMxjwxTnKitI5WqAPM7YY2Ji4YIoFBofO0VYvDUzuUAjIROUnjyn7vkfEYvVuMeXJXBWBi6PWj2OsfJVHpTXnuG5vyDfFsncE31KrM3MDSa9l9rZUgkMvLqqVfkmV040wUin5vYEBBSw6/1hb+kuvSDmF+tmQ4SzW9Otm9CCCQmvqXoEAKXMTGbMTYKdqpGpG6PBSVIHTvJpnOf/zuWksYCZDmNK9U7iawx+bHBIzirzpXETjrLWmW13CTGHANImjamuA0vZON+qrwu6jtkDieu13RyOIKo3wa1NL2ClDk6/Yj580+CvKx/swxwz++vJPrGvFnYJvpgyVRn1r5nnCBh7wUXheFDyJ9I5PiYE8Xm9jAkzYAmBd5DwWkTFYwHm0IEAcbHUrREAGW7pqc2uKVeOS/Vz9ew/bnQ90+TtsA+M275RIBvuPM2HZI1MQlhYeqK4di788jme9OwCiIJd5dppv++qzl/5RMaJaGIu/bObXUGOpYgwDHqC5YWbA0mBLTgfYog3SY3NPJL2a07WwmJ9zUZt65pWDSkuVhHfVMee12IfqdMpTfL1JEXbEdtOfvf55hHyT9jx4iq+mnEv46Gr1TGmCen3SUO9RRj9rzfW4bzO0GCMBpVfZ+arXA/FscMZ0oDf3uLiuijH45fq8cds2dS/MKJYkb0fxT6ABfSvzi81FT6DCASHUQhqcg35ZjaSTqYP36POt+NshVk1wUHxQxNSYrdNMr9kmc34h/6zRu63u5CYgaW3yOYMcQGIo/iXBrk9e6TASYVc87Z13kj7YSGgjtoso7jaIgj5MmQ34Gheb7VW9CfR4jqsYFYVhouSzF6mZpmG8417SIF4fvnNeQbk/Nrf3qEe8DHzViFBiRoL5GYtwLFZ8Dr4iX9SjA==|920

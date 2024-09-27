@@ -1,0 +1,928 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 30,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "Count": 49
+  },
+  "Values": {
+    "0,43": "▼指定工事会社ID",
+    "1,3": "対象顧客名",
+    "3,3": "工事会社名",
+    "3,9": "＊",
+    "3,43": "▼対象顧客ID",
+    "5,3": "優先度",
+    "5,9": "＊",
+    "6,43": "▼工事会社ID",
+    "28,30": "削除する",
+    "28,37": "更新する"
+  },
+  "AttachInfos": {
+    "1,11": {
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "1,43": {
+      "BindingInfo": {
+        "TableName": "m_customer_specify_construction",
+        "ColumnName": "specify_construction_id"
+      }
+    },
+    "3,11": {
+      "BindingInfo": {
+        "TableName": "m_customer_specify_construction",
+        "ColumnName": "construction_id",
+        "RelationBinding": {
+          "RelatedTable": "m_customer",
+          "RelatedColumn": "customer_id",
+          "DisplayColumn": "内部顧客名"
+        }
+      }
+    },
+    "3,39": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "顧客検索",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=指定工事会社_登録編集!AR8"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!顧客ID"
+                }
+              },
+              {
+                "Source": "4",
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!属性フィルタ"
+                }
+              },
+              {
+                "Source": "1",
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!属性固定フラグ"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=指定工事会社_登録編集!L4"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!顧客略称名"
+                }
+              }
+            ]
+          }
+        ],
+        "ToolTip": "検索ウィンドウを表示します",
+        "TemplateKey": "余白2グレー",
+        "ImagePath": "Application/023_edit_3.svg",
+        "BuiltIn": true,
+        "Color": "Background 1 -35",
+        "UseCellForeColor": true
+      }
+    },
+    "4,43": {
+      "BindingInfo": {
+        "TableName": "m_customer_specify_construction",
+        "ColumnName": "customer_id"
+      }
+    },
+    "5,11": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "Items": [
+          {
+            "Value": "1",
+            "DisplayValue": "最優先"
+          },
+          {
+            "Value": "2",
+            "DisplayValue": "指定先"
+          },
+          {
+            "Value": "3",
+            "DisplayValue": "指定無"
+          }
+        ]
+      },
+      "BindingInfo": {
+        "TableName": "m_customer_specify_construction",
+        "ColumnName": "priority_type"
+      },
+      "DataValidationInfo": {}
+    },
+    "7,43": {
+      "BindingInfo": {
+        "TableName": "m_customer_specify_construction",
+        "ColumnName": "construction_id"
+      }
+    },
+    "28,30": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "このデータを削除します。よろしいですか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 4
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "m_customer_specify_construction",
+                    "UpdateType": "delete",
+                    "ShowConfirm": false,
+                    "ReloadAfterSucceed": false,
+                    "ConfirmText": "本当に削除してもよろしいですか？",
+                    "UpdateValues": []
+                  },
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "ReloadData": true
+                  }
+                ],
+                "ID": "e87ff491-2ef6-42f9-b541-705d4f8a8732"
+              }
+            ]
+          }
+        ],
+        "Text": "削除する",
+        "TemplateKey": "スタイル2"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ISBLANK(指定工事会社_登録編集!$AR$2)"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "28,37": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=指定工事会社_登録編集!AR8"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "工事会社を選択してください"
+                  },
+                  {
+                    "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                    "TargetCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=指定工事会社_登録編集!AN4"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "c356d597-8ac9-4f43-84e8-75b86a58c265"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=指定工事会社_登録編集!L6"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "優先度を選択してください"
+                  },
+                  {
+                    "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                    "TargetCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=指定工事会社_登録編集!L6"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "a1d9f7a8-b96d-48d8-9fed-ad0bd0d67f8a"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=指定工事会社_登録編集!AR2"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "登録済み件数",
+                    "TableValue": {
+                      "TableName": "m_customer_specify_construction",
+                      "TableValueType": 3,
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "Condition1": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "m_customer_specify_construction",
+                            "ColumnName": "customer_id"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=指定工事会社_登録編集!AR5"
+                          }
+                        },
+                        "Condition2": {
+                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                          "ColumnBindingInfo": {
+                            "TableName": "m_customer_specify_construction",
+                            "ColumnName": "construction_id"
+                          },
+                          "Value": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=指定工事会社_登録編集!AR8"
+                          }
+                        }
+                      }
+                    },
+                    "ID": "3c4125622adf44bfa38595060e152f3c"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=指定工事会社_登録編集!登録済み件数"
+                              }
+                            ]
+                          },
+                          "value": "0",
+                          "compareType": 2
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "選択した工事会社はすでに登録済みです"
+                          },
+                          {
+                            "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                          }
+                        ],
+                        "ID": "080aa1b9-b261-4b2d-9eee-875c64b83fb4"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "3495ad64-47b1-4fb8-8c4b-06ae8b1c3a38"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "769b53af-30a0-4c8b-93cb-2097cb0976e4",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=指定工事会社_登録編集!AL29"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "6c89412f-f509-4fef-b824-e7c2cb0fbece",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+                  }
+                }
+              }
+            ],
+            "ReturnPropertiesTo": []
+          },
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "お待ちください",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=指定工事会社_登録編集!AR2"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "m_customer_specify_construction",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "ReloadAfterSucceed": false,
+                    "ConfirmText": "本当に追加してもよろしいですか？",
+                    "UpdateValues": []
+                  }
+                ],
+                "ID": "d1464f68-9904-4726-879a-3155e5dc31da"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "m_customer_specify_construction",
+                    "ShowConfirm": false,
+                    "ReloadAfterSucceed": false,
+                    "ConfirmText": "本当に更新してもよろしいですか？",
+                    "UpdateValues": []
+                  }
+                ],
+                "ID": "8e55ecb3-b244-44b1-be66-570ee7e8f9ac"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "更新する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1,
+        "TextIndent": 4,
+        "HorizontalAlignment": 2
+      },
+      {
+        "Background": 3
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 4
+      },
+      {
+        "Background": 5,
+        "TextIndent": 4
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Background": 6
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 7
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 8,
+        "HorizontalAlignment": 9
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 10,
+        "HorizontalAlignment": 9
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 11,
+        "HorizontalAlignment": 9
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 8,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "00",
+        "Left",
+        "#FFFFFF00",
+        "#FF92D050",
+        "Background 1 -5",
+        "#FFFFC000",
+        "[AUTO]General",
+        " ¥#,##0_);[Red] ¥(#,##0)",
+        "Right",
+        "#,##0",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "1,11": 0,
+      "1,43": 1,
+      "3,9": 2,
+      "3,11": 3,
+      "3,39": 4,
+      "4,43": 5,
+      "5,9": 2,
+      "5,11": 6,
+      "7,43": 1,
+      "9,3": 7,
+      "11,3": 7,
+      "11,4": 4,
+      "11,5": 4,
+      "11,6": 4,
+      "11,7": 4,
+      "11,8": 4,
+      "11,9": 4,
+      "11,10": 4,
+      "13,3": 7,
+      "13,4": 4,
+      "13,5": 4,
+      "13,6": 4,
+      "13,7": 4,
+      "13,8": 4,
+      "13,9": 4,
+      "13,10": 4,
+      "13,11": 8,
+      "15,3": 7,
+      "15,4": 4,
+      "15,5": 4,
+      "15,6": 4,
+      "15,7": 4,
+      "15,8": 4,
+      "15,9": 4,
+      "15,10": 4,
+      "15,11": 8,
+      "17,3": 7,
+      "17,4": 4,
+      "17,5": 4,
+      "17,6": 4,
+      "17,7": 4,
+      "17,8": 4,
+      "17,9": 4,
+      "17,10": 4,
+      "17,11": 9,
+      "19,3": 7,
+      "19,4": 4,
+      "19,5": 4,
+      "19,6": 4,
+      "19,7": 4,
+      "19,8": 4,
+      "19,9": 4,
+      "19,10": 4,
+      "19,11": 8,
+      "21,3": 7,
+      "21,4": 4,
+      "21,5": 4,
+      "21,6": 4,
+      "21,7": 4,
+      "21,8": 4,
+      "21,9": 4,
+      "21,10": 4,
+      "21,11": 10,
+      "22,3": 7,
+      "22,4": 4,
+      "22,5": 4,
+      "22,6": 4,
+      "22,7": 4,
+      "22,8": 4,
+      "22,9": 4,
+      "22,10": 4,
+      "22,11": 10,
+      "22,12": 10,
+      "22,13": 10,
+      "22,14": 10,
+      "23,3": 7,
+      "23,4": 4,
+      "23,5": 4,
+      "23,6": 4,
+      "23,7": 4,
+      "23,8": 4,
+      "23,9": 4,
+      "23,10": 4,
+      "23,11": 11,
+      "24,3": 7,
+      "24,4": 4,
+      "24,5": 4,
+      "24,6": 4,
+      "24,7": 4,
+      "24,8": 4,
+      "24,9": 4,
+      "24,10": 4,
+      "24,11": 10,
+      "24,12": 10,
+      "24,13": 10,
+      "24,14": 10,
+      "25,3": 7,
+      "25,4": 4,
+      "25,5": 4,
+      "25,6": 4,
+      "25,7": 4,
+      "25,8": 4,
+      "25,9": 4,
+      "25,10": 4,
+      "25,11": 11,
+      "26,3": 7,
+      "26,4": 4,
+      "26,5": 4,
+      "26,6": 4,
+      "26,7": 4,
+      "26,8": 4,
+      "26,9": 4,
+      "26,10": 4,
+      "26,11": 11,
+      "26,12": 11,
+      "26,13": 11,
+      "26,14": 11,
+      "26,15": 11,
+      "26,16": 11,
+      "26,17": 11,
+      "26,18": 11,
+      "26,19": 11,
+      "28,30": 12,
+      "28,37": 12,
+      "28,42": 4,
+      "28,43": 4,
+      "28,44": 4,
+      "28,45": 4,
+      "28,46": 4,
+      "28,47": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "13,11,1,9",
+    "15,11,1,9",
+    "17,11,1,9",
+    "19,11,1,9",
+    "21,11,1,4",
+    "23,11,1,9",
+    "25,11,1,9",
+    "28,37,1,5",
+    "1,11,1,30",
+    "1,43,1,3",
+    "4,43,1,3",
+    "7,43,1,3",
+    "5,11,1,5",
+    "28,30,1,6",
+    "3,11,1,27"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "指定工事会社登録編集",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+        "ParameterName": "対象顧客名",
+        "TableValue": {
+          "TableName": "m_customer",
+          "OnlyGetValue": true,
+          "TableValueType": 0,
+          "BindingInfos": [
+            {
+              "BindingInfo": {
+                "TableName": "m_customer",
+                "ColumnName": "customer_name"
+              },
+              "ColumnName": "customer_name"
+            }
+          ],
+          "SqlCondition": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "m_customer",
+              "ColumnName": "customer_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=指定工事会社_登録編集!AR5"
+            }
+          }
+        },
+        "ID": "08f1342dcf6c45c8be0d5ee451d6dd8c"
+      },
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=指定工事会社_登録編集!L2"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=指定工事会社_登録編集!対象顧客名"
+            }
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=指定工事会社_登録編集!AR2"
+                  }
+                ]
+              },
+              "value": "%Null%"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=指定工事会社_登録編集!AL29"
+                    },
+                    "Value": "登録する"
+                  }
+                ]
+              }
+            ],
+            "ID": "fba51feb-7636-4a46-a48e-2a9ba243eb66"
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_customer_specify_construction",
+    "PageResponsiveMode": 3
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//oQoYj4fVb5UTwpqJztYLrbNMHKfQxOSim90aKrCkzL8n8Xy31oMS3+9GX/0qW1H8fGE1w8EI7xRq06+bHBTOFIiaHi0Y/yL+iSH1sE/FksT1G3JEB+bkNl8K0G8p18zuS6YVZGjPEp0PgItIqekbJBwslLLQd85xBZ5BbJcurIB2DjMGhjlY5zDi833+USqIvQSOJfP4HBoqJz/t0tRqEc5yTOwSYafn9iM79QlJaFEQEL4zaJyzzLTSCptbPRnA63XVDk0MClTZH7YGECFFigRWLpWFgo4IZ/nULOXYee0ZXz9EBibXoPAg/awG6ob1iU6IZjV0pFAccIlbrToVbrzkH/qxVBv7nd8SUZShJaH+Icz7l42VLIgOPjzv+aX2tga91g/RBAVLO8+ozFmvTiB4WVo/k664Py5gCFXDVDaCKTF2vq1971VS+S/2cq47od7E24OOyckUBA9ENsGu8I7/+FDAPKFpgmsNWpkIUHKMfpbz+8zYwaDf3Fa7rvBH3d8LqvHGMl6Gm6D/EtsNoI/NQ5zMkWmGJHz6LMN5+M5+nD7b4wwQa5Io0RAYmpCNZEVOP8QQq9D6d/qDaqx7e1F9yF3jI5lVJD3w6pTI7CYXiMuguCHftPi0J6OasyeNqnpt+62LIPhtTJMpHak/C7WZEvjE6m6KI+zkV11pyyLkuowt+7HyuT5AwidePzYWpRpvH54X4fMra6AwP0v7R4V1TUfKl9ldpno2/3YBsyiAg8ygAY18nEHnhiB8z5TCEJ68sj4iatrCWgyuSFtBpUObF0oZShIRoogja9TDKCpL/CU0KRO7gfygvBMlCeNUnZodwbCOisjIMKeMEYiLBsJ+Km9/oduweXYEZNIXcrgfoUBfmbS5bJXqIGYR6C6Hqx0kbKsq++CDJRB2Oc0/5Q==|920

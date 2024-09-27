@@ -1,0 +1,376 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 15,
+    "DefaultSize": 31.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "Count": 40
+  },
+  "Values": {
+    "0,2": "以下よりその他留意を選択してください",
+    "5,34": "▼有効フラグ",
+    "6,34": 1,
+    "7,34": "▼その他留意ID",
+    "9,34": "▼その他留意内容",
+    "12,34": "▼選択カウント",
+    "13,25": "選択する"
+  },
+  "Formulas": {
+    "13,34": "COUNTIF(AI3,1)",
+    "2,34": "IF(その他留意ID=AJ3,1,0)"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "その他留意ビュー",
+        "TemplatePageName": "62a91d23e5bd4748be5adbc5d3be84d",
+        "Command": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [
+            {
+              "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+              "PageName": "地形条件選択",
+              "PassValues": []
+            }
+          ],
+          "ParamProperties": {
+            "選択フラグ": "選択フラグ",
+            "調査方法ID": "調査方法ID",
+            "調査方法名": "調査方法名"
+          }
+        },
+        "TemplateKey": "スタイル1"
+      }
+    },
+    "1,34": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_analysis_consider",
+        "RowIndex": 1,
+        "ColumnIndex": 34,
+        "ColumnCount": 3,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "その他留意ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "m_analysis_consider",
+            "ColumnName": "active_flg"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=その他留意選択!AI7"
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_analysis_consider",
+                "ColumnName": "sort_no"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "2,34": {
+      "NameUsedInJavaScript": "選択フラグ"
+    },
+    "2,35": {
+      "BindingInfo": {
+        "TableName": "m_analysis_consider",
+        "ColumnName": "analysis_consider_id"
+      },
+      "NameUsedInJavaScript": "その他留意ID"
+    },
+    "2,36": {
+      "BindingInfo": {
+        "TableName": "m_analysis_consider",
+        "ColumnName": "analysis_consider_content"
+      },
+      "NameUsedInJavaScript": "その他留意内容"
+    },
+    "13,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=その他留意選択!$AI$14=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Foreground": 1,
+        "Formatter": 2,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Text 1 50",
+        "[AUTO]General",
+        "Background 1 -15",
+        "Center",
+        "Accent 6 80",
+        "#FFFFC000",
+        "#FFFFFF00"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 1,
+      "0,20": 1,
+      "0,21": 1,
+      "0,22": 1,
+      "0,23": 1,
+      "0,24": 1,
+      "0,25": 1,
+      "0,26": 1,
+      "0,27": 1,
+      "0,28": 1,
+      "0,29": 1,
+      "1,2": 2,
+      "1,35": 3,
+      "1,36": 3,
+      "2,35": 3,
+      "2,36": 3,
+      "5,34": 4,
+      "5,35": 3,
+      "5,36": 3,
+      "6,34": 5,
+      "6,35": 3,
+      "6,36": 3,
+      "7,34": 4,
+      "7,35": 3,
+      "7,36": 3,
+      "8,34": 6,
+      "9,34": 4,
+      "9,35": 3,
+      "9,36": 3,
+      "10,34": 6,
+      "12,34": 3,
+      "12,35": 3,
+      "12,36": 3,
+      "13,25": 7,
+      "13,26": 7,
+      "13,27": 7,
+      "13,28": 7,
+      "13,29": 7,
+      "13,34": 8,
+      "13,35": 7,
+      "13,36": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "8,34,1,3",
+    "1,2,11,28",
+    "13,25,1,5",
+    "13,34,1,3",
+    "10,34,1,3",
+    "6,34,1,3",
+    "3,34,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_analysis_consider"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "その他留意ID",
+      "Formula": "その他留意選択!$AI$9"
+    },
+    {
+      "Name": "その他留意内容",
+      "Formula": "その他留意選択!$AI$11"
+    }
+  ]
+}//lZcFqqighBaCosgmuR+U8oWtV8nHroYak1JjFj/lA/6P0rj/BXqbZAaMX1m/9hsAYCR6bPOZKcP6cjALeYpvYPScE9vqbSk/C6srsrJBtU2hqAwcfqcv3v+ly0b6b3tkEJSu+tWtwdsjx02o3roYI8wVhFgFN/OSj4goLxSq0I2B7FNTy26TpFnoqRCZHENi6sgzzrHy1aP4t0qPxyjmCICAnTB81JqWfds/PzvQrp1TIVoL5uM9Rl3dhL6vOtMmTD/hPz+sSCza0tli4e88k+7g8EY16u6opabjzQvwLyJ5M12mV/86eDC0LQGvoc1QiJueWJUd0CAMnXtc3SrEyTBD8weA8o3ZpHVk9imn2x8MNrbS4/001d1IrdDBsUKCG00byeaM7CY9B8T+akc610Y1vejErKwTvUSSQgDpWU71zx7JSaVsF26EeeM8jsHtdQmAidiY/ChxXWEhlnr7DpV8b6T8mPKOyk1H6BF/ip8lf3jWVEcceVdWfFaNKtIu1+WENccWdckPqIRk/fs3o5q4SjQvgseG6M8JvWt+NA0g0l+uKDoW6ieTRwG+UcplFEs3Kmtc9b6vfwqxBdlkg9GMC53cS6ymQZiHAZcvagJdAhMipMiuzgofPdDDeCBHlZhsoo/Oh3Iyc1IFnWxO16Jpb3HvH1TZttWNwCkOsUZTgWMozlIDnLybTYTEmLQEw7K3zarmIoxy1Rtot++SN8LdrCVLKEXYFi1SuwOWFCpi5Qu5fZ2YpKoGqRTh1M59qW8niT5pmwvtvuvnwbeUm9SNyenzM6z8s3+o138CCRhhNxowXhoN61Ncgbe6KoPtSByFtqQa8OI8hkwpSEolR36E9ZjqvtH1pz1hiSN7IXcGh0wfzLb5WZWRb6xsJ/NA1L9lpe7wQMOOSgA3WqaSAA==|920

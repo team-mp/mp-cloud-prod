@@ -1,0 +1,1170 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 31,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45
+    ],
+    "Count": 46
+  },
+  "Values": {
+    "1,2": "グループ名",
+    "1,8": "＊",
+    "1,40": "グループID",
+    "3,2": "グループ区分",
+    "3,8": "＊",
+    "5,2": "関連付け顧客ID",
+    "5,8": "＊",
+    "5,40": "▼関連付け顧客ID",
+    "7,2": "有効フラグ",
+    "7,10": 1,
+    "26,40": "▼最終更新ラベル",
+    "29,33": "更新する"
+  },
+  "Formulas": {
+    "29,2": "IF(AO28<>\"\",\"最終更新日時：\"&AO28,\"\")"
+  },
+  "AttachInfos": {
+    "1,10": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "グループ名を入力してください"
+      },
+      "BindingInfo": {
+        "TableName": "m_group",
+        "ColumnName": "group_name"
+      },
+      "DataValidationInfo": {}
+    },
+    "2,40": {
+      "BindingInfo": {
+        "TableName": "m_group",
+        "ColumnName": "group_id"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "3,10": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "Items": [
+          {
+            "Value": "1",
+            "DisplayValue": "MP直営"
+          },
+          {
+            "Value": "2",
+            "DisplayValue": "代理店"
+          },
+          {
+            "Value": "3",
+            "DisplayValue": "取次店"
+          }
+        ],
+        "DataSource": "m_group_type",
+        "ValueColumnBindingInfo": {
+          "TableName": "m_group_type",
+          "ColumnName": "group_type_id"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "m_group_type",
+          "ColumnName": "group_type_name"
+        },
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=グループマスタ登録フレーム!K4"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=グループマスタ登録フレーム!AO7"
+                        },
+                        "Value": "%Null%"
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=グループマスタ登録フレーム!K6"
+                        },
+                        "Value": "%Null%"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "28e55f3d-1d27-4da1-bde2-8d66d826df6f"
+              }
+            ]
+          }
+        ]
+      },
+      "BindingInfo": {
+        "TableName": "m_group",
+        "ColumnName": "group_type_id"
+      },
+      "DataValidationInfo": {}
+    },
+    "5,2": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=グループマスタ登録フレーム!$K$4=1"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "5,8": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=グループマスタ登録フレーム!$K$4=1"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "5,10": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "代理店または取次店の場合、関連付けする顧客を選択してください",
+        "ReadOnly": true
+      },
+      "BindingInfo": {
+        "TableName": "m_group",
+        "ColumnName": "customer_id",
+        "RelationBinding": {
+          "RelatedTable": "m_customer",
+          "RelatedColumn": "customer_id",
+          "DisplayColumn": "内部顧客名"
+        }
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=グループマスタ登録フレーム!$K$4=1"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "5,34": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "お待ちください",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "顧客検索",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!AO7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!顧客ID"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!K6"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!顧客略称名"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=IF(グループマスタ登録フレーム!K4=2,8,9)"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!属性フィルタ"
+                }
+              },
+              {
+                "Source": "1",
+                "TargetCell": {
+                  "SerializeProperty": "=顧客検索!属性固定フラグ"
+                }
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "余白2グレー",
+        "ImagePath": "Application/023_edit_3.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=グループマスタ登録フレーム!$K$4=1"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "6,40": {
+      "BindingInfo": {
+        "TableName": "m_group",
+        "ColumnName": "customer_id"
+      }
+    },
+    "7,10": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "NoneItemText": "＜なし＞",
+        "Style": 1,
+        "PrimaryColor": "#FF005B47",
+        "CellDefaultValue": 1,
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "無効"
+          },
+          {
+            "Value": "1",
+            "DisplayValue": "有効"
+          }
+        ]
+      },
+      "BindingInfo": {
+        "TableName": "m_group",
+        "ColumnName": "active_flg"
+      },
+      "DataValidationInfo": {}
+    },
+    "9,2": {
+      "CellType": {
+        "$type": "Forguncy.TabControlCellType, ServerDesignerCommon",
+        "Tabs": [
+          "グループマスタ_基本情報",
+          "グループマスタ_申込タイプ"
+        ],
+        "Style": {
+          "BorderColor": "Background 1 -15",
+          "HoverColor": "Text 1 0",
+          "ActiveColor": "#FFC00000"
+        },
+        "OverflowMode": 1
+      }
+    },
+    "27,40": {
+      "BindingInfo": {
+        "TableName": "m_group",
+        "ColumnName": "last_updated_label"
+      }
+    },
+    "29,33": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=グループマスタ登録フレーム!K2"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "グループ名を入力してください"
+                  },
+                  {
+                    "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                    "TargetCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=グループマスタ登録フレーム!K2"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "77cf127a-1432-4499-ab1d-ec20b2d13b62"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=グループマスタ登録フレーム!K4"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "グループタイプを選択してください"
+                  },
+                  {
+                    "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                    "TargetCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=グループマスタ登録フレーム!グループ区分"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "8260ea3b-1f27-4e63-b938-8cd9064a9265"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "Condition1": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=グループマスタ登録フレーム!K4"
+                        }
+                      ]
+                    },
+                    "value": "1",
+                    "compareType": 1
+                  },
+                  "Condition2": {
+                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                    "param": {
+                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                      "cellLocations": [
+                        {
+                          "SerializeProperty": "=グループマスタ登録フレーム!AO7"
+                        }
+                      ]
+                    },
+                    "value": "%Null%"
+                  }
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "直営以外は関連付け顧客を選択してください"
+                  },
+                  {
+                    "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                    "TargetCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=グループマスタ登録フレーム!AI6"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "2ef24288-cadf-42c6-ba64-d1cac832be58"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "769b53af-30a0-4c8b-93cb-2097cb0976e4",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+                  }
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!AH30"
+                }
+              },
+              {
+                "ParamReferObject": {
+                  "ParamID": "6c89412f-f509-4fef-b824-e7c2cb0fbece",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "651037a9-ffaf-4591-9697-6b171676a452"
+                  }
+                }
+              }
+            ],
+            "ReturnPropertiesTo": []
+          },
+          {
+            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+            "ServerCommandName": "グループ更新処理",
+            "Parameters": [
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!グループID"
+                },
+                "ParamName": "P_グループID"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!グループ名"
+                },
+                "ParamName": "P_グループ名"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!グループ区分"
+                },
+                "ParamName": "P_グループ区分"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!顧客ID"
+                },
+                "ParamName": "P_顧客ID"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!住宅事業者通知フラグ"
+                },
+                "ParamName": "P_住宅事業者通知フラグ"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!保証追記事項"
+                },
+                "ParamName": "P_保証追記事項"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!通常請求先ID"
+                },
+                "ParamName": "P_通常請求先ID"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!調査請求先ID"
+                },
+                "ParamName": "P_調査請求先ID"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!測量請求先ID"
+                },
+                "ParamName": "P_測量請求先ID"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!解析請求先ID"
+                },
+                "ParamName": "P_解析請求先ID"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!転圧請求先ID"
+                },
+                "ParamName": "P_転圧請求先ID"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!工事請求先ID"
+                },
+                "ParamName": "P_工事請求先ID"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!保証請求先ID"
+                },
+                "ParamName": "P_保証請求先ID"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループマスタ登録フレーム!有効フラグ"
+                },
+                "ParamName": "P_有効フラグ"
+              }
+            ],
+            "ResultErrorCodeTo": {
+              "SerializeProperty": "リターンコード"
+            },
+            "ResultMessageTo": {
+              "SerializeProperty": "リターンメッセージ"
+            },
+            "RefreshAfterFinish": true,
+            "CheckDataValidation": false
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=グループマスタ登録フレーム!リターンコード"
+                      }
+                    ]
+                  },
+                  "value": "0"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "ReloadData": true
+                  }
+                ],
+                "ID": "2a2ab7d2-886f-4212-a4ed-3f7641b6963a"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=グループマスタ登録フレーム!リターンメッセージ"
+                    }
+                  }
+                ],
+                "ID": "8f816c72-08f7-4ad6-8f69-ed4a2007650e"
+              }
+            ]
+          }
+        ],
+        "Text": "更新する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Foreground": 1
+      },
+      {
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Background": 4,
+        "FontFamily": 0,
+        "Formatter": 5,
+        "TextIndent": 4,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2,
+        "TextIndent": 4,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Background": 4,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 6
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 7,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 7,
+        "HorizontalAlignment": 8
+      },
+      {
+        "Foreground": 9
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 10
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#FF92D050",
+        "@",
+        "Left",
+        "#FFFFFF00",
+        "0000",
+        "[AUTO]General",
+        " ¥#,##0_);[Red] ¥(#,##0)",
+        "Right",
+        "Background 1 -35",
+        "Text 1 50"
+      ]
+    },
+    "CellStyles": {
+      "1,8": 0,
+      "1,10": 1,
+      "1,40": 2,
+      "2,40": 3,
+      "3,2": 2,
+      "3,3": 2,
+      "3,4": 2,
+      "3,5": 2,
+      "3,6": 2,
+      "3,7": 2,
+      "3,8": 0,
+      "3,9": 2,
+      "3,10": 4,
+      "3,11": 2,
+      "3,12": 2,
+      "3,13": 2,
+      "3,14": 2,
+      "3,15": 2,
+      "3,16": 2,
+      "3,17": 2,
+      "5,2": 2,
+      "5,3": 2,
+      "5,4": 2,
+      "5,5": 2,
+      "5,6": 2,
+      "5,7": 2,
+      "5,8": 0,
+      "5,9": 2,
+      "5,10": 5,
+      "5,34": 2,
+      "5,40": 2,
+      "5,41": 2,
+      "5,42": 2,
+      "6,40": 6,
+      "6,41": 2,
+      "6,42": 2,
+      "7,2": 7,
+      "7,3": 2,
+      "7,4": 2,
+      "7,5": 2,
+      "7,6": 2,
+      "7,7": 2,
+      "7,8": 2,
+      "7,9": 2,
+      "7,10": 8,
+      "8,2": 7,
+      "8,10": 9,
+      "9,2": 10,
+      "9,38": 10,
+      "9,39": 10,
+      "9,40": 10,
+      "9,41": 10,
+      "9,42": 10,
+      "9,43": 10,
+      "9,44": 10,
+      "10,38": 10,
+      "10,39": 10,
+      "10,40": 10,
+      "10,41": 10,
+      "10,42": 10,
+      "10,43": 10,
+      "10,44": 10,
+      "11,38": 10,
+      "11,39": 10,
+      "11,40": 10,
+      "11,41": 10,
+      "11,42": 10,
+      "11,43": 10,
+      "11,44": 10,
+      "12,38": 10,
+      "12,39": 10,
+      "12,40": 10,
+      "12,41": 10,
+      "12,42": 10,
+      "12,43": 10,
+      "12,44": 10,
+      "13,38": 10,
+      "13,39": 10,
+      "13,40": 10,
+      "13,41": 10,
+      "13,42": 10,
+      "13,43": 10,
+      "13,44": 10,
+      "14,38": 10,
+      "14,39": 10,
+      "14,40": 10,
+      "14,41": 10,
+      "14,42": 10,
+      "14,43": 10,
+      "14,44": 10,
+      "15,38": 10,
+      "15,39": 10,
+      "15,40": 10,
+      "15,41": 10,
+      "15,42": 10,
+      "15,43": 10,
+      "15,44": 10,
+      "16,38": 10,
+      "16,39": 10,
+      "16,40": 10,
+      "16,41": 10,
+      "16,42": 10,
+      "16,43": 10,
+      "16,44": 10,
+      "17,38": 10,
+      "17,39": 10,
+      "17,40": 10,
+      "17,41": 10,
+      "17,42": 10,
+      "17,43": 10,
+      "17,44": 10,
+      "18,38": 10,
+      "18,39": 10,
+      "18,40": 10,
+      "18,41": 10,
+      "18,42": 10,
+      "18,43": 10,
+      "18,44": 10,
+      "19,38": 10,
+      "19,39": 10,
+      "19,40": 10,
+      "19,41": 10,
+      "19,42": 10,
+      "19,43": 10,
+      "19,44": 10,
+      "20,38": 10,
+      "20,39": 10,
+      "20,40": 10,
+      "20,41": 10,
+      "20,42": 10,
+      "20,43": 10,
+      "20,44": 10,
+      "21,38": 10,
+      "21,39": 10,
+      "21,40": 10,
+      "21,41": 10,
+      "21,42": 10,
+      "21,43": 10,
+      "21,44": 10,
+      "22,38": 10,
+      "22,39": 10,
+      "22,40": 10,
+      "22,41": 10,
+      "22,42": 10,
+      "22,43": 10,
+      "22,44": 10,
+      "23,38": 10,
+      "23,39": 10,
+      "23,40": 10,
+      "23,41": 10,
+      "23,42": 10,
+      "23,43": 10,
+      "23,44": 10,
+      "24,38": 10,
+      "24,39": 10,
+      "24,40": 10,
+      "24,41": 10,
+      "24,42": 10,
+      "24,43": 10,
+      "24,44": 10,
+      "25,38": 10,
+      "25,39": 10,
+      "25,40": 10,
+      "25,41": 10,
+      "25,42": 10,
+      "25,43": 10,
+      "25,44": 10,
+      "26,38": 10,
+      "26,39": 10,
+      "26,40": 7,
+      "26,41": 2,
+      "26,42": 2,
+      "26,43": 10,
+      "26,44": 10,
+      "27,38": 10,
+      "27,39": 10,
+      "27,40": 6,
+      "27,43": 10,
+      "27,44": 10,
+      "29,2": 11,
+      "29,3": 2,
+      "29,4": 2,
+      "29,5": 2,
+      "29,6": 2,
+      "29,7": 2,
+      "29,8": 2,
+      "29,9": 2,
+      "29,10": 2,
+      "29,11": 2,
+      "29,12": 2,
+      "29,13": 2,
+      "29,14": 2,
+      "29,15": 2,
+      "29,16": 2,
+      "29,17": 2,
+      "29,33": 12,
+      "29,38": 12,
+      "29,39": 2,
+      "29,40": 2,
+      "29,41": 2,
+      "29,42": 2,
+      "29,43": 2,
+      "29,44": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "8,10,1,8",
+    "1,10,1,27",
+    "7,10,1,8",
+    "29,33,1,5",
+    "9,2,19,36",
+    "27,40,1,3",
+    "29,2,1,16",
+    "6,40,1,3",
+    "2,40,1,3",
+    "3,10,1,8",
+    "5,10,1,24"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "グループマスタ登録編集",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=グループマスタ登録フレーム!AO3"
+                  }
+                ]
+              },
+              "value": "%Null%"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=グループマスタ登録フレーム!AH30"
+                    },
+                    "Value": "登録する"
+                  }
+                ]
+              }
+            ],
+            "ID": "21b9680d-c10a-45aa-a6b2-7bc0c355ce97"
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_group",
+    "PageResponsiveMode": 3
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "グループID",
+      "Formula": "グループマスタ登録フレーム!$AO$3"
+    },
+    {
+      "Name": "グループ区分",
+      "Formula": "グループマスタ登録フレーム!$K$4"
+    },
+    {
+      "Name": "グループ名",
+      "Formula": "グループマスタ登録フレーム!$K$2"
+    },
+    {
+      "Name": "顧客ID",
+      "Formula": "グループマスタ登録フレーム!$AO$7"
+    },
+    {
+      "Name": "有効フラグ",
+      "Formula": "グループマスタ登録フレーム!$K$8"
+    }
+  ]
+}//3iPoIXmDB0c+yrMyT0vMSIRR8F8RwpM1ILGWb7Xc/UyARpapwRKVgbeGliAcphmUoeVku594zbdsicki9chyHVizio4nUorMAkXMig2W1wZVqUx+HltMwe9fmVRp1nkPF9qxCyluwd+NpeezJHcZh+vs1g91YloRWhEAyKzYPUTu3SOz+f76/r36PfLKDTsMWMFp201MSkzAzjXAMyq8MdT0Caz/hilpxLatSkviFmq2+gkMXtKEqbT//Zahvm6mGQRA6lWKE+1xzyyAfFa9jigdAPsnHINQTEy48M1cf6GXc0diNNaKlns+PEEl/fwBzOACpfq4lZiqRohOWiq245e5qej7kJG4nJNwdHtIgwA/d41hEr8iV4pbRtJnfNQjNN3lGvodXjPLdsNfoncE8d6Yo+ipL05SV2DzOINF50dHg6n73p+S6X2AF9Vf6BCxbey3aJn4xseoOfNXO/eo1EKrytcbmpNC7ZObQlM24ZlKrMzO6Rnd36zTv/JtZgqBfxoTcsZ56FWL3iZxy37nUo7LS5vyr1g52fWiTfHTfaORoIByeh4MsUIJYACpDeLa+iZnLTHj4Zk8tM/pIOmprAX0DpP1OFvCXKWFygHNnrHwaOZAMeXZ17Nhu2gU0PQ5ZUks5JSJAa9x5dVBwpYITH3UZ/oBoRYMcfSyy6OQa423meeGLIUIO8161J7UM4BRPr5Dioxo0xknbasUz2HJ53FysovfYGiHRaCeMWVfdkuUXPBWBFMszRzZB7gTSI7uP90dIj8hsU8X4EnwIQYoydGM0X3psrF4/FQKe/7VjyKpvswiC7kQxGGF95gHCunkIgn18jbaL0cNRfNO0R5FrQsIz2WR8869aW7s9k1Pe1ixW9KFfe8RURYnBv5exz70KB0W0wAWNCOHidz+sKz3Kg==|920

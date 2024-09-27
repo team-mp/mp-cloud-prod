@@ -1,0 +1,454 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      26,
+      27
+    ],
+    "Count": 32,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "39": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "45": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "Count": 65
+  },
+  "Values": {
+    "0,0": "顧客マスタ登録_詳細_申込事業者",
+    "1,49": "▼参照顧客既定グループID",
+    "4,49": "▼参照顧客グループIDs",
+    "30,27": "お問い合わせ",
+    "30,36": "更新する"
+  },
+  "Formulas": {
+    "30,36": "IF(顧客ID=\"\",\"登録する\",\"更新する\")"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "顧客マスタ登録_詳細_申込事業者",
+        "OverflowMode": 1
+      }
+    },
+    "2,49": {
+      "CellComment": {
+        "Comments": "詳細ページの管理会社クエリで使用する"
+      }
+    },
+    "5,49": {
+      "CellComment": {
+        "Comments": "詳細ページの管理会社クエリで使用する"
+      }
+    },
+    "30,27": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "お問い合わせ",
+        "TemplateKey": "角緑",
+        "Icon": {
+          "Name": "Navigation/169_user_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=顧客マスタ登録フレーム_申込事業者!顧客ID=\"\""
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "30,36": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=顧客マスタ登録フレーム_申込事業者!更新ボタン"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "Text": "更新する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": null
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFC000",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,49": 0,
+      "2,50": 1,
+      "2,51": 1,
+      "3,48": 1,
+      "3,49": 1,
+      "3,50": 1,
+      "4,49": 1,
+      "4,50": 1,
+      "4,51": 1,
+      "5,49": 0,
+      "5,50": 1,
+      "5,51": 1,
+      "5,53": 1,
+      "5,54": 1,
+      "5,55": 1,
+      "5,56": 1,
+      "5,57": 1,
+      "5,58": 1,
+      "5,59": 1,
+      "5,60": 1,
+      "5,61": 1,
+      "5,62": 1,
+      "5,63": 1,
+      "5,64": 1,
+      "6,48": 1,
+      "6,49": 1,
+      "6,50": 1,
+      "6,51": 1,
+      "29,0": 2,
+      "29,1": 2,
+      "29,2": 2,
+      "29,3": 2,
+      "29,4": 2,
+      "29,5": 2,
+      "29,6": 2,
+      "29,7": 2,
+      "29,8": 2,
+      "29,9": 2,
+      "29,10": 2,
+      "29,11": 2,
+      "29,12": 2,
+      "29,13": 2,
+      "29,14": 2,
+      "29,15": 2,
+      "29,16": 2,
+      "29,17": 2,
+      "29,18": 2,
+      "29,19": 2,
+      "29,20": 2,
+      "29,21": 2,
+      "29,22": 2,
+      "29,23": 2,
+      "29,24": 2,
+      "29,25": 2,
+      "29,26": 2,
+      "29,27": 2,
+      "29,28": 2,
+      "29,29": 2,
+      "29,30": 2,
+      "29,31": 2,
+      "29,32": 2,
+      "29,33": 2,
+      "29,34": 2,
+      "29,35": 2,
+      "29,36": 2,
+      "29,37": 2,
+      "29,38": 2,
+      "29,39": 2,
+      "29,40": 2,
+      "29,41": 2,
+      "29,42": 2,
+      "29,43": 2,
+      "29,44": 2,
+      "29,45": 2,
+      "29,46": 2,
+      "30,27": 3,
+      "30,36": 4,
+      "30,37": 1,
+      "30,39": 1,
+      "30,41": 1,
+      "30,42": 1,
+      "30,43": 1,
+      "30,44": 1,
+      "30,45": 1,
+      "30,46": 1,
+      "30,47": 1,
+      "30,48": 1,
+      "30,49": 1,
+      "30,50": 1,
+      "30,51": 1,
+      "30,52": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "30,36,1,8",
+    "0,0,29,47",
+    "29,38,1,2",
+    "29,30,1,2",
+    "29,34,1,2",
+    "29,28,1,2",
+    "30,27,1,8",
+    "5,49,1,3",
+    "2,49,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "会社情報登録編集",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_user",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "参照顧客既定グループID",
+      "Formula": "顧客マスタ登録フレーム_申込事業者!$AX$3"
+    },
+    {
+      "Name": "参照顧客グループIDs",
+      "Formula": "顧客マスタ登録フレーム_申込事業者!$AX$6"
+    }
+  ]
+}///hdwFOTP8GhV8rk/kir70k6OqvcAACJENMBKst8etePQmpesMujqGwINHqRMKJv1/RAgSecen7lC29S+fBWvj6kmTGony3nbJW0U/GoJ1svOWsh8gtctl+AbYqracT8nQAxmAvEiM9ZEassS3hMWfk5ehvg4mMVfHYlq8dtPrHiknlJ9Pp+jIir+QtaHYsZ1gOQvtE/GYYw4KVfypj2hEeb4tutZllt3VhZzGXuJVwb3/S8dbGmyKo7/z9hheAT7om4T0c+B29LuljT/hQilWmwbhXCDUFWN1kpTf94KeE2xF/JhRPmtbLxjn+rm4EwTS7HCBPB2GRAaWSV7QLWTgdvvHD1um73cylvu8jesjL/WALaeT5OLksHAJrWbCIQOlxQJuja+8fNJZMPABQ0mhi5q7cQ4QqxxfvtnOzm1/fATE+EPhoOKKujvZhykew9hSWSRISkhsSf5/ou3gD5EEArx+C4/3qPywpmTu3D/1CLwl+ydfttHUF/zsVFcUO2Bxa1l9VLkwv18jgtWjAIqfo1ivKRLeDU8DWPnU4LsYyf1GPRoJ5uO9Vj+8DprRyjB+AsC32uoPtRJMVI/X/Cuk6/ULQgmJyxt4u7cxZ3rwzAF2p7UwvZpsBL+04PXJInEUvTVN8LaWdB1N1b6tDNE4FDKHFD0bw8K/M8eMr4kn/6xzUBDTN+78OBL6vUyakZAvFEpfL5E/2YGxxvpIg6xT/rY54ckxDLazfNsNfdB8HXRluombHa4VbIwu/s05fPOEv/ZDOkxYIN66WxC53n83hcKHQ3Gc6UbvC+rN9pxg3gLWhZxreSF1zVc26/oTKEa/2SWFQxKp9bqP07Kzrhb/TXVgjvV28l57hlkli2PWfwzNw3jPBIPUPGb+l3iqoF+tE1IsRfraSoh72eQsfSDLg==|920

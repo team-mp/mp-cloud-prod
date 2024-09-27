@@ -1,0 +1,282 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.DailyScheduleTrigger, ServerDesignerCommon",
+      "StartDateTime": 45328.041666666664,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "スケジュールメール",
+      "TableValue": {
+        "TableName": "t_schedule_mail",
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "t_schedule_mail",
+              "ColumnName": "schedule_mail_id"
+            },
+            "ColumnName": "スケジュールメールID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_schedule_mail",
+              "ColumnName": "sender_type"
+            },
+            "ColumnName": "送信元区分"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_schedule_mail",
+              "ColumnName": "post_type"
+            },
+            "ColumnName": "宛先区分"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_schedule_mail",
+              "ColumnName": "sender_address"
+            },
+            "ColumnName": "差出人アドレス"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_schedule_mail",
+              "ColumnName": "user_group_id"
+            },
+            "ColumnName": "ユーザーグループID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_schedule_mail",
+              "ColumnName": "to"
+            },
+            "ColumnName": "TO宛先"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_schedule_mail",
+              "ColumnName": "cc"
+            },
+            "ColumnName": "CC宛先"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_schedule_mail",
+              "ColumnName": "subject"
+            },
+            "ColumnName": "件名"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_schedule_mail",
+              "ColumnName": "body"
+            },
+            "ColumnName": "本文"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "t_schedule_mail",
+              "ColumnName": "object_order_id"
+            },
+            "ColumnName": "申込ID"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 5,
+              "ColumnBindingInfo": {
+                "TableName": "t_schedule_mail",
+                "ColumnName": "send_schedule_date"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=TODAY()"
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "t_schedule_mail",
+                "ColumnName": "send_completed_flg"
+              },
+              "Value": "0"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_schedule_mail",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "fba9a2ba0d34493892e645b1d3107775"
+    },
+    {
+      "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+      "LoopInfo": {
+        "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+        "LoopCount": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=スケジュールメール"
+        },
+        "LoopItemParamName": "Item"
+      },
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+          "ServerCommandName": "メール送信処理（スケジュールタスク）",
+          "Parameters": [
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.送信元区分"
+              },
+              "ParamName": "P_送信元区分"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.宛先区分"
+              },
+              "ParamName": "P_宛先区分"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "ParamName": "P_差出人アドレス"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.ユーザーグループID"
+              },
+              "ParamName": "P_ユーザーグループID"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.TO宛先"
+              },
+              "ParamName": "P_宛先"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.CC宛先"
+              },
+              "ParamName": "P_CC"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.件名"
+              },
+              "ParamName": "P_件名"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.本文"
+              },
+              "ParamName": "P_本文"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "ParamName": "P_添付ファイル"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=Item.申込ID"
+              },
+              "ParamName": "P_申込ID"
+            },
+            {
+              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+              "ParamName": "P_送信ユーザーID"
+            }
+          ],
+          "ResultErrorCodeTo": {
+            "SerializeProperty": "リターンコード"
+          },
+          "ResultMessageTo": {
+            "SerializeProperty": "リターンメッセージ"
+          },
+          "RefreshAfterFinish": true,
+          "CheckDataValidation": true
+        },
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=リターンコード"
+                  }
+                },
+                "value": "0"
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                  "TableName": "t_schedule_mail",
+                  "ShowConfirm": false,
+                  "ConfirmText": "本当に更新してもよろしいですか？",
+                  "RowsToUpdate": 1,
+                  "RowsToUpdateCondition": {
+                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                    "ColumnBindingInfo": {
+                      "TableName": "t_schedule_mail",
+                      "ColumnName": "schedule_mail_id"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=Item.スケジュールメールID"
+                    }
+                  },
+                  "UpdateValues": [
+                    {
+                      "ColumnName": "send_completed_flg",
+                      "Value": "1"
+                    },
+                    {
+                      "ColumnName": "send_completed_datetime",
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=NOW()"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "ID": "bd2b2d67-83d3-4e36-9db7-9c52f49f55ed"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Name": "スケジュールメール"
+}

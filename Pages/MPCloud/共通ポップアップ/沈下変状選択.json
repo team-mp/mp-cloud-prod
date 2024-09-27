@@ -1,0 +1,397 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 15,
+    "DefaultSize": 31.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "Count": 40
+  },
+  "Values": {
+    "0,2": "以下より沈下変状を選択してください",
+    "5,34": "▼有効フラグ",
+    "6,34": 1,
+    "7,34": "▼沈下変状ID",
+    "9,34": "▼沈下変状表示",
+    "11,34": "▼沈下変状内容",
+    "13,25": "選択する",
+    "13,34": "▼選択カウント"
+  },
+  "Formulas": {
+    "14,34": "COUNTIF(AI3,1)",
+    "2,34": "IF(沈下変状ID=AJ3,1,0)"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "沈下変状ビュー",
+        "TemplatePageName": "b1b67db45c984b6d84e21dddc6792d4",
+        "Command": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [
+            {
+              "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+              "PageName": "地形条件選択",
+              "PassValues": []
+            }
+          ],
+          "ParamProperties": {
+            "選択フラグ": "選択フラグ",
+            "調査方法ID": "調査方法ID",
+            "調査方法名": "調査方法名"
+          }
+        },
+        "TemplateKey": "スタイル1"
+      }
+    },
+    "1,34": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_subsidence_deformation",
+        "RowIndex": 1,
+        "ColumnIndex": 34,
+        "ColumnCount": 4,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "沈下変状ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "m_subsidence_deformation",
+            "ColumnName": "active_flg"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=沈下変状選択!AI7"
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_subsidence_deformation",
+                "ColumnName": "sort_no"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "2,34": {
+      "NameUsedInJavaScript": "選択フラグ"
+    },
+    "2,35": {
+      "BindingInfo": {
+        "TableName": "m_subsidence_deformation",
+        "ColumnName": "subsidence_deformation_id"
+      },
+      "NameUsedInJavaScript": "沈下変状ID"
+    },
+    "2,36": {
+      "BindingInfo": {
+        "TableName": "m_subsidence_deformation",
+        "ColumnName": "subsidence_deformation_display"
+      },
+      "NameUsedInJavaScript": "沈下変状表示"
+    },
+    "2,37": {
+      "BindingInfo": {
+        "TableName": "m_subsidence_deformation",
+        "ColumnName": "subsidence_deformation_content"
+      },
+      "NameUsedInJavaScript": "沈下変状内容"
+    },
+    "13,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=沈下変状選択!$AI$15=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Foreground": 1,
+        "Formatter": 2,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Text 1 50",
+        "[AUTO]General",
+        "Background 1 -15",
+        "Center",
+        "Accent 6 80",
+        "#FFFFC000",
+        "#FFFFFF00"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 1,
+      "0,20": 1,
+      "0,21": 1,
+      "0,22": 1,
+      "0,23": 1,
+      "0,24": 1,
+      "0,25": 1,
+      "0,26": 1,
+      "0,27": 1,
+      "0,28": 1,
+      "0,29": 1,
+      "1,2": 2,
+      "1,35": 3,
+      "1,36": 3,
+      "2,35": 3,
+      "2,36": 3,
+      "5,34": 4,
+      "5,35": 3,
+      "5,36": 3,
+      "6,34": 5,
+      "6,35": 3,
+      "6,36": 3,
+      "7,34": 4,
+      "7,35": 3,
+      "7,36": 3,
+      "8,34": 6,
+      "9,34": 4,
+      "9,35": 3,
+      "9,36": 3,
+      "10,34": 6,
+      "10,35": 3,
+      "10,36": 3,
+      "11,34": 4,
+      "11,35": 3,
+      "11,36": 3,
+      "12,34": 6,
+      "12,35": 3,
+      "12,36": 3,
+      "13,25": 7,
+      "13,26": 7,
+      "13,27": 7,
+      "13,28": 7,
+      "13,29": 7,
+      "13,34": 3,
+      "13,35": 3,
+      "13,36": 3,
+      "14,34": 8,
+      "14,35": 7,
+      "14,36": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "8,34,1,3",
+    "1,2,11,28",
+    "13,25,1,5",
+    "6,34,1,3",
+    "14,34,1,3",
+    "12,34,1,3",
+    "10,34,1,3",
+    "3,34,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_subsidence_deformation"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "沈下変状ID",
+      "Formula": "沈下変状選択!$AI$9"
+    },
+    {
+      "Name": "沈下変状内容",
+      "Formula": "沈下変状選択!$AI$13"
+    },
+    {
+      "Name": "沈下変状表示",
+      "Formula": "沈下変状選択!$AI$11"
+    }
+  ]
+}//pJ26LWSPyKFz3x37K+3Uk38XGBGc5b+bkeWoioPQ2XYy9U8IzkjtQBYxs4fYTdKAiB/8acPyAEemm+2ypCHvwkjgJVAZzazJHoPP1d5SbHDryXaHPdDFdLrruu0Ll+cTo4YiE16kFpX0gOktAlAwIqrWzQ7jcBfc0R4g4+vL7LjL0P2/wFBN2k47jzkS2vGZKukr/Nn5qRVVY0cPyG8hyAVIaFXaA7QCosFALcEYz8PfWpfuh+MJIBfNudI6I9PJLNPSl2CD3wK19UiqZOLpR/ckJDqUDm+R01cvp3Z1B9gIkf42+l+l3Yf+gUANJrkuclmcSW8kDwW4nEePVN2Kz56tm5K7mXJFJF4TjqJknLXZu2NFkKEKW1MEB3UZJtsXULGBlv9it3e6cK+U1vZ+7Nksyn+PS5MJ3Wb3IqWFW1hP+VVS8HjXTJS/wLDkDvbtelsYP7MkNk9rv3k6nk/CRnSoja2ThT2wbgU888PwzrHbnRpvnrC41wu/VGElaDyr0I8RsQ/YBE+ocMDyzP17wOaK0jMBYXzAU5q5hLwZybz3DIgwsHjH2VvVa/NJfCkBoNbMaxp110B1I+bGC/jggBIxwOWLg3FNeZSUdf7Gac1LgZpPbgwJX6G1mphpGVdZm0utq7uwdyPSx744Vg/R5ZubgSlYDCDCTz+u5LF/2pIZ/DlNizBu/32qzXKa6vhwZsKvibVk3e8rAbcTV23sth+ckq9nY1ruit4QQlEGcD4BryLT5Jd7l99fMrzQTU2ICO8LWpCLCm05rRE9jg2TgNY9E+h3FtXQ8A4jOB5rLFkuOe4LAbuGYDJJ67vh1nxSa60SLkcmBmpb+ZD1ha0syxEAiacmXYPsjZ3ijCCXULEvreMISC7YOCiwql5s1ijgleKhjl5AU6LH1b/zWjjy8A==|920

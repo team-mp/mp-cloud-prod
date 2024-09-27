@@ -1,0 +1,153 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 1,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      34,
+      35,
+      36,
+      37
+    ],
+    "Count": 38
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1,
+        "PrimaryColor": "#FF005B47"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='38b7b9ac0a18428eb76981e7714f0e5'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Foreground": "#FF000000",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "選択"
+    },
+    "0,2": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='38b7b9ac0a18428eb76981e7714f0e5'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "送信先名"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0,
+        "BorderBottom": null
+      },
+      {
+        "BorderBottom": null
+      },
+      {
+        "TextIndent": 4,
+        "BorderBottom": null
+      },
+      {
+        "BorderBottom": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Background 1 -15",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 2,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 1,
+      "0,20": 1,
+      "0,21": 1,
+      "0,22": 1,
+      "0,23": 1,
+      "0,24": 1,
+      "0,25": 1,
+      "0,26": 1,
+      "0,27": 1,
+      "0,28": 1,
+      "0,29": 1,
+      "0,30": 1,
+      "0,31": 1,
+      "0,32": 1,
+      "0,33": 1,
+      "0,34": 3,
+      "0,35": 3,
+      "0,36": 3,
+      "0,37": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "0,0,1,2",
+    "0,2,1,32"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "宛先選択"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//3ugpbQQewhTNjIKuHfAzzRODFShTAoNzRzneKvDeuRXj1gUvw0sgiDym0aBrwnvBjD9oPPGg2LoVD5S8vTDRF0gkoFgjAbxLvo2k6yFug/Vh+PZ2RxJUnUmvrZLNbAfOYi3kI+BdAovx3xRZbqP/SOX2gPPdpO6VoyPv16szkoE4pzTEjEbzetHBX/FzP43eUdpBsAwAXLYtWC7OcRj9aeO5IjJTkXDNF0rl4Pr7wpOs0/YLzW/grgEy4OBo082grYA5UYwpv78ChCgV1Zldl/uxa6Gqtma72Kxf3ADN/7msUDLL5YUJpDnzWYfzPTfklyF9IuHlvi1BbQlfpAylR1/cdePbIN3mpJuzn/K4ne55rund/Q7FJHP8Ia/hF2MO8+LBKuNzYFIKgerGMV6mHBKMazILk0VlsWy5Pat+y4DccSNnw2yJfG4hc8zn5qWmQUr882paU5vIeT2IOCiZF7YhrS5ogV4rz725R0Yn4r7UnffZz6xPBb/naNIBjuVedXUU0lMIv6iHXu5w75Hu+aXl5nO9XIcYMvGbYq9nxzNKpVUB8v5XijO/33zRI4nzn5sN5KHxjPJTi1GoD15tymCk60aIZ9fMaMgKNufAoMGXuWcWK5QI4iEGvJ8X2Qq+j9/6QjeZF76rQouksqjtS0FsT45wp7ticsQlJpSpSXGnk0yXvnHN4Oq8iZt3mGY7GeJ9QPx7fo6WuHTZH7wm02LhQqT2qgMvW017hNC8IXvI3k5/qUrToDo1jmm7rxC8W8s26MEeDHe5xrv7SYRfBBvAXjClrmCM8Kh0YI//1RCw4kMoozxGKOe6yqjFzk5uiHzSOkUUdz0OCVTWL1MyLFWzDAC+c+0qsRuDzJDLyFu+baCLA3vGRHTBw6/7w1Xyy+/UOQ0IjEL1JsrffDA8lw==|920

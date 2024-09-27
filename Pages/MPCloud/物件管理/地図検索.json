@@ -1,0 +1,156 @@
+{
+  "Rows": {
+    "Count": 35
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "36": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "39": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 45
+  },
+  "Values": {
+    "33,38": "位置情報を取得する"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "TabManager.TabCellType, TabManager",
+        "DefaultPageOrURL": "https://www.its-mo.com/maps/",
+        "HideTab": true
+      }
+    },
+    "33,38": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+            "JavaScript": "let elements = document.getElementsByClassName('FTM-content-iframe');\r\n\r\nlet len = elements.length;\r\n\r\nvar element = elements.item(0);\r\n//var element = elements[0];\r\n\r\nalert(element);\r\n",
+            "ID": "b8f4152f7f0a413781ad27e5ccebe9b1"
+          }
+        ],
+        "Text": "位置情報を取得する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": null,
+        "FontFamily": 0
+      },
+      {
+        "Background": 1,
+        "FontFamily": 0
+      },
+      {
+        "Background": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Background 1 -5"
+      ]
+    },
+    "CellStyles": {
+      "33,38": 0,
+      "33,39": 1,
+      "33,40": 1,
+      "33,41": 1,
+      "33,42": 1,
+      "33,43": 1,
+      "33,44": 1
+    },
+    "RowStyles": {
+      "32": 2,
+      "33": 2,
+      "34": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,0,32,45",
+    "33,38,1,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//e8IigWJ1pFSv4tKbA5nWrRjm+G8wXtEQgKEesLwIC5KCGCQCUIzaaj5Y2y+ebxV9CO66UJzeQKU9eOC0VdBCDoh/BXQdli49coQhmz38dP88ppHaQC2PtIJjwkJXPAJ4VLieliuMDsWIjsZA/IZ9gD0V5NwqotuVwsM1RtYfSV5syLyO1/0b/WwMVL6GyVDH7iAnPO+eKcm9HaftJtZ3UKe3H9AHqqPHTPnrB9jybxEmf1dG538IWR9P2GQkBx55KPGF9pCkOONTKJbmL1pyShA5EDelvzndQlGbfeQhSwnMj1Up7CKSjOekAjyG/BBqfsqTph6LeIv5C7tk4JADgZt46OSDZMcKMzdTjari8OSG4fmxBG33Q1TKZyGWtMbbve5B3sAPcPpAMd79cYHST4hgCxmbvUGSqgZ72F+RgGcmzkbUGpOipJVNORlcm8mMdeSbjzAzL064Stnb8bsyd2dFwSKBYhsvq90rA9RSe6veZABpdZpsQhTSJp2z8sgD8WZYUJ8nCeMU2LSzBnFRd0pf+IBRjBeHeBuhrxBNwqyTr9GZDECyV/bIIRKbhQCGJxhg347kL3WwAvqOn4GefSrSpf3XxuTY6GjmORCknKx3aSOqxYgiiHl5oIXm1/8RDnkJV3vA2QXT2XzENEejRPL3bpceRe3BpEoFQG2CekVvoo+WMwf69XAZ1dNKoAVU+apMrXzKLOb7Pijxes0joB/CV8Y62frC1Rf8T3A6DOnsK3TGuip+wobJ2kTSLyOWeZf2oN49AHYcRh3ivgA35hf+n9lKEeu3ZEEkyFNlLDolJukOx5Tg175hdgw/ytvmdW9m9QOtVnC3me/lm1i/hcytmQSE9rQr1jgD1zw7RuywZoPJx1GYdj8sX0R8SJom7+9JYUcTBbkuDCIcUjNotg==|920

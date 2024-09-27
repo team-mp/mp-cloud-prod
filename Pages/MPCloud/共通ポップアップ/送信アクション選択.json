@@ -1,0 +1,171 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 2,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "Count": 18
+  },
+  "Values": {
+    "0,12": "▼送信アクション"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyMenuCellType, Forguncy.CustomMenu",
+        "TemplateKey": "スタイル1",
+        "Items": [
+          {
+            "Value": "即時メール送信する",
+            "Text": "即時メール送信する",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=送信アクション選択!送信アクション"
+                    },
+                    "Value": "1"
+                  }
+                ],
+                "Comments": "即時送信する"
+              },
+              {
+                "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                "PassValueBack": true
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Value": "メール送信画面を表示する",
+            "Text": "メール送信画面を表示する",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=送信アクション選択!送信アクション"
+                    },
+                    "Value": "2"
+                  }
+                ],
+                "Comments": "メール送信画面を表示する"
+              },
+              {
+                "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                "PassValueBack": true
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "MenuLevelsStyle": [
+          {
+            "FontSize": 12.0,
+            "Bold": false,
+            "Height": 28.0,
+            "IconHeight": 24.0,
+            "IconWidth": 24.0
+          }
+        ]
+      }
+    },
+    "1,12": {
+      "CellComment": {
+        "Comments": "１：即時\r\n２：メール画面"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0
+      },
+      {
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFC000",
+        "Body",
+        "#FF000000"
+      ]
+    },
+    "CellStyles": {
+      "1,12": 0
+    },
+    "ColStyles": {
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "Foreground": 2
+    }
+  },
+  "Spans": [
+    "0,0,2,11",
+    "1,12,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "送信アクション",
+      "Formula": "送信アクション選択!$M$2"
+    }
+  ]
+}//b+BNN552s0d2zkz5DWz25z9cxyyvEO5DlB5KV/Sbk1th3y5LfW8a8IvEyCp/Z62S6tSi+7sUVSmRqWGqjcAbu5hvvGEpzA9bWKUSHw3+9DvLql+LX2I08PbXSkIYGyEVepe5XYTTG17qjvfLxhLWytE1QdAajFap8IHbdcvvc4gTDgGmhgOv6BGk2KGNyjHz2tvkHkQmVezAUhUQcsoXrj2DjXEgXjVtAAa7AKyOuncka8hSKTTol+vA0REPWV5/uo61DFzaTTrkurqwK91s/vqYNdQmYD8HD6kfd5geVx5FgqgyHrZHmOROllS6qV0+/wDfo8QQRNMBTxcYeBeMGOAl7xgEMkJSL3p5j7MbU/67h9RM8L+o9yNWb5VOof8TRvtNPKQjCMwX9BZGqgFbzGCqI5sbA93H8izj0LcoRgHluyNB905fVMOk/rCxy8orufgFPlHviLMTnA16lbd8TNVY2BACBYutE469/vmS79PNLCPgGChmTjyq8imKOfjbdOJ7ZXDsW64L22P0PdRe0hI45ZsZr6VMan+mENKcKxggQL4gC8BJoAvNnedUth+A2aHTTXJVnn8sHLp0/SwMiKO+NAa1ktD02ZHK6to4RU5Yu3d1vbyNa0D2VDFIrpztXn+er+DAxmpst9u3RWt6ldS/ljOXoKDn2Ejn/P06nOzheyavPnN6RjWquNZX/1zwM198W+rD9Ysem2VqGr7lL1okfVWeDZPWyKBWND0ih5WQkfgP/dzjnFLvdzqsRD5m3Ro3LPChJ1lhnP9iLecE6kW45QG15kkCxSv/XnuLqueL21Dx7WkS9YnHd6P98f1bPDbSPX5fZpBsopprQGIWlWEdzw7u6lzFf+goN7bdNXYY7wL8n32/ZLyDMS9uTURlpQwxKCnywODbevWCLBiRlg==|920

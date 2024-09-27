@@ -1,0 +1,1245 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "Count": 18,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "41": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "Count": 64
+  },
+  "Values": {
+    "1,1": "フォロー履歴",
+    "1,35": "新規フォロー登録",
+    "3,46": "▼申込ID",
+    "3,51": "▼タブID",
+    "4,3": "更新日時",
+    "4,8": "登録内容",
+    "4,51": 10,
+    "6,46": "▼フォロービュー"
+  },
+  "Formulas": {
+    "8,61": "フォーカスフォローID",
+    "8,60": "IF(BD9=1,IF(BH9=1,\"処理済み\",\"未処理\"),\"\")",
+    "8,58": "TEXTJOIN(\"、\",TRUE,BE9,BF9)"
+  },
+  "AttachInfos": {
+    "1,35": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 3,
+            "DrawerDirection": 3,
+            "ShowDrawerHeader": true,
+            "PageName": "フォロー登録編集",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件詳細_フォロー!AU5"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=フォロー登録編集!申込ID"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=物件詳細_フォロー!AZ5"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=フォロー登録編集!タブID"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 2
+          }
+        ],
+        "Text": "新規フォロー登録",
+        "TemplateKey": "スタイル1",
+        "Icon": {
+          "Name": "Mobile/449_add_5.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "4,46": {
+      "BindingInfo": {
+        "TableName": "t_object_order",
+        "ColumnName": "object_order_id"
+      }
+    },
+    "5,1": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "フォロービュー",
+        "TemplatePageName": "0b15cc41961148f0bb9260a490f11df",
+        "Command": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [
+            {
+              "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+              "PopupDisplayMode": 3,
+              "DrawerDirection": 3,
+              "ShowDrawerHeader": true,
+              "PageName": "フォロー登録編集",
+              "PassValues": [
+                {
+                  "Source": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=物件詳細_フォロー!AZ5"
+                  },
+                  "TargetCell": {
+                    "SerializeProperty": "=フォロー登録編集!タブID"
+                  }
+                }
+              ],
+              "LoadBindingDataOption": 1
+            }
+          ],
+          "ParamProperties": {
+            "フォローID": "フォローID",
+            "申込ID": "申込ID",
+            "フォロー内容": "フォロー内容",
+            "フォロー者名": "フォロー者名",
+            "フォロー更新日時": "フォロー更新日時",
+            "次回アクション日": "次回アクション日",
+            "リマインドメールフラグ": "リマインドメールフラグ"
+          }
+        },
+        "OverflowMode": 0,
+        "NoItemSetting": {
+          "ImageForNoItem": {
+            "Name": "Mobile/411_notice_1.svg",
+            "BuiltIn": true,
+            "Color": "#FF005B47"
+          },
+          "NoItemImageSize": 16.0,
+          "TextForNoItem": "フォロー履歴はありません"
+        },
+        "TemplateKey": "スタイル1"
+      }
+    },
+    "7,46": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "t_object_follow",
+        "RowIndex": 7,
+        "ColumnIndex": 46,
+        "ColumnCount": 16,
+        "RowCount": 4,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "フォロービュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "t_object_follow",
+            "ColumnName": "object_order_id"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=物件詳細_フォロー!AU5"
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "t_object_follow",
+                "ColumnName": "object_follow_id"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "8,46": {
+      "BindingInfo": {
+        "TableName": "t_object_follow",
+        "ColumnName": "object_follow_id"
+      },
+      "NameUsedInJavaScript": "フォローID"
+    },
+    "8,47": {
+      "BindingInfo": {
+        "TableName": "t_object_follow",
+        "ColumnName": "object_order_id"
+      },
+      "NameUsedInJavaScript": "申込ID"
+    },
+    "8,48": {
+      "BindingInfo": {
+        "TableName": "t_object_follow",
+        "ColumnName": "follow_content"
+      },
+      "NameUsedInJavaScript": "フォロー内容"
+    },
+    "8,49": {
+      "BindingInfo": {
+        "TableName": "t_object_follow",
+        "ColumnName": "follow_update_label"
+      },
+      "NameUsedInJavaScript": "フォロー更新ラベル"
+    },
+    "8,50": {
+      "BindingInfo": {
+        "TableName": "t_object_follow",
+        "ColumnName": "follow_updatetime"
+      },
+      "NameUsedInJavaScript": "フォロー更新日時"
+    },
+    "8,51": {
+      "BindingInfo": {
+        "TableName": "t_object_follow",
+        "ColumnName": "task_id",
+        "RelationBinding": {
+          "RelatedTable": "t_task",
+          "RelatedColumn": "task_id",
+          "DisplayColumn": "deadline"
+        }
+      },
+      "NameUsedInJavaScript": "期限日"
+    },
+    "8,52": {
+      "BindingInfo": {
+        "TableName": "t_object_follow",
+        "ColumnName": "task_id",
+        "RelationBinding": {
+          "RelatedTable": "t_task",
+          "RelatedColumn": "task_id",
+          "DisplayColumn": "remaind_flg"
+        }
+      },
+      "NameUsedInJavaScript": "リマインドメールフラグ"
+    },
+    "8,53": {
+      "BindingInfo": {
+        "TableName": "t_object_follow",
+        "ColumnName": "mail_notification_flg"
+      },
+      "NameUsedInJavaScript": "メール通知フラグ"
+    },
+    "8,54": {
+      "BindingInfo": {
+        "TableName": "t_object_follow",
+        "ColumnName": "task_id",
+        "RelationBinding": {
+          "RelatedTable": "t_task",
+          "RelatedColumn": "task_id",
+          "DisplayColumn": "schedule_mail_id",
+          "NextRelationBinding": {
+            "RelatedTable": "t_schedule_mail",
+            "RelatedColumn": "schedule_mail_id",
+            "DisplayColumn": "send_completed_flg"
+          }
+        }
+      },
+      "NameUsedInJavaScript": "リマインド完了フラグ"
+    },
+    "8,55": {
+      "BindingInfo": {
+        "TableName": "t_object_follow",
+        "ColumnName": "task_set_flg"
+      },
+      "NameUsedInJavaScript": "タスク設定フラグ"
+    },
+    "8,56": {
+      "BindingInfo": {
+        "TableName": "t_object_follow",
+        "ColumnName": "task_id",
+        "RelationBinding": {
+          "RelatedTable": "t_task",
+          "RelatedColumn": "task_id",
+          "DisplayColumn": "oparete_user_id",
+          "NextRelationBinding": {
+            "RelatedTable": "m_user",
+            "RelatedColumn": "user_id",
+            "DisplayColumn": "user_name"
+          }
+        }
+      },
+      "NameUsedInJavaScript": "タスク担当者名"
+    },
+    "8,57": {
+      "BindingInfo": {
+        "TableName": "t_object_follow",
+        "ColumnName": "task_id",
+        "RelationBinding": {
+          "RelatedTable": "t_task",
+          "RelatedColumn": "task_id",
+          "DisplayColumn": "user_group_id",
+          "NextRelationBinding": {
+            "RelatedTable": "m_user_group",
+            "RelatedColumn": "user_group_id",
+            "DisplayColumn": "user_group_name"
+          }
+        }
+      },
+      "NameUsedInJavaScript": "ユーザーグループ名"
+    },
+    "8,58": {
+      "NameUsedInJavaScript": "タスク担当"
+    },
+    "8,59": {
+      "BindingInfo": {
+        "TableName": "t_object_follow",
+        "ColumnName": "task_id",
+        "RelationBinding": {
+          "RelatedTable": "t_task",
+          "RelatedColumn": "task_id",
+          "DisplayColumn": "processed_flg"
+        }
+      },
+      "NameUsedInJavaScript": "処理済フラグ"
+    },
+    "8,60": {
+      "NameUsedInJavaScript": "処理ラベル"
+    },
+    "8,61": {
+      "CellComment": {
+        "Comments": "親ページの定義名から値を取得しています"
+      },
+      "NameUsedInJavaScript": "フォーカスフォローID"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontWeight": 0,
+        "Foreground": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 3
+      },
+      {
+        "Foreground": 3
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 4
+      },
+      {
+        "Background": 5,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 6,
+        "BorderBottom": 1,
+        "BorderRight": null
+      },
+      {
+        "Background": 5,
+        "BorderBottom": 1,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 5,
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "HorizontalAlignment": 8,
+        "BorderBottom": 1,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": 5,
+        "BorderBottom": 1,
+        "BorderRight": null
+      },
+      {
+        "Background": 5,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 6,
+        "BorderBottom": 1
+      },
+      {
+        "BorderBottom": 1
+      },
+      {
+        "Background": 9,
+        "FontFamily": 2
+      },
+      {
+        "Background": 9,
+        "FontFamily": 2,
+        "Formatter": 4
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Foreground": 3,
+        "Formatter": 4,
+        "HorizontalAlignment": 6
+      },
+      {
+        "FontFamily": 2,
+        "BorderTop": 2,
+        "BorderLeft": 2
+      },
+      {
+        "FontFamily": 2,
+        "BorderTop": 2
+      },
+      {
+        "FontFamily": 2,
+        "BorderTop": 2,
+        "BorderLeft": 1
+      },
+      {
+        "FontFamily": 2,
+        "BorderLeft": 2
+      },
+      {
+        "FontFamily": 2,
+        "BorderLeft": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "#FF005B47",
+        "Body",
+        "Text 1 50",
+        "[AUTO]General",
+        "Background 1 -5",
+        "Center",
+        "Background 1 -15",
+        "Left",
+        "#FFFFFF00",
+        "Background 1 -25"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        },
+        {
+          "Color": 7
+        },
+        {
+          "Color": 10
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,35": 1,
+      "1,36": 2,
+      "1,37": 2,
+      "1,38": 2,
+      "1,39": 2,
+      "1,40": 2,
+      "2,1": 3,
+      "2,2": 3,
+      "2,3": 3,
+      "2,4": 3,
+      "2,5": 3,
+      "2,6": 3,
+      "2,7": 3,
+      "2,8": 3,
+      "2,9": 3,
+      "2,10": 3,
+      "2,11": 3,
+      "2,12": 3,
+      "2,13": 3,
+      "2,14": 3,
+      "2,15": 3,
+      "2,16": 3,
+      "2,17": 3,
+      "2,18": 3,
+      "2,19": 3,
+      "2,20": 3,
+      "2,21": 3,
+      "2,22": 3,
+      "2,23": 3,
+      "2,24": 3,
+      "2,25": 3,
+      "2,26": 3,
+      "2,27": 3,
+      "2,28": 3,
+      "2,29": 3,
+      "2,30": 3,
+      "2,31": 3,
+      "2,32": 3,
+      "2,33": 3,
+      "2,34": 3,
+      "2,35": 4,
+      "2,36": 4,
+      "2,37": 4,
+      "2,38": 4,
+      "2,39": 4,
+      "2,40": 5,
+      "3,1": 6,
+      "3,2": 7,
+      "3,46": 8,
+      "3,47": 2,
+      "3,48": 2,
+      "3,49": 2,
+      "3,50": 2,
+      "3,51": 2,
+      "3,52": 2,
+      "3,53": 2,
+      "4,1": 9,
+      "4,2": 10,
+      "4,3": 11,
+      "4,4": 10,
+      "4,5": 10,
+      "4,6": 10,
+      "4,7": 12,
+      "4,8": 13,
+      "4,9": 14,
+      "4,10": 14,
+      "4,11": 14,
+      "4,12": 14,
+      "4,13": 14,
+      "4,14": 14,
+      "4,15": 14,
+      "4,16": 14,
+      "4,17": 14,
+      "4,18": 14,
+      "4,19": 14,
+      "4,20": 14,
+      "4,21": 14,
+      "4,22": 14,
+      "4,23": 14,
+      "4,24": 14,
+      "4,25": 14,
+      "4,26": 14,
+      "4,27": 14,
+      "4,28": 14,
+      "4,29": 14,
+      "4,30": 14,
+      "4,31": 14,
+      "4,32": 14,
+      "4,33": 14,
+      "4,34": 14,
+      "4,35": 14,
+      "4,36": 14,
+      "4,37": 14,
+      "4,38": 14,
+      "4,39": 14,
+      "4,40": 14,
+      "4,46": 15,
+      "4,47": 2,
+      "4,48": 2,
+      "4,49": 2,
+      "4,50": 2,
+      "4,51": 16,
+      "4,52": 2,
+      "4,53": 2,
+      "5,1": 17,
+      "6,46": 8,
+      "6,47": 2,
+      "6,48": 2,
+      "6,49": 2,
+      "6,50": 2,
+      "6,51": 2,
+      "6,52": 2,
+      "6,53": 2,
+      "6,54": 2,
+      "6,55": 2,
+      "6,56": 2,
+      "6,57": 2,
+      "6,58": 2,
+      "7,46": 18,
+      "7,47": 19,
+      "7,48": 2,
+      "7,49": 20,
+      "7,50": 19,
+      "7,51": 19,
+      "7,52": 19,
+      "7,53": 19,
+      "7,54": 2,
+      "7,55": 19,
+      "7,56": 2,
+      "7,59": 2,
+      "7,60": 2,
+      "7,61": 2,
+      "8,1": 2,
+      "8,2": 2,
+      "8,3": 2,
+      "8,4": 2,
+      "8,5": 2,
+      "8,6": 2,
+      "8,7": 2,
+      "8,8": 2,
+      "8,9": 2,
+      "8,10": 2,
+      "8,11": 2,
+      "8,12": 2,
+      "8,13": 2,
+      "8,14": 2,
+      "8,15": 2,
+      "8,16": 2,
+      "8,17": 2,
+      "8,18": 2,
+      "8,19": 2,
+      "8,20": 2,
+      "8,21": 2,
+      "8,22": 2,
+      "8,23": 2,
+      "8,24": 2,
+      "8,25": 2,
+      "8,26": 2,
+      "8,27": 2,
+      "8,28": 2,
+      "8,29": 2,
+      "8,30": 2,
+      "8,31": 2,
+      "8,32": 2,
+      "8,33": 2,
+      "8,34": 2,
+      "8,35": 2,
+      "8,36": 2,
+      "8,37": 2,
+      "8,38": 2,
+      "8,39": 2,
+      "8,40": 2,
+      "8,46": 21,
+      "8,47": 2,
+      "8,48": 2,
+      "8,49": 22,
+      "8,50": 2,
+      "8,51": 2,
+      "8,52": 2,
+      "8,53": 2,
+      "8,54": 2,
+      "8,55": 2,
+      "8,56": 2,
+      "8,59": 2,
+      "8,60": 2,
+      "8,61": 2,
+      "9,1": 2,
+      "9,2": 2,
+      "9,3": 2,
+      "9,4": 2,
+      "9,5": 2,
+      "9,6": 2,
+      "9,7": 2,
+      "9,8": 2,
+      "9,9": 2,
+      "9,10": 2,
+      "9,11": 2,
+      "9,12": 2,
+      "9,13": 2,
+      "9,14": 2,
+      "9,15": 2,
+      "9,16": 2,
+      "9,17": 2,
+      "9,18": 2,
+      "9,19": 2,
+      "9,20": 2,
+      "9,21": 2,
+      "9,22": 2,
+      "9,23": 2,
+      "9,24": 2,
+      "9,25": 2,
+      "9,26": 2,
+      "9,27": 2,
+      "9,28": 2,
+      "9,29": 2,
+      "9,30": 2,
+      "9,31": 2,
+      "9,32": 2,
+      "9,33": 2,
+      "9,34": 2,
+      "9,35": 2,
+      "9,36": 2,
+      "9,37": 2,
+      "9,38": 2,
+      "9,39": 2,
+      "9,40": 2,
+      "9,46": 2,
+      "9,47": 2,
+      "9,48": 2,
+      "9,49": 2,
+      "9,50": 2,
+      "9,51": 2,
+      "9,52": 2,
+      "9,53": 2,
+      "9,54": 2,
+      "9,55": 2,
+      "9,56": 2,
+      "9,57": 2,
+      "9,58": 2,
+      "9,62": 2,
+      "9,63": 2,
+      "10,1": 2,
+      "10,2": 2,
+      "10,3": 2,
+      "10,4": 2,
+      "10,5": 2,
+      "10,6": 2,
+      "10,7": 2,
+      "10,8": 2,
+      "10,9": 2,
+      "10,10": 2,
+      "10,11": 2,
+      "10,12": 2,
+      "10,13": 2,
+      "10,14": 2,
+      "10,15": 2,
+      "10,16": 2,
+      "10,17": 2,
+      "10,18": 2,
+      "10,19": 2,
+      "10,20": 2,
+      "10,21": 2,
+      "10,22": 2,
+      "10,23": 2,
+      "10,24": 2,
+      "10,25": 2,
+      "10,26": 2,
+      "10,27": 2,
+      "10,28": 2,
+      "10,29": 2,
+      "10,30": 2,
+      "10,31": 2,
+      "10,32": 2,
+      "10,33": 2,
+      "10,34": 2,
+      "10,35": 2,
+      "10,36": 2,
+      "10,37": 2,
+      "10,38": 2,
+      "10,39": 2,
+      "10,40": 2,
+      "10,46": 2,
+      "10,47": 2,
+      "10,48": 2,
+      "10,49": 2,
+      "10,50": 2,
+      "10,51": 2,
+      "10,52": 2,
+      "10,53": 2,
+      "10,54": 2,
+      "10,55": 2,
+      "10,56": 2,
+      "10,57": 2,
+      "10,58": 2,
+      "11,1": 2,
+      "11,2": 2,
+      "11,3": 2,
+      "11,4": 2,
+      "11,5": 2,
+      "11,6": 2,
+      "11,7": 2,
+      "11,8": 2,
+      "11,9": 2,
+      "11,10": 2,
+      "11,11": 2,
+      "11,12": 2,
+      "11,13": 2,
+      "11,14": 2,
+      "11,15": 2,
+      "11,16": 2,
+      "11,17": 2,
+      "11,18": 2,
+      "11,19": 2,
+      "11,20": 2,
+      "11,21": 2,
+      "11,22": 2,
+      "11,23": 2,
+      "11,24": 2,
+      "11,25": 2,
+      "11,26": 2,
+      "11,27": 2,
+      "11,28": 2,
+      "11,29": 2,
+      "11,30": 2,
+      "11,31": 2,
+      "11,32": 2,
+      "11,33": 2,
+      "11,34": 2,
+      "11,35": 2,
+      "11,36": 2,
+      "11,37": 2,
+      "11,38": 2,
+      "11,39": 2,
+      "11,40": 2,
+      "12,1": 2,
+      "12,2": 2,
+      "12,3": 2,
+      "12,4": 2,
+      "12,5": 2,
+      "12,6": 2,
+      "12,7": 2,
+      "12,8": 2,
+      "12,9": 2,
+      "12,10": 2,
+      "12,11": 2,
+      "12,12": 2,
+      "12,13": 2,
+      "12,14": 2,
+      "12,15": 2,
+      "12,16": 2,
+      "12,17": 2,
+      "12,18": 2,
+      "12,19": 2,
+      "12,20": 2,
+      "12,21": 2,
+      "12,22": 2,
+      "12,23": 2,
+      "12,24": 2,
+      "12,25": 2,
+      "12,26": 2,
+      "12,27": 2,
+      "12,28": 2,
+      "12,29": 2,
+      "12,30": 2,
+      "12,31": 2,
+      "12,32": 2,
+      "12,33": 2,
+      "12,34": 2,
+      "12,35": 2,
+      "12,36": 2,
+      "12,37": 2,
+      "12,38": 2,
+      "12,39": 2,
+      "12,40": 2,
+      "13,1": 2,
+      "13,2": 2,
+      "13,3": 2,
+      "13,4": 2,
+      "13,5": 2,
+      "13,6": 2,
+      "13,7": 2,
+      "13,8": 2,
+      "13,9": 2,
+      "13,10": 2,
+      "13,11": 2,
+      "13,12": 2,
+      "13,13": 2,
+      "13,14": 2,
+      "13,15": 2,
+      "13,16": 2,
+      "13,17": 2,
+      "13,18": 2,
+      "13,19": 2,
+      "13,20": 2,
+      "13,21": 2,
+      "13,22": 2,
+      "13,23": 2,
+      "13,24": 2,
+      "13,25": 2,
+      "13,26": 2,
+      "13,27": 2,
+      "13,28": 2,
+      "13,29": 2,
+      "13,30": 2,
+      "13,31": 2,
+      "13,32": 2,
+      "13,33": 2,
+      "13,34": 2,
+      "13,35": 2,
+      "13,36": 2,
+      "13,37": 2,
+      "13,38": 2,
+      "13,39": 2,
+      "13,40": 2,
+      "14,1": 2,
+      "14,2": 2,
+      "14,3": 2,
+      "14,4": 2,
+      "14,5": 2,
+      "14,6": 2,
+      "14,7": 2,
+      "14,8": 2,
+      "14,9": 2,
+      "14,10": 2,
+      "14,11": 2,
+      "14,12": 2,
+      "14,13": 2,
+      "14,14": 2,
+      "14,15": 2,
+      "14,16": 2,
+      "14,17": 2,
+      "14,18": 2,
+      "14,19": 2,
+      "14,20": 2,
+      "14,21": 2,
+      "14,22": 2,
+      "14,23": 2,
+      "14,24": 2,
+      "14,25": 2,
+      "14,26": 2,
+      "14,27": 2,
+      "14,28": 2,
+      "14,29": 2,
+      "14,30": 2,
+      "14,31": 2,
+      "14,32": 2,
+      "14,33": 2,
+      "14,34": 2,
+      "14,35": 2,
+      "14,36": 2,
+      "14,37": 2,
+      "14,38": 2,
+      "14,39": 2,
+      "14,40": 2,
+      "15,1": 2,
+      "15,2": 2,
+      "15,3": 2,
+      "15,4": 2,
+      "15,5": 2,
+      "15,6": 2,
+      "15,7": 2,
+      "15,8": 2,
+      "15,9": 2,
+      "15,10": 2,
+      "15,11": 2,
+      "15,12": 2,
+      "15,13": 2,
+      "15,14": 2,
+      "15,15": 2,
+      "15,16": 2,
+      "15,17": 2,
+      "15,18": 2,
+      "15,19": 2,
+      "15,20": 2,
+      "15,21": 2,
+      "15,22": 2,
+      "15,23": 2,
+      "15,24": 2,
+      "15,25": 2,
+      "15,26": 2,
+      "15,27": 2,
+      "15,28": 2,
+      "15,29": 2,
+      "15,30": 2,
+      "15,31": 2,
+      "15,32": 2,
+      "15,33": 2,
+      "15,34": 2,
+      "15,35": 2,
+      "15,36": 2,
+      "15,37": 2,
+      "15,38": 2,
+      "15,39": 2,
+      "15,40": 2,
+      "16,1": 2,
+      "16,2": 2,
+      "16,3": 2,
+      "16,4": 2,
+      "16,5": 2,
+      "16,6": 2,
+      "16,7": 2,
+      "16,8": 2,
+      "16,9": 2,
+      "16,10": 2,
+      "16,11": 2,
+      "16,12": 2,
+      "16,13": 2,
+      "16,14": 2,
+      "16,15": 2,
+      "16,16": 2,
+      "16,17": 2,
+      "16,18": 2,
+      "16,19": 2,
+      "16,20": 2,
+      "16,21": 2,
+      "16,22": 2,
+      "16,23": 2,
+      "16,24": 2,
+      "16,25": 2,
+      "16,26": 2,
+      "16,27": 2,
+      "16,28": 2,
+      "16,29": 2,
+      "16,30": 2,
+      "16,31": 2,
+      "16,32": 2,
+      "16,33": 2,
+      "16,34": 2,
+      "16,35": 2,
+      "16,36": 2,
+      "16,37": 2,
+      "16,38": 2,
+      "16,39": 2,
+      "16,40": 2,
+      "17,1": 2,
+      "17,2": 2,
+      "17,3": 2,
+      "17,4": 2,
+      "17,5": 2,
+      "17,6": 2,
+      "17,7": 2,
+      "17,8": 2,
+      "17,9": 2,
+      "17,10": 2,
+      "17,11": 2,
+      "17,12": 2,
+      "17,13": 2,
+      "17,14": 2,
+      "17,15": 2,
+      "17,16": 2,
+      "17,17": 2,
+      "17,18": 2,
+      "17,19": 2,
+      "17,20": 2,
+      "17,21": 2,
+      "17,22": 2,
+      "17,23": 2,
+      "17,24": 2,
+      "17,25": 2,
+      "17,26": 2,
+      "17,27": 2,
+      "17,28": 2,
+      "17,29": 2,
+      "17,30": 2,
+      "17,31": 2,
+      "17,32": 2,
+      "17,33": 2,
+      "17,34": 2,
+      "17,35": 2,
+      "17,36": 2,
+      "17,37": 2,
+      "17,38": 2,
+      "17,39": 2,
+      "17,40": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "2,1,1,2",
+    "5,1,3,40",
+    "4,8,1,33",
+    "1,35,1,6",
+    "4,46,1,3",
+    "4,51,1,3",
+    "9,46,2,16"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "t_object_follow",
+    "PageResponsiveMode": 2
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//1jSP6rDNQBLWFs8/t3+5u7eSZBICVVpPWKucDZAtNaSWusOC+XZh9EDw++qwZUG6FGqFqmHa3/xn0eTQhoelkkqy+NB+UZzIfuw3Z0tGugD7Shn4Jat6A6rSGK/i/kuyvOFWWmNyKxlpQvNvZFC6Ysnt8AfPh5D3q0aHcfvD92tEfblnzUq0DEYaqaHLNZGvu036+bbC+3y28h+lWIqNSVe2ghaS1cx2IGH9GXyoyVXNQyq8BtFHVwOtt0glMKYqt0MiRdPajv6HL/zdeR2NmzhL4GLVUgR9Et6qtPNNx9njhEVJ5W8Fe4Zd+tGPbYYMXfXBw9JFctM7s1qlzs6cw8KnYzKatgE9+fezZ1Txc5o6YLGwwR+SXaL2ozyJWL/esDtBFkK2k3AeRxi+ZneokYE5ekidxNd8fVq3Q/00+SbLUtNakus3AqRoQn9GBDqNmddLZsHguoOSeaXiHAUBxTzjs7KxbIRxzIAxozPAF2VopSv2QSE2F3maqOUui2ComSyJStjJiD9qNRfXbdr3pu0L4iStWMLVfWW21s0heY5xlJ0rSZBI3XzMbBr/GAwHTLM9urVViuewX6SWoP4k/zseUT28ls80fHM7FsYgA408KnUf2KKyIcx9w/6oSL396MyShZdernS3EATm3whxyKx8SlvOBF+UHTLfVbqkL3/fsdaKnOMI1YMtHXZjPucmdq2B7LWQCASzuo6drs5LU08V9alpNmiDRUCGeTd2DCyY3Yip0PKXa/LRZqnNrqE0RWxLPQIgTz87Pd+0zMt3coRJ5KU3nKT4LpgnV1yyjx+NcW6mOqr4haNDi2jB4L7PpxI8RaLw5KlwfjXVH0+qQJyIalsCgfAOqjh5kmokMPuMoDyv0Boczvj7AgDio0Y8TvsvT9zEDCVXKkX5GSRiww==|920

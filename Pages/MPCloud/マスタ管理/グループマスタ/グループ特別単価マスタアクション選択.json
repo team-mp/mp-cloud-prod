@@ -1,0 +1,211 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0
+        }
+      }
+    },
+    "Count": 2,
+    "DefaultSize": 28.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "Count": 27
+  },
+  "Values": {
+    "0,0": "新規登録する",
+    "0,12": 1,
+    "0,15": "▼選択アクション",
+    "1,0": "対象データを一括削除する",
+    "1,12": 2
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループ特別単価マスタアクション選択!選択アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループ特別単価マスタアクション選択!M1"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "新規登録する",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/005_add_5.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "1,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループ特別単価マスタアクション選択!選択アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループ特別単価マスタアクション選択!M2"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "対象データを一括削除する",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Mobile/456_delete_8.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 14.0
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0,
+        "Foreground": null,
+        "TextIndent": 16,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": null,
+        "TextIndent": 16,
+        "HorizontalAlignment": 0
+      },
+      {
+        "Background": 3,
+        "FontFamily": 1,
+        "Foreground": 2
+      },
+      {
+        "Foreground": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Left",
+        "Body",
+        "#FF000000",
+        "#FFFFC000"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "1,0": 2,
+      "1,1": 1,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,15": 3,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1
+    },
+    "ColStyles": {
+      "19": 4,
+      "20": 4,
+      "21": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "Foreground": 2
+    }
+  },
+  "Spans": [
+    "0,0,1,12",
+    "1,0,1,12",
+    "1,15,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 2
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "選択アクション",
+      "Formula": "グループ特別単価マスタアクション選択!$P$2"
+    }
+  ]
+}//IWSnMqugeYQPLLNE6AyWv1JT1+70BnLCTlhIEFpbi5pJdI1hWWGg5MPpQ4sH9E+RNiSJgNblj8ua0RBun0fiE19vX/lwFGcpO0qDKyt0sZLnoBUrUm7GQyoE437Pnan/NoVPnzFYggR5ZgOyZlp+nzdnhsXmk3e+S536CQU7neettPFB9CKGNwrjYjiWazKmgfHwFBVM/L1h9CL6X1D4yf/IV2pcgTqfBc3ZYRYuskPPRIteGNEpb8xsul2/KKo4zI/CzE1zE9l+0FA9JlBbyfl7epOz6+HRd4E2rXZ5Wd+A8XZXsHOTGiXrvpl9UnnQlywND9Q8ywUaNsHao3i/TL2wQqZJcwW2w4y4MgtrJoHJlbKe9ZficxMpmf/bYmJKJtNXuohRk1h13mle5s6x183TevNdb3j5xMaji8+R5GDjnlEqaeU/urRNRZKL5MgfeNjyMru1yBZVnxB7zgInt4gs6yXqZs5dYyscxaJPKqSF3xBQ6/kaWsLXzdaE2LqmVO/Bt5cuhb+oDI/7PE0zY575tulH0eT4njSYPgFi8WqMWe+XcdmeLimo/T7mA1odWdfsweGcS8WgKplKGzRqAAIs5yMjKXrI47I+VJLXyTXlDE6mBdQuUGIYKVSp/C800w1lYuhRwRGGekQX852rJ/IgKdNMASy7sC0GsX8cev3WicEiTP9L7VpD+/veXmNhe7IJzIFS24YrLOCRwMWaC/2PHftkB66C2uaznmtbS+lkwiNYGOsytKUvGg4I/4PMa3yvWO9+QLdLSbV7rFn5ZPWk1BwqQMzVmeralpbNPRVY93FE29WbU4ODGWIFKkTQugtFXhclwFoeG+r5Kb4dvL9/GBlchzlOd76JGw7/0IRMxSMEGDT5QbUpkDmHC6mV7WCfvG95PY4NaOUj09TuRQ==|920

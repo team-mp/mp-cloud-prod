@@ -1,0 +1,1032 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      1
+    ],
+    "Count": 2,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "32": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "33": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "46": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "54": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "55": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "56": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "58": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "59": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "60": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "61": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "62": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "63": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "64": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "65": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "66": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "74": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95
+    ],
+    "Count": 96
+  },
+  "Values": {
+    "0,68": "▼コメント",
+    "0,72": "▼初回登録ラベル",
+    "0,78": "▼最終更新ラベル",
+    "0,84": "▼資料待ちID",
+    "0,89": "▼コメント更新フラグ",
+    "1,89": "0"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1,
+        "PrimaryColor": "#FF005B47"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "選択フラグ"
+    },
+    "0,2": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "宛先区分"
+    },
+    "0,8": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "対象顧客名"
+    },
+    "0,20": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "資料名"
+    },
+    "0,31": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "コメント登録編集",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!BQ2"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=コメント登録編集!コメント"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!CL2"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=コメント登録編集!更新フラグ"
+                }
+              }
+            ]
+          }
+        ],
+        "ToolTip": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!BQ2"
+        },
+        "TemplateKey": "オレンジ",
+        "IsInvisible": true,
+        "IsDisabled": true,
+        "ImagePath": "Application/029_edit_9.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=AND('0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1,'0710a53b657c4e03a4fa22e2749a0c2'!$BQ$2<>\"\")"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=AND('0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1,'0710a53b657c4e03a4fa22e2749a0c2'!$BQ$2=\"\")"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Foreground": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!BQ2<>\"\""
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "0,33": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,34": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "送付予定日"
+    },
+    "0,41": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "送付期日"
+    },
+    "0,48": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "最終催促日"
+    },
+    "0,55": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,57": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ToolTip": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!BU2"
+        },
+        "TemplateKey": "リスト用",
+        "ImagePath": "Navigation/238_user_8.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$BU$2=\"\""
+            },
+            "StyleInfo": {
+              "Foreground": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,59": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,61": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,63": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ToolTip": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!CA2"
+        },
+        "TemplateKey": "リスト用",
+        "ImagePath": "Navigation/238_user_8.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$CA$2=\"\""
+            },
+            "StyleInfo": {
+              "Foreground": "Background 1 -5",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,65": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "1,68": {
+      "TemplateCellSource": "コメント"
+    },
+    "1,72": {
+      "TemplateCellSource": "初回登録ラベル"
+    },
+    "1,78": {
+      "TemplateCellSource": "最終更新ラベル"
+    },
+    "1,84": {
+      "TemplateCellSource": "資料待ちID"
+    },
+    "1,89": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "t_object_wait_documents",
+            "ShowConfirm": false,
+            "CheckDataValidation": false,
+            "ReloadAfterSucceed": false,
+            "ConfirmText": "本当に更新してもよろしいですか？",
+            "UpdateValues": [
+              {
+                "ColumnName": "wait_comment",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!BQ2"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='0710a53b657c4e03a4fa22e2749a0c2'!CL2"
+                },
+                "Value": "0"
+              }
+            ]
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null
+      },
+      {
+        "TextIndent": 4,
+        "HorizontalAlignment": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "TextIndent": 4,
+        "HorizontalAlignment": 0
+      },
+      {
+        "TextIndent": 4,
+        "BorderBottom": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 2,
+        "Foreground": null,
+        "TextIndent": 4,
+        "BorderBottom": null,
+        "ShrinkToFit": true
+      },
+      {
+        "Foreground": null,
+        "TextIndent": 4,
+        "BorderBottom": null,
+        "ShrinkToFit": true
+      },
+      {
+        "Formatter": 3,
+        "BorderBottom": null,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": null,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Foreground": null,
+        "Formatter": 4,
+        "HorizontalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Foreground": 6,
+        "HorizontalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Foreground": 6,
+        "HorizontalAlignment": 5,
+        "WordWrap": true,
+        "BorderRight": 0
+      },
+      {
+        "Background": null,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 8,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 0
+      },
+      {
+        "TextIndent": 4
+      },
+      {
+        "Background": null,
+        "FontFamily": 2,
+        "Foreground": null,
+        "TextIndent": 4,
+        "ShrinkToFit": true
+      },
+      {
+        "Foreground": null,
+        "TextIndent": 4,
+        "ShrinkToFit": true
+      },
+      {
+        "Formatter": 4
+      },
+      {
+        "Background": 9,
+        "FontFamily": 2,
+        "HorizontalAlignment": 5
+      },
+      {
+        "Background": 10,
+        "FontFamily": 2,
+        "Formatter": 11,
+        "HorizontalAlignment": 12
+      },
+      {
+        "HorizontalAlignment": 5
+      },
+      {
+        "Background": null,
+        "Foreground": 13
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 6,
+        "HorizontalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "Background": 9,
+        "HorizontalAlignment": 5
+      },
+      {
+        "HorizontalAlignment": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Left",
+        "Background 1 -15",
+        "Body",
+        "yyyy/MM/dd",
+        "yyyy/mm/dd hh:mm",
+        "Center",
+        "Background 1 -35",
+        "General",
+        "[AUTO]General",
+        "#FFFFFF00",
+        "Accent 1 60",
+        "@",
+        "Right",
+        "#FF000000"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "0,2": 1,
+      "0,7": 2,
+      "0,8": 3,
+      "0,19": 2,
+      "0,20": 4,
+      "0,21": 0,
+      "0,22": 0,
+      "0,23": 0,
+      "0,24": 0,
+      "0,25": 0,
+      "0,26": 0,
+      "0,27": 0,
+      "0,28": 0,
+      "0,29": 0,
+      "0,30": 0,
+      "0,31": 5,
+      "0,32": 5,
+      "0,33": 6,
+      "0,34": 7,
+      "0,35": 0,
+      "0,36": 0,
+      "0,37": 0,
+      "0,38": 0,
+      "0,39": 0,
+      "0,40": 8,
+      "0,41": 0,
+      "0,42": 0,
+      "0,43": 0,
+      "0,44": 0,
+      "0,45": 0,
+      "0,46": 0,
+      "0,47": 8,
+      "0,48": 9,
+      "0,54": 2,
+      "0,57": 10,
+      "0,59": 11,
+      "0,60": 12,
+      "0,61": 11,
+      "0,62": 11,
+      "0,63": 10,
+      "0,65": 11,
+      "0,66": 11,
+      "0,67": 0,
+      "0,68": 13,
+      "0,69": 0,
+      "0,70": 13,
+      "0,74": 14,
+      "0,75": 14,
+      "0,76": 14,
+      "0,77": 14,
+      "0,78": 15,
+      "0,79": 14,
+      "0,80": 16,
+      "0,84": 15,
+      "0,85": 16,
+      "0,86": 16,
+      "0,87": 16,
+      "0,88": 16,
+      "0,89": 15,
+      "0,90": 17,
+      "0,91": 17,
+      "0,92": 14,
+      "0,93": 14,
+      "0,94": 14,
+      "0,95": 14,
+      "1,20": 18,
+      "1,21": 18,
+      "1,22": 18,
+      "1,23": 18,
+      "1,24": 18,
+      "1,25": 18,
+      "1,26": 18,
+      "1,27": 18,
+      "1,28": 18,
+      "1,29": 18,
+      "1,30": 18,
+      "1,31": 19,
+      "1,32": 19,
+      "1,33": 20,
+      "1,34": 9,
+      "1,35": 9,
+      "1,36": 9,
+      "1,37": 9,
+      "1,38": 9,
+      "1,39": 9,
+      "1,40": 9,
+      "1,56": 10,
+      "1,57": 10,
+      "1,58": 10,
+      "1,59": 10,
+      "1,60": 21,
+      "1,61": 21,
+      "1,62": 21,
+      "1,63": 21,
+      "1,64": 21,
+      "1,65": 21,
+      "1,66": 21,
+      "1,68": 22,
+      "1,72": 22,
+      "1,75": 14,
+      "1,76": 14,
+      "1,77": 17,
+      "1,78": 22,
+      "1,79": 14,
+      "1,80": 16,
+      "1,84": 22,
+      "1,85": 16,
+      "1,86": 16,
+      "1,87": 16,
+      "1,88": 16,
+      "1,89": 23,
+      "1,90": 17,
+      "1,91": 17,
+      "1,92": 14,
+      "1,93": 14,
+      "1,94": 14,
+      "1,95": 14
+    },
+    "ColStyles": {
+      "0": 24,
+      "1": 24,
+      "2": 24,
+      "3": 24,
+      "4": 24,
+      "5": 24,
+      "6": 24,
+      "7": 24,
+      "8": 24,
+      "9": 24,
+      "10": 24,
+      "11": 24,
+      "12": 24,
+      "13": 24,
+      "14": 24,
+      "15": 24,
+      "16": 24,
+      "17": 24,
+      "18": 24,
+      "19": 24,
+      "30": 25,
+      "31": 25,
+      "32": 25,
+      "33": 25,
+      "34": 24,
+      "35": 24,
+      "36": 24,
+      "37": 24,
+      "38": 24,
+      "39": 24,
+      "40": 24,
+      "41": 24,
+      "42": 24,
+      "43": 24,
+      "44": 24,
+      "45": 24,
+      "46": 24,
+      "47": 24,
+      "48": 24,
+      "49": 24,
+      "50": 24,
+      "51": 24,
+      "52": 24,
+      "53": 24,
+      "54": 24,
+      "55": 26,
+      "56": 26,
+      "57": 26,
+      "58": 26,
+      "59": 26,
+      "60": 26,
+      "61": 26,
+      "62": 26,
+      "63": 26,
+      "64": 26,
+      "65": 26,
+      "66": 26,
+      "67": 24,
+      "68": 27,
+      "70": 27,
+      "74": 24,
+      "75": 24,
+      "76": 24,
+      "77": 24,
+      "78": 24,
+      "79": 24,
+      "80": 24,
+      "81": 24,
+      "82": 24,
+      "83": 28,
+      "84": 28,
+      "85": 28,
+      "86": 28,
+      "87": 28,
+      "88": 28,
+      "89": 28,
+      "90": 28,
+      "91": 28,
+      "92": 28,
+      "93": 28,
+      "94": 28,
+      "95": 28
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "0,0,1,2",
+    "0,34,1,7",
+    "0,41,1,7",
+    "0,31,1,2",
+    "0,20,1,11",
+    "0,48,1,7",
+    "1,68,1,3",
+    "1,72,1,3",
+    "1,78,1,3",
+    "1,84,1,3",
+    "1,89,1,3",
+    "0,57,1,2",
+    "0,63,1,2",
+    "0,55,1,2",
+    "0,61,1,2",
+    "0,59,1,2",
+    "0,65,1,2",
+    "0,2,1,6",
+    "0,8,1,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "資料待ちリスト参照"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//MS/rQzPQnqaD3kfx8/OA8pr7oXjr7EYaZib59L5crthlLtOFDvl5ZCm5ia6Y9+VikgLSYQv/f+nnwpl0f7I+bV0H/sMywkJPRZiJc449O2+gUOjMQ/poMhATyGhqG2kK9GerS4GZ/N2yL6WqEul6czE4ySqUn7Q34tOBztzEQzvFnZ8z8wzyW8G0xliU7Bj+7Lbw2M59QaYrDuIJpAbqLlULKvDVAMs9BijzEXoFhA3O+aSRojnmN+iuZYQa8Yq6zd3ulH9huCGpyiw6aDJvklTfAnnMmpRrrYQ7oUq4M5NICNJzdd5xDkRj7Ft/KYdop4ErUHReJ7gecujE/YqDYKRq40D5w9RSD/IHXRsreHeZG9VGJ+jYpVemGtfIk/Qw9mkzaLvl47t7V/51skqX0/ytvDcsf39LO98MMka10laf7CGmQRXX0k7v08hVQwWZayyHoC37t3PpsGJgrllukET9mvH/UjFycnwaOiItGpV1dJItasK9/f07FVB7T1vSZjAAQXln/T2yI5YC/woXYRWDxJUDcf7hM+ahRD/yD+x+XMD98pE2mYWe+O6tA3F1LMfi/0Tf22iQH/OnM5Py5oNo2OooTxhujPBUlNoM6Amrronr6jzLUS1U0i4tqE4EJChVopEQroG2KXeLCzewdYBqHbBSPHBURT1J82x3a6BZ7NuY/mvNxoQh+NbXMldKbsSmzXwVwrQtbgjWTJpjkshQ1iP5Leaj00go7y2hgGRe6HkH+ND/wC0P32K4rroPbgemTtE6D969D+0G34VE9yys4m1CoPAr6Wfzbmauecmou9XUG2j59sNY6Sqkm9ytEmko1+cLXXadUD7rXhpFfs8obZ1D1Rv0jlmjxZIdzs6K7VNYmPevIS96rIbXsjW4wQf6XGeTIzZAdzmEhxSgvw==|920

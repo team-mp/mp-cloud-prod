@@ -1,0 +1,152 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Name": "P_郵便番号"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+      "PostData": {
+        "DataItemType": 1,
+        "Data": {
+          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+          "Data": [
+            {
+              "Name": "zipcode",
+              "DataItemType": 0,
+              "Data": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_郵便番号"
+              }
+            },
+            {
+              "Name": "parts",
+              "DataItemType": 0,
+              "Data": 1
+            }
+          ]
+        }
+      },
+      "WebUrl": "https://api.excelapi.org/post/address",
+      "Method": "GET",
+      "SuccessCallback": "// レスポンスデータは「result」変数に格納されます。\r\n// 「result」変数を使用して、リクエストが成功したコールバック関数を実装します。\r\n//console.log(result);",
+      "ErrorCallback": "// エラーデータは「error」変数に格納されます。\r\n// 例外処理には「error」変数を使用してください。\r\nconsole.error(error);",
+      "NewParameter": "都道府県",
+      "Header": [],
+      "Comments": "EXCEL APIを使用"
+    },
+    {
+      "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+      "PostData": {
+        "DataItemType": 1,
+        "Data": {
+          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+          "Data": [
+            {
+              "Name": "zipcode",
+              "DataItemType": 0,
+              "Data": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_郵便番号"
+              }
+            },
+            {
+              "Name": "parts",
+              "DataItemType": 0,
+              "Data": 2
+            }
+          ]
+        }
+      },
+      "WebUrl": "https://api.excelapi.org/post/address",
+      "Method": "GET",
+      "SuccessCallback": "// レスポンスデータは「result」変数に格納されます。\r\n// 「result」変数を使用して、リクエストが成功したコールバック関数を実装します。\r\n//console.log(result);",
+      "ErrorCallback": "// エラーデータは「error」変数に格納されます。\r\n// 例外処理には「error」変数を使用してください。\r\nconsole.error(error);",
+      "NewParameter": "市区町村",
+      "Header": [],
+      "Comments": "EXCEL APIを使用"
+    },
+    {
+      "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+      "PostData": {
+        "DataItemType": 1,
+        "Data": {
+          "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+          "Data": [
+            {
+              "Name": "zipcode",
+              "DataItemType": 0,
+              "Data": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=P_郵便番号"
+              }
+            },
+            {
+              "Name": "parts",
+              "DataItemType": 0,
+              "Data": 3
+            }
+          ]
+        }
+      },
+      "WebUrl": "https://api.excelapi.org/post/address",
+      "Method": "GET",
+      "SuccessCallback": "// レスポンスデータは「result」変数に格納されます。\r\n// 「result」変数を使用して、リクエストが成功したコールバック関数を実装します。\r\n//console.log(result);",
+      "ErrorCallback": "// エラーデータは「error」変数に格納されます。\r\n// 例外処理には「error」変数を使用してください。\r\nconsole.error(error);",
+      "NewParameter": "町域",
+      "Header": [],
+      "Comments": "EXCEL APIを使用"
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "ErrorCode": "0",
+      "CustomReturns": [
+        {
+          "ReturnPropertyName": "R_都道府県",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=都道府県"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_市区町村",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=市区町村"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_町域",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=町域"
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "R_都道府県"
+    },
+    {
+      "Name": "R_市区町村"
+    },
+    {
+      "Name": "R_町域"
+    }
+  ],
+  "Name": "郵便番号から住所を取得する"
+}

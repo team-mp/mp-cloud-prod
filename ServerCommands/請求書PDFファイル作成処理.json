@@ -1,0 +1,134 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      },
+      "Parameters": [
+        {
+          "Type": 1,
+          "ArrayParamItems": [
+            {
+              "Name": "P_選択フラグ"
+            },
+            {
+              "Name": "P_請求番号"
+            },
+            {
+              "Name": "P_請求先名"
+            }
+          ],
+          "PrimaryKeys": [
+            "ID"
+          ],
+          "Name": "P_請求書リスト"
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "保存先サーバーパス名",
+      "ParameterValue": "C:\\inetpub\\wwwroot\\private\\",
+      "ID": "01c0b1096e3c42f5b3d02c504bb6431e"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "個人フォルダ名",
+      "ParameterValue": "%CurrentUser.user_id%",
+      "ID": "89a5a5448abb4510a8f69bae0892fcb5"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "個人フォルダフルパス名",
+      "ParameterValue": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=保存先サーバーパス名&個人フォルダ名&\"\\\""
+      },
+      "ID": "f8b9cc66cb5a42468a70e2d7bf8975b4"
+    },
+    {
+      "$type": "OperateFilesCommand.CreateFolderCommand, OperateFilesCommand",
+      "FolderPath": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=個人フォルダフルパス名"
+      },
+      "Comments": "個人フォルダ作成"
+    },
+    {
+      "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+      "LoopInfo": {
+        "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+        "LoopCount": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=P_請求書リスト"
+        },
+        "LoopItemParamName": "Item"
+      },
+      "CommandList": [
+        {
+          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+          "ConditionAndCommandPairList": [
+            {
+              "Condition": {
+                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                "param": {
+                  "$type": "Forguncy.Model.IfConditionServerSiteParam, ServerDesignerCommon",
+                  "ParamObject": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Item.P_選択フラグ"
+                  }
+                },
+                "value": "1"
+              },
+              "CommandList": [
+                {
+                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                  "ParameterName": "出力ファイルパス名",
+                  "ParameterValue": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=個人フォルダフルパス名&Item.P_請求番号&\"_\"&Item.P_請求先名&\"様.pdf\""
+                  },
+                  "ID": "03ee17bd4d234256b040c55e0fc2b7e0"
+                },
+                {
+                  "$type": "Forguncy.Model.ExportActiveReportCommand, ServerDesignerCommon",
+                  "CustomName": "請求書",
+                  "ServerExportFileName": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=出力ファイルパス名"
+                  },
+                  "ExportReportNameList": [
+                    "請求書"
+                  ],
+                  "PassParameters": [
+                    {
+                      "SourceValue": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=Item.P_請求番号"
+                      },
+                      "TargetParameter": "P_請求番号"
+                    }
+                  ],
+                  "IsPageBreakBefores": [
+                    false
+                  ],
+                  "ReportGaps": [
+                    "0cm"
+                  ]
+                }
+              ],
+              "ID": "1ac7fc26-8b6d-44b4-ba30-f3a652f54966"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Name": "請求書PDFファイル作成処理"
+}

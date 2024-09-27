@@ -1,0 +1,90 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "ユーザーID",
+      "ParameterValue": "%CurrentUser.user_id%",
+      "ID": "42904d51b85a4d0b8be37ea90f5fbdb4"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "ユーザー情報",
+      "TableValue": {
+        "TableName": "m_user",
+        "TableValueType": 1,
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "m_user",
+              "ColumnName": "user_name"
+            },
+            "ColumnName": "氏名"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "m_user",
+              "ColumnName": "customer_id",
+              "RelationBinding": {
+                "RelatedTable": "m_customer",
+                "RelatedColumn": "customer_id",
+                "DisplayColumn": "内部顧客名"
+              }
+            },
+            "ColumnName": "内部顧客名"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "m_user",
+            "ColumnName": "user_id"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=ユーザーID"
+          }
+        }
+      },
+      "ID": "2a1b53dc996d472ba8d5ec5e1c1f56b0"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "ラベル名",
+      "ParameterValue": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=TEXT(NOW(),\"yyyy/mm/dd hh:mm\")&\"　\"&ユーザー情報.内部顧客名&\" \"&ユーザー情報.氏名"
+      },
+      "ID": "6230a6c8af20460d91052d78d6035678"
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "ErrorCode": "0",
+      "CustomReturns": [
+        {
+          "ReturnPropertyName": "R_ラベル名",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=ラベル名"
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "R_ラベル名"
+    }
+  ],
+  "Name": "登録更新ラベル取得"
+}

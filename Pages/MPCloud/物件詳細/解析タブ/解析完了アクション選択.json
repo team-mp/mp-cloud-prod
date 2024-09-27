@@ -1,0 +1,254 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "Mode": 1
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "Mode": 1
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "Mode": 1
+        }
+      }
+    },
+    "InVisibleIndexes": [
+      2,
+      3,
+      4
+    ],
+    "Count": 5,
+    "DefaultSize": 0.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "Count": 25
+  },
+  "Values": {
+    "0,0": "解析完了とする",
+    "0,12": 1,
+    "0,14": "▼解析完了アクション",
+    "1,0": "業務対応中にする",
+    "1,12": 2
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=解析完了アクション選択!解析完了アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=解析完了アクション選択!M1"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "解析完了とする",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/080_lock_3.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "1,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=解析完了アクション選択!解析完了アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=解析完了アクション選択!M2"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "業務対応中にする",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/080_lock_3.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "2,12": {
+      "CellComment": {
+        "Comments": "１：即時\r\n２：メール画面"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": null,
+        "TextIndent": 16,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 2
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0,
+        "Foreground": 2
+      },
+      {
+        "Background": 3
+      },
+      {
+        "Foreground": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Left",
+        "#FF000000",
+        "#FFFFC000"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 1,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "1,0": 0,
+      "1,1": 1,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,14": 2,
+      "1,15": 1,
+      "1,16": 1,
+      "2,12": 2,
+      "2,13": 1,
+      "2,14": 1,
+      "2,18": 3
+    },
+    "ColStyles": {
+      "0": 4,
+      "1": 4,
+      "2": 4,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "Foreground": 2
+    }
+  },
+  "Spans": [
+    "2,12,1,3",
+    "2,18,1,3",
+    "1,14,1,3",
+    "1,0,1,12",
+    "0,0,1,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "解析完了アクション",
+      "Formula": "解析完了アクション選択!$O$2"
+    }
+  ]
+}//mwPs5gKLkkqVV7uer9e2bKCUdV1lJiFWTSjgcBfVQnMbCgVR0lHorT36+rV5sidX3xGs307kvmtPiTmH4UBsql3QWe8pjIXxuIApKn8TeK+It7W7vXjrzMXbMcAig74oyBQrqml1zZRbvVYjxVYLFMWUbs9PKlSSBxKVI8WdZHBATQXmoqATnd4sbci7BiaVLSkdw6wb1WWIeKYbZJdrAOhGJtp2VMuIz3j922qYO+8Qr/J9wBHPf51VkqDbtq0DOFIgp711vOu15d3vQv3eV4reF9oyo4ks0ZmqYKn2FSZJ4B6tX7gyhxGh1b1uk5bbJ66+IxUsAqTJE5Si6W1TgCQ6GJoWUeSCXem4JI483sL7mVQMAOoxZcYzZfWYzluXf2f1BD2xelUJH4n7qGRwYhdM7ZXUjEVamPANYyqu39yeElyDipg4pq1fNjKiPU4L2SHW990I+x33VjJrbFXRbNnx6LYmyXiexJhka/ZklLDgRwc4OkkvVWeR2qRanBf2zkLlgG/LCopqIuqot361jT6bRfMWxUaiw77v08IVVsZSw9zAWYVv2A7P3Xmwp5sphpEKrTHiPjYcs4xiebPhaGnFM/MK7km8kAlu/Vg1FZX0L2Pjq3M4ngnyEvPnf8aAD+JwVxOroF2m3Mr4WHhzXti2lRKlciFUi6BVyK9v5UkcbOZcEuQ99DAXpFzbjH7Tvz7hmL0y6Zf9z5xM4T14GLa7f0IRSX7m7XMV/V2ROxj/tVZdQ6zgsT/yFc+bY6nKiJ4tYcYGgTNWBW/dJRGVxTaM0GrWO1nYKaLWJ7uodVtJvCtVnkGkbptj5/Eyjy7SwGSNtS1Ul/03m/nEEVz+QFPJ9SwDood/ggogM82ZSTfZklCmKuhUe/1N49/04l0fSnrHRYT12U+wsMFoqyef8w==|920

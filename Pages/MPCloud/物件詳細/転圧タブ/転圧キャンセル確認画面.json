@@ -1,0 +1,813 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 23,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "Count": 37
+  },
+  "Values": {
+    "1,3": "転圧キャンセル料の計上をしますか？",
+    "3,32": "▼実行フラグ",
+    "6,3": "キャンセル後の状態を選択してください",
+    "11,3": "連絡事項を入力してください",
+    "20,16": "閉じる",
+    "20,23": "次へ進む"
+  },
+  "AttachInfos": {
+    "3,3": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "NoneItemText": "＜なし＞",
+        "Style": 3,
+        "PrimaryColor": "#FF00C5A9",
+        "IsSameWidth": true,
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "計上しない"
+          },
+          {
+            "Value": "1",
+            "DisplayValue": "計上する"
+          }
+        ]
+      }
+    },
+    "8,3": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "NoneItemText": "＜なし＞",
+        "Style": 3,
+        "PrimaryColor": "#FF00C5A9",
+        "IsSameWidth": true,
+        "Items": [
+          {
+            "Value": "1",
+            "DisplayValue": "転圧日程確認中にする"
+          },
+          {
+            "Value": "2",
+            "DisplayValue": "保証辞退（失注終了）にする"
+          }
+        ]
+      }
+    },
+    "13,3": {
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "※この内容は転圧の連絡事項として登録されます"
+      }
+    },
+    "20,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "閉じる",
+        "TemplateKey": "スタイル2"
+      }
+    },
+    "20,23": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=転圧キャンセル確認画面!計上選択"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "キャンセル料の計上する、しないを選択してください"
+                  },
+                  {
+                    "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                    "TargetCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=転圧キャンセル確認画面!D4"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "b9b31ec9-9b35-4a49-9406-a6d579def250"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=転圧キャンセル確認画面!状態選択"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "キャンセル後の状態を選択してください"
+                  },
+                  {
+                    "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                    "TargetCell": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=転圧キャンセル確認画面!D9"
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                  }
+                ],
+                "ID": "2b0d5dab-2f6a-4c32-a16d-e1576a19598b"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=転圧キャンセル確認画面!連絡事項"
+                      }
+                    ]
+                  },
+                  "value": "%Null%"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "ConfirmDialogSettings": {
+                          "Title": "確認",
+                          "FormulaText": "連絡事項が入力されていません。\r\n未入力のまま処理を継続します。\r\nよろしいですか？",
+                          "YesButtonText": "はい",
+                          "NoButtonText": "いいえ",
+                          "ConfirmIcon": 4
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+                            "JavaScript": "return true;",
+                            "ID": "22584d65cde4408fb5e95813280276f5"
+                          }
+                        ],
+                        "ID": "7eb447a1-6624-4a3c-8717-2300ed041251"
+                      },
+                      {
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.StopCommand, ServerDesignerCommon"
+                          }
+                        ],
+                        "ID": "deebb588-ae7b-4314-b566-7710636f57e8"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "db9c84d6-cda4-46f2-81df-9acd49a4760b"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=転圧キャンセル確認画面!実行フラグ"
+                },
+                "Value": "1"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "次へ進む",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "Foreground": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4,
+        "VerticalAlignment": 5,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Text 1 50",
+        "[AUTO]General",
+        "#FFFFC000",
+        "@",
+        "Top"
+      ]
+    },
+    "CellStyles": {
+      "1,3": 0,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 1,
+      "1,23": 1,
+      "1,24": 1,
+      "1,25": 1,
+      "1,26": 1,
+      "1,27": 1,
+      "1,28": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,6": 1,
+      "2,7": 1,
+      "2,8": 1,
+      "2,9": 1,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 1,
+      "2,13": 1,
+      "2,14": 1,
+      "2,15": 1,
+      "2,16": 1,
+      "2,17": 1,
+      "2,18": 1,
+      "2,19": 1,
+      "2,20": 1,
+      "2,21": 1,
+      "2,22": 1,
+      "2,23": 1,
+      "2,24": 1,
+      "2,25": 1,
+      "2,26": 1,
+      "2,27": 1,
+      "2,28": 1,
+      "3,3": 2,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 1,
+      "3,7": 1,
+      "3,8": 1,
+      "3,9": 1,
+      "3,10": 1,
+      "3,11": 1,
+      "3,12": 1,
+      "3,13": 1,
+      "3,14": 1,
+      "3,15": 1,
+      "3,16": 1,
+      "3,17": 1,
+      "3,18": 1,
+      "3,19": 1,
+      "3,20": 1,
+      "3,21": 1,
+      "3,22": 1,
+      "3,23": 1,
+      "3,24": 1,
+      "3,25": 1,
+      "3,26": 1,
+      "3,27": 1,
+      "3,28": 1,
+      "3,32": 3,
+      "3,33": 1,
+      "3,34": 1,
+      "4,3": 4,
+      "4,4": 4,
+      "4,5": 4,
+      "4,6": 4,
+      "4,7": 4,
+      "4,8": 4,
+      "4,9": 4,
+      "4,10": 4,
+      "4,11": 4,
+      "4,12": 4,
+      "4,13": 4,
+      "4,14": 1,
+      "4,15": 1,
+      "4,16": 1,
+      "4,17": 1,
+      "4,18": 1,
+      "4,19": 1,
+      "4,20": 1,
+      "4,21": 1,
+      "4,22": 1,
+      "4,23": 1,
+      "4,24": 1,
+      "4,25": 1,
+      "4,26": 1,
+      "4,27": 1,
+      "4,28": 1,
+      "4,32": 5,
+      "4,33": 1,
+      "4,34": 1,
+      "5,3": 1,
+      "5,4": 1,
+      "5,5": 1,
+      "5,6": 1,
+      "5,7": 1,
+      "5,8": 1,
+      "5,9": 1,
+      "5,10": 1,
+      "5,11": 1,
+      "5,12": 1,
+      "5,13": 1,
+      "5,14": 1,
+      "5,15": 1,
+      "5,16": 1,
+      "5,17": 1,
+      "5,18": 1,
+      "5,19": 1,
+      "5,20": 1,
+      "5,21": 1,
+      "5,22": 1,
+      "5,23": 1,
+      "5,24": 1,
+      "5,25": 1,
+      "5,26": 1,
+      "5,27": 1,
+      "5,28": 1,
+      "6,3": 0,
+      "6,4": 1,
+      "6,5": 1,
+      "6,6": 1,
+      "6,7": 1,
+      "6,8": 1,
+      "6,9": 1,
+      "6,10": 1,
+      "6,11": 1,
+      "6,12": 1,
+      "6,13": 1,
+      "6,14": 1,
+      "6,15": 1,
+      "6,16": 1,
+      "6,17": 1,
+      "6,18": 1,
+      "6,19": 1,
+      "6,20": 1,
+      "6,21": 1,
+      "6,22": 1,
+      "6,23": 1,
+      "6,24": 1,
+      "6,25": 1,
+      "6,26": 1,
+      "6,27": 1,
+      "6,28": 1,
+      "7,3": 1,
+      "7,4": 1,
+      "7,5": 1,
+      "7,6": 1,
+      "7,7": 1,
+      "7,8": 1,
+      "7,9": 1,
+      "7,10": 1,
+      "7,11": 1,
+      "7,12": 1,
+      "7,13": 1,
+      "7,14": 1,
+      "7,15": 1,
+      "7,16": 1,
+      "7,17": 1,
+      "7,18": 1,
+      "7,19": 1,
+      "7,20": 1,
+      "7,21": 1,
+      "7,22": 1,
+      "7,23": 1,
+      "7,24": 1,
+      "7,25": 1,
+      "7,26": 1,
+      "7,27": 1,
+      "7,28": 1,
+      "8,3": 2,
+      "8,28": 1,
+      "9,28": 1,
+      "11,3": 6,
+      "11,4": 1,
+      "11,5": 1,
+      "11,6": 1,
+      "11,7": 1,
+      "11,8": 1,
+      "11,9": 1,
+      "11,10": 1,
+      "11,11": 1,
+      "11,12": 1,
+      "11,13": 1,
+      "11,14": 1,
+      "11,15": 1,
+      "11,16": 1,
+      "11,17": 1,
+      "11,18": 1,
+      "11,19": 1,
+      "11,20": 1,
+      "11,21": 1,
+      "11,22": 1,
+      "11,23": 1,
+      "11,24": 1,
+      "11,25": 1,
+      "11,26": 1,
+      "11,27": 1,
+      "12,3": 1,
+      "12,4": 1,
+      "12,5": 1,
+      "12,6": 1,
+      "12,7": 1,
+      "12,8": 1,
+      "12,9": 1,
+      "12,10": 1,
+      "12,11": 1,
+      "12,12": 1,
+      "12,13": 1,
+      "12,14": 1,
+      "12,15": 1,
+      "12,16": 1,
+      "12,17": 1,
+      "12,18": 1,
+      "12,19": 1,
+      "12,20": 1,
+      "12,21": 1,
+      "12,22": 1,
+      "12,23": 1,
+      "12,24": 1,
+      "12,25": 1,
+      "12,26": 1,
+      "12,27": 1,
+      "13,3": 7,
+      "13,4": 1,
+      "13,5": 1,
+      "13,6": 1,
+      "13,7": 1,
+      "13,8": 1,
+      "13,9": 1,
+      "13,10": 1,
+      "13,11": 1,
+      "13,12": 1,
+      "13,13": 1,
+      "13,14": 1,
+      "13,15": 1,
+      "13,16": 1,
+      "13,17": 1,
+      "13,18": 1,
+      "13,19": 1,
+      "13,20": 1,
+      "13,21": 1,
+      "13,22": 1,
+      "13,23": 1,
+      "13,24": 1,
+      "13,25": 1,
+      "13,26": 1,
+      "13,27": 1,
+      "14,3": 1,
+      "14,4": 1,
+      "14,5": 1,
+      "14,6": 1,
+      "14,7": 1,
+      "14,8": 1,
+      "14,9": 1,
+      "14,10": 1,
+      "14,11": 1,
+      "14,12": 1,
+      "14,13": 1,
+      "14,14": 1,
+      "14,15": 1,
+      "14,16": 1,
+      "14,17": 1,
+      "14,18": 1,
+      "14,19": 1,
+      "14,20": 1,
+      "14,21": 1,
+      "14,22": 1,
+      "14,23": 1,
+      "14,24": 1,
+      "14,25": 1,
+      "14,26": 1,
+      "14,27": 1,
+      "15,3": 1,
+      "15,4": 1,
+      "15,5": 1,
+      "15,6": 1,
+      "15,7": 1,
+      "15,8": 1,
+      "15,9": 1,
+      "15,10": 1,
+      "15,11": 1,
+      "15,12": 1,
+      "15,13": 1,
+      "15,14": 1,
+      "15,15": 1,
+      "15,16": 1,
+      "15,17": 1,
+      "15,18": 1,
+      "15,19": 1,
+      "15,20": 1,
+      "15,21": 1,
+      "15,22": 1,
+      "15,23": 1,
+      "15,24": 1,
+      "15,25": 1,
+      "15,26": 1,
+      "15,27": 1,
+      "16,3": 1,
+      "16,4": 1,
+      "16,5": 1,
+      "16,6": 1,
+      "16,7": 1,
+      "16,8": 1,
+      "16,9": 1,
+      "16,10": 1,
+      "16,11": 1,
+      "16,12": 1,
+      "16,13": 1,
+      "16,14": 1,
+      "16,15": 1,
+      "16,16": 1,
+      "16,17": 1,
+      "16,18": 1,
+      "16,19": 1,
+      "16,20": 1,
+      "16,21": 1,
+      "16,22": 1,
+      "16,23": 1,
+      "16,24": 1,
+      "16,25": 1,
+      "16,26": 1,
+      "16,27": 1,
+      "17,3": 1,
+      "17,4": 1,
+      "17,5": 1,
+      "17,6": 1,
+      "17,7": 1,
+      "17,8": 1,
+      "17,9": 1,
+      "17,10": 1,
+      "17,11": 1,
+      "17,12": 1,
+      "17,13": 1,
+      "17,14": 1,
+      "17,15": 1,
+      "17,16": 1,
+      "17,17": 1,
+      "17,18": 1,
+      "17,19": 1,
+      "17,20": 1,
+      "17,21": 1,
+      "17,22": 1,
+      "17,23": 1,
+      "17,24": 1,
+      "17,25": 1,
+      "17,26": 1,
+      "17,27": 1,
+      "19,13": 1,
+      "19,14": 1,
+      "19,15": 1,
+      "19,16": 1,
+      "19,17": 1,
+      "20,16": 8,
+      "20,22": 1,
+      "20,23": 8,
+      "20,24": 1,
+      "20,25": 1,
+      "20,26": 1,
+      "20,27": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,3,2,11",
+    "8,3,2,25",
+    "20,23,1,5",
+    "20,16,1,6",
+    "4,32,1,3",
+    "13,3,5,25"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "計上選択",
+      "Formula": "転圧キャンセル確認画面!$D$4"
+    },
+    {
+      "Name": "状態選択",
+      "Formula": "転圧キャンセル確認画面!$D$9"
+    },
+    {
+      "Name": "実行フラグ",
+      "Formula": "転圧キャンセル確認画面!$AG$5"
+    },
+    {
+      "Name": "連絡事項",
+      "Formula": "転圧キャンセル確認画面!$D$14"
+    }
+  ]
+}//CFDJOyvBnzmIZPqWUedhN93RVRFuwXwRipZzsR8JmWOG8oTzJ/TuDO5US8QdJ6s/S7fwLkHzErakOMcA5GfrO05plZGffFIZiIsFkaqZIp5E4UMjm696xuoqIlawYXpN1/U6UgOCtexnloephPy2XuV9cNBUNOy/xeu8BlIjwkGcVuwzN+eUID+28ZDWlGaFm/TeovQmbOhLxwRzyTyL6nQzBffT5Dy1LDjdTGtZmTJqujyvK7lPVshy20XDmamuXbwjqMFZbjGv8C8CbUK/fEZ4f51/mwek4Yx6CvURJ5AJ7t3mttb+oHK+gmEkz835MDUi283SZMgmdTxBiQuNVFqPS9+oJe1QNjd7YI9p57+DXpD0PaHQTrYt7bftkjQVnITR9Ptz8uT20yHxNVT66S2DaX/R2inw3vlkB2bSgx1YGOr2Er7zPI6n3TLLiRRElORZ8Vz/P7NifEnv4wnOpaXg3OjwBwSUXdX/fFWa/2/irR3yQ1kWBP3eVnuSNNRtIpJp8+PvNqPw+3cp/V8zyR1DgjkwAeKouRC3LvkRms+bqQFCaZWS/cbnxXiNF2MvAEeweZb94mNNNL9YcM/s/sJK5SsUlfwY1W+GIQznaVdYaDMPjoX7FaWUlSw4oZ0mN9qR54UFB8v5OhNCqGJndvrDbXn6uX3XH2WSVNAxNK1vT6/9uuSYHMpohE3Hv40pnFyeiBwcczByAh7jgASKLg2uU5oU64uNuq1D8Tz/LtLZ1s5oCVGXBF6jT5XwUUH9Jrqb+1I4qPYK4NJizZY0lYsMg42euh2jnWbpsH+Ixo0CxMOfPalszAm4OzwpNYXK2y4PHFawt7/3A7RhOzSOjRALMhkm9AQjOVN6okTkTilTstK35TAN1CY9ABevYZCqUlaQNeqHkZUvsMSIjbCzUw==|920

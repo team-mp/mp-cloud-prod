@@ -1,0 +1,547 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "26": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "27": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      26,
+      27
+    ],
+    "Count": 32,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "34": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "37": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "38": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "39": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "44": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "45": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
+    ],
+    "Count": 54
+  },
+  "Values": {
+    "0,0": "ユーザーマスタ_登録編集_詳細",
+    "1,48": "▼顧客ID",
+    "4,48": "▼顧客ID固定フラグ",
+    "27,48": "▼最終更新ラベル",
+    "30,20": "コピーして新規作成する",
+    "30,29": "削除する",
+    "30,36": "更新する"
+  },
+  "Formulas": {
+    "30,36": "IF(ユーザーID=\"\",\"登録する\",\"更新する\")",
+    "30,3": "IF(最終更新ラベル<>\"\",\"最終更新日時：\"&最終更新ラベル,\"\")"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "ユーザーマスタ登録_詳細",
+        "OverflowMode": 1
+      }
+    },
+    "5,48": {
+      "CellComment": {
+        "Comments": "1がセットされると検索ボタンを非表示にする"
+      }
+    },
+    "28,48": {
+      "BindingInfo": {
+        "TableName": "m_user",
+        "ColumnName": "last_updated_label"
+      }
+    },
+    "30,20": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ユーザーマスタ登録フレーム!初期セットフラグ"
+                },
+                "Value": "1"
+              }
+            ],
+            "Comments": "初期セットフラグOn（サブページ内）"
+          }
+        ],
+        "Text": "コピーして新規作成する",
+        "TemplateKey": "角緑",
+        "Icon": {
+          "Name": "Application/148_copy_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ユーザーマスタ登録フレーム!ユーザーID=\"\""
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "30,29": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ユーザーマスタ登録フレーム!削除ボタン"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "Text": "削除する",
+        "TemplateKey": "スタイル2"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ユーザーマスタ登録フレーム!ユーザーID=\"\""
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "30,36": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ユーザーマスタ登録フレーム!更新ボタン"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "Text": "更新する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "Background": 1,
+        "FontFamily": 0
+      },
+      {
+        "Background": 1,
+        "FontFamily": 0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 3
+      },
+      {
+        "Background": 4,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 5,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "#FFFFC000",
+        "Right",
+        "[AUTO]General",
+        "#FFFFFF00",
+        "Text 1 50"
+      ]
+    },
+    "CellStyles": {
+      "1,48": 0,
+      "1,49": 0,
+      "1,50": 0,
+      "2,48": 1,
+      "2,49": 0,
+      "2,50": 0,
+      "3,48": 0,
+      "3,49": 0,
+      "3,50": 0,
+      "4,48": 0,
+      "4,49": 0,
+      "4,50": 0,
+      "5,48": 2,
+      "5,49": 0,
+      "5,50": 0,
+      "5,53": 0,
+      "6,48": 0,
+      "6,49": 0,
+      "6,50": 0,
+      "27,48": 3,
+      "27,49": 0,
+      "27,50": 0,
+      "28,48": 4,
+      "29,0": 5,
+      "29,1": 5,
+      "29,2": 5,
+      "29,3": 5,
+      "29,4": 5,
+      "29,5": 5,
+      "29,6": 5,
+      "29,7": 5,
+      "29,8": 5,
+      "29,9": 5,
+      "29,10": 5,
+      "29,11": 5,
+      "29,12": 5,
+      "29,13": 5,
+      "29,14": 5,
+      "29,15": 5,
+      "29,16": 5,
+      "29,17": 5,
+      "29,18": 5,
+      "29,19": 5,
+      "29,20": 5,
+      "29,21": 5,
+      "29,22": 5,
+      "29,23": 5,
+      "29,24": 5,
+      "29,25": 5,
+      "29,26": 5,
+      "29,27": 5,
+      "29,28": 5,
+      "29,29": 5,
+      "29,30": 5,
+      "29,31": 5,
+      "29,32": 5,
+      "29,33": 5,
+      "29,34": 5,
+      "29,35": 5,
+      "29,36": 5,
+      "29,37": 5,
+      "29,38": 5,
+      "29,39": 5,
+      "29,40": 5,
+      "29,41": 5,
+      "29,42": 5,
+      "29,43": 5,
+      "29,44": 5,
+      "29,45": 5,
+      "29,46": 5,
+      "30,3": 6,
+      "30,4": 0,
+      "30,5": 0,
+      "30,6": 0,
+      "30,7": 0,
+      "30,8": 0,
+      "30,9": 0,
+      "30,10": 0,
+      "30,11": 0,
+      "30,12": 0,
+      "30,13": 0,
+      "30,14": 0,
+      "30,15": 0,
+      "30,16": 0,
+      "30,17": 0,
+      "30,18": 0,
+      "30,20": 7,
+      "30,21": 0,
+      "30,22": 0,
+      "30,23": 0,
+      "30,24": 0,
+      "30,25": 0,
+      "30,26": 0,
+      "30,27": 0,
+      "30,28": 0,
+      "30,29": 7,
+      "30,36": 7,
+      "30,37": 0,
+      "30,39": 0,
+      "30,41": 0,
+      "30,42": 0,
+      "30,43": 0,
+      "30,44": 0,
+      "30,45": 0,
+      "30,46": 0,
+      "30,47": 0,
+      "30,48": 0,
+      "30,49": 0,
+      "30,50": 0,
+      "30,51": 0,
+      "30,52": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "30,36,1,8",
+    "0,0,29,47",
+    "29,38,1,2",
+    "29,30,1,2",
+    "29,34,1,2",
+    "29,28,1,2",
+    "30,29,1,6",
+    "28,48,1,3",
+    "30,3,1,16",
+    "30,20,1,8",
+    "2,48,1,3",
+    "5,48,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "ユーザーマスタ登録編集",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_user",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "顧客ID",
+      "Formula": "ユーザーマスタ登録フレーム!$AW$3"
+    },
+    {
+      "Name": "顧客ID固定フラグ",
+      "Formula": "ユーザーマスタ登録フレーム!$AW$6"
+    },
+    {
+      "Name": "最終更新ラベル",
+      "Formula": "ユーザーマスタ登録フレーム!$AW$29"
+    }
+  ]
+}//euxRL7KNB/PHiJQtzytmAcGJsMurR0J7u5mshxgLfSw/sTighL200qk+g/tbAGKGFlcfll27S1JPfL6OdRwXDpg9OsBsQGX4JIRuYTXt3PQdNamMaiHK81NU1mVcePfcaXYGOIraoFyQovf5/Yh6gOU6dwuNzBO4JJdUUd7H7MgpTQc8b8JzWfHhlRfSSTBtnmMJ6qYWlz3ET92e1YwdpSGcqEj3hIc1f3beSxE5A8oo4vb4vrURSo0jbR0HRTRdevo1rsq+7lYSogqTwrj3gTF8slZCymNmYa+QA664j56nQ6Wk6WurgFZmrC4f1EpuPR5a2yRLC9P3obAqsuWLSoEQPTBfF484fwphvyCXqCwC6CYdt8oFvSjUzqVamQS5A7K05gz4R4hNXPW8CkViSMfxX+LcUq5LQJGdoXW8aru69LPVOM8KRaI1+fhOA8Sst0uAqpFUWe9DV61ZNN7/Ta/PveFuu3pWZ0qBmq5tI64cJAMGW/TmQqWf2b5YelEdyri9l6OXy+dcwL/xL6tWa0z0Ag5S9IBRT0RX5R3BeE/uRi0HID4MHhBjKnBD+618IxM5G/1V+iuU8LwY0qLNVjO5rp2OQAteIayhDnj+saKQ4cleh/rjYrxMD0iXjiYzjDOZ7uyubTia+rSTeacEiIt6i8b9VUe3EP16fhj+Ph/kdjdD1xHbJ3TpX96GY4XA7oBwgQLGKy7N3kkZG5hcsoRGWRQS3NxcZfxtFh6B7LCovW50YLvvrhWUKwDDyZ/is7NRvP23i21URDRRvaRHsxykjS0+nEm16lpKKsbroOttAXOS8+4GePnfFxVWRddAOQ1hnHGCL+E047q4EgkchYSUOPqpJMTHtChi+wCRAuhu7eRKywJmtz2rY91gnluL7Fd/h9NYV/L0pEMlK/7wVw==|920

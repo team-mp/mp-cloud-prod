@@ -1,0 +1,396 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 15,
+    "DefaultSize": 31.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "Count": 40
+  },
+  "Values": {
+    "0,2": "以下より許容応力度を選択してください",
+    "5,34": "▼有効フラグ",
+    "6,34": 1,
+    "7,34": "▼許容応力度ID",
+    "9,34": "▼許容応力度表示",
+    "11,34": "▼許容応力度内容",
+    "13,25": "選択する",
+    "13,34": "▼選択カウント"
+  },
+  "Formulas": {
+    "14,34": "COUNTIF(AI3,1)",
+    "2,34": "IF(許容応力度ID=AJ3,1,0)"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "許容応力度ビュー",
+        "TemplatePageName": "5d974c25da5247ef8da378d2e3786c4",
+        "Command": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [
+            {
+              "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+              "PageName": "地形条件選択",
+              "PassValues": []
+            }
+          ],
+          "ParamProperties": {
+            "選択フラグ": "選択フラグ",
+            "調査方法ID": "調査方法ID",
+            "調査方法名": "調査方法名"
+          }
+        },
+        "TemplateKey": "スタイル1"
+      }
+    },
+    "1,34": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_allowable_stress",
+        "RowIndex": 1,
+        "ColumnIndex": 34,
+        "ColumnCount": 4,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "許容応力度ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "m_allowable_stress",
+            "ColumnName": "active_flg"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=許容応力度選択!AI7"
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_allowable_stress",
+                "ColumnName": "sort_no"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "2,34": {
+      "NameUsedInJavaScript": "選択フラグ"
+    },
+    "2,35": {
+      "BindingInfo": {
+        "TableName": "m_allowable_stress",
+        "ColumnName": "allowable_stress_id"
+      },
+      "NameUsedInJavaScript": "許容応力度ID"
+    },
+    "2,36": {
+      "BindingInfo": {
+        "TableName": "m_allowable_stress",
+        "ColumnName": "allowable_stress_display"
+      },
+      "NameUsedInJavaScript": "許容応力度表示"
+    },
+    "2,37": {
+      "BindingInfo": {
+        "TableName": "m_allowable_stress",
+        "ColumnName": "allowable_stress_content"
+      },
+      "NameUsedInJavaScript": "許容応力度内容"
+    },
+    "13,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=許容応力度選択!$AI$15=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Foreground": 1,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 4
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0,
+        "Formatter": 4
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 7,
+        "FontFamily": 0,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Text 1 50",
+        "Background 1 -15",
+        "Center",
+        "[AUTO]General",
+        "Accent 6 80",
+        "#FFFFC000",
+        "#FFFFFF00"
+      ],
+      "Borders": [
+        {
+          "Color": 2
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 1,
+      "0,20": 1,
+      "0,21": 1,
+      "0,22": 1,
+      "0,23": 1,
+      "0,24": 1,
+      "0,25": 1,
+      "0,26": 1,
+      "0,27": 1,
+      "0,28": 1,
+      "0,29": 1,
+      "1,2": 2,
+      "1,35": 3,
+      "1,36": 3,
+      "2,35": 3,
+      "2,36": 3,
+      "5,34": 4,
+      "5,35": 3,
+      "5,36": 3,
+      "6,34": 5,
+      "6,35": 3,
+      "6,36": 3,
+      "7,34": 4,
+      "7,35": 3,
+      "7,36": 3,
+      "8,34": 6,
+      "9,34": 4,
+      "9,35": 3,
+      "9,36": 3,
+      "10,34": 6,
+      "10,35": 3,
+      "10,36": 3,
+      "11,34": 4,
+      "11,35": 3,
+      "11,36": 3,
+      "12,34": 6,
+      "12,35": 3,
+      "12,36": 3,
+      "13,25": 7,
+      "13,26": 7,
+      "13,27": 7,
+      "13,28": 7,
+      "13,29": 7,
+      "13,34": 3,
+      "13,35": 3,
+      "13,36": 3,
+      "14,34": 8,
+      "14,35": 7,
+      "14,36": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "8,34,1,3",
+    "1,2,11,28",
+    "13,25,1,5",
+    "6,34,1,3",
+    "14,34,1,3",
+    "12,34,1,3",
+    "10,34,1,3",
+    "3,34,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_allowable_stress"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "許容応力度ID",
+      "Formula": "許容応力度選択!$AI$9"
+    },
+    {
+      "Name": "許容応力度内容",
+      "Formula": "許容応力度選択!$AI$13"
+    },
+    {
+      "Name": "許容応力度表示",
+      "Formula": "許容応力度選択!$AI$11"
+    }
+  ]
+}//S6UZLSdHzBMBKl2RqmmBjdpoqUXkQhAlv5I/T7Ej504zKOEO4z6ntUfBv4frhaiu5C+nIMFHX7FI1sYNGV6B/SzLgoJYdySiGD8QtbVdLJLdsaM8qh+vbO5J5ezueOBgm2r1YbMkQhuCNmiTqD8+IRuu9Uyh2sXvfmbBaoEENagKNeAApHYZC/8imjg1d9iuETQnn3gNUknmNGGm3WnjPgWKWT4EsWqE1NesfM6NOcvIq8cD0Cbir4VJZO1bScYMa1YwLr4WbaLUkBiADEwGxqslEa4fFR8zTAVmonHk8ymg7kTEEJgP7rLJjW2DrS+ePm+p6XtqaeD7Ikf2167P/ycOl+8nqKvZaYGcuw3wIP7tXpWh6422A/tdkhi+Hh5ugnlZglmQMWs728kALecMj1JQ6j7lNwUKziIsZOiSSict5GSQB0O0Ma5JFIidPh7WDYVAdZr/F8vi5G4lFfmt0GCSKZGPagK7kX7TBcZJR1v2zj4huMEIpAo4EiRPB39q+Q/QzG1lZ9fOfvw8k6Q7zST5iS2u0kcMt/zGRA3VNWyI1knWad0T2rEEhvZYIupRzF9O5xvn6JMy+w8yyzBdN70U12cMte939jWVeZLny7aCEazV5uVreuIhZKwr2W2l58JCDeQKUzU4LeCh+j/P/vkl5QHfm6eMo7GW6W2CpWo+GQE0wsGB24aqRUKxJbw9UHN7TW5SmCdRIiiUYZL+nRSZwSJ+UgZO5JSP8N+Q7tsSYLT1S7J9p9IC9ULeLYo1aNWII/cEiJFXrMKTpdSn1g5lbiWozBo34hAp3OLoasC8WmjO31faTxzNtZ3rBsAgTiK7apkDV8/QHCQSjOYIDA+4LciYgAynDtLakUG8Dj+WtBSj04IY5H2l5vPWrg+6YEbEaIZO3FtIqwc72LPtQg==|920

@@ -1,0 +1,201 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 1,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "Count": 36
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1,
+        "PrimaryColor": "#FF005B47"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=aad5c39e007740b09d9d5c7fcd06baf!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Foreground": "#FF000000",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "選択"
+    },
+    "0,2": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=aad5c39e007740b09d9d5c7fcd06baf!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "調査会社名"
+    },
+    "0,15": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=aad5c39e007740b09d9d5c7fcd06baf!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "工事会社住所"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "TextIndent": 4,
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Background 1 -15",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 2,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 2,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 1,
+      "0,20": 1,
+      "0,21": 1,
+      "0,22": 1,
+      "0,23": 1,
+      "0,24": 1,
+      "0,25": 1,
+      "0,26": 1,
+      "0,27": 1,
+      "0,28": 1,
+      "0,29": 1,
+      "0,30": 1,
+      "0,31": 1,
+      "0,32": 1,
+      "0,33": 1,
+      "0,34": 1,
+      "0,35": 1
+    },
+    "ColStyles": {
+      "2": 3,
+      "3": 3,
+      "4": 3,
+      "5": 3,
+      "6": 3,
+      "7": 3,
+      "8": 3,
+      "9": 3,
+      "10": 3,
+      "11": 3,
+      "12": 3,
+      "13": 3,
+      "14": 3,
+      "15": 3,
+      "16": 3,
+      "17": 3,
+      "18": 3,
+      "19": 3,
+      "20": 3,
+      "21": 3,
+      "22": 3,
+      "23": 3,
+      "24": 3,
+      "25": 3,
+      "26": 3,
+      "27": 3,
+      "28": 3,
+      "29": 3,
+      "30": 3,
+      "31": 3,
+      "32": 3,
+      "33": 3,
+      "34": 3,
+      "35": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "0,0,1,2",
+    "0,2,1,13",
+    "0,15,1,21"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "指定調査会社選択"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//b6ACOh+Ae51+QK3HS08pbqYJVZUoIcjxISUQ7jGFk6rkLCc0GITZ08doV59GbuCuYDA8G+sLEZQYTnXTOcCHeUYtk+AIPyyLIESwPbuNdajW26hLc1qsQvjejn++mOSIh+yFVPvrwK5XFMNpGInJyfGZBbI38hzfKhAShX/XGwxmy3141Mh2Ik9U1LMSXQURIG3jOcidUY54OgndXYfsMmoLTBZwFyUHExXuVYQnumdymntX6Pht13g3a5qQRHDMRQUtpoTPqL+Dfy7mgLxWWiExqIUqksOHvyQX0llIv9FaMAl0uCpYLK0RhCgOYlrQDKwqWYKHjroov6VrlR2cfALEWjvtyn9vpb3e0N8sE4js1ck02mkUIvnrNadUihEyLIGC2l1HD0HSpPCTk1r7UOXT544f4H/1QVO5n8WKUsia84c0C+9Mvdyq/dczDGfYVVAQanWdkOQ7Y+Vyjet8alWOKqs75QL0/DtYNXAVtdD+8utIYHxmEJt01QpZp30FP5JSehT5Tttbo8d3ferGiJIQ9ePZ9k6dVrMtiqXoyIXszBtkng8t+0UaGrOM8tTuVXSdX59BpaRlaFVtkR3neHbxP+0Zs3Wd//ErA5zA9pYbRX8N9NcL6T+sr7v9EJ2XCTovKOITFtOJImgOoQTBdlRPstJ/fG3v7mhStWSv0DQthl/Uo+DDX465dUS8Gn7URXH/YDJKy4Mz6tyetTxPJAiGbdLSl+ifb4v0DkguD9bxCv0o7m+K50x9fIjhiLxOt1NdCtksBAtAJ9y4bfD7svF9H48xh0DGIu2VVg00O0DhftKsyiOjrWSqKFjQIxjfwpGtmRtcuq7a6I9DMpzZj6MX7PFidSzyrh8vKK91OGMQy97olLkDHK9V6tjN3R2YkRtjy0ZPdsfARfUkb0q69w==|920

@@ -1,0 +1,117 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 7,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "Count": 17
+  },
+  "Values": {
+    "5,6": "閉じる"
+  },
+  "AttachInfos": {
+    "5,6": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "閉じる",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "5,6": 1,
+      "5,7": 2,
+      "5,8": 2,
+      "5,9": 2,
+      "5,10": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "5,6,1,5",
+    "2,2,2,13"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "表示メッセージ",
+      "Formula": "ポップアップメッセージ!$C$3"
+    }
+  ]
+}//TZrNiG17glF8wwusKI8XgnvIXFOba/FgZeVu9j2b/XIuBCnLCIbdnahne1XwNWIU8eOV5Nbur1YwDrKZ8+44XSIzVpsd72EYQUjlZXVO4S2fHowW0HsNZQJknY/TtAXN0kL9DBc79kt6ls/Uuzpp0nOdSrEUyASPpQunTxiqZtJ9H6OLKMPQwA7XQ4z3xaQzaeRkj3FZDIcbHFsR/S5RdLkhk+tnb38851DKUefjQZ7DKZs1VX1jKIOeWglhHIjUYYPaeV+u4NtOeZBvmoYYAoi13B374lVBbnmsS6mHaFWh3sUKcRmpBu5ccHOc818I/0lDxoM/ZrzdDgJFmEO/W9s31sGl7orp/52mz6rPRQlX3EVzl1WVVJPM2QJs0rvpqQWFI5plQncN227pCw4l5LXkDu/wzhwsOgIdUQ06ZZ2aBsMVPta+vSAes2zcKBleHb3FazA4jNQvmgiVNOwxZ4brGEQOQP1uyOPzMtPlJhvpj7TdvbouCDMoc8ZV8KdmMFuspXxJkOzjPploQcAwhB0xMPAMJvYwPUCLLx+hD2iGdwvMcwwuBmVfyH6h1GYAMwExbSSkwYrX/ZqlXtapuGp7iWTU/tEIF5Itxb57AAdTSqXsdlJPdQ2a0bfAlOXTmBWgHvFcnEepjglqNAANTLVA1UY8oOerXS53jZZDYRbvYdcRm2c/8zBeujkTRSVvoxpkdVlpaDvcebM3ikf5WTiogtx+G1NGUvppX95LUPYgo2keLrtDek3XBx05J7+mksPZ32KwJnVuzqxjBmfUMK0HEdrkJS5c1DIkTE4UBkUXtu2dLbqJ79o2dbXks0g1xEjLSxcnWgT7OWlV1wWv4DDuIHpHO2BbU3uscqQfh5oW69d+OqemIXu1IwDY1CViNQ24gprn11cNvGrJko8rYg==|920

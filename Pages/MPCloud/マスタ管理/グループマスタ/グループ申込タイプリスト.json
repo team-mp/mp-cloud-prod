@@ -1,0 +1,1290 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "25": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0
+        }
+      }
+    },
+    "Count": 26,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "28": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "Count": 75
+  },
+  "Values": {
+    "1,19": "全て選択",
+    "1,24": "全て解除",
+    "1,42": "アクション選択",
+    "3,2": "選択",
+    "3,47": "解除",
+    "3,56": "選択フラグ",
+    "4,64": "▼抽出カウント",
+    "7,64": "▼選択カウント",
+    "10,64": "▼未選択カウント",
+    "13,64": "▼クエリ条件",
+    "14,64": 0,
+    "16,64": "▼選択フラグ",
+    "17,64": "0",
+    "19,64": "▼アクション選択",
+    "22,64": "▼グループ申込タイプIDs"
+  },
+  "Formulas": {
+    "11,64": "BM6-BM9",
+    "8,64": "COUNTIF(BE5,1)",
+    "5,64": "COUNTIF(AX5,\"<>\")",
+    "23,64": "TEXTJOINIF(\",\",TRUE,BE5,1,AX5)",
+    "25,2": "\"表示データ件数：\"&TEXT(BM6,\"#,##0\")&\"件\""
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 70"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "キーワード検索ができます"
+      }
+    },
+    "1,19": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "グループ申込タイプビュー",
+            "UpdateValues": [
+              {
+                "Column": "選択フラグ",
+                "Value": "1"
+              }
+            ],
+            "UpdateRowType": 1,
+            "SpecifiedRowCondition": {
+              "$type": "Forguncy.Model.UpdateListviewCondition, ServerDesignerCommon",
+              "Column": "選択フラグ",
+              "value": "1",
+              "compareType": 1
+            }
+          }
+        ],
+        "Text": "全て選択",
+        "TemplateKey": "角緑",
+        "Icon": {
+          "Name": "Application/144_check_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=グループ申込タイプリスト!$BM$12=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "1,24": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "ListviewName": "グループ申込タイプビュー",
+            "UpdateValues": [
+              {
+                "Column": "選択フラグ",
+                "Value": "0"
+              }
+            ],
+            "UpdateRowType": 1,
+            "SpecifiedRowCondition": {
+              "$type": "Forguncy.Model.UpdateListviewCondition, ServerDesignerCommon",
+              "Column": "選択フラグ",
+              "value": "1"
+            }
+          }
+        ],
+        "Text": "全て解除",
+        "TemplateKey": "角緑",
+        "Icon": {
+          "Name": "Application/036_delete_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=グループ申込タイプリスト!$BM$9=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "1,42": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 1,
+            "Placement": {
+              "SerializeProperty": "=グループ申込タイプリスト!AQ2"
+            },
+            "PageName": "グループ申込タイプリストアクション選択",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループ申込タイプリスト!BM21"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=グループ申込タイプリストアクション選択!選択アクション"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "アクション選択",
+        "TemplateKey": "角緑",
+        "Icon": {
+          "Name": "Application/144_check_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=グループ申込タイプリスト!$BM$9=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "3,2": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_group_order_type",
+        "RowIndex": 3,
+        "ColumnIndex": 2,
+        "ColumnCount": 59,
+        "RowCount": 22,
+        "SelectionMode": 1,
+        "IsSingleSelection": true,
+        "DisableAutoSelectRow": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "グループ申込タイプビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 2,
+            "ColumnBindingInfo": {
+              "TableName": "m_group_order_type",
+              "ColumnName": "group_order_type_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=グループ申込タイプリスト!BM15"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "m_group_order_type",
+                "ColumnName": "group_id",
+                "RelationBinding": {
+                  "RelatedTable": "m_group",
+                  "RelatedColumn": "group_id",
+                  "DisplayColumn": "group_name"
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=グループ申込タイプリスト!C2"
+              },
+              "LeftBracket": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+              "CompareType": 6,
+              "ColumnBindingInfo": {
+                "TableName": "m_group_order_type",
+                "ColumnName": "order_type_id",
+                "RelationBinding": {
+                  "RelatedTable": "m_order_type",
+                  "RelatedColumn": "order_type_id",
+                  "DisplayColumn": "ordertype_name"
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=グループ申込タイプリスト!C2"
+              },
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_group_order_type",
+                "ColumnName": "group_id",
+                "RelationBinding": {
+                  "RelatedTable": "m_group",
+                  "RelatedColumn": "group_id",
+                  "DisplayColumn": "group_type_id",
+                  "NextRelationBinding": {
+                    "RelatedTable": "m_group_type",
+                    "RelatedColumn": "group_type_id",
+                    "DisplayColumn": "group_type_id"
+                  }
+                }
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_group_order_type",
+                "ColumnName": "group_id",
+                "RelationBinding": {
+                  "RelatedTable": "m_group",
+                  "RelatedColumn": "group_id",
+                  "DisplayColumn": "group_name"
+                }
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_group_order_type",
+                "ColumnName": "order_type_id"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "4,2": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループ申込タイプリスト!BM18"
+                },
+                "Value": "1"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Small",
+        "ImagePath": "Application/144_check_1.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=グループ申込タイプリスト!BE5=1"
+            },
+            "StyleInfo": {
+              "BorderBottom": "Background 1 -15|1",
+              "Background": "#FFE5FFF0",
+              "Foreground": "Accent 1 0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,4": {
+      "BindingInfo": {
+        "TableName": "m_group_order_type",
+        "ColumnName": "group_id",
+        "RelationBinding": {
+          "RelatedTable": "m_group",
+          "RelatedColumn": "group_id",
+          "DisplayColumn": "group_name"
+        }
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=グループ申込タイプリスト!BE5=1"
+            },
+            "StyleInfo": {
+              "BorderBottom": "Background 1 -15|1",
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,23": {
+      "BindingInfo": {
+        "TableName": "m_group_order_type",
+        "ColumnName": "order_type_id",
+        "RelationBinding": {
+          "RelatedTable": "m_order_type",
+          "RelatedColumn": "order_type_id",
+          "DisplayColumn": "ordertype_name"
+        }
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=グループ申込タイプリスト!BE5=1"
+            },
+            "StyleInfo": {
+              "BorderBottom": "Background 1 -15|1",
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,43": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_group_order_type",
+        "ColumnName": "default_set_flg"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=グループ申込タイプリスト!BE5=1"
+            },
+            "StyleInfo": {
+              "BorderBottom": "Background 1 -15|1",
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,49": {
+      "BindingInfo": {
+        "TableName": "m_group_order_type",
+        "ColumnName": "group_order_type_id"
+      }
+    },
+    "4,56": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "NameUsedInJavaScript": "選択フラグ"
+    },
+    "17,64": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 6,
+            "ListviewName": "グループ申込タイプビュー",
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "GetCurrentRowIndex",
+              "ParameterValues": {},
+              "RetrunParamNames": {
+                "RowIndex": {
+                  "SerializeProperty": "行番号"
+                }
+              }
+            }
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 6,
+            "ListviewName": "グループ申込タイプビュー",
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "GetValue",
+              "ParameterValues": {
+                "rowIndex": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループ申込タイプリスト!行番号"
+                },
+                "columnIndexOrName": "選択フラグ"
+              },
+              "RetrunParamNames": {
+                "Value": {
+                  "SerializeProperty": "値"
+                }
+              }
+            }
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=グループ申込タイプリスト!値"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "グループ申込タイプビュー",
+                    "UpdateValues": [
+                      {
+                        "Column": "選択フラグ",
+                        "Value": "0"
+                      }
+                    ],
+                    "UpdateRowType": 3
+                  }
+                ],
+                "ID": "48082372-515c-4206-a9da-9fd73d97e69e"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                    "ListviewName": "グループ申込タイプビュー",
+                    "UpdateValues": [
+                      {
+                        "Column": "選択フラグ",
+                        "Value": "1"
+                      }
+                    ],
+                    "UpdateRowType": 3
+                  }
+                ],
+                "ID": "95c2f4b9-744a-42b3-aa11-81f4539bbe87"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループ申込タイプリスト!BM18"
+                },
+                "Value": "0"
+              }
+            ],
+            "Comments": "選択フラグリセット"
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    },
+    "20,64": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "アクション",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=グループ申込タイプリスト!BM21"
+            },
+            "ID": "ea2984828ae045629055d617317879ea"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=グループ申込タイプリスト!BM21"
+                },
+                "Value": "%Null%"
+              }
+            ],
+            "Comments": "リセット"
+          },
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=グループ申込タイプリスト!アクション"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "ConfirmDialogSettings": {
+                          "Title": "確認",
+                          "FormulaText": "選択した申込タイプを対象グループから一括削除します。\r\nよろしいですか？",
+                          "YesButtonText": "はい",
+                          "NoButtonText": "いいえ",
+                          "ConfirmIcon": 4
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                            "LoadingText": "お待ちください",
+                            "LoadingTextColor": "Background 1 0"
+                          },
+                          {
+                            "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                            "ServerCommandName": "グループ申込タイプ一括削除処理",
+                            "Parameters": [
+                              {
+                                "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=グループ申込タイプリスト!BM24"
+                                },
+                                "ParamName": "P_グループ申込タイプIDs"
+                              }
+                            ],
+                            "ResultErrorCodeTo": {
+                              "SerializeProperty": "リターンコード"
+                            },
+                            "ResultMessageTo": {
+                              "SerializeProperty": "リターンメッセージ"
+                            },
+                            "RefreshAfterFinish": true,
+                            "CheckDataValidation": false
+                          },
+                          {
+                            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                          },
+                          {
+                            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                            "ConditionAndCommandPairList": [
+                              {
+                                "Condition": {
+                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                  "param": {
+                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                    "cellLocations": [
+                                      {
+                                        "SerializeProperty": "=グループ申込タイプリスト!リターンコード"
+                                      }
+                                    ]
+                                  },
+                                  "value": "0",
+                                  "compareType": 1
+                                },
+                                "CommandList": [
+                                  {
+                                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                                    "MessageFormula": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=グループ申込タイプリスト!リターンメッセージ"
+                                    }
+                                  }
+                                ],
+                                "ID": "9a57a48c-899f-483a-bd2b-72a1c4a3b79b"
+                              }
+                            ]
+                          }
+                        ],
+                        "ID": "bcd18463-3fd4-4db5-b967-2bc44cf05deb"
+                      }
+                    ]
+                  }
+                ],
+                "Comments": "一括削除",
+                "ID": "a380cc93-6e25-4a05-b8e8-fc3bd43c7e7b"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=グループ申込タイプリスト!アクション"
+                      }
+                    ]
+                  },
+                  "value": "2"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "ConfirmDialogSettings": {
+                          "Title": "確認",
+                          "FormulaText": "選択した申込タイプを初期セットに一括更新します。\r\nよろしいですか？",
+                          "YesButtonText": "はい",
+                          "NoButtonText": "いいえ",
+                          "ConfirmIcon": 4
+                        },
+                        "CommandList": [],
+                        "ID": "4434caaf-b0bc-4e86-9b61-026147562dc4"
+                      }
+                    ]
+                  }
+                ],
+                "Comments": "初期セット",
+                "ID": "db5f08cb-b845-4221-9fcd-e05e9e74dd44"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "25,39": {
+      "CellType": {
+        "$type": "Forguncy.PageNavigateCellType, ServerDesignerCommon",
+        "PageingListviewName": "グループ申込タイプビュー",
+        "PageLimitRowCount": 1000,
+        "FirstImage": {
+          "Name": "Arrow/347_move_first.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1"
+        },
+        "PreviousImage": {
+          "Name": "Arrow/349_left_arrow.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1"
+        },
+        "NextImage": {
+          "Name": "Arrow/350_right_arrow.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1"
+        },
+        "LastImage": {
+          "Name": "Arrow/348_move_last.svg",
+          "BuiltIn": true,
+          "Color": "Accent 1"
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "Foreground": 2,
+        "Underline": true
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 5
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "Formatter": 7
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 7
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0,
+        "Formatter": 7
+      },
+      {
+        "Background": 8,
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "Formatter": 1,
+        "HorizontalAlignment": 9
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 0,
+        "BorderTop": 1
+      },
+      {
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 9,
+        "BorderTop": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@",
+        "Text 1 0",
+        "Background 1 -25",
+        "Background 1 0",
+        "Center",
+        "#FFFFFF00",
+        "[AUTO]General",
+        "Accent 1 60",
+        "Right",
+        "Background 1 -15"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        },
+        {
+          "Color": 10
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0,
+      "1,17": 1,
+      "1,19": 2,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 1,
+      "1,23": 2,
+      "1,24": 2,
+      "1,29": 2,
+      "1,32": 1,
+      "1,33": 1,
+      "1,34": 1,
+      "1,42": 2,
+      "1,43": 1,
+      "1,44": 1,
+      "1,45": 1,
+      "1,46": 1,
+      "1,47": 1,
+      "1,48": 1,
+      "2,2": 3,
+      "3,2": 2,
+      "3,4": 2,
+      "3,5": 1,
+      "3,6": 1,
+      "3,7": 1,
+      "3,8": 1,
+      "3,9": 1,
+      "3,10": 1,
+      "3,11": 1,
+      "3,12": 1,
+      "3,13": 1,
+      "3,14": 1,
+      "3,15": 1,
+      "3,16": 1,
+      "3,17": 1,
+      "3,18": 1,
+      "3,19": 1,
+      "3,20": 1,
+      "3,21": 2,
+      "3,22": 1,
+      "3,23": 2,
+      "3,25": 1,
+      "3,26": 1,
+      "3,27": 1,
+      "3,28": 1,
+      "3,30": 1,
+      "3,31": 1,
+      "3,32": 1,
+      "3,33": 1,
+      "3,34": 1,
+      "3,35": 1,
+      "3,36": 1,
+      "3,37": 1,
+      "3,38": 1,
+      "3,39": 1,
+      "3,40": 1,
+      "3,41": 2,
+      "3,42": 1,
+      "3,43": 2,
+      "3,44": 1,
+      "3,45": 1,
+      "3,46": 1,
+      "3,47": 2,
+      "3,48": 1,
+      "3,49": 4,
+      "3,56": 4,
+      "4,2": 5,
+      "4,4": 6,
+      "4,5": 7,
+      "4,6": 7,
+      "4,7": 7,
+      "4,8": 7,
+      "4,9": 7,
+      "4,10": 7,
+      "4,11": 7,
+      "4,12": 7,
+      "4,13": 7,
+      "4,14": 7,
+      "4,15": 7,
+      "4,16": 7,
+      "4,17": 7,
+      "4,18": 7,
+      "4,19": 7,
+      "4,20": 7,
+      "4,21": 7,
+      "4,22": 7,
+      "4,23": 6,
+      "4,24": 6,
+      "4,25": 7,
+      "4,26": 7,
+      "4,27": 7,
+      "4,28": 7,
+      "4,29": 7,
+      "4,30": 7,
+      "4,31": 7,
+      "4,32": 7,
+      "4,33": 7,
+      "4,34": 7,
+      "4,35": 7,
+      "4,36": 7,
+      "4,37": 7,
+      "4,38": 7,
+      "4,39": 7,
+      "4,40": 7,
+      "4,41": 7,
+      "4,42": 7,
+      "4,43": 8,
+      "4,44": 7,
+      "4,45": 7,
+      "4,46": 7,
+      "4,47": 7,
+      "4,48": 7,
+      "4,49": 4,
+      "4,56": 9,
+      "4,64": 10,
+      "4,65": 10,
+      "4,66": 10,
+      "5,64": 11,
+      "5,65": 2,
+      "5,66": 2,
+      "6,64": 2,
+      "6,65": 2,
+      "6,66": 2,
+      "7,64": 10,
+      "7,65": 10,
+      "7,66": 10,
+      "8,64": 11,
+      "8,65": 2,
+      "8,66": 2,
+      "9,64": 2,
+      "9,65": 2,
+      "9,66": 2,
+      "10,64": 12,
+      "10,65": 10,
+      "10,66": 10,
+      "11,64": 11,
+      "11,65": 2,
+      "11,66": 2,
+      "12,64": 2,
+      "12,65": 2,
+      "12,66": 2,
+      "13,64": 13,
+      "13,65": 1,
+      "13,66": 1,
+      "14,64": 14,
+      "14,65": 1,
+      "14,66": 1,
+      "16,64": 12,
+      "16,65": 10,
+      "16,66": 10,
+      "17,64": 15,
+      "17,65": 2,
+      "17,66": 2,
+      "19,64": 12,
+      "19,65": 10,
+      "19,66": 10,
+      "20,64": 15,
+      "20,65": 2,
+      "20,66": 2,
+      "22,64": 10,
+      "22,65": 2,
+      "22,66": 2,
+      "23,64": 11,
+      "23,65": 2,
+      "23,66": 2,
+      "25,2": 16,
+      "25,3": 17,
+      "25,4": 17,
+      "25,5": 17,
+      "25,6": 17,
+      "25,7": 17,
+      "25,8": 17,
+      "25,9": 17,
+      "25,10": 17,
+      "25,11": 17,
+      "25,12": 17,
+      "25,13": 17,
+      "25,14": 17,
+      "25,15": 17,
+      "25,16": 17,
+      "25,17": 18,
+      "25,18": 18,
+      "25,19": 18,
+      "25,20": 18,
+      "25,21": 18,
+      "25,22": 18,
+      "25,23": 18,
+      "25,24": 18,
+      "25,25": 18,
+      "25,26": 18,
+      "25,27": 18,
+      "25,28": 18,
+      "25,29": 18,
+      "25,30": 18,
+      "25,31": 18,
+      "25,32": 18,
+      "25,33": 18,
+      "25,34": 18,
+      "25,35": 18,
+      "25,36": 18,
+      "25,37": 18,
+      "25,38": 18,
+      "25,39": 19,
+      "25,40": 17,
+      "25,41": 17,
+      "25,42": 17,
+      "25,43": 17,
+      "25,44": 17,
+      "25,45": 17,
+      "25,46": 17,
+      "25,47": 17,
+      "25,48": 17
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "4,4,1,19",
+    "4,23,1,20",
+    "4,43,1,6",
+    "4,2,1,2",
+    "1,42,1,7",
+    "4,56,1,4",
+    "5,64,1,3",
+    "8,64,1,3",
+    "1,19,1,4",
+    "1,24,1,5",
+    "5,2,20,59",
+    "1,2,1,14",
+    "25,39,1,10",
+    "11,64,1,3",
+    "14,64,1,3",
+    "17,64,1,3",
+    "20,64,1,3",
+    "23,64,1,3",
+    "4,49,1,7",
+    "25,2,1,15",
+    "3,2,1,2",
+    "3,4,1,19",
+    "3,23,1,20",
+    "3,43,1,6",
+    "3,49,1,7",
+    "3,56,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//doimh6v015wrPvwLsEOMYHvapaHn5YrDfBNGer+Yo0xFxl3CIGukUHB2BBk0C6T49hksshxozxZi2KcStxVL5zVdL1aFLznxef3kvZbXqbO68faQMceYO1pviOmOeOgSHKAw/xqxebgT6eyW2iX1/zZPm2G8bISRdM3NlMJY2K2mysvRBJdrYVbZauXd9GcjFOFGKh3RbXxPPzB4rV9jUNsmhcx5ZIe3W/izkCi2rLRQoWgZjWrzEaUn/xjlbZcjMf92mnil3wlTRXCXY0R4mvTBbmzQKq2Nx2RGB4UixVDlVMCbtj5J2AAV2U6BvL4WFYfAOThl0j2v2OlCOX2blfKI+EE55pQ5JGKHr8TrFJzV3V6I3puFIrFW/2rG+4a3Fi48nSb6eZuFuCIfz7HSkxGbn74whZLcPT+wvU6ybzywHM2O4CaQzfmzQ8V/n9Nt251sMQyNsxdK2kSwybHVhP/cITFq5sLdGpLAafkZrZwXMxO5AGO0CwRrM8W8b1ZQLXl4KCjg83DzoM8J0ZTn/KCygZvLtci9iTAF4FpP0GOkHN2r9apoHBMil1JEnGMjQZRWLSI4WG7v0YXKCgne6qneXqJ6MR7wgtP3SxbpXFVe+itc/AR2sMJwqXssvPVU7koFoO2k5oDf11bbK+YEv+8jYZZVa9e6bvSChgeO8M0wsuK/2Aa17Iky2YibC5XLqPFtVCDFu4vG7PQTEMWCNxFFx98y02NdV2kO/It7AhwMqFrNz2lrr5n2vAW4gVB3RE4d+kb0c0Kgj4sQ1RdloZF3LmD8CHNoFPZUw3PxCZWTEjN34jT4dfVVfLo5KiWzxqjKRsOWg/zPoJ3G83wMEOwBYYp04NCxOPRNEiMlM9qEOD5Qn5zGyCnWZwvhZaO7HGss/pKNwrK52mVKzHBd9A==|920

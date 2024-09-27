@@ -1,0 +1,250 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 1,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "Count": 21
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1,
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='8be94b804cb74bcd987eb727bca00d6'!A1"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='8be94b804cb74bcd987eb727bca00d6'!土地履歴ID"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='8be94b804cb74bcd987eb727bca00d6'!S1"
+                        }
+                      },
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='8be94b804cb74bcd987eb727bca00d6'!土地履歴名"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='8be94b804cb74bcd987eb727bca00d6'!B1"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "ID": "57d914b3-c436-44aa-96e5-ddb7255e9283"
+              }
+            ]
+          }
+        ]
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='8be94b804cb74bcd987eb727bca00d6'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "選択フラグ"
+    },
+    "0,1": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "='8be94b804cb74bcd987eb727bca00d6'!A1"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='8be94b804cb74bcd987eb727bca00d6'!A1"
+                        },
+                        "Value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "c271bead-0326-4d1b-90cb-dbd7f3375d81"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "='8be94b804cb74bcd987eb727bca00d6'!A1"
+                        },
+                        "Value": "1"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "98ceb62f-f32c-488f-9a93-2c04abb4e941"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='8be94b804cb74bcd987eb727bca00d6'!$A$1=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "土地履歴"
+    },
+    "0,18": {
+      "TemplateCellSource": "土地履歴ID"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null,
+        "BorderTop": null
+      },
+      {
+        "Foreground": 0,
+        "Underline": false
+      },
+      {
+        "Background": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF000000",
+        "#FFFFFF00",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 0,
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,9": 0,
+      "0,10": 0,
+      "0,11": 0,
+      "0,12": 0,
+      "0,13": 0,
+      "0,14": 0,
+      "0,15": 0,
+      "0,16": 0,
+      "0,17": 0
+    },
+    "ColStyles": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "18": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "0,1,1,16"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "土地履歴選択"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//YzJp4psDr5bQ4iA6PoXT624pQ7qYdqJOxVkrpi4IR90Adjv1ijfZgVAGeCdBDnAkC9UxAaBNQYbrLwJOaJldz2aI+1ZWQbLn3eJB/fsdwKFe+Mdmb6auK9ZOIoQhCUTc6fSXm7MJJAlW6MEzK1on8xpTrlXFwp6o+JBTh0JgNqwp81HdJGrCKGnqADhzCs4/oQQV3nNPywas5WheSL4bGVmL3FPYuO/hx1mM3Rqs1YiYwJAW8B5+66HQ2JyO4Vqvm1ieuWpi9JQfjPe7opRQz9GhbZwT1j6YhJSb+VBXqur8x0ZNJS6S4LcqSedSKHbaOLNFl4Fb9wtOBHhCzFrIVF9YJzXuO+IPh71dMFWrWLnqWkaa3qhO51OCMM6Sm5KgPYuPjg2/BPOFT4s32z7Ko7eTvBGBuVOv/J82OeUThEIgZf5X84dL7H3ZN4CewNptgxnFebYR2Erp9ZaW+PYHosi/JF6vrWn7uOEvdWJRlx+lsw0rOlRsaEHq+ru9sOb9TjoCmJ+vqYBV/INNv5MBLhZB4+vhxCfShP4O5liNlafNzNRPZ2+qQsE/FH4Fwq4+/omRqIBe5XLs1iJEKH4JFwEvwOk+E9nZOhejROzuILTGR/PdneEEK1bH4qr7jMuxNtt5i+rmJ21fqTdz3v2wjX/9vlujhNbiaEHkhr/yTuWacxdY/a7U7E9nnHcpengFFbuzau7zBZ2tQKbKAZhT7S44InT6rrNjhfRFTpKaQo8IIs6flUnPoSfzrPkE/hqcZt0PrBjA+evQp7mLpMoS2VX3hHmoshLotdT1uRXRnXAmK+1pAcK4voU47zsKm9iSDpN5IO2VAM0N4pf6X5q1nDUDPs7+dK5ME0i61jHV5mL+01E+6jVvx6eUr64Lz2sRQb/DlfyUAgJoLjggSaRYPw==|920

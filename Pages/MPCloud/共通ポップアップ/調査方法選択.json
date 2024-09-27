@@ -1,0 +1,339 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 15,
+    "DefaultSize": 31.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "Count": 29
+  },
+  "Values": {
+    "0,2": "以下より調査方法を選択してください",
+    "5,23": "▼有効フラグ",
+    "6,23": 1,
+    "7,23": "▼調査方法ID",
+    "9,23": "▼調査方法名",
+    "12,23": "▼選択カウント",
+    "13,14": "選択する"
+  },
+  "Formulas": {
+    "2,23": "IF(調査方法ID=Y3,1,0)",
+    "13,23": "COUNTIF(X3,1)"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "調査方法ビュー",
+        "TemplatePageName": "3d10fd43ca4f43e3987fe8ab2963396",
+        "Command": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [],
+          "ParamProperties": {
+            "選択フラグ": "選択フラグ",
+            "調査方法ID": "調査方法ID",
+            "調査方法名": "調査方法名"
+          }
+        },
+        "TemplateKey": "スタイル1"
+      }
+    },
+    "1,23": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_survey_method",
+        "RowIndex": 1,
+        "ColumnIndex": 23,
+        "ColumnCount": 3,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "調査方法ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "m_survey_method",
+            "ColumnName": "active_flg"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=調査方法選択!X7"
+          }
+        },
+        "TopCondition": null,
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "2,23": {
+      "NameUsedInJavaScript": "選択フラグ"
+    },
+    "2,24": {
+      "BindingInfo": {
+        "TableName": "m_survey_method",
+        "ColumnName": "survey_method_id"
+      },
+      "NameUsedInJavaScript": "調査方法ID"
+    },
+    "2,25": {
+      "BindingInfo": {
+        "TableName": "m_survey_method",
+        "ColumnName": "survey_method_name"
+      },
+      "NameUsedInJavaScript": "調査方法名"
+    },
+    "13,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=調査方法選択!$X$14=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 3
+      },
+      {
+        "Background": 4
+      },
+      {
+        "FontFamily": 3,
+        "Formatter": 5
+      },
+      {
+        "Background": 6,
+        "FontFamily": 3
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 7,
+        "FontFamily": 3,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 1 50",
+        "Background 1 -15",
+        "Center",
+        "Body",
+        "Accent 6 80",
+        "[AUTO]General",
+        "#FFFFC000",
+        "#FFFFFF00"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "1,2": 2,
+      "1,24": 3,
+      "1,25": 3,
+      "2,24": 3,
+      "2,25": 3,
+      "6,23": 4,
+      "7,23": 5,
+      "7,24": 3,
+      "7,25": 3,
+      "8,23": 6,
+      "9,23": 5,
+      "9,24": 3,
+      "9,25": 3,
+      "10,23": 6,
+      "12,23": 3,
+      "12,24": 3,
+      "12,25": 3,
+      "13,14": 7,
+      "13,15": 7,
+      "13,16": 7,
+      "13,17": 7,
+      "13,18": 7,
+      "13,23": 8,
+      "13,24": 7,
+      "13,25": 7
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "8,23,1,3",
+    "1,2,11,17",
+    "13,14,1,5",
+    "13,23,1,3",
+    "10,23,1,3",
+    "3,23,1,3",
+    "6,23,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_survey_method"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "調査方法ID",
+      "Formula": "調査方法選択!$X$9"
+    },
+    {
+      "Name": "調査方法名",
+      "Formula": "調査方法選択!$X$11"
+    }
+  ]
+}//ATah73qWy8fgQokmQpeiEYsKfKzxaF6jI2lT86KLJyKHiYixOzZ+8ubjoqZp2nc7/wtpSqu/H3z3MOQWAUYoExgijxxf8u+yfsS663d3IKcgSpRXAoIRUYIrn022M04aReQ8+dy8eUtk0Tl0SNMdilty/ihzxDTbahtgXXU+c8AL+CtHBhIdfotNfT435aBKxFrx2P9MZqeGtpxDFRpMvaeV3xgcSrnAkTOn6FtYMm4cNm4jSfOJSAwIbaPh9qGWJqUlrCzWUUUy08tFkmSzFWb/VHJFWhioofnALNb1JcwyjL1X/Mfu8dXriqUajKhCxLCurYx28+bgLxBrA2Nf582vGitxSqp9p4wRhgWifmd/PT77KqQ0HQqv6ATE8gw/fQarP5G7XCYsxxVYT/2DJmSAqcyARlubj60o8KXwPAP4FmCU17E31RCoTLq36sPTVQVyMz6SI5B/oywIw2nUkVRWnLSDF9hYjcf6dIZ3i6OuUMqf0n9G2PKAGOJ0I7a22+ussjh32O2pOTrcUl6Rsda3f3stMyNWB9q8+m7zHQwDBVSBLrdHzH/jM+qkOGLn1iiQbiuEtB+oJA6rgWHW6YFAG6yZ9wm357wS0NW+ScFVsaacdUmXBhMka1NHqo6nKnhJB4vt6YxkLG0PBCjo4d02ygSYS+oUVdKj0ovADkAR21graUBgiLzZFaT7TpqVntJru4OWqDYayJemlRqgdxN3gtFLgTg8Ax5VZ4w8KxRRlLc4UiJYD2fowXuoHeCq0VnouBn8/oM6BgDF+dsZuj0ksLjBVfrB2IdiEgbJKFs+PPRECUiWZmL8lISdYBI3ETtIxLQn8FT9tgs+rby9kh7bQWf+hNPXQ+2TXjsGFhVpxqe6hjPDQPZB6kLnYBPOTUNnqtwRhjrWUQVhljxbYw==|920

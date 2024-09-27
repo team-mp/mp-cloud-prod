@@ -1,0 +1,506 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 2,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "54": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "Count": 75
+  },
+  "Values": {
+    "0,0": "■",
+    "0,41": "▼発注書必要フラグ",
+    "0,48": "▼計上確定済みフラグ",
+    "0,55": "▼売上計上確定フラグ",
+    "0,62": "▼仕入計上確定フラグ",
+    "0,69": "▼発注書受領日"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='128fea99e33345fa8d99870d4edf823'!$AW$2=1"
+            },
+            "StyleInfo": {
+              "Foreground": "Text 2 40",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "0,1": {
+      "TemplateCellSource": "登録日"
+    },
+    "0,6": {
+      "TemplateCellSource": "商品名"
+    },
+    "0,16": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='128fea99e33345fa8d99870d4edf823'!$AP$2=1"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 2 -10",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "発注書必要ラベル"
+    },
+    "0,19": {
+      "TemplateCellSource": "請求先名"
+    },
+    "0,30": {
+      "TemplateCellSource": "売上金額"
+    },
+    "0,35": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='128fea99e33345fa8d99870d4edf823'!$BD$2=0"
+            },
+            "StyleInfo": {
+              "Foreground": "Accent 5 40",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "売上計上ステータス名"
+    },
+    "1,1": {
+      "TemplateCellSource": "計上区分"
+    },
+    "1,6": {
+      "TemplateCellSource": "備考"
+    },
+    "1,16": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='128fea99e33345fa8d99870d4edf823'!$BR$2=\"\""
+            },
+            "StyleInfo": {
+              "Foreground": "Accent 5 40",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "発注書受領ラベル"
+    },
+    "1,19": {
+      "TemplateCellSource": "外注先名"
+    },
+    "1,30": {
+      "TemplateCellSource": "仕入金額"
+    },
+    "1,35": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "='128fea99e33345fa8d99870d4edf823'!$BK$2=0"
+            },
+            "StyleInfo": {
+              "Foreground": "Accent 5 40",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "仕入計上ステータス名"
+    },
+    "1,41": {
+      "TemplateCellSource": "発注書必要フラグ"
+    },
+    "1,48": {
+      "TemplateCellSource": "計上確定済みフラグ"
+    },
+    "1,55": {
+      "TemplateCellSource": "売上計上確定フラグ"
+    },
+    "1,62": {
+      "TemplateCellSource": "仕入計上確定フラグ"
+    },
+    "1,69": {
+      "TemplateCellSource": "発注書受領日"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "Foreground": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": 0
+      },
+      {
+        "FontSize": 12.0,
+        "Formatter": 5,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "BorderBottom": 0,
+        "ShrinkToFit": true
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 6,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0,
+        "BorderLeft": 0,
+        "ShrinkToFit": true
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 12.0,
+        "Formatter": 7,
+        "HorizontalAlignment": 8,
+        "BorderBottom": 0,
+        "BorderTop": null
+      },
+      {
+        "FontSize": 12.0,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0,
+        "BorderTop": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 9
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontSize": 12.0,
+        "BorderBottom": null,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "BorderTop": 0,
+        "ShrinkToFit": true
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 10,
+        "HorizontalAlignment": 3,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 4,
+        "ShrinkToFit": true
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 7,
+        "HorizontalAlignment": 8,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "BorderBottom": null,
+        "BorderTop": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null
+      },
+      {
+        "Background": 11
+      },
+      {
+        "Background": 11,
+        "FontFamily": 0
+      },
+      {
+        "HorizontalAlignment": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Accent 5 40",
+        "General",
+        "Center",
+        "Background 1 -15",
+        "yyyy/MM/dd",
+        "Text 1 50",
+        " ¥#,##0_);[Red] ¥(#,##0)",
+        "Right",
+        "[AUTO]General",
+        "#FF000000",
+        "#FFFFFF00"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 2,
+      "0,3": 2,
+      "0,4": 2,
+      "0,5": 3,
+      "0,6": 4,
+      "0,7": 5,
+      "0,8": 5,
+      "0,9": 5,
+      "0,10": 5,
+      "0,11": 5,
+      "0,12": 5,
+      "0,13": 5,
+      "0,14": 5,
+      "0,15": 5,
+      "0,16": 6,
+      "0,17": 5,
+      "0,18": 7,
+      "0,19": 4,
+      "0,20": 5,
+      "0,21": 5,
+      "0,22": 5,
+      "0,23": 5,
+      "0,24": 5,
+      "0,25": 5,
+      "0,26": 5,
+      "0,27": 5,
+      "0,28": 5,
+      "0,29": 7,
+      "0,30": 8,
+      "0,31": 2,
+      "0,32": 2,
+      "0,33": 2,
+      "0,34": 3,
+      "0,35": 9,
+      "0,36": 2,
+      "0,37": 2,
+      "0,38": 2,
+      "0,39": 2,
+      "0,62": 10,
+      "0,63": 11,
+      "0,64": 11,
+      "1,1": 12,
+      "1,2": 13,
+      "1,3": 13,
+      "1,4": 13,
+      "1,5": 14,
+      "1,6": 15,
+      "1,7": 16,
+      "1,8": 16,
+      "1,9": 16,
+      "1,10": 16,
+      "1,11": 16,
+      "1,12": 16,
+      "1,13": 16,
+      "1,14": 16,
+      "1,15": 16,
+      "1,16": 17,
+      "1,17": 16,
+      "1,18": 18,
+      "1,19": 19,
+      "1,29": 20,
+      "1,30": 21,
+      "1,31": 22,
+      "1,32": 22,
+      "1,33": 22,
+      "1,34": 23,
+      "1,35": 24,
+      "1,36": 25,
+      "1,37": 25,
+      "1,38": 25,
+      "1,39": 25,
+      "1,41": 26,
+      "1,48": 26,
+      "1,55": 26,
+      "1,62": 27,
+      "1,63": 11,
+      "1,64": 11,
+      "1,69": 26
+    },
+    "ColStyles": {
+      "1": 28
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,1,1,5",
+    "0,30,1,5",
+    "1,30,1,5",
+    "0,35,1,5",
+    "1,1,1,5",
+    "0,6,1,10",
+    "0,16,1,3",
+    "1,6,1,10",
+    "1,16,1,3",
+    "0,19,1,11",
+    "1,19,1,11",
+    "1,41,1,3",
+    "1,48,1,3",
+    "1,35,1,5",
+    "1,55,1,3",
+    "1,62,1,3",
+    "1,69,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "物件詳細_請求_内容"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//2308ETkOLdGQ4vFtFjqJfoNRBh4i5emZXXAAGHx9H0fHrjdahBJ1wFRCYcKVY3XK3i00iZOCbl0L1rIaBKrkeBB7RpMH40Or2PNx5eOi1iU3EJxkYJj/dy9GDEYppCfTM4tabq9Zod4U8sIc3t8K+gFt1+uP9PcSB6a+T/P1h+iUZy4c5zAK9XUbS/HCueldCDZaZWWD69VRwb3tgjDt17vnNHhX0L6gYaaS4Qz6oGDHxRC/trfCH79oUR7bGCPRdEE1YZxo1liDhYQakxchC/VSSD7dCfvFdKPzlUxb9P4yiBNuWWrCeYSeFpLHIzWHMJxGyOQkLouGCBKPJWjRef6HnlZk6KZXM4KCxGzYe3Zx0kvwyCGyFVpbwkDzPmKO+uvQjORDwSUt8UtqRC9sPQ0jxaZrQuvvcFzPwtIhCtQdKNptyMJRFwQwogZcW25lJQVunV0PkFuDUMuKK9NZeg9sGMQ+z5MStZDelGAj1fyuhibjGeSbCIxs1ZYSpfRNJExtXJE1VXtpTpieicyU8t+GzJQq3CXY8KwdVQpx7xYqivqUFUsibvNDgTDAq+yafqUHcxqeJ3fDfo19s2kYNSxF8fnUj7VF16NR7gmUHINZKn4YnXsKRJi7SfaGECejjL3eFZ19soxdaMw1kdg77GnP+Q/LcF4zjilEopWG+lqbBT994oYhLd6x8yCoz/oP6rGEiXwSc9KaDPpSUjgs3uS99ChafdUcu/Zu90BxhXfILJlqmflQqXmAAHYFDl2WB39jZ0S5R3ppPci3BGLbBTHDOT/J8Q7tWlj8XIQoxjYRGscZd0q0oPGGAo20yqsgM0ab9VEqx+KJbxB4z0CwrPwoCVy0L0vM/47LdfG7vyZk9HAu7By4tUuFBNKf7kFJ6DKpJuznJ014FRy5b7rukw==|920

@@ -1,0 +1,2824 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 42.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 35
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "42": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "43": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "49": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "50": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "68": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      },
+      "69": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      },
+      "70": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      },
+      "71": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 100.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76
+    ],
+    "Count": 77
+  },
+  "Values": {
+    "1,1": "工事報告待ちスケジュール",
+    "1,12": 1,
+    "3,60": "▼工事予定ビュー",
+    "5,2": "以前",
+    "5,54": "以降",
+    "9,16": "検索対象期間",
+    "9,28": "～",
+    "9,36": "アクション選択",
+    "9,43": "ダウンロードする",
+    "9,51": "最新情報に更新する",
+    "11,0": "ブランク",
+    "11,60": "▼区切り位置",
+    "11,68": "▼会社休業日",
+    "11,69": "注釈",
+    "11,70": "日付マッチ",
+    "11,71": "取得注釈",
+    "12,68": "{=IFERROR(ODATA(\"m_company_holiday?$select=holiday,notes&$filter=holiday ge \"&IF(ISBLANK($B$5),\"null\",TEXT($B$5,\"yyyy-MM-ddThh:mm:ssZ\"))&\" and holiday le \"&IF(ISBLANK($BB$5),\"null\",TEXT($BB$5,\"yyyy-MM-ddThh:mm:ssZ\"))),\"\")}",
+    "14,60": "▼検索ワード1",
+    "17,60": "▼検索ワード2",
+    "20,60": "▼検索ステータスID"
+  },
+  "Formulas": {
+    "4,39": "AJ5+1",
+    "5,5": "TEXT(G5,\"aaa\")",
+    "14,70": "IFERROR(MATCH(J5,BQ$13:BQ$25,0),0)",
+    "15,70": "IFERROR(MATCH(N5,BQ$13:BQ$25,0),0)",
+    "21,70": "IFERROR(MATCH(AN5,BQ$13:BQ$25,0),0)",
+    "12,70": "IFERROR(MATCH(B5,BQ$13:BQ$25,0),0)",
+    "7,5": "IF($M$2=1,COUNTIF($BM6,\"=\"&G5),COUNTIF($BI6,\"=\"&G5))",
+    "18,60": "IF(BI13>0,MID(B10,BI13+1,1000),\"\")",
+    "7,1": "IF($M$2=1,COUNTIF($BM6,\"<=\"&B5),COUNTIF($BI6,\"<=\"&B5))",
+    "4,35": "AF5+1",
+    "7,44": "IF($M$2=1,COUNTIF($BM6,\"=\"&AS5),COUNTIF($BI6,\"=\"&AS5))",
+    "3,9": "IF(MONTH(J5)<>MONTH(G5),TEXT(J5,\"yyyy年m月\"),\"\")",
+    "3,13": "IF(MONTH(N5)<>MONTH(J5),TEXT(N5,\"yyyy年m月\"),\"\")",
+    "4,9": "G5+1",
+    "4,13": "J5+1",
+    "3,27": "IF(MONTH(AB5)<>MONTH(X5),TEXT(AB5,\"yyyy年m月\"),\"\")",
+    "13,70": "IFERROR(MATCH(G5,BQ$13:BQ$25,0),0)",
+    "3,31": "IF(MONTH(AF5)<>MONTH(AB5),TEXT(AF5,\"yyyy年m月\"),\"\")",
+    "4,18": "N5+1",
+    "3,35": "IF(MONTH(AJ5)<>MONTH(AF5),TEXT(AJ5,\"yyyy年m月\"),\"\")",
+    "7,27": "IF($M$2=1,COUNTIF($BM6,\"=\"&AB5),COUNTIF($BI6,\"=\"&AB5))",
+    "3,39": "IF(MONTH(AN5)<>MONTH(AJ5),TEXT(AN5,\"yyyy年m月\"),\"\")",
+    "16,70": "IFERROR(MATCH(S5,BQ$13:BQ$25,0),0)",
+    "3,44": "IF(MONTH(AS5)<>MONTH(AN5),TEXT(AS5,\"yyyy年m月\"),\"\")",
+    "18,70": "IFERROR(MATCH(AB5,BQ$13:BQ$25,0),0)",
+    "3,48": "IF(MONTH(AW5)<>MONTH(AS5),TEXT(AW5,\"yyyy年m月\"),\"\")",
+    "3,1": "TEXT(B5,\"yyyy年m月\")",
+    "3,53": "IF(MONTH(BB5)<>MONTH(AW5),TEXT(BB5,\"yyyy年m月\"),\"\")",
+    "5,39": "TEXT(AN5,\"aaa\")",
+    "22,70": "IFERROR(MATCH(AS5,BQ$13:BQ$25,0),0)",
+    "4,31": "AB5+1",
+    "5,35": "TEXT(AJ5,\"aaa\")",
+    "5,31": "TEXT(AF5,\"aaa\")",
+    "4,23": "S5+1",
+    "3,18": "IF(MONTH(S5)<>MONTH(N5),TEXT(S5,\"yyyy年m月\"),\"\")",
+    "3,23": "IF(MONTH(X5)<>MONTH(S5),TEXT(X5,\"yyyy年m月\"),\"\")",
+    "5,27": "TEXT(AB5,\"aaa\")",
+    "5,23": "TEXT(X5,\"aaa\")",
+    "17,70": "IFERROR(MATCH(X5,BQ$13:BQ$25,0),0)",
+    "4,6": "B5+1",
+    "5,18": "TEXT(S5,\"aaa\")",
+    "4,44": "AN5+1",
+    "4,48": "AS5+1",
+    "4,53": "AW5+1",
+    "7,18": "IF($M$2=1,COUNTIF($BM6,\"=\"&S5),COUNTIF($BI6,\"=\"&S5))",
+    "7,48": "IF($M$2=1,COUNTIF($BM6,\"=\"&AW5),COUNTIF($BI6,\"=\"&AW5))",
+    "24,70": "IFERROR(MATCH(BB5,BQ$13:BQ$25,0),0)",
+    "23,70": "IFERROR(MATCH(AW5,BQ$13:BQ$25,0),0)",
+    "7,39": "IF($M$2=1,COUNTIF($BM6,\"=\"&AN5),COUNTIF($BI6,\"=\"&AN5))",
+    "5,13": "TEXT(N5,\"aaa\")",
+    "7,31": "IF($M$2=1,COUNTIF($BM6,\"=\"&AF5),COUNTIF($BI6,\"=\"&AF5))",
+    "4,27": "X5+1",
+    "3,5": "IF(MONTH(G5)<>MONTH(B5),TEXT(G5,\"yyyy年m月\"),\"\")",
+    "7,23": "IF($M$2=1,COUNTIF($BM6,\"=\"&X5),COUNTIF($BI6,\"=\"&X5))",
+    "7,13": "IF($M$2=1,COUNTIF($BM6,\"=\"&N5),COUNTIF($BI6,\"=\"&N5))",
+    "21,60": "検索_工事報告待ちステータスID",
+    "15,60": "IF(BI13>0,LEFT(B10,BI13-1),IF(B10<>\"\",B10,\"\"))",
+    "20,70": "IFERROR(MATCH(AJ5,BQ$13:BQ$25,0),0)",
+    "5,48": "TEXT(AW5,\"aaa\")",
+    "5,44": "TEXT(AS5,\"aaa\")",
+    "5,9": "TEXT(J5,\"aaa\")",
+    "7,53": "IF($M$2=1,COUNTIF($BM6,\">=\"&BB5),COUNTIF($BI6,\">=\"&BB5))",
+    "19,70": "IFERROR(MATCH(AF5,BQ$13:BQ$25,0),0)",
+    "7,9": "IF($M$2=1,COUNTIF($BM6,\"=\"&J5),COUNTIF($BI6,\"=\"&J5))",
+    "12,60": "IF(IFERROR(FIND(\"　\",B10),0)>0,FIND(\"　\",B10),IF(IFERROR(FIND(\" \",B10),0)>0,FIND(\" \",B10),0))",
+    "7,35": "IF($M$2=1,COUNTIF($BM6,\"=\"&AJ5),COUNTIF($BI6,\"=\"&AJ5))",
+    "18,71": "IF(BS19>0,VLOOKUP(AB5,BQ$13:BR$25,2,FALSE),\"\")",
+    "17,71": "IF(BS18>0,VLOOKUP(X5,BQ$13:BR$25,2,FALSE),\"\")",
+    "16,71": "IF(BS17>0,VLOOKUP(S5,BQ$13:BR$25,2,FALSE),\"\")",
+    "15,71": "IF(BS16>0,VLOOKUP(N5,BQ$13:BR$25,2,FALSE),\"\")",
+    "14,71": "IF(BS15>0,VLOOKUP(J5,BQ$13:BR$25,2,FALSE),\"\")",
+    "13,71": "IF(BS14>0,VLOOKUP(G5,BQ$13:BR$25,2,FALSE),\"\")",
+    "12,71": "IF(BS13>0,VLOOKUP(B5,BQ$13:BR$25,2,FALSE),\"\")",
+    "19,71": "IF(BS20>0,VLOOKUP(AF5,BQ$13:BR$25,2,FALSE),\"\")",
+    "20,71": "IF(BS21>0,VLOOKUP(AJ5,BQ$13:BR$25,2,FALSE),\"\")",
+    "21,71": "IF(BS22>0,VLOOKUP(AN5,BQ$13:BR$25,2,FALSE),\"\")",
+    "22,71": "IF(BS23>0,VLOOKUP(AS5,BQ$13:BR$25,2,FALSE),\"\")",
+    "23,71": "IF(BS24>0,VLOOKUP(AW5,BQ$13:BR$25,2,FALSE),\"\")",
+    "24,71": "IF(BS25>0,VLOOKUP(BB5,BQ$13:BR$25,2,FALSE),\"\")",
+    "6,5": "BT14",
+    "6,9": "BT15",
+    "6,13": "BT16",
+    "6,18": "BT17",
+    "6,23": "BT18",
+    "6,27": "BT19",
+    "6,31": "BT20",
+    "6,35": "BT21",
+    "6,39": "BT22",
+    "6,44": "BT23",
+    "6,48": "BT24"
+  },
+  "ArrayFormulas": {
+    "12,68,13,2": "IFERROR(ODATA(\"m_company_holiday?$select=holiday,notes&$filter=holiday ge \"&IF(ISBLANK($B$5),\"null\",TEXT($B$5,\"yyyy-MM-ddThh:mm:ssZ\"))&\" and holiday le \"&IF(ISBLANK($BB$5),\"null\",TEXT($BB$5,\"yyyy-MM-ddThh:mm:ssZ\"))),\"\")"
+  },
+  "AttachInfos": {
+    "1,12": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "NoneItemText": "＜なし＞",
+        "Style": 1,
+        "CellDefaultValue": 1,
+        "Items": [
+          {
+            "Value": "1",
+            "DisplayValue": "工事報告書受領予定日を表示"
+          },
+          {
+            "Value": "2",
+            "DisplayValue": "工事終了予定日を表示"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": "%Null%"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": "%Null%"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "1,54": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!B5"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!BB5-23"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=工事報告待ち検索フレーム!AI10"
+            },
+            "TargetType": "Forguncy.ImageCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "TemplateKey": "余白2グレー",
+        "ImagePath": "Arrow/291_left_arrow_2.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      }
+    },
+    "1,56": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!B5"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!BB5-1"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=工事報告待ち検索フレーム!AI10"
+            },
+            "TargetType": "Forguncy.ImageCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "TemplateKey": "余白2グレー",
+        "ImagePath": "Arrow/292_move_next_3.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      }
+    },
+    "4,1": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE(工事報告待ち検索フレーム!$BS$13)>0"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,6": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "TemplateKey": "丸"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 3,
+            "Value1": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=TODAY()"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Foreground": "#FF000000",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 3,
+            "Value1": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=TODAY()"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$14)>0,WEEKDAY(工事報告待ち検索フレーム!G5)=1)"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!G5)=7"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,9": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$15)>0,WEEKDAY(工事報告待ち検索フレーム!J5)=1)"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!J5)=7"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,13": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$16)>0,WEEKDAY(工事報告待ち検索フレーム!N5)=1)"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!N5)=7"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,18": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$17)>0,WEEKDAY(工事報告待ち検索フレーム!S5)=1)"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!S5)=7"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,23": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$18)>0,WEEKDAY(工事報告待ち検索フレーム!X5)=1)"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!X5)=7"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,27": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$19)>0,WEEKDAY(工事報告待ち検索フレーム!AB5)=1)"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!AB5)=7"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,31": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$20)>0,WEEKDAY(工事報告待ち検索フレーム!AF5)=1)"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!AF5)=7"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,35": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$21)>0,WEEKDAY(工事報告待ち検索フレーム!AJ5)=1)"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!AJ5)=7"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,39": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$22)>0,WEEKDAY(工事報告待ち検索フレーム!AN5)=1)"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!AN5)=7"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,44": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$23)>0,WEEKDAY(工事報告待ち検索フレーム!AS5)=1)"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!AS5)=7"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,48": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$24)>0,WEEKDAY(工事報告待ち検索フレーム!AW5)=1)"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!AW5)=7"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,53": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$25)>0,WEEKDAY(工事報告待ち検索フレーム!BB5)=1)"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!BB5)=7"
+            },
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,60": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "v_construction_scheduled_count",
+        "RowIndex": 4,
+        "ColumnIndex": 60,
+        "ColumnCount": 8,
+        "RowCount": 5,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "工事予定ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "v_construction_scheduled_count",
+            "ColumnName": "工事ステータスID"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事報告待ち検索フレーム!BI22"
+          }
+        },
+        "TopCondition": null,
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "5,5": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$14)>0,WEEKDAY(工事報告待ち検索フレーム!G5)=1)"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!G5)=7"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,9": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$15)>0,WEEKDAY(工事報告待ち検索フレーム!J5)=1)"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!J5)=7"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,13": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$16)>0,WEEKDAY(工事報告待ち検索フレーム!N5)=1)"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!N5)=7"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,18": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$17)>0,WEEKDAY(工事報告待ち検索フレーム!S5)=1)"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!S5)=7"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,23": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$18)>0,WEEKDAY(工事報告待ち検索フレーム!X5)=1)"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!X5)=7"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,27": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$19)>0,WEEKDAY(工事報告待ち検索フレーム!AB5)=1)"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!AB5)=7"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,31": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$20)>0,WEEKDAY(工事報告待ち検索フレーム!AF5)=1)"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!AF5)=7"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,35": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$21)>0,WEEKDAY(工事報告待ち検索フレーム!AJ5)=1)"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!AJ5)=7"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,39": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$22)>0,WEEKDAY(工事報告待ち検索フレーム!AN5)=1)"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!AN5)=7"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,44": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$23)>0,WEEKDAY(工事報告待ち検索フレーム!AS5)=1)"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!AS5)=7"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,48": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=OR(VALUE(工事報告待ち検索フレーム!$BS$24)>0,WEEKDAY(工事報告待ち検索フレーム!AW5)=1)"
+            },
+            "StyleInfo": {
+              "Foreground": "#FFFF0000",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "StopIfTrue": true
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=WEEKDAY(工事報告待ち検索フレーム!AW5)=7"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 2 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,60": {
+      "BindingInfo": {
+        "TableName": "v_construction_scheduled_count",
+        "ColumnName": "工事予定終了日"
+      }
+    },
+    "5,64": {
+      "BindingInfo": {
+        "TableName": "v_construction_scheduled_count",
+        "ColumnName": "工事報告書受領予定日"
+      }
+    },
+    "7,1": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": "%Null%"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!B5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 5,
+            "Value1": "=0",
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FF0A24FF",
+              "Underline": true
+            }
+          }
+        ]
+      }
+    },
+    "7,5": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!G5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!G5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 5,
+            "Value1": "=0",
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FF0A24FF",
+              "Underline": true
+            }
+          }
+        ]
+      }
+    },
+    "7,9": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!J5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!J5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 5,
+            "Value1": "=0",
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FF0A24FF",
+              "Underline": true
+            }
+          }
+        ]
+      }
+    },
+    "7,13": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索_対象期間開始日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!N5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索_対象期間終了日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!N5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 5,
+            "Value1": "=0",
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FF0A24FF",
+              "Underline": true
+            }
+          }
+        ]
+      }
+    },
+    "7,18": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!S5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!S5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 5,
+            "Value1": "=0",
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FF0A24FF",
+              "Underline": true
+            }
+          }
+        ]
+      }
+    },
+    "7,23": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!X5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!X5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 5,
+            "Value1": "=0",
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FF0A24FF",
+              "Underline": true
+            }
+          }
+        ]
+      }
+    },
+    "7,27": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!AB5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!AB5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 5,
+            "Value1": "=0",
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FF0A24FF",
+              "Underline": true
+            }
+          }
+        ]
+      }
+    },
+    "7,31": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!AF5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!AF5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 5,
+            "Value1": "=0",
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FF0A24FF",
+              "Underline": true
+            }
+          }
+        ]
+      }
+    },
+    "7,35": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!AJ5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!AJ5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 5,
+            "Value1": "=0",
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FF0A24FF",
+              "Underline": true
+            }
+          }
+        ]
+      }
+    },
+    "7,39": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!AN5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!AN5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 5,
+            "Value1": "=0",
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FF0A24FF",
+              "Underline": true
+            }
+          }
+        ]
+      }
+    },
+    "7,44": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!AS5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!AS5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 5,
+            "Value1": "=0",
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FF0A24FF",
+              "Underline": true
+            }
+          }
+        ]
+      }
+    },
+    "7,48": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!AW5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!AW5"
+                }
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 5,
+            "Value1": "=0",
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FF0A24FF",
+              "Underline": true
+            }
+          }
+        ]
+      }
+    },
+    "7,53": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!BB5"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": "%Null%"
+              }
+            ]
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.CellValueRule, ServerDesignerCommon",
+            "Operator": 5,
+            "Value1": "=0",
+            "StyleInfo": {
+              "FontWeight": "Bold",
+              "Foreground": "#FF0A24FF",
+              "Underline": true
+            }
+          }
+        ]
+      }
+    },
+    "9,1": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/047_search_8.svg",
+          "BuiltIn": true,
+          "Color": "Text 1 70"
+        },
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "検索ワードを入力してください",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!調査結果待ち最新化フラグ"
+                },
+                "Value": "1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "9,14": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ToolTip": "※指定した文字列を含む場合にヒットします。スペース文字を区切りとして２ワードによる検索も可能です",
+        "TemplateKey": "余白4",
+        "ImagePath": "Mobile/452_help_1.svg",
+        "BuiltIn": true,
+        "Color": "#FF005B47",
+        "UseCellForeColor": true
+      }
+    },
+    "9,23": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=工事報告待ち検索フレーム!工事件数取得ボタン"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 6,
+            "ListviewName": "工事予定ビュー",
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              },
+              "RetrunParamNames": {}
+            }
+          }
+        ]
+      }
+    },
+    "9,29": {
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=工事報告待ち検索フレーム!工事件数取得ボタン"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          },
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 6,
+            "ListviewName": "工事予定ビュー",
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              },
+              "RetrunParamNames": {}
+            }
+          }
+        ]
+      }
+    },
+    "9,34": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間開始日"
+                },
+                "Value": "%Null%"
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!検索対象期間終了日"
+                },
+                "Value": "%Null%"
+              }
+            ]
+          }
+        ],
+        "ToolTip": "日付をクリアします",
+        "TemplateKey": "余白4",
+        "ImagePath": "Application/034_close_delete_2.svg",
+        "BuiltIn": true,
+        "Color": "Text 1 50"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=AND(工事報告待ち検索フレーム!検索対象期間開始日=\"\",工事報告待ち検索フレーム!検索対象期間終了日=\"\")"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": false,
+            "IsInvisible": true,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "9,36": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "アクション選択",
+        "IsDisabled": true,
+        "TemplateKey": "角緑",
+        "Icon": {
+          "Name": "Application/144_check_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE(工事報告待ち検索フレーム!調査結果待ち抽出カウント)=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "9,43": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=工事報告待ち検索フレーム!調査結果待ちダウンロード"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "Text": "ダウンロードする",
+        "TemplateKey": "角緑",
+        "Icon": {
+          "Name": "Arrow/344_download_6.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE(工事報告待ち検索フレーム!調査結果待ち抽出カウント)=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "9,51": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 6,
+            "ListviewName": "工事予定ビュー",
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              },
+              "RetrunParamNames": {}
+            }
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=工事報告待ち検索フレーム!最新化フラグ"
+                },
+                "Value": "1"
+              }
+            ]
+          }
+        ],
+        "Text": "最新情報に更新する",
+        "TemplateKey": "角緑",
+        "Icon": {
+          "Name": "Application/057_refresh_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "11,0": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "ブランク",
+        "OverflowMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "Foreground": 1
+      },
+      {
+        "FontFamily": 2
+      },
+      {
+        "Foreground": 1
+      },
+      {
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "Foreground": 3,
+        "HorizontalAlignment": 4
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "Foreground": 3,
+        "HorizontalAlignment": 4,
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 1
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "Foreground": 7,
+        "Formatter": 8,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "Formatter": 8,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 0,
+        "Foreground": 7,
+        "Formatter": 8,
+        "HorizontalAlignment": 4,
+        "BorderLeft": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontSize": 12.0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": null
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4,
+        "BorderBottom": 0,
+        "BorderTop": null
+      },
+      {
+        "FontSize": 12.0,
+        "BorderBottom": 0,
+        "BorderTop": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "Foreground": 3,
+        "HorizontalAlignment": 4,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 0,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": 0,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 18.666666666666664,
+        "Foreground": 7,
+        "HorizontalAlignment": 4,
+        "Underline": false,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": null
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": null,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "FontSize": 18.666666666666664,
+        "Foreground": 7,
+        "HorizontalAlignment": 4,
+        "Underline": false
+      },
+      {
+        "FontFamily": 2,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 2,
+        "BorderRight": 1
+      },
+      {
+        "FontFamily": 2,
+        "BorderBottom": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 9
+      },
+      {
+        "FontFamily": 2,
+        "HorizontalAlignment": 4
+      },
+      {
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": 10
+      },
+      {
+        "Background": 11
+      },
+      {
+        "Background": 12,
+        "FontFamily": 2
+      },
+      {
+        "Background": 12
+      },
+      {
+        "FontFamily": 2,
+        "Formatter": 13
+      },
+      {
+        "Background": 10,
+        "FontFamily": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Accent 1 0",
+        "Body",
+        "#FF000000",
+        "Center",
+        "Background 1 -15",
+        "Background 1 -35",
+        "Text 1 50",
+        "d",
+        "@",
+        "#FFFFFF00",
+        "Accent 5 80",
+        "Accent 3 60",
+        "[AUTO]General"
+      ],
+      "Borders": [
+        {
+          "Color": 5
+        },
+        {
+          "Color": 6
+        }
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,12": 1,
+      "1,13": 1,
+      "1,14": 1,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 1,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 1,
+      "1,23": 1,
+      "1,24": 1,
+      "1,25": 1,
+      "1,26": 1,
+      "1,27": 1,
+      "1,28": 1,
+      "1,29": 1,
+      "1,30": 1,
+      "1,31": 1,
+      "1,32": 1,
+      "1,33": 1,
+      "1,34": 1,
+      "1,35": 1,
+      "1,54": 1,
+      "2,1": 2,
+      "2,54": 1,
+      "3,0": 3,
+      "3,1": 4,
+      "3,4": 5,
+      "3,5": 4,
+      "3,8": 5,
+      "3,9": 4,
+      "3,12": 5,
+      "3,13": 6,
+      "3,17": 5,
+      "3,18": 6,
+      "3,22": 5,
+      "3,23": 6,
+      "3,26": 5,
+      "3,27": 6,
+      "3,30": 5,
+      "3,31": 6,
+      "3,34": 5,
+      "3,35": 6,
+      "3,38": 5,
+      "3,39": 6,
+      "3,43": 5,
+      "3,44": 6,
+      "3,47": 5,
+      "3,48": 4,
+      "3,52": 7,
+      "3,53": 4,
+      "3,54": 1,
+      "3,55": 1,
+      "3,56": 1,
+      "3,57": 8,
+      "4,0": 3,
+      "4,1": 9,
+      "4,4": 5,
+      "4,6": 10,
+      "4,8": 5,
+      "4,9": 9,
+      "4,12": 5,
+      "4,13": 9,
+      "4,17": 5,
+      "4,18": 9,
+      "4,22": 5,
+      "4,23": 11,
+      "4,26": 5,
+      "4,27": 11,
+      "4,30": 5,
+      "4,31": 11,
+      "4,34": 5,
+      "4,35": 11,
+      "4,38": 5,
+      "4,39": 11,
+      "4,43": 5,
+      "4,44": 11,
+      "4,47": 5,
+      "4,48": 9,
+      "4,52": 7,
+      "4,53": 9,
+      "4,57": 8,
+      "5,0": 3,
+      "5,2": 12,
+      "5,4": 13,
+      "5,5": 14,
+      "5,8": 5,
+      "5,9": 14,
+      "5,12": 5,
+      "5,13": 15,
+      "5,17": 5,
+      "5,18": 15,
+      "5,22": 5,
+      "5,23": 15,
+      "5,26": 5,
+      "5,27": 15,
+      "5,30": 5,
+      "5,31": 15,
+      "5,34": 5,
+      "5,35": 15,
+      "5,38": 5,
+      "5,39": 15,
+      "5,43": 5,
+      "5,44": 15,
+      "5,47": 5,
+      "5,48": 14,
+      "5,52": 7,
+      "5,53": 16,
+      "5,54": 14,
+      "5,56": 1,
+      "5,57": 8,
+      "6,1": 17,
+      "6,2": 18,
+      "6,3": 18,
+      "6,4": 19,
+      "6,5": 20,
+      "6,6": 21,
+      "6,7": 21,
+      "6,8": 22,
+      "6,9": 20,
+      "6,10": 21,
+      "6,11": 21,
+      "6,12": 22,
+      "6,13": 20,
+      "6,14": 21,
+      "6,15": 21,
+      "6,16": 21,
+      "6,17": 22,
+      "6,18": 20,
+      "6,19": 23,
+      "6,20": 23,
+      "6,21": 23,
+      "6,22": 24,
+      "6,23": 20,
+      "6,24": 23,
+      "6,25": 23,
+      "6,26": 24,
+      "6,27": 20,
+      "6,28": 23,
+      "6,29": 23,
+      "6,30": 24,
+      "6,31": 20,
+      "6,32": 23,
+      "6,33": 23,
+      "6,34": 24,
+      "6,35": 20,
+      "6,36": 23,
+      "6,37": 23,
+      "6,38": 24,
+      "6,39": 20,
+      "6,40": 23,
+      "6,41": 23,
+      "6,42": 23,
+      "6,43": 24,
+      "6,44": 20,
+      "6,45": 23,
+      "6,46": 23,
+      "6,47": 24,
+      "6,48": 20,
+      "6,49": 23,
+      "6,50": 23,
+      "6,51": 23,
+      "6,52": 25,
+      "6,53": 26,
+      "6,54": 23,
+      "6,55": 23,
+      "6,56": 27,
+      "7,0": 3,
+      "7,1": 28,
+      "7,2": 29,
+      "7,3": 29,
+      "7,4": 30,
+      "7,5": 28,
+      "7,6": 29,
+      "7,7": 29,
+      "7,8": 30,
+      "7,9": 28,
+      "7,10": 29,
+      "7,11": 29,
+      "7,12": 30,
+      "7,13": 31,
+      "7,17": 5,
+      "7,18": 31,
+      "7,19": 1,
+      "7,20": 1,
+      "7,21": 1,
+      "7,22": 32,
+      "7,23": 28,
+      "7,24": 29,
+      "7,25": 29,
+      "7,26": 30,
+      "7,27": 28,
+      "7,28": 29,
+      "7,29": 29,
+      "7,30": 30,
+      "7,31": 28,
+      "7,32": 29,
+      "7,33": 29,
+      "7,34": 30,
+      "7,35": 28,
+      "7,36": 29,
+      "7,37": 29,
+      "7,38": 30,
+      "7,39": 31,
+      "7,40": 1,
+      "7,41": 1,
+      "7,42": 1,
+      "7,43": 32,
+      "7,44": 28,
+      "7,45": 29,
+      "7,46": 29,
+      "7,47": 30,
+      "7,48": 31,
+      "7,49": 1,
+      "7,50": 1,
+      "7,51": 1,
+      "7,52": 33,
+      "7,53": 28,
+      "7,54": 29,
+      "7,55": 29,
+      "7,56": 34,
+      "9,1": 35,
+      "9,14": 1,
+      "9,16": 36,
+      "9,17": 1,
+      "9,18": 1,
+      "9,19": 1,
+      "9,20": 1,
+      "9,21": 1,
+      "9,22": 1,
+      "9,23": 1,
+      "9,24": 1,
+      "9,25": 1,
+      "9,26": 1,
+      "9,27": 1,
+      "9,28": 36,
+      "9,29": 1,
+      "9,30": 1,
+      "9,31": 1,
+      "9,32": 1,
+      "9,33": 1,
+      "9,34": 1,
+      "9,36": 16,
+      "9,37": 1,
+      "9,38": 1,
+      "9,39": 1,
+      "9,40": 1,
+      "9,41": 1,
+      "9,43": 16,
+      "9,51": 16,
+      "9,57": 16,
+      "9,58": 16,
+      "9,59": 16,
+      "9,60": 16,
+      "9,61": 16,
+      "9,62": 16,
+      "9,63": 16,
+      "9,64": 16,
+      "9,65": 16,
+      "9,66": 16,
+      "9,67": 16,
+      "9,68": 16,
+      "9,69": 16,
+      "9,70": 16,
+      "9,71": 16,
+      "9,72": 16,
+      "9,73": 16,
+      "9,74": 16,
+      "9,75": 16,
+      "11,70": 36,
+      "11,71": 37,
+      "12,60": 38,
+      "12,68": 39,
+      "12,69": 39,
+      "12,70": 40,
+      "12,71": 41,
+      "13,68": 39,
+      "13,69": 39,
+      "13,70": 40,
+      "13,71": 40,
+      "14,60": 42,
+      "14,61": 1,
+      "14,62": 1,
+      "14,68": 39,
+      "14,69": 39,
+      "14,70": 40,
+      "14,71": 40,
+      "15,60": 43,
+      "15,61": 1,
+      "15,62": 1,
+      "15,68": 39,
+      "15,69": 39,
+      "15,70": 40,
+      "15,71": 40,
+      "16,68": 39,
+      "16,69": 39,
+      "16,70": 40,
+      "16,71": 40,
+      "17,60": 42,
+      "17,61": 1,
+      "17,62": 1,
+      "17,68": 39,
+      "17,69": 39,
+      "17,70": 40,
+      "17,71": 40,
+      "18,60": 43,
+      "18,61": 1,
+      "18,62": 1,
+      "18,68": 39,
+      "18,69": 39,
+      "18,70": 40,
+      "18,71": 40,
+      "19,68": 39,
+      "19,69": 39,
+      "19,70": 40,
+      "19,71": 40,
+      "20,60": 1,
+      "20,61": 1,
+      "20,62": 1,
+      "20,68": 39,
+      "20,69": 39,
+      "20,70": 40,
+      "20,71": 40,
+      "21,60": 43,
+      "21,61": 1,
+      "21,62": 1,
+      "21,68": 39,
+      "21,69": 39,
+      "21,70": 40,
+      "21,71": 40,
+      "22,68": 39,
+      "22,69": 39,
+      "22,70": 40,
+      "22,71": 40,
+      "23,68": 39,
+      "23,69": 39,
+      "23,70": 40,
+      "23,71": 40,
+      "24,68": 39,
+      "24,69": 39,
+      "24,70": 40,
+      "24,71": 40
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "12,60,1,3",
+    "15,60,1,3",
+    "18,60,1,3",
+    "21,60,1,3",
+    "7,1,1,4",
+    "11,0,24,58",
+    "7,53,1,4",
+    "7,13,1,5",
+    "3,53,1,4",
+    "3,1,1,4",
+    "3,5,1,4",
+    "3,13,1,5",
+    "3,9,1,4",
+    "3,18,1,5",
+    "3,23,1,4",
+    "3,31,1,4",
+    "3,27,1,4",
+    "3,39,1,5",
+    "3,35,1,4",
+    "3,44,1,4",
+    "3,48,1,5",
+    "7,5,1,4",
+    "7,18,1,5",
+    "7,39,1,5",
+    "7,48,1,5",
+    "7,9,1,4",
+    "7,23,1,4",
+    "7,27,1,4",
+    "7,31,1,4",
+    "7,35,1,4",
+    "7,44,1,4",
+    "4,9,1,4",
+    "4,13,1,5",
+    "4,18,1,5",
+    "4,23,1,4",
+    "4,27,1,4",
+    "4,31,1,4",
+    "4,35,1,4",
+    "4,39,1,5",
+    "4,44,1,4",
+    "4,48,1,5",
+    "4,53,1,4",
+    "4,1,1,4",
+    "5,2,1,2",
+    "5,54,1,2",
+    "5,5,1,4",
+    "5,13,1,5",
+    "5,9,1,4",
+    "5,18,1,5",
+    "5,23,1,4",
+    "5,27,1,4",
+    "5,31,1,4",
+    "5,35,1,4",
+    "5,39,1,5",
+    "5,44,1,4",
+    "5,48,1,5",
+    "6,5,1,4",
+    "6,9,1,4",
+    "6,13,1,5",
+    "6,18,1,5",
+    "6,23,1,4",
+    "6,27,1,4",
+    "6,31,1,4",
+    "6,35,1,4",
+    "6,39,1,5",
+    "6,44,1,4",
+    "6,48,1,5",
+    "6,53,1,4",
+    "5,60,1,4",
+    "5,64,1,4",
+    "1,12,1,24",
+    "4,6,1,2",
+    "9,1,1,13",
+    "9,16,1,7",
+    "9,23,1,5",
+    "9,29,1,5",
+    "9,51,1,6",
+    "9,43,1,7",
+    "9,36,1,6",
+    "6,60,3,8",
+    "4,60,1,4",
+    "4,64,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=工事報告待ち検索フレーム!A12"
+            },
+            "Value": "工事報告待ち検索リスト"
+          }
+        ]
+      },
+      {
+        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+        "PropertyItemsList": [
+          {
+            "TargetCells": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=工事報告待ち検索フレーム!B5"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=TODAY()-1"
+            }
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "v_construction_scheduled_count",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "検索ワード",
+      "Formula": "工事報告待ち検索フレーム!$B$10"
+    },
+    {
+      "Name": "検索ワード1",
+      "Formula": "工事報告待ち検索フレーム!$BI$16"
+    },
+    {
+      "Name": "検索ワード2",
+      "Formula": "工事報告待ち検索フレーム!$BI$19"
+    },
+    {
+      "Name": "検索区分",
+      "Formula": "工事報告待ち検索フレーム!$M$2"
+    },
+    {
+      "Name": "検索対象期間開始日",
+      "Formula": "工事報告待ち検索フレーム!$X$10"
+    },
+    {
+      "Name": "検索対象期間終了日",
+      "Formula": "工事報告待ち検索フレーム!$AD$10"
+    }
+  ]
+}//gw8JpAIyS14zHU4BLqvqvLGey6NB+2tkhqy4on878tut97tVXQmuXuLwcYqesfRr1/BwgZcxOBtlTuuzHFgjAjl2cNarK5HXUyXwxZ+AEysZmJZNvD7xlaa151NYTPcZ+ey7OF8eCuncRJ3gus96dfanMEO0qKTvFelSlfbo6oOyUJN1qX7u7hZLPcAItphCOrdW84EjhRlOcygJxl4blxABBzXbAGY+srYHa0Bjvjy8CsMrZThTahkcOUngAZ200qZhkQX62HuQcaIOHVnpbFdfIveV0vfXTPrIwwTsijx/eXcNIOfUbzmWmwPpJxT19A2dj9bpBLFb4ktt2a1I6wegn7luA7AMqLW9gWpD63HBCxcKdmi+sQQbTwhUzK98sCz3BMHoiYNxD1l5OEARqfK/yVfsPXgzEZs8XOWNRpLWl9cufHWYcCNECVjoxIADmFAxF9Q1yL1rr8fBwZoU0OzolTV/I7Fkqq5j87cofVSlkMvnt54TwK+xVLuFeuzxTYLF400MoR86YPFu6Q9K0waFVY0WS6zLzwn1aci37Z2psp/PFGeUqslHySFLJl1/Xq2IWCqelAlGCFTjzVW+++qLEGdWwtgOrffHQeQRPBtAzCsTJrrPEiwje8KXMDoj6gCiMpFGnzbXOjj/iNBVGVh/4Km/XII0KSotzla/jXQHcYY3vcpZV8X4+6gAeJfQ/wi36isVf73gOJlAShY29LDnF15tGDrMAHhyAATKu/T5Pm/3woTBJUk1cyuJDHiDsBn07zQEuTunMtoZyq9Mw45+T8TUpHYxwAxaPTm2UYYr07q1F561q1p2KYy4gzQVrJOhdRjLB3AdZUWMFhyoLXDHjMj/W5+bUHsX9x/R3O5uJBU1QmhrAghwle28O9DUS4xNeO5frve9DiSmt1LbTw==|920

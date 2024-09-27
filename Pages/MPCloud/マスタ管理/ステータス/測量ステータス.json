@@ -1,0 +1,765 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      }
+    },
+    "Count": 21,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 200.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 200.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0,
+          "IsHidden": true
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 80.0,
+          "IsHidden": true
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "16": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "Count": 21,
+    "DefaultSize": 80.0
+  },
+  "Values": {
+    "1,15": "▼編集リセットフラグ",
+    "2,15": "0",
+    "4,15": "▼編集確定フラグ",
+    "5,15": "0",
+    "7,15": "▼抽出カウント"
+  },
+  "Formulas": {
+    "8,15": "COUNTIF($B$2,\"<>\")",
+    "20,0": "\"表示データ件数：\"&TEXT(抽出カウント,\"#,##0\")&\"件\""
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ListViewInfo": {
+        "RowHeaderContextMenu": {
+          "ContextMenuItems": [
+            {
+              "Text": "挿入",
+              "Visible": true,
+              "OperationType": 2
+            },
+            {
+              "Text": "削除",
+              "OperationType": 3
+            },
+            {
+              "Text": "複製",
+              "Visible": true,
+              "OperationType": 4
+            }
+          ]
+        },
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_surveying_status",
+        "ColumnCount": 14,
+        "RowCount": 20,
+        "FrozenIndex": 1,
+        "IsRowHeaderVisible": true,
+        "AllowEditInListview": true,
+        "AllowAddNewRow": true,
+        "ShowDeleteButton": true,
+        "AllowDragFill": true,
+        "HideSelectionWhenLostFocus": true,
+        "UseSimpleBar": true,
+        "Name": "測量ステータスビュー",
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_surveying_status",
+                "ColumnName": "sort_no"
+              },
+              "Order": 0
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_surveying_status",
+                "ColumnName": "surveying_status_id"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "ListViewStyleName": "マスタ用"
+      }
+    },
+    "1,1": {
+      "BindingInfo": {
+        "TableName": "m_surveying_status",
+        "ColumnName": "surveying_status_name"
+      }
+    },
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "IsBounding": true,
+        "NoneItemText": "",
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "m_order_status",
+        "ValueColumnBindingInfo": {
+          "TableName": "m_order_status",
+          "ColumnName": "order_status_id"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "m_order_status",
+          "ColumnName": "order_status_name"
+        },
+        "ItemsSort": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_order_status",
+                "ColumnName": "sort_no"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "AddNullItemWhenBinding": true
+      },
+      "BindingInfo": {
+        "TableName": "m_surveying_status",
+        "ColumnName": "order_status_id"
+      }
+    },
+    "1,3": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_surveying_status",
+        "ColumnName": "surveying_arrange_wait_flg"
+      }
+    },
+    "1,4": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_surveying_status",
+        "ColumnName": "surveying_arrange_pending_flg"
+      }
+    },
+    "1,5": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_surveying_status",
+        "ColumnName": "surveying_consent_wait_flg"
+      }
+    },
+    "1,6": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_surveying_status",
+        "ColumnName": "surveying_result_wait_flg"
+      }
+    },
+    "1,7": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_surveying_status",
+        "ColumnName": "surveying_complete_wait_flg"
+      }
+    },
+    "1,8": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_surveying_status",
+        "ColumnName": "surveying_complete_flg"
+      }
+    },
+    "1,9": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "BindingInfo": {
+        "TableName": "m_surveying_status",
+        "ColumnName": "returning_end_flg"
+      }
+    },
+    "1,10": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "m_surveying_status",
+        "ColumnName": "cancel_flg"
+      }
+    },
+    "1,11": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "m_surveying_status",
+        "ColumnName": "complete_flg"
+      }
+    },
+    "1,12": {
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "m_surveying_status",
+        "ColumnName": "sort_no"
+      }
+    },
+    "1,13": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "ShowOnlyEdit": false
+      },
+      "IsCellIgnoreHideInListview": true,
+      "BindingInfo": {
+        "TableName": "m_surveying_status",
+        "ColumnName": "active_flg"
+      }
+    },
+    "2,15": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 6,
+            "ListviewName": "測量ステータスビュー",
+            "UpdateListviewCommandRunTimeMethodSetting": {
+              "MethodName": "Reload",
+              "ParameterValues": {
+                "clearFilter": false,
+                "clearSort": false
+              },
+              "RetrunParamNames": {}
+            }
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量ステータス!編集リセットフラグ"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "1163bbdf-62b1-43af-9906-e63bfc780ec3",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+                  }
+                },
+                "Value": "編集をリセットしました"
+              }
+            ],
+            "ReturnPropertiesTo": []
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    },
+    "5,15": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+            "UpdateType": 3,
+            "ListviewName": "測量ステータスビュー"
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=測量ステータス!編集確定フラグ"
+                },
+                "Value": "0"
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+            "ShareCommandContainerRefer": {
+              "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+            },
+            "Params": [
+              {
+                "ParamReferObject": {
+                  "ParamID": "1163bbdf-62b1-43af-9906-e63bfc780ec3",
+                  "ShareCommandContainerReferObject": {
+                    "ShareCommandContainerID": "de66a115-ade0-422c-9d10-db03223efd9b"
+                  }
+                },
+                "Value": "編集内容を確定しました"
+              }
+            ],
+            "ReturnPropertiesTo": []
+          }
+        ],
+        "CellDefaultValue": "0"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 12.0
+      },
+      {
+        "Background": 0,
+        "FontSize": 12.0,
+        "WordWrap": true,
+        "ShrinkToFit": true
+      },
+      {
+        "FontSize": 12.0,
+        "WordWrap": true
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "WordWrap": true,
+        "ShrinkToFit": true
+      },
+      {
+        "Background": 2,
+        "Foreground": 3,
+        "Formatter": 4,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "TextIndent": 4,
+        "BorderBottom": 0
+      },
+      {
+        "HorizontalAlignment": 5
+      },
+      {
+        "HorizontalAlignment": 5,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "HorizontalAlignment": 5,
+        "BorderBottom": 0
+      },
+      {
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Background": 8,
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Formatter": 9,
+        "HorizontalAlignment": 7
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 10
+      },
+      {
+        "Background": 11,
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "BorderTop": 1
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 1
+      },
+      {
+        "BorderTop": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF005B47",
+        "Body",
+        "Background 1 -5",
+        "#FF000000",
+        "General",
+        "Center",
+        "Background 1 0",
+        "Right",
+        "Accent 1 80",
+        "@",
+        "[AUTO]General",
+        "#FFFFFF00",
+        "Background 1 -15"
+      ],
+      "Borders": [
+        {
+          "Color": 6
+        },
+        {
+          "Color": 12
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 1,
+      "0,3": 2,
+      "0,4": 2,
+      "0,5": 2,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 3,
+      "0,9": 3,
+      "0,10": 1,
+      "0,11": 3,
+      "0,12": 1,
+      "0,13": 1,
+      "1,0": 4,
+      "1,1": 5,
+      "1,2": 5,
+      "1,3": 6,
+      "1,4": 6,
+      "1,5": 6,
+      "1,6": 7,
+      "1,7": 7,
+      "1,8": 8,
+      "1,9": 8,
+      "1,10": 7,
+      "1,11": 8,
+      "1,12": 9,
+      "1,13": 6,
+      "1,15": 10,
+      "1,16": 10,
+      "1,17": 10,
+      "2,15": 11,
+      "2,16": 10,
+      "2,17": 10,
+      "3,15": 10,
+      "3,16": 10,
+      "3,17": 10,
+      "4,15": 12,
+      "4,16": 10,
+      "4,17": 10,
+      "5,15": 11,
+      "5,16": 10,
+      "5,17": 10,
+      "7,15": 12,
+      "7,16": 10,
+      "7,17": 10,
+      "8,15": 13,
+      "8,16": 10,
+      "8,17": 10,
+      "20,0": 14,
+      "20,1": 15,
+      "20,2": 16,
+      "20,3": 15,
+      "20,4": 15,
+      "20,5": 16,
+      "20,6": 16,
+      "20,7": 16,
+      "20,8": 16,
+      "20,9": 16,
+      "20,10": 16,
+      "20,11": 16,
+      "20,12": 16,
+      "20,13": 16,
+      "20,14": 16,
+      "20,15": 16,
+      "20,16": 16,
+      "20,17": 16,
+      "20,18": 16,
+      "20,19": 16,
+      "20,20": 16
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "2,15,1,3",
+    "5,15,1,3",
+    "2,0,18,14",
+    "8,15,1,3",
+    "20,0,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_surveying_status",
+    "PageResponsiveMode": 4
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "編集リセットフラグ",
+      "Formula": "測量ステータス!$P$3"
+    },
+    {
+      "Name": "編集確定フラグ",
+      "Formula": "測量ステータス!$P$6"
+    },
+    {
+      "Name": "抽出カウント",
+      "Formula": "測量ステータス!$P$8"
+    }
+  ]
+}//PnHrEmI2ThPJlLicL4U3Joecb9nm7woUJ3zH85jZSthi8ccv+YefWZUeoojqNP4gadXMawRFIuNpJ3/0Ib++XXtIzSbFfHAlcRnOlex7U+fuqq7VkWNTnpxKU2mK9oQSUB4wuDU6LLnZMTLBtlj4I8gT0npX40d0JaB2HiLB/WgW02ijRtjNmcQ3ZjQQwBD9E5st880AlelVRj+pHwxbvAwse3Z4puVAtI28Um2T4xqfckuoE9jkVThgg+bWfurp0ZerdYKZ8ABE0Rx/Fvr5rPuzUeY7JHbYZgYHUdqXEZKeY0uPPY3Su8ZrsyJGTBzOm7+sOtgEwqrbA9tLeHRfecTpKVBNGUjTB73Lr3ChH/I8ifg9DkCe98AtgQhbrNop/8TgbLohL8AKGoU0wsmGZRwkjPqyIg5fzvMa75UQDFGJxsP/V3DQKH6qRUSq6TMgaTzRMhQqE65mZyOs0upGZc/aJSazjxZGCog+z/tuvQG407jj+gkJrZzR4W1OQ/7v0RbkWBtEdYE4mc/AbGLhG7vNst1ED7R2txXj4nsUqnMFyPOr2ter/dFencUBq5VLNBDohjZOBagzk2Fdu8D7ndmzPLN+5itH5Weoq3GJFuqc1ynAuPp/hNOrggnsGrBSrRvWik9pzwTozLAlwpkS6RyPjiOberEBVxjzon7PUl+pL1uLtz9vlb8oV9l/16O4oBu/T2aid2+GHq7H9AiMWDKDU9RZLKTM9XyVcinIdbir/TJQ88TjGbfSL1A57ujFEKL+ag6bcoGK1Z4NqI/x9hmJCEUyD/8a3aUtkW626WPbaerP0EkSE3IROYyTFy38b9IcdZ4rtB8R812kJ6ishThx4TxwVjXaslo/dzOTiYyMBuJ0JyYRXQ+rQTrhcUw9Uhb4BLQUYM3VMoCl9HGDUw==|920

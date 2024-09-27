@@ -1,0 +1,2768 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.PostRequestTrigger, ServerDesignerCommon",
+      "Permission": {
+        "AllowRoles": [
+          "FGC_LoginUser"
+        ]
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "申込_資料待ち件数",
+      "TableValue": {
+        "TableName": "t_object_wait_documents",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_wait_documents",
+              "ColumnName": "receipt_flg"
+            },
+            "Value": "0"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 4,
+              "ColumnBindingInfo": {
+                "TableName": "t_object_wait_documents",
+                "ColumnName": "scheduled_sending_date"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=TODAY()"
+              },
+              "LeftBracket": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "CompareType": 4,
+              "ColumnBindingInfo": {
+                "TableName": "t_object_wait_documents",
+                "ColumnName": "send_limite_date"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=TODAY()"
+              },
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          }
+        }
+      },
+      "ID": "68f1ef6c0cdc4b1c96d34edb15c51a2f"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "申込_タスク期限切れ件数",
+      "TableValue": {
+        "TableName": "t_task",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "CompareType": 4,
+            "ColumnBindingInfo": {
+              "TableName": "t_task",
+              "ColumnName": "deadline"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=TODAY()"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_task",
+              "ColumnName": "processed_flg"
+            },
+            "Value": "0"
+          }
+        }
+      },
+      "ID": "3df825fba1b2453890007242a4fc057a"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "調査_手配待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_survey_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_survey",
+                "RelatedColumn": "survey_id",
+                "DisplayColumn": "survey_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_survey_status",
+                  "RelatedColumn": "survey_status_id",
+                  "DisplayColumn": "survey_arrange_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "a06d85d8008743af8cc5e09ccf0be482"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "調査_手配保留件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_survey_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_survey",
+                "RelatedColumn": "survey_id",
+                "DisplayColumn": "survey_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_survey_status",
+                  "RelatedColumn": "survey_status_id",
+                  "DisplayColumn": "survey_arrange_pending_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "aafb25b743dd42faaa5552b692108d15"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "調査_承諾待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_survey_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_survey",
+                "RelatedColumn": "survey_id",
+                "DisplayColumn": "survey_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_survey_status",
+                  "RelatedColumn": "survey_status_id",
+                  "DisplayColumn": "survey_consent_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "086cbc47d1294885b707bc08a464a360"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "調査_結果待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_survey_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_survey",
+                "RelatedColumn": "survey_id",
+                "DisplayColumn": "survey_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_survey_status",
+                  "RelatedColumn": "survey_status_id",
+                  "DisplayColumn": "survey_result_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "23e5e8fbbdde49e1ab1de62126412550"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "調査_完了待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_survey_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_survey",
+                "RelatedColumn": "survey_id",
+                "DisplayColumn": "survey_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_survey_status",
+                  "RelatedColumn": "survey_status_id",
+                  "DisplayColumn": "survey_complete_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "a15907ec82454e72822721e70e0c6eec"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "測量_手配待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_surveying_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_surveying",
+                "RelatedColumn": "surveying_id",
+                "DisplayColumn": "surveying_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_surveying_status",
+                  "RelatedColumn": "surveying_status_id",
+                  "DisplayColumn": "surveying_arrange_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "fa4c96b4374d4be59e4acb0e58fdb8c8"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "測量_手配保留件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_surveying_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_surveying",
+                "RelatedColumn": "surveying_id",
+                "DisplayColumn": "surveying_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_surveying_status",
+                  "RelatedColumn": "surveying_status_id",
+                  "DisplayColumn": "surveying_arrange_pending_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "4a5ebc5a1a31426da53dc18ac89c4d88"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "測量_承諾待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_surveying_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_surveying",
+                "RelatedColumn": "surveying_id",
+                "DisplayColumn": "surveying_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_surveying_status",
+                  "RelatedColumn": "surveying_status_id",
+                  "DisplayColumn": "surveying_consent_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "a800bc6c2d0f47b99a0bca261f08bf7f"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "測量_結果待ち件数＜敷測＞",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "t_object_order",
+                "ColumnName": "latest_surveying_id",
+                "RelationBinding": {
+                  "RelatedTable": "t_object_surveying",
+                  "RelatedColumn": "surveying_id",
+                  "DisplayColumn": "surveying_status_id",
+                  "NextRelationBinding": {
+                    "RelatedTable": "m_surveying_status",
+                    "RelatedColumn": "surveying_status_id",
+                    "DisplayColumn": "surveying_result_wait_flg"
+                  }
+                }
+              },
+              "Value": "1"
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "t_object_order",
+                "ColumnName": "latest_surveying_id",
+                "RelationBinding": {
+                  "RelatedTable": "t_object_surveying",
+                  "RelatedColumn": "surveying_id",
+                  "DisplayColumn": "site_survey_flg"
+                }
+              },
+              "Value": "1"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "9b04c61404884cdebbc733471cfa09ae"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "測量_結果待ち件数＜役調＞",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "t_object_order",
+                "ColumnName": "latest_surveying_id",
+                "RelationBinding": {
+                  "RelatedTable": "t_object_surveying",
+                  "RelatedColumn": "surveying_id",
+                  "DisplayColumn": "surveying_status_id",
+                  "NextRelationBinding": {
+                    "RelatedTable": "m_surveying_status",
+                    "RelatedColumn": "surveying_status_id",
+                    "DisplayColumn": "surveying_result_wait_flg"
+                  }
+                }
+              },
+              "Value": "1"
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "t_object_order",
+                "ColumnName": "latest_surveying_id",
+                "RelationBinding": {
+                  "RelatedTable": "t_object_surveying",
+                  "RelatedColumn": "surveying_id",
+                  "DisplayColumn": "gove_survey_flg"
+                }
+              },
+              "Value": "1"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "1ea294a9dfde43c9a275ae2b6e4662cc"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "測量_結果待ち件数",
+      "ParameterValue": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=測量_結果待ち件数＜敷測＞+測量_結果待ち件数＜役調＞"
+      },
+      "ID": "651dff9aa733481f8a01f9e7e3f37c3a"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "測量_完了待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_surveying_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_surveying",
+                "RelatedColumn": "surveying_id",
+                "DisplayColumn": "surveying_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_surveying_status",
+                  "RelatedColumn": "surveying_status_id",
+                  "DisplayColumn": "surveying_complete_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "a8e03d5d2f8442a1a07a2e5c40cffbd4"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "解析_待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_analysis_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_analysis",
+                "RelatedColumn": "analysis_id",
+                "DisplayColumn": "analysis_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_analysis_status",
+                  "RelatedColumn": "analysis_status_id",
+                  "DisplayColumn": "analysis_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "c2463eacf6384d3cadfd627611f69f13"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "解析_着手中件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_analysis_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_analysis",
+                "RelatedColumn": "analysis_id",
+                "DisplayColumn": "analysis_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_analysis_status",
+                  "RelatedColumn": "analysis_status_id",
+                  "DisplayColumn": "analysis_start_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "0967e1440f414747b23fe274e9141c85"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "解析_業務対応中件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_analysis_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_analysis",
+                "RelatedColumn": "analysis_id",
+                "DisplayColumn": "analysis_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_analysis_status",
+                  "RelatedColumn": "analysis_status_id",
+                  "DisplayColumn": "office_work_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "dba45496137346fea9c3f5d1f047444d"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "解析_保留件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_analysis_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_analysis",
+                "RelatedColumn": "analysis_id",
+                "DisplayColumn": "analysis_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_analysis_status",
+                  "RelatedColumn": "analysis_status_id",
+                  "DisplayColumn": "analysis_pending_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "691f7f221bdd419d851df561e6829c86"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "解析_完了待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_analysis_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_analysis",
+                "RelatedColumn": "analysis_id",
+                "DisplayColumn": "analysis_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_analysis_status",
+                  "RelatedColumn": "analysis_status_id",
+                  "DisplayColumn": "analysis_complete_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "fdea7876079340229a5bd7267ead9cd8"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "転圧_設計待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_compaction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_compaction",
+                "RelatedColumn": "compaction_id",
+                "DisplayColumn": "compaction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_compaction_status",
+                  "RelatedColumn": "compaction_status_id",
+                  "DisplayColumn": "design_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "94badf2834394fad94a24103cf9c7d25"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "転圧_見積手配待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_compaction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_compaction",
+                "RelatedColumn": "compaction_id",
+                "DisplayColumn": "compaction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_compaction_status",
+                  "RelatedColumn": "compaction_status_id",
+                  "DisplayColumn": "estimate_arrange_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "763af29311634763989c33f56a32f5a0"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "転圧_見積手配中件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_compaction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_compaction",
+                "RelatedColumn": "compaction_id",
+                "DisplayColumn": "compaction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_compaction_status",
+                  "RelatedColumn": "compaction_status_id",
+                  "DisplayColumn": "estimate_arrange_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "d1e94b0d70e842059113cece7258db86"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "転圧_受注待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_compaction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_compaction",
+                "RelatedColumn": "compaction_id",
+                "DisplayColumn": "compaction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_compaction_status",
+                  "RelatedColumn": "compaction_status_id",
+                  "DisplayColumn": "wait_order_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "69059942c878467a930e0e4301542e9c"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "転圧_日程確認中件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_compaction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_compaction",
+                "RelatedColumn": "compaction_id",
+                "DisplayColumn": "compaction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_compaction_status",
+                  "RelatedColumn": "compaction_status_id",
+                  "DisplayColumn": "compaction_check_schedule_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "284ff09de166443d93f7db7f1abeae73"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "転圧_確認中件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_compaction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_compaction",
+                "RelatedColumn": "compaction_id",
+                "DisplayColumn": "compaction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_compaction_status",
+                  "RelatedColumn": "compaction_status_id",
+                  "DisplayColumn": "compaction_confirm_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "60408111d7264be389b7733d62d92f4e"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "転圧_プラン確定待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_compaction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_compaction",
+                "RelatedColumn": "compaction_id",
+                "DisplayColumn": "compaction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_compaction_status",
+                  "RelatedColumn": "compaction_status_id",
+                  "DisplayColumn": "plan_complete_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "1d39c49eb9d34d9fb90baaa6331d131f"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "転圧_施工待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_compaction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_compaction",
+                "RelatedColumn": "compaction_id",
+                "DisplayColumn": "compaction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_compaction_status",
+                  "RelatedColumn": "compaction_status_id",
+                  "DisplayColumn": "wait_enforce_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "057f9d889fba4d4088c5c1a2e956a2ea"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "転圧_施工審査中件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_compaction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_compaction",
+                "RelatedColumn": "compaction_id",
+                "DisplayColumn": "compaction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_compaction_status",
+                  "RelatedColumn": "compaction_status_id",
+                  "DisplayColumn": "construction_examination_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "fa5f315b7c394246a0045650658d6126"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "転圧_再調査結果待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_compaction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_compaction",
+                "RelatedColumn": "compaction_id",
+                "DisplayColumn": "compaction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_compaction_status",
+                  "RelatedColumn": "compaction_status_id",
+                  "DisplayColumn": "resurvey_result_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "42fceed242cd4974934c971689f62b8d"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "転圧_完了待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_compaction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_compaction",
+                "RelatedColumn": "compaction_id",
+                "DisplayColumn": "compaction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_compaction_status",
+                  "RelatedColumn": "compaction_status_id",
+                  "DisplayColumn": "compaction_complete_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "c25bef835abb4b6aafaf8dd26174c7e6"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事見積_見積手配待ち件数",
+      "TableValue": {
+        "TableName": "t_object_construction_estimate",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_construction_estimate",
+              "ColumnName": "construction_estimate_status_id",
+              "RelationBinding": {
+                "RelatedTable": "m_construction_estimate_status",
+                "RelatedColumn": "construction_estimate_status_id",
+                "DisplayColumn": "estimate_arrange_wait_flg"
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_construction_estimate",
+              "ColumnName": "object_order_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_order",
+                "RelatedColumn": "object_order_id",
+                "DisplayColumn": "active_flg"
+              }
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "29d796398734413dbf554e02c722bd2e"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事見積_設計待ち件数",
+      "TableValue": {
+        "TableName": "t_object_construction_estimate",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_construction_estimate",
+              "ColumnName": "construction_estimate_status_id",
+              "RelationBinding": {
+                "RelatedTable": "m_construction_estimate_status",
+                "RelatedColumn": "construction_estimate_status_id",
+                "DisplayColumn": "design_wait_flg"
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_construction_estimate",
+              "ColumnName": "object_order_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_order",
+                "RelatedColumn": "object_order_id",
+                "DisplayColumn": "active_flg"
+              }
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "b3bd0b4c524e470ba883673312b06a89"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事見積_設計審査中件数",
+      "TableValue": {
+        "TableName": "t_object_construction_estimate",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_construction_estimate",
+              "ColumnName": "construction_estimate_status_id",
+              "RelationBinding": {
+                "RelatedTable": "m_construction_estimate_status",
+                "RelatedColumn": "construction_estimate_status_id",
+                "DisplayColumn": "design_examination_flg"
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_construction_estimate",
+              "ColumnName": "object_order_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_order",
+                "RelatedColumn": "object_order_id",
+                "DisplayColumn": "active_flg"
+              }
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "5a14dd0e527e44fe867d8c2241475952"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事見積_審査完了件数",
+      "TableValue": {
+        "TableName": "t_object_construction_estimate",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_construction_estimate",
+              "ColumnName": "construction_estimate_status_id",
+              "RelationBinding": {
+                "RelatedTable": "m_construction_estimate_status",
+                "RelatedColumn": "construction_estimate_status_id",
+                "DisplayColumn": "examination_complete_flg"
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_construction_estimate",
+              "ColumnName": "object_order_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_order",
+                "RelatedColumn": "object_order_id",
+                "DisplayColumn": "active_flg"
+              }
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "596794944e964ca1ab0f950d1b8057e2"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事見積_受注確定待ち件数",
+      "TableValue": {
+        "TableName": "t_object_construction_estimate",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_construction_estimate",
+              "ColumnName": "construction_estimate_status_id",
+              "RelationBinding": {
+                "RelatedTable": "m_construction_estimate_status",
+                "RelatedColumn": "construction_estimate_status_id",
+                "DisplayColumn": "order_wait_flg"
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_construction_estimate",
+              "ColumnName": "object_order_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_order",
+                "RelatedColumn": "object_order_id",
+                "DisplayColumn": "active_flg"
+              }
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "4c6c510030a94643826b28c41ccac299"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事_見積手配待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_contruction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_construction",
+                "RelatedColumn": "construction_id",
+                "DisplayColumn": "construction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_construction_status",
+                  "RelatedColumn": "construction_status_id",
+                  "DisplayColumn": "construction_estimate_status_id",
+                  "NextRelationBinding": {
+                    "RelatedTable": "m_construction_estimate_status",
+                    "RelatedColumn": "construction_estimate_status_id",
+                    "DisplayColumn": "estimate_arrange_wait_flg"
+                  }
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "7e37cb6abc4a46aa9b4f12e7edd0e1bc"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事_設計待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_contruction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_construction",
+                "RelatedColumn": "construction_id",
+                "DisplayColumn": "construction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_construction_status",
+                  "RelatedColumn": "construction_status_id",
+                  "DisplayColumn": "construction_estimate_status_id",
+                  "NextRelationBinding": {
+                    "RelatedTable": "m_construction_estimate_status",
+                    "RelatedColumn": "construction_estimate_status_id",
+                    "DisplayColumn": "design_wait_flg"
+                  }
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "467c88ffba394bf1a05a70406234aa9c"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事_設計審査中件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_contruction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_construction",
+                "RelatedColumn": "construction_id",
+                "DisplayColumn": "construction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_construction_status",
+                  "RelatedColumn": "construction_status_id",
+                  "DisplayColumn": "construction_estimate_status_id",
+                  "NextRelationBinding": {
+                    "RelatedTable": "m_construction_estimate_status",
+                    "RelatedColumn": "construction_estimate_status_id",
+                    "DisplayColumn": "design_examination_flg"
+                  }
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "69124905c18943fe84054e8c32eda729"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事_審査完了件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_contruction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_construction",
+                "RelatedColumn": "construction_id",
+                "DisplayColumn": "construction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_construction_status",
+                  "RelatedColumn": "construction_status_id",
+                  "DisplayColumn": "construction_estimate_status_id",
+                  "NextRelationBinding": {
+                    "RelatedTable": "m_construction_estimate_status",
+                    "RelatedColumn": "construction_estimate_status_id",
+                    "DisplayColumn": "examination_complete_flg"
+                  }
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "7e14f58e7cc24797a4edf6430a1e86de"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事_受注確定待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_contruction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_construction",
+                "RelatedColumn": "construction_id",
+                "DisplayColumn": "construction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_construction_status",
+                  "RelatedColumn": "construction_status_id",
+                  "DisplayColumn": "construction_estimate_status_id",
+                  "NextRelationBinding": {
+                    "RelatedTable": "m_construction_estimate_status",
+                    "RelatedColumn": "construction_estimate_status_id",
+                    "DisplayColumn": "order_wait_flg"
+                  }
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "86ce5eb6a35c4a558421aac614f2085f"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事_工事確認中件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_contruction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_construction",
+                "RelatedColumn": "construction_id",
+                "DisplayColumn": "construction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_construction_status",
+                  "RelatedColumn": "construction_status_id",
+                  "DisplayColumn": "construction_check_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "a5b42e4a67744d3283a18ffba094534c"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事_日程確認中件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_contruction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_construction",
+                "RelatedColumn": "construction_id",
+                "DisplayColumn": "construction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_construction_status",
+                  "RelatedColumn": "construction_status_id",
+                  "DisplayColumn": "construction_check_schedule_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "11ac549e2c4d4130848113535453bba2"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事_工事報告待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_contruction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_construction",
+                "RelatedColumn": "construction_id",
+                "DisplayColumn": "construction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_construction_status",
+                  "RelatedColumn": "construction_status_id",
+                  "DisplayColumn": "construction_report_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "8b81af1e90974cf0b9fe706cc700ae97"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事_施工審査中件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_contruction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_construction",
+                "RelatedColumn": "construction_id",
+                "DisplayColumn": "construction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_construction_status",
+                  "RelatedColumn": "construction_status_id",
+                  "DisplayColumn": "construction_examination_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "b63a88f5ed2f4aa0af8db0d655970477"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事_報告書納品待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_contruction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_construction",
+                "RelatedColumn": "construction_id",
+                "DisplayColumn": "construction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_construction_status",
+                  "RelatedColumn": "construction_status_id",
+                  "DisplayColumn": "report_delivery_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "d41b172ba18a4d44a50452cafd7f49ec"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "工事_完了待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_contruction_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_construction",
+                "RelatedColumn": "construction_id",
+                "DisplayColumn": "construction_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_construction_status",
+                  "RelatedColumn": "construction_status_id",
+                  "DisplayColumn": "construction_complete_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "ddf23cfa44ab41e8ac375e5fb20d4680"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "保証_保証書発行待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_warranty_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_warranty",
+                "RelatedColumn": "warranty_id",
+                "DisplayColumn": "warranty_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_warranty_status",
+                  "RelatedColumn": "warranty_status_id",
+                  "DisplayColumn": "warranty_issue_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "311c0755bf1f449f90747261e1915c02"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "保証_保証確認中件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_warranty_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_warranty",
+                "RelatedColumn": "warranty_id",
+                "DisplayColumn": "warranty_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_warranty_status",
+                  "RelatedColumn": "warranty_status_id",
+                  "DisplayColumn": "warranty_check_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "a89ddce51b334a9d8c67dd7962c60b8e"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "保証_プラン決定待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_warranty_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_warranty",
+                "RelatedColumn": "warranty_id",
+                "DisplayColumn": "warranty_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_warranty_status",
+                  "RelatedColumn": "warranty_status_id",
+                  "DisplayColumn": "plan_complete_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "fff8b37dc8b242c0933945ee28319bb3"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "保証_郵送手配待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_warranty_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_warranty",
+                "RelatedColumn": "warranty_id",
+                "DisplayColumn": "warranty_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_warranty_status",
+                  "RelatedColumn": "warranty_status_id",
+                  "DisplayColumn": "warranty_mailing_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "622b83aefe8b45f7a318e05ba879c264"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "保証_郵送依頼待ち件数",
+      "TableValue": {
+        "TableName": "t_object_order",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "latest_warranty_id",
+              "RelationBinding": {
+                "RelatedTable": "t_object_warranty",
+                "RelatedColumn": "warranty_id",
+                "DisplayColumn": "warranty_status_id",
+                "NextRelationBinding": {
+                  "RelatedTable": "m_warranty_status",
+                  "RelatedColumn": "warranty_status_id",
+                  "DisplayColumn": "mailing_request_wait_flg"
+                }
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_order",
+              "ColumnName": "active_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "c2b4954b2c44422b836e001f4aace5af"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "付保_申請待ち件数",
+      "TableValue": {
+        "TableName": "t_object_insurance",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "t_object_insurance",
+            "ColumnName": "insurance_status_id",
+            "RelationBinding": {
+              "RelatedTable": "m_insurance_status",
+              "RelatedColumn": "insurance_status_id",
+              "DisplayColumn": "application_wait_flg"
+            }
+          },
+          "Value": "1"
+        }
+      },
+      "ID": "b05dc2e07c414f0da4f4f8130ef9ef60"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "付保_証明書申請待ち件数",
+      "TableValue": {
+        "TableName": "t_object_insurance",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "t_object_insurance",
+            "ColumnName": "insurance_status_id",
+            "RelationBinding": {
+              "RelatedTable": "m_insurance_status",
+              "RelatedColumn": "insurance_status_id",
+              "DisplayColumn": "certificate_application_wait_flg"
+            }
+          },
+          "Value": "1"
+        }
+      },
+      "ID": "67621917fe7245b0935655be2bdb3c46"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "付保_証明書納品待ち件数",
+      "TableValue": {
+        "TableName": "t_object_insurance",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "t_object_insurance",
+            "ColumnName": "insurance_status_id",
+            "RelationBinding": {
+              "RelatedTable": "m_insurance_status",
+              "RelatedColumn": "insurance_status_id",
+              "DisplayColumn": "certificate_delivery_wait_flg"
+            }
+          },
+          "Value": "1"
+        }
+      },
+      "ID": "4630348761ab499c80d7f5ce0f4c1aa2"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "付保_キャンセル申請待ち件数",
+      "TableValue": {
+        "TableName": "t_object_insurance",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "t_object_insurance",
+            "ColumnName": "insurance_status_id",
+            "RelationBinding": {
+              "RelatedTable": "m_insurance_status",
+              "RelatedColumn": "insurance_status_id",
+              "DisplayColumn": "cancel_application_wait_flg"
+            }
+          },
+          "Value": "1"
+        }
+      },
+      "ID": "ac447438e4074615a99110e8f82e5577"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "請求_登録内容確認中件数",
+      "TableValue": {
+        "TableName": "t_object_product",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "t_object_product",
+                "ColumnName": "sales_account_status_id",
+                "RelationBinding": {
+                  "RelatedTable": "m_account_status",
+                  "RelatedColumn": "account_status_id",
+                  "DisplayColumn": "contents_checking_flg"
+                }
+              },
+              "Value": "1",
+              "LeftBracket": 1
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "t_object_product",
+                "ColumnName": "purchase_account_status_id",
+                "RelationBinding": {
+                  "RelatedTable": "m_account_status",
+                  "RelatedColumn": "account_status_id",
+                  "DisplayColumn": "contents_checking_flg"
+                }
+              },
+              "Value": "1",
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_product",
+              "ColumnName": "operation_complete_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "912680ad0641473793c65e90f973d0b6"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "請求_発注書回収待ち件数",
+      "TableValue": {
+        "TableName": "t_object_product",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_product",
+              "ColumnName": "sales_account_status_id",
+              "RelationBinding": {
+                "RelatedTable": "m_account_status",
+                "RelatedColumn": "account_status_id",
+                "DisplayColumn": "purchase_collect_wait_flg"
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_product",
+              "ColumnName": "operation_complete_flg"
+            },
+            "Value": "1"
+          }
+        }
+      },
+      "ID": "c47232229e62494cae42b2a97ae2e078"
+    },
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "請求_計上確定待ち件数",
+      "TableValue": {
+        "TableName": "t_object_product",
+        "TableValueType": 3,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_product",
+              "ColumnName": "sales_account_status_id",
+              "RelationBinding": {
+                "RelatedTable": "m_account_status",
+                "RelatedColumn": "account_status_id",
+                "DisplayColumn": "account_confirm_wait_flg"
+              }
+            },
+            "Value": "1"
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_product",
+              "ColumnName": "purchase_account_status_id",
+              "RelationBinding": {
+                "RelatedTable": "m_account_status",
+                "RelatedColumn": "account_status_id",
+                "DisplayColumn": "account_confirm_wait_flg"
+              }
+            },
+            "Value": "1"
+          },
+          "RelationType": 1
+        }
+      },
+      "ID": "5959b91ce86645dc8f0d5731521088c5"
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "ErrorCode": "0",
+      "CustomReturns": [
+        {
+          "ReturnPropertyName": "R_申込_資料待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=申込_資料待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_申込_タスク期限切れ件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=申込_タスク期限切れ件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_調査_手配中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=調査_手配待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_調査_手配保留件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=調査_手配保留件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_調査_承諾待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=調査_承諾待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_調査_結果待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=調査_結果待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_調査_完了待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=調査_完了待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_測量_手配中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=測量_手配待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_測量_手配保留件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=測量_手配保留件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_測量_承諾待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=測量_承諾待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_測量_結果待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=測量_結果待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_測量_完了待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=測量_完了待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_解析_待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=解析_待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_解析_着手中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=解析_着手中件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_解析_業務対応中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=解析_業務対応中件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_解析_保留件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=解析_保留件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_解析_完了待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=解析_完了待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_転圧_設計待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=転圧_設計待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_転圧_見積手配待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=転圧_見積手配待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_転圧_見積手配中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=転圧_見積手配中件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_転圧_受注待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=転圧_受注待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_転圧_日程確認中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=転圧_日程確認中件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_転圧_確認中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=転圧_確認中件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_転圧_プラン確定待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=転圧_プラン確定待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_転圧_施工待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=転圧_施工待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_転圧_施工審査中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=転圧_施工審査中件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_転圧_再調査結果待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=転圧_再調査結果待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_転圧_完了待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=転圧_完了待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事見積_見積手配待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事見積_見積手配待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事見積_設計待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事見積_設計待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事見積_設計審査中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事見積_設計審査中件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事見積_審査完了件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事見積_審査完了件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事見積_受注確定待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事見積_受注確定待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事_見積手配待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事_見積手配待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事_設計待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事_設計待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事_設計審査中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事_設計審査中件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事_審査完了件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事_審査完了件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事_受注確定待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事_受注確定待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事_工事確認中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事_工事確認中件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事_日程確認中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事_日程確認中件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事_工事報告待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事_工事報告待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事_施工審査中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事_施工審査中件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事_報告書納品待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事_報告書納品待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_工事_完了待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=工事_完了待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_保証_保証書発行待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=保証_保証書発行待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_保証_保証確認中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=保証_保証確認中件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_保証_プラン決定待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=保証_プラン決定待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_保証_郵送手配待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=保証_郵送手配待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_保証_郵送依頼待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=保証_郵送依頼待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_付保_申請待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=付保_申請待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_付保_証明書申請待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=付保_証明書申請待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_付保_証明書納品待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=付保_証明書納品待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_付保_キャンセル申請待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=付保_キャンセル申請待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_請求_登録内容確認中件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=請求_登録内容確認中件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_請求_発注書回収待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=請求_発注書回収待ち件数"
+          }
+        },
+        {
+          "ReturnPropertyName": "R_請求_計上確定待ち件数",
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=請求_計上確定待ち件数"
+          }
+        }
+      ]
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "R_申込_資料待ち件数"
+    },
+    {
+      "Name": "R_申込_タスク期限切れ件数"
+    },
+    {
+      "Name": "R_調査_手配中件数"
+    },
+    {
+      "Name": "R_調査_手配保留件数"
+    },
+    {
+      "Name": "R_調査_承諾待ち件数"
+    },
+    {
+      "Name": "R_調査_結果待ち件数"
+    },
+    {
+      "Name": "R_調査_完了待ち件数"
+    },
+    {
+      "Name": "R_測量_手配中件数"
+    },
+    {
+      "Name": "R_測量_手配保留件数"
+    },
+    {
+      "Name": "R_測量_承諾待ち件数"
+    },
+    {
+      "Name": "R_測量_結果待ち件数"
+    },
+    {
+      "Name": "R_測量_完了待ち件数"
+    },
+    {
+      "Name": "R_解析_待ち件数"
+    },
+    {
+      "Name": "R_解析_着手中件数"
+    },
+    {
+      "Name": "R_解析_業務対応中件数"
+    },
+    {
+      "Name": "R_解析_保留件数"
+    },
+    {
+      "Name": "R_解析_完了待ち件数"
+    },
+    {
+      "Name": "R_転圧_設計待ち件数"
+    },
+    {
+      "Name": "R_転圧_見積手配待ち件数"
+    },
+    {
+      "Name": "R_転圧_見積手配中件数"
+    },
+    {
+      "Name": "R_転圧_受注待ち件数"
+    },
+    {
+      "Name": "R_転圧_日程確認中件数"
+    },
+    {
+      "Name": "R_転圧_確認中件数"
+    },
+    {
+      "Name": "R_転圧_プラン確定待ち件数"
+    },
+    {
+      "Name": "R_転圧_施工待ち件数"
+    },
+    {
+      "Name": "R_転圧_施工審査中件数"
+    },
+    {
+      "Name": "R_転圧_再調査結果待ち件数"
+    },
+    {
+      "Name": "R_転圧_完了待ち件数"
+    },
+    {
+      "Name": "R_工事見積_見積手配待ち件数"
+    },
+    {
+      "Name": "R_工事見積_設計待ち件数"
+    },
+    {
+      "Name": "R_工事見積_設計審査中件数"
+    },
+    {
+      "Name": "R_工事見積_審査完了件数"
+    },
+    {
+      "Name": "R_工事見積_受注確定待ち件数"
+    },
+    {
+      "Name": "R_工事_見積手配待ち件数"
+    },
+    {
+      "Name": "R_工事_設計待ち件数"
+    },
+    {
+      "Name": "R_工事_設計審査中件数"
+    },
+    {
+      "Name": "R_工事_審査完了件数"
+    },
+    {
+      "Name": "R_工事_受注確定待ち件数"
+    },
+    {
+      "Name": "R_工事_工事確認中件数"
+    },
+    {
+      "Name": "R_工事_日程確認中件数"
+    },
+    {
+      "Name": "R_工事_工事報告待ち件数"
+    },
+    {
+      "Name": "R_工事_施工審査中件数"
+    },
+    {
+      "Name": "R_工事_報告書納品待ち件数"
+    },
+    {
+      "Name": "R_工事_完了待ち件数"
+    },
+    {
+      "Name": "R_保証_保証書発行待ち件数"
+    },
+    {
+      "Name": "R_保証_保証確認中件数"
+    },
+    {
+      "Name": "R_保証_プラン決定待ち件数"
+    },
+    {
+      "Name": "R_保証_郵送手配待ち件数"
+    },
+    {
+      "Name": "R_保証_郵送依頼待ち件数"
+    },
+    {
+      "Name": "R_付保_申請待ち件数"
+    },
+    {
+      "Name": "R_付保_証明書申請待ち件数"
+    },
+    {
+      "Name": "R_付保_証明書納品待ち件数"
+    },
+    {
+      "Name": "R_付保_キャンセル申請待ち件数"
+    },
+    {
+      "Name": "R_請求_登録内容確認中件数"
+    },
+    {
+      "Name": "R_請求_発注書回収待ち件数"
+    },
+    {
+      "Name": "R_請求_計上確定待ち件数"
+    }
+  ],
+  "Name": "メニュー表示件数取得"
+}

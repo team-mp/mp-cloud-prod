@@ -1,0 +1,1549 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 5.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "Count": 8,
+    "DefaultSize": 5.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "35": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "40": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "56": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85
+    ],
+    "Count": 86
+  },
+  "Values": {
+    "4,36": "(作業グループ)",
+    "4,51": "タスクを編集する",
+    "4,59": "▼表示制御フラグ",
+    "4,65": "▼表示制御ボタン",
+    "4,71": "▼表示リセットフラグ",
+    "5,36": "（最終更新者）",
+    "5,59": "0",
+    "5,71": "0"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "1,0": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Style": 1,
+        "PrimaryColor": "#FF005B47"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "選択フラグ"
+    },
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BN6"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "更新日時"
+    },
+    "1,8": {
+      "TemplateCellSource": "タスク区分名"
+    },
+    "1,12": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "1,13": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BN6"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$BH$6=1"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 1 -25",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "タスク内容"
+    },
+    "1,31": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BN6"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$AF$2<TODAY()"
+            },
+            "StyleInfo": {
+              "Foreground": "Accent 5 40",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "期限日"
+    },
+    "1,36": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BN6"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "物件番号"
+    },
+    "1,41": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BN6"
+            },
+            "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "ExecuteCommand",
+            "ParameterValues": {},
+            "RetrunParamNames": {}
+          }
+        ],
+        "ClickMode": 1
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "物件名"
+    },
+    "1,55": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BH2"
+                      }
+                    ]
+                  },
+                  "value": "%Null%",
+                  "compareType": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BL2"
+                              }
+                            ]
+                          },
+                          "value": "1"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "タブ番号",
+                            "TableValue": {
+                              "TableName": "t_object_notice",
+                              "OnlyGetValue": true,
+                              "TableValueType": 0,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "t_object_notice",
+                                    "ColumnName": "tab_id"
+                                  },
+                                  "ColumnName": "tab_id"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "t_object_notice",
+                                  "ColumnName": "task_id"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BJ2"
+                                }
+                              }
+                            },
+                            "ID": "f0c24a284ad44160a620ac217dcc6c3a"
+                          },
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "連絡ID",
+                            "TableValue": {
+                              "TableName": "t_object_notice",
+                              "OnlyGetValue": true,
+                              "TableValueType": 0,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "t_object_notice",
+                                    "ColumnName": "notice_id"
+                                  },
+                                  "ColumnName": "notice_id"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "t_object_notice",
+                                  "ColumnName": "task_id"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BJ2"
+                                }
+                              }
+                            },
+                            "ID": "571198b91a854899944a022c008b2abb"
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+                            "ShareCommandContainerRefer": {
+                              "ShareCommandContainerID": "2ddd4852-a0ed-4534-b1b2-3ee6fe2631b3"
+                            },
+                            "Params": [
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "b99e9146-4488-4286-aea6-ef1c495ba038",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "2ddd4852-a0ed-4534-b1b2-3ee6fe2631b3"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BH2"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "c1c93417-2786-4584-884a-23e1756e2c9a",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "2ddd4852-a0ed-4534-b1b2-3ee6fe2631b3"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=IF(ac5688e9178d4aa1a940e1df26bed60!タブ番号=\"\",1,ac5688e9178d4aa1a940e1df26bed60!タブ番号)"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "cd7718e2-fa58-413e-a0d7-6d9c3b6a1e56",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "2ddd4852-a0ed-4534-b1b2-3ee6fe2631b3"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!連絡ID"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "0611339a-68ac-4277-a1f0-b79262f30f08",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "2ddd4852-a0ed-4534-b1b2-3ee6fe2631b3"
+                                  }
+                                }
+                              }
+                            ],
+                            "ReturnPropertiesTo": []
+                          }
+                        ],
+                        "Comments": "連絡事項の場合",
+                        "ID": "ce2ab8e8-1aaa-4723-b677-027d28b23338"
+                      },
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BL2"
+                              }
+                            ]
+                          },
+                          "value": "2"
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "タブ番号",
+                            "ParameterValue": "10",
+                            "ID": "a58f7c8805a14dfab3a263b52273f255"
+                          },
+                          {
+                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                            "ParameterName": "フォローID",
+                            "TableValue": {
+                              "TableName": "t_object_follow",
+                              "OnlyGetValue": true,
+                              "TableValueType": 0,
+                              "BindingInfos": [
+                                {
+                                  "BindingInfo": {
+                                    "TableName": "t_object_follow",
+                                    "ColumnName": "object_follow_id"
+                                  },
+                                  "ColumnName": "object_follow_id"
+                                }
+                              ],
+                              "SqlCondition": {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "t_object_follow",
+                                  "ColumnName": "task_id"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BJ2"
+                                }
+                              }
+                            },
+                            "ID": "2aa9ca0e55f5436c9c9f7916b99b742d"
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShareCommand, ServerDesignerCommon",
+                            "ShareCommandContainerRefer": {
+                              "ShareCommandContainerID": "2ddd4852-a0ed-4534-b1b2-3ee6fe2631b3"
+                            },
+                            "Params": [
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "b99e9146-4488-4286-aea6-ef1c495ba038",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "2ddd4852-a0ed-4534-b1b2-3ee6fe2631b3"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BH2"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "c1c93417-2786-4584-884a-23e1756e2c9a",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "2ddd4852-a0ed-4534-b1b2-3ee6fe2631b3"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!タブ番号"
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "cd7718e2-fa58-413e-a0d7-6d9c3b6a1e56",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "2ddd4852-a0ed-4534-b1b2-3ee6fe2631b3"
+                                  }
+                                }
+                              },
+                              {
+                                "ParamReferObject": {
+                                  "ParamID": "0611339a-68ac-4277-a1f0-b79262f30f08",
+                                  "ShareCommandContainerReferObject": {
+                                    "ShareCommandContainerID": "2ddd4852-a0ed-4534-b1b2-3ee6fe2631b3"
+                                  }
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!フォローID"
+                                }
+                              }
+                            ],
+                            "ReturnPropertiesTo": []
+                          }
+                        ],
+                        "Comments": "フォローの場合",
+                        "ID": "9c9e3a38-bfaa-47be-a18b-b4e9bd7aecb4"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "e43d503b-bdbc-4ed1-92a1-55fddc5517c4"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PopupDisplayMode": 3,
+                    "DrawerDirection": 3,
+                    "ShowDrawerHeader": true,
+                    "PageName": "タスク登録編集",
+                    "PassValues": [],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "b869a940-245c-4026-a3d0-1f631cb31847"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "余白2グレー",
+        "ImagePath": "Arrow/288_right_arrow_1.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          },
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=VALUE(ac5688e9178d4aa1a940e1df26bed60!$BH$6)=1"
+            },
+            "StyleInfo": {
+              "Foreground": "Background 1 -15",
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    },
+    "1,56": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "1,59": {
+      "CellComment": {
+        "Comments": "申込ID"
+      },
+      "TemplateCellSource": "申込ID"
+    },
+    "1,61": {
+      "CellComment": {
+        "Comments": "タスクID"
+      },
+      "TemplateCellSource": "タスクID"
+    },
+    "1,63": {
+      "CellComment": {
+        "Comments": "タスク区分"
+      },
+      "TemplateCellSource": "タスク区分"
+    },
+    "2,0": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "3,0": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "3,13": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,13": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "タスク元内容"
+    },
+    "4,35": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,36": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,41": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "ユーザーグループ名"
+    },
+    "4,49": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "4,51": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BL2"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "連絡ID",
+                    "TableValue": {
+                      "TableName": "t_object_notice",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "t_object_notice",
+                            "ColumnName": "notice_id"
+                          },
+                          "ColumnName": "notice_id"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "t_object_notice",
+                          "ColumnName": "task_id"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BJ2"
+                        }
+                      }
+                    },
+                    "ID": "c843a28ab310486c8ddb769d02db87c0"
+                  },
+                  {
+                    "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand",
+                    "CurrentRowInfo": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "t_object_notice",
+                        "ColumnName": "notice_id"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!連絡ID"
+                      }
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PopupDisplayMode": 3,
+                    "DrawerDirection": 3,
+                    "ShowDrawerHeader": true,
+                    "PageName": "連絡事項_登録編集",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BT6"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=連絡事項_登録編集!更新フラグ"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "a6abfaf0-e1aa-49e0-897a-256bd17b54a4"
+              },
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BL2"
+                      }
+                    ]
+                  },
+                  "value": "2"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                    "ParameterName": "フォローID",
+                    "TableValue": {
+                      "TableName": "t_object_follow",
+                      "OnlyGetValue": true,
+                      "TableValueType": 0,
+                      "BindingInfos": [
+                        {
+                          "BindingInfo": {
+                            "TableName": "t_object_follow",
+                            "ColumnName": "object_follow_id"
+                          },
+                          "ColumnName": "object_follow_id"
+                        }
+                      ],
+                      "SqlCondition": {
+                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                        "ColumnBindingInfo": {
+                          "TableName": "t_object_follow",
+                          "ColumnName": "task_id"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BJ2"
+                        }
+                      }
+                    },
+                    "ID": "fea5109aa8954a99a7037862164b03ea"
+                  },
+                  {
+                    "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand",
+                    "CurrentRowInfo": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "t_object_follow",
+                        "ColumnName": "object_follow_id"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!フォローID"
+                      }
+                    }
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PopupDisplayMode": 3,
+                    "DrawerDirection": 3,
+                    "ShowDrawerHeader": true,
+                    "PageName": "フォロー登録編集",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BT6"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=フォロー登録編集!更新フラグ"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "ad831edf-e652-4361-b105-68aff95c72a3"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PopupDisplayMode": 3,
+                    "DrawerDirection": 3,
+                    "ShowDrawerHeader": true,
+                    "PageName": "タスク登録編集",
+                    "PassValues": [
+                      {
+                        "Source": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BT6"
+                        },
+                        "TargetCell": {
+                          "SerializeProperty": "=タスク登録編集!更新フラグ"
+                        }
+                      }
+                    ],
+                    "LoadBindingDataOption": 1
+                  }
+                ],
+                "ID": "d9440056-64bc-4621-9eb5-34070d8d5d8f"
+              }
+            ]
+          }
+        ],
+        "Text": "タスクを編集する",
+        "TemplateKey": "外余白2"
+      }
+    },
+    "4,56": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,36": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,41": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      },
+      "TemplateCellSource": "更新者名"
+    },
+    "5,51": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "5,65": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                  "param": {
+                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                    "cellLocations": [
+                      {
+                        "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BH6"
+                      }
+                    ]
+                  },
+                  "value": "1"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!4:8"
+                        },
+                        "Value": false
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BH6"
+                        },
+                        "Value": "0"
+                      }
+                    ],
+                    "Comments": "表示Off"
+                  }
+                ],
+                "ID": "42dc081f-be01-4447-9ce7-29e67ca83ac6"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "Location": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!4:8"
+                        },
+                        "Value": true
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                    "PropertyItemsList": [
+                      {
+                        "TargetCells": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BH6"
+                        },
+                        "Value": "1"
+                      }
+                    ],
+                    "Comments": "表示On"
+                  }
+                ],
+                "ID": "dbd5f21d-d4c9-40da-b15c-dcc0878f0be6"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "5,71": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!BT6"
+                },
+                "Value": "0"
+              }
+            ],
+            "Comments": "値リセット"
+          },
+          {
+            "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "Location": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!4:8"
+                },
+                "Value": false
+              }
+            ],
+            "Comments": "非表示"
+          }
+        ],
+        "CellDefaultValue": "0"
+      },
+      "TemplateCellSource": "表示フラグ"
+    },
+    "6,36": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    },
+    "7,13": {
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=ac5688e9178d4aa1a940e1df26bed60!$A$2=1"
+            },
+            "StyleInfo": {
+              "Background": "#FFE5FFF0",
+              "Underline": null,
+              "Strikethrough": null
+            }
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
+        "Underline": false
+      },
+      {
+        "Background": 5,
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 6,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 2,
+        "TextIndent": 0,
+        "Underline": false
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 2,
+        "Formatter": 7,
+        "HorizontalAlignment": 0,
+        "Underline": false
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 2,
+        "Formatter": 8,
+        "HorizontalAlignment": 0,
+        "Underline": false
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 2,
+        "Underline": false
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "Background": 9
+      },
+      {
+        "Background": 9,
+        "FontFamily": 1
+      },
+      {
+        "BorderTop": null
+      },
+      {
+        "FontSize": 14.666666666666666,
+        "VerticalAlignment": 10,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 11,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontSize": 12.0,
+        "TextIndent": 0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 12
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 11,
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": 9,
+        "FontFamily": 1,
+        "HorizontalAlignment": 13
+      },
+      {
+        "Background": 14,
+        "FontFamily": 1,
+        "Formatter": 15,
+        "HorizontalAlignment": 13
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Body",
+        "#FF000000",
+        "yyyy/mm/dd hh:mm",
+        "Left",
+        "Background 1 -25",
+        "Background 1 0",
+        "yyyy/MM/dd",
+        "General",
+        "#FFFFFF00",
+        "Top",
+        "Text 1 50",
+        "[AUTO]General",
+        "Right",
+        "Accent 1 60",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "1,0": 0,
+      "1,2": 1,
+      "1,8": 2,
+      "1,12": 3,
+      "1,13": 4,
+      "1,31": 5,
+      "1,36": 6,
+      "1,41": 7,
+      "1,55": 8,
+      "1,56": 8,
+      "1,59": 9,
+      "1,61": 10,
+      "1,63": 10,
+      "3,57": 11,
+      "4,13": 12,
+      "4,36": 13,
+      "4,41": 14,
+      "4,51": 15,
+      "4,52": 16,
+      "4,53": 16,
+      "4,54": 16,
+      "4,55": 16,
+      "4,71": 17,
+      "4,72": 16,
+      "4,73": 16,
+      "5,36": 18,
+      "5,37": 16,
+      "5,38": 16,
+      "5,39": 16,
+      "5,40": 16,
+      "5,41": 19,
+      "5,59": 20,
+      "5,71": 21,
+      "5,72": 16,
+      "5,73": 16,
+      "6,36": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,0,1,2",
+    "0,0,1,57",
+    "2,0,1,57",
+    "4,41,1,8",
+    "4,36,1,5",
+    "4,51,1,5",
+    "5,36,1,5",
+    "4,13,3,22",
+    "5,59,1,3",
+    "5,65,1,3",
+    "5,71,1,3",
+    "1,13,1,18",
+    "3,0,5,13",
+    "3,13,1,44",
+    "7,13,1,44",
+    "4,35,3,1",
+    "4,49,3,2",
+    "5,51,2,5",
+    "4,56,3,1",
+    "5,41,1,8",
+    "6,36,1,13",
+    "1,31,1,5",
+    "1,36,1,5",
+    "1,41,1,14",
+    "1,8,1,4",
+    "1,2,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "TOPコンテンツ_本社"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//7U9v3a29UOfzhaBF2YR3Dy6nOxb4f6o3CIDwTwHZfwMV7VL3TTpRZH+qnbTzD7Mwj/DVLeh0uerUsZONEoD+eTqGxYQ3eKiF89u8+LucuDTJdYQ4ngwlZ9Gte3JARGs/S7tPySVuE3ioO/v1cQE9VQ1c2hC5NIHDITNkenGH080U+pc155r+BRPwvmQrPxceO4TTQsfPaaCgxHrBy+vdditKduS1tibsyL9nTBvzJINIgibuKb8n6XRuPX9X6BziukkBvcSjKfqnS/qfcuFH0OmyS9+4Yj7LkO7Cs967PHZ3jO/9nr/Slzyn07oHEN1wQWVLD9REC4LfW7fZSdojyk00hmhVHAygCa7zL34BvgwbD2n3jmdhDpPyC5m6g2PSZmprdqX3ZBaKc4WVfa7S5IBjH9l6IM4VYDtH0bdmh27uPzfr5+D8EWi10GBrao+bsga1Ir8MHFYwEydf3BCY6ezBhPQ8bUAeceFnu7URm3oshNqMvagBZPEW9/R7rSEDkXGIWE1Rj+hp/ggnAw/KpQ1eqjJJ8NeQjl4ELZfM4GsPg83dz7c3tQ0xkHVxfliAgbATxglMkNIbKFy8FJjp3oip8J9mRadpH+iU46Q1kepFJfszBZwiRechLZVsANI64lNaJdNqbnWl7nxXu3fEhoT5OpkqhGcIJY2LaNa1SjlVVQP91Qpj8t/Kvu3Zgf4znpfxlYhCOkbwlN4FSJlP//3ayqkVNk6nC+Jw1TM7H/lQ7cLscRloe0aN4qH/fBJFJTmh8D1aakqMDHc3waGe/q03AQR7eaqe/q3tOcmYXxIytQAmrdQL5AYNkrg+AvVFODjh92LJYxSPKql19ZCXtcCUIA2N2fgtK3hGDr7fIdnDWr1Cb5ll4fVkNTNpyncJAV+ytNp1leNhHqGn7L/FZg==|920

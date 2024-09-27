@@ -1,0 +1,344 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0,
+          "IsHidden": true
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0,
+          "IsHidden": true
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 28.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      0,
+      1,
+      2
+    ],
+    "Count": 3,
+    "DefaultSize": 28.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 23.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "Count": 27
+  },
+  "Values": {
+    "0,0": "選択行を受領済みにする",
+    "0,12": 1,
+    "0,14": "▼選択アクション",
+    "0,20": "▼選択可能アクション",
+    "1,0": "選択行を未受領に戻す",
+    "1,12": 2
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=資料待ちアクション選択!選択アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=資料待ちアクション選択!M1"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択行を受領済みにする",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/144_check_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "1,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=資料待ちアクション選択!選択アクション"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=資料待ちアクション選択!M2"
+                }
+              }
+            ],
+            "Comments": ""
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択行を未受領に戻す",
+        "TemplateKey": "無枠",
+        "Icon": {
+          "Name": "Application/144_check_1.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": null,
+        "TextIndent": 16,
+        "HorizontalAlignment": 1
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 2
+      },
+      {
+        "Foreground": null
+      },
+      {
+        "FontFamily": 0,
+        "Foreground": 2,
+        "Formatter": 3
+      },
+      {
+        "Background": 4,
+        "FontFamily": 0,
+        "Foreground": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Left",
+        "#FF000000",
+        "[AUTO]General",
+        "#FFFFC000"
+      ]
+    },
+    "CellStyles": {
+      "0,0": 0,
+      "0,1": 1,
+      "0,2": 1,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "0,19": 2,
+      "0,20": 2,
+      "0,21": 2,
+      "1,0": 0,
+      "1,1": 1,
+      "1,2": 1,
+      "1,3": 1,
+      "1,4": 1,
+      "1,5": 1,
+      "1,6": 1,
+      "1,7": 1,
+      "1,8": 1,
+      "1,9": 1,
+      "1,10": 1,
+      "1,11": 1,
+      "1,12": 3,
+      "1,14": 4,
+      "1,15": 1,
+      "1,16": 1,
+      "1,17": 1,
+      "1,18": 1,
+      "1,19": 2,
+      "1,20": 4,
+      "1,21": 1,
+      "1,22": 1,
+      "2,0": 2,
+      "2,1": 2,
+      "2,2": 2,
+      "2,3": 2,
+      "2,4": 2,
+      "2,5": 2,
+      "2,6": 2,
+      "2,7": 2,
+      "2,8": 2,
+      "2,9": 2,
+      "2,10": 2,
+      "2,11": 2
+    },
+    "ColStyles": {
+      "0": 2,
+      "1": 2,
+      "2": 2,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 2,
+      "10": 2,
+      "11": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "Foreground": 2
+    }
+  },
+  "Spans": [
+    "0,0,1,12",
+    "1,14,1,3",
+    "1,0,1,12",
+    "1,20,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=資料待ちアクション選択!選択可能アクション"
+                  }
+                ]
+              },
+              "value": "1"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=資料待ちアクション選択!1:1"
+                    },
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "b9c4c79d-a981-491c-a1ac-e167d579f482"
+          },
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=資料待ちアクション選択!選択可能アクション"
+                  }
+                ]
+              },
+              "value": "2"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=資料待ちアクション選択!2:2"
+                    },
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "c49a613b-12ef-4abf-8fed-fda055a272ce"
+          }
+        ]
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "PageResponsiveMode": 2
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "選択アクション",
+      "Formula": "資料待ちアクション選択!$O$2"
+    },
+    {
+      "Name": "選択可能アクション",
+      "Formula": "資料待ちアクション選択!$U$2"
+    }
+  ]
+}//13YhOOB/MXedFmc/InkD6uZ2aZvWKzJz3yBkU4tzzOhecYtqmdoz0lbZAVSmjqtqG/hQWnz3dtX/cSc5WWh3VQ95HZBGW6w0cfwDVE1NrIVd3w5OqvUpu0iQsKn4r5PYmoS8O6iwFHXAmkRSGtcsKgIWUa2+oLKRC7aY7umUahE7FzabFHcG33aWF9tIi/6xQV2vjTXSg+Zl0OU4+v0kBEfcrklc8ZFyeZA5OoneAhxKpNo83Nwwx1VbRxB1+Px1gAMWdUCfgJmqOBJr8gV5eoqPtPnCx+a/0JDajjArxs83nNCZjCyQQ0unO6aloxQ62wlbPkunkM2wBThBK73R3WzPwzBZzA2dhvq3tLVXjRPs1ifQhAwusQUenN832ANUlP8majACeiCsusH/5V73Af+W98C5e6/TF7FA2Shgty5urCAz0Px+nfIKLURQ6u6cKEzOZaG6n1jnd89l7gdXXt/4811wLErZiYZ7b91OvPFvUtpBFeGbJAkkYCEuArwQ6xPGC3EnNrl1tBFuGzdlAG0WugIMWaP//KOK0BW8GDwuQMaBRmwv+nwgVPdLyvSHWoxo4KlvN0qYX0HOpNeS8KnGTimrUizXZybgnk13OSI1NOjjgmD+V6gfXKaY/Mz8PwQ/KKnH88+9WhBbDHlHDAAYqZkFxL/IlfzFj11aNDK0uTJiuKtDTeH5aGQzzgs4G/C0CWrHYqncajXEmmJciBh4onDgt68RA/HamJHz1SwU7OOJoO5Oqxn69Kyzkx3fowdGB4pDCiWP0uYvxPC1YakchLekezW/zsbtnZC0t2z/KIx/RwPFc7Gmrl3kBJu7m2kxbfTG/cktgW+070CUkli7cu++8YsPGC08jqnP2DqEtdvFLpOXWMaIpmRpkLCXh2rj8s6E3IyyWol2VgPHLQ==|920

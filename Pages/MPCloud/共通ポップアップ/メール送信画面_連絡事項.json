@@ -1,0 +1,1038 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "23": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "24": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "29": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      }
+    },
+    "Count": 30,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "Count": 50
+  },
+  "Values": {
+    "1,2": "共有事項",
+    "1,26": "▼t_object_notice",
+    "2,32": "区分名",
+    "6,26": "▼申込事業者共有事項ビュー",
+    "6,35": "▼住宅事業者共有事項ビュー",
+    "11,2": "連絡事項",
+    "13,2": "連絡事項サブページ",
+    "13,26": "▼申込事業者ID",
+    "13,35": "▼住宅事業者ID",
+    "16,26": "▼申込ID"
+  },
+  "Formulas": {
+    "3,42": "AP4&\"　\"&AN4",
+    "3,37": "IF(AH4=2,AJ4,\"\")",
+    "14,35": "IF(申込ID>0,ODATA(\"t_object_order?$select=builder_id&$filter=object_order_id eq \"&IF(ISBLANK(申込ID),\"null\",申込ID)),0)",
+    "3,36": "IF(AH4=1,AI4,\"\")",
+    "14,26": "IF(AA18>0,ODATA(\"t_object_order?$select=order_customer_id&$filter=object_order_id eq \"&IF(ISBLANK(AA18),\"null\",AA18)),0)",
+    "3,32": "IF(AF4=\"\",\"共有\",AF4)",
+    "17,26": "申込ID"
+  },
+  "AttachInfos": {
+    "1,21": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メール送信画面_連絡事項!連絡事項表示フラグ"
+                },
+                "Value": "0"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "余白2グレー",
+        "ImagePath": "Application/034_close_delete_2.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      }
+    },
+    "2,2": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "申込事業者共有事項ビュー",
+        "TemplatePageName": "0332f524f21e47df85d65abe69acd9f",
+        "NoItemSetting": {
+          "ImageForNoItem": {
+            "Name": "Mobile/411_notice_1.svg",
+            "BuiltIn": true,
+            "Color": "Accent 1",
+            "UseCellTypeForeColor": true
+          },
+          "NoItemImageSize": 16.0,
+          "TextForNoItem": "該当データはありません"
+        }
+      }
+    },
+    "2,26": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "t_object_notice",
+        "RowIndex": 2,
+        "ColumnIndex": 26,
+        "ColumnCount": 20,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "連絡事項ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "t_object_notice",
+              "ColumnName": "object_order_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メール送信画面_連絡事項!AA18"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+            "Condition1": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "Condition1": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 3,
+                "ColumnBindingInfo": {
+                  "TableName": "t_object_notice",
+                  "ColumnName": "tab_id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=IF(メール送信画面_連絡事項!連絡事項タブ検索<>\"\",メール送信画面_連絡事項!連絡事項タブ検索,1)"
+                },
+                "LeftBracket": 2
+              },
+              "Condition2": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 5,
+                "ColumnBindingInfo": {
+                  "TableName": "t_object_notice",
+                  "ColumnName": "tab_id"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=IF(メール送信画面_連絡事項!連絡事項タブ検索<>\"\",メール送信画面_連絡事項!連絡事項タブ検索,1000)"
+                },
+                "RightBracket": 1
+              }
+            },
+            "Condition2": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "t_object_notice",
+                "ColumnName": "tab_id"
+              },
+              "Value": "%Null%",
+              "RightBracket": 1
+            },
+            "RelationType": 1
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "t_object_notice",
+                "ColumnName": "notice_group_id"
+              },
+              "Order": 1
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "t_object_notice",
+                "ColumnName": "notice_id"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "3,26": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "notice_id"
+      },
+      "NameUsedInJavaScript": "連絡ID"
+    },
+    "3,27": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "object_order_id"
+      },
+      "NameUsedInJavaScript": "申込ID"
+    },
+    "3,28": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "application_serial_number"
+      },
+      "NameUsedInJavaScript": "申込連番"
+    },
+    "3,29": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "source_notice_id",
+        "RelationBinding": {
+          "RelatedTable": "t_object_notice",
+          "RelatedColumn": "notice_id",
+          "DisplayColumn": "application_serial_number"
+        }
+      },
+      "NameUsedInJavaScript": "元申込連番"
+    },
+    "3,30": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "tab_id"
+      },
+      "NameUsedInJavaScript": "タブID"
+    },
+    "3,31": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "tab_id",
+        "RelationBinding": {
+          "RelatedTable": "m_tab_class",
+          "RelatedColumn": "tab_id",
+          "DisplayColumn": "tab_name"
+        }
+      },
+      "NameUsedInJavaScript": "区分"
+    },
+    "3,32": {
+      "NameUsedInJavaScript": "区分名"
+    },
+    "3,33": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "display_type"
+      },
+      "NameUsedInJavaScript": "表示タイプ"
+    },
+    "3,34": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "content"
+      },
+      "NameUsedInJavaScript": ""
+    },
+    "3,35": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "ritch_text"
+      },
+      "NameUsedInJavaScript": ""
+    },
+    "3,36": {
+      "NameUsedInJavaScript": "内容"
+    },
+    "3,37": {
+      "NameUsedInJavaScript": "リッチテキスト"
+    },
+    "3,38": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "created_user_id"
+      }
+    },
+    "3,39": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "created_user_id",
+        "RelationBinding": {
+          "RelatedTable": "m_user",
+          "RelatedColumn": "user_id",
+          "DisplayColumn": "user_name"
+        }
+      }
+    },
+    "3,40": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "updated_date"
+      },
+      "NameUsedInJavaScript": "更新日時"
+    },
+    "3,41": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "created_user_id",
+        "RelationBinding": {
+          "RelatedTable": "m_user",
+          "RelatedColumn": "user_id",
+          "DisplayColumn": "customer_id",
+          "NextRelationBinding": {
+            "RelatedTable": "m_customer",
+            "RelatedColumn": "customer_id",
+            "DisplayColumn": "内部顧客名"
+          }
+        }
+      }
+    },
+    "3,42": {
+      "NameUsedInJavaScript": "作成会社及び担当者"
+    },
+    "3,43": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "release_public_flg"
+      },
+      "NameUsedInJavaScript": "全社公開フラグ"
+    },
+    "3,44": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "created_user_id",
+        "RelationBinding": {
+          "RelatedTable": "m_user",
+          "RelatedColumn": "user_id",
+          "DisplayColumn": "mail_address"
+        }
+      },
+      "NameUsedInJavaScript": "メールアドレス"
+    },
+    "3,45": {
+      "BindingInfo": {
+        "TableName": "t_object_notice",
+        "ColumnName": "mail_notification_flg"
+      },
+      "NameUsedInJavaScript": "メール通知フラグ"
+    },
+    "7,26": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_customer_notice",
+        "RowIndex": 7,
+        "ColumnIndex": 26,
+        "ColumnCount": 4,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "申込事業者共有事項ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "m_customer_notice",
+            "ColumnName": "customer_id"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=メール送信画面_連絡事項!AA15"
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_customer_notice",
+                "ColumnName": "tab_id"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "7,35": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_customer_notice",
+        "RowIndex": 7,
+        "ColumnIndex": 35,
+        "ColumnCount": 4,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "住宅事業者共有事項ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "m_customer_notice",
+            "ColumnName": "customer_id"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=メール送信画面_連絡事項!AJ15"
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "m_customer_notice",
+                "ColumnName": "tab_id"
+              },
+              "Order": 0
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "8,26": {
+      "BindingInfo": {
+        "TableName": "m_customer_notice",
+        "ColumnName": "tab_id"
+      },
+      "NameUsedInJavaScript": "タブID"
+    },
+    "8,27": {
+      "BindingInfo": {
+        "TableName": "m_customer_notice",
+        "ColumnName": "tab_id",
+        "RelationBinding": {
+          "RelatedTable": "m_tab_class",
+          "RelatedColumn": "tab_id",
+          "DisplayColumn": "tab_name"
+        }
+      },
+      "NameUsedInJavaScript": "区分"
+    },
+    "8,28": {
+      "BindingInfo": {
+        "TableName": "m_customer_notice",
+        "ColumnName": "content"
+      },
+      "NameUsedInJavaScript": "内容"
+    },
+    "8,35": {
+      "BindingInfo": {
+        "TableName": "m_customer_notice",
+        "ColumnName": "tab_id"
+      }
+    },
+    "8,36": {
+      "BindingInfo": {
+        "TableName": "m_customer_notice",
+        "ColumnName": "tab_id",
+        "RelationBinding": {
+          "RelatedTable": "m_tab_class",
+          "RelatedColumn": "tab_id",
+          "DisplayColumn": "tab_name"
+        }
+      }
+    },
+    "8,37": {
+      "BindingInfo": {
+        "TableName": "m_customer_notice",
+        "ColumnName": "content"
+      }
+    },
+    "11,6": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "MaxDropDownItemCount": 10,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "NoneItemText": "（全て）",
+        "Items": [
+          {
+            "Value": "項目1",
+            "DisplayValue": "項目1"
+          },
+          {
+            "Value": "項目2",
+            "DisplayValue": "項目2"
+          },
+          {
+            "Value": "項目3",
+            "DisplayValue": "項目3"
+          }
+        ],
+        "DataSource": "m_tab_class",
+        "ValueColumnBindingInfo": {
+          "TableName": "m_tab_class",
+          "ColumnName": "tab_id"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "m_tab_class",
+          "ColumnName": "tab_name"
+        },
+        "AddNullItemWhenBinding": true
+      }
+    },
+    "13,2": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "連絡事項ビュー",
+        "TemplatePageName": "3f6920ceaa5b49bc8c723fbe26fa43a",
+        "NoItemSetting": {
+          "ImageForNoItem": {
+            "Name": "Mobile/411_notice_1.svg",
+            "BuiltIn": true,
+            "Color": "Accent 1",
+            "UseCellTypeForeColor": true
+          },
+          "NoItemImageSize": 16.0,
+          "TextForNoItem": "該当データはありません"
+        }
+      }
+    },
+    "17,26": {
+      "CellComment": {
+        "Comments": "親ページから参照"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontWeight": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 3,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": null,
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 1
+      },
+      {
+        "Background": null,
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 1,
+        "FontSize": 14.67,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 1,
+        "FontSize": 14.67
+      },
+      {
+        "Background": 5,
+        "FontFamily": 1,
+        "FontSize": 14.67,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 12.0,
+        "Foreground": 3,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": 6,
+        "FontFamily": 1
+      },
+      {
+        "Background": 6
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Body",
+        "[AUTO]General",
+        "Text 1 50",
+        "Center",
+        "Background 1 -5",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "0,23": 0,
+      "1,2": 1,
+      "1,21": 2,
+      "1,23": 0,
+      "1,26": 3,
+      "1,27": 4,
+      "1,28": 4,
+      "1,29": 4,
+      "1,30": 4,
+      "1,31": 4,
+      "1,32": 4,
+      "1,33": 4,
+      "1,34": 4,
+      "1,35": 4,
+      "1,36": 4,
+      "1,37": 4,
+      "1,38": 4,
+      "1,39": 4,
+      "1,40": 4,
+      "1,41": 4,
+      "1,42": 4,
+      "1,43": 2,
+      "1,44": 2,
+      "1,45": 2,
+      "2,2": 5,
+      "2,23": 0,
+      "2,26": 6,
+      "2,27": 6,
+      "2,28": 2,
+      "2,29": 2,
+      "2,30": 6,
+      "2,31": 6,
+      "2,32": 6,
+      "2,33": 6,
+      "2,34": 6,
+      "2,35": 6,
+      "2,36": 6,
+      "2,37": 6,
+      "2,38": 6,
+      "2,39": 6,
+      "2,40": 6,
+      "2,41": 7,
+      "2,42": 6,
+      "2,43": 6,
+      "2,44": 8,
+      "2,45": 2,
+      "3,23": 0,
+      "3,26": 6,
+      "3,27": 6,
+      "3,28": 2,
+      "3,29": 2,
+      "3,30": 6,
+      "3,31": 9,
+      "3,32": 6,
+      "3,33": 6,
+      "3,34": 9,
+      "3,35": 6,
+      "3,36": 6,
+      "3,37": 6,
+      "3,38": 6,
+      "3,39": 9,
+      "3,40": 9,
+      "3,41": 10,
+      "3,42": 9,
+      "3,43": 6,
+      "3,44": 8,
+      "3,45": 2,
+      "4,23": 0,
+      "4,26": 11,
+      "4,27": 11,
+      "4,28": 11,
+      "4,29": 11,
+      "4,30": 11,
+      "4,31": 11,
+      "4,32": 6,
+      "4,33": 6,
+      "4,34": 6,
+      "4,35": 6,
+      "4,36": 6,
+      "4,37": 6,
+      "4,38": 6,
+      "4,39": 6,
+      "4,40": 6,
+      "4,41": 6,
+      "4,42": 6,
+      "4,43": 2,
+      "4,44": 2,
+      "4,45": 2,
+      "5,23": 0,
+      "5,26": 2,
+      "5,27": 2,
+      "5,28": 2,
+      "5,29": 2,
+      "5,30": 2,
+      "5,31": 2,
+      "5,32": 2,
+      "5,33": 2,
+      "5,34": 2,
+      "5,35": 2,
+      "5,36": 2,
+      "5,37": 2,
+      "5,38": 2,
+      "5,39": 2,
+      "5,40": 2,
+      "5,41": 2,
+      "5,42": 2,
+      "5,43": 2,
+      "5,44": 2,
+      "5,45": 2,
+      "6,23": 0,
+      "6,26": 2,
+      "6,27": 2,
+      "6,28": 2,
+      "6,29": 2,
+      "6,30": 2,
+      "6,31": 2,
+      "6,32": 2,
+      "6,33": 2,
+      "6,34": 2,
+      "6,35": 12,
+      "6,36": 2,
+      "6,37": 2,
+      "6,38": 2,
+      "6,39": 2,
+      "6,40": 2,
+      "6,41": 2,
+      "6,42": 2,
+      "6,43": 2,
+      "6,44": 2,
+      "6,45": 2,
+      "7,23": 0,
+      "7,26": 2,
+      "7,27": 2,
+      "7,28": 2,
+      "7,29": 2,
+      "7,30": 2,
+      "7,31": 2,
+      "7,32": 2,
+      "7,33": 2,
+      "7,34": 2,
+      "7,35": 2,
+      "7,36": 2,
+      "7,37": 2,
+      "7,38": 2,
+      "7,39": 2,
+      "7,40": 2,
+      "7,41": 2,
+      "7,42": 2,
+      "7,43": 2,
+      "7,44": 2,
+      "7,45": 2,
+      "8,23": 0,
+      "8,26": 2,
+      "8,27": 2,
+      "8,28": 2,
+      "8,29": 2,
+      "8,30": 2,
+      "8,31": 2,
+      "8,32": 2,
+      "8,33": 2,
+      "8,34": 2,
+      "8,35": 2,
+      "8,36": 2,
+      "8,37": 2,
+      "8,38": 2,
+      "8,39": 2,
+      "8,40": 2,
+      "8,41": 2,
+      "8,42": 2,
+      "8,43": 2,
+      "8,44": 2,
+      "8,45": 2,
+      "9,23": 0,
+      "9,26": 2,
+      "9,27": 2,
+      "9,28": 2,
+      "9,29": 2,
+      "9,30": 2,
+      "9,31": 2,
+      "9,32": 2,
+      "9,33": 2,
+      "9,34": 2,
+      "9,35": 2,
+      "9,36": 2,
+      "9,37": 2,
+      "9,38": 2,
+      "9,39": 2,
+      "9,40": 2,
+      "9,41": 2,
+      "9,42": 2,
+      "9,43": 2,
+      "9,44": 2,
+      "9,45": 2,
+      "10,23": 0,
+      "11,2": 1,
+      "11,6": 7,
+      "11,23": 0,
+      "12,6": 7,
+      "12,7": 7,
+      "12,8": 7,
+      "12,9": 7,
+      "12,23": 0,
+      "13,2": 13,
+      "13,23": 0,
+      "13,26": 2,
+      "13,27": 2,
+      "13,28": 2,
+      "13,35": 12,
+      "13,36": 2,
+      "13,37": 2,
+      "14,23": 0,
+      "14,26": 14,
+      "14,27": 2,
+      "14,28": 2,
+      "14,35": 14,
+      "14,36": 2,
+      "14,37": 2,
+      "15,23": 0,
+      "16,23": 0,
+      "16,44": 2,
+      "16,45": 2,
+      "16,46": 2,
+      "17,23": 0,
+      "17,26": 15,
+      "18,23": 0,
+      "19,23": 0,
+      "19,30": 2,
+      "19,31": 2,
+      "19,32": 2,
+      "19,44": 2,
+      "19,45": 2,
+      "19,46": 2,
+      "20,23": 0,
+      "21,23": 0,
+      "22,23": 0,
+      "22,30": 2,
+      "22,31": 2,
+      "22,32": 2,
+      "22,37": 2,
+      "22,38": 2,
+      "22,39": 2,
+      "23,23": 0,
+      "24,23": 0,
+      "25,23": 0,
+      "25,30": 2,
+      "25,31": 2,
+      "25,32": 2,
+      "25,37": 2,
+      "25,38": 2,
+      "25,39": 2,
+      "26,23": 0,
+      "27,23": 0,
+      "28,23": 0,
+      "28,37": 2,
+      "28,38": 2,
+      "28,39": 2,
+      "29,23": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "13,2,17,20",
+    "11,6,1,4",
+    "2,2,8,20",
+    "14,35,1,3",
+    "14,26,1,3",
+    "4,26,1,20",
+    "9,26,1,4",
+    "9,35,1,4",
+    "17,26,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "メール送信画面",
+    "PageLoadedCommandList": [
+      {
+        "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+        "ImportMode": 1,
+        "PassValueItems": [
+          {
+            "SourceCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メール送信画面_連絡事項!AJ9"
+            },
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メール送信画面_連絡事項!AA9"
+            },
+            "IsPrimaryKey": true
+          },
+          {
+            "SourceCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メール送信画面_連絡事項!AK9"
+            },
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メール送信画面_連絡事項!AB9"
+            }
+          },
+          {
+            "SourceCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メール送信画面_連絡事項!AL9"
+            },
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=メール送信画面_連絡事項!AC9"
+            }
+          }
+        ],
+        "Comments": "共有事項ビューセット"
+      }
+    ],
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "t_object_notice",
+    "PageResponsiveMode": 2
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "連絡事項タブ検索",
+      "Formula": "メール送信画面_連絡事項!$G$12"
+    }
+  ]
+}//5rJA271xaTxgzgUsvovI7kLlRgTDwYjUOVu9LddO+aUxtBpE6wPSGqWJDfndieST9i4UTRioh/JpDaDXTcMEoW+m4ixH9aaoNu3jK1OtE2LVzRK5CMY73gU3mA+7GMacLLgES22UPdx4xCha2EiobtuESvNoZ+XDbcjwIpXvREYzSHkTxyAX9CFdlmX8fj/gCW5VNPxeAvp13HOsNA+KULsOpgLBEHXxtAvK7oPr9s8RJ9WAzpsJRrvQSGFefNq+8CVpw0ZoeZ2UUkQJokcLElyPK4uPDTVvfNHktAT/i/d509Y82s4eQGbD2tr2u8bwnWZ3OrPmlZReOMthGAseU/SzuZhAvlokV0Do+LUiyVJvF9c10132bjvcUiFBjShQ0STXqxYcWdYifTqukg/pMz11o3eia1C0dnKbCFdoJBudAnYu3y5r9B4eSnCoSb5FaMh3asdWO2zv5fUF1y8lQjCIxBncMWZTtBJLY71CGHUjEvGf/4Eq1c61fSHTzafR5Y8hV9PMTUnCdz3vsh2RmY0BZn/ne4aDWbNFGLGGW7N7lmsq5fxB4wntBD1MHQ0YEoEfVT9J+Ec5MdRx2htKvsX3L5gAcb4709yL6uMwzFOaAP7zvedB5WiriHCONdnoYwhpVPGUgBCxR9EK1rQRRKg4L9nYHwDStPh0LGOPdsxY4vITTXp7TkbPSEnzCTha4SxoFP0emytj6PSX1rX9CqX2N6XFPEBMaQ10Ax1IfkMzf2BeD7ouO4Cvj7fcDG1sOQJ+Yr3YnYI5IHlEeYflemVxJew7bvZnIrKzTAClhQwn+sBJok2zy0JulRtGmQpGsXQuCx7ffwcJqCedrm5ISw7f0AaiN0WxyooaKuZIT0ENau5I+eWB5s4yMvzOirZlJ4bekL/0ZRpa/fZdBiAejw==|920

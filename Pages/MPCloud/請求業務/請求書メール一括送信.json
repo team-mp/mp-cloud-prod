@@ -1,0 +1,1113 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      },
+      "15": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "Count": 17,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80
+    ],
+    "Count": 81
+  },
+  "Values": {
+    "1,27": "請求年月",
+    "1,36": "請求書通知先名",
+    "1,60": "▼テンプレートID",
+    "1,67": "▼請求年月",
+    "1,73": "▼請求番号配列",
+    "3,4": "請求書メール一括送信を開始します。",
+    "4,4": "よろしいですか？",
+    "4,67": "▼通知先ID",
+    "6,5": "はい",
+    "6,10": "いいえ",
+    "7,60": "▼テンプレートページ",
+    "7,67": "▼請求先名",
+    "8,60": "メールテンプレート",
+    "10,60": "▼添付ファイル",
+    "10,67": "▼請求先担当者名",
+    "13,60": "▼総件数",
+    "13,67": "▼請求番号"
+  },
+  "Formulas": {
+    "2,4": "BI15&\"件の通知先が検出されました。\"",
+    "14,60": "COUNTIF(T3,\"<>\")",
+    "2,27": "TEXT(X3,\"yyyy年mm月\")"
+  },
+  "AttachInfos": {
+    "1,19": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "t_sales",
+        "RowIndex": 1,
+        "ColumnIndex": 19,
+        "ColumnCount": 39,
+        "RowCount": 14,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "メール送信ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 8,
+          "ColumnBindingInfo": {
+            "TableName": "t_sales",
+            "ColumnName": "billing_no"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=請求書メール一括送信!BV3"
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "t_sales",
+                "ColumnName": "billing_no"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "2,19": {
+      "BindingInfo": {
+        "TableName": "t_sales",
+        "ColumnName": "billing_no"
+      }
+    },
+    "2,23": {
+      "BindingInfo": {
+        "TableName": "t_sales",
+        "ColumnName": "billing_date"
+      }
+    },
+    "2,31": {
+      "BindingInfo": {
+        "TableName": "t_sales",
+        "ColumnName": "billing_comp_id",
+        "RelationBinding": {
+          "RelatedTable": "m_customer",
+          "RelatedColumn": "customer_id",
+          "DisplayColumn": "請求書通知先ID"
+        }
+      }
+    },
+    "2,36": {
+      "BindingInfo": {
+        "TableName": "t_sales",
+        "ColumnName": "billing_comp_id",
+        "RelationBinding": {
+          "RelatedTable": "m_customer",
+          "RelatedColumn": "customer_id",
+          "DisplayColumn": "請求書通知先ID",
+          "NextRelationBinding": {
+            "RelatedTable": "m_customer",
+            "RelatedColumn": "customer_id",
+            "DisplayColumn": "請求先名"
+          }
+        }
+      }
+    },
+    "2,41": {
+      "BindingInfo": {
+        "TableName": "t_sales",
+        "ColumnName": "billing_comp_id",
+        "RelationBinding": {
+          "RelatedTable": "m_customer",
+          "RelatedColumn": "customer_id",
+          "DisplayColumn": "請求先担当汎用名"
+        }
+      }
+    },
+    "2,47": {
+      "BindingInfo": {
+        "TableName": "t_sales",
+        "ColumnName": "billing_comp_id",
+        "RelationBinding": {
+          "RelatedTable": "m_customer",
+          "RelatedColumn": "customer_id",
+          "DisplayColumn": "billing_send_way"
+        }
+      }
+    },
+    "2,53": {
+      "BindingInfo": {
+        "TableName": "t_sales",
+        "ColumnName": "請求合計"
+      }
+    },
+    "6,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+            "LoadingText": "お待ちください",
+            "LoadingTextColor": "Background 1 0"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "総件数",
+            "ParameterValue": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=請求書メール一括送信!BI15"
+            },
+            "ID": "75fa8f61ac51404fa15fc66a3cf0fed5"
+          },
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "処理中件数",
+            "ParameterValue": "0",
+            "ID": "8ae6e25e35be48c99b17b2d401fc5711"
+          },
+          {
+            "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+            "LoopInfo": {
+              "$type": "Forguncy.Model.ListviewKindLoopInfo, ServerDesignerCommon",
+              "ListviewName": "メール送信ビュー"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "処理中件数",
+                "ParameterValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=請求書メール一括送信!処理中件数+1"
+                },
+                "ID": "501f5688820e419b96b4ca136ac1416c"
+              },
+              {
+                "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                "LoadingText": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=請求書メール一括送信!処理中件数&\"／\"&請求書メール一括送信!総件数&\"を処理中です\""
+                },
+                "LoadingTextColor": "Background 1 0"
+              },
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "Condition": {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=請求書メール一括送信!AV3"
+                          }
+                        ]
+                      },
+                      "value": "2",
+                      "compareType": 10
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "受渡_テンプレートID",
+                        "TableValue": {
+                          "TableName": "m_mail_template",
+                          "OnlyGetValue": true,
+                          "TableValueType": 0,
+                          "BindingInfos": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "m_mail_template",
+                                "ColumnName": "template_id"
+                              },
+                              "ColumnName": "template_id"
+                            }
+                          ],
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "m_mail_template",
+                              "ColumnName": "system_button_name"
+                            },
+                            "Value": "郵送有り請求書通知ボタン"
+                          }
+                        },
+                        "ID": "15eac48c369e45aab16aac5594fed936"
+                      }
+                    ],
+                    "Comments": "郵送有りの場合",
+                    "ID": "cd08e052-ac4e-4a1c-86be-e3d2cebef8ed"
+                  },
+                  {
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                        "ParameterName": "受渡_テンプレートID",
+                        "TableValue": {
+                          "TableName": "m_mail_template",
+                          "OnlyGetValue": true,
+                          "TableValueType": 0,
+                          "BindingInfos": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "m_mail_template",
+                                "ColumnName": "template_id"
+                              },
+                              "ColumnName": "template_id"
+                            }
+                          ],
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "m_mail_template",
+                              "ColumnName": "system_button_name"
+                            },
+                            "Value": "郵送無し請求書通知ボタン"
+                          }
+                        },
+                        "ID": "c2d7ba1245894ee5a7832643b1e53be2"
+                      }
+                    ],
+                    "ID": "9e58140f-979e-4111-a669-35fe25953be6"
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!受渡_テンプレートID"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!受渡_テンプレートID"
+                    }
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!請求年月"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!AB3"
+                    }
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!通知先ID"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!AF3"
+                    }
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!請求先名"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!AK3"
+                    }
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!請求先担当者名"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!AP3"
+                    }
+                  },
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!請求番号"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!T3"
+                    }
+                  }
+                ]
+              },
+              {
+                "$type": "SetCurrentRowCommand.SetCurrentRowCommand, SetCurrentRowCommand",
+                "CurrentRowInfo": {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "ColumnBindingInfo": {
+                    "TableName": "m_mail_template",
+                    "ColumnName": "template_id"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=請求書メール一括送信!受渡_テンプレートID"
+                  }
+                }
+              },
+              {
+                "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                "TargetPageElement": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=請求書メール一括送信!宛先設定ボタン"
+                },
+                "TargetType": "Forguncy.ButtonCellType, ServerDesignerCommon, Version=8.0.42.0, Culture=neutral, PublicKeyToken=967100671921c115",
+                "MethodName": "ExecuteCommand",
+                "ParameterValues": {},
+                "RetrunParamNames": {}
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "P_差出人アドレス",
+                "ParameterValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メールテンプレート!差出人アドレス"
+                },
+                "ID": "b48715a266074a31983c25d8fe61c6c4"
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "P_宛先区分",
+                "ParameterValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=請求書メール一括送信!メール宛先区分"
+                },
+                "ID": "cb1d44402614491387f3404a9d623587",
+                "Comments": "メールテンプレートから取得"
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "P_宛先TO",
+                "ParameterValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メールテンプレート!メール宛先"
+                },
+                "ID": "47c2bb3cdfd14daab56f8fa84f6d7a46",
+                "Comments": "メールテンプレートから取得"
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "P_宛先CC",
+                "ParameterValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メールテンプレート!メールCC"
+                },
+                "ID": "8f72448eeda7464c8d32330767f68136",
+                "Comments": "メールテンプレートから取得"
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "P_件名",
+                "ParameterValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メールテンプレート!メール件名"
+                },
+                "ID": "e358563852764627b1c6f3cac33e5f98",
+                "Comments": "メールテンプレートから取得"
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "P_本文",
+                "ParameterValue": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=メールテンプレート!メール本文"
+                },
+                "ID": "39ffdb47a0644a77a8c23bce42c19261",
+                "Comments": "メールテンプレートから取得"
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                "ServerCommandName": "請求書添付ファイル取得処理",
+                "Parameters": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!T3"
+                    },
+                    "ParamName": "P_請求番号"
+                  }
+                ],
+                "ReturnPropertiesTo": [
+                  {
+                    "ResultPropertyName": "R_添付ファイル文字列",
+                    "ResultTo": {
+                      "SerializeProperty": "添付ファイル文字列"
+                    }
+                  }
+                ],
+                "CheckDataValidation": false
+              },
+              {
+                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "TargetCells": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!添付ファイル"
+                    },
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!添付ファイル文字列"
+                    }
+                  }
+                ]
+              },
+              {
+                "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                "ServerCommandName": "メール送信処理",
+                "Parameters": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!P_差出人アドレス"
+                    },
+                    "ParamName": "P_差出人アドレス"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "Value": "1",
+                    "ParamName": "P_送信元区分"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!P_宛先区分"
+                    },
+                    "ParamName": "P_宛先区分"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!P_宛先TO"
+                    },
+                    "ParamName": "P_宛先"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!P_宛先CC"
+                    },
+                    "ParamName": "P_CC"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!P_件名"
+                    },
+                    "ParamName": "P_件名"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!P_本文"
+                    },
+                    "ParamName": "P_本文"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!添付ファイル"
+                    },
+                    "ParamName": "P_添付ファイル"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "ParamName": "P_申込ID"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "Value": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=請求書メール一括送信!T3"
+                    },
+                    "ParamName": "P_請求番号"
+                  },
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                    "Value": "%CurrentUser.user_id%",
+                    "ParamName": "P_送信ユーザーID"
+                  }
+                ],
+                "ResultErrorCodeTo": {
+                  "SerializeProperty": "リターンコード"
+                },
+                "ResultMessageTo": {
+                  "SerializeProperty": "リターンメッセージ"
+                },
+                "RequestAsync": true,
+                "CheckDataValidation": false
+              },
+              {
+                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                "ParameterName": "同一通知先の請求番号",
+                "TableValue": {
+                  "TableName": "v_billing_no_summary",
+                  "BindingInfos": [
+                    {
+                      "BindingInfo": {
+                        "TableName": "v_billing_no_summary",
+                        "ColumnName": "請求番号"
+                      },
+                      "ColumnName": "請求番号"
+                    }
+                  ],
+                  "SqlCondition": {
+                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                    "Condition1": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "v_billing_no_summary",
+                        "ColumnName": "通知先ID"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=請求書メール一括送信!AF3"
+                      }
+                    },
+                    "Condition2": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "v_billing_no_summary",
+                        "ColumnName": "請求日"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=請求書メール一括送信!X3"
+                      }
+                    }
+                  }
+                },
+                "ID": "5efc47c1af7249b289e851bfcf1e2afc"
+              },
+              {
+                "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+                "LoopInfo": {
+                  "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+                  "LoopCount": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=請求書メール一括送信!同一通知先の請求番号"
+                  },
+                  "LoopItemParamName": "Item"
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                    "ServerCommandName": "請求書メール送信日更新処理",
+                    "Parameters": [
+                      {
+                        "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=請求書メール一括送信!Item.請求番号"
+                        },
+                        "ParamName": "P_請求番号"
+                      }
+                    ],
+                    "ResultErrorCodeTo": {
+                      "SerializeProperty": "リターンコード"
+                    },
+                    "ResultMessageTo": {
+                      "SerializeProperty": "リターンメッセージ"
+                    },
+                    "CheckDataValidation": false
+                  },
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "Condition": {
+                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                          "param": {
+                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                            "cellLocations": [
+                              {
+                                "SerializeProperty": "=請求書メール一括送信!リターンコード"
+                              }
+                            ]
+                          },
+                          "value": "0",
+                          "compareType": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=請求書メール一括送信!リターンメッセージ"
+                            }
+                          }
+                        ],
+                        "ID": "043b3a93-bf33-4d82-8ff5-9478d5f94e1a"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "はい",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    },
+    "6,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "いいえ",
+        "TemplateKey": "スタイル2"
+      }
+    },
+    "8,60": {
+      "CellType": {
+        "$type": "Forguncy.ContentContainerCellType, ServerDesignerCommon",
+        "PageName": "メールテンプレート"
+      }
+    },
+    "11,60": {
+      "CellType": {
+        "$type": "Forguncy.AttachmentCelltype, ServerDesignerCommon",
+        "UploadLimit": {
+          "ExtensionFilter": ".jpg, .jpeg, .png, .gif, .bmp, .xlsx, .docx, .doc, .xls, .pdf",
+          "ReplaceWhenOneFile": true
+        },
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Formatter": 1
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "Background": 2
+      },
+      {
+        "Background": 2,
+        "FontFamily": 0
+      },
+      {
+        "Background": 3
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "Background": 5,
+        "Underline": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General",
+        "#FFFFFF00",
+        "#FFFFC000",
+        "Center",
+        "Accent 1 80"
+      ]
+    },
+    "CellStyles": {
+      "1,19": 0,
+      "1,20": 1,
+      "1,21": 1,
+      "1,22": 1,
+      "1,23": 0,
+      "1,24": 1,
+      "1,25": 1,
+      "1,26": 1,
+      "1,27": 0,
+      "1,28": 1,
+      "1,29": 1,
+      "1,30": 1,
+      "1,31": 0,
+      "1,32": 1,
+      "1,34": 1,
+      "1,35": 1,
+      "1,36": 2,
+      "1,41": 0,
+      "1,47": 0,
+      "1,53": 3,
+      "1,67": 1,
+      "1,68": 1,
+      "1,69": 1,
+      "2,19": 0,
+      "2,20": 1,
+      "2,21": 1,
+      "2,22": 1,
+      "2,23": 0,
+      "2,24": 1,
+      "2,25": 1,
+      "2,26": 1,
+      "2,27": 0,
+      "2,28": 1,
+      "2,29": 1,
+      "2,30": 1,
+      "2,31": 0,
+      "2,32": 1,
+      "2,33": 1,
+      "2,34": 1,
+      "2,35": 1,
+      "2,36": 0,
+      "2,41": 0,
+      "2,47": 0,
+      "2,53": 3,
+      "2,60": 4,
+      "2,67": 5,
+      "2,68": 1,
+      "2,69": 1,
+      "2,73": 6,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 1,
+      "3,7": 1,
+      "3,8": 1,
+      "3,67": 1,
+      "3,68": 1,
+      "3,69": 1,
+      "4,4": 1,
+      "4,5": 1,
+      "4,6": 1,
+      "4,7": 1,
+      "4,8": 1,
+      "4,67": 7,
+      "4,68": 1,
+      "4,69": 1,
+      "5,67": 5,
+      "5,68": 1,
+      "5,69": 1,
+      "6,5": 8,
+      "6,6": 1,
+      "6,7": 1,
+      "6,8": 1,
+      "6,9": 1,
+      "6,10": 2,
+      "6,14": 1,
+      "6,67": 1,
+      "6,68": 1,
+      "6,69": 1,
+      "7,60": 7,
+      "7,61": 1,
+      "7,62": 1,
+      "7,67": 7,
+      "7,68": 1,
+      "7,69": 1,
+      "8,60": 5,
+      "8,61": 1,
+      "8,62": 1,
+      "8,67": 5,
+      "8,68": 1,
+      "8,69": 1,
+      "9,67": 1,
+      "9,68": 1,
+      "9,69": 1,
+      "10,67": 7,
+      "10,68": 1,
+      "10,69": 1,
+      "11,60": 9,
+      "11,67": 5,
+      "11,68": 1,
+      "11,69": 1,
+      "12,67": 1,
+      "12,68": 1,
+      "12,69": 1,
+      "13,60": 7,
+      "13,61": 1,
+      "13,62": 1,
+      "13,67": 7,
+      "13,68": 1,
+      "13,69": 1,
+      "14,60": 5,
+      "14,61": 1,
+      "14,62": 1,
+      "14,67": 5,
+      "14,68": 1,
+      "14,69": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,60,1,3",
+    "2,67,1,3",
+    "8,67,1,3",
+    "11,67,1,3",
+    "5,67,1,3",
+    "14,67,1,3",
+    "8,60,1,3",
+    "14,60,1,3",
+    "11,60,1,3",
+    "6,5,1,4",
+    "6,10,1,4",
+    "2,73,1,3",
+    "2,19,1,4",
+    "2,23,1,4",
+    "2,27,1,4",
+    "2,31,1,5",
+    "2,36,1,5",
+    "2,41,1,6",
+    "2,47,1,6",
+    "2,53,1,5",
+    "3,19,12,39",
+    "2,4,1,11",
+    "1,19,1,4",
+    "1,23,1,4",
+    "1,27,1,4",
+    "1,31,1,5",
+    "1,36,1,5",
+    "1,41,1,6",
+    "1,47,1,6",
+    "1,53,1,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "送信確認",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "t_sales"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "テンプレートID",
+      "Formula": "請求書メール一括送信!$BI$3"
+    },
+    {
+      "Name": "請求年月",
+      "Formula": "請求書メール一括送信!$BP$3"
+    },
+    {
+      "Name": "通知先ID",
+      "Formula": "請求書メール一括送信!$BP$6"
+    },
+    {
+      "Name": "請求先名",
+      "Formula": "請求書メール一括送信!$BP$9"
+    },
+    {
+      "Name": "請求先担当者名",
+      "Formula": "請求書メール一括送信!$BP$12"
+    },
+    {
+      "Name": "請求番号",
+      "Formula": "請求書メール一括送信!$BP$15"
+    },
+    {
+      "Name": "添付ファイル",
+      "Formula": "請求書メール一括送信!$BI$12"
+    }
+  ]
+}//+x1cU+N8x6J1YzyA2OGpL1GZifTTG+xGKHcpCS2kZDi2ICpvexINDDcuynnosYQB2ImEw/uhCqqzv2T/qTqi6ryikVWYCCPbI4DttIwTM04kj4BZ0UufRiTrO6KDlGHIU2CKI6G0ntPRAAlG4pR/R4KgJmgZumsreyNiQChDG87RYKZb+sYihfPQR+8nm2y9mZfp/4sY2VITjTjTXYBzm6LqtYMTMF481R3V4YSCNzT8EL8tZ1ksZaHe1jmEaXX4zUctduD5asLzGZOvspNm1PsYCmFD5UrckYzDE1krVpoJMor0vnc99wzDEXEssYgkjNhA0OHzqALGCeUr07Ymk0+njpoLYb86STEbqkXJ2Ru/04XiQzK7TEOASmtRlc0asZtK6odrdB9XSg+2mq42tCx/PG2RhG7Dhp/F/b55KdEljC5BCuCMVyMtzKH1amEi8HqviQCCTH5PaWkAdZf5aJA//BPH/uiNCkXlt/z97VSK546pw+8gNfvZiH912EUIlU+wKZhtopU63jkto0RTWsAfBbmjh0tn6vA+5pUyyRajX15ld4pUuyxki4Hec7h0q2vePVQ2QN296nv5SHzSe0jp3yJCv6pzIstwi6SVZDuYntVjNg2ElUqP0q4k/Eo9XoHDlDPN84ilI/uD5AR4qUhRKLTTZWUsChFPjj6U8jLvj1eKWzJS8/oWVe84w4NDKeqwgEbbedISC5M+twEwMLa6QIHCytxGqOWZZxFWK/O5kDml52mu1TdC7sXCc0dSiZCuJ6WyzbKu2yETGv9uQP8g5Sorfhc45XLHYGOvaw4q7efJvUybzt9nYjV8WIjPfVuR9zKA1JdcCY4uYhuplXYkvWOdxVL+iyfUWGkyIOXSvRxb1dIOGAK3nnPHDK1H9qXBx5XS6e+8UITdcVfoMw==|920

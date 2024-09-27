@@ -1,0 +1,578 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0,
+          "Mode": 1
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      }
+    },
+    "Count": 13,
+    "DefaultSize": 25.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "Count": 45
+  },
+  "Values": {
+    "1,1": "連絡事項サブページ",
+    "2,23": "▼申込ID",
+    "2,28": "▼連絡グループID",
+    "5,23": "▼連絡事項ビュー",
+    "6,29": "区分名"
+  },
+  "Formulas": {
+    "3,23": "申込ID",
+    "3,28": "連絡グループID",
+    "7,39": "AM8&\"　\"&AK8",
+    "7,34": "IF(AE8=2,AG8,\"\")",
+    "7,33": "IF(AE8=1,AF8,\"\")",
+    "7,29": "IF(AC8=\"\",\"共有\",AC8)"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "連絡事項ビュー",
+        "TemplatePageName": "df1ac83a91b6452fb4d4049021957e5",
+        "NoItemSetting": {
+          "ImageForNoItem": {
+            "Name": "Mobile/411_notice_1.svg",
+            "BuiltIn": true,
+            "Color": "#FF005B47"
+          },
+          "NoItemImageSize": 16.0,
+          "TextForNoItem": "該当データはありません"
+        }
+      }
+    },
+    "6,23": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "v_object_notice",
+        "RowIndex": 6,
+        "ColumnIndex": 23,
+        "ColumnCount": 20,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "連絡事項ビュー",
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+          "Condition1": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "v_object_notice",
+              "ColumnName": "object_order_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=連絡事項グループ_履歴!X4"
+            }
+          },
+          "Condition2": {
+            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+            "ColumnBindingInfo": {
+              "TableName": "v_object_notice",
+              "ColumnName": "notice_group_id"
+            },
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=連絡事項グループ_履歴!AC4"
+            }
+          }
+        },
+        "TopCondition": null,
+        "OrderByCondition": {
+          "OrderByColumns": [
+            {
+              "ColumnBindingInfo": {
+                "TableName": "v_object_notice",
+                "ColumnName": "notice_group_id"
+              },
+              "Order": 1
+            },
+            {
+              "ColumnBindingInfo": {
+                "TableName": "v_object_notice",
+                "ColumnName": "notice_id"
+              },
+              "Order": 1
+            }
+          ]
+        },
+        "CommitType": 1,
+        "DoNotLoadDataWhenLoadPage": true,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "7,23": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "notice_id"
+      },
+      "NameUsedInJavaScript": "連絡ID"
+    },
+    "7,24": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "object_order_id"
+      },
+      "NameUsedInJavaScript": "申込ID"
+    },
+    "7,25": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "application_serial_number"
+      },
+      "NameUsedInJavaScript": "申込連番"
+    },
+    "7,26": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "source_notice_id",
+        "RelationBinding": {
+          "RelatedTable": "t_object_notice",
+          "RelatedColumn": "notice_id",
+          "DisplayColumn": "application_serial_number"
+        }
+      },
+      "NameUsedInJavaScript": "元申込連番"
+    },
+    "7,27": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "tab_id"
+      }
+    },
+    "7,28": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "tab_id",
+        "RelationBinding": {
+          "RelatedTable": "m_tab_class",
+          "RelatedColumn": "tab_id",
+          "DisplayColumn": "tab_name"
+        }
+      }
+    },
+    "7,29": {
+      "NameUsedInJavaScript": "区分名"
+    },
+    "7,30": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "display_type"
+      },
+      "NameUsedInJavaScript": "表示タイプ"
+    },
+    "7,31": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "content"
+      }
+    },
+    "7,32": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "ritch_text"
+      }
+    },
+    "7,33": {
+      "NameUsedInJavaScript": "内容"
+    },
+    "7,34": {
+      "NameUsedInJavaScript": "リッチテキスト"
+    },
+    "7,35": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "created_user_id"
+      }
+    },
+    "7,36": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "created_user_id",
+        "RelationBinding": {
+          "RelatedTable": "m_user",
+          "RelatedColumn": "user_id",
+          "DisplayColumn": "user_name"
+        }
+      }
+    },
+    "7,37": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "updated_date"
+      },
+      "NameUsedInJavaScript": "更新日時"
+    },
+    "7,38": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "created_user_id",
+        "RelationBinding": {
+          "RelatedTable": "m_user",
+          "RelatedColumn": "user_id",
+          "DisplayColumn": "customer_id",
+          "NextRelationBinding": {
+            "RelatedTable": "m_customer",
+            "RelatedColumn": "customer_id",
+            "DisplayColumn": "内部顧客名"
+          }
+        }
+      }
+    },
+    "7,39": {
+      "NameUsedInJavaScript": "作成会社及び担当者"
+    },
+    "7,40": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "release_public_flg"
+      },
+      "NameUsedInJavaScript": "全社公開フラグ"
+    },
+    "7,41": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "created_user_id",
+        "RelationBinding": {
+          "RelatedTable": "m_user",
+          "RelatedColumn": "user_id",
+          "DisplayColumn": "mail_address"
+        }
+      },
+      "NameUsedInJavaScript": "メールアドレス"
+    },
+    "7,42": {
+      "BindingInfo": {
+        "TableName": "v_object_notice",
+        "ColumnName": "mail_notification_flg"
+      },
+      "NameUsedInJavaScript": "メール通知フラグ"
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": null,
+        "FontFamily": 0
+      },
+      {
+        "BorderLeft": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Background": 3,
+        "FontFamily": 0
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 14.67
+      },
+      {
+        "Background": null,
+        "FontFamily": 0,
+        "FontSize": 14.67,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderTop": null
+      },
+      {
+        "BorderTop": null,
+        "BorderLeft": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Text 1 50",
+        "Center",
+        "#FFFFFF00"
+      ]
+    },
+    "CellStyles": {
+      "0,5": 0,
+      "0,6": 0,
+      "0,7": 0,
+      "0,8": 0,
+      "0,22": 1,
+      "0,24": 2,
+      "0,25": 2,
+      "0,26": 2,
+      "0,27": 2,
+      "0,28": 2,
+      "0,29": 2,
+      "0,30": 2,
+      "0,31": 2,
+      "0,32": 2,
+      "0,33": 2,
+      "0,34": 2,
+      "0,35": 2,
+      "0,36": 2,
+      "0,37": 2,
+      "0,38": 2,
+      "0,39": 2,
+      "1,1": 3,
+      "1,22": 1,
+      "2,22": 1,
+      "2,23": 4,
+      "2,24": 4,
+      "2,25": 4,
+      "2,26": 4,
+      "2,27": 4,
+      "2,28": 4,
+      "2,29": 4,
+      "2,30": 4,
+      "3,22": 1,
+      "3,23": 5,
+      "3,24": 4,
+      "3,25": 4,
+      "3,26": 4,
+      "3,27": 4,
+      "3,28": 5,
+      "3,29": 4,
+      "3,30": 4,
+      "4,22": 1,
+      "5,22": 1,
+      "6,22": 1,
+      "6,23": 0,
+      "6,24": 0,
+      "6,25": 4,
+      "6,26": 4,
+      "6,27": 0,
+      "6,28": 0,
+      "6,29": 6,
+      "6,30": 0,
+      "6,31": 0,
+      "6,32": 0,
+      "6,33": 6,
+      "6,34": 6,
+      "6,35": 0,
+      "6,36": 0,
+      "6,37": 0,
+      "6,38": 0,
+      "6,39": 6,
+      "6,40": 0,
+      "6,41": 0,
+      "6,42": 4,
+      "7,22": 1,
+      "7,23": 0,
+      "7,24": 0,
+      "7,25": 4,
+      "7,26": 4,
+      "7,27": 0,
+      "7,28": 7,
+      "7,29": 6,
+      "7,30": 0,
+      "7,31": 7,
+      "7,32": 0,
+      "7,33": 6,
+      "7,34": 6,
+      "7,35": 0,
+      "7,36": 7,
+      "7,37": 7,
+      "7,38": 7,
+      "7,39": 8,
+      "7,40": 0,
+      "7,41": 0,
+      "7,42": 4,
+      "8,22": 1,
+      "8,23": 4,
+      "8,24": 4,
+      "8,25": 4,
+      "8,26": 4,
+      "8,27": 4,
+      "8,28": 4,
+      "8,29": 4,
+      "8,30": 4,
+      "8,31": 4,
+      "8,32": 4,
+      "8,33": 4,
+      "8,34": 4,
+      "8,35": 4,
+      "8,36": 4,
+      "8,37": 4,
+      "8,38": 4,
+      "8,39": 4,
+      "8,40": 4,
+      "8,41": 4,
+      "8,42": 4,
+      "9,22": 1,
+      "10,22": 1,
+      "11,22": 1,
+      "12,0": 9,
+      "12,1": 9,
+      "12,2": 9,
+      "12,3": 9,
+      "12,4": 9,
+      "12,5": 9,
+      "12,6": 9,
+      "12,7": 9,
+      "12,8": 9,
+      "12,9": 9,
+      "12,10": 9,
+      "12,11": 9,
+      "12,12": 9,
+      "12,13": 9,
+      "12,14": 9,
+      "12,15": 9,
+      "12,16": 9,
+      "12,17": 9,
+      "12,18": 9,
+      "12,19": 9,
+      "12,20": 9,
+      "12,21": 9,
+      "12,22": 10
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,1,11,20",
+    "3,23,1,3",
+    "3,28,1,3",
+    "8,23,1,20"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "v_object_notice",
+    "PageResponsiveMode": 2
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//z5puy6l49wM4UwdxWlhcoXlP47xP20pDEVxiHIQpTs+FhLXD3D2dLdMB2irTQmLQRrPd4EbD1ul/XMiVVcLRIbprpcJa8jRTG10Qy09xXG4ffw9S2I6vZ4bQJnILr9fN18XDULbn2LSG5xAotKIKokFB4iB4Xu9EIK6e4w+GgOa0+pBPnKp/lIe5V2iZtNbTaNjxioYIk8z9Sw0kJ9SiLzDqCC6jueRgvznJLXsG3IMa68/5kwyWjZME49A43CWtWmq+L97KkIGiyj12RSWvNxrhCWBfirwZZdgKH1L9xdJbR/djhXbuHGJuq6785cCULZn+EGjhj3+ypFZuFWHu9q2QnYAWKzVgsslUR5R+j+RoftyZSYDv+G+8bWm0KxYNqgHdC9wfqRFDElTJmDFjO5Z2WV9L11xFjanNIzUlBHCvarhxJy4X7yUT69mW1SsUQtHSqUl8SnB0JyBua+Ns30Bcr3kd4qffsdrmtUQhsU29TssT8I3rT802NCVDUiDtelZm0T6NwGB9Z6ocncy/rFFFyUFBltnNBhEVI30k8dyhnEHepuEl0wrCQKPkTHqesfdNec6FxXZQkqECb9tAUot7nKh4N5YRejC4XSuPUa75gWFpco12y1hY8hTJdgTrlhVMgJfPJJN4e+B73M+ewjE8KElTtkc6kwXpVJcfw8qCB8knFIg3cKQ42m3DOJ00hNrLcS0DVJsumZ5hYi9n3geFrW8uQsU+O5f7oV0PWWfG6I/CLev8mtSbWerwOPA3BucYgsBeBuevrOU7xa/74kzD87pzMhrUsZGyRRuxLKdlkpgzWjMoRhTaETZRE3eAm8V5yOydM3DIWdcuuJJPbveEWGJDrsQqr9E+v7+pleeeYehAU1vM5uEc4s6DH5szkWI/t6+A31euQbqisqZ42Q==|920

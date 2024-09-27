@@ -1,0 +1,48 @@
+{
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.ServerCommands.Models.DailyScheduleTrigger, ServerDesignerCommon",
+      "StartDateTime": 45419.001388888886,
+      "ScheduleRunInDebugServer": false
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "保存元サーバーパス名",
+      "ParameterValue": "C:\\inetpub\\wwwroot\\private\\",
+      "ID": "de12408d5fee46389393e7bb6ac30408"
+    },
+    {
+      "$type": "OperateFilesCommand.GetFilesFromFolderCommand, OperateFilesCommand",
+      "FolderPath": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=保存元サーバーパス名"
+      },
+      "IncludeSubFolder": true,
+      "ToParameterName": "取得ファイル一覧"
+    },
+    {
+      "$type": "Forguncy.Model.LoopCommand, ServerDesignerCommon",
+      "LoopInfo": {
+        "$type": "Forguncy.Model.CountLoopInfo, ServerDesignerCommon",
+        "LoopCount": {
+          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+          "SerializeProperty": "=取得ファイル一覧"
+        },
+        "LoopItemParamName": "ファイルパス名"
+      },
+      "CommandList": [
+        {
+          "$type": "OperateFilesCommand.DeleteFileCommand, OperateFilesCommand",
+          "FilePath": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=ファイルパス名"
+          }
+        }
+      ]
+    }
+  ],
+  "Name": "プライベートファイル削除"
+}

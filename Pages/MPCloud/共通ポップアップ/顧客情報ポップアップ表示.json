@@ -1,0 +1,207 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0,
+          "Mode": 1
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 1
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 15.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      }
+    },
+    "Count": 12
+  },
+  "Cols": {
+    "Count": 21
+  },
+  "Values": {
+    "5,2": "住所",
+    "9,2": "電話番号"
+  },
+  "AttachInfos": {
+    "1,19": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "余白2グレー",
+        "ImagePath": "Mobile/456_delete_8.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1",
+        "UseCellForeColor": true
+      }
+    },
+    "2,2": {
+      "BindingInfo": {
+        "TableName": "m_customer",
+        "ColumnName": "customer_name"
+      }
+    },
+    "5,4": {
+      "BindingInfo": {
+        "TableName": "m_customer",
+        "ColumnName": "郵便番号文字列"
+      }
+    },
+    "6,4": {
+      "BindingInfo": {
+        "TableName": "m_customer",
+        "ColumnName": "住所_改行付き"
+      }
+    },
+    "9,5": {
+      "BindingInfo": {
+        "TableName": "m_customer",
+        "ColumnName": "phone"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontSize": 14.666666666666666,
+        "FontWeight": 1,
+        "VerticalAlignment": 2,
+        "WordWrap": true,
+        "ShrinkToFit": false
+      },
+      {
+        "FontSize": 12.0
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 12.0,
+        "VerticalAlignment": 2,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FFFFFAD7",
+        "Bold",
+        "Top",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "5,2": 1,
+      "5,4": 1,
+      "6,4": 2,
+      "6,5": 3,
+      "6,6": 3,
+      "6,7": 3,
+      "6,8": 3,
+      "6,9": 3,
+      "6,10": 3,
+      "6,11": 3,
+      "6,12": 3,
+      "6,13": 3,
+      "6,14": 3,
+      "6,15": 3,
+      "6,16": 3,
+      "6,17": 3,
+      "6,18": 3,
+      "6,19": 3,
+      "7,4": 3,
+      "7,5": 3,
+      "7,6": 3,
+      "7,7": 3,
+      "7,8": 3,
+      "7,9": 3,
+      "7,10": 3,
+      "7,11": 3,
+      "7,12": 3,
+      "7,13": 3,
+      "7,14": 3,
+      "7,15": 3,
+      "7,16": 3,
+      "7,17": 3,
+      "7,18": 3,
+      "7,19": 3,
+      "8,4": 2,
+      "8,5": 2,
+      "8,6": 2,
+      "8,7": 2,
+      "8,8": 2,
+      "8,9": 2,
+      "8,10": 2,
+      "8,11": 2,
+      "8,12": 2,
+      "8,13": 2,
+      "8,14": 2,
+      "8,15": 2,
+      "8,16": 2,
+      "8,17": 2,
+      "8,18": 2,
+      "8,19": 2,
+      "9,2": 1,
+      "9,5": 1
+    },
+    "SheetStyle": {
+      "Background": 0,
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "9,5,1,6",
+    "6,4,2,16",
+    "5,4,1,6",
+    "2,2,2,16"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_customer"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  }
+}//iWLsXVOaiFd3KEkeFST8AZY93fc6qHPH9VpNNwOTKGDDPKcalelzrRThG04ZHSgE/aErJgOHE0Rap+1dhapzqZ03RTNRZZGQYb8a4zY8SP2odWRBBIrcTnSk0nWrburppiSMtOGBV7VHy+8FovHt61YYfGZGMhmXVf1woct9aIEES2zFWw/98VekQiGJ1aWDsFzidEGprW6mUlMwlFPfGAQ3OJF8rY8M84k70av9/u74bbeY2C6xJ6DOIn76cWHRY4zTAU7y+DeG6SoxrXWbtK4LPHQ1MqkpBSemTPmPl0uO9NPb0ippEu84hVb+bgi9lbUe0okCvCoRoBLAL9O/L0Lsb55qeSNJsHKgRXUTRja9eXcnW8aoEsCAUW33MWJuiUYJBsFuk3J0sg3HiQZQJ0uhz2Q0pfDO+ePtORYSMir1ytEOopXfstu9zwXOGZB+crylDuJkIsOr2uKjru52WMyZHyAPuI+VdyWUc5bU0E/+gkj+OqC5lwh8uQlDFFrnoKGiMCQGbv6AvaD9oBg08HifW/ZKMH1INc96nIbH3v333/B3QfPrVvcBIyFNLiNU0KXVlhnSRblFOut1ii7BLf/rYrAvNLQy9y7+Jmc+6xAJiAxhnRGgPXm7VOAn4pfciTUYzk2nSmM/tXCk1An3QD54nER5Oifz09Ox9W+l53vP09PPAnJp3t7pETjzwsgRmrFIzi+dH7NQ52SfwCZfyhyKniEZDkTr5gz8B/hDK/if/V40R6V33/JmPl6UgKAtbn7Elnzbq5Dc7GC8QASv5YNgungP6Yd9+qbDJXE1RgVzoP9GQBzmitSi8iS6Y1J4a0T314LCb487BYSS3SEUXc/YLAwyd4Z4EONtNfz1v+VKDjtFFou8IIpakpu8XCmgzZwzvbuDRDu+UCRCoqXZXg==|920

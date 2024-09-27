@@ -1,0 +1,323 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 35.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 25.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 15,
+    "DefaultSize": 31.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "Count": 32
+  },
+  "Values": {
+    "0,2": "以下より請求書発行単位を選択してください",
+    "7,23": "▼請求書発行単位ID",
+    "9,23": "▼請求書発行単位",
+    "12,23": "▼選択カウント",
+    "13,14": "選択する"
+  },
+  "Formulas": {
+    "2,23": "IF(請求書発行単位ID=Y3,1,0)",
+    "13,23": "COUNTIF(X3,1)"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.RepeaterCellType, ServerDesignerCommon",
+        "ListviewName": "請求書発行単位ビュー",
+        "TemplatePageName": "3669bfcabb054491a69b12274cee2b0",
+        "Command": {
+          "$type": "GrapeCity.Forguncy.Commands.CustomCommandObject, Forguncy.Commands",
+          "Commands": [],
+          "ParamProperties": {
+            "選択フラグ": "選択フラグ",
+            "調査方法ID": "調査方法ID",
+            "調査方法名": "調査方法名"
+          }
+        },
+        "TemplateKey": "スタイル1"
+      }
+    },
+    "1,23": {
+      "ListViewInfo": {
+        "ShowColumnHeaderInDesigner": true,
+        "TableName": "m_invoice_issue_unit",
+        "RowIndex": 1,
+        "ColumnIndex": 23,
+        "ColumnCount": 3,
+        "RowCount": 3,
+        "ColumnOperation": 2,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "Name": "請求書発行単位ビュー",
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium1"
+      }
+    },
+    "2,23": {
+      "NameUsedInJavaScript": "選択フラグ"
+    },
+    "2,24": {
+      "BindingInfo": {
+        "TableName": "m_invoice_issue_unit",
+        "ColumnName": "invoice_issue_unit_id"
+      },
+      "NameUsedInJavaScript": "請求書発行単位ID"
+    },
+    "2,25": {
+      "BindingInfo": {
+        "TableName": "m_invoice_issue_unit",
+        "ColumnName": "invoice_issue_unit"
+      },
+      "NameUsedInJavaScript": "請求書発行単位"
+    },
+    "13,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "選択する",
+        "TemplateKey": "_RS_RoundCorner_Style1"
+      },
+      "ConditionFormatRulesCollection": {
+        "Rules": [
+          {
+            "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+            "Formula": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=請求書発行単位選択!$X$14=0"
+            },
+            "StyleInfo": {
+              "Underline": null,
+              "Strikethrough": null
+            },
+            "IsDisabled": true,
+            "IsInvisible": false,
+            "IsReadOnly": false
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Foreground": 1,
+        "Formatter": 2,
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "FontSize": 12.0,
+        "HorizontalAlignment": 4
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      },
+      {
+        "Background": 5,
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 12.0
+      },
+      {
+        "Background": 6,
+        "FontFamily": 0,
+        "FontSize": 12.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Text 1 50",
+        "[AUTO]General",
+        "Background 1 -15",
+        "Center",
+        "#FFFFC000",
+        "#FFFFFF00"
+      ],
+      "Borders": [
+        {
+          "Color": 3
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,2": 0,
+      "0,3": 1,
+      "0,4": 1,
+      "0,5": 1,
+      "0,6": 1,
+      "0,7": 1,
+      "0,8": 1,
+      "0,9": 1,
+      "0,10": 1,
+      "0,11": 1,
+      "0,12": 1,
+      "0,13": 1,
+      "0,14": 1,
+      "0,15": 1,
+      "0,16": 1,
+      "0,17": 1,
+      "0,18": 1,
+      "1,2": 2,
+      "1,24": 3,
+      "1,25": 3,
+      "2,24": 3,
+      "2,25": 3,
+      "7,23": 4,
+      "7,24": 3,
+      "7,25": 3,
+      "8,23": 5,
+      "9,23": 4,
+      "9,24": 3,
+      "9,25": 3,
+      "10,23": 5,
+      "12,23": 3,
+      "12,24": 3,
+      "12,25": 3,
+      "13,14": 6,
+      "13,15": 6,
+      "13,16": 6,
+      "13,17": 6,
+      "13,18": 6,
+      "13,23": 7,
+      "13,24": 6,
+      "13,25": 6
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "8,23,1,3",
+    "1,2,11,17",
+    "13,14,1,5",
+    "13,23,1,3",
+    "10,23,1,3",
+    "3,23,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "m_invoice_issue_unit"
+  },
+  "PrintInfo": {
+    "Margin": {},
+    "PaperSize": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "請求書発行単位ID",
+      "Formula": "請求書発行単位選択!$X$9"
+    },
+    {
+      "Name": "請求書発行単位",
+      "Formula": "請求書発行単位選択!$X$11"
+    }
+  ]
+}//mif6qj2Drdehc0m909P9CyzXZ7/KC8lAPtyX1grGTF7llzYFtwvhZtrYI3kxgdKn3q4/YpQIosB27eLYVXmqs3+E13bVVTxlzx03NGY4FAm2U8oWPWlr8fB13ZT/a+di49NX+JpF+1WSM2/b8cnozaF7/WskZJnT0OjP5FmyO259/2jymLCTo+3Z3uNLfQKzuPQiHqkIqD19RYxF8+QnB+jT/YX88kRvk+jN6OuS029P62jpmSitQUqsmedDtl7vrFEnTjsadDdE5J7/FRlsqy7Y7SmktJSKGnhphFmJ9en3DShbzjq3UsGuTVUD+L+kIhi/gigXHeqYbqTl3ZZsU0LIF9lBZ4+O72Rm2b9gSlHlhK2pc0pVjA5Ill+tMRtPdDs79IdKz/BhKRFuMorLHjq5tL3xadyQ6wXlLpkgMrW9MTrwAo0mLvnfmG/fNc0mn+LGCGjgpw8Hc8n9Ol9DSSsLRTLE1YKc4+rvdFhoKe6HLu41TUIb0NmkF0/DI21oIVCZ6VMocoNURh3jhnFp7WdWICL6asp6YtTXMnr45Wtrn+wjfPsDGCKeWmFMbjExf8Hn48q3kDY1LSrGB29Xe5q9lB4NmmGMw73TBl0P6MgDFxayvhCYeyQ+mQHVAGMmzzVhpQCnVOJaWr/ITq9mhOxEmLF/0KKZzZ5pIt3V1nBpDoo1vb/VeTUyHORehU+BnPRQ6c+A108HBZ1rTN4mMt2TFXbo6h0KydffcUbfy82sKNJ1yAeGQimDHThQcAOMkz40wPVe/Mw8yXJIXDpBVo+j3QUV6AIwD9Av7x/h5iYMjcMloeCa9y4A0iCQwYLYr0274/JRsYdeOT3V3trf5ftaJDl9RohejpoYR6N3c7A1B/S1P97HiGSd9spDZcC7tBNfS+iucwPfyEODLM2HeA==|920
