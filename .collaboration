@@ -204,7 +204,16 @@
   },
   {
     "ModuleName": "Table/m_customer_gorund_pressure",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "PC-ISONO\\kiso1",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-09-27T11:26:37.3911083+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\m_customer_gorund_pressure.json"
+    ]
   },
   {
     "ModuleName": "Table/m_customer_group",
@@ -377,7 +386,16 @@
   },
   {
     "ModuleName": "Table/m_ground_pressure",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "PC-ISONO\\kiso1",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-09-27T11:26:37.3911083+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\m_ground_pressure.json"
+    ]
   },
   {
     "ModuleName": "Table/m_group",
@@ -615,7 +633,16 @@
   },
   {
     "ModuleName": "Table/m_order_type_class",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "PC-ISONO\\kiso1",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-09-27T11:26:37.3911083+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\m_order_type_class.json"
+    ]
   },
   {
     "ModuleName": "Table/m_outsourcing_cost",
@@ -4013,7 +4040,7 @@
       "UserName": "PC-ISONO\\kiso1",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2024-09-27T11:23:09.5229222+09:00",
+    "LockDateTime": "2024-09-27T11:26:37.3911083+09:00",
     "ModuleType": 25,
     "ToRemoveFiles": [
       "DataConnectionSet.json"
