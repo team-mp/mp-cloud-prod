@@ -2919,7 +2919,16 @@
   },
   {
     "ModuleName": "DataContectionSet",
-    "ModuleType": 25
+    "State": 1,
+    "LockedBy": {
+      "UserName": "PC-ISONO\\kiso1",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2024-09-28T14:58:39.817798+09:00",
+    "ModuleType": 25,
+    "ToRemoveFiles": [
+      "DataConnectionSet.json"
+    ]
   },
   {
     "ModuleName": "Upload",
